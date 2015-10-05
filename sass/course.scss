@@ -1,0 +1,26 @@
+// This is the start of a SASS document for Topclass course look and feel
+
+$primary_blue: #28538C;
+
+.coursebody {
+	border: 1px solid red;
+	padding: 1em;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+	color: #222222;
+	font-weight: 500;
+		header {
+			border: 1px solid black;
+			text-align: right;
+			font-size: 24px;
+			font-weight: 300;
+			color: $primary_blue;
+		}
+		footer {
+			font-size: 12px;
+			font-style: italic;
+			border-top: 1px dotted #999;
+
+		}
+}
