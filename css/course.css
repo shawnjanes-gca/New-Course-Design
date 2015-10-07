@@ -1,4 +1,8 @@
-.coursebody header:after { content: ""; display: table; clear: both; }
+.coursebody header:after, .coursebody .three-key-questions:after, .coursebody .audio-widget:after { content: ""; display: table; clear: both; }
+
+.pagenavigation { text-align: center; }
+.pagenavigation img { padding: 0 0 0 2em; width: 30px; height: 30px; }
+.pagenavigation img:hover { opacity: 0.5; }
 
 .coursebody { padding: 1em; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 27px; color: #222222; font-weight: 500; }
 .coursebody header { text-align: right; font-size: 24px; font-weight: 300; color: #28538C; }
@@ -6,11 +10,27 @@
 .coursebody header .headertitle .secondarytitle { font-size: 18px; font-style: italic; color: #818285; }
 .coursebody .objective-column { position: relative; float: right; width: 350px; padding: 0 0 0 3em; height: 100%; }
 .coursebody .objective-column .objective-points { border-left: 5px solid green; padding: 0 0 1em 1em; }
-.coursebody .objective-column .objective-icon { background: url("/images/thumbtack.png") 0px no-repeat; margin: 0 0 0 -20px; padding-top: 1px; height: 48px; }
+.coursebody .objective-column .objective-icon { background: url("/images/icon-thumbtack.png") 0px no-repeat; margin: 0 0 0 -20px; padding-top: 1px; height: 48px; }
 .coursebody .objective-column h2 { margin-top: 10px; padding: 0 0 0 40px; text-transform: uppercase; font-size: 18px; font-weight: 500; color: #1f6735; }
-.coursebody h1 { margin-top: 1.5em; }
-.coursebody h1 .pagetitle { text-transform: uppercase; font-size: 18px; font-weight: 500; color: #ffffff; padding: 10px 30px 10px 30px; background-color: #a5978b; border-right: 8px solid #8f8076; }
-.coursebody footer { padding-top: 2em; font-size: 12px; font-style: italic; }
+.coursebody .objective-column .objective-leadin { padding-left: 25px; }
+.coursebody .page-media-column { position: relative; float: right; width: 49px; height: 100%; padding: 1.2em 5em 0 5em; }
+.coursebody .page-media-column img { padding: 0 0 1em 0; }
+.coursebody .page-media-column img:hover { opacity: 0.5; }
+.coursebody h1 { margin: 1.5em 0 1.3em 0; }
+.coursebody h1 .pagetitle { text-transform: uppercase; font-size: 18px; font-weight: 500; color: #ffffff; padding: 10px 30px 10px 30px; background-color: #9c8f81; border-right: 8px solid #85796d; }
+.coursebody h3 { text-transform: uppercase; color: #28538C; font-weight: 500; margin: 0 0 -13px 0; }
+.coursebody .three-key-questions { width: calc(100% - 235px); }
+.coursebody .three-key-questions ul { padding: 1em 0 0 1.5em; list-style: none; }
+.coursebody .three-key-questions ul li { padding: 0 0 0 0; margin: 0 0 2em 0; border-left: 5px solid #28538C; }
+.coursebody .three-key-questions ul li span { padding: 0 2em 10px 1em; }
+.coursebody ol { width: calc(100% - 275px); padding: 1em 0 1em 3em; }
+.coursebody ol li { font-size: 24px; color: #28538C; font-weight: 600; line-height: 2em; }
+.coursebody ol span { font-size: 18px; color: #222222; font-weight: 500; }
+.coursebody .audio-widget { display: inline-block; width: 54%; font-style: italic; font-size: 16px; padding: 1em 0 1em 1em; }
+.coursebody .audio-widget .aw-img { position: relative; float: left; width: 49px; height: 50px; }
+.coursebody .audio-widget .aw-body { position: relative; float: right; width: calc(100% - 63px); padding-left: 10px; }
+.coursebody .audio-widget img:hover { opacity: 0.5; }
+.coursebody footer { padding-top: 2em; font-size: 13px; font-style: italic; }
 .coursebody footer .footertext { border-top: 1px dotted #818285; padding-bottom: 1em; width: 400px; }
 .coursebody footer p { margin: 0 0 0 0; }
 

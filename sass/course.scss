@@ -1,12 +1,15 @@
 // This is a SASS document for Topclass course look and feel
 
 // Global variables
+$default_font_size: 18px;
+$default_line_height: 27px;
+$default_font_weight: 500;
 $primary_blue: #28538C;
 $primary_gray: #222222;
 $secondary_gray: #818285;
 $page_title: #ffffff;
-$page_title_bg: #a5978b;
-$page_title_bg_right: #8f8076;
+$page_title_bg: #9c8f81;
+$page_title_bg_right: #85796d;
 $primary_green: #1f6735;
 
 //Placeholders
@@ -17,17 +20,27 @@ $primary_green: #1f6735;
 		clear: both;
 	}
 }
+.pagenavigation {
+	text-align: center;
+		img {
+			padding: 0 0 0 2em;
+			width: 30px;
+			height: 30px;
+		}
+		img:hover {
+			opacity: 0.5;
+		}
+}
 
 .coursebody {
-	//border: 1px solid red;
 	padding: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
-	line-height: 27px;
+	font-size: $default_font_size;
+	line-height: $default_line_height;
 	color: $primary_gray;
-	font-weight: 500;
+	font-weight: $default_font_weight;
+
 		header {
-			//border: 1px solid black;
 			text-align: right;
 			font-size: 24px;
 			font-weight: 300;
@@ -39,7 +52,7 @@ $primary_green: #1f6735;
 					border-bottom: 1px solid $secondary_gray;
 					padding: 0 8px 8px 40px;
 						.secondarytitle {
-							font-size: 18px;
+							font-size: $default_font_size;
 							font-style: italic;
 							color: $secondary_gray;
 						}
@@ -57,7 +70,7 @@ $primary_green: #1f6735;
 					padding: 0 0 1em 1em;
 				}
 				.objective-icon {
-					background: url('/images/thumbtack.png') 0px no-repeat;
+					background: url('/images/icon-thumbtack.png') 0px no-repeat;
 					margin: 0 0 0 -20px;
 					padding-top: 1px;
 					height: 48px;
@@ -66,19 +79,37 @@ $primary_green: #1f6735;
 						margin-top: 10px;
 						padding: 0 0 0 40px;
 						text-transform: uppercase;
-						font-size: 18px;
-						font-weight: 500;
+						font-size: $default_font_size;
+						font-weight: $default_font_weight;
 						color: $primary_green;
+				}
+				.objective-leadin {
+					padding-left: 25px;
 				}
 		}
 
+		.page-media-column {
+				position: relative;
+				float: right;
+				width: 49px;
+				height: 100%;
+				padding: 1.2em 5em 0 5em;
+				//border: 1px solid red;
+					img {
+						padding: 0 0 1em 0;
+					}
+					img:hover{
+						opacity: 0.5;
+					}
+				}
+
 		h1 {
 			//border: 1px solid red;
-			margin-top: 1.5em;
+			margin: 1.5em 0 1.3em 0;
 				.pagetitle {
 					text-transform: uppercase;
-					font-size: 18px;
-					font-weight: 500;
+					font-size: $default_font_size;
+					font-weight: $default_font_weight;
 					color: $page_title;
 					padding: 10px 30px 10px 30px;
 					background-color: $page_title_bg;
@@ -86,9 +117,82 @@ $primary_green: #1f6735;
 				}
 		}
 
+		h3 {
+			text-transform: uppercase;
+			color: $primary_blue;
+			font-weight: $default_font_weight;
+			//border: 1px solid red;
+			margin: 0 0 -13px 0;
+		}
+
+		.three-key-questions {
+			//border: 1px solid red;
+			width: calc(100% - 235px);
+			@extend %clearfix;
+				p {
+					//border: 1px solid green;
+				}
+
+				ul {
+					//border: 1px solid blue;
+					padding: 1em 0 0 1.5em;
+					list-style: none;
+						li {
+							padding: 0 0 0 0;
+							margin: 0 0 2em 0;
+							border-left: 5px solid $primary_blue;
+								span {
+									padding: 0 2em 10px 1em;
+
+								}
+						}
+				}
+		}
+
+		ol {
+			//border: 1px solid red;
+			width: calc(100% - 275px);
+			padding: 1em 0 1em 3em;
+				li {
+					font-size: 24px;
+					color: $primary_blue;
+					font-weight: 600;
+					line-height: 2em;
+				}
+				span {
+					font-size: $default_font_size;
+					color: $primary_gray;
+					font-weight: $default_font_weight;
+				}
+		}
+		.audio-widget {
+			display: inline-block;
+			width: 54%;
+			font-style: italic;
+			font-size: 16px;
+			padding: 1em 0 1em 1em;
+			@extend %clearfix;
+				.aw-img {
+					//border: 1px solid black;
+					position: relative;
+					float: left;
+					width: 49px;
+					height: 50px;
+				}
+				.aw-body {
+					position: relative;
+					float: right;
+					width: calc(100% - 63px);
+					padding-left: 10px;
+				}
+				img:hover {
+					opacity: 0.5;
+				}
+		}
+
 		footer {
 			padding-top: 2em;
-			font-size: 12px;
+			font-size: 13px;
 			font-style: italic;
 				.footertext {
 					border-top: 1px dotted $secondary_gray;
