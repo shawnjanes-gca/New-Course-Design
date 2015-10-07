@@ -1,5 +1,17 @@
-.coursebody { border: 1px solid red; padding: 1em; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 27px; color: #222222; font-weight: 500; }
-.coursebody header { border: 1px solid black; text-align: right; font-size: 24px; font-weight: 300; color: #28538C; }
-.coursebody footer { font-size: 12px; font-style: italic; border-top: 1px dotted #999; }
+.coursebody header:after { content: ""; display: table; clear: both; }
+
+.coursebody { padding: 1em; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 27px; color: #222222; font-weight: 500; }
+.coursebody header { text-align: right; font-size: 24px; font-weight: 300; color: #28538C; }
+.coursebody header .headertitle { position: relative; float: right; border-bottom: 1px solid #818285; padding: 0 8px 8px 40px; }
+.coursebody header .headertitle .secondarytitle { font-size: 18px; font-style: italic; color: #818285; }
+.coursebody .objective-column { position: relative; float: right; width: 350px; padding: 0 0 0 3em; height: 100%; }
+.coursebody .objective-column .objective-points { border-left: 5px solid green; padding: 0 0 1em 1em; }
+.coursebody .objective-column .objective-icon { background: url("/images/thumbtack.png") 0px no-repeat; margin: 0 0 0 -20px; padding-top: 1px; height: 48px; }
+.coursebody .objective-column h2 { margin-top: 10px; padding: 0 0 0 40px; text-transform: uppercase; font-size: 18px; font-weight: 500; color: #1f6735; }
+.coursebody h1 { margin-top: 1.5em; }
+.coursebody h1 .pagetitle { text-transform: uppercase; font-size: 18px; font-weight: 500; color: #ffffff; padding: 10px 30px 10px 30px; background-color: #a5978b; border-right: 8px solid #8f8076; }
+.coursebody footer { padding-top: 2em; font-size: 12px; font-style: italic; }
+.coursebody footer .footertext { border-top: 1px dotted #818285; padding-bottom: 1em; width: 400px; }
+.coursebody footer p { margin: 0 0 0 0; }
 
 /*# sourceMappingURL=course.css.map */

@@ -1,26 +1,103 @@
-// This is the start of a SASS document for Topclass course look and feel
+// This is a SASS document for Topclass course look and feel
 
+// Global variables
 $primary_blue: #28538C;
+$primary_gray: #222222;
+$secondary_gray: #818285;
+$page_title: #ffffff;
+$page_title_bg: #a5978b;
+$page_title_bg_right: #8f8076;
+$primary_green: #1f6735;
+
+//Placeholders
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
 
 .coursebody {
-	border: 1px solid red;
+	//border: 1px solid red;
 	padding: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
 	line-height: 27px;
-	color: #222222;
+	color: $primary_gray;
 	font-weight: 500;
 		header {
-			border: 1px solid black;
+			//border: 1px solid black;
 			text-align: right;
 			font-size: 24px;
 			font-weight: 300;
+			@extend %clearfix;
 			color: $primary_blue;
+				.headertitle {
+					position: relative;
+					float: right;
+					border-bottom: 1px solid $secondary_gray;
+					padding: 0 8px 8px 40px;
+						.secondarytitle {
+							font-size: 18px;
+							font-style: italic;
+							color: $secondary_gray;
+						}
+				}
 		}
+
+		.objective-column {
+			position: relative;
+			float: right;
+			width: 350px;
+			padding: 0 0 0 3em;
+			height: 100%;
+				.objective-points {
+					border-left: 5px solid green;
+					padding: 0 0 1em 1em;
+				}
+				.objective-icon {
+					background: url('/images/thumbtack.png') 0px no-repeat;
+					margin: 0 0 0 -20px;
+					padding-top: 1px;
+					height: 48px;
+				}
+				h2 {
+						margin-top: 10px;
+						padding: 0 0 0 40px;
+						text-transform: uppercase;
+						font-size: 18px;
+						font-weight: 500;
+						color: $primary_green;
+				}
+		}
+
+		h1 {
+			//border: 1px solid red;
+			margin-top: 1.5em;
+				.pagetitle {
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: 500;
+					color: $page_title;
+					padding: 10px 30px 10px 30px;
+					background-color: $page_title_bg;
+					border-right: 8px solid $page_title_bg_right;
+				}
+		}
+
 		footer {
+			padding-top: 2em;
 			font-size: 12px;
 			font-style: italic;
-			border-top: 1px dotted #999;
+				.footertext {
+					border-top: 1px dotted $secondary_gray;
+					padding-bottom: 1em;
+					width: 400px;
+				}
+				p {
+					margin: 0 0 0 0;
+				}
 
 		}
 }
