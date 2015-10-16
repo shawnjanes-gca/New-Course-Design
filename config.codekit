@@ -2,6 +2,714 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19051",
 "files": {
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/01.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/01.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/02.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/02.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/03.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/03.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/04.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/04.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/05.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/05.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/06.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/06.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/07.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/07.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/08.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/08.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/09.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/09.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/10.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/10.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/11.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/11.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/12.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/12.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/13.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/13.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/14.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/14.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/15.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/15.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/16.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/16.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/17.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/17.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/18.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/18.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/19.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/19.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/20.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/20.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/21.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/21.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/22.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/22.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/23.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/23.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/24.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/24.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_mindset.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29602,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_mindset.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_mindset.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_mindsetb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25846,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_mindsetb.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_mindsetb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_proactive.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20146,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_proactive.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/01_proactive.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/07_mortgage.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22587,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/07_mortgage.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/07_mortgage.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/08_creditcard.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23369,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/08_creditcard.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/08_creditcard.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/09_bankingadv.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22449,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/09_bankingadv.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/09_bankingadv.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_multicolor.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 198763,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_multicolor.png",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_multicolor.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_shaded_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 562017,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_shaded_1.png",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_shaded_1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_shaded_2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 562379,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_shaded_2.png",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/1040_shaded_2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/niftyCorners.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/niftyCorners.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/shadow.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/shadow.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/ydsf.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/ydsf.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/ydsf[1].css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/ydsf[1].css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/ydsf_a.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/css\/ydsf_a.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/nifty.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/nifty.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/min\/nifty-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/niftyCorners.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/niftyCorners.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/niftycube.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/niftycube.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/min\/niftycube-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/niftyPrint.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/js\/niftyPrint.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/line7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5565,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/line7.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/line7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/images\/p7ap_bluestonebut.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 340,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/images\/p7ap_bluestonebut.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/images\/p7ap_bluestonebut.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/images\/p7ap_light_gray_bevel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 338,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/images\/p7ap_light_gray_bevel.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/images\/p7ap_light_gray_bevel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_01.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_01.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_04.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_04.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_13.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_13.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_34.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_34.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_38.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7ap_38.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7APscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/p7APscripts.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7ap\/min\/p7APscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/epm5\/p7EPM05.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/epm5\/p7EPM05.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/epm5\/p7EPM05_28.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/epm5\/p7EPM05_28.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/epm5\/p7EPM05_vaudio.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/epm5\/p7EPM05_vaudio.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/p7EPMscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/p7EPMscripts.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7epm\/min\/p7EPMscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_bluestonebut.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 340,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_bluestonebut.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_bluestonebut.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1240,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue_gca.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8809,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue_gca.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue_gca.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue_gca2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8979,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue_gca2.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_fadetoblue_gca2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_light_gray_bevel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 338,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_light_gray_bevel.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/img\/p7gp_light_gray_bevel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/p7GP03.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/gp3\/p7GP03.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/p7GPscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/p7GPscripts.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7gp\/min\/p7GPscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs01header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 699,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs01header.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs01header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs05_down.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 430,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs05_down.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs05_down.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs05_up.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 420,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs05_up.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/img\/tabs05_up.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/p7tp_01.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/p7tp_01.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/p7tp_06.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/p7tp_06.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/p7tpscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/p7tpscripts.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/p7tp\/min\/p7tpscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/red_box.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 927,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/red_box.png",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/red_box.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/scheduleb_0.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77695,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/scheduleb_0.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/scheduleb_0.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/Scripts\/AC_RunActiveContent.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/Scripts\/AC_RunActiveContent.js",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/Scripts\/min\/AC_RunActiveContent-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/tax_papers.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6704,
+		"inputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/tax_papers.jpg",
+		"outputAbbreviatedPath": "\/_Courses Development\/Advising the Affluent Client - Banking Strategies\/greene\/advaffbs\/tax_papers.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/course.css": {
 		"fileType": 16,
 		"ignore": 1,

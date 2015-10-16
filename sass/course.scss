@@ -133,7 +133,6 @@ $link_hover_color: #d8a428;
 				}
 
 		h1 {
-			//border: 1px solid red;
 			margin: 1.5em 0 1.3em 0;
 				.pagetitle {
 					text-transform: uppercase;
@@ -150,20 +149,13 @@ $link_hover_color: #d8a428;
 			text-transform: uppercase;
 			color: $primary_blue;
 			font-weight: $default_font_weight;
-			//border: 1px solid red;
 			margin: 0 0 -13px 0;
 		}
 
 		.three-key-questions {
-			//border: 1px solid red;
 			width: calc(100% - 235px);
 			@extend %clearfix;
-				p {
-					//border: 1px solid green;
-				}
-
 				ul {
-					//border: 1px solid blue;
 					padding: 1em 0 0 1.5em;
 					list-style: none;
 						li {
@@ -179,7 +171,6 @@ $link_hover_color: #d8a428;
 		}
 
 		ol {
-			//border: 1px solid red;
 			width: calc(100% - 275px);
 			padding: 1em 0 1em 3em;
 				li {
@@ -205,7 +196,6 @@ $link_hover_color: #d8a428;
 					border: none;
 				}
 				.aw-img {
-					//border: 1px solid black;
 					position: relative;
 					float: left;
 					width: 49px;
@@ -223,11 +213,9 @@ $link_hover_color: #d8a428;
 		}
 
 		table {
-			//border: 1px solid red;
 			border-bottom: 1px solid $primary_blue;
 			width: 100%;
 			table-layout: fixed;
-			//margin: auto;
 			border-collapse: collapse;
 			background-color: $table_primary_gray;
 				tr:nth-child(odd) {
