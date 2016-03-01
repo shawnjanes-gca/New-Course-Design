@@ -1,0 +1,123 @@
+<head>
+<script type="text/JavaScript" language="JavaScript">// <![CDATA[
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+// ]]></script>
+</head>
+<body>
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Expected Return of Asset Classes</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<table style="width: 95%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>To evaluate the return potential for the most often used investment vehicles, let's look at the total rate of return produced by stocks, bonds, and money market instruments over the last 25 years. Again, total return is the sum of growth and yield for a given investment.</p>
+<p>This chart compares each investment vehicle with the rate of inflation that occurred during the same period.</p>
+<p>As the chart and numbers illustrate, stocks substantially outperformed bonds during this period, bonds outperformed T-Bills or money market instruments, and all three of these instruments outpaced the rate of inflation.</p>
+<p><strong><span style="color: #ff0000;">Click each graph label to learn more.</span></strong></p>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top"><img src="greene/principles/growth1Dollar.gif" alt="" width="506" height="289" usemap="#Map" border="0" /></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 380px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<h4>S&amp;P 500</h4>
+<p>Stocks over the past 25 years grew at an annualized rate of 8.82% for the period of 1990-2014. If $1 had been invested at the beginning of 1990, its current value would be $8.28</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 380px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<h4>Bonds</h4>
+<p>*Bonds over the past 25 years grew at an annualized rate of 7.53% A dollar invested at the beginning of 1990 would now have a value of $6.14.</p>
+<p>*Because of the dissolution of Lehman Brothers in 2008, the bonds measurement is a combination of both the Lehman Brothers Long-term Government/Credit Bond Index and the Barclays US Long Government/Credit Index.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 380px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<h4>T-Bills</h4>
+<p>T-Bills have grown at an annualized rate of 3.01% over the last 25 years and a dollar in 1990 would now have a value of $2.10</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 380px; top: 549px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<h4>Inflation</h4>
+<p>As shown, inflation diminished the purchasing power of an investment at an annualized rate of 2.4%. Or stated another way, it would take $1.83 today to purchase what $1.00 would have purchased in 1990.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><map name="Map"> 
+<area onclick="MM_showHideLayers('Layer1','','show')" shape="rect" coords="444,102,504,119" href="#_s" />
+ 
+<area onclick="MM_showHideLayers('Layer2','','show')" shape="rect" coords="448,120,493,138" href="#_s" />
+ 
+<area onclick="MM_showHideLayers('Layer3','','show')" shape="rect" coords="453,138,497,153" href="#_s" />
+ 
+<area onclick="MM_showHideLayers('Layer4','','show')" shape="rect" coords="448,157,507,173" href="#_s" />
+ </map></p>
+</body>

@@ -15,6 +15,7 @@ $table_primary_gray: #f2f1f1;
 $table_secondary_gray: #e4e4e3;
 $link_active_color: #af6f29;
 $link_hover_color: #d8a428;
+$thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout/images/icon-thumbtack.png';
 
 //Placeholders
 %clearfix {
@@ -24,6 +25,10 @@ $link_hover_color: #d8a428;
 		clear: both;
 	}
 }
+
+//IMPORTS
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700");
+
 .pagenavigation {
 	text-align: center;
 		img {
@@ -91,7 +96,8 @@ $link_hover_color: #d8a428;
 					padding: 0 0 1em 1em;
 				}
 				.objective-icon {
-					background: url('/images/icon-thumbtack.png') 0px no-repeat;
+					/* Be sure to change this for local development - just remove the topclass part of the path */
+					background: url($thumb_tack_icon_url) 0px no-repeat;
 					margin: 0 0 0 -20px;
 					padding-top: 1px;
 					height: 48px;

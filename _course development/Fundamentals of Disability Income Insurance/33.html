@@ -1,0 +1,822 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.style4 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p class="style4">Review your knowledge of disability income insurance by answering the following questions.</p>
+<table style="width: 95%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td>
+<p><strong>Income replacement resources that are often available to affluent clients in the event of a long-term disability include all of the following EXCEPT:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="Social Security";
+questions[1][2]="LTD group or professional association group coverages ";
+questions[1][3]="State disability insurance";
+//These are the associated layers
+layers[1][1]="Layer1";
+layers[1][2]="Layer2";
+layers[1][3]="Layer3";
+
+//This is the test answer
+answers[1]="C";
+// ]]></script>
+</p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>If an individual income insurance policy is "guaranteed renewable," this means that:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="The policy cannot be cancelled.";
+questions[2][2]="The premiums cannot be changed.";
+questions[2][3]="The policy cannot be cancelled and the premiums cannot be changed.";
+//These are the associated layers
+layers[2][1]="Layer4";
+layers[2][2]="Layer5";
+layers[2][3]="Layer6";
+
+//This is the test answer
+answers[2]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>3.</strong></p>
+</td>
+<td>
+<p><strong>All of the following are usual limitations of group LTD EXCEPT:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="The group coverage usually provides monthly benefits up to about 60% of salary, bonuses, deferred compensation, stock options, qualified plan contributions, etc. ";
+questions[3][2]="Group LTD is typically payable for non-occupational benefits only or benefits are reduced by workmen&#39;s compensation payments.";
+questions[3][3]="Premiums are not guaranteed and the carrier can cancel the coverage.";
+questions[3][4]="The definitions and provisions of group LTD are invariably more restrictive when compared to a quality individual disability income contract. ";
+//These are the associated layers
+layers[3][1]="Layer7";
+layers[3][2]="Layer8";
+layers[3][3]="Layer9";
+layers[3][4]="Layer10";
+
+//This is the test answer
+answers[3]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>4.</strong></p>
+</td>
+<td>
+<p><strong>A professional is concerned about disability protection if unable to work his or her chosen profession for which he or she was specifically trained. Which definition of disability would best serve the professional?</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="Any Occ";
+questions[4][2]="Own Occ";
+//These are the associated layers
+layers[4][1]="Layer11";
+layers[4][2]="Layer12";
+
+//This is the test answer
+answers[4]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>5.</strong></p>
+</td>
+<td>
+<p><strong>The general rule is that when an individual pays premiums on an after-tax basis, then the disability benefits are:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 5 CODE
+var formNumber=new Array();
+formNumber[5]="QuestionForm5";
+questionNumber=5;
+questions[5]=new Array();
+layers[5]=new Array();
+//This is the test question
+questions[5][0]="";
+
+//These are the answer choices
+questions[5][1]="Taxable";
+questions[5][2]="Taxable once cumulative benefits exceed premiums paid";
+questions[5][3]="Tax-exempt";
+//These are the associated layers
+layers[5][1]="Layer13";
+layers[5][2]="Layer13";
+layers[5][3]="Layer15";
+
+//This is the test answer
+answers[5]="C";
+// ]]></script>
+</p>
+<form name="QuestionForm5">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 5
+document.write(getQuestion(5));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 5 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>6.</strong></p>
+</td>
+<td>
+<p><strong>The "elimination period" is:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 6 CODE
+var formNumber=new Array();
+formNumber[6]="QuestionForm6";
+questionNumber=6;
+questions[6]=new Array();
+layers[6]=new Array();
+//This is the test question
+questions[6][0]="";
+
+//These are the answer choices
+questions[6][1]="The time between the occurrence of disability and the day disability benefits begin to accrue.";
+questions[6][2]="The time between application for disability insurance and the beginning of coverage.";
+questions[6][3]="The time period after which disability benefit payments cease.";
+//These are the associated layers
+layers[6][1]="Layer16";
+layers[6][2]="Layer17";
+layers[6][3]="Layer18";
+
+//This is the test answer
+answers[6]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm6">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 6
+document.write(getQuestion(6));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 6 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>7.</strong></p>
+</td>
+<td>
+<p><strong>The maximum duration of benefit payments with a long-term disability policy is typically: </strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 7 CODE
+var formNumber=new Array();
+formNumber[7]="QuestionForm7";
+questionNumber=7;
+questions[7]=new Array();
+layers[7]=new Array();
+//This is the test question
+questions[7][0]="";
+
+//These are the answer choices
+questions[7][1]="20 Years";
+questions[7][2]="40 Years";
+questions[7][3]="Until age 59½";
+questions[7][4]="Until age 65 or Lifetime";
+//These are the associated layers
+layers[7][1]="Layer19";
+layers[7][2]="Layer19";
+layers[7][3]="Layer19";
+layers[7][4]="Layer20";
+
+//This is the test answer
+answers[7]="D";
+// ]]></script>
+</p>
+<form name="QuestionForm7">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 7
+document.write(getQuestion(7));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 7 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>8.</strong></p>
+</td>
+<td>
+<p><strong>Social Security Disability Income (SSDI) benefits of affluent clients are typically taxable. </strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 8 CODE
+var formNumber=new Array();
+formNumber[8]="QuestionForm8";
+questionNumber=8;
+questions[8]=new Array();
+layers[8]=new Array();
+//This is the test question
+questions[8][0]="";
+
+//These are the answer choices
+questions[8][1]="True";
+questions[8][2]="False";
+//These are the associated layers
+layers[8][1]="Layer21";
+layers[8][2]="Layer22";
+
+//This is the test answer
+answers[8]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm8">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 8
+document.write(getQuestion(8));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 8 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>9.</strong></p>
+</td>
+<td>
+<p><strong>All of the following are characteristics of Business Overhead Expense insurance EXCEPT?</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 9 CODE
+var formNumber=new Array();
+formNumber[9]="QuestionForm9";
+questionNumber=9;
+questions[9]=new Array();
+layers[9]=new Array();
+//This is the test question
+questions[9][0]="";
+
+//These are the answer choices
+questions[9][1]="The premiums are deductible.";
+questions[9][2]="The benefits are taxable.";
+questions[9][3]="The Maximum Benefit Period is usually no more than 24 months.";
+questions[9][4]="In the event of the insured&#39;s disability, the policy pays the full Monthly Indemnity amount regardless of the amount of insurable expenses incurred.";
+questions[9][5]="The maximum benefit period can be extended to the degree monthly benefits have not been fully utilized.";
+//These are the associated layers
+layers[9][1]="Layer23";
+layers[9][2]="Layer24";
+layers[9][3]="Layer25";
+layers[9][4]="Layer26";
+layers[9][5]="Layer27";
+
+//This is the test answer
+answers[9]="D";
+// ]]></script>
+</p>
+<form name="QuestionForm9">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 9
+document.write(getQuestion(9));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 9 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>&nbsp;</blockquote>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 445px; top: 245px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Social Security disability benefits are typically available to most American workers.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 445px; top: 245px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>These group coverages are often available to employees, professionals, and possibly business owners.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 445px; top: 245px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> Only five states (CA, NY, NJ, TI and HI) provide disability benefits when workmen's compensation does not apply.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit3" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 465px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct. </strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit4" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 465px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> If the policy is "noncancellable," the premiums cannot be changed.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit5" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 465px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>To meet these criteria, the policy must be "guaranteed renewable and noncancellable."</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit6" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 515px; top: 585px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> Group coverage usually provides monthly benefits up to about 60% of salary only.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit7" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 515px; top: 585px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is a typical limitation of group LTD.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit8" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 515px; top: 585px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>This is a typical limitation of group LTD.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit9" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 515px; top: 585px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is a typical limitation of group LTD.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 655px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>With this definition, the person could be unable to perform the job for which they were trained but be unable to receive benefits because the person could still do other jobs. The fact that the person could still perform other jobs would likely result in a substantial loss of income if the insured could no longer perform the job of his or her chosen career (i.e., a neurosurgeon becoming a general practitioner or professor).</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit11" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 655px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct. </strong>The fact that the person could still perform other jobs would likely result in a substantial loss of income if the insured could no longer perform the job of his or her chosen career (i.e., a neurosurgeon becoming a general practitioner or professor).</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 785px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.&nbsp;</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit13" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 735px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.&nbsp;</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit14" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 785px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit15" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 935px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit16" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer17" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 935px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.&nbsp;</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer17','','hide')" type="submit" name="Submit17" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer18" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 935px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer18','','hide')" type="submit" name="Submit18" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer19" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer19','','hide')" type="submit" name="Submit19" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer20" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer20','','hide')" type="submit" name="Submit20" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer21" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 525px; top: 1135px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct. </strong>Up to 85% of SSDI benefits are taxable if the recipient's income exceeds certain thresholds, which will typically occur with affluent clients.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer21','','hide')" type="submit" name="Submit21" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer22" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 533px; top: 1144px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Up to 85% of SSDI benefits are taxable if the recipient's income exceeds certain thresholds, which will typically occur with affluent clients.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer22','','hide')" type="submit" name="Submit22" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer23" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 527px; top: 1219px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is a characteristic of BOE.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer23','','hide')" type="submit" name="Submit23" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer24" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 527px; top: 1219px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is a characteristic of BOE.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer24','','hide')" type="submit" name="Submit24" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer25" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 527px; top: 1219px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is a characteristic of BOE.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer25','','hide')" type="submit" name="Submit25" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer26" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 527px; top: 1219px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> The policy would reimburse the policy owner monthly for the lesser of submitted qualified overhead expenses or the maximum monthly benefit.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer26','','hide')" type="submit" name="Submit26" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer27" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 527px; top: 1219px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is a characteristic of BOE.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer27','','hide')" type="submit" name="Submit27" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

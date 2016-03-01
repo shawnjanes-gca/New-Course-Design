@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="greene/ltci/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+
+<body>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p class="instructions">Select the correct answer for each question.</p>
+</blockquote>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td>
+<p><strong>A qualified LTCi policy specifies that eligibility for long-term care benefits is based on the number of Activities of Daily Living (ADLs) a person cannot perform or on cognitive limitations (IADLs). </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="True";
+questions[1][2]="False";
+//These are the associated layers
+layers[1][1]="Layer1";
+
+layers[1][2]="Layer2";
+
+//This is the test answer
+answers[1]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm1" name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>The vast majority of people requiring assistance with ADL or IADL tasks in the United States are over age 65. </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="True";
+questions[2][2]="False";
+//These are the associated layers
+layers[2][1]="Layer3";
+layers[2][2]="Layer4";
+
+//This is the test answer
+answers[2]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm2" name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>3.</strong></p>
+</td>
+<td>
+<p><strong>Licensed facilities that provide skilled, intermediate, and custodial care services are: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="Nursing homes";
+questions[3][2]="Assisted Living Facilities";
+questions[3][3]="Adult Day Care";
+questions[3][4]="All of the above";
+questions[3][5]="None of the above";
+//These are the associated layers
+layers[3][1]="Layer5";
+layers[3][2]="Layer6";
+layers[3][3]="Layer7";
+layers[3][4]="Layer8";
+layers[3][5]="Layer9";
+
+//This is the test answer
+answers[3]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm3" name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>4.</strong></p>
+</td>
+<td>
+<p><strong>All of the following are potential services that an LTCi policy would cover EXCEPT: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="Home health care";
+questions[4][2]="Adult Day Care";
+questions[4][3]="Daily Money Managers";
+questions[4][4]="Assisted Living Facility";
+questions[4][5]="None of the above. All are potential services an LTCi policy would cover.";
+//These are the associated layers
+layers[4][1]="Layer10";
+layers[4][2]="Layer11";
+layers[4][3]="Layer12";
+layers[4][4]="Layer13";
+layers[4][5]="Layer14";
+
+//This is the test answer
+answers[4]="E";
+// ]]></script>
+</p>
+<form id="QuestionForm4" name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>5.</strong></p>
+</td>
+<td>
+<p><strong>According to a study by the National Institutes of Health, which of the following long-term care services provided in 2004 had the greatest estimated value? </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 5 CODE
+var formNumber=new Array();
+formNumber[5]="QuestionForm5";
+questionNumber=5;
+questions[5]=new Array();
+layers[5]=new Array();
+//This is the test question
+questions[5][0]="";
+
+//These are the answer choices
+questions[5][1]="Family care at home";
+questions[5][2]="Professional Home Care";
+questions[5][3]="Nursing Home Care";
+//These are the associated layers
+layers[5][1]="Layer15";
+layers[5][2]="Layer16";
+layers[5][3]="Layer17";
+
+//This is the test answer
+answers[5]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm5" name="QuestionForm5">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 5
+document.write(getQuestion(5));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 5 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>6.</strong></p>
+</td>
+<td>
+<p><strong>All of the following are potential public resources to pay for at least some long-term care expenses EXCEPT: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 6 CODE
+var formNumber=new Array();
+formNumber[6]="QuestionForm6";
+questionNumber=6;
+questions[6]=new Array();
+layers[6]=new Array();
+//This is the test question
+questions[6][0]="";
+
+//These are the answer choices
+questions[6][1]="Medicaid";
+questions[6][2]="Medicare";
+questions[6][3]="Veterans Administration Health Care";
+questions[6][4]="Medigap insurance";
+//These are the associated layers
+layers[6][1]="Layer18";
+layers[6][2]="Layer19";
+layers[6][3]="Layer20";
+layers[6][4]="Layer21";
+
+//This is the test answer
+answers[6]="D";
+// ]]></script>
+</p>
+<form id="QuestionForm6" name="QuestionForm6">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 6
+document.write(getQuestion(6));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 6 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>7.</strong></p>
+</td>
+<td>
+<p><strong>Medicare provides adequate assisted living care services.</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 7 CODE
+var formNumber=new Array();
+formNumber[7]="QuestionForm7";
+questionNumber=7;
+questions[7]=new Array();
+layers[7]=new Array();
+//This is the test question
+questions[7][0]="";
+
+//These are the answer choices
+questions[7][1]="True";
+questions[7][2]="False";
+//These are the associated layers
+layers[7][1]="Layer22";
+layers[7][2]="Layer23";
+
+//This is the test answer
+answers[7]="B";
+// ]]></script>
+</p>
+<form id="QuestionForm7" name="QuestionForm7">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 7
+document.write(getQuestion(7));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 7 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>8.</strong></p>
+</td>
+<td>
+<p><strong>LTCi policies can be issued as a "Reimbursement" type of policy or a cash payment of "Cash Indemnity" type of policy. Which type is the most common? </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 8 CODE
+var formNumber=new Array();
+formNumber[8]="QuestionForm8";
+questionNumber=8;
+questions[8]=new Array();
+layers[8]=new Array();
+//This is the test question
+questions[8][0]="";
+
+//These are the answer choices
+questions[8][1]="Reimbursement";
+questions[8][2]="Cash Indemnity";
+//These are the associated layers
+layers[8][1]="Layer24";
+layers[8][2]="Layer25";
+
+//This is the test answer
+answers[8]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm8" name="QuestionForm8">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 8
+document.write(getQuestion(8));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 8 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>9.</strong></p>
+</td>
+<td>
+<p><strong>Long-term care insurance providers provide a Third Party Notification of Pending Lapse provision for which of the following reasons? </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 10 CODE
+var formNumber=new Array();
+formNumber[10]="QuestionForm10";
+questionNumber=10;
+questions[10]=new Array();
+layers[10]=new Array();
+//This is the test question
+questions[10][0]="";
+
+//These are the answer choices
+questions[10][1]="They charge extra for sending out notifications.";
+questions[10][2]="To mitigate the potential lapse of a policy by an elderly and possibly frail policyholder.";
+questions[10][3]="Both of the above.";
+//These are the associated layers
+layers[10][1]="Layer32";
+layers[10][2]="Layer33";
+layers[10][3]="Layer34";
+
+//This is the test answer
+answers[10]="B";
+// ]]></script>
+</p>
+<form id="QuestionForm10" name="QuestionForm10">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 10
+document.write(getQuestion(10));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 10 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>10.</strong></p>
+</td>
+<td>
+<p><strong>Qualified LTCi policies provide the opportunity for individuals to deduct the premiums for long-term care insurance, based on the health care itemized deductions on their personal tax returns being in excess of the what percentage of AGI? </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 11 CODE
+var formNumber=new Array();
+formNumber[11]="QuestionForm11";
+questionNumber=11;
+questions[11]=new Array();
+layers[11]=new Array();
+//This is the test question
+questions[11][0]="";
+
+//These are the answer choices
+questions[11][1]="2.0%";
+questions[11][2]="2.5%";
+questions[11][3]="5.3%";
+questions[11][4]="7.5%";
+questions[11][5]="10.0%";
+//These are the associated layers
+layers[11][1]="Layer35";
+layers[11][2]="Layer36";
+layers[11][3]="Layer37";
+layers[11][4]="Layer38";
+layers[11][5]="Layer39";
+
+//This is the test answer
+answers[11]="D";
+// ]]></script>
+</p>
+<form id="QuestionForm11" name="QuestionForm11">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 11
+document.write(getQuestion(11));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 11 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 2; left: 508px; top: 188px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> According to research sponsored by the U.S. National Institutes of Health in the late 1990s, "In 1994, over 3.3 million persons aged 18-64 living in the community received assistance with <strong>ADL</strong> or <strong>IADL</strong> tasks, compared with 3.8 million community dwelling persons aged 65 and over."</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit4" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 518px; top: 135px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 565px; top: 138px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 410px; top: 232px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit3" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 3; left: 459px; top: 327px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit5" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 4; left: 462px; top: 330px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Assisted living facilities provide supportive services and assistance with Activities of Daily Living (ADLs) for residents who are not able to live by themselves because of physical or cognitive limitations, but do not require constant care or significant medical care. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit6" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 5; left: 476px; top: 299px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Adult day care centers provide social, some medical, assisted living, therapeutic, and rehabilitative services for individuals with physical or mental limitations. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit7" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 9; left: 474px; top: 326px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit8" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 10; left: 440px; top: 321px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit9" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 11; left: 501px; top: 426px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This would typically be covered by an LTCi policy. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 12; left: 508px; top: 430px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>This would typically be covered by an LTCi policy. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit11" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 13; left: 477px; top: 420px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>This would typically be covered by an LTCi policy. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 14; left: 489px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>This would typically be covered by an LTCi policy. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit13" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 15; left: 486px; top: 433px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit14" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 16; left: 488px; top: 529px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct! </strong>Estimated cost: $149 Billion to $483 Billion.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit15" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 17; left: 490px; top: 518px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Estimated cost: $49 Billion. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit16" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer17" style="position: absolute; width: 375px; height: 35px; z-index: 18; left: 488px; top: 528px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Estimated cost: $115 Billion. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer17','','hide')" type="submit" name="Submit17" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer18" style="position: absolute; width: 375px; height: 35px; z-index: 19; left: 497px; top: 613px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Medicaid is a substantial provider of limited LTC services for the indigent. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer18','','hide')" type="submit" name="Submit18" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer19" style="position: absolute; width: 375px; height: 35px; z-index: 20; left: 487px; top: 455px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Medicare provides limited LTC services. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer19','','hide')" type="submit" name="Submit19" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer20" style="position: absolute; width: 375px; height: 35px; z-index: 21; left: 493px; top: 552px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> The VA Health Care system provides varying LTC services to veterans. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer20','','hide')" type="submit" name="Submit20" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer21" style="position: absolute; width: 375px; height: 35px; z-index: 22; left: 495px; top: 568px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> Medigap insurance is <em>private</em> insurance coverage to supplement Medicare coverage.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer21','','hide')" type="submit" name="Submit21" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer22" style="position: absolute; width: 375px; height: 35px; z-index: 23; left: 495px; top: 694px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Medicare provides virtually no assisted living care.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer22','','hide')" type="submit" name="Submit22" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer23" style="position: absolute; width: 375px; height: 35px; z-index: 24; left: 501px; top: 709px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct! </strong>Medicare provides virtually no assisted living care.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer23','','hide')" type="submit" name="Submit23" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer24" style="position: absolute; width: 375px; height: 35px; z-index: 25; left: 501px; top: 794px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer24','','hide')" type="submit" name="Submit24" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer25" style="position: absolute; width: 375px; height: 35px; z-index: 26; left: 503px; top: 793px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer25','','hide')" type="submit" name="Submit25" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer32" style="position: absolute; width: 429px; height: 2px; z-index: 27; left: 459px; top: 901px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer32','','hide')" type="submit" name="Submit26" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer33" style="position: absolute; width: 375px; height: 35px; z-index: 28; left: 515px; top: 910px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer33','','hide')" type="submit" name="Submit27" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer34" style="position: absolute; width: 375px; height: 35px; z-index: 29; left: 521px; top: 903px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer34','','hide')" type="submit" name="Submit28" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer35" style="position: absolute; width: 375px; height: 35px; z-index: 30; left: 478px; top: 1008px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer35','','hide')" type="submit" name="Submit29" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer36" style="position: absolute; width: 375px; height: 35px; z-index: 31; left: 503px; top: 995px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer36','','hide')" type="submit" name="Submit30" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer37" style="position: absolute; width: 375px; height: 35px; z-index: 32; left: 511px; top: 1004px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer37','','hide')" type="submit" name="Submit31" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer38" style="position: absolute; width: 375px; height: 35px; z-index: 33; left: 506px; top: 994px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer38','','hide')" type="submit" name="Submit32" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer39" style="position: absolute; width: 375px; height: 35px; z-index: 34; left: 490px; top: 1003px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer39','','hide')" type="submit" name="Submit33" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

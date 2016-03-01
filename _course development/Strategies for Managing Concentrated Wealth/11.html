@@ -1,0 +1,589 @@
+<head>
+</head>
+<body>
+<script type="text/JavaScript">// <![CDATA[
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+// ]]></script>
+<script type="text/javascript">// <![CDATA[
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+// ]]></script>
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 90%;">
+<tbody>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>Before proceeding, take a few moments to review your knowledge of monetization strategies by answering the questions below.</p>
+<p class="style1">Select the correct response to the following questions.</p>
+</blockquote>
+<table style="width: 100%;" align="left">
+<tbody>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td width="95%">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="Long Sale";
+questions[1][2]="Short Sale";
+questions[1][3]="Short-Against-the-Box";
+questions[1][4]="Rollover Sale";
+//These are the associated layers
+layers[1][1]="Layer2";
+layers[1][2]="Layer1";
+layers[1][3]="Layer2";
+layers[1][4]="Layer2";
+
+//This is the test answer
+answers[1]="B";
+// ]]></script>
+<p><strong>Mr. Samuelson thinks GE has reached its high and will soon go down in price. If he owned any shares, he would quickly sell them. Since he does not own shares, he decides to make the sale anyway, and then covers the sale by borrowing the stock. He figures he can buy the stock back when the price goes down, use the newly purchased shares to cover his loan, and pocket the difference. This strategy of borrowing stock from a counterparty and selling it in the open market is referred to as a:</strong></p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td width="95%">
+<p><strong>If Mr. Samuelson had owned 50,000 GE shares, but borrowed 50,000 shares to sell, this would be known as:</strong></p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="Going Long";
+questions[2][2]="Going Short";
+questions[2][3]="Going Short-Against-the-Box";
+questions[2][4]="Rolling Over";
+
+//These are the associated layers
+layers[2][1]="Layer4";
+layers[2][2]="Layer4";
+layers[2][3]="Layer3";
+layers[2][4]="Layer4";
+
+//This is the test answer
+answers[2]="C";
+// ]]></script>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>3.</strong></p>
+</td>
+<td width="95%">
+<p><strong>Mr. Samuelson can avoid a constructive sale by:</strong></p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="a. Closing the position before the end of the 30th day after the end of his tax year";
+questions[3][2]="b. Once the open position is closed, Mr. Samuelson must hold the appreciated asset for another 60 days";
+questions[3][3]="c. During the 60-day holding period, Mr. Samuelson must not engage in any activity that would reduce his risk of loss on the security";
+questions[3][4]="d. Performing all of the above";
+questions[3][5]="e. Performing both a. and b.";
+//These are the associated layers
+layers[3][1]="Layer6";
+layers[3][2]="Layer6";
+layers[3][3]="Layer6";
+layers[3][4]="Layer5";
+layers[3][5]="Layer15";
+
+//This is the test answer
+answers[3]="D";
+// ]]></script>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>4.</strong></p>
+</td>
+<td width="95%">
+<p><strong>Complete the following statement by filling in the word that best completes the sentence. A _________ strategy is one where the primary objective is to establish a floor on the value of the position.</strong></p>
+
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="Monetization";
+questions[4][2]="Diversification";
+questions[4][3]="Hedging";
+questions[4][4]="Wealth Replacement";
+//These are the associated layers
+layers[4][1]="Layer8";
+layers[4][2]="Layer8";
+layers[4][3]="Layer7";
+layers[4][4]="Layer8";
+
+//This is the test answer
+answers[4]="C";
+// ]]></script>
+<form name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form></td>
+</tr>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>5.</strong></p>
+</td>
+<td width="95%">
+<p><strong>Complete the following statement by filling in the word that best completes the sentence. A _________ strategy is one where the primary objective is to obtain liquidity to meet cash needs or invest in a more diversified portfolio.</strong></p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 5 CODE
+var formNumber=new Array();
+formNumber[5]="QuestionForm5";
+questionNumber=5;
+questions[5]=new Array();
+layers[5]=new Array();
+//This is the test question
+questions[5][0]="";
+
+//These are the answer choices
+questions[5][1]="Monetization";
+questions[5][2]="Diversification";
+questions[5][3]="Hedging";
+questions[5][4]="Wealth Replacement";
+//These are the associated layers
+layers[5][1]="Layer9";
+layers[5][2]="Layer10";
+layers[5][3]="Layer10";
+layers[5][4]="Layer10";
+
+//This is the test answer
+answers[5]="A";
+// ]]></script>
+<form name="QuestionForm5">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 5
+document.write(getQuestion(5));
+// ]]></script>
+</form></td>
+</tr>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>6.</strong></p>
+</td>
+<td width="95%">
+<p><strong>All of the following are advantages of borrowing against the stock as a monetization strategy EXCEPT:</strong></p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 6 CODE
+var formNumber=new Array();
+formNumber[6]="QuestionForm6";
+questionNumber=6;
+questions[6]=new Array();
+layers[6]=new Array();
+//This is the test question
+questions[6][0]="";
+
+//These are the answer choices
+questions[6][1]="No tax liability is triggered";
+questions[6][2]="Continued ability to participate in stock appreciation";
+questions[6][3]="Continued participation in dividend income";
+questions[6][4]="Retained ownership of the stock";
+questions[6][5]="Protection against downward shift in the stock price";
+//These are the associated layers
+layers[6][1]="Layer12";
+layers[6][2]="Layer12";
+layers[6][3]="Layer12";
+layers[6][4]="Layer12";
+layers[6][5]="Layer11";
+
+//This is the test answer
+answers[6]="E";
+// ]]></script>
+<form name="QuestionForm6">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 6
+document.write(getQuestion(6));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 6 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="5%">
+<p align="right"><strong>7.</strong></p>
+</td>
+<td width="95%">
+<p><strong>Because of the Taxpayer Relief Act of 1997, the short-against-the-box strategy's popularity has waned and it is not commonly used as a long-term strategy for monetization of a wealth concentration.</strong></p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 7 CODE
+var formNumber=new Array();
+formNumber[7]="QuestionForm7";
+questionNumber=7;
+questions[7]=new Array();
+layers[7]=new Array();
+//This is the test question
+questions[7][0]="";
+
+//These are the answer choices
+questions[7][1]="True";
+questions[7][2]="False";
+
+//These are the associated layers
+layers[7][1]="Layer13";
+layers[7][2]="Layer14";
+
+
+//This is the test answer
+answers[7]="A";
+// ]]></script>
+<form name="QuestionForm7">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 7
+document.write(getQuestion(7));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 7 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 7; left: 360px; top: 750px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect</strong>.&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer1" style="position: absolute; width: 200px; height: 81px; z-index: 1; left: 295px; top: 440px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 200px; height: 81px; z-index: 1; left: 287px; top: 440px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="submit2" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 200px; height: 81px; z-index: 3; left: 347px; top: 590px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong>&nbsp;</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="submit3" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 200px; height: 81px; z-index: 4; left: 348px; top: 590px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="submit4" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 200px; height: 81px; z-index: 5; left: 356px; top: 750px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="submit5" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 200px; height: 100px; z-index: 6; left: 360px; top: 750px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Not the only correct answer.&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="submit6" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 200px; height: 81px; z-index: 8; left: 353px; top: 900px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="submit7" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 200px; height: 81px; z-index: 9; left: 350px; top: 900px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="submit8" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 200px; height: 81px; z-index: 10; left: 360px; top: 1020px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="submit9" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 200px; height: 81px; z-index: 11; left: 360px; top: 1020px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="submit10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 200px; height: 81px; z-index: 12; left: 433px; top: 1150px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="submit11" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 200px; height: 81px; z-index: 13; left: 430px; top: 1150px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 200px; height: 81px; z-index: 14; left: 375px; top: 1320px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="submit13" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 200px; height: 81px; z-index: 15; left: 375px; top: 1320px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="submit14" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+ 
+</body>

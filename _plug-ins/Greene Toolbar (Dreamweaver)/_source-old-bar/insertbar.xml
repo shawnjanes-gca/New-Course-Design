@@ -1,0 +1,1852 @@
+<?xml version="1.0" ?>
+<!DOCTYPE insertbarset SYSTEM "-//Macromedia//DWExtension insertbar 5.0">
+<insertbar>  
+
+   <category id="DW_Insertbar_GreeneCustom" folder="Greene Custom" showIf="">   
+    
+	<button id="v1_base_table"
+	image="GreeneCustom\v1_base_table.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v1_base_table.htm"/>
+	
+	<button id="v2_beige_co_table"
+	image="GreeneCustom\v2_beige_co_table.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v2_beige_co_table.htm"/>
+	
+	<button id="v1_header_flash"
+	image="GreeneCustom\v1_header_flash.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v1_header_flash.htm"/> 
+	
+	<button id="v1_image_table"
+	image="GreeneCustom\v1_image_table.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v1_image_table.htm"/>  
+	
+	<button id="v1_callout_table"
+	image="GreeneCustom\v1_callout_table.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v1_callout_table.htm"/>
+	
+	<button id="tt_re_template"
+	image="GreeneCustom\tt_template.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\tt_template.htm"/> 
+	
+	<button id="v1_Layer"
+	image="GreeneCustom\v1_Layer.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v1_Layer.htm"/>   
+			      
+	<button id="v1_Layer_Button"
+	image="GreeneCustom\v1_Layer_Button.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="GreeneCustom\v1_Layer_Button.htm"/>
+
+	<button id="v2__Layer_Button_Test"
+	image="GreeneCustom\v2_Layer_Button_Test.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="GreeneCustom\v2_Layer_Button_Test.htm"/> 
+	
+	<button id="v2_Layer_Button"
+	image="GreeneCustom\v2_Layer_Button.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="GreeneCustom\v2_Layer_Button.htm"/> 
+	
+	<button id="tt_Check_Test"
+	image="GreeneCustom\tt_Check.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\tt_Check.htm"/>   
+			      
+	<button id="tt_Drop_Test"
+	image="GreeneCustom\tt_Drop.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="GreeneCustom\tt_Drop.htm"/> 
+	
+	<button id="tt_Fill_Test"
+	image="GreeneCustom\tt_Fill.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\tt_Fill.htm"/>   
+			      
+	<button id="tt_Radio_Test"
+	image="GreeneCustom\tt_Radio.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="GreeneCustom\tt_Radio.htm"/> 
+
+	<button id="v2_vaudio"
+	image="GreeneCustom\v2_vaudio.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v2_vaudio.htm"/>
+	
+	<button id="v2_Rounded"
+	image="GreeneCustom\v2_rounded.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v2_rounded.htm"/>
+	
+	<button id="v2_document_icon"
+	image="GreeneCustom\v2_document_icon.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v2_document_icon.htm"/>
+		
+	<button id="v2_callout_table"
+	image="GreeneCustom\v2_callout_table.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="GreeneCustom\v2_callout_table.htm"/>
+
+	<separator showIf=""/>
+							
+   </category> 
+
+<category id="DW_Insertbar_Common" folder="Common">   
+
+	<button id="DW_Hyperlink"
+  	image="Common\Hyperlink.gif"
+	enabled=""
+  	showIf=""
+  	file="Common\Hyperlink.htm"/>  
+
+	<button id="DW_Email"
+	image="Common\E-Mail Link.gif"
+	enabled=""
+	showIf=""
+	file="Common\E-Mail Link.htm"/>  
+        		
+	<button id="DW_Anchor"
+	image="Common\Anchor.gif"
+	enabled=""
+	showIf=""
+	file="Common\Anchor.htm"/>	
+        		
+	<separator showIf=""/>
+        	
+	<button id="DW_Table"
+	image="Common\Table.gif"
+	enabled="!_VIEW_LAYOUT"
+	showIf=""
+	file="Common\Table.htm"/>
+        		
+	<button id="DW_Layer"
+	image="Common\Layer.gif"
+	enabled="!_VIEW_LAYOUT, _VIEW_DESIGN"
+	showIf=""
+	file="Common\Layer.htm"/>
+        
+	<separator showIf=""/>
+        	
+	<button id="DW_Image"
+	image="Common\Image.gif"
+	enabled=""
+	showIf=""
+	file="Common\Image.htm"/>
+        		
+	<button id="DW_ImagePlaceholder"
+	image="Common\Image Placeholder.gif"
+	enabled=""
+	showIf=""
+	file="Common\Image Placeholder.htm"/>
+        	
+	<button id="DW_FWhtml"
+	image="Common\Fireworks HTML.gif"
+	enabled=""
+	showIf=""
+	file="Common\Fireworks HTML.htm"/>
+    		
+	<button id="DW_Media_Flash"
+	image="Media\Flash.gif"
+	enabled=""
+	showIf=""
+	file="Media\Flash.htm"/>
+
+	<button id="DW_Rollover"
+	image="Common\Rollover.gif"
+	enabled=""
+	showIf=""
+	file="Common\Rollover.htm"/>
+        		
+	<button id="DW_NavBar"
+	image="Common\Navigation Bar.gif"
+	enabled=""
+	showIf=""
+	file="Common\Navigation Bar.htm"/>
+        	
+	<separator showIf=""/>
+        	
+	<button id="DW_HR"
+	image="Common\HR.gif"
+	enabled=""
+	showIf=""
+	file="Common\HR.htm"/>
+
+	<button id="DW_Date"
+	image="Common\Date.gif"
+	enabled=""
+	showIf=""
+	file="Common\Date.htm"/>
+        	
+	<button id="DW_TabularData"
+	image="Common\Tabular Data.gif"
+	enabled=""
+	showIf=""
+	file="Common\Tabular Data.htm"/>
+        	
+	<separator />
+  
+ 	<button id="DW_Text_Comment"
+  	 image="Text\Comment.gif"
+  	 enabled=""
+  	 showIf=""
+  	 file="Text\Comment.htm"/>
+  
+	<button id="DW_TagChooser"
+   	 name = "Tag Chooser"
+	 image="Common\Tag Chooser.gif"
+	 enabled=""
+	 showIf=""
+	 command="dw.showTagChooser()"
+	 codeOnly="TRUE"/>	
+   
+   </category> 
+   
+   <category id="DW_Insertbar_Layout" folder="Tools" showIf="">   
+    
+	<button id="DW_Table"
+	image="Common\Table.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	showIf=""
+	file="Common\Table.htm"/>   
+			      
+	<button id="DW_Layer"
+	image="Common\Layer.gif"
+	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="Common\Layer.htm"/> 
+					
+	<separator showIf=""/>	
+			
+	<checkbutton id="DW_StandardView"
+	name = "Standard View"
+	image=""
+	enabled="_VIEW_DESIGN"
+	checked="!_VIEW_LAYOUT"
+	command="dw.getDocumentDOM().setShowLayoutView(false)"/>
+			 
+	<checkbutton id="DW_LayoutView"
+	name="Layout View"
+	image=""
+	enabled="_VIEW_DESIGN"
+	checked="_VIEW_LAYOUT"
+	command="dw.getDocumentDOM().setShowLayoutView(true)"/>
+			 
+	<separator showIf=""/>	
+			 
+	<button id="DW_LayoutTable"
+	image="Tools\Layout Table.gif"
+	enabled="_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="Tools\Layout Table.htm"/>
+
+	<button id="DW_LayoutCell"
+	image="Tools\Layout Cell.gif"
+	enabled="_VIEW_LAYOUT,_VIEW_DESIGN"
+	file="Tools\Layout Cell.htm"/>
+			
+   </category>     
+  
+    <category id="DW_Insertbar_Text" folder="Text" showIf="">   
+	
+	<button id="DW_Text_FontTagEditor"
+	name = "Font Tag Editor"
+	image="Text\FontTagDlg.gif"
+	enabled=""
+	showIf=""
+	tag="font"/>
+    				
+	<button id="DW_Text_Bold"
+	image="Text\Bold.gif"
+	enabled=""
+	showIf=""
+	file="Text\Bold.htm"/>
+
+	<button id="DW_Text_Italic"
+	image="Text\Italic.gif"
+	enabled=""
+	showIf=""
+	file="Text\Italic.htm"/>
+
+	<separator />
+
+	<button id="DW_Text_Strong"
+	image="Text\Strong.gif"
+	enabled=""
+	showIf=""
+	file="Text\Strong.htm"/>
+
+	<button id="DW_Text_Em"
+	image="Text\Em.gif"
+	enabled=""
+	showIf=""
+	file="Text\Em.htm"/>
+
+	<separator />
+			
+	<button id="DW_Text_P"
+	image="Text\P.gif"
+	enabled=""
+	showIf=""
+	file="Text\P.htm"/>
+
+	<button id="DW_Text_Blockquote"
+	image="Text\Blockquote.gif"
+	enabled=""
+	showIf=""
+	file="Text\Blockquote.htm"/>
+
+	<button id="DW_Text_Pre"
+	image="Text\Pre.gif"
+	enabled=""
+	showIf=""
+	file="Text\Pre.htm"/>
+
+	<separator />
+
+	<button id="DW_Text_H1"
+	image="Text\H1.gif"
+	enabled=""
+	showIf=""
+	file="Text\H1.htm"/>
+
+	<button id="DW_Text_H2"
+	image="Text\H2.gif"
+	enabled=""
+	showIf=""
+	file="Text\H2.htm"/>
+
+	<button id="DW_Text_H3"
+	image="Text\H3.gif"
+	enabled=""
+	showIf=""
+	file="Text\H3.htm"/>
+	
+	<separator />
+
+	<button id="DW_Text_UL"
+	image="Text\UL.gif"
+	enabled=""
+	showIf=""
+	file="Text\UL.htm"/>
+
+	<button id="DW_Text_OL"
+	image="Text\OL.gif"
+	enabled=""
+	showIf=""
+	file="Text\OL.htm"/>
+
+	<button id="DW_Text_LI"
+	image="Text\LI.gif"
+	enabled=""
+	showIf=""
+	file="Text\LI.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_Text_DL"
+	image="Text\DL.gif"
+	enabled=""
+	showIf=""
+	file="Text\DL.htm"/>
+
+	<button id="DW_Text_DT"
+	image="Text\DT.gif"
+	enabled=""
+	showIf=""
+	file="Text\DT.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_Text_DD"
+	image="Text\DD.gif"
+	enabled=""
+	showIf=""
+	file="Text\DD.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_Text_Abbr"
+	image="Text\Abbr.gif"
+	enabled=""
+	showIf=""
+	 file="Text\Abbr.htm"
+	 codeOnly="TRUE"/>
+
+	<button id="DW_Text_Acronym"
+	image="Text\Acronym.gif"
+	enabled=""
+	showIf=""
+	file="Text\Acronym.htm"
+	codeOnly="TRUE"/>
+
+   </category>
+
+   <category id="DW_Insertbar_Tables" folder="Tables" showIf="">   
+	
+	<button id="DW_Tables_Table"
+	image="Common\Table.gif"
+	enabled=""
+	showIf=""
+	file="Common\Table.htm"/>
+
+	<separator />
+
+	<button id="DW_Tables_TableTag"
+	image="Tables\TableTag.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+	file="Tables\TableTag.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_Tables_Tr"
+	image="Tables\Tr.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+	file="Tables\Tr.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_Tables_Th"
+	image="Tables\Th.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+	file="Tables\Th.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_Tables_Td"
+	image="Tables\Td.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+	file="Tables\Td.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_Tables_Caption"
+	image="Tables\Caption.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+	file="Tables\Caption.htm"
+	codeOnly="TRUE"/>
+	
+   </category>
+
+   <category id="DW_Insertbar_Frames" folder="Frames" showIf="!_FILE_TEMPLATE">   
+
+	<button id="DW_Frames_Left"
+	image="Frames\Left.gif"
+	enabled=""
+	showIf=""
+	file="Frames\Left.htm"/>
+
+	<button id="DW_Frames_Right"
+	image="Frames\Right.gif"
+	enabled=""
+	showIf=""
+	file="Frames\Right.htm"/>
+
+	<button id="DW_Frames_Top"
+	image="Frames\Top.gif"
+	enabled=""
+	showIf=""
+	file="Frames\Top.htm"/>
+
+	<button id="DW_Frames_Bottom"
+	image="Frames\Bottom.gif"
+	enabled=""
+	showIf=""
+	file="Frames\Bottom.htm"/>
+
+	<button id="DW_Frames_BottomNestedLeft"
+	image="Frames\BottomNestedLeft.gif"
+	enabled=""
+	showIf=""
+	file="Frames\BottomNestedLeft.htm"/>
+
+	<button id="DW_Frames_BottomNestedRight"
+	image="Frames\BottomNestedRight.gif"
+	enabled=""
+	showIf=""
+	file="Frames\BottomNestedRight.htm"/>
+
+	<button id="DW_Frames_LeftNestedBottom"
+	 image="Frames\LeftNestedBottom.gif"
+	 enabled=""
+	 showIf=""
+	file="Frames\LeftNestedBottom.htm"/>
+
+	<button id="DW_Frames_RightNestedBottom"
+	 image="Frames\RightNestedBottom.gif"
+	 enabled=""
+	 showIf=""
+	file="Frames\RightNestedBottom.htm"/>
+
+	<button id="DW_Frames_TopandBottom"
+	 image="Frames\TopandBottom.gif"
+	 enabled=""
+	 showIf=""
+	file="Frames\TopandBottom.htm"/>
+
+	<button id="DW_Frames_LeftNestedTop"
+	image="Frames\LeftNestedTop.gif"
+	enabled=""
+	showIf=""
+	file="Frames\LeftNestedTop.htm"/>
+
+	<button id="DW_Frames_RightNestedTop"
+	 image="Frames\RightNestedTop.gif"
+	 enabled=""
+	 showIf=""
+	file="Frames\RightNestedTop.htm"/>
+
+	<button id="DW_Frames_TopNestedLeft"
+	image="Frames\TopNestedLeft.gif"
+	enabled=""
+	showIf=""
+	file="Frames\TopNestedLeft.htm"/>
+
+	<button id="DW_Frames_TopNestedRight"
+	 image="Frames\TopNestedRight.gif"
+	 enabled=""
+	 showIf=""
+	file="Frames\TopNestedRight.htm"/>
+
+	<separator />
+
+	<button id="DW_Frames_Frameset"
+	image="Frames\Frameset.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+ 	file="Frames\Frameset.htm"/>
+
+	<button id="DW_Frames_Frame"
+	image="Frames\Frame.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+    	file="Frames\Frame.htm"/>
+
+	<button id="DW_Frames_Iframe"
+	image="Frames\Iframe.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+  	file="Frames\Iframe.htm"/>
+
+	<button id="DW_Frames_Noframes"
+	image="Frames\Noframes.gif"
+	enabled="_VIEW_CODE"
+	showIf=""
+ 	file="Frames\Noframes.htm"/>
+
+</category>
+
+<category id="DW_Insertbar_Forms" folder="Forms">   
+	
+	<button id="DW_Forms_Form"
+	image="Forms\Form.gif"
+	enabled=""
+	file="Forms\Form.htm"
+	tag="form"/>
+
+	<separator />
+
+	<button id="DW_Forms_TextField"
+	image="Forms\Text Field.gif"
+	enabled=""
+	file="Forms\Text Field.htm"
+	tag="input type=&quot;text&quot;" />
+
+	<button id="DW_Forms_Hidden"
+	image="Forms\Hidden Field.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Hidden Field.htm"
+	tag="input type=&quot;hidden&quot;" />
+
+	<button id="DW_Forms_TextareaTag"
+	image="Forms\Textarea.gif"
+	enabled=""
+	file="Forms\Textarea.htm"
+	tag="textarea" />
+	
+	<separator />
+
+	<button id="DW_Forms_Checkbox"
+	image="Forms\Checkbox.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Checkbox.htm"
+	tag="input type=&quot;checkbox&quot;" />
+
+	<button id="DW_Forms_Radio"
+	image="Forms\Radio.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Radio.htm"
+	tag="input type=&quot;radio&quot;" />
+
+
+	<button id="DW_Forms_RadioGroup"
+	image="Forms\Radio Group.gif"
+	enabled=""
+	file="Forms\Radio Group.htm"/>
+
+	<separator />
+
+	<button id="DW_Forms_ListMenu"
+	image="Forms\List Menu.gif"
+	enabled=""
+	showIf=""
+	file="Forms\List Menu.htm"
+	tag="select"/>
+
+	<button id="DW_Forms_JumpMenu"
+	image="Forms\Jump Menu.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Jump Menu.htm"/>
+
+	<separator />
+
+	<button id="DW_Forms_ImageField"
+	image="Forms\Image Field.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Image Field.htm"
+	tag="input type=&quot;image&quot;" />
+
+
+	<button id="DW_Forms_FileField"
+	image="Forms\File Field.gif"
+	enabled=""
+	showIf=""
+	file="Forms\File Field.htm"
+	tag="input type=&quot;file&quot;" />
+
+	<button id="DW_Forms_Button"
+	image="Forms\Button.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Button.htm"
+	tag="input type=&quot;button&quot;" />
+
+	<separator  />
+
+	<button id="DW_Forms_Label"
+	image="Forms\Label.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Label.htm"
+	codeOnly="TRUE"/>
+  
+	<button id="DW_Forms_Fieldset"
+	image="Forms\Fieldset.gif"
+	enabled=""
+	showIf=""
+	file="Forms\Fieldset.htm"
+	codeOnly="TRUE"/>
+	
+   </category>
+
+   <category id="DW_Insertbar_Templates" folder="Templates" showIf="">   
+  
+	<button id="DW_MakeTemplate"
+	image="Templates\MakeTemplate.gif"
+	enabled=""
+	showIf=""
+	file="Templates\MakeTemplate.htm"/>
+	
+	 <button id="DW_MakeNestedTemplate"
+	image="Templates\MakeNestedTemplate.gif"
+	enabled=""
+	showIf=""
+	file="Templates\MakeNestedTemplate.htm"/> 
+	
+	<separator showIf=""/>	
+
+	<button id="DW_EditableRegion"
+	image="Templates\Editable.gif"
+	enabled=""
+	showIf=""
+	file="Templates\Editable.htm"/>   
+	        
+	<button id="DW_OptionalRegion"
+	image="Templates\Optional.gif"
+	enabled=""
+	file="Templates\Optional.htm"/> 
+	
+	<button id="DW_RepeatingRegion"
+	image="Templates\Repeating.gif"
+	enabled=""
+	file="Templates\Repeating.htm"/> 
+
+	<separator showIf=""/>	
+			
+	<button id="DW_OptionalRegionWithEdit"
+	image="Templates\OptionalWithEdit.gif"
+	enabled=""
+	file="Templates\OptionalWithEdit.htm"/> 
+
+   	<button id="DW_RepeatingTable"
+	image="Templates\RepeatingTable.gif"
+	enabled=""
+	file="Templates\RepeatingTable.htm"/> 
+    
+    </category>    
+   
+   <category id="DW_Insertbar_Characters" folder="Characters">   
+	
+	<button id="DW_Chars_BR"
+	image="Characters\Line Break.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Line Break.htm"/>
+
+	<button id="DW_Chars_NBSP"
+	image="Characters\NBSP.gif"
+	enabled=""
+	showIf=""
+	file="Characters\NBSP.htm"/>
+
+	<button id="DW_Chars_LeftQuote"
+	image="Characters\Left Quote.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Left Quote.htm"/>
+
+	<button id="DW_Chars_RightQuote"
+	image="Characters\Right Quote.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Right Quote.htm"/>
+
+	<button id="DW_Chars_EmDash"
+	image="Characters\Em-Dash.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Em-Dash.htm"/>
+
+	<separator />
+
+	<button id="DW_Chars_Pound"
+	image="Characters\Pound.gif"
+	enabled=""
+	showIf=""
+	 file="Characters\Pound.htm"/>
+
+	<button id="DW_Chars_Euro"
+	image="Characters\Euro.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Euro.htm"/>
+
+	<button id="DW_Chars_Yen"
+	image="Characters\Yen.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Yen.htm"/>
+
+	<separator />
+
+	<button id="DW_Chars_Copyright"
+	image="Characters\Copyright.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Copyright.htm"/>
+
+	<button id="DW_Chars_Registered"
+	image="Characters\Registered.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Registered.htm"/>
+
+	<button id="DW_Chars_Trademark"
+	image="Characters\Trademark.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Trademark.htm"/>
+
+	<separator />
+
+	<button id="DW_Chars_Other"
+	image="Characters\Other.gif"
+	enabled=""
+	showIf=""
+	file="Characters\Other.htm"/>
+	
+</category>
+
+<category id="DW_Insertbar_Media" folder="Media">   
+	
+	<button id="DW_Media_Flash"
+	image="Media\Flash.gif"
+	enabled=""
+	showIf=""
+	file="Media\Flash.htm"/>
+
+	<button id="DW_Media_FlashButton"
+	image="Media\Flash Button.gif"
+	enabled=""
+	showIf=""
+	file="Media\Flash Button.htm"/>
+
+	<button id="DW_Media_FlashText"
+	image="Media\Flash Text.gif"
+	enabled=""
+	showIf=""
+	file="Media\Flash Text.htm"/>
+
+	<button id="DW_Media_Shockwave"
+	image="Media\Shockwave.gif"
+	enabled=""
+	showIf=""
+	file="Media\Shockwave.htm"/>
+
+	<separator />
+
+	<button id="DW_Media_Applet"
+	image="Media\Applet.gif"
+	enabled=""
+	showIf=""
+	file="Media\Applet.htm"/>
+	
+ 	<button id="DW_Media_Param"
+	 name="param"
+   	image="Media\Param.gif"
+   	enabled=""
+   	showIf=""
+   	tag="param"
+   	codeOnly="TRUE"/>
+	
+	<button id="DW_Media_ActiveX"
+	image="Media\ActiveX.gif"
+	enabled=""
+	showIf=""
+	file="Media\ActiveX.htm"/>
+	
+    	<separator />
+  
+	<button id="DW_Media_Plugin"
+	image="Media\Plugin.gif"
+	enabled=""
+	showIf=""
+	file="Media\Plugin.htm"/>
+	
+</category>
+	
+<category id="DW_Insertbar_Head" folder="Head">   
+	<button id="DW_Head_Meta"
+	image="Head\Meta.gif"
+	enabled=""
+	showIf=""
+	file="Head\Meta.htm"/>
+
+	<button id="DW_Head_Keywords"
+	image="Head\Keywords.gif"
+	enabled=""
+	showIf=""
+	file="Head\Keywords.htm"/>
+
+	<button id="DW_Head_Description"
+	image="Head\Description.gif"
+	enabled=""
+	showIf=""
+	file="Head\Description.htm"/>
+
+	<button id="DW_Head_Refresh"
+	image="Head\Refresh.gif"
+	enabled=""
+	showIf=""
+	file="Head\Refresh.htm"/>
+
+	<button id="DW_Head_Base"
+	image="Head\Base.gif"
+	enabled=""
+	showIf=""
+	file="Head\Base.htm"/>
+
+	<button id="DW_Head_Link"
+	image="Head\Link.gif"
+	enabled=""
+	showIf=""
+	file="Head\Link.htm"/>
+	
+   </category>
+	
+   <category id="DW_Insertbar_Script" folder="Script"> 
+   
+	<button id="DW_Script_Script"
+	name="Script"
+	image="Script\Script.gif"
+	enabled=""
+	showIf=""
+	file="Script\Script.htm"/>
+
+	<button id="DW_Script_Noscript"
+	name="noscript"
+	image="Script\Noscript.gif"
+	enabled=""
+	showIf=""
+	tag="noscript"
+	codeOnly="TRUE"/>
+
+	<button id="DW_Script_SSI"
+	image="Script\SSI.gif"
+	enabled=""
+	showIf=""
+	file="Script\SSI.htm"/>
+	
+   </category>
+	
+   <category id="DW_Insertbar_CFMLBasic" folder="CFML Basic" showIf="_SERVERMODEL_CFML"> 
+      
+   	<button id="DW_CFML_ServerVariables"
+	image="Server\ServerVariables.gif"
+	enabled=""
+	showIf=""
+	file="Server\ServerVariables.htm"
+	codeOnly="TRUE"/>
+	
+	<separator />
+   
+  <button id="DW_CFML_CFQuery"
+  name="cfquery"
+	image="CFML Basic\Cfquery.gif"
+	enabled=""
+	showIf=""
+	tag="cfquery"
+	codeOnly="TRUE"/>
+   
+  <button id="DW_CFML_CFOutput"
+  name="cfoutput"
+	image="CFML Basic\Cfoutput.gif"
+	enabled=""
+	showIf=""
+	tag="cfoutput"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFInsert"
+	name="cfinsert"
+	image="CFML Basic\Cfinsert.gif"
+	enabled=""
+	showIf=""
+	tag="cfinsert"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFUpdate"
+	name="cfupdate"
+	image="CFML Basic\Cfupdate.gif"
+	enabled=""
+	showIf=""
+	tag="cfupdate"
+	codeOnly="TRUE"/>
+   	
+   	<separator />
+   	
+   	<button id="DW_CFML_CFInclude"
+	name="cfinclude"
+	image="CFML Basic\Cfinclude.gif"
+	enabled=""
+	showIf=""
+	tag="cfinclude"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFLocation"
+	name="cflocation"
+	image="CFML Basic\Cflocation.gif"
+	enabled=""
+	showIf=""
+	tag="cflocation"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_Cfset"
+	name="cfset"
+	image="CFML Basic\Cfset.gif"
+	enabled=""
+	showIf=""
+	file="CFML Basic\Cfset.htm"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFParam"
+	name="cfparam"
+	image="CFML Basic\Cfparam.gif"
+	enabled=""
+	showIf=""
+	tag="cfparam"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_Cfcomment"
+	image="CFML Basic\Cfcomment.gif"
+	enabled=""
+	showIf=""
+	file="CFML Basic\Cfcomment.htm"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_PoundSign"
+	image="CFML Basic\PoundSign.gif"
+	enabled=""
+	showIf=""
+	file="CFML Basic\PoundSign.htm"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFscript"
+	name="cfscript"
+	image="CFML Basic\Cfscript.gif"
+	enabled=""
+	showIf=""
+	tag="cfscript"
+	codeOnly="TRUE"/>
+   	
+   </category>
+   
+   <category id="DW_Insertbar_CFMLFlow" folder="CFML Flow" showIf="_SERVERMODEL_CFML"> 
+      
+   	<button id="DW_CFML_CFTry"
+	name="cftry"
+	image="CFML Flow\Cftry.gif"
+	enabled=""
+	showIf=""
+	tag="cftry"
+	codeOnly="TRUE"/>
+   
+   	<button id="DW_CFML_CFCatch"
+	name="cfcatch"
+	image="CFML Flow\Cfcatch.gif"
+	enabled=""
+	showIf=""
+	tag="cfcatch"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFThrow"
+	name="cfthrow"
+	image="CFML Flow\Cfthrow.gif"
+	enabled=""
+	showIf=""
+	tag="cfthrow"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFLock"
+	name="cflock"
+	image="CFML Flow\Cflock.gif"
+	enabled=""
+	showIf=""
+	tag="cflock"
+	codeOnly="TRUE"/>
+	
+	<separator />
+
+	<button id="DW_CFML_CFSwitch"
+	name="cfswitch"
+	image="CFML Flow\Cfswitch.gif"
+	enabled=""
+	showIf=""
+	tag="cfswitch"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFCase"
+	name="cfcase"
+	image="CFML Flow\Cfcase.gif"
+	enabled=""
+	showIf=""
+	tag="cfcase"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_Cfdefaultcase"
+	image="CFML Flow\Cfdefaultcase.gif"
+	enabled=""
+	showIf=""
+	file="CFML Flow\Cfdefaultcase.htm"
+	codeOnly="TRUE"/>
+	
+	<separator />
+   
+   	<button id="DW_CFML_Cfif"
+	image="CFML Flow\Cfif.gif"
+	enabled=""
+	showIf=""
+	file="CFML Flow\Cfif.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_CFML_Cfelse"
+	image="CFML Flow\Cfelse.gif"
+	enabled=""
+	showIf=""
+	file="CFML Flow\Cfelse.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_CFML_Cfelseif"
+	image="CFML Flow\Cfelseif.gif"
+	enabled=""
+	showIf=""
+	file="CFML Flow\Cfelseif.htm"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFLoop"
+	name="cfloop"
+	image="CFML Flow\Cfloop.gif"
+	enabled=""
+	showIf=""
+	tag="cfloop"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFBreak"
+	name="cfbreak"
+	image="CFML Flow\Cfbreak.gif"
+	enabled=""
+	showIf=""
+	tag="cfbreak"
+	codeOnly="TRUE"/>
+   	
+   </category>
+   
+   <category id="DW_Insertbar_CFMLAdvanced" folder="CFML Advanced" showIf="_SERVERMODEL_CFML"> 
+         
+      	<button id="DW_CFML_Cfcookie"
+      	name="cfcookie"
+	image="CFML Advanced\Cfcookie.gif"
+	enabled=""
+	showIf=""
+	tag="cfcookie"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CfContent"
+	name="cfcontent"
+	image="CFML Advanced\Cfcontent.gif"
+	enabled=""
+	showIf=""
+	tag="cfcontent"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CfHeader"
+	name="cfheader"
+	image="CFML Advanced\Cfheader.gif"
+	enabled=""
+	showIf=""
+	tag="cfheader"
+	codeOnly="TRUE"/>
+
+	<button id="DW_CFML_PageEncoding"
+	image="CFML Advanced\CFPageEncoding.gif"
+	enabled=""
+	showIf=""
+	file="CFML Advanced\CFPageEncoding.htm"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFApplication"
+	name="cfapplication"
+	image="CFML Advanced\Cfapplication.gif"
+	enabled=""
+	showIf=""
+	tag="cfapplication"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFError"
+	name="cferror"
+	image="CFML Advanced\Cferror.gif"
+	enabled=""
+	showIf=""
+	tag="cferror"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+      	<button id="DW_CFML_CFDirectory"
+	name="cfdirectory"
+	image="CFML Advanced\Cfdirectory.gif"
+	enabled=""
+	showIf=""
+	tag="cfdirectory"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFFile"
+	name="cffile"
+	image="CFML Advanced\Cffile.gif"
+	enabled=""
+	showIf=""
+	tag="cffile"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFMail"
+	name="cfmail"
+	image="CFML Advanced\Cfmail.gif"
+	enabled=""
+	showIf=""
+	tag="cfmail"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFPop"
+	name="cfpop"
+	image="CFML Advanced\Cfpop.gif"
+	enabled=""
+	showIf=""
+	tag="cfpop"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFHtpp"
+	name="cfhttp"
+	image="CFML Advanced\Cfhttp.gif"
+	enabled=""
+	showIf=""
+	tag="cfhttp"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFHttpParam"
+	name="cfhttpparam"
+	image="CFML Advanced\Cfhttpparam.gif"
+	enabled=""
+	showIf=""
+	tag="cfhttpparam"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFDlap"
+	name="cfldap"
+	image="CFML Advanced\Cfldap.gif"
+	enabled=""
+	showIf=""
+	tag="cfldap"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFFtp"
+	name="cfftp"
+	image="CFML Advanced\Cfftp.gif"
+	enabled=""
+	showIf=""
+	tag="cfftp"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFSearch"
+	name="cfsearch"
+	image="CFML Advanced\Cfsearch.gif"
+	enabled=""
+	showIf=""
+	tag="cfsearch"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFIndex"
+	name="cfindex"
+	image="CFML Advanced\Cfindex.gif"
+	enabled=""
+	showIf=""
+	tag="cfindex"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFModule"
+	name="cfmodule"
+	image="CFML Advanced\Cfmodule.gif"
+	enabled=""
+	showIf=""
+	tag="cfmodule"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_CFML_CFObject"
+	name="cfobject"
+	image="CFML Advanced\Cfobject.gif"
+	enabled=""
+	showIf=""
+	tag="cfobject"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_CFML_CFChart"
+	name="cfchart"
+	image="CFML Advanced\Cfchart.gif"
+	enabled=""
+	showIf=""
+	tag="cfchart"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_TagChooser"
+	name = "More Tags..."
+	image="Common\Tag Chooser.gif"
+	enabled=""
+	showIf=""
+	command="dw.showTagChooser()"
+	codeOnly="TRUE"/>
+	
+   </category>
+		
+   <category id="DW_Insertbar_ASP" folder="ASP" showIf="_SERVERMODEL_ASP">   
+	<button id="DW_ASP_ServerVariables"
+	image="Server\ServerVariables.gif"
+	enabled=""
+	showIf=""
+	file="Server\ServerVariables.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_Include"
+	image="ASP\ASPInclude.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPInclude.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_ASP_CodeBlock"
+	image="ASP\ASPTag.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPTag.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_Output"
+	image="ASP\ASPOutput.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPOutput.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_ASP_If"
+	image="ASP\ASPIf.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPIf.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_Else"
+	image="ASP\ASPElse.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPElse.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_ASPElseIf"
+	image="ASP\ASPElseIf.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPElseIf.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_End"
+	image="ASP\ASPEnd.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPEnd.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_ASP_ResponseWrite"
+	image="ASP\ASPResponseWrite.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPResponseWrite.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_TrimFormEl"
+	image="ASP.NET\TrimFormEl.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPTrimFormEl.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASP_TrimQueryStr"
+	image="ASP.NET\TrimQueryStr.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPTrimQueryStrEl.htm"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_ASP_ServerCreateObj"
+	image="ASP\ASPServerCreateObj.gif"
+	enabled=""
+	showIf=""
+	file="ASP\ASPServerCreateObj.htm"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_TagChooser"
+	name = "More Tags..."
+	image="Common\Tag Chooser.gif"
+	enabled=""
+	showIf=""
+	command="dw.showTagChooser()"
+	codeOnly="TRUE"/>
+	
+   </category>
+	
+   <category id="DW_Insertbar_ASPNET" folder="ASP.NET" showIf="_SERVERMODEL_ASPNET">   
+
+	<button id="DW_ASPNET_RegisterCustomTag"
+	image="ASP.NET\RegisterCustomTag.gif"
+	enabled=""
+	showIf=""
+	 file="ASP.NET\RegisterCustomTag.htm"
+	 codeOnly="TRUE"/>
+
+	<button id="DW_ASPNET_ImportNamespace"
+	image="ASP.NET\ImportNamespace.gif"
+	enabled=""
+	showIf=""
+	file="ASP.NET\ImportNamespace.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_ASPNET_TrimFormEl"
+	image="ASP.NET\TrimFormEl.gif"
+	enabled=""
+	showIf=""
+	file="ASP.NET\TrimFormEl.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASPNET_TrimQueryStr"
+	image="ASP.NET\TrimQueryStr.gif"
+	enabled=""
+	showIf=""
+	file="ASP.NET\TrimQueryStr.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASPNET_RunatServer"
+	image="ASP.NET\RunatServer.gif"
+	enabled=""
+	showIf=""
+	file="ASP.NET\RunatServer.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASPNET_BoundData"
+	image="ASP.NET\BoundData.gif"
+	enabled=""
+	showIf=""
+	file="ASP.NET\BoundData.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_ASPNET_PageLoad"
+	image="ASP.NET\Page_Load.gif"
+	enabled=""
+	showIf=""
+	file="ASP.NET\Page_Load.htm"
+	codeOnly="TRUE"/>
+	
+	<separator />
+	
+	<button id="DW_ASPNET_ASPButton"
+	name="asp:button"
+	image="ASP.NET/button.gif"
+	enabled=""
+	showIf=""
+	tag="asp:button"/>
+	
+	<button id="DW_ASPNET_ASPCheckbox"
+	name="asp:checkbox"
+	image="ASP.NET/checkbox.gif"
+	enabled=""
+	showIf=""
+	tag="asp:checkbox"/>
+	
+	<button id="DW_ASPNET_ASPCheckboxlist"
+	name="asp:checkboxlist"
+	image="ASP.NET/checkboxList.gif"
+	enabled=""
+	showIf=""
+	tag="asp:checkboxlist"/>
+	
+	<button id="DW_ASPNET_ASPDropdownlist"
+	name="asp:dropdownlist"
+	image="ASP.NET/dropDownList.gif"
+	enabled=""
+	showIf=""
+	tag="asp:dropdownlist"/>
+	
+	<button id="DW_ASPNET_ASPImagebutton"
+	name="asp:imagebutton"
+	image="ASP.NET/ImageASP.gif"
+	enabled=""
+	showIf=""
+	tag="asp:imagebutton"/>
+	
+	<button id="DW_ASPNET_ASPLabel"
+	name="asp:label"
+	image="ASP.NET/label.gif"
+	enabled=""
+	showIf=""
+	tag="asp:label"/>
+	
+	<button id="DW_ASPNET_ASPListbox"
+	name="asp:listbox"
+	image="ASP.NET/listBox.gif"
+	enabled=""
+	showIf=""
+	tag="asp:listbox"/>
+	
+	<button id="DW_ASPNET_ASPRadiobutton"
+	name="asp:radiobutton"
+	image="ASP.NET/radioButton.gif"
+	enabled=""
+	showIf=""
+	tag="asp:radiobutton"/>
+	
+	<button id="DW_ASPNET_ASPRadiobuttonlist"
+	name="asp:radiobuttonlist"
+	image="ASP.NET/radioButtonList.gif"
+	enabled=""
+	showIf=""
+	tag="asp:radiobuttonlist"/>
+	
+	<button id="DW_ASPNET_ASPTextbox"
+	name="asp:textbox"
+	image="ASP.NET/textBox.gif"
+	enabled=""
+	showIf=""
+	tag="asp:textbox"/>
+	
+	<button id="DW_TagChooser"
+	name = "More Tags..."
+	image="Common\Tag Chooser.gif"
+	enabled=""
+	showIf=""
+	command="dw.showTagChooser()"
+	codeOnly="TRUE"/>
+	
+   </category>
+	
+   <category id="DW_Insertbar_JSP" folder="JSP" showIf="_SERVERMODEL_JSP">   
+	
+	<button id="DW_JSP_Page"
+	name="Page Directive"
+	image="JSP\JSPPage.gif"
+	enabled=""
+	showIf=""
+	tag="%@ page %"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_AtInclude"
+	image="JSP\JSPAtInclude.gif"
+	enabled=""
+	name="Include Directive"
+	showIf=""
+	tag="%@ include %"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Taglib"
+	image="JSP\JSPTaglib.gif"
+	name="Taglib Directive"
+	enabled=""
+	showIf=""
+	tag="%@ taglib %"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_JSP_Declaration"
+	image="JSP\JSPDeclaration.gif"
+	enabled=""
+	showIf=""
+	file="JSP\JSPDeclaration.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Scriptlet"
+	image="JSP\JSPScriptlet.gif"
+	enabled=""
+	showIf=""
+	file="JSP\JSPScriptlet.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Expression"
+	image="JSP\JSPExpression.gif"
+	enabled=""
+	showIf=""
+	file="JSP\JSPExpression.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_JSP_UseBean"
+	name="JSP Use Bean"
+	image="JSP\JSPUseBean.gif"
+	enabled=""
+	showIf=""
+	tag="jsp:useBean/"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_SetProperty"
+	name="JSP Set Property"
+	image="JSP\JSPSetProperty.gif"
+	enabled=""
+	showIf=""
+	tag="jsp:setProperty/"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_GetProperty"
+	name="JSP Get Property"
+	image="JSP\JSPGetProperty.gif"
+	enabled=""
+	showIf=""
+	tag="jsp:getProperty /"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_JSPInclude"
+	name="JSP Include"
+	image="JSP\JSPInclude.gif"
+	enabled=""
+	showIf=""
+	tag="jsp:include /"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Forward"
+	image="JSP\JSPForward.gif"
+	name="JSP Forward"
+	enabled=""
+	showIf=""
+	tag="jsp:forward /"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Params"
+	name="JSP Params"
+	image="JSP\JSPParams.gif"
+	enabled=""
+	showIf=""
+	file="JSP\JSPParams.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Param"
+	name="JSP Param"
+	image="JSP\JSPParam.gif"
+	enabled=""
+	showIf=""
+	tag="jsp:param /"
+	codeOnly="TRUE"/>
+
+	<button id="DW_JSP_Plugin"
+	name="JSP Plugin"
+	image="JSP\JSPPlugin.gif"
+	enabled=""
+	showIf=""
+	tag="jsp:plugin /"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_JSP_Comment"
+	image="JSP\JSPComment.gif"
+	enabled=""
+	showIf=""
+	file="JSP\JSPComment.htm"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_TagChooser"
+	name = "More Tags..."
+	image="Common\Tag Chooser.gif"
+	enabled=""
+	showIf=""
+	command="dw.showTagChooser()"
+	codeOnly="TRUE"/>
+	
+   </category>
+		
+   <category id="DW_Insertbar_PHP" folder="PHP" showIf="_SERVERMODEL_PHP">   
+	<button id="DW_PHP_FormVars"
+	image="PHP\PHPFormVars.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPFormVars.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_GetVars"
+	image="PHP\PHPGetVars.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPGetVars.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_SessionVars"
+	image="PHP\PHPSessionVars.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPSessionVars.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_CookieVars"
+	image="PHP\PHPCookieVars.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPCookieVars.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_PHP_Include"
+	image="PHP\PHPInclude.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPInclude.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_Require"
+	image="PHP\PHPRequire.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPRequire.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_PHP_CodeBlock"
+	image="PHP\PHPTag.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPTag.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_Output"
+	image="PHP\PHPOutput.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPOutput.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_Comment"
+	image="PHP\PHPComment.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPComment.htm"
+	codeOnly="TRUE"/>
+
+	<separator />
+
+	<button id="DW_PHP_If"
+	image="PHP\PHPIf.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPIf.htm"
+	codeOnly="TRUE"/>
+
+	<button id="DW_PHP_Else"
+	image="PHP\PHPElse.gif"
+	enabled=""
+	showIf=""
+	file="PHP\PHPElse.htm"
+	codeOnly="TRUE"/>
+	
+	<button id="DW_TagChooser"
+	name = "More Tags..."
+	image="Common\Tag Chooser.gif"
+	enabled=""
+	showIf=""
+	command="dw.showTagChooser()"
+	codeOnly="TRUE"/>
+
+   </category>
+		
+   <category id="DW_Insertbar_Server" folder="Server">  
+	<button id="DW_Server_Recordset"
+	 enabled=""
+	 showIf="!_SERVERMODEL_ASPNET"
+	file="Server\Recordset.htm"/>
+
+	<button id="DW_Server_DataSet"
+	image="Server\Recordset.gif"
+	 enabled=""
+	 showIf="_SERVERMODEL_ASPNET"
+	file="Server\DataSet.htm"/>
+
+	<button id="DW_Server_RepeatedRegion"
+	 enabled=""
+	 showIf=""
+	file="Server\RepeatedRegion.htm"/>
+
+	<separator />
+
+	<button id="DW_ASPNET_DataGrid"
+	image="Server\DynamicTable.gif"
+	enabled=""
+	showIf="_SERVERMODEL_ASPNET"
+	file="ASP.NET\DataGrid.htm"/>
+
+	<button id="DW_ASPNET_DataList"
+	image="ASP.NET\DataList.gif"
+	enabled=""
+	showIf="_SERVERMODEL_ASPNET"
+	file="ASP.NET\DataList.htm"/>
+
+	<button id="DW_Server_DynamicTable"
+	enabled=""
+	showIf="!_SERVERMODEL_ASPNET,!_SERVERMODEL_CFML_UD4"
+	file="Server\DynamicTable.htm"/>
+
+	<button id="DW_Server_DynamicText"
+	enabled=""
+	showIf=""
+	file="Server\DynamicText.htm"/>
+
+	<separator />
+
+	<button id="DW_Server_RecordsetNavigation"
+	image="Server\RecordsetNavigation.gif"
+	enabled=""
+	showIf="!_SERVERMODEL_ASPNET"
+	file="Server\RecordsetNavigation.htm"/>
+
+	<button id="DW_Server_RecordsetNavigation"
+	image="Server\RecordsetNavigation.gif"
+	enabled=""
+	showIf="_SERVERMODEL_ASPNET"
+	file="Server\DataSetNavigation.htm"/>
+
+	<button id="DW_Server_RecordsetStatistics"
+	image="Server\RecordsetStatistics.gif"
+	enabled=""
+	showIf="!_SERVERMODEL_ASPNET"
+	file="Server\RecordsetStatistics.htm"/>
+
+	<button id="DW_Server_RecordsetStatistics"
+	image="Server\RecordsetStatistics.gif"
+	enabled=""
+	showIf="_SERVERMODEL_ASPNET"
+	file="Server\DataSetStatistics.htm"/>
+
+    <separator />
+
+	<button id="DW_Server_MasterDetail"
+	image="Server\MasterDetail.gif"
+	enabled=""
+	showIf="!_SERVERMODEL_ASPNET,!_SERVERMODEL_PHP"
+	file="Server\MasterDetail.htm"/>
+
+	<button id="DW_Server_InsertRecord"
+	image="Server\Insert Record.gif"
+	enabled=""
+	showIf=""
+	file="Server\Insert Record.htm"/>
+
+	<button id="DW_Server_UpdateRecord"
+	image="Server\Update Record.gif"
+	enabled=""
+	showIf=""
+	file="Server\Update Record.htm"/>
+	
+   </category>
+	
+</insertbar>

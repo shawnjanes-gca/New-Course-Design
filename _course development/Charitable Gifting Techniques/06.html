@@ -1,0 +1,200 @@
+<html>
+<head>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function showHideImg(hideImg,showImg){
+ document.getElementById(hideImg).style.display="none"; 
+ document.getElementById(showImg).style.display="block";
+     
+}
+
+function reset_btn(){
+	document.getElementById("img1").style.display="block";
+	document.getElementById("img2").style.display="none";
+	document.getElementById("img3").style.display="none";
+	document.getElementById("img4").style.display="none";
+	
+	}
+	
+function reset_btn1(){
+	document.getElementById("img5").style.display="block";
+	document.getElementById("img6").style.display="none";
+	document.getElementById("img7").style.display="none";
+	document.getElementById("img8").style.display="none";
+	
+	}	
+//-->
+</script>
+<link href="css/TC_GCA.css" rel="stylesheet" type="text/css">
+<script LANGUAGE="javascript" SRC="js/courseWork.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Gifts of Future Interest</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>It is possible to take an income tax deduction on gifts that are of a future interest. In other words, the gift is irrevocably made today, but the charity will not receive the asset until some future point in time. These gifts, though, must satisfy certain requirements, as described in the Internal Revenue Code (some of which will be discussed later in this course).</p>
+<p>If the gift is for a fixed amount, let's say $100,000, it is certainly worth less to the charity than it would be if the transfer were made today. If the charity received the gift today, it could invest the money and generate additional income. This is income that it forfeits by not receiving the money until some future time.</p>
+<p>This is illustrated in the pie diagrams below. In this scenario, assume the current interest rate is 10%. The donor wishes to irrevocably gift $100,000 to a charity. This property is to be held in trust for three years, during which time the donor receives the interest. At the end of three years, the charity is to receive the $100,000. Look at this scenario first from the perspective of the donor; then from the perspective of the charity.</p>
+<p><span style="color: #ff0000;"><strong>Move your mouse pointer in numerical order to the red buttons below and left-click them to look at this scenario from the donor's perspective.</strong></span></p>
+<p><strong><span style="color: #000099;">The donor wishes to make a gift of a future interest in $100,000 to a charity. The donor irrevocably gifts the $100,000 today, but for three years he retains the interest earned on the money. At the end of the three years the charity receives the $100,000 outright. Assume that the current interest rate is 10%. <br /> <br /> </span></strong></p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<div style="position: relative;"><img id="img1" src="greene/charitable/images/charitableGifts_1.gif" alt="#" width="465" height="255" usemap="#img1Map" border="0" /> <img id="img2" style="display: none;" src="greene/charitable/images/charitableGifts_2.gif" alt="#" width="465" height="255" usemap="#img2Map" /> <img id="img3" style="display: none;" src="greene/charitable/images/charitableGifts_3.gif" alt="#" width="465" height="255" usemap="#img3Map" /> <img id="img4" style="display: none;" src="greene/charitable/images/charitableGifts_4.gif" alt="#" width="465" height="255" usemap="#img4Map" />
+<div id="Layer2" style="position: absolute; width: 225px; height: 36px; z-index: 1; left: 530px; top: 0px; visibility: hidden;">
+<p><strong><span style="color: #000099;">1. At the end of year 1, the donor receives $10,000 of interest. The value of the gift is still $100,000.</span></strong></p>
+</div>
+<div id="Layer3" style="position: absolute; width: 225px; height: 36px; z-index: 1; left: 530px; top: 0px; visibility: hidden;">
+<p><strong><span style="color: #000099;">2. At the end of year 2, the donor receives a second $10,000, while the value of the gift remains at $100,000.</span></strong></p>
+</div>
+<div id="Layer4" style="position: absolute; width: 225px; height: 36px; z-index: 1; left: 530px; top: 0px; visibility: hidden;">
+<p><strong><span style="color: #000099;">3. At the end of year 3, the donor receives the final $10,000 of income and the $100,000 gift is finally owned outright by the charity.</span> </strong></p>
+</div>
+</div>
+</blockquote>
+<blockquote><input id="button" onclick="reset_btn(); MM_showHideLayers('Layer2','','hide','Layer3','','hide','Layer4','','hide')" type="button" name="button" value="Reset" /></blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p><br />From the donor's perspective, he initially gifts $100,000 and the value of the gift never changes until the charity receives it. He would like to claim a $100,000 income tax deduction. But was the present value of his gift really worth $100,000? To answer that question, let's look at it from the charity's perspective. We will start with the end of the third year when the charity receives the $100,000 and work our way backward to determine what amount would provide the same benefit to the charity if it were given outright to the charity today instead of in three years. We will assume that the charity could earn 10% each year on the preceding balance.</p>
+<p><span style="color: #ff0000;"><strong>Move your mouse pointer in numerical order to the red buttons below and left-click them to look at this scenario from the donor's perspective.</strong></span></p>
+<p><strong><span style="color: #000099;">Let's start with the end of the third year when the charity is to receive the $100,000 and work our way backward to determine what amount would provide the same benefit to the charity if it were given outright to the charity today instead of in three years. We will assume that 10% could be earned each year on the money.</span></strong></p>
+<p>&nbsp;</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<div style="position: relative;">
+<blockquote><img id="img5" src="greene/charitable/images/charitableGifts_21.gif" alt="#" width="478" height="255" usemap="#img5Map" border="0" /> <img id="img6" style="display: none;" src="greene/charitable/images/charitableGifts_22.gif" alt="#" width="478" height="255" usemap="#img6Map" /> <img id="img7" style="display: none;" src="greene/charitable/images/charitableGifts_23.gif" alt="#" width="478" height="255" usemap="#img7Map" /> <img id="img8" style="display: none;" src="greene/charitable/images/charitableGifts_24.gif" alt="#" width="478" height="255" usemap="#img8Map" />
+<div id="Layer6" style="position: absolute; width: 225px; height: 36px; z-index: 2; left: 550px; top: 0px; visibility: hidden;">
+<p><strong> <span style="color: #000099;">1. If $90,909 had been available for investment at the end of the prior year, $9,091 could have been earned in interest to provide the $100,000 at the end of the third year.</span></strong></p>
+</div>
+<div id="Layer7" style="position: absolute; width: 225px; height: 36px; z-index: 2; left: 550px; top: 0px; visibility: hidden;">
+<p><strong> <span style="color: #000099;">2. If $82,645 had been available for investment at the end of the first year, then the $8,264 earned during the second year would provide the needed $90,909 needed by the end of the year.</span></strong></p>
+</div>
+<div id="Layer8" style="position: absolute; width: 225px; height: 36px; z-index: 2; left: 550px; top: 0px; visibility: hidden;">
+<p><strong> <span style="color: #000099;">3. If given $75,132 today, the cumulative interest earned over three years would result in the charity receiving $100,000.</span></strong></p>
+</div>
+</blockquote>
+<blockquote><input id="button" onclick="reset_btn1(); MM_showHideLayers('Layer6','','hide','Layer7','','hide','Layer8','','hide')" type="button" name="button" value="Reset" /></blockquote>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p align="left">The scenario from the charity's perspective is essentially a present value calculation-deriving what present amount is equal to a future amount. With an interest rate of 10%, $75,132 given today is equal to $100,000 given three years from now. This $75,132 is precisely the value of the donor's gift today because the donor retained the right to the income and the charity did not receive the gift for three years. The IRS views this scenario in the same way, and provides discount tables to determine the present value that can be deducted when a gift of a future interest is made. The IRS sets the interest rate (discount rate) that is used in the tables, but allows for such variables as the amount of the annual distribution to the donor and the time horizon before the charity receives the gift.</p>
+<p align="left">To gain more insight into how these variables can alter the present value and the value of the charitable deduction, refer to the scenario above and answer the following questions.</p>
+<p align="left"><span style="color: #ff0000;"><strong>Click the question marks at the end of each question to check your response:</strong></span></p>
+<ul>
+<li>
+<p><strong>If the donor wanted to receive $12,000 per year, taking first from income and then from the corpus, would the present value of the gift to the charity increase or decrease</strong> <a onfocus="if(this.blur)this.blur()" href="javascript:;"><img onclick="MM_showHideLayers('Layer9','','show','Layer10','','hide','Layer11','','hide')" src="greene/charitable/images/qmark.jpg" alt="" width="20" height="20" align="absbottom" border="0" /></a></p>
+</li>
+<li>
+<p><strong>If the donor wanted to receive $6,000 per year, would the present value of the gift to the charity increase or decrease</strong> <a onfocus="if(this.blur)this.blur()" href="javascript:;"><img onclick="MM_showHideLayers('Layer9','','hide','Layer10','','show','Layer11','','hide')" src="greene/charitable/images/qmark.jpg" alt="" width="20" height="20" align="absbottom" border="0" /></a></p>
+</li>
+<li>
+<p><strong>If the donor maintained the demand for $10,000 per year, but decided to extend the time before the charity received the gift from 3 years to 6 years, would the present value of the gift to the charity increase or decrease</strong> <a onfocus="if(this.blur)this.blur()" href="javascript:;"><img onclick="MM_showHideLayers('Layer9','','hide','Layer10','','hide','Layer11','','show')" src="greene/charitable/images/qmark.jpg" alt="" width="20" height="20" align="absbottom" border="0" /></a></p>
+</li>
+</ul>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer9" style="position: absolute; width: 375px; height: 115px; z-index: 3; left: 286px; top: 1518px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Decrease.</strong> The greater the amount being received by the donor, the less the value of the gift to the charity. This is because the donor is not only taking out all the income, but some of the corpus as well.</p>
+<div align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="button" name="Button" value="close" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 115px; z-index: 3; left: 358px; top: 1499px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Increase.</strong> The less the amount being received by the donor, the greater the value of the gift to the charity. In this example, the donor's decision to receive a smaller annual amount means that more value will pass to the charity.</p>
+<div align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="button" name="Button2" value="close" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 115px; z-index: 3; left: 445px; top: 1510px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Decrease.</strong> The longer the deferral period, the less the present value of the gift to the charity. This is because the charity is forfeiting more years in which it could be retaining the earnings.</p>
+<div align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="button" name="Button2" value="close" /></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><map name="img1Map"> 
+<area onclick="showHideImg('img1','img2'); MM_showHideLayers('Layer2','','show')" shape="circle" coords="125,38,23" href="#_s" />
+ </map> <map name="img2Map"> 
+<area onclick="showHideImg('img2','img3');MM_showHideLayers('Layer3','','show','Layer2','','hide')" shape="circle" coords="230,39,24" href="#_s" />
+ </map> <map name="img3Map"> 
+<area onclick="showHideImg('img3','img4');MM_showHideLayers('Layer4','','show','Layer3','','hide')" shape="circle" coords="335,39,22" href="#_s" />
+ </map> <map name="img5Map"> 
+<area onclick="showHideImg('img5','img6');MM_showHideLayers('Layer6','','show')" shape="circle" coords="345,34,23" href="#_s" />
+ </map> <map name="img6Map"> 
+<area onclick="showHideImg('img6','img7');MM_showHideLayers('Layer7','','show','Layer6','','hide')" shape="circle" coords="240,32,23" href="#_s" />
+ </map> <map name="img7Map"> 
+<area onclick="showHideImg('img7','img8');MM_showHideLayers('Layer8','','show','Layer7','','hide')" shape="circle" coords="134,33,23" href="#_s" />
+ </map></p>
+</body>
+</html>

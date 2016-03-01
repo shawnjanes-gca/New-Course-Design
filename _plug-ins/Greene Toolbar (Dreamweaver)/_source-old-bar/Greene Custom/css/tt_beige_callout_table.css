@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Controls the Two-Tone Beige Call-Out Table.
+*/
+
+#beigetable {width: 550px; border: 1px solid #FFF;}
+#trhdr, #trhdr td {background-color: #BFBA84; border: 1px solid #FFF; text-align: center; font-weight: bold;}
+#tralt td.trhdralt {font-weight: normal; text-align: left;}
+#beigetable tr {background-color: #E7E6CF;}
+#tralt td {width: 130px; border: 1px solid #FFF; text-align: center;}

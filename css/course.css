@@ -1,3 +1,4 @@
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700");
 .coursebody header:after, .coursebody .three-key-questions:after, .coursebody .audio-widget:after { content: ""; display: table; clear: both; }
 
 .pagenavigation { text-align: center; }
@@ -13,7 +14,7 @@
 .coursebody header .headertitle .secondarytitle { font-size: 18px; font-style: italic; color: #818285; }
 .coursebody .objective-column { position: relative; float: right; width: 350px; padding: 0 0 0 3em; height: 100%; }
 .coursebody .objective-column .objective-points { border-left: 5px solid green; padding: 0 0 1em 1em; }
-.coursebody .objective-column .objective-icon { background: url("/images/icon-thumbtack.png") 0px no-repeat; margin: 0 0 0 -20px; padding-top: 1px; height: 48px; }
+.coursebody .objective-column .objective-icon { /* Be sure to change this for local development - just remove the topclass part of the path */ background: url("//learning.greeneconsults.com/topclass/course-page-layout/images/icon-thumbtack.png") 0px no-repeat; margin: 0 0 0 -20px; padding-top: 1px; height: 48px; }
 .coursebody .objective-column h2 { margin-top: 10px; padding: 0 0 0 40px; text-transform: uppercase; font-size: 18px; font-weight: 500; color: #1f6735; }
 .coursebody .objective-column p { border-bottom: 1px solid #e4e4e3; padding-bottom: 1.2em; }
 .coursebody .objective-column .objective-leadin { padding-left: 25px; padding-bottom: 0; border: none; }
