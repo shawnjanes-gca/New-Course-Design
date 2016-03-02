@@ -1,28 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
-<script type="text/JavaScript">
-<!--
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_showHideLayers() { //v6.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-//-->
+<link href="greene/advaffep/p7ap/p7ap_04.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="greene/advaffep/p7ap/p7APscripts.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="greene/advaffep/css/roundedPage.css" />
+<link rel="stylesheet" type="text/css" href="greene/advaffep/css/niftyCorners.css" />
+<script type="text/javascript" src="greene/advaffep/js/nifty.js"></script>
+<script type="text/javascript" src="greene/advaffep/js/final.js"></script>
+<style type="text/css">
+div#example01{width: 700px; padding: 10px; margin:0 auto; background:#CCCC99; }
+</style>
+<script type="text/javascript" src="greene/advaffep/js/niftycube.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+	Nifty("div#example01","big");
+	}
 </script>
+<link href="greene/advaffep/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="greene/advaffep/p7epm/p7EPMscripts.js"></script>
 </head>
-
 <body>
 <table style="width: 100%;">
 <tbody>
@@ -41,549 +38,118 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<h2>Review Exercise</h2>
+<h2>Need #6 - Maximizing Charitable Intent</h2>
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>
 <blockquote>
-<p><strong><span style="color: #ff0000;">Select the correct answer for each of the following questions.</span></strong></p>
-</blockquote>
-<table style="width: 100%;">
+<p>A sizeable portion of charitable gifts are made at death rather than during life because many people, while desiring to support charities, fear that making gifts to a charity during their lifetime may result in them outliving their assets. However, in many situations, that fear is unfounded. In fact, making lifetime gifts, as mentioned in the last case study, can be a far superior means of realizing their charitable intent, while increasing their lifetime income. This is illustrated in the following situation.</p>
+<div id="example01">
+<p align="left"><strong>Situation: </strong>Suppose an elderly client has $4.5 million, of which $1 million is in an asset with a basis of $30,000. The client receives a dividend yield on the asset of approximately 1.5%, or $15,000 per year. The client would like more income, but doesn't want to pay the capital gains tax for selling the asset. The client plans to give $1 million to a university upon his death.</p>
+<div id="p7EPM_1" class="p7EPM05">
+<div id="p7EPMt_1" class="p7epm_trigs">
+<table style="width: 650px;" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
 <tbody>
 <tr>
-<td align="right" valign="top" width="55">
-<p align="right"><strong>1.</strong></p>
+<td width="77">
+<div align="center"><a id="p7EPMtrg1_1" onfocus="if(this.blur)this.blur()" href="#p7EPMc1_1"><img src="greene/advaffep/DocumentIcon.gif" alt="" width="33" height="33" border="0" /></a></div>
 </td>
-<td><strong>For insurance to be removed from your estate, how long must you live after transferring ownership to a trust? </strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-function answerCorrect(questionNumber, answer, formName)
-{
-   	// declare a variable to hold return value
-	var correct = false;
-	var questionLength = formName.radQuestionChoice.length;
-	var questionChoice;
-
-   	// if answer provided is same as correct answer then correct variable is true
-   	if (answer == answers[questionNumber])
-      	{correct = true;
-       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
-			{
-			formName.radQuestionChoice[questionChoice].disabled = true;
-
-	  		}
-
-   	// return whether the answer was correct (true or false)
-   	return correct;
-	}
-}
-
-function getQuestion(questionNumber)
-{
-
-   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-   var questionLength = questions[questionNumber].length;
-   var questionChoice;
-
-   questionHTML = questionHTML + "<P>";
-   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-   {
-      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-      questionHTML = questionHTML + questions[questionNumber][questionChoice];
-      questionHTML = questionHTML + "<BR>";
-   }
-   questionHTML = questionHTML + "</P>";
-
-   return questionHTML;
-}
-function buttonCheckQ_onclick(questionNum, formName)
-{
-   var answer = 0;
-   while (formName.radQuestionChoice[answer].checked != true)
-   {
-      answer++;
-   }
-
-   var answer2 = String.fromCharCode(65 + answer);
-   answer++;
-   if (answerCorrect(questionNum,answer2, formName) == true)
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-   else
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-}
-
-var questionNumber;
-var questions=new Array();
-var answers=new Array();
-var layers=new Array();
-// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-
-// BEGIN RADIO QUESTION 1 CODE
-var formNumber=new Array();
-formNumber[1]="QuestionForm1";
-questionNumber=1;
-questions[1]=new Array();
-layers[1]=new Array();
-//This is the test question
-questions[1][0]="";
-
-//These are the answer choices
-questions[1][1]="One year";
-questions[1][2]="Two years";
-questions[1][3]="Three years";
-questions[1][4]="Five years";
-//These are the associated layers
-layers[1][1]="Layer1";
-layers[1][2]="Layer2";
-layers[1][3]="Layer3";
-layers[1][4]="Layer4";
-
-//This is the test answer
-answers[1]="C";
-// ]]></script>
-</p>
-<form id="QuestionForm1" name="QuestionForm1">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 1
-document.write(getQuestion(1));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 1 CODE
-// ]]></script>
+<td valign="middle" bgcolor="#FFFFFF">
+<div align="left">
+<p><strong><span style="color: #ff0000;">Click the icon to view the solution.</span></strong></p>
+</div>
 </td>
 </tr>
-<tr>
-<td align="right" valign="top">&nbsp;</td>
-<td><hr /></td>
-</tr>
-<tr>
-<td align="right" valign="top" width="55">
-<p align="right"><strong>2.</strong></p>
-</td>
-<td><strong>Which of the following is NOT true of a Credit Shelter Trust? </strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 2 CODE
-var formNumber=new Array();
-formNumber[2]="QuestionForm2";
-questionNumber=2;
-questions[2]=new Array();
-layers[2]=new Array();
-//This is the test question
-questions[2][0]="";
-
-//These are the answer choices
-questions[2][1]="In 2009, it could be used to shelter up to $3,500,000 of assets.";
-questions[2][2]="The surviving spouse can have a general power of appointment over the trust.";
-questions[2][3]="The surviving spouse can receive income from the trust.";
-questions[2][4]="The trust can be used for the benefit of both the surviving spouse and the children.";
-//These are the associated layers
-layers[2][1]="Layer5";
-layers[2][2]="Layer6";
-layers[2][3]="Layer7";
-layers[2][4]="Layer8";
-
-//This is the test answer
-answers[2]="B";
-// ]]></script>
-</p>
-<form id="QuestionForm2" name="QuestionForm2">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 2
-document.write(getQuestion(2));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 2 CODE
-// ]]></script>
-</td>
-</tr>
-<tr>
-<td align="right" valign="top">&nbsp;</td>
-<td><hr /></td>
-</tr>
-<tr>
-<td align="right" valign="top" width="55">
-<p align="right"><strong>3.</strong></p>
-</td>
-<td>
-<p><strong>Which of the following transfers can be made without gift tax liability?</strong></p>
+</tbody>
+</table>
+<div class="p7epm_ie5clear">&nbsp;</div>
+</div>
+<div id="p7EPMdw_1">
+<div id="p7EPMw1_1" class="p7epm_cwrapper">
+<div id="p7EPMc1_1" class="p7epm_content pan1">
+<p>A solution is to create a <strong><em>Charitable Remainder Trust</em></strong> and fund it with the $1 million appreciated asset. A Charitable Remainder Trust is a trust where the grantor receives an income benefit during life, with the asset going to the charity upon death. Here is a possible result for taking this step:</p>
 <ul>
-<li>Annual exclusion Gifts</li>
-<li>Direct payment of tuition or medical expenses</li>
-<li>Gifts to a spouse</li>
-<li>Gifts to charities</li>
+<li>
+<p>The client receives an immediate income tax deduction for the charitable gift. This deduction can be spread over 5 years of income tax returns.</p>
+</li>
+<li>
+<p>The trust is structured to provide an annuity to the grantor for life, or for a specific number of years (up to 20). In this case, let's suppose it is a 6% annuity, or $60,000 per year, significantly increasing his income.</p>
+</li>
+<li>
+<p>The charity will be free to liquidate the asset to reinvest in income-producing securities, without suffering the impact of capital gains taxes. The asset can then be reinvested to generate higher income, thereby minimizing or totally eliminating (depending upon market conditions) the need to use principal to make the annuity payments.</p>
+</li>
+<li>
+<p>No capital gains are paid when making the gift.</p>
+</li>
+<li>
+<p>Upon his death (or at the end of the designated number of years), the trust terminates and the university receives the principal outright.</p>
+</li>
 </ul>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 3 CODE
-var formNumber=new Array();
-formNumber[3]="QuestionForm3";
-questionNumber=3;
-questions[3]=new Array();
-layers[3]=new Array();
-//This is the test question
-questions[3][0]="";
-
-//These are the answer choices
-questions[3][1]="A only";
-questions[3][2]="A and D only";
-questions[3][3]="A, B, and C only";
-questions[3][4]="A, C, and D only";
-questions[3][5]="A, B, C, and D";
-//These are the associated layers
-layers[3][1]="Layer9";
-layers[3][2]="Layer10";
-layers[3][3]="Layer11";
-layers[3][4]="Layer12";
-layers[3][5]="Layer13";
-
-//This is the test answer
-answers[3]="E";
-// ]]></script>
-</p>
-<form id="QuestionForm3" name="QuestionForm3">
+<p>Through use of a Charitable Remainder Trust, or a <strong><em>Pooled Income Fund</em></strong> which operates similarly but is designed for smaller accounts, people can not only reduce their estate tax exposure, if any, but often improve their current income situation by making the charitable transfer while alive rather than waiting until they are dead.</p>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+<!--[if IE 5]><style>.p7epm_trigs a {height: 1%;}.p7epm_ie5clear {clear: both;}</style><![endif]--> <!--[if IE 6]><style>.p7epm_trigs, .p7epm_trigs a {height: 1%;}</style><![endif]-->
 <script type="text/javascript">// <![CDATA[
-// Display Text for Question 3
-document.write(getQuestion(3));
+P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 // ]]></script>
-</form>
+</div>
+</div>
+<p>&nbsp;</p>
+<h4>Awareness Questions</h4>
+<p>To help a client/prospect understand the immediate benefits of a charitable gifting strategy, ask them the following questions.</p>
+<table style="width: 650px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<div id="p7EPM_2" class="p7EPM05">
+<div id="p7EPMt_2" class="p7epm_trigs">
+<table style="width: 681px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="77">
+<div align="center"><a id="p7EPMtrg1_2" onfocus="if(this.blur)this.blur()" href="#p7EPMc1_2"><img src="greene/advaffep/DocumentIcon.gif" alt="" width="33" height="33" border="0" /></a></div>
+</td>
+<td valign="middle" width="604">
+<div align="left">
+<p><strong><span style="color: #ff0000;">Click the icon to view example questions.</span></strong></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="p7epm_ie5clear">&nbsp;</div>
+</div>
+<div id="p7EPMdw_2">
+<div id="p7EPMw1_2" class="p7epm_cwrapper">
+<div id="p7EPMc1_2" class="p7epm_content pan1">
+<ul>
+<li>
+<p>How have you assessed the benefits of gifting to charities while alive rather than waiting until your death?</p>
+</li>
+<li>
+<p>How have you structured your estate plan to maximize the impact of your charitable intent?</p>
+</li>
+</ul>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+<!--[if IE 5]><style>.p7epm_trigs a {height: 1%;}.p7epm_ie5clear {clear: both;}</style><![endif]--> <!--[if IE 6]><style>.p7epm_trigs, .p7epm_trigs a {height: 1%;}</style><![endif]-->
 <script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 3 CODE
+P7_opEPM('p7EPM_2',0,2,1,0,0,1000);
 // ]]></script>
-</td>
-</tr>
-<tr>
-<td align="right" valign="top">&nbsp;</td>
-<td><hr /></td>
-</tr>
-<tr>
-<td align="right" valign="top" width="55">
-<p align="right"><strong>4.</strong></p>
-</td>
-<td>
-<p><strong>What is the primary advantage of a QTIP Marital Trust over a General Power of Appointment Marital Trust?</strong></p>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 4 CODE
-var formNumber=new Array();
-formNumber[4]="QuestionForm4";
-questionNumber=4;
-questions[4]=new Array();
-layers[4]=new Array();
-//This is the test question
-
-questions[4][0]="";
-
-//These are the answer choices
-questions[4][1]="The QTIP Marital Trust directs the final distribution of the assets, not the surviving spouse.";
-questions[4][2]="The QTIP Marital Trust provides income to the surviving spouse.";
-questions[4][3]="The QTIP Marital Trust qualifies for the unlimited marital deduction.";
-questions[4][4]="The QTIP Marital Trust is NOT included in the surviving spouse's estate.";
-//These are the associated layers
-layers[4][1]="Layer14";
-layers[4][2]="Layer15";
-layers[4][3]="Layer16";
-layers[4][4]="Layer17";
-
-//This is the test answer
-answers[4]="A";
-// ]]></script>
-</p>
-<form id="QuestionForm4" name="QuestionForm4">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 4
-document.write(getQuestion(4));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 4 CODE
-// ]]></script>
-</td>
-</tr>
-<tr>
-<td align="right" valign="top">&nbsp;</td>
-<td><hr /></td>
-</tr>
-<tr>
-<td align="right" valign="top" width="55">
-<p align="right"><strong>5.</strong></p>
-</td>
-<td><strong> There is no capital gains impact to the grantor upon funding a Charitable Remainder Trust. </strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 5 CODE
-var formNumber=new Array();
-formNumber[5]="QuestionForm5";
-questionNumber=5;
-questions[5]=new Array();
-layers[5]=new Array();
-//This is the test question
-questions[5][0]="";
-
-//These are the answer choices
-questions[5][1]="True";
-questions[5][2]="False";
-//These are the associated layers
-layers[5][1]="Layer18";
-layers[5][2]="Layer19";
-
-//This is the test answer
-answers[5]="A";
-// ]]></script>
-</p>
-<form id="QuestionForm5" name="QuestionForm5">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 5
-document.write(getQuestion(5));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 5 CODE
-// ]]></script>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 355px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.&nbsp; </strong>Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
 </div>
-<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 355px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 355px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit3" value="close" /></p>
+</blockquote>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 355px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit4" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 480px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.&nbsp; </strong>Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit5" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 480px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct.&nbsp;</strong> If the surviving spouse has a general power of appointment over the trust, then it will be included in the surviving spouse's estate.&nbsp; This would defeat the purpose of the credit shelter trust.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit6" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 480px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.&nbsp;</strong> Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit7" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 480px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.&nbsp;</strong> Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit8" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 665px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit9" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 665px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit10" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 665px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit11" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 665px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.&nbsp;</strong> Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit12" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 665px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit13" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 880px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit14" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 880px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit15" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 890px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit16" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer17" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 890px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong>&nbsp; Try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer17','','hide')" type="submit" name="Submit17" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer18" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 995px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer18','','hide')" type="submit" name="Submit18" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer19" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 425px; top: 995px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer19','','hide')" type="submit" name="Submit19" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 </body>
-</html>

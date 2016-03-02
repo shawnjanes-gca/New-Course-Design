@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="479" height="479" start="paused" buildNum="6.2.582.582">
+	<presentationTitle>Optimal Use of the Unlimited Marital Deduction</presentationTitle>
+	<presentationDescription>Upon the first death, it may be less than optimal to apply the unlimited marital deduction to 100% of the estate ...</presentationDescription>
+	<speakers></speakers>
+	<backgrounds>
+		<background url="Master8000000c.swf"/>
+	</backgrounds>
+	<search url="srchdata.xml"/>
+	<slides>
+		<slide id="266" frameRate="30" totalFrames="0" advance="auto" type="normal">
+			<content url="Slide1.swf"/>
+			<slideBackground index="0" frameToPlay="1" duration="2" showAfterFrame="0"/>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="260" frameRate="30" totalFrames="3216" advance="auto" type="normal">
+			<content url="Slide2.swf"/>
+			<slideBackground index="0" frameToPlay="3" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="16" end="39"/>
+				<clickAnimation start="39" end="71"/>
+				<clickAnimation start="81" end="143"/>
+				<clickAnimation start="915" end="977"/>
+				<clickAnimation start="1497" end="1559"/>
+				<clickAnimation start="2219" end="2281"/>
+				<clickAnimation start="2840" end="2902"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true">Many&amp;#x20;reasons&amp;#x20;are&amp;#x20;often&amp;#x20;given&amp;#x20;to&amp;#x20;stress&amp;#x20;the&amp;#x20;importance&amp;#x20;of&amp;#x20;helping&amp;#x20;clients&amp;#x20;address&amp;#x20;their&amp;#x20;estate&amp;#x20;planning&amp;#x20;needs.&amp;#x20;&amp;#x20;For&amp;#x20;example,&lt;br&gt;&lt;br&gt;[click[&amp;#x20;Clients&amp;#x20;tend&amp;#x20;to&amp;#x20;procrastinate&amp;#x20;planning&amp;#x20;their&amp;#x20;estates,&amp;#x20;and&amp;#x20;need&amp;#x20;someone&amp;#x20;to&amp;#x20;motivate&amp;#x20;them.&lt;br&gt;[click]&amp;#x20;Clients&amp;#x20;lack&amp;#x20;the&amp;#x20;necessary&amp;#x20;technical&amp;#x20;expertise&amp;#x20;to&amp;#x20;recognize&amp;#x20;they&amp;#x20;have&amp;#x20;a&amp;#x20;planning&amp;#x20;need.&lt;br&gt;[click]&amp;#x20;Or,&amp;#x20;it&amp;#x20;is&amp;#x20;an&amp;#x20;excellent&amp;#x20;way&amp;#x20;to&amp;#x20;identify&amp;#x20;assets&amp;#x20;that&amp;#x20;you&amp;#x20;are&amp;#x20;not&amp;#x20;currently&amp;#x20;managing.&lt;br&gt;&lt;br&gt;All&amp;#x20;of&amp;#x20;these&amp;#x20;points&amp;#x20;are&amp;#x20;true&amp;#x2026;.&lt;br&gt;&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+			<audio url="a24x1.mp3"/>
+		</slide>
+	</slides>
+	<attachments></attachments>
+</presentation>
