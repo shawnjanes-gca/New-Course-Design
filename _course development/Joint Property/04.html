@@ -1,0 +1,966 @@
+<head>
+</head>
+<body>
+<script type="text/JavaScript" language="JavaScript">// <![CDATA[
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+// ]]></script>
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>Let&rsquo;s review some of the similarities and differences between the four types of joint ownership.</p>
+<p class="style1">Use the following key to answer the questions 1-3.</p>
+<blockquote>
+<p>A. Joint Tenants (JTWROS)</p>
+<p>B. Tenants by the Entirety</p>
+<p>C. Tenants in Common</p>
+<p>D. Community Property</p>
+</blockquote>
+</blockquote>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>1.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="For which types of property ownership must the owners be married?";
+
+//These are the answer choices
+questions[1][1]="A only";
+questions[1][2]="A and B";
+questions[1][3]="A and C";
+questions[1][4]="B and D";
+questions[1][5]="B and C";
+//These are the associated layers
+layers[1][1]="Layer001";
+layers[1][2]="Layer002";
+layers[1][3]="Layer003";
+layers[1][4]="Layer004";
+layers[1][5]="Layer005";
+
+//This is the test answer
+answers[1]="D";
+// ]]></script>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>2.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="Which types of ownership will avoid probate when an owner dies, assuming no property is owned by a trust?";
+
+//These are the answer choices
+questions[2][1]="A only";
+questions[2][2]="B only";
+questions[2][3]="A and B";
+questions[2][4]="C only";
+questions[2][5]="C and D";
+//These are the associated layers
+layers[2][1]="Layer006";
+layers[2][2]="Layer007";
+layers[2][3]="Layer008";
+layers[2][4]="Layer009";
+layers[2][5]="Layer0010";
+
+//This is the test answer
+answers[2]="C";
+// ]]></script>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>3.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="In which of the types of ownership may the owner's shares be unequal?";
+
+//These are the answer choices
+questions[3][1]="A only";
+questions[3][2]="B only";
+questions[3][3]="C only";
+questions[3][4]="D only";
+questions[3][5]="B and C";
+//These are the associated layers
+layers[3][1]="Layer0011";
+layers[3][2]="Layer0012";
+layers[3][3]="Layer0013";
+layers[3][4]="Layer0014";
+layers[3][5]="Layer0015";
+
+//This is the test answer
+answers[3]="C";
+// ]]></script>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><span class="style1">For questions 4-7, identify the most appropriate means of titling property to meet the estate planning goals in each situation</span>.</p>
+</blockquote>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>4.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 6 CODE
+var formNumber=new Array();
+formNumber[6]="QuestionForm6";
+questionNumber=6;
+questions[6]=new Array();
+layers[6]=new Array();
+//This is the test question
+questions[6][0]="A will appointment of real estate to three adult children.";
+
+//These are the answer choices
+questions[6][1]="100% in Joint Tenancy (JTWROS)";
+questions[6][2]="Approximately 50% in Joint Tenancy (JTWROS)";
+questions[6][3]="100% as Tenants by the Entirety";
+questions[6][4]="Approximately 50% as Tenants by the Entirety";
+questions[6][5]="100% as Tenants in Common";
+//These are the associated layers
+layers[6][1]="Layer11";
+layers[6][2]="Layer12";
+layers[6][3]="Layer13";
+layers[6][4]="Layer14";
+layers[6][5]="Layer15";
+
+//This is the test answer
+answers[6]="E";
+// ]]></script>
+<form name="QuestionForm6">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 6
+document.write(getQuestion(6));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 6 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>5.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 7 CODE
+var formNumber=new Array();
+formNumber[7]="QuestionForm7";
+questionNumber=7;
+questions[7]=new Array();
+layers[7]=new Array();
+//This is the test question
+questions[7][0]="A will appointment of a family heirloom to three children that has more emotional significance than monetary value.  <em>Under no circumstances</em> does the testator wish for the asset to go outside the immediate family.";
+
+//These are the answer choices
+questions[7][1]="100% in Joint Tenancy (JTWROS)";
+questions[7][2]="Approximately 50% in Joint Tenancy (JTWROS)";
+questions[7][3]="100% as Tenants by the Entirety";
+questions[7][4]="Approximately 50% as Tenants by the Entirety";
+questions[7][5]="100% as Tenants in Common";
+//These are the associated layers
+layers[7][1]="Layer16";
+layers[7][2]="Layer17";
+layers[7][3]="Layer18";
+layers[7][4]="Layer19";
+layers[7][5]="Layer20";
+
+//This is the test answer
+answers[7]="A";
+// ]]></script>
+<form name="QuestionForm7">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 7
+document.write(getQuestion(7));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 7 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>6.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 8 CODE
+var formNumber=new Array();
+formNumber[8]="QuestionForm8";
+questionNumber=8;
+questions[8]=new Array();
+layers[8]=new Array();
+//This is the test question
+questions[8][0]="An investment by four business associates, each wishing to contribute different amounts.";
+
+//These are the answer choices
+questions[8][1]="100% in Joint Tenancy (JTWROS)";
+questions[8][2]="Approximately 50% in Joint Tenancy (JTWROS)";
+questions[8][3]="100% as Tenants by the Entirety";
+questions[8][4]="Approximately 50% as Tenants by the Entirety";
+questions[8][5]="100% as Tenants in Common";
+//These are the associated layers
+layers[8][1]="Layer21";
+layers[8][2]="Layer22";
+layers[8][3]="Layer23";
+layers[8][4]="Layer24";
+layers[8][5]="Layer25";
+
+//This is the test answer
+answers[8]="E";
+// ]]></script>
+<form name="QuestionForm8">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 8
+document.write(getQuestion(8));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 8 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>7.</strong></p>
+</td>
+<td>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 9 CODE
+var formNumber=new Array();
+formNumber[9]="QuestionForm9";
+questionNumber=9;
+questions[9]=new Array();
+layers[9]=new Array();
+//This is the test question
+questions[9][0]="An investment by four business associates, each wishing to contribute 25% of the purchase price.";
+
+//These are the answer choices
+questions[9][1]="100% in Joint Tenancy (JTWROS)";
+questions[9][2]="Approximately 50% in Joint Tenancy (JTWROS)";
+questions[9][3]="100% as Tenants by the Entirety";
+questions[9][4]="Approximately 50% as Tenants by the Entirety";
+questions[9][5]="100% as Tenants in Common";
+//These are the associated layers
+layers[9][1]="Layer26";
+layers[9][2]="Layer27";
+layers[9][3]="Layer28";
+layers[9][4]="Layer29";
+layers[9][5]="Layer30";
+
+//This is the test answer
+answers[9]="E";
+// ]]></script>
+<form name="QuestionForm9">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 9
+document.write(getQuestion(9));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 9 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. While this would avoid probate, it would not minimize taxes because the survivor would have 100% of the combined estate in his/her estate.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. This is not the only correct answer.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. While this would avoid probate, it would not minimize taxes because the survivor would have 100% of the combined estate in his/her estate.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. This is not the only correct answer.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. By titling approximately 50% of the estate as Joint Tenants (JTWROS), they could partially avoid probate while maintaining sufficient assets in their own name to ensure that each spouse could utilize their applicable credit amount and shelter some assets from the estate of the second to die. By titling approximately 50% of the estate as Tenants by the Entirety, they could partially avoid probate while maintaining sufficient assets in their own name to ensure that each spouse could utilize their applicable credit amount and shelter some assets from the estate of the second to die.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1050px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. To avoid estate taxes, they need to divide the estate between them. This can only be done with sole ownership or as Tenants in Common.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1050px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. To avoid estate taxes, they need to divide the estate between them. This can only be done with sole ownership or as Tenants in Common.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1050px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. To avoid estate taxes, they need to divide the estate between them. This can only be done with sole ownership or as Tenants in Common.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1050px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. To avoid estate taxes, they need to divide the estate between them. This can only be done with sole ownership or as Tenants in Common.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1050px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. To avoid estate taxes, they need to divide the estate between them. This can only be done with sole ownership or as Tenants in Common. While this does not avoid probate, it is the only choice available to minimize taxes.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Generally, this would not be the best choice because the families of two of the children would ultimately be denied the inheritance.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect for two reasons. One is that it would not cover the entire amount. Second, the families of two of the children would ultimately be denied the inheritance on the 50% that is so titled.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 850px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. This would ensure that if a child predeceased the testator or as each child subsequently died, their portion could go to their family or as they otherwise directed in their wills.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1000px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. This probably makes the most sense in this situation, since the ownership will stay among the three surviving children.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer17" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1000px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. This would only account for 50% of the property, and there is no other appropriate choice for the other 50%.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer17','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer18" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1000px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer18','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer19" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1000px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer19','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer20" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1000px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. This would not ensure that the heirloom stays in the family. Each child could distribute out their interests as they wished.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer20','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer21" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1200px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Joint Tenancy (JTWROS) is not generally appropriate for non-related participants.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer21','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer22" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1200px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Joint Tenancy (JTWROS) is not generally appropriate for non-related participants. Plus, this choice does not address the entirety of the property.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer22','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer23" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1200px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer23','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer24" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1200px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer24','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer25" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1200px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. This is the most appropriate form for non-related participants, because it is doubtful they would want their interests to go to the other participants in the event of their deaths.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer25','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer26" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1400px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Joint Tenancy (JTWROS) is not generally appropriate for non-related participants, plus it only allows for equal ownership.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer26','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer27" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1400px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Joint Tenancy (JTWROS) is not generally appropriate for non-related participants and it requires that the ownership interests be equal. Plus, this choice does not address the entirety of the property.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer27','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer28" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1400px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer28','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer29" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1400px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Tenants by the Entirety can only be between husband and wife.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer29','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer30" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1400px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. This is the most appropriate form for non-related participants, because it is doubtful they would want their interests to go to the other participants in the event of their deaths. It is also the only choice that allows the owners to have unequal interests in the property.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer30','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer001" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer001','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer002" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer002','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer003" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer003','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer004" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer004','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer005" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer005','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer006" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 500px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer006','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer007" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 500px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer007','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer008" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 500px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer008','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer009" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 500px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer009','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer0010" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 500px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer0010','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer0011" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 650px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer0011','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer0012" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 650px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer0012','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer0013" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 650px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer0013','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer0014" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 650px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer0014','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer0015" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 650px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer0015','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>�</p>
+</body>
