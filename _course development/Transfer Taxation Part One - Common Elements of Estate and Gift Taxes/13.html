@@ -1,0 +1,609 @@
+<head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="widgets/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+<body>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>For the following statements, click on the correct response:</p>
+</blockquote>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td>
+<p><strong>Gift taxes are computed using the same rate schedule as for estates: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="True";
+questions[1][2]="False";
+//These are the associated layers
+layers[1][1]="Layerwbutton1";
+layers[1][2]="Layerwbutton2";
+
+//This is the test answer
+answers[1]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm1" name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>The amount that can be transferred between U.S. citizen spouses without incurring a transfer tax is: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="Limited";
+questions[2][2]="50%";
+questions[2][3]="Unlimited";
+//These are the associated layers
+layers[2][1]="Layerwbutton3";
+layers[2][2]="Layerwbutton4";
+layers[2][3]="Layerwbutton5";
+
+//This is the test answer
+answers[2]="C";
+// ]]></script>
+</p>
+<form id="QuestionForm2" name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>3.</strong></p>
+</td>
+<td>
+<p><strong>When computing the estate tax, lifetime gifts made after 1976 are added back to the gross estate value before computing the estate tax: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="True";
+questions[3][2]="False";
+//These are the associated layers
+layers[3][1]="Layerwbutton6";
+layers[3][2]="Layerwbutton7";
+
+//This is the test answer
+answers[3]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm3" name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>4.</strong></p>
+</td>
+<td>
+<p><strong>Transfers to qualified charities are NOT deductible on gift and estate tax returns: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="True";
+questions[4][2]="False";
+//These are the associated layers
+layers[4][1]="Layerwbutton8";
+layers[4][2]="Layerwbutton9";
+
+//This is the test answer
+answers[4]="B";
+// ]]></script>
+</p>
+<form id="QuestionForm4" name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>5.</strong></p>
+</td>
+<td>
+<p><strong>The gift and estate Applicable Exclusion Amount for 2016 is: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 5 CODE
+var formNumber=new Array();
+formNumber[5]="QuestionForm5";
+questionNumber=5;
+questions[5]=new Array();
+layers[5]=new Array();
+//This is the test question
+questions[5][0]="";
+
+//These are the answer choices
+questions[5][1]="$5,000,000";
+questions[5][2]="$5,400,000";
+questions[5][3]="$5,450,000";
+questions[5][4]="$5,500,000";
+//These are the associated layers
+layers[5][1]="Layerwbutton10";
+layers[5][2]="Layerwbutton10";
+layers[5][3]="Layerwbutton11";
+layers[5][4]="Layerwbutton12";
+
+//This is the test answer
+answers[5]="C";
+// ]]></script>
+</p>
+<form id="QuestionForm5" name="QuestionForm5">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 5
+document.write(getQuestion(5));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 5 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>6.</strong></p>
+</td>
+<td>
+<p><strong>With portability, a surviving spouse&rsquo;s Applicable Exclusion Amount equals their Basic Exclusion Amount plus the: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 6 CODE
+var formNumber=new Array();
+formNumber[6]="QuestionForm4";
+questionNumber=6;
+questions[6]=new Array();
+layers[6]=new Array();
+//This is the test question
+questions[6][0]="";
+
+//These are the answer choices
+questions[6][1]="DSUE";
+questions[6][2]="DSSU";
+questions[6][3]="DESU";
+questions[6][4]="DUSE";
+//These are the associated layers
+layers[6][1]="Layerwbutton13";
+layers[6][2]="Layerwbutton10";
+layers[6][3]="Layerwbutton10";
+layers[6][4]="Layerwbutton10";
+
+//This is the test answer
+answers[6]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm6" name="QuestionForm6">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 6
+document.write(getQuestion(6));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 6 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>7.</strong></p>
+</td>
+<td>
+<p><strong>The maximum marginal rate on the current Unified Gift and Estate Tax Rate Table is: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 7 CODE
+var formNumber=new Array();
+formNumber[7]="QuestionForm4";
+questionNumber=7;
+questions[7]=new Array();
+layers[7]=new Array();
+//This is the test question
+questions[7][0]="";
+
+//These are the answer choices
+questions[7][1]="18%";
+questions[7][2]="40%";
+questions[7][3]="50%";
+questions[7][4]="70%";
+//These are the associated layers
+layers[7][1]="Layerwbutton14";
+layers[7][2]="Layerwbutton15";
+layers[7][3]="Layerwbutton16";
+layers[7][4]="Layerwbutton17";
+
+//This is the test answer
+answers[7]="B";
+// ]]></script>
+</p>
+<form id="QuestionForm7" name="QuestionForm7">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 7
+document.write(getQuestion(7));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layerwbutton1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 250px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. The Gift and Estate Tax use the same rate schedule.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 250px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. The Gift and Estate Tax actually do use the same rate schedule.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton2','','hide')" type="submit" name="Submit2" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. The amount that can be transferred between spouses without generating a transfer tax liability is unlimited<strong>.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton3','','hide')" type="submit" name="Submit3" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. The amount that can be transferred between spouses without generating a transfer tax liability is unlimited<strong>.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton4','','hide')" type="submit" name="Submit4" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct! There is no limit to the amount spouses can transfer between each other without generating a transfer tax liability.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton5','','hide')" type="submit" name="Submit5" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 450px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. This makes it possible to have a unified gift and estate tax system.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton6','','hide')" type="submit" name="Submit6" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 450px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. The estate tax calculation is inclusive of lifetime transfers after 1976.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton7','','hide')" type="submit" name="Submit7" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. They do in fact avoid estate and gift taxes.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton8','','hide')" type="submit" name="Submit8" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct. In fact, they do avoid estate and gift taxes.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton9','','hide')" type="submit" name="Submit9" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton10','','hide')" type="submit" name="Submit10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 550px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton11','','hide')" type="submit" name="Submit11" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton12" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 55px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton12','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton13" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 55px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> They get to add the Deceased Spousal Unused Exclusion Amount.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton13','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton14" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 55px; top: 625px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> This is the minimum rate on the schedule. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton14','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton15" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 55px; top: 625px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton15','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton16" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 55px; top: 625px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton16','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layerwbutton17" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 55px; top: 625px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>This was true in 1977, but not today. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton17','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
