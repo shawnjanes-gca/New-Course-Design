@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link href="greene/advaffip/p7ap/p7ap_04.css" rel="stylesheet" type="text/css" media="all" />
@@ -9,7 +9,7 @@
 <script type="text/javascript" src="greene/advaffip/js/nifty.js"></script>
 <script type="text/javascript" src="greene/advaffip/js/final.js"></script>
 <style type="text/css">
-div#example01{width: 300px; padding: 20px; margin:0 auto; background:#CCCC99; }
+div#example01 { width: 300px; padding: 20px; margin: 0 auto; background: #CCCC99; }
 </style>
 <script type="text/javascript" src="greene/advaffip/js/niftycube.js"></script>
 <script type="text/javascript">
@@ -19,8 +19,16 @@ window.onload=function(){
 </script>
 <link href="greene/advaffip/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="greene/advaffip/p7epm/p7EPMscripts.js"></script>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
 </head>
-
 <body>
 <table style="width: 100%;">
 <tbody>
@@ -28,7 +36,7 @@ window.onload=function(){
 <td>
 <div align="right">
 <script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
+ loadFlashHeader(userCompany, parentFolder);
 // ]]></script>
 </div>
 </td>
@@ -46,7 +54,7 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<p>With traditional whole life insurance, the <strong>insurer assumes all the investment risk</strong>. Premiums are fixed and guaranteed upon purchase of the policy, although they may be structured any one of the following ways listed below.</p>
+<p>With Traditional Whole Life insurance, the <strong>insurer assumes all the investment risk</strong>. Premiums are fixed and guaranteed upon purchase of the policy, although they may be structured any one of the following ways listed below.</p>
 <p><strong><span style="color: #ff0000;">Click each structure to learn more.</span></strong></p>
 <p>&nbsp;</p>
 <table style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
@@ -59,7 +67,8 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_1">
 <div id="p7ABc1_1" class="p7ABcontent">
-<p>Payable in a single, lump-sum payment. Since it is fully "<strong>paid up</strong>" upon purchase, it has the highest cash value at any point in time of any whole life policy.</p>
+<p>A single premium policy is payable in a single, lump-sum premium. Since it is fully "<strong>paid up</strong>" upon purchase, it has the highest cash value at any point in time of any Whole Life policy.</p>
+<p>Be aware that single premium policies may create unwanted income tax consequences as a result of the <a onclick="MM_showHideLayers('Layer1','','show')" href="#_s"><strong>Modified Endowment Contract</strong></a> rules.</p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -67,7 +76,7 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_2">
 <div id="p7ABc1_2" class="p7ABcontent">
-<p>Also known as <strong>Straight Life</strong>, this premium is payable until death.</p>
+<p>Also known as <strong>Straight Life</strong>, this premium is generally payable until death or age 95 to 100.</p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -75,7 +84,7 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_3">
 <div id="p7ABc1_3" class="p7ABcontent">
-<p>Premiums cease at the end of a stated number of years or upon the insured reaching a specified age. When premiums end, the policy remains in force and is considered "<strong>paid-up</strong>." The sooner it is paid up, the greater its cash value at any point in time.</p>
+<p>Premiums cease at the end of a stated number of years or upon the insured reaching a specified age. When premiums end, the policy remains in force and is considered "<strong>paid-up</strong>". The sooner it is paid up, the greater its cash value at any point in time. Limited-pay funding of a life insurance policy during the first 7 years may cause the policy to be classified as a Modified Endowment Contract as discussed previously.</p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -141,6 +150,30 @@ P7_opEPM('p7EPM_1',0,1,1,0,0,1000);
 </tr>
 </tbody>
 </table>
+<div id="Layer1" style="position: absolute; width: 575px; height: 35px; z-index: 1; left: 340px; top: 390px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>A Modified Endowment Contract<strong><em> (MEC)</em></strong> is one wherein the premiums paid into the policy during the first seven years exceed <a onclick="MM_showHideLayers('Layer2','','show')" href="#_s"><strong>certain limits</strong></a>. If a policy is classified as a MEC, the income tax treatment of any death benefit provided under the contract will still qualify for federal income tax-free treatment, but the owner may be subject to additional income taxes and penalties on any distributions from the policy during the life of the insured.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 575px; height: 35px; z-index: 1; left: 263px; top: 390px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<h4>Certain Limits</h4>
+<p>To prevent Permanent Life insurance policies from being used more for investment purposes than for the insurance protection they provide, the Tax Equity and Fiscal Responsibility Act (TEFRA) of 1982 created what is known as the <strong><em>TEFRA Corridor</em></strong>. This act imposed limits on the cash value allowed in Permanent Life insurance policies during the first seven years of the policy, requiring that it could not exceed a specified percentage of the policy's face amount. The specific limitation depends upon the insured's age.</p>
+<p>If the cash value exceeds these limits, then the policy is treated strictly as an investment account and taxed accordingly. As a result, insurers will not allow the cash in the account to exceed these limits. In fact, most policies will state that if cash value does exceed these percentages, then the face amount will automatically increase to stay within the TEFRA corridor.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </body>
-</html>
-�

@@ -1,25 +1,11 @@
 <head>
 </head>
 <body>
-<script type="text/JavaScript" language="JavaScript">// <![CDATA[
-function MM_reloadPage(init) {  //reloads the window if Nav4 resized
-  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
-    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
-  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
-}
-MM_reloadPage(true);
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_showHideLayers() { //v6.0
+<script type="text/javascript">// <![CDATA[
+function MM_showHideLayers() { //v9.0
   var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
     if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
     obj.visibility=v; }
 }
@@ -30,7 +16,7 @@ function MM_showHideLayers() { //v6.0
 <td>
 <div align="right">
 <script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
+ loadFlashHeader(userCompany, parentFolder);
 // ]]></script>
 </div>
 </td>
@@ -54,22 +40,27 @@ loadFlashHeader(userCompany, parentFolder);
 <p><input onclick="MM_showHideLayers('Correct2','','show','Incorrect2','','hide')" type="radio" name="radiobutton" value="radiobutton" /> True <br /> <input onclick="MM_showHideLayers('Correct2','','hide','Incorrect2','','show')" type="radio" name="radiobutton" value="radiobutton" /> False</p>
 </blockquote>
 <hr />
-<p><strong>2. Variable policies can only be sold by a licensed representative of a broker/dealer.</strong></p>
+<p><strong>2. The sale of all life insurance policies requires a state life insurance license at a minimum.</strong></p>
+<blockquote>
+<p><input onclick="MM_showHideLayers('Correct3','','show','Incorrect3','','hide')" type="radio" name="radiobutton" value="radiobutton" /> True <br /> <input onclick="MM_showHideLayers('Correct3','','hide','Incorrect5','','show')" type="radio" name="radiobutton" value="radiobutton" /> False</p>
+</blockquote>
+<hr />
+<p><strong>3. Variable policies are considered securities and may only be sold by those individuals holding both a FINRA and state securities license. </strong></p>
 <blockquote>
 <p><input onclick="MM_showHideLayers('Correct3','','show','Incorrect3','','hide')" type="radio" name="radiobutton" value="radiobutton" /> True <br /> <input onclick="MM_showHideLayers('Correct3','','hide','Incorrect3','','show')" type="radio" name="radiobutton" value="radiobutton" /> False</p>
 </blockquote>
 <hr />
-<p><strong>3. Because it insures the life of 2 people, second-to-die coverage is usually MORE expensive than individual coverage on two people.</strong></p>
+<p><strong>4. Because it insures the lives of 2 people, second-to-die coverage is usually MORE expensive than individual coverage on two people.</strong></p>
 <blockquote>
 <p><input onclick="MM_showHideLayers('Incorrect4','','show')" type="radio" name="radiobutton" value="radiobutton" /> True <br /> <input onclick="MM_showHideLayers('Correct4','','show')" type="radio" name="radiobutton" value="radiobutton" /> False</p>
 </blockquote>
 <hr />
-<p><strong>4. Term insurance has no cash value.</strong></p>
+<p><strong>5. Term insurance has no cash value.</strong></p>
 <blockquote>
 <p><input onclick="MM_showHideLayers('Correct5','','show')" type="radio" name="radiobutton" value="radiobutton" /> True<br /> <input onclick="MM_showHideLayers('Incorrect5','','show')" type="radio" name="radiobutton" value="radiobutton" /> False</p>
 </blockquote>
 <hr />
-<p><strong>5. First-to-Die life insurance is typically more appropriate for younger couples than Second-to-Die.</strong></p>
+<p><strong>6. First-to-Die life insurance is typically more appropriate for younger couples than Second-to-Die.</strong></p>
 <blockquote>
 <p><input onclick="MM_showHideLayers('Correct6','','show')" type="radio" name="radiobutton" value="radiobutton" /> True<br /> <input onclick="MM_showHideLayers('Incorrect6','','show')" type="radio" name="radiobutton" value="radiobutton" /> False</p>
 </blockquote>
@@ -126,7 +117,7 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <div align="center">
-<p align="left"><strong>Incorrect. </strong>Only a licensed broker/dealer can sell a variable product.</p>
+<p align="left"><strong>Incorrect. </strong>Only FINRA and State securities licensed individuals can sell a variable product.</p>
 <p><input onclick="MM_showHideLayers('Incorrect3','','hide')" type="button" name="Button5" value="close" /></p>
 </div>
 </td>
@@ -218,5 +209,4 @@ loadFlashHeader(userCompany, parentFolder);
 </tbody>
 </table>
 </div>
-<p>�</p>
 </body>

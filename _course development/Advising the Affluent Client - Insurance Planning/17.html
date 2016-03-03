@@ -2,22 +2,10 @@
 </head>
 <body>
 <script type="text/JavaScript" language="JavaScript">// <![CDATA[
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+ function MM_findObj(n, d) { //v4.01 var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) { d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);} if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n]; for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); if(!x && d.getElementById) x=d.getElementById(n); return x; }
 // ]]></script>
 <script type="text/javascript">// <![CDATA[
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
+ function MM_showHideLayers() { //v9.0 var i,p,v,obj,args=MM_showHideLayers.arguments; for (i=0; i<(args.length-2); i+=3) with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2]; if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; } obj.visibility=v; } }
 // ]]></script>
 <table style="width: 100%;">
 <tbody>
@@ -25,7 +13,7 @@ function MM_showHideLayers() { //v9.0
 <td>
 <div align="right">
 <script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
+ loadFlashHeader(userCompany, parentFolder);
 // ]]></script>
 </div>
 </td>
@@ -40,9 +28,9 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<p>Universal Life Insurance was developed to respond to increased demand for financial products that offered more flexibility than standard life contracts.</p>
+<p>Universal Life Insurance was developed to respond to increased demand for financial products that offered more flexibility than standard Whole Life contracts.</p>
 <h4>Unbundled Pricing and Flexible Premiums</h4>
-<p>Unlike the traditional whole life insurance, the various pricing factors of a Universal policy (mortality charge, expenses, interest) are unbundled and stated independently of each other. To understand how this operates, think of an empty tank into which the policy owner pours the premium payments. Various cash flows go into or out of the tank, some involving the owner, others involving the insurer. Whatever remains in the tank at any point in time is the cash value of the policy.</p>
+<p>Unlike the Traditional Whole Life insurance, the various pricing factors of a Universal policy (mortality charge, expenses, interest) are unbundled and stated independently of each other. To understand how this operates, think of an empty tank into which the policy owner pours the premium payments. Various cash flows go into or out of the tank, some involving the owner, others involving the insurer. Whatever remains in the tank at any point in time is the cash value of the policy.</p>
 <p><strong><span style="color: #ff0000;">To learn more, click each term in the diagram.</span></strong></p>
 </blockquote>
 </td>
@@ -97,7 +85,7 @@ loadFlashHeader(userCompany, parentFolder);
 <tr align="left" valign="top">
 <td height="28">
 <p><strong>Loans, Withdrawals</strong></p>
-<p>Just as with traditional whole life insurance, since the policy has cash value it is possible to make loans against the policy. But with the universal policy, it is also possible to make withdrawals directly from the cash balance.</p>
+<p>Just as with Traditional Whole Life insurance, since the policy has cash value it is possible to make loans against the policy. But with the universal policy, it is also possible to make withdrawals directly from the cash balance.</p>
 <p align="center"><input onclick="MM_showHideLayers('Loans','','hide')" type="button" name="Button3" value="close" /></p>
 </td>
 </tr>
@@ -130,5 +118,4 @@ loadFlashHeader(userCompany, parentFolder);
 </tbody>
 </table>
 </div>
-<p>�</p>
 </body>
