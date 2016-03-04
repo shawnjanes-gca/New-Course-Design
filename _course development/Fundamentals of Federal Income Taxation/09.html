@@ -10,8 +10,8 @@
 <script type="text/javascript" src="greene/incometax/js/nifty.js"></script>
 <script type="text/javascript" src="greene/incometax/js/final.js"></script>
 <style type="text/css">
-div#example01{width: 300px; padding: 20px; margin:0 auto; background:#CCCC99; }
-div#example02{width: 500px; padding: 20px; margin:0 auto; background:#CCCC99; }
+div#example01 { width: 300px; padding: 20px; margin: 0 auto; background: #CCCC99; }
+div#example02 { width: 500px; padding: 20px; margin: 0 auto; background: #CCCC99; }
 </style>
 <script type="text/javascript" src="greene/incometax/js/niftycube.js"></script>
 <script type="text/javascript">
@@ -25,18 +25,21 @@ window.onload=function(){
 <script type="text/javascript" src="greene/incometax/p7epm/p7EPMscripts.js"></script>
 <style type="text/css">
 <!--
-.style1 {font-weight: bold}
-.style2 {
-	color: #B52125;
-	font-weight: bold;
-	font-style: italic;
-}
-.style3 {	color: #FF0000;
-	font-weight: bold;
-}
-.style9 {color: #000000}
+.style1 { font-weight: bold }
+.style2 { color: #B52125; font-weight: bold; font-style: italic; }
+.style3 { color: #FF0000; font-weight: bold; }
+.style9 { color: #000000 }
 -->
 </style>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
 </head>
 <body>
 <table style="width: 100%;">
@@ -123,7 +126,7 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_1">
 <div id="p7ABc1_1" class="p7ABcontent">
-<p>The <em><strong>cost basis</strong></em> is the taxpayer's original basis in the property. In most cases, this means the cost of the asset when purchased. For example, if Steve purchases 1,000 shares of stock for $60,000, his cost basis is $60,000.</p>
+<p>The <strong><em>cost basis </em></strong>is the taxpayer&rsquo;s original basis in the property. In most cases, this means the cost of the asset when purchased. For example, if Michael purchases 1,000 shares of stock for $60,000, his cost basis is $60,000.</p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -131,7 +134,7 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_2">
 <div id="p7ABc1_2" class="p7ABcontent">
-<p>If <strong><em>sales commissions</em></strong> are associated with the purchase of the asset, then these are treated as part of the investment and added to the cost basis. For example, if Steve paid a brokerage commission of $50 on his purchase of 1,000 shares for $60,000, then the $50 broker's commission is added to the basis of the stock.</p>
+<p>If <strong><em>sales commissions</em></strong> are associated with the purchase of the asset, then these are treated as part of the investment and added to the cost basis. For example, if Michael paid a brokerage commission of $50 on his purchase of 1,000 shares for $60,000, then the $50 broker&rsquo;s commission is added to the basis of the stock.</p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -147,7 +150,7 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_4">
 <div id="p7ABc1_4" class="p7ABcontent">
-<p><strong><em>Capital returns</em></strong> include depreciation, depletion, and amortization, which are often associated with business ownership. It also includes investments in securities where a portion of the income payment is a return of principal. For example, when investing in a GNMA bond, a portion of the income payments is a return of capital, requiring an adjustment in the cost basis.</p>
+<p><strong><em>Capital returns</em></strong> include depreciation, depletion, and amortization, which are often associated with business ownership. It also includes investments in securities where a portion of the income payment is a return of principal. For example, when investing in a <a onclick="MM_showHideLayers('layer1','','show')" href="#_s"><strong>GNMA</strong></a> bond, a portion of the income payments is a return of capital, requiring an adjustment in the cost basis.</p>
 </div>
 </div>
 <script type="text/javascript">// <![CDATA[
@@ -164,4 +167,17 @@ P7_opAB(1,1,1,0,0,0);
 </tr>
 </tbody>
 </table>
+<div id="layer1" style="position: absolute; width: 375px; height: 66px; z-index: 1; left: 275px; top: 386px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#ffffff">
+<tbody>
+<tr>
+<td>
+<h4>GNMA (Ginnie Mae)</h4>
+<p align="left"><strong><em>GNMA</em></strong>, also called &ldquo;<strong><em>Ginnie Mae</em></strong>,&rdquo; is the Government National Mortgage Association. It is a government agency to help finance government-assisted housing programs, and its mortgage pools consist of VA and FHA-insured mortgages.</p>
+<p align="center"><input onclick="MM_showHideLayers('layer1','','hide')" type="button" name="Button" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </body>

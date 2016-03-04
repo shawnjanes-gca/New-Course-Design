@@ -20,11 +20,11 @@ window.onload=function(){
 	Nifty("div#example02","big");
 	}
 function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
+ var i,p,v,obj,args=MM_showHideLayers.arguments;
+ for (i=0; i<(args.length-2); i+=3) 
+ with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+  if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+  obj.visibility=v; }
 }
 </script>
 <link href="greene/incometax/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
@@ -60,80 +60,80 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote><!--<table width="300" align="right" cellpadding="6">
-          <tr>
-            <td><table width="300" border="0" cellpadding="0">
-          <tr>
-            <td align="left"><div id="example01">
-                <table width="100%" border="0" cellpadding="0" cellspacing="0" >
-                  <tr>
-                    <td><div align="center"><strong>Basic Tax Formula</strong></div></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Gross Income </strong></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Less adjustments for Adjusted Gross Income (AGI)</p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Adjusted Gross Income (AGI) </strong></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Less the greater of:</p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Standard deduction or</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style4"> b) Total itemized deductions</span></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Less Personal and Dependency Exemption(s)</p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Taxable Income </strong></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Multiplied by personal tax rate</p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Adjusted for Alternative Minimum Tax (AMT)</p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Tentative Tax </strong></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Less tax credits</p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td><blockquote>
-                      <p>Plus other taxes </p>
-                    </blockquote></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Equals Income Tax Liability </strong></td>
-                  </tr>
-                </table>
-                </div></td>
-          </tr>
-        </table></td>
-          </tr>
-        </table>-->
-<p>Itemized deductions are incurred expenses that are deducted from an individual&rsquo;s adjusted gross income. Effective for the tax years beginning on or after January 1, 2013, a taxpayer&rsquo;s itemized deductions may be limited by the <a onclick="MM_showHideLayers('Layer6','','show')" href="javascript:void(0)"><strong>itemized deduction phase-out</strong></a> rules.</p>
+     <tr>
+      <td><table width="300" border="0" cellpadding="0">
+     <tr>
+      <td align="left"><div id="example01">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+         <tr>
+          <td><div align="center"><strong>Basic Tax Formula</strong></div></td>
+         </tr>
+         <tr>
+          <td>&nbsp;</td>
+         </tr>
+         <tr>
+          <td><strong>Gross Income </strong></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Less adjustments for Adjusted Gross Income (AGI)</p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td><strong>Adjusted Gross Income (AGI) </strong></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Less the greater of:</p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Standard deduction or</td>
+         </tr>
+         <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style4"> b) Total itemized deductions</span></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Less Personal and Dependency Exemption(s)</p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td><strong>Taxable Income </strong></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Multiplied by personal tax rate</p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Adjusted for Alternative Minimum Tax (AMT)</p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td><strong>Tentative Tax </strong></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Less tax credits</p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td><blockquote>
+           <p>Plus other taxes </p>
+          </blockquote></td>
+         </tr>
+         <tr>
+          <td><strong>Equals Income Tax Liability </strong></td>
+         </tr>
+        </table>
+        </div></td>
+     </tr>
+    </table></td>
+     </tr>
+    </table>-->
+<p>Itemized deductions are incurred expenses that are deducted from an individual&rsquo;s adjusted gross income. A taxpayer&rsquo;s itemized deductions may be limited by the <a onclick="MM_showHideLayers('Layer6','','show')" href="javascript:void(0)"><strong>itemized deduction phase-out</strong></a> rules.</p>
 <p>Taxpayers who choose to file claiming itemized tax deductions must fill out Schedule A.</p>
 <p><span class="style3">Click <span style="text-decoration: underline;"><a onfocus="if(this.blur)this.blur()" href="greene/incometax/pdf/Schedule_A.pdf" target="_blank">here</a></span> to view and print a copy of Schedule A.</span></p>
 <p>Schedule A provides for the following deductions listed below.</p>
@@ -149,11 +149,11 @@ loadFlashHeader(userCompany, parentFolder);
 </div>
 <div id="p7ABw1_1">
 <div id="p7ABc1_1" class="p7ABcontent">
-<p>Deductible unreimbursed medical expenses are subject to a floor of 10% of AGI (2015). This means that for a taxpayer with an AGI of $100,000, only medical expenses in excess of $10,000 (10% of AGI) would be deductible.</p>
+<p>Deductible unreimbursed medical expenses are subject to a floor of 10% of AGI (2016). This means that for a taxpayer with an AGI of $100,000, only medical expenses in excess of $10,000 (10% of AGI) would be deductible.</p>
 <p>Deductible medical expenses include:</p>
 <ul>
 <li>
-<p>Accident and Health Insurance Premiums</p>
+<p><strong><a onclick="MM_showHideLayers('Layer7','','show')" href="#_s">Accident and Health Insurance Premiums</a></strong></p>
 </li>
 <li>
 <p>Prescriptions</p>
@@ -178,7 +178,7 @@ loadFlashHeader(userCompany, parentFolder);
 <p>Taxpayers are given deductions for certain taxes that they have paid or will pay in the year for which they are filing their tax return. These taxes include:</p>
 <ul>
 <li>
-<p>State and Local Income Taxes (available for 2014 returns, expired for 2015 returns)</p>
+<p>State and Local Income Taxes or general sales taxes*</p>
 </li>
 <li>
 <p>Real Estate Taxes</p>
@@ -187,7 +187,7 @@ loadFlashHeader(userCompany, parentFolder);
 <p>Personal Property Taxes</p>
 </li>
 </ul>
-<p>Since 2004, individuals have had the option of deducting general sales taxes instead of state and local income taxes on Schedule A. This option expired December 31, 2012, was extended to the end of 2013, and expired again on December 31, 2013. The option was extended once again in late 2014 for 2014 returns. Be alert for potential extension of this option yet again for 2015 income tax returns.</p>
+<p style="font-size: 10px;"><em>* This provision is available to all taxpayers but is especially attractive to residents of states with no state income tax. </em></p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -209,7 +209,8 @@ loadFlashHeader(userCompany, parentFolder);
 </li>
 </ul>
 <p>The deductible interest is limited to that generated by debt on the lesser of $100,000 or the total FMV of the home minus any home acquisition or grandfathered debt. For example, if the FMV of the home is $300,000 and the acquisition mortgage is $270,000, only interest on a home equity debt of $30,000 ($300,000 - $270,000) would be deductible.</p>
-<p><strong><em> Investment interest</em></strong> is any interest on debt incurred to purchase property held for investment purposes. Interest on debt incurred to purchase property held for taxable investment purposes is generally deductible. However, you cannot deduct interest expenses that were incurred to purchase or carry tax-exempt investments. Furthermore, investment interest generally may only be deducted up to the extent of net investment income. <span class="style2"><strong>Click <span style="text-decoration: underline;"><a onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','show','Layer4','','hide','Layer5','','hide')" onfocus="if(this.blur)this.blur()" href="javascript:;">here</a></span> for an example.</strong></span></p>
+<p><strong><em>Investment interest</em></strong> is any interest on debt incurred to purchase property held for investment purposes. Interest on debt incurred to purchase property held for taxable investment purposes is generally deductible. However, you cannot deduct interest expenses that were incurred to purchase or carry tax-exempt investments. For example, interest paid on debt used to purchase municipal bonds would generally be non-deductible because the municipal bond interest is generally excluded from income.</p>
+<p>Furthermore, investment interest generally may only be deducted up to the extent of net investment income. <span class="style2"><strong>Click <span style="text-decoration: underline;"><a onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','show','Layer4','','hide','Layer5','','hide')" onfocus="if(this.blur)this.blur()" href="javascript:;">here</a></span> for an example.</strong></span></p>
 </div>
 </div>
 <div class="p7ABtrig">
@@ -289,10 +290,10 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p align="center"><strong>Attained age before the close of the taxable year</strong></p>
 </td>
 <td valign="top" bgcolor="#BFBA84">
-<p align="center"><strong>2015 Maximum LTC Premium Deduction</strong></p>
+<p align="center"><strong>2016 Maximum LTC Premium Deduction</strong></p>
 </td>
 <td valign="top" bgcolor="#BFBA84">
-<p align="center"><strong>2014 Maximum LTC Premium Deduction</strong></p>
+<p align="center"><strong>2015 Maximum LTC Premium Deduction</strong></p>
 </td>
 </tr>
 <tr>
@@ -300,10 +301,10 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>40 or less</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$380</p>
+<p align="center">$390</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$370</p>
+<p align="center">$380</p>
 </td>
 </tr>
 <tr>
@@ -311,10 +312,10 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>More than 40 but not more than 50</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$710</p>
+<p align="center">$730</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$700</p>
+<p align="center">$710</p>
 </td>
 </tr>
 <tr>
@@ -322,10 +323,10 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>More than 50 but not more than 60</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$1,430</p>
+<p align="center">$1,460</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$1,400</p>
+<p align="center">$1,430</p>
 </td>
 </tr>
 <tr>
@@ -333,10 +334,10 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>More than 60 but not more than 70</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$3,800</p>
+<p align="center">$3,900</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$3,720</p>
+<p align="center">$3,800</p>
 </td>
 </tr>
 <tr>
@@ -344,10 +345,10 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>More than 70</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$4,750</p>
+<p align="center">$4,870</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF">
-<p align="center">$4,660</p>
+<p align="center">$4,750</p>
 </td>
 </tr>
 </tbody>
@@ -419,7 +420,7 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <td>
 <p><strong>Itemized deduction phase-out</strong></p>
 <p>There was no phase-out of itemized deductions in tax years 2009 through 2012. However, the American Taxpayer Relief Act of 2012 marked a return of itemized deduction phase-outs for taxpayers with adjusted gross income above certain limits.</p>
-<p>A taxpayer&rsquo;s itemized deductions are reduced when adjusted gross income in 2015 (as indexed) exceeds certain limits. A taxpayer must reduce his or her itemized deductions by 3% of the excess over the limits in the chart below. No more than 80% of a taxpayer&rsquo;s itemized deductions may be lost under these rules.</p>
+<p>A taxpayer&rsquo;s itemized deductions are reduced when adjusted gross income in 2016 (as indexed) exceeds certain limits. A taxpayer must reduce his or her itemized deductions by 3% of the excess over the limits in the chart below. No more than 80% of a taxpayer&rsquo;s itemized deductions may be lost under these rules.</p>
 <table style="width: 67%;" border="0" cellspacing="2" cellpadding="3" align="center" bgcolor="#FFFFFF">
 <tbody>
 <tr>
@@ -427,7 +428,7 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p align="center"><strong>Filing Status</strong></p>
 </td>
 <td valign="top" bgcolor="#BFBA84" width="244">
-<p align="center"><strong>2015 Adjusted Gross Income Phase-Out</strong></p>
+<p align="center"><strong>2016 Adjusted Gross Income Phase-Out</strong></p>
 </td>
 </tr>
 <tr>
@@ -435,7 +436,7 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>Married Filing Jointly</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF" width="244">
-<p align="center">$309,900</p>
+<p align="center">$311,300</p>
 </td>
 </tr>
 <tr>
@@ -443,7 +444,7 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>Head of Household</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF" width="244">
-<p align="center">$284,050</p>
+<p align="center">$285,350</p>
 </td>
 </tr>
 <tr>
@@ -451,7 +452,7 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>Single</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF" width="244">
-<p align="center">$258,250</p>
+<p align="center">$259,400</p>
 </td>
 </tr>
 <tr>
@@ -459,16 +460,36 @@ P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
 <p>Married Filing Separately</p>
 </td>
 <td valign="top" bgcolor="#E7E6CF" width="244">
-<p align="center">$154,950</p>
+<p align="center">$155,650</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p><strong>Example 1</strong></p>
-<p>A single taxpayer has adjusted gross income of $458,250 in 2015. The taxpayer has $40,000 in itemized deductions before application of the phase-out rules. The excess adjusted gross income is $200,000 - calculated as $458,250 less $258,250. The taxpayer must reduce his or her itemized deductions by $6,000 - calculated as 3% of $200,000. The taxpayer may deduct only $34,000 as an itemized deduction.</p>
+<p>A single taxpayer has adjusted gross income of $459,400 in 2016. The taxpayer has $40,000 in itemized deductions before application of the phase-out rules. The excess adjusted gross income is $200,000 - calculated as $458,250 less $259,400. The taxpayer must reduce his or her itemized deductions by $6,000 - calculated as 3% of $200,000. The taxpayer may deduct only $34,000 as an itemized deduction.</p>
 <p><strong>Example 2</strong></p>
-<p>Assume the taxpayer in Example 1 has an adjusted gross income of $1,758,250.&nbsp; The excess adjusted gross income is $1,500,000 calculated as $1,758,250 less $258,250. 3% of $1,500,000 is $45,000.&nbsp; In this case, the taxpayer would appear to lose all of his or her itemized deductions; however, the maximum reduction under these phase-out rules is 80% of the itemized deductions.&nbsp; Therefore, the taxpayer would deduct $8,000 as an itemized deduction. The $8,000 is calculated as follows: $40,000 times 80% maximum percent reduction equals $32,000 maximum dollar reduction - $40,000 less $32,000 equals $8,000.</p>
+<p>Assume the taxpayer in Example 1 has an adjusted gross income of $1,759,400.&nbsp; The excess adjusted gross income is $1,500,000 calculated as $1,759,400 less $259,400. Then, 3% of $1,500,000 is $45,000. In this case, the taxpayer would appear to lose all of his or her itemized deductions; however, the maximum reduction under these phase-out rules is 80% of the itemized deductions. Therefore, the taxpayer would deduct $8,000 as an itemized deduction. The $8,000 is calculated as follows: $40,000 times 80% maximum percent reduction equals $32,000 maximum dollar reduction. Hence, the deduction allowed is $8,000 calculated as $40,000 less $32,000.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit5" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 530px; height: 35px; z-index: 1; left: 312px; top: 786px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p>Accident and health insurance premiums are generally deductible only if these conditions are both met:</p>
+<ul type="disc">
+<li>
+<p>The taxpayer paid the premiums with after-tax dollars (premiums paid from a Health Savings Account are not deductible)</p>
+</li>
+<li>
+<p>The taxpayer paid the entire cost of the premium (if an employer paid for a portion of the premium then none of the employee&rsquo;s premium payments are deductible by the employee</p>
+</li>
+</ul>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit5" value="close" /></p>
 </td>
 </tr>
 </tbody>
