@@ -1,5 +1,5 @@
 <head>
-<html xmlns="//www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/roundedPage.css" />
@@ -7,7 +7,7 @@
 <script type="text/javascript" src="greene/asset_allocation/js/nifty.js"></script>
 <script type="text/javascript" src="greene/asset_allocation/js/final.js"></script>
 <style type="text/css">
-div#example01{width: 300px; padding: 20px; margin:0 auto; background:#CCCC99; }
+div#example01{width: 600px; padding: 20px; margin:0 auto; background:#CCCC99; }
 </style>
 <script type="text/javascript" src="greene/asset_allocation/js/niftycube.js"></script>
 <script type="text/javascript">
@@ -15,8 +15,7 @@ window.onload=function(){
 	Nifty("div#example01","big");
 	}
 </script>
-<link href="greene/asset_allocation/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="greene/asset_allocation/p7epm/p7EPMscripts.js"></script>
+
 </head>
 <body>
 <table style="width: 100%;">
@@ -36,72 +35,23 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<h2>Correlation's Impact on Portfolio Risk</h2>
+<h2>Establishing an "Efficient Frontier"</h2>
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>
-<blockquote>While such perfect inverse correlation is certainly extreme, this example helps illustrate how the correlation between two securities can have a significant impact upon their combined return, as well as the overall risk of the portfolio.
-<p>Effective diversification should lower portfolio volatility. In other words, the benefit of diversification is that when one asset underperforms, another can compensate. Since assets with a high correlation tend to act in the same manner in response to external stimuli, a portfolio of highly correlated securities does little to diversify risk because assets with high correlation tend to act in the same manner in response to external stimuli. Therefore, <em><strong>to effectively diversify risk (lower volatility in a portfolio), the assets, or asset classes, must have a LOW degree of correlation. </strong></em></p>
-<p>Knowledge of how different asset classes correlate to each other is therefore a valuable aid in structuring a portfolio. To see how different indices correlate with each other, look at the chart below.</p>
-<table style="width: 50px;" cellpadding="6">
+<blockquote>
+<table style="width: 50px;" cellpadding="6" align="right">
 <tbody>
 <tr>
-<td>
-<div id="example01">
-<p><strong>MVO Example</strong></p>
-<p>The importance of inputting the correlation coefficient for every pair of assets when determining the MVO of a portfolio is illustrated in the following example.</p>
-<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>
-<div id="p7EPM_1" class="p7EPM05">
-<div id="p7EPMt_1" class="p7epm_trigs">
-<table style="width: 98%;" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
-<tbody>
-<tr>
-<td width="77">
-<div align="center"><a id="p7EPMtrg1_1" onfocus="if(this.blur)this.blur()" href="#p7EPMc1_1"><img src="greene/asset_allocation/DocumentIcon.gif" alt="" width="33" height="33" border="0" /></a></div>
-</td>
-<td valign="middle">
-<div align="left"><strong><span style="color: #ff0000;">Click the icon to view the example.</span></strong></div>
-</td>
+<td><img src="greene/asset_allocation/efficient_frontier.gif" alt="" width="345" height="231" /></td>
 </tr>
 </tbody>
 </table>
-<div class="p7epm_ie5clear">&nbsp;</div>
-</div>
-<div id="p7EPMdw_1">
-<div id="p7EPMw1_1" class="p7epm_cwrapper">
-<div id="p7EPMc1_1" class="p7epm_content pan1">
-<p>Suppose two stocks, ABC and XYZ, have the same expected return and the same degree of volatility. A portfolio consisting of 1000 shares of each stock might be expected to have the same return as a portfolio consisting of 2000 shares of only one of the stocks. But what would happen if both securities were perfectly inversely correlated. If one stock increases in value by $1.00, then the other decreases in value by $1.00. The end result is no return for the portfolio because of the correlation between the two securities.</p>
-<p>Note also that the risk or volatility associated with the portfolio is also affected. In fact, under such perfect inverse correlation, risk has essentially been eliminated. Each security has cancelled out the risk associated with the other and we are left with the certainty that the return will always be zero.</p>
-</div>
-</div>
-</div>
-<!--[if IE 5]><style>.p7epm_trigs a {height: 1%;}.p7epm_ie5clear {clear: both;}</style><![endif]--> <!--[if IE 6]><style>.p7epm_trigs, .p7epm_trigs a {height: 1%;}</style><![endif]-->
-<script type="text/javascript">// <![CDATA[
-P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
-// ]]></script>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table style="width: 500px;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td><img src="greene/principles/CorrelationAssetClasses.gif" alt="#" width="522" height="313" /></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
+<p>With MVO, we can input expected return, standard deviation, and correlation of multiple assets (asset classes) and examine the possible risk return profiles of various allocations among those assets (asset classes). Since the possible combinations are extensive, the outcome is best captured graphically. The diagram (right) shows the risk profiles of various combinations of assets by plotting their risk (as measured by standard deviation) on the X-axis and expected return on the Y-axis.</p>
+<p>As we increase the number of plotted points for various risk profiles, we will eventually end up with a border, which is depicted by the line AC. The boomerang effect of this line, causing the border to curve back at BC, is the result of the correlation between securities, which we discussed earlier.</p>
+<p>Clearly, any rational investor would seek to maximize the returns provided from any given level of risk. This would be found along the line depicted by AB. Any asset allocation falling on this line from A to B, known as the <em><strong>Efficient Frontier</strong></em>, would be the most efficient combination possible for any given level of risk. Investors would prefer to avoid profiles that fall inside the curve, as those combinations represent a lesser return for any given level of risk. They would also avoid those profiles falling on the line depicted by BC, since these are the most inefficient profiles available for a given level of risk.</p>
 </blockquote>
 </td>
 </tr>

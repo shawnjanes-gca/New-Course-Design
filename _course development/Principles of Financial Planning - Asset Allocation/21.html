@@ -1,21 +1,5 @@
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_showHideLayers() { //v6.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-//-->
-</script>
+<head>
+<script language="JavaScript" type="text/JavaScript"></head>
 <body>
 <table style="width: 100%;">
 <tbody>
@@ -31,387 +15,209 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<h2>Review Exercise</h2>
+<h2>Understanding the Security Market Line</h2>
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>
-<div align="left">
-<blockquote>
-<p><strong><span style="color: #ff0000;">Answer the following questions to review the preceding material.</span></strong></p>
+<blockquote>The key message of the CAPM is that there is a direct relationship between risk and return. The implication for purposes of asset allocation is to emphasize the importance of first determining the risk tolerance of the investor, then identifying a portfolio that efficiently achieves a fair return for that given level of risk. Investors should not expect to "beat the market" unless they intend to have a portfolio that is riskier than the market as a whole.
+<p>The message and implications for the CAPM becomes more easily understood through a graph.</p>
+<p><span style="color: #ff0000;"><strong>Click each term on the graph for an explanation, paying particular attention to the Security Market Line.</strong></span></p>
 <p>&nbsp;</p>
 </blockquote>
-</div>
 </td>
 </tr>
 <tr>
 <td>
-<table style="width: 750px;">
-<tbody>
-<tr>
-<td align="right" valign="top" width="55"><strong>1.</strong></td>
-<td width="695"><strong>__________ describes the relationship between risk and return.</strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-function answerCorrect(questionNumber, answer, formName)
-{
-   	// declare a variable to hold return value
-	var correct = false;
-	var questionLength = formName.radQuestionChoice.length;
-	var questionChoice;
-
-   	// if answer provided is same as correct answer then correct variable is true
-   	if (answer == answers[questionNumber])
-      	{correct = true;
-       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
-			{
-			formName.radQuestionChoice[questionChoice].disabled = true;
-
-	  		}
-
-   	// return whether the answer was correct (true or false)
-   	return correct;
-	}
-}
-
-function getQuestion(questionNumber)
-{
-
-   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-   var questionLength = questions[questionNumber].length;
-   var questionChoice;
-
-   questionHTML = questionHTML + "<P>";
-   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-   {
-      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-      questionHTML = questionHTML + questions[questionNumber][questionChoice];
-      questionHTML = questionHTML + "<BR>";
-   }
-   questionHTML = questionHTML + "</P>";
-
-   return questionHTML;
-}
-function buttonCheckQ_onclick(questionNum, formName)
-{
-   var answer = 0;
-   while (formName.radQuestionChoice[answer].checked != true)
-   {
-      answer++;
-   }
-
-   var answer2 = String.fromCharCode(65 + answer);
-   answer++;
-   if (answerCorrect(questionNum,answer2, formName) == true)
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-   else
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-}
-
-var questionNumber;
-var questions=new Array();
-var answers=new Array();
-var layers=new Array();
-// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-
-// BEGIN RADIO QUESTION 1 CODE
-var formNumber=new Array();
-formNumber[1]="QuestionForm1";
-questionNumber=1;
-questions[1]=new Array();
-layers[1]=new Array();
-//This is the test question
-questions[1][0]="";
-
-//These are the answer choices
-questions[1][1]="CAPM";
-questions[1][2]="Beta";
-questions[1][3]="Coefficient";
-questions[1][4]="Covariance";
-//These are the associated layers
-layers[1][1]="Layer1";
-layers[1][2]="Layer2";
-layers[1][3]="Layer2";
-layers[1][4]="Layer2";
-
-//This is the test answer
-answers[1]="A";
-// ]]></script>
-</p>
-<form name="QuestionForm1">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 1
-document.write(getQuestion(1));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 1 CODE
-// ]]></script>
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td width="15">&nbsp;</td>
-<td><hr /></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-</td>
-<td align="right" valign="top"><strong>2.</strong></td>
-<td><strong>The Capital Asset Pricing Model states that the expected return of a security or portfolio equals:</strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 2 CODE
-var formNumber=new Array();
-formNumber[2]="QuestionForm2";
-questionNumber=2;
-questions[2]=new Array();
-layers[2]=new Array();
-//This is the test question
-questions[2][0]="";
-
-//These are the answer choices
-questions[2][1]="The tax-free rate plus a risk premium";
-questions[2][2]="The risk-free rate plus a premium for the time value of money";
-questions[2][3]="The risk-free rate plus a risk premium";
-questions[2][4]="The market rate plus a risk premium";
-//These are the associated layers
-layers[2][1]="Layer4";
-layers[2][2]="Layer4";
-layers[2][3]="Layer3";
-layers[2][4]="Layer4";
-
-//This is the test answer
-answers[2]="C";
-// ]]></script>
-</p>
-<form name="QuestionForm2">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 2
-document.write(getQuestion(2));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 2 CODE
-// ]]></script>
-</td>
-<td colspan="2" valign="top">
-<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td width="15">&nbsp;</td>
-<td><hr /></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-</td>
-<td align="right" valign="top"><strong>3.</strong></td>
-<td><strong>The Capital Asset Pricing Model assumes the market is:</strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 3 CODE
-var formNumber=new Array();
-formNumber[3]="QuestionForm3";
-questionNumber=3;
-questions[3]=new Array();
-layers[3]=new Array();
-//This is the test question
-questions[3][0]="";
-
-//These are the answer choices
-questions[3][1]="Efficient";
-questions[3][2]="Inefficient";
-questions[3][3]="Stable";
-questions[3][4]="Best understood through fundamental analysis of securities";
-//These are the associated layers
-layers[3][1]="Layer5";
-layers[3][2]="Layer6";
-layers[3][3]="Layer6";
-layers[3][4]="Layer6";
-
-//This is the test answer
-answers[3]="A";
-// ]]></script>
-</p>
-<form name="QuestionForm3">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 3
-document.write(getQuestion(3));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 3 CODE
-// ]]></script>
-</td>
-<td colspan="2" valign="top">
-<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td width="15">&nbsp;</td>
-<td><hr /></td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-</td>
-<td align="right" valign="top"><strong>4.</strong></td>
-<td><strong>A beta __________ than 1.0 implies the stock is __________ than the market; a beta __________ than one implies the stock is __________ than the market.</strong>
-<p>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 6 CODE
-var formNumber=new Array();
-formNumber[6]="QuestionForm6";
-questionNumber=6;
-questions[6]=new Array();
-layers[6]=new Array();
-//This is the test question
-questions[6][0]="";
-
-//These are the answer choices
-questions[6][1]="Less, riskier; greater, less risky";
-questions[6][2]="Less, less risky; greater, riskier";
-//These are the associated layers
-layers[6][1]="Layer8";
-layers[6][2]="Layer7";
-
-//This is the test answer
-answers[6]="B";
-// ]]></script>
-</p>
-<form name="QuestionForm6">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 6
-document.write(getQuestion(6));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 6 CODE
-// ]]></script>
+<h4 align="center">Security Market Line Graph</h4>
+<p align="center"><em><img src="greene/asset_allocation/secmarklinegraph.gif" alt="" width="655" height="380" usemap="#Map" border="0" /></em></p>
 </td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-<div id="Layer1" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 565px; top: 305px; visibility: hidden;">
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 202px; top: 515px; visibility: hidden;">
 <table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
 <tbody>
 <tr>
 <td>
-<p><strong>Correct.</strong></p>
+<p><strong><span style="color: #000000;">Return</span></strong></p>
+<p>The vertical axis measures the expected rate of return of a stock or portfolio.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer2" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 565px; top: 305px; visibility: hidden;">
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 578px; top: 505px; visibility: hidden;">
 <table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
 <tbody>
 <tr>
 <td>
-<p><strong>Incorrect.</strong></p>
+<p><strong><span style="color: #000000;">Beta <em>&szlig;</em></span></strong></p>
+<p>The horizontal axis measures the risk associated with the stock or portfolio as beta (<em>&szlig;</em>). This risk is determined relative to the risk of the market as a whole.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer3" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 565px; top: 530px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 104px; top: 447px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
 <tbody>
 <tr>
-<td>
-<p><strong>Correct.</strong></p>
+<td height="152">
+<p><strong><em><span style="color: #000000;">r<sub>f</sub></span></em></strong></p>
+<p>The risk-free rate <strong>(<em>r<sub>f</sub></em> )</strong> is the rate of return that would be expected on risk-free securities, such as T-bills. In this illustration, it is 4%.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit3" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer4" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 565px; top: 530px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 135px; top: 354px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
 <tbody>
 <tr>
 <td>
-<p><strong>Incorrect.</strong></p>
+<p><strong><em><span style="color: #000000;">r<sub>m</sub></span></em></strong></p>
+<p>The market return (<em>r<sub>m</sub></em> ) is the return expected on the general market. In this illustration, it is 8%.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit4" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer5" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 555px; top: 710px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 157px; top: 514px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
 <tbody>
 <tr>
 <td>
-<p><strong>Correct.</strong></p>
+<p><strong><span style="color: #000000;">0</span></strong></p>
+<p>When there is no risk associated with the security or portfolio, the beta (<em>&szlig;</em>) is zero. The CAPM teaches us that to get greater return, you must assume risk.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit5" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer6" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 555px; top: 710px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 480px; top: 450px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
 <tbody>
 <tr>
 <td>
-<p><strong>Incorrect.</strong></p>
+<p><strong><span style="color: #000000;">1</span></strong></p>
+<p>The beta of the general market is 1. To gain a higher expected return than the general market, an investor must assume more risk than the general market.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit6" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer7" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 555px; top: 890px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 154px; top: 401px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
 <tbody>
 <tr>
 <td>
-<p><strong>Correct.</strong></p>
+<p><strong><span style="color: #000000;">0.25</span></strong></p>
+<p>When a stock or portfolio has some risk, but less risk than that of the general market, its beta (<em>&szlig;</em>) is somewhere between 0 and 1. For this asset, the beta is 0.25. Using the CAPM formula, its expected return is therefore:</p>
+<p align="center"><em><strong>E(r<sub>i</sub> ) = r<sub>f</sub> + &szlig;<sub>i</sub> x [E(r<sub>m</sub> ) - r<sub>f</sub> ]</strong></em></p>
+<p align="center"><em><strong>E(r<sub>i</sub> ) = 4% + 0.25 x (8% - 4%) = 5% </strong></em></p>
 <p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit7" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer8" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 555px; top: 890px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<div id="Layer8" style="position: absolute; width: 385px; height: 35px; z-index: 1; left: 90px; top: 437px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
 <tbody>
 <tr>
 <td>
-<p><strong>Incorrect.</strong></p>
+<p><strong><span style="color: #000000;"><em>r<sub>i</sub></em></span></strong></p>
+<p>The rate of return for an investment asset is designated as r<sub>i</sub>. In this example, r<sub>i</sub> = 5%.<em><strong></strong></em></p>
 <p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit8" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 106px; top: 431px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr>
+<td>
+<p><strong><span style="color: #000000;">Market Portfolio</span></strong></p>
+<p>The Market Portfolio, for which the S&amp;P 500 can serve as a proxy, has a beta of 1. In this case, the rate of return for the market portfolio is 8%.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit9" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 225px; top: 440px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr>
+<td>
+<p><strong><span style="color: #000000;">Market Risk Premium</span></strong></p>
+<p>The risk premium required by investors for holding an S&amp;P 500 Index fund rather than risk-free securities is the incremental return over and above the risk-free rate of return. This is depicted here by spread between the risk-free return of 4% and the market return of 8%.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 475px; top: 426px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr>
+<td>
+<p><strong><span style="color: #000000;">Asset</span></strong></p>
+<p>This example looks at a single investment asset. It could just as easily look at a portfolio of stocks by calculating a weighted average of their betas.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit11" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 125px; top: 277px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr>
+<td>
+<p><strong><span style="color: #000000;">Security Market Line</span></strong></p>
+<p>Connecting the risk-free asset and the market portfolio with a straight line depicts the "Security Market Line." This straight line reflects the fact that the expected risk premium on all possible stocks or portfolios varies in direct proportion to their beta. Under the premise of the CAPM theory, all efficient portfolios (combinations of various securities) lie on this security market line. Thus, for any given level of risk, an investor can use the Security Market Line to identify the return he should expect from a portfolio by checking the corresponding value on the y-axis.</p>
+<p>For example, look at the asset labeled "A." It offers a rate of return lower than would be expected for an asset of comparable risk on the security market line. Investors will bid its price down until its rate of return moves it up to the security market line. Likewise, asset "B" offers a higher return than an asset of comparable risk on the security market line. Investors will bid its price up until its return declines to the security market line. Based on the belief that the market is very efficient in processing information and making such adjustments, the CAPM contends that these adjustments take place very quickly.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><map name="Map"> 
+<area onclick="MM_showHideLayers('Layer4','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="3,91,26,114" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer8','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="5,180,27,200" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer3','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="5,232,28,253" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer1','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="88,3,147,24" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer11','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="137,159,188,182" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer5','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="66,354,84,373" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer7','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="195,350,237,374" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer6','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="453,357,471,370" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer2','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="524,352,593,376" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer9','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="330,59,466,83" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer12','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="493,24,653,53" href="#_self" />
+ 
+<area onclick="MM_showHideLayers('Layer10','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="493,152,592,203" href="#_self" />
+ </map></p>
 </body>

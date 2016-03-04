@@ -1,34 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link href="greene/asset_allocation/p7ap/p7ap_04.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="greene/asset_allocation/p7ap/p7APscripts.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/roundedPage.css" />
 <link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/niftyCorners.css" />
 <script type="text/javascript" src="greene/asset_allocation/js/nifty.js"></script>
 <script type="text/javascript" src="greene/asset_allocation/js/final.js"></script>
 <style type="text/css">
-div#example01{width: 600px; padding: 20px; margin:0 auto; background:#CCCC99; }
-div#example02{width: 600px; padding: 20px; margin:0 auto; background:#CCCC99; }
+div#example01{width: 700px; padding: 20px; margin:0 auto; background:#CCCC99; }
 </style>
 <script type="text/javascript" src="greene/asset_allocation/js/niftycube.js"></script>
 <script type="text/javascript">
 window.onload=function(){
 	Nifty("div#example01","big");
-	Nifty("div#example02","big");
 	}
 </script>
-<link href="greene/asset_allocation/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="greene/asset_allocation/p7epm/p7EPMscripts.js"></script>
-<style type="text/css">
-<!--
-.style10 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
-.style8 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; }
--->
-</style>
-</head>
 
+</head>
 <body>
 <table style="width: 100%;">
 <tbody>
@@ -47,66 +35,77 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<h2>Comparing Strategic vs. Tactical Allocation Strategies</h2>
+<h2>The Planning Process in Action</h2>
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>
 <blockquote>
-<p>In summary, tactical and strategic asset allocation can be compared by three basic factors, as illustrated in the chart below. Which approach an investment manager or firm takes may be an outgrowth of his or her stance regarding one or more of these factors.</p>
+<p>While every firm has its own approved approach to developing an effective asset allocation strategy for a client's portfolio, the following outline provides a list of the factors to consider in four primary steps to this process.</p>
 <p>&nbsp;</p>
-<table style="width: 500px;" border="0" cellspacing="0" cellpadding="6" align="center">
+<table style="width: 700px;" border="0" cellspacing="0" cellpadding="6" align="center">
 <tbody>
 <tr>
 <td>
-<p align="center"><strong>Strategic vs. Tactical Allocation Strategy Comparison</strong></p>
-<table style="width: 700px;" border="0" cellspacing="3" cellpadding="3" align="center">
-<tbody>
-<tr>
-<td align="center" valign="middle" bgcolor="#FFFFFF" width="210">&nbsp;</td>
-<td align="center" valign="middle" bgcolor="#BFBC82" width="230">
-<p><strong>Strategic</strong></p>
-</td>
-<td align="center" valign="middle" bgcolor="#BFBC82" width="230">
-<p><strong>Tactical</strong></p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#DBD9B9">
-<p><strong>&nbsp;&nbsp;&nbsp;Time</strong></p>
-</td>
-<td bgcolor="#E7E6CF">
-<p align="center">Long-Term Oriented</p>
-</td>
-<td bgcolor="#E7E6CF">
-<p align="center">Short-Term Oriented</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#DBD9B9">
-<p><strong>&nbsp;&nbsp;&nbsp;Investment Activity</strong></p>
-</td>
-<td bgcolor="#E7E6CF">
-<p align="center">Portfolio Rebalancing</p>
-</td>
-<td bgcolor="#E7E6CF">
-<p align="center">More Trading Oriented</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#DBD9B9">
-<p><strong>&nbsp;&nbsp;&nbsp;Focus</strong></p>
-</td>
-<td bgcolor="#E7E6CF">
-<p align="center">Client Goals</p>
-</td>
-<td bgcolor="#E7E6CF">
-<p align="center">Market Projections</p>
-</td>
-</tr>
-</tbody>
-</table>
+<div id="example01">
+<blockquote>
+<p><strong>Stage One: Assess the Situation</strong></p>
+<ul>
+<li>
+<p>Quantify all client needs and objectives</p>
+</li>
+<li>
+<p>Identify current assets</p>
+</li>
+<li>
+<p>Define the time horizon</p>
+</li>
+<li>
+<p>Understand the client's risk tolerance (ability to handle short-term fluctuations in market value)</p>
+</li>
+<li>
+<p>Define the specific liquidity needs and liquidity events</p>
+</li>
+<li>
+<p>Assess the client's tax situation (for each account as well as their overall tax status)</p>
+</li>
+</ul>
+<p><strong>Stage Two: Define Parameters</strong></p>
+<ul>
+<li>
+<p>Define the appropriate asset classes to be considered for the client</p>
+</li>
+<li>
+<p>Define the client's deficit tolerances</p>
+</li>
+<li>
+<p>Identify any deficit coverage assets that can be used to fund shortfalls in a scenario</p>
+</li>
+</ul>
+<p><strong>Stage Three: Optimize</strong></p>
+<ul>
+<li>
+<p>Utilize Mean Variance Optimization to determine an effective portfolio mix</p>
+</li>
+<li>
+<p>Use Monte Carlo sensitivity analysis to determine the probable "success rate" of an allocation in meeting the objective(s) within a client's identified deficit tolerance</p>
+</li>
+</ul>
+<p><strong>Stage Four: Implement</strong></p>
+<ul>
+<li>
+<p>Define a plan for rebalancing the portfolio</p>
+</li>
+<li>
+<p>Establish parameters for re-optimization</p>
+</li>
+<li>
+<p>Manage the allocation over time</p>
+</li>
+</ul>
+</blockquote>
+</div>
 </td>
 </tr>
 </tbody>
@@ -117,4 +116,3 @@ loadFlashHeader(userCompany, parentFolder);
 </tbody>
 </table>
 </body>
-</html>

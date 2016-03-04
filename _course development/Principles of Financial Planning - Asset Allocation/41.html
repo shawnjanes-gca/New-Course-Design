@@ -1,23 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/roundedPage.css" />
-<link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/niftyCorners.css" />
-<script type="text/javascript" src="greene/asset_allocation/js/nifty.js"></script>
-<script type="text/javascript" src="greene/asset_allocation/js/final.js"></script>
-<style type="text/css">
-div#example01{width: 600px; padding: 20px; margin:0 auto; background:#CCCC99; }
-</style>
-<script type="text/javascript" src="greene/asset_allocation/js/niftycube.js"></script>
-<script type="text/javascript">
-window.onload=function(){
-	Nifty("div#example01","big");
-	}
-</script>
-
-</head>
-
+<script language="JavaScript" type="text/JavaScript"></head>
 <body>
 <table style="width: 100%;">
 <tbody>
@@ -31,54 +13,386 @@ loadFlashHeader(userCompany, parentFolder);
 </td>
 </tr>
 <tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p><strong><span style="color: #ff0000;">Review the previous pages by answering the following questions.</span></strong></p>
+<p>&nbsp;</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<table style="width: 750px;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55"><strong>1.</strong></td>
+<td width="695"><strong>Asset allocation is a process of diversification achieved by blending assets or asset classes.</strong>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="True";
+questions[1][2]="False";
+//These are the associated layers
+layers[1][1]="Layer1";
+layers[1][2]="Layer2";
+
+//This is the test answer
+answers[1]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="left" valign="top">
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>
+<td width="15">&nbsp;</td>
+<td><hr /></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top"><strong>2.</strong></td>
+<td><strong>Complete each statement by selecting the correct response from the pull down menus.</strong>
 <blockquote>
-<h2>Failure to Monitor/Manage the Portfolio Over Time</h2>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+function drop_buttonCheckQ(questionNum, formName)
+{
+	var answer=0;
+	var correct="false";
+	var selection=formName.selectedIndex
+	if (formName.selectedIndex==0)
+	{
+		return false;
+	}
+	answer=String.fromCharCode(64+selection);
+	if (answer==drop_answers[questionNum])
+		{
+			correct="true"
+		}
+	if (correct=="true")
+	{
+		MM_showHideLayers(drop_layers[questionNum][formName.selectedIndex],'','show');
+		formName.disabled=true;
+	}
+	else
+	{
+		MM_showHideLayers(drop_layers[questionNum][formName.selectedIndex],'','show');
+	}
+}
+//BEGIN ONE TIME INSERT OBJECTS FOR DROP-DOWN TEST QUESTIONS
+var drop_questions=new Array();
+var drop_answers=new Array();
+var drop_layers=new Array();
+var drop_formNumber=new Array();
+// END ONE TIME INSERT OBJECTS FOR DROP-DOWN TEST QUESTIONS
+
+// BEGIN DROP DOWN QUESTION 2 CODE
+drop_formNumber[2]="fillForm2";
+drop_questions[2]=new Array();
+drop_layers[2]=new Array();
+drop_answers[2]=new Array();
+//here is the question
+drop_questions[2][0]="A. __________ is short-term oriented.";
+// these are the associated layers
+drop_layers[2][1]="Layer4";
+drop_layers[2][2]="Layer3";
+//This is the test answer
+drop_answers[2]="B";
+document.write("<P><B>"+drop_questions[2][0]+"</B></P>");
+// ]]></script>
+</p>
+<form name="dropForm2"><select name="dropAnswer2" onchange="return drop_buttonCheckQ(2, window.document.dropForm2.dropAnswer2)"> <option selected="selected" value="0">Choose Your Answer:</option> <option value="Strategic Asset Allocation">Strategic Asset Allocation</option> <option value="Tactical Asset Allocation">Tactical Asset Allocation</option> </select></form>
+<script type="text/javascript">// <![CDATA[
+//END DROP DOWN QUESTION 2 CODE
+// ]]></script>
 </blockquote>
 </td>
 </tr>
 <tr>
+<td align="right" valign="top">&nbsp;</td>
 <td>
 <blockquote>
-<p>There are many different opinions on how often a portfolio allocation should be reviewed and optimized. Some say quarterly, others annually. The specific timeframe for revisiting and re-optimizing is not as important as actually doing it on a regularly scheduled basis.</p>
-<p>Given the dynamic nature of the markets, and the ever-changing perspectives and needs of your clients, you are wise to schedule a review of the portfolio positions at least annually. And if the assets are in a trust account, an annual review is a requirement under Reg. 9.</p>
-<p>&nbsp;</p>
-<table style="width: 600px;" border="0" cellspacing="0" cellpadding="6">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN DROP DOWN QUESTION 3 CODE
+drop_formNumber[3]="fillForm3";
+drop_questions[3]=new Array();
+drop_layers[3]=new Array();
+drop_answers[3]=new Array();
+//here is the question
+drop_questions[3][0]="B. Investment activity using __________ is geared towards portfolio rebalancing.";
+// these are the associated layers
+drop_layers[3][1]="Layer3";
+drop_layers[3][2]="Layer4";
+//This is the test answer
+drop_answers[3]="A";
+document.write("<P><B>"+drop_questions[3][0]+"</B></P>");
+// ]]></script>
+<form name="dropForm3"><select name="dropAnswer3" onchange="return drop_buttonCheckQ(3, window.document.dropForm3.dropAnswer3)"> <option selected="selected" value="0">Choose Your Answer:</option> <option value="Strategic Asset Allocation">Strategic Asset Allocation</option> <option value="Tactical Asset Allocation">Tactical Asset Allocation</option> </select></form>
+<script type="text/javascript">// <![CDATA[
+//END DROP DOWN QUESTION 3 CODE
+// ]]></script>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">&nbsp;</td>
+<td>
+<blockquote>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN DROP DOWN QUESTION 4 CODE
+drop_formNumber[4]="fillForm4";
+drop_questions[4]=new Array();
+drop_layers[4]=new Array();
+drop_answers[4]=new Array();
+//here is the question
+drop_questions[4][0]="C. __________ maintains a strong focus on market projections.";
+// these are the associated layers
+drop_layers[4][1]="Layer4";
+drop_layers[4][2]="Layer3";
+//This is the test answer
+drop_answers[4]="B";
+document.write("<P><B>"+drop_questions[4][0]+"</B></P>");
+// ]]></script>
+<form name="dropForm4"><select name="dropAnswer4" onchange="return drop_buttonCheckQ(4, window.document.dropForm4.dropAnswer4)"> <option selected="selected" value="0">Choose Your Answer:</option> <option value="Strategic Asset Allocation">Strategic Asset Allocation</option> <option value="Tactical Asset Allocation">Tactical Asset Allocation</option> </select></form>
+<script type="text/javascript">// <![CDATA[
+//END DROP DOWN QUESTION 4 CODE
+// ]]></script>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">&nbsp;</td>
+<td>
+<blockquote>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN DROP DOWN QUESTION 5 CODE
+drop_formNumber[5]="fillForm5";
+drop_questions[5]=new Array();
+drop_layers[5]=new Array();
+drop_answers[5]=new Array();
+//here is the question
+drop_questions[5][0]="D. Investment activity using __________ is geared towards active trading based on market conditions.";
+// these are the associated layers
+drop_layers[5][1]="Layer4";
+drop_layers[5][2]="Layer3";
+//This is the test answer
+drop_answers[5]="B";
+document.write("<P><B>"+drop_questions[5][0]+"</B></P>");
+// ]]></script>
+<form name="dropForm5"><select name="dropAnswer5" onchange="return drop_buttonCheckQ(5, window.document.dropForm5.dropAnswer5)"> <option selected="selected" value="0">Choose Your Answer:</option> <option value="Strategic Asset Allocation">Strategic Asset Allocation</option> <option value="Tactical Asset Allocation">Tactical Asset Allocation</option> </select></form>
+<script type="text/javascript">// <![CDATA[
+//END DROP DOWN QUESTION 5 CODE
+// ]]></script>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">&nbsp;</td>
+<td>
+<blockquote>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN DROP DOWN QUESTION 6 CODE
+drop_formNumber[6]="fillForm6";
+drop_questions[6]=new Array();
+drop_layers[6]=new Array();
+drop_answers[6]=new Array();
+//here is the question
+drop_questions[6][0]="E. __________ is long-term oriented.";
+// these are the associated layers
+drop_layers[6][1]="Layer3";
+drop_layers[6][2]="Layer4";
+//This is the test answer
+drop_answers[6]="A";
+document.write("<P><B>"+drop_questions[6][0]+"</B></P>");
+// ]]></script>
+<form name="dropForm6"><select name="dropAnswer6" onchange="return drop_buttonCheckQ(6, window.document.dropForm6.dropAnswer6)"> <option selected="selected" value="0">Choose Your Answer:</option> <option value="Strategic Asset Allocation">Strategic Asset Allocation</option> <option value="Tactical Asset Allocation">Tactical Asset Allocation</option> </select></form>
+<script type="text/javascript">// <![CDATA[
+//END DROP DOWN QUESTION 6 CODE
+// ]]></script>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">&nbsp;</td>
+<td>
+<blockquote>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN DROP DOWN QUESTION 7 CODE
+
+
+drop_formNumber[7]="fillForm7";
+drop_questions[7]=new Array();
+drop_layers[7]=new Array();
+drop_answers[7]=new Array();
+//here is the question
+drop_questions[7][0]="F.  __________ maintains a strong focus on client goals.";
+// these are the associated layers
+drop_layers[7][1]="Layer4";
+drop_layers[7][2]="Layer3";
+//This is the test answer
+drop_answers[7]="B";
+document.write("<P><B>"+drop_questions[7][0]+"</B></P>");
+// ]]></script>
+<form name="dropForm7"><select name="dropAnswer7" onchange="return drop_buttonCheckQ(7, window.document.dropForm7.dropAnswer7)"> <option selected="selected" value="0">Choose Your Answer:</option> <option value="Tactical Asset Allocation">Tactical Asset Allocation</option> <option value="Strategic Asset Allocation">Strategic Asset Allocation</option> </select></form>
+<script type="text/javascript">// <![CDATA[
+//END DROP DOWN QUESTION 7 CODE
+// ]]></script>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer1" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 611px; top: 200px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
 <tbody>
 <tr>
 <td>
-<div id="example01">
-<p><strong>Reg. 9 Review</strong></p>
-<p>This review should include the following information and perspective:</p>
-<ul>
-<li>
-<p>Have there been any changes in the objectives of the client?</p>
-</li>
-<li>
-<p>Have there been any changes in the risk tolerances of the client?</p>
-</li>
-<li>
-<p>What are the current asset class weightings compared to the investment policy parameters set out in the plan?</p>
-</li>
-<li>
-<p>What would be the transaction costs of re-balancing at this point?</p>
-</li>
-<li>
-<p>Are there any tax considerations that need to be addressed or factored into the re-balancing?</p>
-</li>
-</ul>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
+<div id="Layer2" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 611px; top: 200px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
-</blockquote>
+</div>
+<div id="Layer3" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 752px; top: 344px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit3" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
+</div>
+<div id="Layer4" style="position: absolute; width: 200px; height: 35px; z-index: 1; left: 752px; top: 344px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit4" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </body>
-</html>

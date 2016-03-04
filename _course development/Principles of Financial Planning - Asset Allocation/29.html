@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<html xmlns="//www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/roundedPage.css" />
@@ -7,24 +7,17 @@
 <script type="text/javascript" src="greene/asset_allocation/js/nifty.js"></script>
 <script type="text/javascript" src="greene/asset_allocation/js/final.js"></script>
 <style type="text/css">
-div#example01{width: 600px; padding: 20px; margin:0 auto; background:#CCCC99; }
+div#example01{width: 300px; padding: 20px; margin:0 auto; background:#CCCC99; }
 </style>
 <script type="text/javascript" src="greene/asset_allocation/js/niftycube.js"></script>
 <script type="text/javascript">
 window.onload=function(){
 	Nifty("div#example01","big");
 	}
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
 </script>
-
+<link href="greene/asset_allocation/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="greene/asset_allocation/p7epm/p7EPMscripts.js"></script>
 </head>
-
 <body>
 <table style="width: 100%;">
 <tbody>
@@ -43,76 +36,75 @@ loadFlashHeader(userCompany, parentFolder);
 <tr>
 <td>
 <blockquote>
-<h2>Inputs Required for Mean Variance Optimization</h2>
+<h2>Correlation's Impact on Portfolio Risk</h2>
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>
-<blockquote>
-<p>Three inputs are required to discern the Mean Variance Optimization (MVO) for any group of securities.</p>
-<ol>
-<li>
-<p>Expected returns for each asset</p>
-</li>
-<li>
-<p>Return volatility (or standard deviation) of each asset</p>
-</li>
-<li>
-<p>Correlation coefficient for every pair of assets in the portfolio</p>
-</li>
-</ol>
-<p>The third input, "correlation coefficient" needs some explanation. Correlation is defined as the degree to which two asset classes or investments will have similar returns (or act the same) under a specific set of market or economic conditions. Stated differently, it is a measure of how much the return of two investments "co-relate" to each other.</p>
-<p>Typically, investments with "like" make-ups and "like" results have high correlation. Likewise, investments with "unlike" make-ups and "unlike" results have low correlation. This is illustrated in the following diagram, which shows how two indices correlate to the Dow Jones Industrial Average.</p>
-<p><strong><span style="color: #ff0000;">Click the underlined indices for an explanation of how they correlate to the Dow Jones Industrial Average.</span></strong></p>
-<p>&nbsp;</p>
-<table style="width: 501px;" border="0" cellspacing="0" cellpadding="0">
+<blockquote>While such perfect inverse correlation is certainly extreme, this example helps illustrate how the correlation between two securities can have a significant impact upon their combined return, as well as the overall risk of the portfolio.
+<p>Effective diversification should lower portfolio volatility. In other words, the benefit of diversification is that when one asset underperforms, another can compensate. Since assets with a high correlation tend to act in the same manner in response to external stimuli, a portfolio of highly correlated securities does little to diversify risk because assets with high correlation tend to act in the same manner in response to external stimuli. Therefore, <em><strong>to effectively diversify risk (lower volatility in a portfolio), the assets, or asset classes, must have a LOW degree of correlation. </strong></em></p>
+<p>Knowledge of how different asset classes correlate to each other is therefore a valuable aid in structuring a portfolio. To see how different indices correlate with each other, look at the chart below.</p>
+<table style="width: 50px;" cellpadding="6">
 <tbody>
 <tr>
-<td width="470">
-<div align="center"><img src="greene/asset_allocation/correl.gif" alt="" width="410" height="202" usemap="#Map" border="0" /></div>
+<td>
+<div id="example01">
+<p><strong>MVO Example</strong></p>
+<p>The importance of inputting the correlation coefficient for every pair of assets when determining the MVO of a portfolio is illustrated in the following example.</p>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<div id="p7EPM_1" class="p7EPM05">
+<div id="p7EPMt_1" class="p7epm_trigs">
+<table style="width: 98%;" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td width="77">
+<div align="center"><a id="p7EPMtrg1_1" onfocus="if(this.blur)this.blur()" href="#p7EPMc1_1"><img src="greene/asset_allocation/DocumentIcon.gif" alt="" width="33" height="33" border="0" /></a></div>
 </td>
-<td width="31">&nbsp;</td>
+<td valign="middle">
+<div align="left"><strong><span style="color: #ff0000;">Click the icon to view the example.</span></strong></div>
+</td>
 </tr>
 </tbody>
 </table>
+<div class="p7epm_ie5clear">&nbsp;</div>
+</div>
+<div id="p7EPMdw_1">
+<div id="p7EPMw1_1" class="p7epm_cwrapper">
+<div id="p7EPMc1_1" class="p7epm_content pan1">
+<p>Suppose two stocks, ABC and XYZ, have the same expected return and the same degree of volatility. A portfolio consisting of 1000 shares of each stock might be expected to have the same return as a portfolio consisting of 2000 shares of only one of the stocks. But what would happen if both securities were perfectly inversely correlated. If one stock increases in value by $1.00, then the other decreases in value by $1.00. The end result is no return for the portfolio because of the correlation between the two securities.</p>
+<p>Note also that the risk or volatility associated with the portfolio is also affected. In fact, under such perfect inverse correlation, risk has essentially been eliminated. Each security has cancelled out the risk associated with the other and we are left with the certainty that the return will always be zero.</p>
+</div>
+</div>
+</div>
+<!--[if IE 5]><style>.p7epm_trigs a {height: 1%;}.p7epm_ie5clear {clear: both;}</style><![endif]--> <!--[if IE 6]><style>.p7epm_trigs, .p7epm_trigs a {height: 1%;}</style><![endif]-->
+<script type="text/javascript">// <![CDATA[
+P7_opEPM('p7EPM_1',0,2,1,0,0,1000);
+// ]]></script>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 500px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td><img src="greene/principles/CorrelationAssetClasses.gif" alt="#" width="522" height="313" /></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 </blockquote>
 </td>
 </tr>
 </tbody>
 </table>
-<div id="Layer1" style="position: absolute; width: 350px; height: 35px; z-index: 1; left: 537px; top: 554px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>LB/Bar GC</strong></p>
-<p>Conversely, the DJIA and LB/Bar GC (Lehman Brothers/Barclays Government/Credit bond index), have historically had a lower correlation because stocks and bonds have historically reacted differently to economic conditions.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer2" style="position: absolute; width: 350px; height: 35px; z-index: 1; left: 539px; top: 556px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>S&amp;P 500</strong></p>
-<p>The returns achieved by the Standard &amp; Poor's 500 (S&amp;P 500) and the Dow Jones Industrial Average (DJIA) have historically had a high correlation to each other. That is, when the Dow has increased 1 percent, in general, the S&amp;P 500 has historically increased at a similar rate.</p>
-<p>These two indices are slightly different in that the Dow Jones Industrial Average contains 30 stocks each with a large capitalization and the S&amp;P 500 has 500 stocks. So one is substantially larger than the other, but they are both representative of highly capitalized corporations and therefore have had a relatively high degree of correlation to other.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>&nbsp;</p>
-<p><map id="Map" name="Map">
-<area onclick="MM_showHideLayers('Layer1','','show','Layer2','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="222,131,269,196" href="javascript:;" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="314,129,385,195" href="javascript:;" />
- </map></p>
 </body>
-</html>
