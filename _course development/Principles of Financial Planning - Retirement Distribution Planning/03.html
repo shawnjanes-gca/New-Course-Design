@@ -20,192 +20,242 @@ function MM_showHideLayers() { //v9.0
 <tr>
 <td>
 <blockquote>
-<h2>Managing Distributions from Roth IRAs</h2>
+<h2>Review Exercise</h2>
 </blockquote>
 </td>
 </tr>
 <tr>
 <td>
 <blockquote>
-<p>Clients seeking income tax-free distributions of earnings are attracted to the Roth IRA. The flexibility to take or avoid taking distributions during the Roth IRA owner&rsquo;s lifetime may also appeal to clients. We begin our discussion with a review of contributions and will then analyze earnings distributions.</p>
-<p><strong><em>The owner of a Roth IRA can always withdraw regular contributions without penalty or &nbsp;taxation.</em></strong> &ldquo;Regular Contributions&rdquo; are nondeductible annual Roth contributions that do not include any rollovers, conversions, or earnings on invested assets in the Roth IRA. In addition, when funds are distributed from a Roth IRA, regular contributions are distributed first.</p>
-<p>On a cumulative basis, once all regular contributions to a Roth IRA are distributed, then earnings are distributed. Distributed earnings may or may not be subject to taxation and penalty. There are three steps to determine the tax implications of a Roth IRA distribution attributable to earnings. <strong style="color: #ff0000;">Click on each step to learn more.</strong></p>
-<blockquote>
-<p><strong><a onclick="MM_showHideLayers('Layer1','','show')" href="#_s">Step 1: Is It A Qualified Distribution?</a></strong></p>
-<p><a onclick="MM_showHideLayers('Layer2','','show')" href="#_s"><strong>Step 2: How Much of the Distribution is Attributable to Earnings?</strong></a><strong></strong></p>
-<p><a onclick="MM_showHideLayers('Layer3','','show')" href="#_s"><strong>Step 3: Does the 10% Premature Distribution Penalty Apply?</strong></a></p>
-</blockquote>
-<p style="color: #ff0000;"><strong>Click <a onclick="MM_showHideLayers('Layer5','','show')" href="#_s">here</a> for an example of how these rules apply.</strong></p>
-<p>How is the taxation of distributions affected if the Roth IRA contains rollover or conversion contributions?&nbsp; <strong style="color: #ff0000;">Click <a onclick="MM_showHideLayers('Layer6','','show')" href="#_s">here</a> to learn more.</strong></p>
-<p style="color: #ff0000;"><a onclick="MM_showHideLayers('Layer7','','show')" href="#_s"><img src="greene/pfprdp/rmd.jpg" alt="" width="30" height="31" /></a> <strong>Beware the 50% Penalty for Inherited Roth IRAs</strong></p>
+<p><strong style="color: #ff0000;">Review your understanding of the preceding pages by answering the following questions.</strong></p>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td>
+<p><strong>Which of the following, if any, exactly describes the required beginning date for Traditional IRAs? Assume no Qualified Longevity Annuity Contract is involved. </strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="April 1st following the year in which the taxpayer reaches age 70&frac12;";
+questions[1][2]="April 1st following the year in which the taxpayer reaches age 65";
+questions[1][3]="April 1st following the year in which the taxpayer reaches age 59&frac12;";
+questions[1][4]="None of the above";
+//These are the associated layers
+layers[1][1]="Layer2";
+layers[1][2]="Layer1";
+layers[1][3]="Layer1";
+layers[1][4]="Layer1";
+
+//This is the test answer
+answers[1]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>Why might a client find a Qualified Longevity Annuity Contract attractive?</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="Ability to defer the required beginning date of a portion of taxable required minimum distributions (RMDs) until age 85 and establish a safety net of additional income in case the client outlives their life expectancy";
+questions[2][2]="Flexibility to convert future taxable RMDs to tax-free income beginning at age 85 and establish a safety net of additional income in case the client outlives their life expectancy";
+questions[2][3]="Elimination of all RMDs during the client’s lifetime";
+questions[2][4]="Ability to use low market interest rates to obtain superior returns";
+ 
+//These are the associated layers
+layers[2][1]="Layer3";
+layers[2][2]="Layer4";
+layers[2][3]="Layer5";
+layers[2][4]="Layer6";
+ 
+
+//This is the test answer
+answers[2]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
 </blockquote>
 </td>
 </tr>
 </tbody>
 </table>
-<div id="Layer1" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 55px; top: 125px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 155px; top: 125px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
 <tbody>
 <tr>
 <td>
-<h4>1. Is it a &ldquo;Qualified Distribution?&rdquo;</h4>
-<p><strong><em>If it is a qualified distribution, the earnings are NOT subject to tax or penalties and there is no need to go to steps 2 and 3.</em></strong></p>
-<p>To be a qualified distribution, two conditions must be met:</p>
-<table style="width: 95%;" border="1" cellspacing="0" cellpadding="6" align="center" bgcolor="#FFFFCC">
-<tbody>
-<tr>
-<td>
-<p><strong>Condition A:</strong> At least 5 years must have passed since the first contribution to any Roth IRA (measured from the first day of the year for which the first Roth IRA contribution is made). <strong style="color: #ff0000;">Click <a onclick="MM_showHideLayers('Layer4','','show')" href="#_s">here</a> for an example.</strong></p>
-<p><strong>Condition B</strong>: The owner is either:</p>
-<ul type="disc">
-<li>
-<p>Age 59&frac12; or older,</p>
-</li>
-<li>
-<p>Deceased,</p>
-</li>
-<li>
-<p>Disabled (the disability must be permanent and total or expected to result in death), OR</p>
-</li>
-<li>
-<p>Taking a distribution up to $10,000 for a first-time home purchase.</p>
-</li>
-</ul>
-<p>Both conditions must be met for the distribution to be qualified.&nbsp; If it is qualified, then NO tax or penalty is due.</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Incorrect</strong>. Try again.</p>
 <p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer4" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 155px; top: 325px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 155px; top: 225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
 <tbody>
 <tr>
 <td>
-<h4>Example</h4>
-<p>Jill makes her first contribution of $5,000 into a Roth IRA on April 10, 2015, for the 2014 tax year. The &ldquo;five-year rule&rdquo; starts on January 1, 2014, even though she made the contribution in April 2015. Also, remember that once the 5-year requirement has been satisfied for &ldquo;regular contributions&rdquo;, this requirement is deemed to have been satisfied for all subsequent regular contributions.</p>
-<p>&nbsp;</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit2" value="close" /></p>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer2" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 63px; top: 127px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 155px; top: 325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
 <tbody>
 <tr>
 <td>
-<h4>2. How Much of the Distribution is Attributable to Earnings?</h4>
-<p>Withdrawals of earnings that are NOT qualified will be subject to income taxes; that is, included in taxable income. The distribution of Roth IRA contributions is never subject to income tax because the funds were contributed on an after-tax basis.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit3" value="close" /></p>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer3" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 55px; top: 125px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 155px; top: 325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
 <tbody>
 <tr>
 <td>
-<h4>3. Does the 10% Premature Distribution Penalty Apply?</h4>
-<p>If distributions attributable to earnings are not &ldquo;qualified distributions,&rdquo; we must determine whether or not the earnings portion of the distribution is subject to, or exempt from, a 10% penalty. Unless the distribution meets the requirements for at least one of the exceptions below, a 10% penalty is payable on the taxable portion of the distribution.</p>
-<table style="width: 95%;" border="1" cellspacing="0" cellpadding="6" align="center" bgcolor="#FFFFCC">
-<tbody>
-<tr>
-<td>
-<p><strong>Penalty Exceptions:</strong></p>
-<ul type="disc">
-<li>
-<p>Death</p>
-</li>
-<li>
-<p>Disability <em>(the disability must be total and permanent or expected to result in death)</em></p>
-</li>
-<li>
-<p>When distributions are set up as a series of <em>substantially equal periodic payments</em></p>
-</li>
-<li>
-<p>To the extent of unreimbursed medical expenses that exceed 10% of adjusted gross income</p>
-</li>
-<li>
-<p>To pay health insurance premiums after the owner has received unemployment compensation for more than 12 weeks</p>
-</li>
-<li>
-<p>To pay the costs of a <em>first-time home purchase</em> (subject to a <em>lifetime</em> limit of $10,000)</p>
-</li>
-<li>
-<p>To pay for the qualified expenses of higher education for the IRA owner and/or eligible family members</p>
-</li>
-<li>
-<p>In response to an IRS levy</p>
-</li>
-</ul>
-<p><span style="font-size: xx-small;"><em>Detailed requirements for claiming these exceptions may be found at the following link: <a href="http://www.irs.gov/taxtopics/tc557.html" target="_blank">http://www.irs.gov/taxtopics/tc557.html</a>.</em></span></p>
-</td>
-</tr>
-</tbody>
-</table>
-<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit3" value="close" /></p>
+<p><strong>Incorrect.</strong> QLACs do not create tax-free income.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer5" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 101px; top: 151px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 155px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
 <tbody>
 <tr>
 <td>
-<h4>Example</h4>
-<p>In the summer of 2012, James opened and funded a Roth IRA with an after-tax contribution of $4,000. He made a second regular contribution of $4,000 in 2013. In 2014, the account had grown to $8,800. Later in 2014, he removed $8,200 for qualified tuition expenses.<strong></strong></p>
-<ul>
-<li>
-<p>This is NOT a qualified distribution. It meets Condition #2, since it is for tuition expense, but it does not meet Condition #1 since it has been less than 5 years since the initial contribution. <strong></strong></p>
-</li>
-<li>
-<p>Therefore, the amount distributed in earnings (i.e., the amount in excess of his contributions) is taxable.</p>
-</li>
-<li>
-<p>In this case, there is a tax due on the $200 in earnings in excess of his total contributions of $8,000. But because it is for one of the permissible penalty-free situations, there is no penalty.</p>
-</li>
-</ul>
-<p>&nbsp;</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit4" value="close" /></p>
+<p><strong>Incorrect.</strong> RMDs are merely deferred, not eliminated.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="Layer6" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 133px; top: 239px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 155px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
 <tbody>
 <tr>
 <td>
-<h4>Taxation of Rollover/Conversion Contributions to a Roth IRA</h4>
-<p>Contributions to a Roth IRA from rollover or conversion of a Traditional IRA impact the order of distribution. Regular contributions are deemed distributed first, rollover/conversion contributions are deemed distributed next, and earnings are deemed distributed last.</p>
-Noteworthy - The distribution of rollover/conversion contributions is subject to a 10% penalty (but no income tax) if distributed within 5 years of rollover/conversion.
-<p>&nbsp;</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit5" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer7" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 133px; top: 339px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
-<tbody>
-<tr>
-<td>
-<p>Distributions from Roth IRAs are not required during the original owner&rsquo;s lifetime. RMD rules may apply to beneficiaries or new owners of inherited Roth IRAs. Failure to take the RMD timely from an inherited Roth IRA may result in a 50% penalty. Your client should consult with their tax professional to ensure any RMDs are taken timely.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit5" value="close" /></p>
+<p><strong>Incorrect.</strong> A QLAC purchased during a low interest rate market will generally underperform a QLAC purchased in a higher interest rate market.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
