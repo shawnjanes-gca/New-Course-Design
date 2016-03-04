@@ -1,0 +1,246 @@
+<head>
+<head>
+
+<script type="text/javascript">
+<!--
+// dw_tooltip.js contains onresize and onload handlers
+// Put tooltip div and script tags for external js files at end of document
+
+// avoid error of passing event object from link in older browsers
+if (!document.getElementById && !document.all && !document.layers)
+	event = "";
+
+var tooltip;	
+function hideTip() {} // avoid errors until loaded	
+
+///////////////////////  CUSTOMIZE TOOLTIP HERE   ///////////////////////
+
+// settings for tooltip 
+// Do you want tooltip to move when mouse moves over link?
+var tipFollowMouse = true;	
+// be sure to set tooltip width wide enough for widest image!
+var tipWidth = 200;	// width of tooltip in pixels
+
+// how far from mouse to show tooltip
+var tipOffX	= 8;	// horizontal offset
+var tipOffY	= 12; // vertical offset
+
+var tipFontFamily = "arial";
+var tipFontSize	= "13px";	// string with pixels or points (px or pt)
+// tooltip content line-height
+var tipLineHeight	= 1.2;	// number	
+var tipFontColor = "#000066";
+var tipBgColor = "#d6e4fc";	// tooltip background color
+// background image for tooltip (leave empty string if no bg image)
+var tipBgImg = "";	// usually empty for this tooltip version
+// "breathing room" around tooltip content
+var tipPadding = 4;	// integer (pixel value)
+
+// leave a color in here even if you don't want a border
+var tipBorderColor = "navy"; 
+
+// if you don't want a border, set tipBorderWidth to 0
+var tipBorderWidth = 1; // integer (pixel value)
+
+// if you don't want a border, set tipBorderStyle to "none"
+// options for border style: "none", "solid", "ridge", "outset",
+// "inset", "groove", "double", "dashed"
+// (they won't look the same in all browsers though!)
+var tipBorderStyle = "groove"; 
+
+// NOTES: 
+// Adding a large amount of padding and thick borders will
+// result in a noticeable difference in the tooltip width
+// between browsers that are standards-compliant and those
+// that are not. For best results, keep these values small.
+// Background image, line-height and border style settings 
+// for the tooltip are not supported for ns4.
+
+
+// tooltip content goes here
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+// You could add more arguments here and edit 
+// the wrapTip function to incorporate them
+// for example, you could pass width and height of your images
+// or a new tooltip width
+messages[0] = new Array('images/sm-duck.gif','<p align="center"><b>"Non-Skip Person"</b></p>',"#FFFFCC","#000");
+messages[1] = new Array('images/dot-com-btn.gif','<p align="center"><b>"Skip Person"</b></p>');
+
+//	end of tooltip customization area
+/////////////////////////////////////////////////////////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+function doTooltip(evt,tip) {
+	if (!tooltip) return;
+	var cntnt = wrapTip(tip);
+	goTooltip(evt,cntnt);
+}
+
+// wrap tip content - or format
+function wrapTip(num) {
+	var cntnt = "";
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (document.layers) {
+		// outer table for border
+		cntnt += '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td>';
+		// for background color and padding
+		cntnt += '<table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>';
+		// 2 row table for image and text
+		// here is the first, for image
+		// align it here, could pass width/height and set it here
+		//cntnt += '<table width="' + tipWidth + '"><tr><td align="left" width="100%"><img src="' + messages[num][0] + '" border="0"></td></tr>';
+		// 2nd row for text here
+		cntnt += '<tr><td valign="top">' + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + '</td></tr></table>' + '</td></tr></table></td></tr></table>';
+	} else {
+		// for image
+		//cntnt += '<div style="text-align:left; padding:' + tipPadding+'"><img src="' + messages[num][0] + '" border="0"></div>';
+		// for text
+		cntnt += '<div style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + '; padding:' + tipPadding+'">' + messages[num][1] + '</div>';
+		tooltip.css.backgroundColor = curBgColor;
+	}
+	return cntnt;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Identifying Skip Persons</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>The GST tax applies to transfers of property to individuals who are two or more generations below the person making or triggering the transfer (known as the <strong>"transferor"</strong>). Generally, the transferor is someone who is making a lifetime gift or a deceased person who is transferring or triggering a transfer at their death.</p>
+<p>Individuals two or more generations below the transferor are known as <strong>"skip persons,"</strong> because a transfer to them would "skip" a generation to get to them. Everyone else would be a <strong>"non-skip person."</strong></p>
+<p>To identify an applicable situation, it is necessary to identify skip persons. Study the chart below carefully. Each arrow represents a possible transfer from the transferor.</p>
+<p><span style="color: #ff0000;"><strong>Move the mouse pointer over each of the persons below to identify if the person is a non-skip person or a skip person. </strong></span></p>
+<ul>
+<li>
+<p>If related to the transferor, a skip person is someone two or more generations below the transferor. For example:</p>
+</li>
+</ul>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<div align="center"><img src="greene/taxation/1.1.12.1-1.gif" alt="" width="273" height="150" usemap="#Map" border="0" /> <map name="Map"> 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="3,80,98,114" href="#" />
+ 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="179,79,274,113" href="#" />
+ 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="177,10,272,44" href="#" />
+ 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="3,9,98,43" href="#" />
+ </map></div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="center"><img src="greene/taxation/1.1.12.1-2.gif" alt="" width="277" height="55" usemap="#Map2" border="0" /></div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<ul>
+<li>If not related, they are in the same generation if within 12 1/2 years of age. Each successive generation is defined in spans of 25 years. For the illustration below, "T" refers to the Transferor's age:</li>
+</ul>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<div align="center"><a onmouseover="MM_showHideLayers('document.layers[\'Layer4\']','document.all[\'Layer4\']','show')" onmouseout="MM_showHideLayers('document.layers[\'Layer4\']','document.all[\'Layer4\']','hide')" href="#"><img src="greene/taxation/1.1.12.1-3.gif" alt="" usemap="#MapMap" border="0" /> <map name="MapMap"> 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="154,55,368,111" href="#" />
+ 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="276,10,371,44" href="#" />
+ 
+<area onmouseover="doTooltip(event,0)" onmouseout="hideTip()" shape="rect" coords="107,9,202,43" href="#" />
+ </map> </a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div align="center"><a onmouseover="MM_showHideLayers('document.layers[\'Layer5\']','document.all[\'Layer5\']','show')" onmouseout="MM_showHideLayers('document.layers[\'Layer5\']','document.all[\'Layer5\']','hide')" href="#"><img src="greene/taxation/1.1.12.1-4.gif" alt="" usemap="#Map2Map" border="0" /> <map name="Map2Map"> 
+<area onmouseover="doTooltip(event,1)" onmouseout="hideTip()" shape="rect" coords="154,0,373,86" href="#" />
+ </map> </a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- tooltip div and script tags at end of document, 
+		just before end body tag.
+		NOTE: Change the path to the js file to suit your 
+		directory structure. -->
+<div id="tipDiv" style="position: absolute; visibility: hidden; z-index: 1000;">&nbsp;</div>
+<script type="text/javascript" src="js/dw_core.js"></script>
+<script type="text/javascript" src="js/dw_util.js"></script>
+<script type="text/javascript" src="js/dw_tooltip.js"></script>
+<p><map name="Map2"> 
+<area onmouseover="doTooltip(event,1)" onmouseout="hideTip()" shape="rect" coords="181,10,275,43" href="#" />
+ 
+<area onmouseover="doTooltip(event,1)" onmouseout="hideTip()" shape="rect" coords="4,10,98,43" href="#" />
+ </map></p>
+</body>
