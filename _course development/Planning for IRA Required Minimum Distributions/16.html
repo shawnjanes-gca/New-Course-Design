@@ -1,23 +1,7 @@
 <head>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="greene/irarmd/css/roundedPage.css" />
-<link rel="stylesheet" type="text/css" href="greene/irarmd/css/niftyCorners.css" />
-<script type="text/javascript" src="greene/irarmd/js/nifty.js"></script>
-<script type="text/javascript" src="greene/irarmd/js/final.js"></script>
-<style type="text/css">
-div#example01{width: 680px; padding: 20px; margin:0 auto; background:#CCCC99; }
-</style>
-<script type="text/javascript" src="greene/irarmd/js/niftycube.js"></script>
-<script type="text/javascript">
-window.onload=function(){
-	Nifty("div#example01","big");
-	}
-</script>
-<title>Untitled Document</title>
-<script language="JavaScript" type="text/JavaScript">
-<!--
+</head>
+<body>
+<script type="text/JavaScript">// <![CDATA[
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
@@ -25,6 +9,8 @@ function MM_findObj(n, d) { //v4.01
   for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
+// ]]></script>
+<script type="text/javascript">// <![CDATA[
 function MM_showHideLayers() { //v9.0
   var i,p,v,obj,args=MM_showHideLayers.arguments;
   for (i=0; i<(args.length-2); i+=3) 
@@ -32,331 +18,15 @@ function MM_showHideLayers() { //v9.0
     if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
     obj.visibility=v; }
 }
-//-->
-</script>
-
-</head>
-<body>
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td>
-<div align="right">
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
 // ]]></script>
-</div>
-</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<h2>Determining the Life Expectancy Factor</h2>
-</blockquote>
-</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<p>There are three steps to determining the life expectancy factor for the initial RMD.</p>
-<table style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>
-<table style="width: 700px;" border="0" cellpadding="0">
-<tbody>
-<tr>
-<td align="left">
-<div id="example01"><ol>
-<li>
-<p>Establish the calendar year in which the IRA owner attains 70&frac12;.</p>
-</li>
-<li>
-<p>Regardless of the owner's age, determine the IRA owner's attained age as of the end of that calendar year for which the distribution will be made.</p>
-</li>
-<li>
-<p>Refer to the appropriate life expectancy table.</p>
-</li>
-</ol></div>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-<p>Factors for use in subsequent years are identified by determining the owner's attained age as of the end of the calendar year in which the distribution is made. Since the RMD is recalculated every year and the life expectancy factor (the divisor) will always be greater than 1, the IRA will never be exhausted during the owner's lifetime if distributions are never greater than the RMD, barring negative performance of the owner's investments.</p>
-<p>Look at the following example:</p>
-<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-function answerCorrect(questionNumber, answer, formName)
-{
-   	// declare a variable to hold return value
-	var correct = false;
-	var questionLength = formName.radQuestionChoice.length;
-	var questionChoice;
-
-   	// if answer provided is same as correct answer then correct variable is true
-   	if (answer == answers[questionNumber])
-      	{correct = true;
-       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
-			{
-			formName.radQuestionChoice[questionChoice].disabled = true;
-
-	  		}
-
-   	// return whether the answer was correct (true or false)
-   	return correct;
-	}
-}
-
-function getQuestion(questionNumber)
-{
-
-   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-   var questionLength = questions[questionNumber].length;
-   var questionChoice;
-
-   questionHTML = questionHTML + "<P>";
-   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-   {
-      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-      questionHTML = questionHTML + questions[questionNumber][questionChoice];
-      questionHTML = questionHTML + "<BR>";
-   }
-   questionHTML = questionHTML + "</P>";
-
-   return questionHTML;
-}
-function buttonCheckQ_onclick(questionNum, formName)
-{
-   var answer = 0;
-   while (formName.radQuestionChoice[answer].checked != true)
-   {
-      answer++;
-   }
-
-   var answer2 = String.fromCharCode(65 + answer);
-   answer++;
-   if (answerCorrect(questionNum,answer2, formName) == true)
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-   else
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-}
-
-var questionNumber;
-var questions=new Array();
-var answers=new Array();
-var layers=new Array();
-// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-
-// BEGIN RADIO QUESTION 1 CODE
-var formNumber=new Array();
-formNumber[1]="QuestionForm1";
-questionNumber=1;
-questions[1]=new Array();
-layers[1]=new Array();
-//This is the test question
-questions[1][0]="";
-
-//These are the answer choices
-questions[1][1]="February 14, 2014";
-questions[1][2]="April 1, 2014";
-questions[1][3]="December 31, 2015";
-questions[1][4]="April 1, 2015";
-//These are the associated layers
-layers[1][1]="Layer1";
-layers[1][2]="Layer2";
-layers[1][3]="Layer3";
-layers[1][4]="Layer4";
-
-//This is the test answer
-answers[1]="D";
-// ]]></script>
-<form id="QuestionForm1" name="QuestionForm1"><strong>Example: </strong>Michelle Howard celebrates her 70th birthday on February 14, 2014. When is her Required Beginning Date?
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 1
-document.write(getQuestion(1));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 1 CODE
-// ]]></script>
-</td>
-</tr>
-</tbody>
-</table>
-<p>Having established the RBD, what is her life expectancy factor using the Uniform Table for the initial RMD?</p>
-<blockquote>
-<p><strong>Step 1:</strong> She attains age 70&frac12; in 2014</p>
-<p><strong>Step 2:</strong> Since she turned 70 in 2014, she will not have another birthday before the end of the year, so her attained age will be 70 at the first year for which she is taking a distribution (in 2014).</p>
-<p><strong>Step 3:</strong> From the Uniform Table, an example of which can be viewed by clicking <a onclick="MM_showHideLayers('Layer8','','show')" onfocus="if(this.blur)this.blur()" href="#self" target="_self">here</a>, select the life expectancy factor to be used for someone age 70.</p>
-<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td>
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-// BEGIN RADIO QUESTION 2 CODE
-var formNumber=new Array();
-formNumber[2]="QuestionForm2";
-questionNumber=2;
-questions[2]=new Array();
-layers[2]=new Array();
-//This is the test question
-questions[2][0]="";
-
-//These are the answer choices
-questions[2][1]="27.4";
-questions[2][2]="26.5";
-questions[2][3]="25.6";
-questions[2][4]="24.7";
-questions[2][5]="23.8";
-//These are the associated layers
-layers[2][1]="Layer6";
-layers[2][2]="Layer5";
-layers[2][3]="Layer5";
-layers[2][4]="Layer5";
-layers[2][5]="Layer5";
-
-//This is the test answer
-answers[2]="A";
-// ]]></script>
-<form id="QuestionForm2" name="QuestionForm2">
-<script type="text/javascript">// <![CDATA[
-// Display Text for Question 2
-document.write(getQuestion(2));
-// ]]></script>
-</form>
-<script type="text/javascript">// <![CDATA[
-// END RADIO QUESTION 2 CODE
-// ]]></script>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-</blockquote>
-<p><strong>Example</strong>: George turns age 70 on November 15, 2013. His wife and beneficiary is Betty, age 68. What are his RMDs for 2013, 2014, 2015 and 2016? His account balances are as follows:</p>
-<p>12/31/2013: $143,000 <br /> 12/31/2014: $156,000 <br /> 12/31/2015: $133,000 <br /> 12/31/2016 $135,000</p>
-<blockquote>
-<p><strong>Step 1:</strong> The RBD is April 1 following the calendar year in which he attains age 70&amp;frac12. He is 70&amp;frac12 in 2014; thus, his RBD is in 2015.</p>
-<p><strong>Step 2:</strong> George can take his first distribution in 2014 or 2015. Let's assume it is in his best interest to spread the first and second distributions over two years, thus he takes the first distribution in 2014.</p>
-<p><strong>Step 3: </strong>In this case, we use the Uniform table to find the correct divisor. He turns 70&amp;frac12 in 2014. At the end of 2014, he will be 71, thus the correct divisor for the 2014 distribution is 26.5.</p>
-<p><strong>Step 4: </strong>George turned 70&amp;frac12 in 2014, so we use the account balance at 12/31/2013 of $143,000 to calculate his first RMD.</p>
-<p><strong>Step 5:</strong> Calculation for 2014 is $143,000 divided by 26.5 = $5,396.23</p>
-<p><strong>Step 6:</strong> Calculation for 2015 based on the age 72 factor of 25.6 and account balance at 12/31/2014 of $156,000. $156,000 divided by 25.6 = $6,093.75</p>
-<p><strong>Step 7:</strong> Calculation for 2016 based on the age 73 factor of 24.7 and account balance at 12/31/2015 of $133,000. $133,000 divided by 24.7 = $5,384.62</p>
-</blockquote>
-</blockquote>
-</td>
-</tr>
-</tbody>
-</table>
-<div id="Layer1a" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 315px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1a','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer1" style="position: absolute; width: 368px; height: 115px; z-index: 1; left: 436px; top: 573px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong> Remember that the RBD is April 1 following the calendar year that she attains age 70&frac12;.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="button" name="Button" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer2" style="position: absolute; width: 365px; height: 115px; z-index: 1; left: 437px; top: 575px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong> Remember that the RBD is April 1 following the calendar year that she attains age 70&frac12;.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide')" type="button" name="button" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer3" style="position: absolute; width: 351px; height: 115px; z-index: 1; left: 451px; top: 575px; visibility: hidden;">
+<div id="Layer12" style="position: absolute; width: 542px; height: 115px; z-index: 12; left: 199px; top: 175px; visibility: hidden;">
 <table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong> Remember that the RBD is April 1 following the calendar year that she attains age 70&frac12;.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide','Layer3','','hide')" type="button" name="button2" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer4" style="position: absolute; width: 311px; height: 83px; z-index: 1; left: 427px; top: 582px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
-<tbody>
-<tr>
-<td valign="top">
-<p><strong>Correct.</strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide','Layer4','','hide')" type="button" name="button3" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer5" style="position: absolute; width: 200px; height: 115px; z-index: 2; left: 383px; top: 926px; visibility: hidden;">
-<table style="width: 155%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Incorrect.</strong> Look up the divisor for someone age 70 and try again.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="button" name="button5" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer6" style="position: absolute; width: 200px; height: 115px; z-index: 2; left: 400px; top: 942px; visibility: hidden;">
-<table style="width: 145%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
-<tbody>
-<tr>
-<td>
-<p><strong>Correct. </strong></p>
-<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="button" name="button4" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer8" style="position: absolute; width: 552px; height: 115px; z-index: 2; left: 210px; top: 399px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
 <tbody>
 <tr>
 <td>
 <p align="center"><strong>The "Uniform Table"</strong></p>
 <p align="center"><strong>Note:</strong> This table is for illustration purposes only. For actual use, consult the most recent schedule from the IRS.</p>
-<table style="width: 510px;" border="0" cellspacing="0" cellpadding="0" align="center">
+<table style="width: 510px;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 <td align="center">
@@ -510,7 +180,1001 @@ document.write(getQuestion(2));
 </tbody>
 </table>
 <p align="center">&nbsp;</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="button" name="button6" value="close" /></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="button" name="button10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 298px; height: 115px; z-index: 6; left: 311px; top: 657px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="button" name="button5" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 586px; height: 115px; z-index: 9; left: 130px; top: 13px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr valign="top">
+<td><strong><span style="color: #800000; font-family: Arial,Helvetica,sans-serif;">The "Joint Life and Last Survivor Expectancy Table"</span></strong><br /> <strong><span style="font-family: Arial,Helvetica,sans-serif; font-size: xx-small;">(Note: This table is for illustration purposes only. For actual use, consult the most recent schedule from the IRS)<br /> </span></strong>
+<table style="width: 95%;" border="1">
+<tbody>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>Ages</strong></span></td>
+<td bgcolor="#CC9999" width="6%"><span style="font-size: small;"><strong>55</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>56</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>57</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>58</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>59</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>60</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>61</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>62</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>63</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>64</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>65</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>66</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>67</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>68</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>69</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>70</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>71</strong></span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;"><strong>72</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;"><strong>73</strong></span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;"><strong>74</strong></span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>55</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">35.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">35.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">34.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">34.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>56</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">35.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">34.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">34.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">33.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>57</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">34.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">34.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">33.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>58</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">34.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">33.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">32.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>59</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">33.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">32.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>60</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">32.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>61</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">33.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">32.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>62</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">32.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>63</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>64</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>65</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">32.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>66</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">31.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>67</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>68</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>69</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">&nbsp;</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>70</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">31.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.6</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">20.2</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>71</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.1</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">19.7</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>72</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">30.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.6</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">19.3</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>73</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">29.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">19.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.2</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">18.8</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>74</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">19.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">18.8</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">18.4</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>75</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">28.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">25.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">19.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">18.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">18.4</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">18.0</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>76</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">24.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">19.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">18.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">18.1</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">17.6</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>77</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.6</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">27.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.2</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.8</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">19.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">18.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">18.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">17.8</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">17.3</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>78</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.9</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">23.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">21.0</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">19.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">18.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">18.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">17.5</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">17.0</span></td>
+</tr>
+<tr>
+<td width="3%"><span style="font-size: small;"><strong>79</strong></span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">30.1</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">29.3</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">28.4</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">27.6</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">26.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">26.0</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">25.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">24.4</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">23.7</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">22.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">22.2</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">21.5</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">20.8</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">20.1</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">19.5</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">18.9</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">18.3</span></td>
+<td bgcolor="#FFFFFF" width="4%"><span style="font-size: small;">17.7</span></td>
+<td bgcolor="#CC9999" width="4%"><span style="font-size: small;">17.2</span></td>
+<td bgcolor="#FFFFFF" width="19%"><span style="font-size: small;">16.7</span></td>
+</tr>
+</tbody>
+</table>
+<div align="center"><strong><span style="font-family: Arial,Helvetica,sans-serif; font-size: xx-small;"><br /> <input onclick="MM_showHideLayers('Layer13','','hide')" type="button" name="Button2" value="close" /> <br /> </span></strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 200px; height: 115px; z-index: 5; left: 258px; top: 677px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="button" name="button4" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 298px; height: 115px; z-index: 8; left: 376px; top: 789px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="button" name="button7" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise for RMD Calculations</h2>
+<div id="Layer7" style="position: absolute; width: 378px; height: 115px; z-index: 7; left: 438px; top: 835px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.&nbsp; </strong>The balance used for the first RMD calculation is the balance on December 31 of the year preceding the year in which the participant reaches 70&frac12;.&nbsp; John turned 70&frac12; in 2014.&nbsp; Therefore, the December 31, 2013 balance is used.&nbsp; This is true regardless of when the initial distribution was actually made.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="button" name="button6" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In order to complete the review exercise below, you will need to consult the Uniform Table. Samples to be used for the purpose of these exercises only, not for use with actual clients.</p>
+<table style="width: 600px;" border="0" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+<td width="43"><a onfocus="if(this.blur)this.blur()" href="javascript:;"><img onclick="MM_showHideLayers('Layer12','','show')" src="greene/irarmd/images/DocumentationIcon_32px.gif" alt="" width="32" height="32" border="0" /></a></td>
+<td width="545"><span class="style1">Click the icon to view the "Uniform Table".</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<div id="Layer1" style="position: absolute; width: 200px; height: 115px; z-index: 1; left: 456px; top: 391px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="button" name="Button" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 252px; height: 115px; z-index: 2; left: 457px; top: 398px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> John turns 70&frac12; in 2018. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="button" name="button" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 200px; height: 115px; z-index: 3; left: 437px; top: 567px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="button" name="button2" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 200px; height: 115px; z-index: 4; left: 433px; top: 579px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#E6E6E6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="button" name="button3" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td>
+<p><strong>John Burkhart was born on December 31, 1947. Given that birthday, when is John's Required Beginning Date?</strong></p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="April 1, 2017";
+questions[1][2]="December 31, 2017";
+questions[1][3]="April 1, 2018";
+questions[1][4]="January 1, 2019";
+questions[1][5]="April 1, 2019";
+//These are the associated layers
+layers[1][1]="Layer2";
+layers[1][2]="Layer2";
+layers[1][3]="Layer2";
+layers[1][4]="Layer14";
+layers[1][5]="Layer1";
+
+//This is the test answer
+answers[1]="E";
+// ]]></script>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>John is not married and his designated beneficiary is his half-brother, Jim. Jim is age 54 when the initial RMD is calculated. Which table should be used to calculate his RMD divisor?</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="Uniform Table";
+questions[2][2]="Joint and Last Survivor Table";
+//These are the associated layers
+layers[2][1]="Layer3";
+layers[2][2]="Layer4";
+
+//This is the test answer
+answers[2]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+<p align="right"><strong>3.</strong></p>
+</td>
+<td>
+<p><strong>Given John's age is 71 at the end of the year in which he turned 70&frac12; and his brother is 54 when the RMD calculation is made, what is the divisor to be used in the calculation of his first RMD? (Use the table above.)
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="27.4";
+questions[3][2]="26.5";
+questions[3][3]="25.6";
+questions[3][4]="24.7";
+questions[3][5]="23.8";
+//These are the associated layers
+layers[3][1]="Layer6";
+layers[3][2]="Layer5";
+layers[3][3]="Layer6";
+layers[3][4]="Layer6";
+layers[3][5]="Layer6";
+
+//This is the test answer
+answers[3]="B";
+// ]]></script>
+</strong></p>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top">
+<p align="right"><strong>4.</strong></p>
+</td>
+<td>
+<p><strong>Assuming John makes 100% of his initial RMD in January 2015, which balance will be used to determine the first RMD?</strong></p>
+<p><em>John's account balances were as follows:<br /> December 31, 2014 - $1,894,412<br /> December 31, 2015 - $2,174,590<br /> December 31, 2016 - $2,289,417</em>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="December 31, 2014";
+questions[4][2]="December 31, 2015";
+questions[4][3]="December 31, 2016";
+//These are the associated layers
+layers[4][1]="Layer8";
+layers[4][2]="Layer7";
+layers[4][3]="Layer8";
+
+//This is the test answer
+answers[4]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer14" style="position: absolute; width: 295px; height: 35px; z-index: 1; left: 401px; top: 423px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#EEEEEE">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> John turns 70&frac12; in 2018, but this is not his RBD. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit" value="close" /></p>
 </td>
 </tr>
 </tbody>
