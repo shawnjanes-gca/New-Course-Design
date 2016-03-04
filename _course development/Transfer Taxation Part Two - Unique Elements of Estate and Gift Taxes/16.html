@@ -1,0 +1,963 @@
+<head>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+<body>
+<table style="width: 100%;" border="0">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2><span>Review Exercise</span></h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>1.</strong></p>
+</td>
+<td>
+<p><span><strong>Upon Mrs. Goldsmith's death, indicate which of the following items would be included in Mrs. Goldsmith's estate tax return by choosing the appropriate yes or no response below: </strong></span></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1a CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1a";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="Her bank certificate of deposit that will automatically distribute to her son upon her death";
+
+//These are the answer choices
+
+questions[1][1]="Yes";
+questions[1][2]="No";
+//These are the associated layers
+layers[1][1]="Layer1";
+layers[1][2]="Layer2";
+
+//This is the test answer
+answers[1]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1a
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<p>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1a CODE
+// ]]></script>
+</p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 12 CODE
+var formNumber=new Array();
+formNumber[12]="QuestionForm12";
+questionNumber=12;
+questions[12]=new Array();
+layers[12]=new Array();
+//This is the test question
+questions[12][0]="Mrs. Goldsmith&#39;s life insurance policy in which she named her son as the beneficiary";
+
+//These are the answer choices
+questions[12][1]="Yes";
+questions[12][2]="No";
+//These are the associated layers
+layers[12][1]="Layer3";
+layers[12][2]="Layer4";
+
+//This is the test answer
+answers[12]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm12">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 12
+document.write(getQuestion(12));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 12 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 13 CODE
+var formNumber=new Array();
+formNumber[13]="QuestionForm13";
+questionNumber=13;
+questions[13]=new Array();
+layers[13]=new Array();
+//This is the test question
+questions[13][0]="Insurance on her life that was purchased by her son naming himself as the beneficiary";
+
+//These are the answer choices
+questions[13][1]="Yes";
+questions[13][2]="No";
+//These are the associated layers
+layers[13][1]="Layer5";
+layers[13][2]="Layer6";
+
+//This is the test answer
+answers[13]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm13">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 13
+document.write(getQuestion(13));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 13 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 14 CODE
+var formNumber=new Array();
+formNumber[14]="QuestionForm14";
+questionNumber=14;
+questions[14]=new Array();
+layers[14]=new Array();
+//This is the test question
+questions[14][0]="Mrs. Goldsmith&#39;s life insurance policy that she transferred to an irrevocable trust five years ago";
+
+//These are the answer choices
+questions[14][1]="Yes";
+questions[14][2]="No";
+//These are the associated layers
+layers[14][1]="Layer7";
+layers[14][2]="Layer8";
+
+//This is the test answer
+answers[14]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm14">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 14
+document.write(getQuestion(14));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 14 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 15 CODE
+var formNumber=new Array();
+formNumber[15]="QuestionForm15";
+questionNumber=15;
+questions[15]=new Array();
+layers[15]=new Array();
+//This is the test question
+questions[15][0]="Her personal property";
+
+//These are the answer choices
+questions[15][1]="Yes";
+questions[15][2]="No";
+//These are the associated layers
+layers[15][1]="Layer9";
+layers[15][2]="Layer10";
+
+//This is the test answer
+answers[15]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm15">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 15
+document.write(getQuestion(15));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 15 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 16 CODE
+var formNumber=new Array();
+formNumber[16]="QuestionForm16";
+questionNumber=16;
+questions[16]=new Array();
+layers[16]=new Array();
+//This is the test question
+questions[16][0]="Her funeral expenses";
+
+//These are the answer choices
+questions[16][1]="Yes";
+questions[16][2]="No";
+//These are the associated layers
+layers[16][1]="Layer11";
+layers[16][2]="Layer12";
+
+//This is the test answer
+answers[16]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm16">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 16
+document.write(getQuestion(16));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 16 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 17 CODE
+var formNumber=new Array();
+formNumber[17]="QuestionForm17";
+questionNumber=17;
+questions[17]=new Array();
+layers[17]=new Array();
+//This is the test question
+questions[17][0]="The rental property she transferred to her son, where she retained the right to the rental income";
+
+//These are the answer choices
+questions[17][1]="Yes";
+questions[17][2]="No";
+//These are the associated layers
+layers[17][1]="Layer13";
+layers[17][2]="Layer14";
+
+//This is the test answer
+answers[17]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm17">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 17
+document.write(getQuestion(17));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 17 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 18 CODE
+var formNumber=new Array();
+formNumber[18]="QuestionForm18";
+questionNumber=18;
+questions[18]=new Array();
+layers[18]=new Array();
+//This is the test question
+questions[18][0]="Her annuity that she purchased two years ago that pays out to her son upon her death";
+
+//These are the answer choices
+questions[18][1]="Yes";
+questions[18][2]="No";
+//These are the associated layers
+layers[18][1]="Layer15";
+layers[18][2]="Layer16";
+
+//This is the test answer
+answers[18]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm18">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 18
+document.write(getQuestion(18));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 18 CODE
+// ]]></script>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 19 CODE
+var formNumber=new Array();
+formNumber[19]="QuestionForm19";
+questionNumber=19;
+questions[19]=new Array();
+layers[19]=new Array();
+//This is the test question
+questions[19][0]="The annuity that her son purchased to provide her with income and which pays a death benefit to her son upon her death";
+
+//These are the answer choices
+questions[19][1]="Yes";
+questions[19][2]="No";
+//These are the associated layers
+layers[19][1]="Layer17";
+layers[19][2]="Layer18";
+
+//This is the test answer
+answers[19]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm19">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 19
+document.write(getQuestion(19));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 19 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>Assuming no extensions, the estate tax return Form 706 is due how many months after death?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="3 months";
+questions[2][2]="6 months";
+questions[2][3]="9 months";
+questions[2][4]="12 months";
+//These are the associated layers
+layers[2][1]="Layer19";
+layers[2][2]="Layer20";
+layers[2][3]="Layer21";
+layers[2][4]="Layer22";
+
+
+
+
+//This is the test answer
+answers[2]="C";
+// ]]></script>
+</p>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>3.</strong></p>
+</td>
+<td>
+<p><strong>If an asset in an estate receives a special use valuation, thereby reducing the estate tax on the asset, the tax benefit must be recaptured if the heirs cease to use the property in its "qualified use" within how many years of the decedent's death? </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="3 years";
+questions[4][2]="5 years";
+questions[4][3]="10 years";
+questions[4][4]="15 years";
+//These are the associated layers
+layers[4][1]="Layer27";
+layers[4][2]="Layer27";
+layers[4][3]="Layer26";
+layers[4][4]="Layer27";
+
+//This is the test answer
+answers[4]="C";
+// ]]></script>
+</p>
+<form name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p><strong>4.</strong></p>
+</td>
+<td>
+<p><strong>The alternate valuation date is:</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="3 months after the date of death";
+questions[3][2]="6 months after the date of death";
+questions[3][3]="9 months after the date of death";
+questions[3][4]="12 months after the date of death";
+
+//These are the associated layers
+layers[3][1]="Layer24";
+layers[3][2]="Layer25";
+layers[3][3]="Layer28";
+layers[3][4]="Layer29";
+
+
+//This is the test answer
+answers[3]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>5.</strong></p>
+</td>
+<td>
+<p><strong>With portability, a surviving spouse&rsquo;s Applicable Exclusion Amount equals their Basic Exclusion Amount plus the: </strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 51 CODE
+var formNumber=new Array();
+formNumber[51]="QuestionForm51";
+questionNumber=51;
+questions[51]=new Array();
+layers[51]=new Array();
+//This is the test question
+questions[51][0]="";
+
+//These are the answer choices
+questions[51][1]="DSUE";
+questions[51][2]="DSSU";
+questions[51][3]="DESU";
+questions[51][4]="DUSE";
+//These are the associated layers
+layers[51][1]="Layerwbutton13";
+layers[51][2]="Layerwbutton10";
+layers[51][3]="Layerwbutton10";
+layers[51][4]="Layerwbutton10";
+
+//This is the test answer
+answers[51]="A";
+// ]]></script>
+</p>
+<form id="QuestionForm51" name="QuestionForm51">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 51
+document.write(getQuestion(51));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 51 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layerwbutton10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1250px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton10','','hide')" type="submit" name="Submit10" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div id="Layerwbutton13" style="position: absolute; width: 400px; height: 35px; z-index: 1; left: 55px; top: 1225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong> They get to add the Deceased Spousal Unused Exclusion Amount.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layerwbutton13','','hide')" type="submit" name="Submit12" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 125px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. Since she could change this designation while alive, she had full control of those funds.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 125px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. Since she could change this designation while alive, she had full control of those funds.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. She owned the policy and had the power to name the beneficiary, therefore it is included in her estate even though the proceeds are payable to her son.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. She owned the policy and had the power to name the beneficiary, therefore it is included in her estate even though the proceeds are payable to her son.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. She was not the owner of the policy, therefore the proceeds are not part of her estate.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. She was not the owner of the policy, therefore the proceeds are not part of her estate.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. The policy would be included in her estate only if she made the transfer less than three years ago.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. The policy would be included in her estate only if she made the transfer less than three years ago.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. Her personal property is part of her estate.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. Her personal property is part of her estate.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 625px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. While funeral expenses can be deducted from the estate, they are not themselves part of the estate upon which taxes are calculated. </span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 625px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. While funeral expenses can be deducted from the estate, they are not themselves part of the estate upon which taxes are calculated.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 725px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct. This is an incomplete transfer and it is brought back into her estate.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 725px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect. This is an incomplete transfer and it is brought back into her estate.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 825px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct, since she purchased the annuity.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 825px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect, since she purchased the annuity.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer17" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 925px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Incorrect, because the annuity was purchased by her son.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer17','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer18" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 925px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><span style="font-family: Arial,Helvetica,sans-serif; font-size: small;">Correct, because her son purchased the annuity.</span></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer18','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer19" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer19','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer20" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer20','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer21" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer21','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer22" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer22','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer23" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1025px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer23','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer24" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer24','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer28" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer28','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer29" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer29','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer30" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer30','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer25" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1225px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer25','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer26" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Correct.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer26','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer27" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 1325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p>Incorrect. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer27','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
