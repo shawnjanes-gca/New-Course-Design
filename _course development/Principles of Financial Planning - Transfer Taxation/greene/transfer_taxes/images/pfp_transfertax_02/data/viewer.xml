@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="479" height="479" start="paused" buildNum="6.2.582.582">
+	<presentationTitle>Credit versus Exclusion</presentationTitle>
+	<presentationDescription>It is quite common for people to confuse the applicable credit amount with the applicable exclusion amount. But the difference is significant...</presentationDescription>
+	<speakers></speakers>
+	<backgrounds>
+		<background url="Master8000000c.swf"/>
+	</backgrounds>
+	<search url="srchdata.xml"/>
+	<slides>
+		<slide id="266" frameRate="30" totalFrames="0" advance="auto" type="normal">
+			<content url="Slide1.swf"/>
+			<slideBackground index="0" frameToPlay="1" duration="2" showAfterFrame="0"/>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="260" frameRate="30" totalFrames="1714" advance="auto" type="normal">
+			<content url="Slide2.swf"/>
+			<slideBackground index="0" frameToPlay="3" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="22" end="54"/>
+				<clickAnimation start="65" end="97"/>
+				<clickAnimation start="117" end="161"/>
+				<clickAnimation start="161" end="223"/>
+				<clickAnimation start="360" end="422"/>
+				<clickAnimation start="792" end="854"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true">It&amp;#x20;is&amp;#x20;quite&amp;#x20;common&amp;#x20;for&amp;#x20;people&amp;#x20;to&amp;#x20;confuse&amp;#x20;the&amp;#x20;applicable&amp;#x20;credit&amp;#x20;amount&amp;#x20;with&amp;#x20;the&amp;#x20;applicable&amp;#x20;exclusion&amp;#x20;amount.&amp;#x20;But&amp;#x20;the&amp;#x20;difference&amp;#x20;is&amp;#x20;significant:&lt;br&gt;&lt;br&gt;[click]&amp;#x20;Only&amp;#x20;the&amp;#x20;applicable&amp;#x20;credit&amp;#x20;amount&amp;#x20;is&amp;#x20;actually&amp;#x20;used&amp;#x20;in&amp;#x20;the&amp;#x20;tax&amp;#x20;calculation;&amp;#x20;the&amp;#x20;applicable&amp;#x20;exclusion&amp;#x20;amount&amp;#x20;simply&amp;#x20;illustrates&amp;#x20;the&amp;#x20;amount&amp;#x20;of&amp;#x20;estate&amp;#x20;assets&amp;#x20;that&amp;#x20;are&amp;#x20;covered&amp;#x20;by&amp;#x20;the&amp;#x20;credit.&lt;br&gt;&lt;br&gt;[click]&amp;#x20;A&amp;#x20;very&amp;#x20;common&amp;#x20;mistake&amp;#x20;is&amp;#x20;for&amp;#x20;people&amp;#x20;to&amp;#x20;first&amp;#x20;subtract&amp;#x20;the&amp;#x20;applicable&amp;#x20;exclusion&amp;#x20;amount&amp;#x20;from&amp;#x20;the&amp;#x20;gross&amp;#x20;estate,&amp;#x20;and&amp;#x20;then&amp;#x20;compute&amp;#x20;the&amp;#x20;tax.&amp;#x20;&amp;#x20;This&amp;#x20;results&amp;#x20;in&amp;#x20;a&amp;#x20;significantly&amp;#x20;lower&amp;#x20;tax&amp;#x20;bill.&lt;br&gt;&lt;br&gt;[click]&amp;#x20;Remember&amp;#x20;that&amp;#x20;in&amp;#x20;calculating&amp;#x20;the&amp;#x20;tax&amp;#x20;you&amp;#x20;add&amp;#x20;all&amp;#x20;lifetime&amp;#x20;taxable&amp;#x20;gifts&amp;#x20;to&amp;#x20;the&amp;#x20;final&amp;#x20;estate,&amp;#x20;and&amp;#x20;then&amp;#x20;compute&amp;#x20;the&amp;#x20;tax&amp;#x20;on&amp;#x20;the&amp;#x20;total.&amp;#x20;Only&amp;#x20;then&amp;#x20;is&amp;#x20;the&amp;#x20;applicable&amp;#x20;credit&amp;#x20;amount&amp;#x20;applied&amp;#x20;against&amp;#x20;the&amp;#x20;tax.&amp;#x20;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+			<audio url="a24x1.mp3"/>
+		</slide>
+	</slides>
+	<attachments></attachments>
+</presentation>

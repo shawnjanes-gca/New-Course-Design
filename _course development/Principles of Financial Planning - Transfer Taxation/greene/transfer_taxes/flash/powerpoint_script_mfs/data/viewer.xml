@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="479" height="479" start="play" slideTitleFormat="%n. %s" buildNum="6.2.582.582">
+	<presentationTitle>Vaudio Powerpoint Script</presentationTitle>
+	<speakers>
+		<speaker>
+			<name>Michael Sorrow</name>
+			<speakerTitle>Director of Technology</speakerTitle>
+			<image>spk10368.jpg</image>
+			<email>michaelsorrow@greeneconsults.com.com</email>
+			<logo>lgo10368.jpg</logo>
+		</speaker>
+	</speakers>
+	<backgrounds>
+		<background url="Master80000001.swf"/>
+		<background url="Master80000000.swf"/>
+	</backgrounds>
+	<search url="srchdata.xml"/>
+	<slides>
+		<slide id="273" frameRate="30" totalFrames="432" advance="auto" type="normal">
+			<content url="Slide1.swf"/>
+			<slideBackground index="0" frameToPlay="1" duration="2" showAfterFrame="0"/>
+			<slideTitle>Welcome to GST Taxation </slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+			<audio url="a24x8.mp3"/>
+		</slide>
+		<slide id="266" frameRate="30" totalFrames="435" advance="auto" type="normal">
+			<content url="Slide2.swf"/>
+			<slideBackground index="1" frameToPlay="1" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="12" end="74"/>
+				<clickAnimation start="107" end="169"/>
+				<clickAnimation start="296" end="358"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+			<audio url="a24x2.mp3"/>
+		</slide>
+		<slide id="268" frameRate="30" totalFrames="342" advance="auto" type="normal">
+			<content url="Slide3.swf"/>
+			<slideBackground index="1" frameToPlay="3" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="15" end="77"/>
+				<clickAnimation start="136" end="198"/>
+				<clickAnimation start="225" end="287"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="3"/>
+			<audio url="a24x3.mp3"/>
+		</slide>
+		<slide id="269" frameRate="30" totalFrames="519" advance="auto" type="normal">
+			<content url="Slide4.swf"/>
+			<slideBackground index="1" frameToPlay="5" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="15" end="77"/>
+				<clickAnimation start="88" end="150"/>
+				<clickAnimation start="157" end="189"/>
+				<clickAnimation start="199" end="231"/>
+				<clickAnimation start="242" end="274"/>
+				<clickAnimation start="290" end="322"/>
+				<clickAnimation start="336" end="368"/>
+				<clickAnimation start="421" end="483"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="4"/>
+			<audio url="a24x4.mp3"/>
+		</slide>
+		<slide id="270" frameRate="30" totalFrames="369" advance="auto" type="normal">
+			<content url="Slide5.swf"/>
+			<slideBackground index="1" frameToPlay="7" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="13" end="75"/>
+				<clickAnimation start="130" end="192"/>
+				<clickAnimation start="225" end="287"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="5"/>
+			<audio url="a24x5.mp3"/>
+		</slide>
+		<slide id="271" frameRate="30" totalFrames="849" advance="auto" type="normal">
+			<content url="Slide6.swf"/>
+			<slideBackground index="1" frameToPlay="9" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="11" end="63"/>
+				<clickAnimation start="63" end="125"/>
+				<clickAnimation start="159" end="221"/>
+				<clickAnimation start="337" end="399"/>
+				<clickAnimation start="497" end="550"/>
+				<clickAnimation start="550" end="612"/>
+				<clickAnimation start="669" end="731"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="6"/>
+			<audio url="a24x6.mp3"/>
+		</slide>
+		<slide id="272" frameRate="30" totalFrames="393" advance="auto" type="normal">
+			<content url="Slide7.swf"/>
+			<slideBackground index="1" frameToPlay="11" duration="2" showAfterFrame="0"/>
+			<clickAnimations>
+				<clickAnimation start="13" end="75"/>
+				<clickAnimation start="107" end="169"/>
+				<clickAnimation start="170" end="232"/>
+				<clickAnimation start="248" end="310"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="7"/>
+			<audio url="a24x7.mp3"/>
+		</slide>
+	</slides>
+	<attachments></attachments>
+</presentation>

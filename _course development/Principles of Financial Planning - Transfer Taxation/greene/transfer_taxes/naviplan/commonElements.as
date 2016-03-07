@@ -1,0 +1,60 @@
+﻿estateTaxes="•	The same rate"
+estateTaxes+="\n	schedule is used" 
+estateTaxes+="\n	for gifts and" 
+estateTaxes+="\n	estates" 
+estateTaxes+="\n•	Gifts and "
+estateTaxes+="\n	final estate assets" 
+estateTaxes+="\n	are aggregated "
+estateTaxes+="\n	to determine tax "
+estateTaxes+="\n•	Maximum " 
+estateTaxes+="\n	scheduled rate " 
+estateTaxes+="\n	for 2012 is 35%" 
+
+
+giftTaxes="•	Only the Credit is used "
+giftTaxes+="\n	in the actual tax" 
+giftTaxes+="\n	calculation"
+giftTaxes+="\n•	The Applicable Exclusion "  
+giftTaxes+="\n	Amount illustrates the" 
+giftTaxes+="\n	value offset by the "
+giftTaxes+="\n	Applicable Credit "
+giftTaxes+="\n•	Applicable Exclusion amount" 
+giftTaxes+="\n	for estates AND gifts" 
+giftTaxes+="\n	= $5,000,000 for year"
+giftTaxes+="\n	2011 and $5,120,000 for 2012"
+giftTaxes+="\n•	For 2011 and 2012," 
+giftTaxes+="\n	there is no ceiling on" 
+giftTaxes+="\n	the portion of the "
+giftTaxes+="\n	Applicable Exclusion Amount "
+giftTaxes+="\n	that can be used  "
+giftTaxes+="\n	for lifetime gifts"
+
+
+giftTaxes+="\n•	First dollar on which a tax" 
+giftTaxes+="\n	is actually paid in estates" 
+giftTaxes+="\n	of persons dying in 2011 and " 
+giftTaxes+="\n	2012 is at the 35% rate (i.e.,"
+giftTaxes+="\n	everythingover the Applicable"
+giftTaxes+="\n	Exclusion Amount is taxed"
+giftTaxes+="\n	at 35%) "
+giftTaxes+="\n•	Portability of the "
+giftTaxes+="\n	Applicable Exclusion"
+giftTaxes+="\n	Amount is available "
+giftTaxes+="\n	to spouses in 2011"
+giftTaxes+="\n	and 2012"
+
+
+
+
+
+
+deductions="•	Deductions are taken" 
+deductions+="\n	<b>before</b> the tax is"
+deductions+="\n	calculated"
+deductions+="\n•	The amount that can "
+deductions+="\n	be transferred between"
+deductions+="\n	spouses without tax"
+deductions+="\n	is generally <b>unlimited</b>" 
+deductions+="\n•	Transfers to Charities" 
+deductions+="\n	are not taxed" 
+

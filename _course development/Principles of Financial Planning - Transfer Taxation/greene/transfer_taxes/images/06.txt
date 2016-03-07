@@ -1,0 +1,6 @@
+mybar="Click the arrow for more information."; 
+mybar1="Up to $1 million of the applicable exclusion amount may be applied to taxable transfers by gift or death. Anything beyond $1M may only be applied to transfer by death.";
+mybar2="This is the second red box.";
+mybar3="This is the third one.";
+text_display.text=mybar;
+

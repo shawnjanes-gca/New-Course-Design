@@ -1,0 +1,6 @@
+mybar="Click the arrow above for more information."; 
+mybar1="The tax on a $2,000,000 estate would be $780,800. Therefore, having a credit of $780,800 would effectively exclude $2,000,000 from estate taxation. For 2007, up to $345,800 of this credit can be applied to lifetime taxable gifts. Looking at the chart, you can see that this $345,800 credit will cover $1,000,000 of gifts. This is discussed in greater detail on the following page.";
+mybar2="This is the second red box.";
+mybar3="This is the third one.";
+text_display.text=mybar;
+
