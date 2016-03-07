@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presentation width="479" height="479" start="paused" buildNum="7.0.0.7328">
+	<presentationTitle>The Flexibility of Trust</presentationTitle>
+	<presentationDescription>A trust is a very flexible document. For virtually any need that can be addressed through finances, a trust can be created. However, this flexibility is not without limits. Here are a couple of things you cannot do with a trust…</presentationDescription>
+	<speakers></speakers>
+	<backgrounds>
+		<background url="Master8000000c.swf"/>
+	</backgrounds>
+	<search url="srchdata.xml"/>
+	<slides>
+		<slide id="262" frameRate="30" totalFrames="0" advance="auto" blockMovement="false" type="normal">
+			<content url="Slide1.swf"/>
+			<slideBackground index="0" frameToPlay="1" duration="2" showAfterFrame="0"/>
+			<flvContents></flvContents>
+			<slideTitle></slideTitle>
+			<notes isHTML="true"></notes>
+			<slideThumbnail url="thumb.swf" frame="1"/>
+		</slide>
+		<slide id="260" frameRate="30" totalFrames="402" advance="auto" blockMovement="false" type="normal">
+			<content url="Slide2.swf"/>
+			<slideBackground index="0" frameToPlay="3" duration="2" showAfterFrame="0"/>
+			<flvContents></flvContents>
+			<clickAnimations>
+				<clickAnimation start="13" end="42"/>
+				<clickAnimation start="81" end="143"/>
+				<clickAnimation start="213" end="275"/>
+				<clickAnimation start="327" end="389"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true">[click]&amp;#x20;A&amp;#x20;trust&amp;#x20;is&amp;#x20;a&amp;#x20;very&amp;#x20;flexible&amp;#x20;document.&amp;#x20;[click]&amp;#x20;For&amp;#x20;virtually&amp;#x20;any&amp;#x20;need&amp;#x20;that&amp;#x20;can&amp;#x20;be&amp;#x20;addressed&amp;#x20;through&amp;#x20;finances,&amp;#x20;a&amp;#x20;trust&amp;#x20;can&amp;#x20;be&amp;#x20;created.&amp;#x20;However,&amp;#x20;you&amp;#x20;cannot&amp;#x20;use&amp;#x20;a&amp;#x20;trust&amp;#x20;to&amp;#x20;violate&amp;#x20;public&amp;#x20;policy.&amp;#x20;&amp;#x20;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="2"/>
+			<audios id="1" duration=" 13400">
+				<media url="a24x1x1.mp3" startMsecs="0" duration="13400" startAtMSecs="0"/>
+			</audios>
+			<playbackActions></playbackActions>
+		</slide>
+		<slide id="264" frameRate="30" totalFrames="2332.2" advance="auto" blockMovement="false" type="normal">
+			<content url="Slide3.swf"/>
+			<slideBackground index="0" frameToPlay="5" duration="2" showAfterFrame="0"/>
+			<flvContents></flvContents>
+			<clickAnimations>
+				<clickAnimation start="43" end="105"/>
+				<clickAnimation start="330" end="392"/>
+				<clickAnimation start="507" end="569"/>
+				<clickAnimation start="606" end="668"/>
+				<clickAnimation start="945" end="1007"/>
+				<clickAnimation start="1809" end="1871"/>
+			</clickAnimations>
+			<slideTitle></slideTitle>
+			<notes isHTML="true">[click]&amp;#x20;Perhaps&amp;#x20;the&amp;#x20;best&amp;#x20;way&amp;#x20;to&amp;#x20;explain&amp;#x20;what&amp;#x20;I&amp;#x20;mean&amp;#x20;by&amp;#x20;public&amp;#x20;policy&amp;#x20;is&amp;#x20;to&amp;#x20;illustrate&amp;#x20;with&amp;#x20;a&amp;#x20;story&amp;#x20;that&amp;#x20;involved&amp;#x20;one&amp;#x20;of&amp;#x20;my&amp;#x20;clients.&amp;#x20;&amp;#x20;[click]&amp;#x20;My&amp;#x20;client&amp;#x20;absolutely&amp;#x20;hated&amp;#x20;her&amp;#x20;daughter-in-law.&amp;#x20;&amp;#x20;[click]&amp;#x20;When&amp;#x20;my&amp;#x20;client&amp;#x20;died,&amp;#x20;she&amp;#x20;left&amp;#x20;everything&amp;#x20;in&amp;#x20;trust&amp;#x20;and&amp;#x20;the&amp;#x20;trust&amp;#x20;document&amp;#x20;stated,&amp;#x20;[click]&amp;#x20;&amp;#x201c;If&amp;#x20;my&amp;#x20;son&amp;#x20;continues&amp;#x20;to&amp;#x20;be&amp;#x20;married&amp;#x20;to&amp;#x20;&lt;i&gt;&lt;b&gt;that&lt;/b&gt;&lt;/i&gt;&amp;#x20;woman,&amp;#x20;then&amp;#x20;all&amp;#x20;the&amp;#x20;assets&amp;#x20;remain&amp;#x20;in&amp;#x20;trust&amp;#x20;for&amp;#x20;his&amp;#x20;lifetime&amp;#x20;and&amp;#x20;can&amp;#x20;only&amp;#x20;be&amp;#x20;used&amp;#x20;for&amp;#x20;his&amp;#x20;medical&amp;#x20;emergencies.&amp;#x20;&amp;#x20;[click]&amp;#x20;However,&amp;#x20;if&amp;#x20;at&amp;#x20;any&amp;#x20;time&amp;#x20;he&amp;#x20;is&amp;#x20;no&amp;#x20;longer&amp;#x20;married&amp;#x20;to&amp;#x20;&lt;i&gt;&lt;b&gt;that&lt;/b&gt;&lt;/i&gt;&amp;#x20;woman,&amp;#x20;then&amp;#x20;he&amp;#x20;shall&amp;#x20;receive&amp;#x20;half&amp;#x20;of&amp;#x20;the&amp;#x20;trust&amp;#x20;outright&amp;#x20;and&amp;#x20;the&amp;#x20;remainder&amp;#x20;shall&amp;#x20;stay&amp;#x20;in&amp;#x20;trust&amp;#x20;for&amp;#x20;his&amp;#x20;health,&amp;#x20;education,&amp;#x20;maintenance,&amp;#x20;and&amp;#x20;support.&amp;#x201d;&amp;#x20;&amp;#x20;&lt;br&gt;&lt;br&gt;The&amp;#x20;son&amp;#x20;went&amp;#x20;to&amp;#x20;court,&amp;#x20;and&amp;#x20;the&amp;#x20;judge&amp;#x20;ruled&amp;#x20;that&amp;#x20;the&amp;#x20;terms&amp;#x20;of&amp;#x20;the&amp;#x20;trust&amp;#x20;served&amp;#x20;as&amp;#x20;an&amp;#x20;incentive&amp;#x20;for&amp;#x20;the&amp;#x20;son&amp;#x20;to&amp;#x20;get&amp;#x20;a&amp;#x20;divorce;&amp;#x20;since&amp;#x20;public&amp;#x20;policy&amp;#x20;is&amp;#x20;to&amp;#x20;support&amp;#x20;marriage,&amp;#x20;not&amp;#x20;incent&amp;#x20;people&amp;#x20;to&amp;#x20;absolve&amp;#x20;marriages,&amp;#x20;[click]&amp;#x20;the&amp;#x20;judge&amp;#x20;ruled&amp;#x20;that&amp;#x20;this&amp;#x20;was&amp;#x20;against&amp;#x20;public&amp;#x20;policy.&amp;#x20;&amp;#x20;As&amp;#x20;a&amp;#x20;result,&amp;#x20;the&amp;#x20;court&amp;#x20;directed&amp;#x20;us&amp;#x20;to&amp;#x20;ignore&amp;#x20;this&amp;#x20;requirement&amp;#x20;and&amp;#x20;to&amp;#x20;distribute&amp;#x20;half&amp;#x20;the&amp;#x20;assets&amp;#x20;outright&amp;#x20;to&amp;#x20;the&amp;#x20;son&amp;#x20;and&amp;#x20;to&amp;#x20;use&amp;#x20;the&amp;#x20;balance&amp;#x20;of&amp;#x20;the&amp;#x20;trust&amp;#x20;assets&amp;#x20;for&amp;#x20;his&amp;#x20;health,&amp;#x20;education,&amp;#x20;maintenance,&amp;#x20;and&amp;#x20;support.&lt;br&gt;&lt;br&gt;&lt;br&gt;</notes>
+			<slideThumbnail url="thumb.swf" frame="3"/>
+			<audios id="2" duration=" 77740">
+				<media url="a24x2x1.mp3" startMsecs="0" duration="77740" startAtMSecs="0"/>
+			</audios>
+			<playbackActions></playbackActions>
+		</slide>
+	</slides>
+	<quizzes>
+		<reportingOptions isTracked="true" LMSType="BREEZE" AuthorwareDelimeter="," trackingLevel="score" completionValueToSend="default" completionTrigger="breeze" trackingURLEncodeVersionAndSession="true" trackingCharsToNotUrlEncode="" trackingSendInterval="1" completionSlideViewPercentage="100" trackingSendResumeData="true" sendScoreAsPercent="false"></reportingOptions>
+		<quizSettings showQuestionList="true" showScores="true" showPassScore="false" showCurrentScore="false" showQuestionMarks="false" showAttempts="true" showQuizAttempts="false" showQuestionAttempts="false" showQuestionCorrectFeedback="true" showQuestionIncorrectFeedback="true" showQuizNavigationWarning="true"></quizSettings>
+		<quiz quizID="10004" title="Quiz" numQuizAttemptsAllowed="1" minScore="0" passingScore="80" percent="true" passingGradeAction="nextSlide" passingGradeActionArg1="" passingGradeActionArg2="" failingGradeAction="nextSlide" failingGradeActionArg1="" failingGradeActionArg2="" questionAdvance="optional" quizAdvance="optional" showProgress="minimal" allowBackwardMovementInQuiz="true" allowReviewMode="true" passedScoreFeedback="Passed" failedScoreFeedback="Failed" shuffleQuestions="0">
+			<questiongroups></questiongroups>
+		</quiz>
+	</quizzes>
+	<attachments></attachments>
+</presentation>
