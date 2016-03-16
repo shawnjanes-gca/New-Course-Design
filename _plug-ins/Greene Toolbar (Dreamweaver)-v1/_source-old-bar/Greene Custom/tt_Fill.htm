@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Insert Fill in the blank Test Question</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript" src="tt_Fill.js"></script>
+<script language=javascript">
+var theDocumentForm;
+function canInspectSelection()
+{
+	var curSelection=dreamweaver.getSelection();
+	var theObj=dreamweaver.offsetsToNode(curSelection[0],curSelection[1]);
+	while (theObj.parentNode.outerHTML)
+	{
+		if (theObj.tagName != 'script')
+		{
+			theObj=theObj.parentNode;
+		}
+
+		else
+			{
+				break;
+			}
+		}
+	if (theObj.innerHTML.match('function fill_buttonCheckQ_onclick'))
+	{
+		theDocumentForm=theObj;
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+</script>
+</head>
+
+<body onLoad="initializeUI()">
+<script language="javascript">
+canInspectSelection();
+</script>
+<form name="theForm">
+  <table width="600" border="0">
+    <tr>
+      <td width="65">Question Number:</td>
+      <td width="21">&nbsp; </td>
+      <td>
+        <input type="text" name="QuestionNumber" size="5">
+      </td>
+      <td>
+        <div align="right"></div>
+      </td>
+      <td>&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65" rowspan="4">Question Text:</td>
+      <td width="21" rowspan="4">&nbsp; </td>
+      <td colspan="2" rowspan="4">
+        <textarea name="QuestionText" rows="3" cols="60"></textarea>
+      </td>
+      <td>Correct Layer: </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="CorrectLayer" size="15">
+      </td>
+    </tr>
+    <tr>
+      <td>Incorrect Layer:</td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" name="IncorrectLayer" size="15">
+      </td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">&nbsp;</td>
+      <td width="510" colspan="2">Correct Answers:</td>
+      <td width="158">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="22" width="65">&nbsp;</td>
+      <td height="22" width="21">A.</td>
+      <td height="22" width="510" colspan="2">
+        <input type="text" name="AnswerA" size="50">
+      </td>
+      <td height="22" width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65" height="31">&nbsp;</td>
+      <td width="21" height="31">B.</td>
+      <td width="510" height="31" colspan="2">
+        <input type="text" name="AnswerB" size="50">
+      </td>
+      <td width="158" height="31">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">C.</td>
+      <td width="510" colspan="2">
+        <input type="text" name="AnswerC" size="50">
+      </td>
+      <td width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">D.</td>
+      <td width="510" colspan="2">
+        <input type="text" name="AnswerD" size="50">
+      </td>
+      <td width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">E.</td>
+      <td width="510" colspan="2">
+        <input type="text" name="AnswerE" size="50">
+      </td>
+      <td width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">F.</td>
+      <td width="510" colspan="2">
+        <input type="text" name="AnswerF" size="50">
+      </td>
+      <td width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">G.</td>
+      <td width="510" colspan="2">
+        <input type="text" name="AnswerG" size="50">
+      </td>
+      <td width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65">&nbsp;</td>
+      <td width="21">H.</td>
+      <td width="510" colspan="2">
+        <input type="text" name="AnswerH" size="50">
+      </td>
+      <td width="158">&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="65" height="22">&nbsp;</td>
+      <td width="21" height="22">&nbsp;</td>
+      <td height="22" colspan="3"><b><font size="1">
+        <input type="checkbox" name="onetime" value="True">
+        </font>Insert out one time function and variable code?</b><br>
+        <font size="1"> (Check if this is first review question, leave unchecked
+        if this is second or subsequent question)</font></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

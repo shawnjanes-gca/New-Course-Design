@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Rounded Corner Tables</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript" src="v2_rounded.js"></script>
+</head>
+
+<body onLoad="initializeUI()">
+
+<form enctype="multipart/form-data" name="theForm">
+  <table width="650" border="0">
+    <tr>
+      <td colspan="4"><div align="center"><font face="Arial, Helvetica, sans-serif"><strong>Rounded Corner Tables</strong></font></div></td>
+    </tr>
+    <tr>
+      <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">ID for Div:</font></div></td>
+      <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+      <td width="442"><font face="Arial, Helvetica, sans-serif">
+        <input name="divid" type="text" value="rndDiv1" id="divid">
+      </font></td>
+    </tr>
+    <tr>
+      <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Table Alignment:</font></div></td>
+      <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+      <td width="442">
+      <input type="radio" name="group3" value="left"><font face="Arial, Helvetica, sans-serif">Left</font>
+      <input type="radio" name="group3" value="center"><font face="Arial, Helvetica, sans-serif">Center</font>
+      <input type="radio" name="group3" value="right"><font face="Arial, Helvetica, sans-serif">Right</font>
+      <input type="radio" name="group3" value="default" checked><font face="Arial, Helvetica, sans-serif">default</font>
+    </td>
+    </tr>
+    <tr>
+      <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Title Bar Text:</font></div></td>
+      <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+      <td width="442"><font face="Arial, Helvetica, sans-serif">
+        <input name="headertext" type="text" value="Title" size="50" id="headertext">
+      </font></td>
+    </tr>
+    <tr>
+      <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Body Text:</font></div></td>
+      <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+      <td width="442"><font face="Arial, Helvetica, sans-serif">
+        <input name="bodytext" type="text" value="Insert Body Mark-up Here" size="50" id="bodytext">
+      </font></td>
+    </tr>
+
+    <tr>
+      <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Width:</font></div></td>
+      <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+      <td width="442">
+      <font face="Arial, Helvetica, sans-serif"><input name="width" type="text" value="300" size="8" id="width"></font>
+      <input type="radio" name="group2" value="px" checked><font face="Arial, Helvetica, sans-serif">Pixels</font>
+      <input type="radio" name="group2" value="%"><font face="Arial, Helvetica, sans-serif">Percentage</font>
+      </td>
+    </tr>
+
+      <tr>
+        <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Table Style:</font></div></td>
+        <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+        <td width="442"><font face="Arial, Helvetica, sans-serif">One Tone: <input type="radio" name="group1" value="onetone" checked></font></td>
+      </tr>
+      <tr>
+        <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif"></font></div></td>
+        <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+        <td width="442"><font face="Arial, Helvetica, sans-serif">Two Tone: <input type="radio" name="group1" value="twotone"></font></td>
+      </tr>
+
+       <tr>
+        <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Color One:</font></div></td>
+        <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+        <td width="442"><font face="Arial, Helvetica, sans-serif">
+		<input type="mmcolorbutton" name="color1" value="#DBD9B9" id="color1">
+        </font></td>
+      </tr>
+       <tr>
+        <td width="135"><div align="right"><font face="Arial, Helvetica, sans-serif">Color Two (optional):</font></div></td>
+        <td width="10"><font face="Arial, Helvetica, sans-serif">&nbsp;</font> </td>
+        <td width="442"><font face="Arial, Helvetica, sans-serif">
+		<input type="mmcolorbutton" name="color2" id="color2">
+        </font></td>
+      </tr>
+    <tr>
+      <td width="135" height="22"><div align="right"><font face="Arial, Helvetica, sans-serif"></font></div></td>
+      <td width="10" height="22"><font face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+      <td height="22" colspan="2"><font face="Arial, Helvetica, sans-serif"><b><font size="1">
+        <input name="onetime" type="checkbox" value="True" checked>
+        </font>Insert once-per-page code insert?</b><br>
+        <font size="1"> (Keep box checked for first table inserted on a page. Uncheck for future)</font><br /><br />
+        <font size="1">(NiftyCube JS/CSS files will be copied into your asset folder and linked in your header)</font></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Put the folder and insertbar.xml file in this location:
+
+C:\Program Files\Adobe\Adobe Dreamweaver CS5\configuration\Objects
