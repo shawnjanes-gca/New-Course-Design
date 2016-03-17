@@ -42,7 +42,11 @@ fun_check_buttonCheckQ='function check_buttonCheckQ(questionNum, formName)\n'+
 '	if (correct=="true")\n'+
 '	{\n'+
 '		MM_showHideLayers(check_layers[questionNum][1],\'\',\'show\');\n'+
-'		formName.disabled=true;\n'+
+'		var form = formName;\n'+
+		var elements = form.elements;\n'+
+		for (var i = 0, len = elements.length; i < len; ++i) {\n'+
+			elements[i].disabled = true;\n'+
+		}\n'+
 '	}\n'+
 '	else\n'+
 '	{\n'+
