@@ -27663,15 +27663,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Base page w objectives.htm": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Base page w objectives.htm",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Base page w objectives.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -27682,15 +27673,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Base page.htm": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Base page.htm",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Base page.png": {
 		"fileType": 32768,
