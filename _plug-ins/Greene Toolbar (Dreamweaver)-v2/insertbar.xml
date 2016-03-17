@@ -1,98 +1,98 @@
-<?xml version="1.0" ?> 
-<!DOCTYPE insertbarset SYSTEM "-//Macromedia//DWExtension insertbar 5.0" > 
+<?xml version="1.0" ?>
+<!DOCTYPE insertbarset SYSTEM "-//Macromedia//DWExtension insertbar 5.0" >
 <insertbar xmlns:MMString="http://www.macromedia.com/schemes/data/string/">
-   
-   <category id="DW_Insertbar_GreeneCustom2" folder="Greene Custom 2">   
-	
-   	<button 
+
+   <category id="DW_Insertbar_GreeneCustom2" folder="Greene Custom 2">
+
+   	<button
    		id="Base page"
    		image="GreeneCustom2\Base page.png"
    		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Base page.htm" />	
-	
-	<button 
+   		file="GreeneCustom2\Base page.htm" />
+
+	<button
 		id="Base page w objectives"
 		image="GreeneCustom2\Base page w objectivese.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Base page w objectives.htm" />
-		
-	<button 
+
+	<button
 		id="Audio widget"
 		image="GreeneCustom2\Audio widget.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Audio widget.htm" />
-		
-	<button 
+
+	<button
 		id="Media column"
 		image="GreeneCustom2\Media column.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Media column.htm" />
-		
-	<button 
+
+	<button
 		id="Key questions"
 		image="GreeneCustom2\Key questions.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Key questions.htm" />				
-		
-	<button 
+		file="GreeneCustom2\Key questions.htm" />
+
+	<button
 		id="Footnotes"
 		image="GreeneCustom2\Footnotes.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Footnotes.htm" />
-		
-	<button 
-		id="tt_Radio_Test"
-		image="GreeneCustom2\tt_Radio.gif"
+
+	<button
+		id="Superscript"
+		image="GreeneCustom2\Superscript.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\tt_Radio.htm"/> 
-		
-   </category> 
-   
-   <category id="DW_Insertbar_GreeneCustom" folder="Greene Custom">   
-    
-	<button 
+		file="GreeneCustom\Superscript.htm"/>
+
+   </category>
+
+   <category id="DW_Insertbar_GreeneCustom" folder="Greene Custom">
+
+	<button
 		id="v1_base_table"
 		image="GreeneCustom\v1_base_table.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v1_base_table.htm"/>
-	
-	<button 
+
+	<button
 		id="v2_beige_co_table"
 		image="GreeneCustom\v2_beige_co_table.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v2_beige_co_table.htm"/>
-	
+
 	<button
 		id="v1_header_flash"
 		image="GreeneCustom\v1_header_flash.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\v1_header_flash.htm"/> 
-	
+		file="GreeneCustom\v1_header_flash.htm"/>
+
 	<button
 		id="v1_image_table"
 		image="GreeneCustom\v1_image_table.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\v1_image_table.htm"/>  
-	
+		file="GreeneCustom\v1_image_table.htm"/>
+
 	<button
 		id="v1_callout_table"
 		image="GreeneCustom\v1_callout_table.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v1_callout_table.htm"/>
-	
+
 	<button
 		id="tt_re_template"
 		image="GreeneCustom\tt_template.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\tt_template.htm"/> 
-	
+		file="GreeneCustom\tt_template.htm"/>
+
 	<button
 		id="v1_Layer"
 		image="GreeneCustom\v1_Layer.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\v1_Layer.htm"/>   
-			      
-	<button 
+		file="GreeneCustom\v1_Layer.htm"/>
+
+	<button
 		id="v1_Layer_Button"
 		image="GreeneCustom\v1_Layer_Button.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
@@ -102,69 +102,69 @@
 		id="v2__Layer_Button_Test"
 		image="GreeneCustom\v2_Layer_Button_Test.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\v2_Layer_Button_Test.htm"/> 
-	
+		file="GreeneCustom\v2_Layer_Button_Test.htm"/>
+
 	<button
 		id="v2_Layer_Button"
 		image="GreeneCustom\v2_Layer_Button.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\v2_Layer_Button.htm"/> 
-	
+		file="GreeneCustom\v2_Layer_Button.htm"/>
+
 	<button
 		id="tt_Check"
 		image="GreeneCustom\tt_Check.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\tt_Check.htm"/>   
-			      
+		file="GreeneCustom\tt_Check.htm"/>
+
 	<button
 		id="tt_Drop"
 		image="GreeneCustom\tt_Drop.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\tt_Drop.htm"/> 
-	
+		file="GreeneCustom\tt_Drop.htm"/>
+
 	<button
 		id="tt_Fill"
 		image="GreeneCustom\tt_Fill.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\tt_Fill.htm"/>   
-			      
+		file="GreeneCustom\tt_Fill.htm"/>
+
 	<button
 		id="tt_Radio"
 		image="GreeneCustom\tt_Radio.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\tt_Radio.htm"/> 
+		file="GreeneCustom\tt_Radio.htm"/>
 
 	<button
 		id="v2_vaudio"
 		image="GreeneCustom\v2_vaudio.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v2_vaudio.htm"/>
-	
+
 	<button
 		id="v2_Rounded"
 		image="GreeneCustom\v2_rounded.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v2_rounded.htm"/>
-	
+
 	<button
 		id="v2_document_icon"
 		image="GreeneCustom\v2_document_icon.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v2_document_icon.htm"/>
-		
+
 	<button
 		id="v2_callout_table"
 		image="GreeneCustom\v2_callout_table.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v2_callout_table.htm"/>
-							
-   </category> 
+
+   </category>
 
 
 	<category MMString:name="insertbar/category/common" folder="Common" id="DW_Insertbar_Common">
-	
+
 	<button MMString:label="insertbar/div" MMString:name="insertbar/div" enabled="!_VIEW_LAYOUT" promptLiveSelection="block" file="Common\Div.htm" id="DW_CommonDiv" image="Common\Div.png" />
-	
+
     <button MMString:label="insertbar/image" MMString:name="insertbar/image" promptLiveSelection="default" file="Common\Image.htm" id="DW_Image" image="Common\Image.png" />
     <button MMString:label="insertbar/paragraph" MMString:name="insertbar/paragraph" promptLiveSelection="block" enabled="!_VIEW_LAYOUT" file="Common\paragraph.htm" id="DW_Paragraph" image="Common\paragraph.png" />
 	<menubutton MMString:label="insertbar/heading" MMString:name="insertbar/heading" promptLiveSelection="block" folder="Heading" id="DW_Insertbar_Heading" image="Heading\h1.png">
@@ -175,7 +175,7 @@
 		<button MMString:label="insertbar/h5" MMString:name="insertbar/h5" promptLiveSelection="block" enabled="!_VIEW_LAYOUT" file="Heading\h5.htm" id="DW_Heading5" image="Heading\h5.png" />
 		<button MMString:label="insertbar/h6" MMString:name="insertbar/h6" promptLiveSelection="block" enabled="!_VIEW_LAYOUT" file="Heading\h6.htm" id="DW_Heading6" image="Heading\h6.png" />
 		<button MMString:label="insertbar/hgroup" MMString:name="insertbar/hgroup" promptLiveSelection="block" enabled="!_VIEW_LAYOUT" file="Layout\hgroup.htm" id="DW_Hgroup" image="Layout\hgroup.png" />
-	</menubutton>	
+	</menubutton>
 	<button MMString:label="insertbar/table" MMString:name="insertbar/table" promptLiveSelection="default" enabled="!_VIEW_LAYOUT" file="Common\Table.htm" id="DW_Table" image="Common\Table.png" />
 	<button MMString:label="insertbar/figure" MMString:name="insertbar/figure" promptLiveSelection="default" enabled="!_VIEW_LAYOUT" file="Common\figure.htm" id="DW_Figure" image="Common\figure.png" />
     <button MMString:label="insertbar/textUL" MMString:name="insertbar/textUL" promptLiveSelection="inspect" file="Text\UL.htm" id="DW_Text_UL" image="Text\UL.png" />
@@ -197,7 +197,7 @@
 	<button MMString:label="insertbar/headKeywords" MMString:name="insertbar/headKeywords" file="Head\Keywords.htm" id="DW_Head_Keywords" image="Head\Keywords.png" />
 	<button MMString:label="insertbar/headDescription" MMString:name="insertbar/headDescription" file="Head\Description.htm" id="DW_Head_Description" image="Head\Description.png" />
     <button MMString:label="insertbar/headViewport" MMString:name="insertbar/headViewport" file="Head\Viewport.htm" id="DW_Head_Viewport" image="Head\viewport.png" />
-    <button MMString:label="insertbar/script" MMString:name="insertbar/script" promptLiveSelection="default" file="Script\Script.htm" id="DW_Script_Script" image="Script\Script.png" />    
+    <button MMString:label="insertbar/script" MMString:name="insertbar/script" promptLiveSelection="default" file="Script\Script.htm" id="DW_Script_Script" image="Script\Script.png" />
  	<button MMString:label="insertbar/email" MMString:name="insertbar/email" promptLiveSelection="default" file="Common\E-Mail Link.htm" id="DW_Email" image="Common\E-Mail Link.png" />
 <separator />
 
@@ -222,17 +222,17 @@
 	  <button MMString:label="insertbar/emDash" MMString:name="insertbar/emDash" file="Characters\Em-Dash.htm" enabled="!_VIEW_LIVE" id="DW_Chars_EmDash" image="Characters\Em-Dash.png" />
       <button MMString:label="insertbar/enDash" MMString:name="insertbar/enDash" file="Characters\En-Dash.htm" enabled="!_VIEW_LIVE" id="DW_Chars_EnDash" image="Characters\En-Dash.png" />
 	  <separator />
-	  
+
 	  <button MMString:label="insertbar/pound" MMString:name="insertbar/pound" file="Characters\Pound.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Pound" image="Characters\Pound.png" />
 	  <button MMString:label="insertbar/euro" MMString:name="insertbar/euro" file="Characters\Euro.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Euro" image="Characters\Euro.png" />
-	  <button MMString:label="insertbar/yen" MMString:name="insertbar/yen" file="Characters\Yen.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Yen" image="Characters\Yen.png" /> 
+	  <button MMString:label="insertbar/yen" MMString:name="insertbar/yen" file="Characters\Yen.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Yen" image="Characters\Yen.png" />
 	  <separator />
-	  
+
 	  <button MMString:label="insertbar/copyright" MMString:name="insertbar/copyright" file="Characters\Copyright.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Copyright" image="Characters\Copyright.png" />
       <button MMString:label="insertbar/registered" MMString:name="insertbar/registered" file="Characters\Registered.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Registered" image="Characters\Registered.png" />
-      <button MMString:label="insertbar/trademark" MMString:name="insertbar/trademark" file="Characters\Trademark.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Trademark" image="Characters\Trademark.png" />      
+      <button MMString:label="insertbar/trademark" MMString:name="insertbar/trademark" file="Characters\Trademark.htm" enabled="!_VIEW_LIVE" id="DW_Chars_Trademark" image="Characters\Trademark.png" />
       <separator />
-	  
+
       <button MMString:label="insertbar/other" MMString:name="insertbar/other" file="Characters\Other.htm" id="DW_Chars_Other" enabled="!_VIEW_LIVE" image="Characters\Other.gif" />
     </menubutton>
 </category>
@@ -249,9 +249,9 @@
 	<button MMString:label="insertbar/FormsRange" MMString:name="insertbar/FormsRange" promptLiveSelection="default" file="Forms\Range.htm" id="DW_Forms_Range" image="Forms\range.png" tag="input type=&quot;range&quot;"/>
 	<button MMString:label="insertbar/FormsColor" MMString:name="insertbar/FormsColor" promptLiveSelection="default" file="Forms\Color.htm" id="DW_Forms_Color" image="Forms\color.png" tag="input type=&quot;color&quot;"/>
 	<button MMString:label="insertbar/FormsMonth" MMString:name="insertbar/FormsMonth" promptLiveSelection="default" file="Forms\Month.htm" id="DW_Forms_Month" image="Forms\month.png" tag="input type=&quot;month&quot;"/>
-	<button MMString:label="insertbar/FormsWeek" MMString:name="insertbar/FormsWeek" promptLiveSelection="default" file="Forms\Week.htm" id="DW_Forms_Week" image="Forms\week.png" tag="input type=&quot;week&quot;"/>	
-	<button MMString:label="insertbar/FormsDate" MMString:name="insertbar/FormsDate" promptLiveSelection="default" file="Forms\DateTag.htm" id="DW_Forms_Date" image="Forms\date.png" tag="input type=&quot;date&quot;"/>	
-	<button MMString:label="insertbar/FormsTime" MMString:name="insertbar/FormsTime" promptLiveSelection="default" file="Forms\Time.htm" id="DW_Forms_Time" image="Forms\time.png" tag="input type=&quot;time&quot;"/>	
+	<button MMString:label="insertbar/FormsWeek" MMString:name="insertbar/FormsWeek" promptLiveSelection="default" file="Forms\Week.htm" id="DW_Forms_Week" image="Forms\week.png" tag="input type=&quot;week&quot;"/>
+	<button MMString:label="insertbar/FormsDate" MMString:name="insertbar/FormsDate" promptLiveSelection="default" file="Forms\DateTag.htm" id="DW_Forms_Date" image="Forms\date.png" tag="input type=&quot;date&quot;"/>
+	<button MMString:label="insertbar/FormsTime" MMString:name="insertbar/FormsTime" promptLiveSelection="default" file="Forms\Time.htm" id="DW_Forms_Time" image="Forms\time.png" tag="input type=&quot;time&quot;"/>
 	<button MMString:label="insertbar/FormsDateTime" MMString:name="insertbar/FormsDateTime" promptLiveSelection="default" file="Forms\DateTime.htm" id="DW_Forms_DateTime" image="Forms\datetime.png" tag="input type=&quot;datetime&quot;"/>
 	<button MMString:label="insertbar/FormsDateTimeLocal" MMString:name="insertbar/FormsDateTimeLocal" promptLiveSelection="default" file="Forms\DateTimeLocal.htm" id="DW_Forms_DateTimeLocal" image="Forms\datetimelocal.png" tag="input type=&quot;datetime-local&quot;"/>
 	<button MMString:label="insertbar/formsTextarea" MMString:name="insertbar/formsTextarea" promptLiveSelection="default" file="Forms\Textarea.htm" id="DW_Forms_TextareaTag" image="Forms\Textarea.png" tag="textarea" />
@@ -263,7 +263,7 @@
 	<button MMString:label="insertbar/formsHidden" MMString:name="insertbar/formsHidden" promptLiveSelection="default" file="Forms\Hidden Field.htm" id="DW_Forms_Hidden" image="Forms\Hidden Field.png" tag="input type=&quot;hidden&quot;" />
 	<button MMString:label="insertbar/formsListMenu" MMString:name="insertbar/formsListMenu" promptLiveSelection="default" file="Forms\List Menu.htm" id="DW_Forms_ListMenu" image="Forms\List Menu.png" tag="select" />
 	<button MMString:label="insertbar/formsRadio" MMString:name="insertbar/formsRadio" promptLiveSelection="default" file="Forms\Radio.htm" id="DW_Forms_Radio" image="Forms\Radio.png" tag="input type=&quot;radio&quot;" />
-    <button MMString:label="insertbar/formsRadioGroup" MMString:name="insertbar/formsRadioGroup" promptLiveSelection="default" file="Forms\Radio Group.htm" id="DW_Forms_RadioGroup" image="Forms\Radio Group.png" /> 
+    <button MMString:label="insertbar/formsRadioGroup" MMString:name="insertbar/formsRadioGroup" promptLiveSelection="default" file="Forms\Radio Group.htm" id="DW_Forms_RadioGroup" image="Forms\Radio Group.png" />
     <button MMString:label="insertbar/formsCheckbox" MMString:name="insertbar/formsCheckbox" promptLiveSelection="default" file="Forms\Checkbox.htm" id="DW_Forms_Checkbox" image="Forms\Checkbox.png" tag="input type=&quot;checkbox&quot;" />
     <button MMString:label="insertbar/formsCheckboxGroup" MMString:name="insertbar/formsCheckboxGroup" promptLiveSelection="default" file="Forms\Checkbox Group.htm" id="DW_Forms_CheckboxGroup" image="Forms\Checkbox Group.png" />
     <button MMString:label="insertbar/formsFieldset" MMString:name="insertbar/formsFieldset" promptLiveSelection="default" file="Forms\Fieldset.htm" id="DW_Forms_Fieldset" image="Forms\Fieldset.png" />
@@ -379,9 +379,9 @@
   <category MMString:name="insertbar/category/responsiveComponents" folder="Responsive" id="DW_Insertbar_ResponsiveComponents">
       <button MMString:label="insertbar/category/responsiveContainer" MMString:name="insertbar/category/responsiveContainer" promptLiveSelection="block" file="Responsive\responsiveContainer.htm" id="DW_responsiveContainer" image="Responsive\container.png" />
       <button MMString:label="insertbar/category/responsiveContainerFluid" MMString:name="insertbar/category/responsiveContainerFluid" promptLiveSelection="block" file="Responsive\responsiveContainerFluid.htm" id="DW_responsiveContainerFluid" image="Responsive\container-fluid.png" />
-      <button MMString:label="insertbar/category/responsiveGridRow" MMString:name="insertbar/category/responsiveGridRow" promptLiveSelection="default" notShowPosAssistDialog="true" file="Responsive\responsiveGridRow.htm" id="DW_responsiveGridRow" image="Responsive\row-with-column.png" />      
+      <button MMString:label="insertbar/category/responsiveGridRow" MMString:name="insertbar/category/responsiveGridRow" promptLiveSelection="default" notShowPosAssistDialog="true" file="Responsive\responsiveGridRow.htm" id="DW_responsiveGridRow" image="Responsive\row-with-column.png" />
      <separator />
-      
+
       <menubutton MMString:label="insertbar/category/responsiveNavbar" MMString:name="insertbar/category/responsiveNavbar" promptLiveSelection="default" folder="Responsive\Navbar" id="DW_responsiveNavbar" image="Responsive\responsiveNavbar.png">
           <button MMString:label="insertbar/category/responsiveNavbarCase1" MMString:name="insertbar/category/responsiveNavbarCase1" promptLiveSelection="default" file="Responsive\Navbar\responsiveNavbarCase1.htm" id="DW_responsiveNavbarDefault" image="Responsive\Navbar\Case1_2.png" />
           <button MMString:label="insertbar/category/responsiveNavbarCase2" MMString:name="insertbar/category/responsiveNavbarCase2" promptLiveSelection="default" file="Responsive\Navbar\responsiveNavbarCase2.htm" id="DW_responsiveNavbarFixedTop" image="Responsive\Navbar\Case1_2.png" />
@@ -389,7 +389,7 @@
           <button MMString:label="insertbar/category/responsiveNavbarCase4" MMString:name="insertbar/category/responsiveNavbarCase4" promptLiveSelection="default" file="Responsive\Navbar\responsiveNavbarCase4.htm" id="DW_responsiveNavbarInverted" image="Responsive\Navbar\Case4_navbarInverted.png" />
       </menubutton>
       <button MMString:label="insertbar/category/responsiveCarousel" MMString:name="insertbar/category/responsiveCarousel" promptLiveSelection="default" file="Responsive\responsiveCarousel.htm" id="DW_responsiveCarousel" image="Responsive\responsiveCarousel.png" />
-      
+
       <menubutton MMString:label="insertbar/category/responsiveImgResponsive" MMString:name="insertbar/category/responsiveImgResponsive" folder="ImgResponsive" promptLiveSelection="default" id="DW_responsiveImgResponsive" image="Responsive\responsiveImage.png" >
           <button MMString:label="insertbar/category/responsiveButtonsDefault" MMString:name="insertbar/category/responsiveButtonsDefault" promptLiveSelection="default" file="Responsive\ImgResponsive\responsiveImgResponsiveDefault.htm" id="DW_responsiveImgResponsiveDefault" image="Responsive\ImgResponsive\defaultImage.png" />
           <button MMString:label="insertbar/category/responsiveImgResponsiveCircle" MMString:name="insertbar/category/responsiveImgResponsiveCircle" promptLiveSelection="default" file="Responsive\ImgResponsive\responsiveImgResponsiveCircle.htm" id="DW_responsiveImgResponsiveCircle" image="Responsive\ImgResponsive\circle.png" />
@@ -406,13 +406,13 @@
       <button MMString:label="insertbar/category/responsiveGlyphiconsHome" MMString:name="insertbar/category/responsiveGlyphiconsHome" promptLiveSelection="default" file="Responsive\Glyphicons\responsiveGlyphiconsHome.htm" id="DW_responsiveGlyphiconsHome" image="Responsive\Glyphicons\GlyphHome.png" />
       <button MMString:label="insertbar/category/responsiveGlyphiconsEnvelope" MMString:name="insertbar/category/responsiveGlyphiconsEnvelope" promptLiveSelection="default" file="Responsive\Glyphicons\responsiveGlyphiconsEnvelope.htm" id="DW_responsiveGlyphiconsEnvelope" image="Responsive\Glyphicons\GlyphEmail.png" />
       <button MMString:label="insertbar/category/responsiveGlyphiconsRemove" MMString:name="insertbar/category/responsiveGlyphiconsRemove" promptLiveSelection="default" file="Responsive\Glyphicons\responsiveGlyphiconsRemove.htm" id="DW_responsiveGlyphiconsRemove" image="Responsive\Glyphicons\GlyphRemove.png" />
-      <button MMString:label="insertbar/category/responsiveGlyphiconsMenu" MMString:name="insertbar/category/responsiveGlyphiconsMenu" promptLiveSelection="default" file="Responsive\Glyphicons\responsiveGlyphiconsMenu.htm" id="DW_responsiveGlyphiconsMenu" image="Responsive\Glyphicons\GlyphMenu.png" />      
-      </menubutton>      
+      <button MMString:label="insertbar/category/responsiveGlyphiconsMenu" MMString:name="insertbar/category/responsiveGlyphiconsMenu" promptLiveSelection="default" file="Responsive\Glyphicons\responsiveGlyphiconsMenu.htm" id="DW_responsiveGlyphiconsMenu" image="Responsive\Glyphicons\GlyphMenu.png" />
+      </menubutton>
       <button MMString:label="insertbar/category/responsiveResponsiveEmbed" MMString:name="insertbar/category/responsiveResponsiveEmbed" promptLiveSelection="default" file="Responsive\responsiveResponsiveEmbed.htm" id="DW_responsiveResponsiveEmbed" image="Responsive\responsiveResponsiveEmbed.png" />
       <button MMString:label="insertbar/category/responsiveJumbotron" MMString:name="insertbar/category/responsiveJumbotron" promptLiveSelection="block" file="Responsive\responsiveJumbotron.htm" id="DW_responsiveJumbotron" image="Responsive\responsiveJumbotron.png" />
-      
+
       <separator />
-      
+
       <menubutton MMString:label="insertbar/category/responsiveButtons" MMString:name="insertbar/category/responsiveButtons" promptLiveSelection="default" folder="Responsive\Buttons" id="DW_responsiveButtons" image="Responsive\responsiveButtons.png" >
           <button MMString:label="insertbar/category/responsiveButtonsLarge" MMString:name="insertbar/category/responsiveButtonsLarge" promptLiveSelection="default" file="Responsive\Buttons\responsiveButtonsLarge.htm" id="DW_responsiveButtonsLarge" image="Responsive\Buttons\Large-Button.png" />
           <button MMString:label="insertbar/category/responsiveButtonsSmall" MMString:name="insertbar/category/responsiveButtonsSmall" promptLiveSelection="default" file="Responsive\Buttons\responsiveButtonsSmall.htm" id="DW_responsiveButtonsSmall" image="Responsive\Buttons\Small-Button.png" />
@@ -460,9 +460,9 @@
           <button MMString:label="insertbar/category/responsiveButtonsDanger" MMString:name="insertbar/category/responsiveButtonsDanger" promptLiveSelection="default" file="Responsive\ButtonDropups\responsiveButtonDropupsDanger.htm" id="DW_responsiveButtonDropupsDanger" image="Responsive\ButtonDropups\responsiveButtonDropupsDanger.png" />
           <button MMString:label="insertbar/category/responsiveButtonsWarning" MMString:name="insertbar/category/responsiveButtonsWarning" promptLiveSelection="default" file="Responsive\ButtonDropups\responsiveButtonDropupsWarning.htm" id="DW_responsiveButtonDropupsWarning" image="Responsive\ButtonDropups\responsiveButtonDropupsWarning.png" />
       </menubutton>
-      
-      <separator />     
-      
+
+      <separator />
+
       <menubutton MMString:label="insertbar/category/responsiveInputGroups" MMString:name="insertbar/category/responsiveInputGroups" folder="Responsive\InputGroups" promptLiveSelection="default" id="DW_responsiveInputGroups" image="Responsive\responsiveInputGroups.png">
           <button MMString:label="insertbar/category/responsiveInputGroupsCase1" MMString:name="insertbar/category/responsiveInputGroupsCase1" promptLiveSelection="default" file="Responsive\InputGroups\responsiveInputGroupsCase1.htm" id="DW_responsiveInputGroupsBasic" image="Responsive\InputGroups\Case1_basicIG.png" />
           <button MMString:label="insertbar/category/responsiveInputGroupsLarge" MMString:name="insertbar/category/responsiveInputGroupsLarge" promptLiveSelection="default" file="Responsive\InputGroups\responsiveInputGroupsLarge.htm" id="DW_responsiveInputGroupsLarge" image="Responsive\InputGroups\Case2_LargeIG.png" />
@@ -472,7 +472,7 @@
           <button MMString:label="insertbar/category/responsiveInputGroupsCase4" MMString:name="insertbar/category/responsiveInputGroupsCase4" promptLiveSelection="default" file="Responsive\InputGroups\responsiveInputGroupsCase4.htm" id="DW_responsiveInputGroupsButtonDropdown" image="Responsive\InputGroups\Case4_buttonDropdown.png" />
           <button MMString:label="insertbar/category/responsiveInputGroupsCase5" MMString:name="insertbar/category/responsiveInputGroupsCase5" promptLiveSelection="default" file="Responsive\InputGroups\responsiveInputGroupsCase5.htm" id="DW_responsiveInputGroupsSegmentedButton" image="Responsive\InputGroups\Case5_segmentedButton.png" />
       </menubutton>
-      
+
       <menubutton MMString:label="insertbar/category/responsiveListGroup" MMString:name="insertbar/category/responsiveListGroup" folder="Responsive\ListGroup" promptLiveSelection="default" id="DW_responsiveListGroup" image="Responsive\responsiveListGroup.png">
           <button MMString:label="insertbar/category/responsiveListGroupCase1" MMString:name="insertbar/category/responsiveListGroupCase1" promptLiveSelection="default" file="Responsive\ListGroup\responsiveListGroupCase1.htm" id="DW_responsiveListGroupBasic" image="Responsive\ListGroup\Case1_basicListGroup.png" />
           <button MMString:label="insertbar/category/responsiveListGroupCase2" MMString:name="insertbar/category/responsiveListGroupCase2" promptLiveSelection="default" file="Responsive\ListGroup\responsiveListGroupCase2.htm" id="DW_responsiveListGroupBadges" image="Responsive\ListGroup\Case2_ListGroupBadges.png" />
@@ -486,18 +486,18 @@
           <button MMString:label="insertbar/category/responsiveLabelsWarning" MMString:name="insertbar/category/responsiveLabelsWarning" promptLiveSelection="default" file="Responsive\Labels\responsiveLabelsWarning.htm" id="DW_responsiveLabelsWarning" image="Responsive\Labels\warninglabel.png" />
       </menubutton>
       <button MMString:label="insertbar/category/responsivePanels" MMString:name="insertbar/category/responsivePanels" promptLiveSelection="default" file="Responsive\responsivePanels.htm" id="DW_responsivePanels" image="Responsive\responsivePanels.png" />
-      
+
       <button MMString:label="insertbar/category/responsiveWells" MMString:name="insertbar/category/responsiveWells" promptLiveSelection="block" file="Responsive\responsiveWells.htm" id="DW_responsiveWells" image="Responsive\responsiveWells.png" />
-      
+
       <separator />
-      
+
       <menubutton MMString:label="insertbar/category/responsiveNav" MMString:name="insertbar/category/responsiveNav" folder="Responsive\Nav" promptLiveSelection="default" id="DW_responsiveNav" image="Responsive\responsiveNav.png">
           <button MMString:label="insertbar/category/responsiveNavCase1" MMString:name="insertbar/category/responsiveNavCase1" promptLiveSelection="default" file="Responsive\Nav\responsiveNavCase1.htm" id="DW_responsiveNavTab" image="Responsive\Nav\Case1_tabs.png" />
           <button MMString:label="insertbar/category/responsiveNavCase2" MMString:name="insertbar/category/responsiveNavCase2" promptLiveSelection="default" file="Responsive\Nav\responsiveNavCase2.htm" id="DW_responsiveNavTabDropdown" image="Responsive\Nav\Case2_TabsDropdown.png" />
           <button MMString:label="insertbar/category/responsiveNavCase3" MMString:name="insertbar/category/responsiveNavCase3" promptLiveSelection="default" file="Responsive\Nav\responsiveNavCase3.htm" id="DW_responsiveNavPill" image="Responsive\Nav\Case3_pills.png" />
           <button MMString:label="insertbar/category/responsiveNavCase4" MMString:name="insertbar/category/responsiveNavCase4" promptLiveSelection="default" file="Responsive\Nav\responsiveNavCase4.htm" id="DW_responsiveNavPillDropdown" image="Responsive\Nav\Case4_pillsDropdown.png" />
       </menubutton>
-      <button MMString:label="insertbar/category/responsiveTab" MMString:name="insertbar/category/responsiveTab" promptLiveSelection="default" file="Responsive\responsiveTab.htm" id="DW_responsiveTab" image="Responsive\responsiveTab.png" />      
+      <button MMString:label="insertbar/category/responsiveTab" MMString:name="insertbar/category/responsiveTab" promptLiveSelection="default" file="Responsive\responsiveTab.htm" id="DW_responsiveTab" image="Responsive\responsiveTab.png" />
       <button MMString:label="insertbar/category/responsiveAccordion" MMString:name="insertbar/category/responsiveAccordion" promptLiveSelection="default" file="Responsive\responsiveAccordion.htm" id="DW_responsiveAccordion" image="Responsive\responsiveAccordion.png" />
       <menubutton MMString:label="insertbar/category/responsivePagination" MMString:name="insertbar/category/responsivePagination" folder="Responsive\Pagination" promptLiveSelection="default" id="DW_responsivePagination" image="Responsive\responsivePagination.png">
           <button MMString:label="insertbar/category/responsivePaginationCase1" MMString:name="insertbar/category/responsivePaginationCase1" promptLiveSelection="default" file="Responsive\Pagination\responsivePaginationCase1.htm" id="DW_responsivePaginationBasic" image="Responsive\Pagination\Case1_basicPagination.png" />
@@ -506,8 +506,8 @@
           <button MMString:label="insertbar/category/responsivePaginationCase4" MMString:name="insertbar/category/responsivePaginationCase4" promptLiveSelection="default" file="Responsive\Pagination\responsivePaginationCase4.htm" id="DW_responsivePagerAligned" image="Responsive\Pagination\Case4_AlignedPager.png" />
       </menubutton>
       <button MMString:label="insertbar/category/responsiveBreadcrumbs" MMString:name="insertbar/category/responsiveBreadcrumbs" promptLiveSelection="default" file="Responsive\responsiveBreadcrumbs.htm" id="DW_responsiveBreadcrumbs" image="Responsive\responsiveBreadcrumbs.png" />
-      
-  </category>   
+
+  </category>
 	<category MMString:name="insertbar/category/jQM" folder="jQuery" id="DW_Insertbar_jQuery">
 		<button MMString:label="insertbar/jQM/page" MMString:name="Commands/jQM/page/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMPage.htm" id="DW_jQuery_Page" image="jQuery\jQMPage.png" />
 		<button MMString:label="insertbar/jQM/listview" MMString:name="Commands/jQM/listview/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMList.htm" id="DW_jQuery_List" image="jQuery\jQMList.png" />
@@ -524,7 +524,7 @@
 		<button MMString:label="insertbar/jQM/fliptoggleswitch" MMString:name="Commands/jQM/fliptoggleswitch/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMFlipSwitch.htm" id="DW_jQuery_FlipSwitch" image="jQuery\jQMFlipSwitch.png" />
 		<button MMString:label="insertbar/jQM/email" MMString:name="Commands/jQM/email/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMEmail.htm" id="DW_jQuery_Email" image="jQuery\jQMEmail.png" />
 		<button MMString:label="insertbar/jQM/url" MMString:name="Commands/jQM/url/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMUrl.htm" id="DW_jQuery_Url" image="jQuery\jQMUrl.png" />
-		<button MMString:label="insertbar/jQM/search" MMString:name="Commands/jQM/search/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMSearch.htm" id="DW_jQuery_Search_TextInput" image="jQuery\jQMSearch.png" />		
+		<button MMString:label="insertbar/jQM/search" MMString:name="Commands/jQM/search/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMSearch.htm" id="DW_jQuery_Search_TextInput" image="jQuery\jQMSearch.png" />
 		<button MMString:label="insertbar/jQM/number" MMString:name="Commands/jQM/number/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMNumber.htm" id="DW_jQuery_Number" image="jQuery\jQMNumber.png" />
 		<button MMString:label="insertbar/jQM/time" MMString:name="Commands/jQM/time/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMTime.htm" id="DW_jQuery_Time" image="jQuery\jQMTime.png" />
 		<button MMString:label="insertbar/jQM/date" MMString:name="Commands/jQM/date/title" needsFullRefresh="true" promptLiveSelection="default" file="jQuery\jQMDate.htm" id="DW_jQuery_Date" image="jQuery\jQMDate.png" />
@@ -544,7 +544,7 @@
 		<button MMString:label="jquery/widgets/buttonset/title" MMString:name="jquery/widgets/buttonset/title" needsFullRefresh="true" promptLiveSelection="default" file="jqueryWidgets\jQueryButtonset.htm" id="DW_jQueryWidget_Buttonset" image="jqueryWidgets\jQueryButtonset.png" />
 		<button MMString:label="jquery/widgets/checkbox/title" MMString:name="jquery/widgets/checkbox/title" needsFullRefresh="true" promptLiveSelection="default" file="jqueryWidgets\jQueryCheckbox.htm" id="DW_jQueryWidget_Checkbox" image="jqueryWidgets\jQueryCheckbox.png" />
 		<button MMString:label="jquery/widgets/radio/title" MMString:name="jquery/widgets/radio/title" needsFullRefresh="true" promptLiveSelection="default" file="jqueryWidgets\jQueryRadio.htm" id="DW_jQueryWidget_Radio" image="jqueryWidgets\jQueryRadio.png" />
-  </category>  
+  </category>
   <category MMString:name="insertbar/category/favorites" folder="Favorites" id="DW_Insertbar_Favorites">
   </category>
 </insertbar>
