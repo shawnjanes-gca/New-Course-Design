@@ -5,34 +5,34 @@
    <category id="DW_Insertbar_GreeneCustom2" folder="Greene Custom 2">
 
    	<button
+   		id="Audio widget"
+   		image="GreeneCustom2\Audio widget.png"
+   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+   		file="GreeneCustom2\Audio widget.htm" />
+		
+	<button
+		id="Base page w objectives"
+		image="GreeneCustom2\Base page w objectivese.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Base page w objectives.htm" />
+	
+	<button
    		id="Base page"
    		image="GreeneCustom2\Base page.png"
    		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
    		file="GreeneCustom2\Base page.htm" />
 
 	<button
-		id="Base page w objectives"
-		image="GreeneCustom2\Base page w objectivese.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Base page w objectives.htm" />
+   		id="Course title"
+   		image="GreeneCustom2\Course title.png"
+   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+   		file="GreeneCustom2\Course title.htm" />
 
 	<button
-		id="Audio widget"
-		image="GreeneCustom2\Audio widget.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Audio widget.htm" />
-
-	<button
-		id="Media column"
-		image="GreeneCustom2\Media column.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Media column.htm" />
-
-	<button
-		id="Key questions"
-		image="GreeneCustom2\Key questions.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Key questions.htm" />
+   		id="Explanation callout"
+   		image="GreeneCustom2\Explanation callout.png"
+   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+   		file="GreeneCustom2\Explanation callout.htm" />
 
 	<button
 		id="Footnotes"
@@ -41,11 +41,41 @@
 		file="GreeneCustom2\Footnotes.htm" />
 
 	<button
+		id="Key questions"
+		image="GreeneCustom2\Key questions.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Key questions.htm" />
+
+	<button
+		id="Media column"
+		image="GreeneCustom2\Media column.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Media column.htm" />
+
+	<button
+		id="Page instruction"
+		image="GreeneCustom2\Page instruction.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom\Page instruction.htm"/>
+
+	<button
 		id="Superscript"
 		image="GreeneCustom2\Superscript.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\Superscript.htm"/>
-
+		
+	<button
+		id="Table styled"
+		image="GreeneCustom2\Table styled.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom\Table styled.htm"/>
+		
+	<button
+		id="Table styled left"
+		image="GreeneCustom2\Table styled left.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom\Table styled left.htm"/>
+		
    </category>
 
    <category id="DW_Insertbar_GreeneCustom" folder="Greene Custom">

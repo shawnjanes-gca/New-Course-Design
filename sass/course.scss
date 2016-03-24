@@ -119,6 +119,9 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 					padding-bottom: 0;
 					border: none;
 				}
+				.pageInstruction {
+					/* Define style at a later date if necessary. */
+				}
 		}
 
 		.page-media-column {
@@ -165,9 +168,10 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 					padding: 1em 0 0 1.5em;
 					list-style: none;
 						li {
-							padding: 0 0 0 0;
+							padding: 0 0 0 20px;
 							margin: 0 0 2em 0;
 							border-left: 5px solid $primary_blue;
+							text-indent: -1em;
 								span {
 									padding: 0 2em 10px 1em;
 
@@ -263,8 +267,13 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 
 					text-align: center;
 				}
-
 		}
+
+		#tableAlignLeft tr td, #tableAlignLeft thead th {
+			text-align: left;
+		}
+
+
 		.explanation-widget-box {
 			background-color: lightyellow;
 		  background-image: none;

@@ -18,6 +18,7 @@
 .coursebody .objective-column h2 { margin-top: 10px; padding: 0 0 0 40px; text-transform: uppercase; font-size: 18px; font-weight: 500; color: #1f6735; }
 .coursebody .objective-column p { border-bottom: 1px solid #e4e4e3; padding-bottom: 1.2em; }
 .coursebody .objective-column .objective-leadin { padding-left: 25px; padding-bottom: 0; border: none; }
+.coursebody .objective-column .pageInstruction { /* Define style at a later date if necessary. */ }
 .coursebody .page-media-column { position: relative; float: right; width: 49px; height: 100%; padding: 1.2em 5em 0 5em; }
 .coursebody .page-media-column a:link { border: none; }
 .coursebody .page-media-column img { padding: 0 0 1em 0; }
@@ -27,7 +28,7 @@
 .coursebody h3 { text-transform: uppercase; color: #2c4c78; font-weight: 500; margin: 0 0 -13px 0; }
 .coursebody .three-key-questions { width: calc(100% - 235px); }
 .coursebody .three-key-questions ul { padding: 1em 0 0 1.5em; list-style: none; }
-.coursebody .three-key-questions ul li { padding: 0 0 0 0; margin: 0 0 2em 0; border-left: 5px solid #2c4c78; }
+.coursebody .three-key-questions ul li { padding: 0 0 0 20px; margin: 0 0 2em 0; border-left: 5px solid #2c4c78; text-indent: -1em; }
 .coursebody .three-key-questions ul li span { padding: 0 2em 10px 1em; }
 .coursebody ol { width: calc(100% - 275px); padding: 1em 0 1em 3em; }
 .coursebody ol li { font-size: 24px; color: #2c4c78; font-weight: 600; line-height: 2em; }
@@ -45,6 +46,7 @@
 .coursebody table th { padding: 1em; }
 .coursebody table tr th { text-align: right; color: #2c4c78; text-transform: uppercase; }
 .coursebody table thead th { background-color: #f2f1f1; text-transform: uppercase; color: #2c4c78; text-align: center; }
+.coursebody #tableAlignLeft tr td, .coursebody #tableAlignLeft thead th { text-align: left; }
 .coursebody .explanation-widget-box { background-color: lightyellow; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; padding: 1rem; margin: 0 0 1rem 0; border-left: 5px solid #1f6735; display: block; width: 80%; }
 .coursebody footer { padding-top: 3em; font-size: 13px; font-style: italic; }
 .coursebody footer .footertext { border-top: 1px dotted #818285; padding-bottom: 1em; width: 400px; }
