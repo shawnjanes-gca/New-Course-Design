@@ -76,6 +76,44 @@
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\Table styled left.htm"/>
 		
+	<button
+		id="v1_Layer_Button"
+		image="GreeneCustom2\v1_Layer_Button.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\v1_Layer_Button.htm"/>
+		
+		<button
+		id="tt_Check"
+		image="GreeneCustom2\tt_Check.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\tt_Check.htm"/>
+
+	<button
+		id="tt_Drop"
+		image="GreeneCustom2\tt_Drop.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\tt_Drop.htm"/>
+
+	<button
+		id="tt_Fill"
+		image="GreeneCustom2\tt_Fill.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\tt_Fill.htm"/>
+
+	<button
+		id="tt_Radio"
+		image="GreeneCustom2\tt_Radio.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\tt_Radio.htm"/>
+	
+	<button
+		id="tt_re_template"
+		image="GreeneCustom2\tt_template.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\tt_template.htm"/>
+
+
+		
    </category>
 
    <category id="DW_Insertbar_GreeneCustom" folder="Greene Custom">
