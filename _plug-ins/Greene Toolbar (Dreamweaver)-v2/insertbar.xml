@@ -89,10 +89,10 @@
 		file="GreeneCustom\Table styled left.htm"/>
 
 	<button
-		id="v1_Layer_Button"
-		image="GreeneCustom2\v1_Layer_Button.gif"
+		id="Review Exercise Layer with Button"
+		image="GreeneCustom2\Review Exercise Layer with Button.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\v1_Layer_Button.htm"/>
+		file="GreeneCustom2\Review Exercise Layer with Button.htm"/>
 
 		<button
 		id="tt_Check"
