@@ -27763,6 +27763,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Insert image left.htm": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Insert image left.htm",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Insert image right.htm": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Insert image right.htm",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_plug-ins\/Greene Toolbar (Dreamweaver)-v2\/Greene Custom 2\/Key questions.htm": {
 		"fileType": 8192,
 		"ignore": 0,

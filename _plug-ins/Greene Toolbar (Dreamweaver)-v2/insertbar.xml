@@ -9,13 +9,13 @@
    		image="GreeneCustom2\Audio widget.png"
    		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
    		file="GreeneCustom2\Audio widget.htm" />
-		
+
 	<button
 		id="Base page w objectives"
 		image="GreeneCustom2\Base page w objectivese.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Base page w objectives.htm" />
-	
+
 	<button
    		id="Base page"
    		image="GreeneCustom2\Base page.png"
@@ -40,6 +40,18 @@
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Footnotes.htm" />
 
+   	<button
+   		id="Insert image left"
+   		image="GreeneCustom2\Insert image left.png"
+   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+   		file="GreeneCustom2\Insert image left.htm" />
+
+   	<button
+   		id="Insert image right"
+   		image="GreeneCustom2\Insert image right.png"
+   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+   		file="GreeneCustom2\Insert image right.htm" />
+
 	<button
 		id="Key questions"
 		image="GreeneCustom2\Key questions.png"
@@ -63,25 +75,25 @@
 		image="GreeneCustom2\Superscript.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\Superscript.htm"/>
-		
+
 	<button
 		id="Table styled"
 		image="GreeneCustom2\Table styled.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\Table styled.htm"/>
-		
+
 	<button
 		id="Table styled left"
 		image="GreeneCustom2\Table styled left.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\Table styled left.htm"/>
-		
+
 	<button
 		id="v1_Layer_Button"
 		image="GreeneCustom2\v1_Layer_Button.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\v1_Layer_Button.htm"/>
-		
+
 		<button
 		id="tt_Check"
 		image="GreeneCustom2\tt_Check.gif"
@@ -105,7 +117,7 @@
 		image="GreeneCustom2\tt_Radio.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\tt_Radio.htm"/>
-	
+
 	<button
 		id="tt_re_template"
 		image="GreeneCustom2\tt_template.gif"
@@ -113,7 +125,7 @@
 		file="GreeneCustom2\tt_template.htm"/>
 
 
-		
+
    </category>
 
    <category id="DW_Insertbar_GreeneCustom" folder="Greene Custom">

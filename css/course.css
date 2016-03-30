@@ -12,6 +12,8 @@
 .coursebody header { text-align: right; font-size: 24px; font-weight: 300; color: #2c4c78; }
 .coursebody header .headertitle { position: relative; float: right; border-bottom: 1px solid #818285; padding: 0 8px 8px 40px; }
 .coursebody header .headertitle .secondarytitle { font-size: 18px; font-style: italic; color: #818285; }
+.coursebody .imageRight { float: right; padding: 1em; }
+.coursebody .imageLeft { float: left; padding: 1em; }
 .coursebody .objective-column { position: relative; float: right; width: 350px; padding: 0 0 0 3em; height: 100%; }
 .coursebody .objective-column .objective-points { border-left: 5px solid green; padding: 0 0 1em 1em; }
 .coursebody .objective-column .objective-icon { /* Be sure to change this for local development - just remove the topclass part of the path */ background: url("//learning.greeneconsults.com/topclass/course-page-layout/images/icon-thumbtack.png") 0px no-repeat; margin: 0 0 0 -20px; padding-top: 1px; height: 48px; }
@@ -48,6 +50,8 @@
 .coursebody table thead th { background-color: #f2f1f1; text-transform: uppercase; color: #2c4c78; text-align: center; }
 .coursebody #tableAlignLeft tr td, .coursebody #tableAlignLeft thead th { text-align: left; }
 .coursebody .explanation-widget-box { background-color: lightyellow; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; padding: 1rem; margin: 0 0 1rem 0; border-left: 5px solid #1f6735; display: block; width: 80%; }
+.coursebody .explanation-widget-box ol { padding-bottom: 0; }
+.coursebody .explanation-widget-box ol li { font-weight: 500; font-size: 18px; line-height: calc($default_line_height + 10px); color: #222222; }
 .coursebody footer { padding-top: 3em; font-size: 13px; font-style: italic; }
 .coursebody footer .footertext { border-top: 1px dotted #818285; padding-bottom: 1em; width: 400px; }
 .coursebody footer p { margin: 0 0 0 0; }
