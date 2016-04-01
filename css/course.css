@@ -33,7 +33,7 @@
 .coursebody .three-key-questions ul li { padding: 0 0 0 20px; margin: 0 0 2em 0; border-left: 5px solid #2c4c78; text-indent: -1em; }
 .coursebody .three-key-questions ul li span { padding: 0 2em 10px 1em; }
 .coursebody ol { width: calc(100% - 275px); padding: 1em 0 1em 3em; }
-.coursebody ol li { font-size: 24px; color: #2c4c78; font-weight: 600; line-height: 2em; }
+.coursebody ol li { font-size: 24px; color: #2c4c78; font-weight: 600; margin-bottom: 1em; }
 .coursebody ol span { font-size: 18px; color: #222222; font-weight: 500; }
 .coursebody .audio-widget { display: inline-block; width: 54%; font-style: italic; font-size: 16px; padding: 1em 0 1em 1em; }
 .coursebody .audio-widget a:link { border: none; }
@@ -48,7 +48,10 @@
 .coursebody table th { padding: 1em; }
 .coursebody table tr th { text-align: right; color: #2c4c78; text-transform: uppercase; }
 .coursebody table thead th { background-color: #f2f1f1; text-transform: uppercase; color: #2c4c78; text-align: center; }
+.coursebody .tableRowHighlight { background-color: #e5c48a !important; text-decoration: none !important; }
 .coursebody #tableAlignLeft tr td, .coursebody #tableAlignLeft thead th { text-align: left; }
+.coursebody .example-box { border: 1px dotted #1f6735; padding: 1em; margin: 1em 4em 1em 2em; }
+.coursebody .example-box ul li { margin-bottom: 20px; }
 .coursebody .explanation-widget-box { background-color: lightyellow; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; padding: 1rem; margin: 0 0 1rem 0; border-left: 5px solid #1f6735; display: block; width: 80%; }
 .coursebody .explanation-widget-box ol { padding-bottom: 0; }
 .coursebody .explanation-widget-box ol li { font-weight: 500; font-size: 18px; line-height: calc($default_line_height + 10px); color: #222222; }

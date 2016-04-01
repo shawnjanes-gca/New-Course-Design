@@ -10,121 +10,125 @@
    		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
    		file="GreeneCustom2\Audio widget.htm" />
 
-	<button
-		id="Base page w objectives"
-		image="GreeneCustom2\Base page w objectivese.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Base page w objectives.htm" />
-
-	<button
-   		id="Base page"
-   		image="GreeneCustom2\Base page.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Base page.htm" />
-
-	<button
-   		id="Course title"
-   		image="GreeneCustom2\Course title.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Course title.htm" />
-
-	<button
-   		id="Explanation callout"
-   		image="GreeneCustom2\Explanation callout.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Explanation callout.htm" />
-
-	<button
-		id="Footnotes"
-		image="GreeneCustom2\Footnotes.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Footnotes.htm" />
-
-   	<button
-   		id="Insert image left"
-   		image="GreeneCustom2\Insert image left.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Insert image left.htm" />
-
-   	<button
-   		id="Insert image right"
-   		image="GreeneCustom2\Insert image right.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Insert image right.htm" />
-
-	<button
-		id="Key questions"
-		image="GreeneCustom2\Key questions.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Key questions.htm" />
-
-	<button
-		id="Media column"
-		image="GreeneCustom2\Media column.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\Media column.htm" />
-
-	<button
-		id="Page instruction"
-		image="GreeneCustom2\Page instruction.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\Page instruction.htm"/>
-
-	<button
-		id="Superscript"
-		image="GreeneCustom2\Superscript.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\Superscript.htm"/>
-
-	<button
-		id="Table styled"
-		image="GreeneCustom2\Table styled.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\Table styled.htm"/>
-
-	<button
-		id="Table styled left"
-		image="GreeneCustom2\Table styled left.png"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom\Table styled left.htm"/>
-
-	<button
-		id="v1_Layer_Button"
-		image="GreeneCustom2\v1_Layer_Button.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\v1_Layer_Button.htm"/>
+		<button
+			id="Base page w objectives"
+			image="GreeneCustom2\Base page w objectivese.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\Base page w objectives.htm" />
 
 		<button
-		id="tt_Check"
-		image="GreeneCustom2\tt_Check.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Check.htm"/>
+	   		id="Base page"
+	   		image="GreeneCustom2\Base page.png"
+	   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   		file="GreeneCustom2\Base page.htm" />
 
-	<button
-		id="tt_Drop"
-		image="GreeneCustom2\tt_Drop.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Drop.htm"/>
+		<button
+	   		id="Course title"
+	   		image="GreeneCustom2\Course title.png"
+	   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   		file="GreeneCustom2\Course title.htm" />
 
-	<button
-		id="tt_Fill"
-		image="GreeneCustom2\tt_Fill.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Fill.htm"/>
+		<button
+	   		id="Example box"
+	   		image="GreeneCustom2\Example box.png"
+	   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   		file="GreeneCustom2\Example box.htm" />
 
-	<button
-		id="tt_Radio"
-		image="GreeneCustom2\tt_Radio.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Radio.htm"/>
+		<button
+	   		id="Explanation callout"
+	   		image="GreeneCustom2\Explanation callout.png"
+	   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   		file="GreeneCustom2\Explanation callout.htm" />
 
-	<button
-		id="tt_re_template"
-		image="GreeneCustom2\tt_template.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_template.htm"/>
+		<button
+			id="Footnotes"
+			image="GreeneCustom2\Footnotes.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\Footnotes.htm" />
 
+	  <button
+	  	id="Insert image left"
+	  	image="GreeneCustom2\Insert image left.png"
+	  	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	  	file="GreeneCustom2\Insert image left.htm" />
 
+	  <button
+	  	id="Insert image right"
+	  	image="GreeneCustom2\Insert image right.png"
+	  	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	  	file="GreeneCustom2\Insert image right.htm" />
+
+		<button
+			id="Key questions"
+			image="GreeneCustom2\Key questions.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\Key questions.htm" />
+
+		<button
+			id="Media column"
+			image="GreeneCustom2\Media column.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\Media column.htm" />
+
+		<button
+			id="Page instruction"
+			image="GreeneCustom2\Page instruction.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom\Page instruction.htm"/>
+
+		<button
+			id="Superscript"
+			image="GreeneCustom2\Superscript.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom\Superscript.htm"/>
+
+		<button
+			id="Table styled"
+			image="GreeneCustom2\Table styled.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom\Table styled.htm"/>
+
+		<button
+			id="Table styled left"
+			image="GreeneCustom2\Table styled left.png"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom\Table styled left.htm"/>
+
+		<button
+			id="v1_Layer_Button"
+			image="GreeneCustom2\v1_Layer_Button.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\v1_Layer_Button.htm"/>
+
+		<button
+			id="tt_Check"
+			image="GreeneCustom2\tt_Check.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\tt_Check.htm"/>
+
+		<button
+			id="tt_Drop"
+			image="GreeneCustom2\tt_Drop.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\tt_Drop.htm"/>
+
+		<button
+			id="tt_Fill"
+			image="GreeneCustom2\tt_Fill.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\tt_Fill.htm"/>
+
+		<button
+			id="tt_Radio"
+			image="GreeneCustom2\tt_Radio.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\tt_Radio.htm"/>
+
+		<button
+			id="tt_re_template"
+			image="GreeneCustom2\tt_template.gif"
+			enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+			file="GreeneCustom2\tt_template.htm"/>
 
    </category>
 
