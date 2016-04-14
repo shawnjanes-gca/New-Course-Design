@@ -141,6 +141,12 @@
 		image="GreeneCustom2\Review Exercise Layer with Feedback.png"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Review Exercise Layer with Feedback.htm"/>
+	
+	<button
+		id="Wistia Video"
+		image="GreeneCustom2\Wistia Video.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Wistia Video.htm"/>
 
 
 
