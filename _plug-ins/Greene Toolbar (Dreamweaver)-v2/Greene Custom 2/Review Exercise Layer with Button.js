@@ -12,7 +12,7 @@ function objectTag() {
   var retVal='\n'+
   '<div class="rvLayerOuterDiv">\n'+
 	  '<div id="Layerwbutton'+layerno+'" class="rvLayerInnerDiv">\n'+ 
-		'<table id="rvLayerButton">\n'+
+		'<table class="rvLayerButton">\n'+
 		  '<tr>\n'+ 
 			'<td>\n'+
 			  '<p>Correct.</p>\n'+
