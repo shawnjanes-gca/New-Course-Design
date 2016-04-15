@@ -65,8 +65,8 @@ function objectTag()
     '    <script>\n'+
     '        var userEmail = getUrlVars()["userEmail"];\n'+
     '    </script>\n'+
-	'<div id="wistia_'+Form.wistiaEmbedId.value+'" class="wistia_embed" style="width:'+Form.width.value+'px; height:'+Form.height.value+'px; align:'+Alignment+';">&nbsp;</div>\n'+
-  	'    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>\n'+
+	'    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>\n'+
+	'    <div id="wistia_embed wistia_async_'+Form.wistiaEmbedId.value+'" class="" style="width:'+Form.width.value+'px; height:'+Form.height.value+'px; align:'+Alignment+';">&nbsp;</div>\n'+ 	
   	'    <script>\n'+
   	'    wistiaEmbed = Wistia.embed("'+Form.wistiaEmbedId.value+'",{trackEmail: userEmail});\n'+
     '   </script>\n'
