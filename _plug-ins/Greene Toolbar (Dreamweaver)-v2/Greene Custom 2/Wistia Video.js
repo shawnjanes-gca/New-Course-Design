@@ -31,42 +31,33 @@ function objectTag()
 
 	if (Form.group3[0].checked==true)
 		{
-		var Alignment = "left";
+		var Alignment = "margin-right:auto;";
 		}
 	else if (Form.group3[1].checked==true)
 		{
-		var Alignment = "center";
+		var Alignment = "margin:auto auto;";
 		}
 	else if (Form.group3[2].checked==true)
 		{
-		var Alignment = "right";
+		var Alignment = "margin-left:auto;";
 		}
 	else 
 		{
-		var Alignment = "default";
+		var Alignment = "";
 		}
 	
 	
 
 
 	retVal = retVal +					
-	'<script>\n'+
-
-    '        function getUrlVars() {\n'+
-    '            var vars = {};\n'+
-    '            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {\n'+
-    '            vars[key] = value;\n'+
-    '            });\n'+
-    '        return vars;\n'+
-    '        }\n'+
-    '    </script>\n'+
+	'<script src="custom/js/emailTrack.js"></script>\n'+
 
     '   <!-- GET SPECFIC VARIABLES FROM THE URL AND STORE THEM AS A NEW VARIABLE -->\n'+
     '    <script>\n'+
     '        var userEmail = getUrlVars()["userEmail"];\n'+
     '    </script>\n'+
-	'    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>\n'+
-	'    <div id="wistia_embed wistia_async_'+Form.wistiaEmbedId.value+'" class="" style="width:'+Form.width.value+'px; height:'+Form.height.value+'px; align:'+Alignment+';">&nbsp;</div>\n'+ 	
+	'    <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>\n'+
+	'    <div class="wistia_embed wistia_async_'+Form.wistiaEmbedId.value+'" style="width:'+Form.width.value+'px; height:'+Form.height.value+'px; '+Alignment+'">&nbsp;</div>\n'+ 	
   	'    <script>\n'+
   	'    wistiaEmbed = Wistia.embed("'+Form.wistiaEmbedId.value+'",{trackEmail: userEmail});\n'+
     '   </script>\n'
