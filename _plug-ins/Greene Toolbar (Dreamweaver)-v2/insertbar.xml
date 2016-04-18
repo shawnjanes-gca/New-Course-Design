@@ -113,7 +113,7 @@
 		file="GreeneCustom2\Review Exercise Dropdown.htm"/>
 
 	<button
-		id="tt_Fill"
+		id="Review Exercise Fillin"
 		image="GreeneCustom2\Review Exercise Fillin.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Review Exercise Fillin.htm"/>
