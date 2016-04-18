@@ -17,22 +17,28 @@
 		file="GreeneCustom2\Base page w objectives.htm" />
 
 	<button
-   		id="Base page"
-   		image="GreeneCustom2\Base page.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Base page.htm" />
+	   	id="Base page"
+	   	image="GreeneCustom2\Base page.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Base page.htm" />
 
 	<button
-   		id="Course title"
-   		image="GreeneCustom2\Course title.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Course title.htm" />
+	   	id="Course title"
+	   	image="GreeneCustom2\Course title.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Course title.htm" />
 
 	<button
-   		id="Explanation callout"
-   		image="GreeneCustom2\Explanation callout.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Explanation callout.htm" />
+	   	id="Example box"
+	   	image="GreeneCustom2\Example box.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Example box.htm" />
+
+	<button
+	   	id="Explanation callout"
+	   	image="GreeneCustom2\Explanation callout.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Explanation callout.htm" />
 
 	<button
 		id="Footnotes"
@@ -40,17 +46,17 @@
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Footnotes.htm" />
 
-   	<button
-   		id="Insert image left"
-   		image="GreeneCustom2\Insert image left.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Insert image left.htm" />
+	<button
+	  	id="Insert image left"
+	  	image="GreeneCustom2\Insert image left.png"
+	  	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	  	file="GreeneCustom2\Insert image left.htm" />
 
-   	<button
-   		id="Insert image right"
-   		image="GreeneCustom2\Insert image right.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Insert image right.htm" />
+	<button
+	  	id="Insert image right"
+	  	image="GreeneCustom2\Insert image right.png"
+	  	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	  	file="GreeneCustom2\Insert image right.htm" />
 
 	<button
 		id="Key questions"
@@ -89,40 +95,64 @@
 		file="GreeneCustom\Table styled left.htm"/>
 
 	<button
-		id="v1_Layer_Button"
-		image="GreeneCustom2\v1_Layer_Button.gif"
+		id="Review Exercise Layer with Button"
+		image="GreeneCustom2\Review Exercise Layer with Button.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\v1_Layer_Button.htm"/>
-
-		<button
-		id="tt_Check"
-		image="GreeneCustom2\tt_Check.gif"
-		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Check.htm"/>
+		file="GreeneCustom2\Review Exercise Layer with Button.htm"/>
 
 	<button
-		id="tt_Drop"
-		image="GreeneCustom2\tt_Drop.gif"
+		id="Review Exercise Checkbox"
+		image="GreeneCustom2\Review Exercise Checkbox.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Drop.htm"/>
+		file="GreeneCustom2\Review Exercise Checkbox.htm"/>
+
+	<button
+		id="Review Exercise Dropdow"
+		image="GreeneCustom2\Review Exercise Dropdown.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Review Exercise Dropdown.htm"/>
 
 	<button
 		id="tt_Fill"
-		image="GreeneCustom2\tt_Fill.gif"
+		image="GreeneCustom2\Review Exercise Fillin.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Fill.htm"/>
+		file="GreeneCustom2\Review Exercise Fillin.htm"/>
 
 	<button
-		id="tt_Radio"
-		image="GreeneCustom2\tt_Radio.gif"
+		id="Review Exercise Radio Button"
+		image="GreeneCustom2\Review Exercise Radio Button.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_Radio.htm"/>
+		file="GreeneCustom2\Review Exercise Radio Button.htm"/>
 
 	<button
-		id="tt_re_template"
-		image="GreeneCustom2\tt_template.gif"
+		id="Review Exercise Template"
+		image="GreeneCustom2\Review Exercise Template.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-		file="GreeneCustom2\tt_template.htm"/>
+		file="GreeneCustom2\Review Exercise Template.htm"/>
+	
+	<button
+		id="Review Exercise Matrix"
+		image="GreeneCustom2\Review Exercise Matrix.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Review Exercise Matrix.htm"/>
+	
+	<button
+		id="Review Exercise Radio Btn with Feedback"
+		image="GreeneCustom2\Review Exercise Radio Btn with Feedback.gif"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Review Exercise Radio Btn with Feedback.htm"/>
+	
+	<button
+		id="Review Exercise Layer with Feedback"
+		image="GreeneCustom2\Review Exercise Layer with Feedback.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Review Exercise Layer with Feedback.htm"/>
+	
+	<button
+		id="Wistia Video"
+		image="GreeneCustom2\Wistia Video.png"
+		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+		file="GreeneCustom2\Wistia Video.htm"/>
 
 
 
