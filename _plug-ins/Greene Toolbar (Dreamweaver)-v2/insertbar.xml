@@ -17,22 +17,28 @@
 		file="GreeneCustom2\Base page w objectives.htm" />
 
 	<button
-   		id="Base page"
-   		image="GreeneCustom2\Base page.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Base page.htm" />
+	   	id="Base page"
+	   	image="GreeneCustom2\Base page.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Base page.htm" />
 
 	<button
-   		id="Course title"
-   		image="GreeneCustom2\Course title.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Course title.htm" />
+	   	id="Course title"
+	   	image="GreeneCustom2\Course title.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Course title.htm" />
 
 	<button
-   		id="Explanation callout"
-   		image="GreeneCustom2\Explanation callout.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Explanation callout.htm" />
+	   	id="Example box"
+	   	image="GreeneCustom2\Example box.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Example box.htm" />
+
+	<button
+	   	id="Explanation callout"
+	   	image="GreeneCustom2\Explanation callout.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Explanation callout.htm" />
 
 	<button
 		id="Footnotes"
@@ -40,17 +46,17 @@
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Footnotes.htm" />
 
-   	<button
-   		id="Insert image left"
-   		image="GreeneCustom2\Insert image left.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Insert image left.htm" />
+	<button
+	  	id="Insert image left"
+	  	image="GreeneCustom2\Insert image left.png"
+	  	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	  	file="GreeneCustom2\Insert image left.htm" />
 
-   	<button
-   		id="Insert image right"
-   		image="GreeneCustom2\Insert image right.png"
-   		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
-   		file="GreeneCustom2\Insert image right.htm" />
+	<button
+	  	id="Insert image right"
+	  	image="GreeneCustom2\Insert image right.png"
+	  	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	  	file="GreeneCustom2\Insert image right.htm" />
 
 	<button
 		id="Key questions"
@@ -262,7 +268,6 @@
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom\v2_callout_table.htm"/>
 
-		
    </category>
 
 
