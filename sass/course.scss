@@ -197,7 +197,7 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 					font-size: 24px;
 					color: $primary_blue;
 					font-weight: 600;
-					line-height: 2em;
+					margin-bottom: 1em;
 				}
 				span {
 					font-size: $default_font_size;
@@ -279,10 +279,28 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 				}
 		}
 
+		.tableRowHighlight {
+			background-color: #e5c48a !important;
+			text-decoration: none !important;
+		}
+
 		#tableAlignLeft tr td, #tableAlignLeft thead th {
 			text-align: left;
 		}
 
+
+
+
+
+
+		.example-box {
+			border: 1px dotted $primary_green;
+			padding: 1em;
+			margin: 1em 4em 1em 2em;
+			ul li {
+				margin-bottom: 20px;
+			}
+		}
 
 		.explanation-widget-box {
 			background-color: lightyellow;
