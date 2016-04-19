@@ -177,7 +177,7 @@ fun_buttoncheckq='function buttonCheckQ_onclick(questionNum, formName)\n'+
   '<!--\n'+
   '// END RADIO QUESTION '+Form.QuestionNumber.value+' CODE\n'+
   '//-->\n'+
-  '</SCRIPT>\n'
+  '</SCRIPT><!--put Review Layer with Button layers here-->\n'
   
   return retVal;
 }
