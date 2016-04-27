@@ -112,6 +112,95 @@
     <!-- footertext -->
     <p>*This schedule is for 2013 and subsequent years.</p>
   </footer>
+  <span class="pageInstruction">Enter your results in the blank space provided and click the Submit button.</span>
+
+<div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td>
+          <script language="JavaScript">
+			<!--
+			//BEGIN ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
+			function fill_buttonCheckQ_onclick(questionNum, formName)
+			{
+				var answer=0;
+				var correct="false";
+				var answerlength=fill_answers[questionNum].length;
+				for (answerchoice=0; answerchoice<answerlength; answerchoice++)
+					{
+						if (fill_answers[questionNum][answerchoice]==formName.value)
+						{
+							correct="true";
+						}
+					}
+				if (correct=="true")
+				{
+					showAnimatedLayer(fill_layers[questionNum][1],'','show');
+					formName.disabled=true;
+				}
+				else
+				{
+					showAnimatedLayer(fill_layers[questionNum][2],'','show');
+				}
+			}
+			// END ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
+			
+			var fill_questions=new Array();
+			var fill_answers=new Array();
+			var fill_layers=new Array();
+			var fill_formNumber=new Array();
+			// BEGIN FILL IN THE BLANK QUESTION 1 CODE
+			fill_formNumber[1]="fillForm1";
+			fill_questions[1]=new Array();
+			fill_layers[1]=new Array();
+			fill_answers[1]=new Array();
+			//here is the question
+			fill_questions[1][0]="";
+			// these are the correct answers
+			fill_answers[1][0]="38800";
+			fill_answers[1][1]="38,800";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			fill_layers[1][1]="Layer1";
+			fill_layers[1][2]="Layer2";
+			document.write("<B>"+fill_questions[1][0]+"</B>");
+			//-->
+          </script>
+          <form name="fillForm1" onSubmit="return false">
+          <span class="questionStyle">The grantor, trustee, and beneficiary must be three distinct persons.
+            <input type="text" name="fillAnswer1" class="fillInSpace"></span>
+            <br/><input type="button" name="buttonCheckQ" onClick="return fill_buttonCheckQ_onclick(1, window.document.fillForm1.fillAnswer1)" value="SUBMIT" class="submit-btn">
+          </form>
+          <script>
+			<!--
+			//END FILL IN THE BLANK QUESTION 1 CODE
+			//-->
+          </script>
+        <div id="Layer1" class="rvAnimatedLayer">Correct!  The answer is $38,800.</div>
+        <div id="Layer2" class="rvAnimatedLayer">Incorrect.  To find the correct tax, follow these steps:<br/> 
+		Step 1. Locate the row where $150,000 falls within the range given in the first two columns. This occurs in the range of $150,000 to $250,000. <br/>
+Step 2. The third and fourth columns indicate the tax would be $38,800 plus 32% of any amount over that listed in Column A ($150,000). Since our estate is exactly $150,000, there is nothing further to calculate, so the tentative tax is $38,800.</div>        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">put question here</p>
+          &nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">put question here</p>
+          &nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">put question here</p>
+          &nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  
 </div>
 <!-- coursebody -->
 </body>
