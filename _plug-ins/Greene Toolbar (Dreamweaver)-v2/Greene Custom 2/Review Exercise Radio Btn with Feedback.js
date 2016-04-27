@@ -65,11 +65,11 @@ fun_buttoncheckq='function buttonCheckQAnimated_onclick(questionNum, formName)\n
 '   answer++;\n'+
 '   if (answerCorrectAnimated(questionNum,answer2, formName) == true)\n'+
 '   {\n'+
-'      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px\', \'padding in px\');\n'+
+'      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
 '   }\n'+
 '   else\n'+
 '   {\n'+
-'      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px\', \'padding in px\');\n'+
+'      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
 '   }\n'+
 '}\n'+
 '\n'
