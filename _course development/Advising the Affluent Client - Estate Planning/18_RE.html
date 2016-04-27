@@ -4,6 +4,39 @@
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -17,9 +50,405 @@
   <h1><span class="pagetitle">Review Exercise</span>
     <!-- pagetitle -->
   </h1>
-  <p>Paragraph 1</p>
-  <p>Paragraph 2</p>
-  <p>And so forth...</p>
+  <p>
+      <div id="qTable">
+        <table>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+            <td><p class="questionStyle">In addition to transferring assets, a will is useful in accomplishing all the following EXCEPT:</p>
+             <script language="JavaScript">
+				<!--
+				// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				function answerCorrectAnimated(questionNumber, answer, formName)
+				{
+					// declare a variable to hold return value
+					var correct = false;
+					var questionLength = formName.radQuestionChoiceAnimated.length;
+					var questionChoice;
+				
+					// if answer provided is same as correct answer then correct variable is true
+					if (answer == answersAnimated[questionNumber])
+						{correct = true;
+							for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+							{
+							formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+				
+							}
+				
+					// return whether the answer was correct (true or false)
+					return correct;
+					}
+				}
+				
+				function getQuestionAnimated(questionNumber)
+				{
+				
+				   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+				   var questionLength = questionsAnimated[questionNumber].length;
+				   var questionChoice;
+				
+				   questionHTML = questionHTML + "<P>";
+				   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+				   {
+					  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+					  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+					  questionHTML = questionHTML + "</label><BR>";
+				   }
+				   questionHTML = questionHTML + "</P>";
+				
+				   return questionHTML;
+				}
+				function buttonCheckQAnimated_onclick(questionNum, formName)
+				{
+				   var answer = 0;
+				   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+				   {
+					  answer++;
+				   }
+				
+				   var answer2 = String.fromCharCode(65 + answer);
+				   answer++;
+				   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+				   {
+					  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+				   }
+				   else
+				   {
+					  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+				   }
+				}
+				
+				var questionNumberAnimated;
+				var questionsAnimated=new Array();
+				var answersAnimated=new Array();
+				var layersAnimated=new Array();
+				// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				
+				// BEGIN RADIO QUESTION 1 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[1]="QuestionForm1";
+				questionNumberAnimated=1;
+				questionsAnimated[1]=new Array();
+				layersAnimated[1]=new Array();
+				//This is the test question
+				questionsAnimated[1][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[1][1]="Establishing domicile";
+				questionsAnimated[1][2]="Creating a trust";
+				questionsAnimated[1][3]="Establishing intestacy";
+				questionsAnimated[1][4]="Naming guardians";
+				//These are the associated layersAnimated
+				layersAnimated[1][1]="Layer1";
+				layersAnimated[1][2]="Layer2";
+				layersAnimated[1][3]="Layer3";
+				layersAnimated[1][4]="Layer4";
+				
+				//This is the test answer
+				answersAnimated[1]="C";
+				//-->
+              </script>
+              <form name="QuestionForm1">
+                <script>
+					<!--
+					// Display Text for Question 1
+					document.write(getQuestionAnimated(1));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 1 CODE
+				//-->
+              </script>
+              <!--put Review Exercise Layer with Feedback here-->
+			  <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer2" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer3" class="rvAnimatedLayer">Correct.  Intestacy refers to dying without a will.  A will helps avoid intestacy.</div>
+              <div id="Layer4" class="rvAnimatedLayer">Incorrect.  Try again.</div>            
+            </td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+            <td><p class="questionStyle">If a client dies intestate (without a will), ALL of the following are possible EXCEPT:</p>
+             
+              <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 2 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[2]="QuestionForm2";
+				questionNumberAnimated=2;
+				questionsAnimated[2]=new Array();
+				layersAnimated[2]=new Array();
+				//This is the test question
+				questionsAnimated[2][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[2][1]="Assets may be split between the surviving spouse and children.";
+				questionsAnimated[2][2]="Distributions from the estate to non-family members with close ties to the deceased will be considered.";
+				questionsAnimated[2][3]="Charities will be excluded from receiving part of the estate.";
+				questionsAnimated[2][4]="Minors will receive full control of assets upon reaching the age of majority (18 in most states).";
+				//These are the associated layersAnimated
+				layersAnimated[2][1]="Layer5";
+				layersAnimated[2][2]="Layer6";
+				layersAnimated[2][3]="Layer7";
+				layersAnimated[2][4]="Layer8";
+				
+				//This is the test answer
+				answersAnimated[2]="B";
+				//-->
+              </script>
+              <form name="QuestionForm2">
+                <script>
+					<!--
+					// Display Text for Question 2
+					document.write(getQuestionAnimated(2));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 2 CODE
+				//-->
+              </script>
+              <!--put Review Exercise Layer with Feedback here-->
+			  <div id="Layer5" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer6" class="rvAnimatedLayer">Correct.  If a person dies intestate, state laws of intestacy will preside and non-family members will receive nothing from the probate estate, regardless of how close their ties to the deceased were.</div>
+              <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.</div></td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+            <td><p class="questionStyle">In some states, the executor is called the:</p>
+              
+              <script language="JavaScript">
+				<!--
+				// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				function answerCorrect(questionNumber, answer, formName)
+				{
+					// declare a variable to hold return value
+					var correct = false;
+					var questionLength = formName.radQuestionChoice.length;
+					var questionChoice;
+				
+					// if answer provided is same as correct answer then correct variable is true
+					if (answer == answers[questionNumber])
+						{correct = true;
+							for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+							{
+							formName.radQuestionChoice[questionChoice].disabled = true;
+				
+							}
+				
+					// return whether the answer was correct (true or false)
+					return correct;
+					}
+				}
+				
+				function getQuestion(questionNumber)
+				{
+				
+				   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+				   var questionLength = questions[questionNumber].length;
+				   var questionChoice;
+				
+				   questionHTML = questionHTML + "<P>";
+				   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+				   {
+					  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+					  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+					  questionHTML = questionHTML + "</label><BR>";
+				   }
+				   questionHTML = questionHTML + "</P>";
+				
+				   return questionHTML;
+				}
+				function buttonCheckQ_onclick(questionNum, formName)
+				{
+				   var answer = 0;
+				   while (formName.radQuestionChoice[answer].checked != true)
+				   {
+					  answer++;
+				   }
+				
+				   var answer2 = String.fromCharCode(65 + answer);
+				   answer++;
+				   if (answerCorrect(questionNum,answer2, formName) == true)
+				   {
+					  MM_showHideLayers(layers[questionNum][answer],'','show');
+				   }
+				   else
+				   {
+					  MM_showHideLayers(layers[questionNum][answer],'','show');
+				   }
+				}
+				
+				var questionNumber;
+				var questions=new Array();
+				var answers=new Array();
+				var layers=new Array();
+				// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				
+				// BEGIN RADIO QUESTION 3 CODE
+				var formNumber=new Array();
+				formNumber[3]="QuestionForm3";
+				questionNumber=3;
+				questions[3]=new Array();
+				layers[3]=new Array();
+				//This is the test question
+				questions[3][0]="";
+				
+				//These are the answer choices
+				questions[3][1]="Estator";
+				questions[3][2]="Trustee";
+				questions[3][3]="Probator";
+				questions[3][4]="Personal Representative";
+				questions[3][5]="Surrogate";
+				//These are the associated layers
+				layers[3][1]="Layerwbutton1";
+				layers[3][2]="Layerwbutton2";
+				layers[3][3]="Layerwbutton3";
+				layers[3][4]="Layerwbutton4";
+				layers[3][5]="Layerwbutton5";
+				
+				//This is the test answer
+				answers[3]="D";
+				//-->
+              </script>
+              <form name="QuestionForm3">
+                <script>
+					<!--
+					// Display Text for Question 3
+					document.write(getQuestion(3));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 3 CODE
+				//-->
+              </script>
+              <!--put Review Layer with Button layers here-->
+&nbsp;
+              <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+                <!--change left and top px depending of where you what the layer box to appear-->
+                <div id="Layerwbutton1" class="rvLayerInnerDiv">
+                  <table class="rvLayerButton">
+                    <tr>
+                      <td><p>Incorrect.  Try again.</p>
+                        <p align="center">
+                          <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
+                        </p></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+                <!--change left and top px depending of where you what the layer box to appear-->
+                <div id="Layerwbutton2" class="rvLayerInnerDiv">
+                  <table class="rvLayerButton">
+                    <tr>
+                      <td><p>Incorrect.  Try again.</p>
+                        <p align="center">
+                          <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
+                        </p></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+                <!--change left and top px depending of where you what the layer box to appear-->
+                <div id="Layerwbutton3" class="rvLayerInnerDiv">
+                  <table class="rvLayerButton">
+                    <tr>
+                      <td><p>Incorrect.  Try again.</p>
+                        <p align="center">
+                          <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton3','','hide')">
+                        </p></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+                <!--change left and top px depending of where you what the layer box to appear-->
+                <div id="Layerwbutton4" class="rvLayerInnerDiv">
+                  <table class="rvLayerButton">
+                    <tr>
+                      <td><p>Correct.</p>
+                        <p align="center">
+                          <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton4','','hide')">
+                        </p></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+                <!--change left and top px depending of where you what the layer box to appear-->
+                <div id="Layerwbutton5" class="rvLayerInnerDiv">
+                  <table class="rvLayerButton">
+                    <tr>
+                      <td><p>Incorrect.  Try again.</p>
+                        <p align="center">
+                          <input type="submit" name="Submit5" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton5','','hide')">
+                        </p></td>
+                    </tr>
+                  </table>
+                </div>
+              </div></td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+            <td><p class="questionStyle">In selecting an executor or trustee, you should look for all of the following EXCEPT:</p>
+              
+              <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 4 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[4]="QuestionForm4";
+				questionNumberAnimated=4;
+				questionsAnimated[4]=new Array();
+				layersAnimated[4]=new Array();
+				//This is the test question
+				questionsAnimated[4][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[4][1]="Knowledge of fiduciary law";
+				questionsAnimated[4][2]="Impartiality";
+				questionsAnimated[4][3]="Professional money management expertise";
+				questionsAnimated[4][4]="Someone who will maintain absolute privacy and only provide an accounting upon termination of the estate/trust";
+				//These are the associated layersAnimated
+				layersAnimated[4][1]="Layer9";
+				layersAnimated[4][2]="Layer10";
+				layersAnimated[4][3]="Layer11";
+				layersAnimated[4][4]="Layer12";
+				
+				//This is the test answer
+				answersAnimated[4]="D";
+				//-->
+              </script>
+              <form name="QuestionForm4">
+                <script>
+					<!--
+					// Display Text for Question 4
+					document.write(getQuestionAnimated(4));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 4 CODE
+				//-->
+              </script>
+              <!--put Review Exercise Layer with Feedback here-->
+			  <div id="Layer9" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer11" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer12" class="rvAnimatedLayer">Correct.  The trustee/executor should provide periodic accountings.</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+  </p>
 </div>
 <!-- coursebody -->
 </body>
