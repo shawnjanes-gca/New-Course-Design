@@ -31,7 +31,20 @@
     </div>
   </div>
   <!-- objective-column -->
-  <p>INSERT VIDEO HERE - @WAITING -> DD</p>
+ <p>
+ <p>
+   <script src="custom/js/emailTrack.js"></script>
+   <!-- GET SPECFIC VARIABLES FROM THE URL AND STORE THEM AS A NEW VARIABLE -->
+   <script>
+        var userEmail = getUrlVars()["userEmail"];
+    </script>
+   <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+ </p>
+ <div class="wistia_embed wistia_async_d68y3cc5a9" style="width:550px; height:339px; margin-right:auto;">&nbsp;</div>
+ <script>
+    wistiaEmbed = Wistia.embed("d68y3cc5a9",{trackEmail: userEmail});
+   </script>
+ </p>
 </div>
 <!-- coursebody -->
 </body>
