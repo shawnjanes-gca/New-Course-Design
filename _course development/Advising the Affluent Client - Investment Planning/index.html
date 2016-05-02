@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Table of Contents</title>
+
+		<script>
+			function createTOC() {
+				var courseTitle = "Advising the Affluent Client: Investment Planning";
+				var numPages = 32;
+				var i = 1;
+				var z = 0;
+				var newPageLink = "";
+
+				document.getElementById("coursetitle").innerHTML = "<b>Course name:</b> " + courseTitle;
+				document.getElementById("coursenumpages").innerHTML = "<b># of html pages:</b> " + numPages;
+
+				do {
+
+					if (i < 10) {
+						i = "" + z + i;
+					}
+
+					newPageLink += "<br><a href=" + i + ".html target='_blank'>Page " + i + "</a>";
+					i++;
+
+				}
+
+				while (i <= numPages)
+					document.getElementById("coursepagelinks").innerHTML = newPageLink;
+			}
+		</script>
+	</head>
+	<body>
+		<p><b>NOTE</b><br /><em>You need to place this in the root directory of the course being developed. Then you need to modify two variables (courseTitle and numPages) - which are specific to the course being developed. Additionally, your pages need to be titled 01.html, 10.html, etc.</em></p>
+		<p><button onclick="createTOC()">Generate Table of Contents</button></p>
+		<p id="coursetitle"></p>
+		<p id="coursenumpages"></p>
+		<p id="coursepagelinks"></p>
+	</body>
+</html>
