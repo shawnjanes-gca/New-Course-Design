@@ -24,12 +24,12 @@ fun_fill_buttonCheckQ='function fill_buttonCheckQAnimated_onclick(questionNum, f
 '		}\n'+
 '	if (correct=="true")\n'+
 '	{\n'+
-'		showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
+'		showAnimatedLayer(fill_layersAnimated[questionNum][1], fill_layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
 '		formName.disabled=true;\n'+
 '	}\n'+
 '	else\n'+
 '	{\n'+
-'		showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
+'		showAnimatedLayer(fill_layersAnimated[questionNum][2], fill_layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
 '	}\n'+
 '}\n'
 var onetimeheaderopen;
