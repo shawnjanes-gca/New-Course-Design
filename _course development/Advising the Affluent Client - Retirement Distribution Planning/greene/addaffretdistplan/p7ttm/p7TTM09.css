@@ -7,6 +7,7 @@
   -----------------------------------
 */
 
+
 .p7TTM09.p7TTMbox {
 	position: absolute;
 	overflow: hidden;
@@ -30,6 +31,7 @@
 }
 .p7TTM09 .p7TTMcnt p {
 	margin: 6px 0 12px 0;
+	color:#E0EAF1;
 }
 .p7TTM09 .p7TTMclose {
 	position: absolute;
