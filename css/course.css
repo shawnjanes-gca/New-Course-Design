@@ -52,7 +52,7 @@
 .coursebody #tableAlignLeft tr td, .coursebody #tableAlignLeft thead th { text-align: left; }
 .coursebody .example-box { border: 1px dotted #1f6735; padding: 1em; margin: 1em 4em 1em 2em; }
 .coursebody .example-box ul li { margin-bottom: 20px; }
-.coursebody .explanation-widget-box { background-color: lightyellow; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; padding: 1rem; margin: 0 0 1rem 0; border-left: 5px solid #1f6735; display: block; width: 80%; }
+.coursebody .explanation-widget-box { font-style: italic; background-color: lightyellow; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; background-clip: border-box; background-origin: padding-box; background-size: auto auto; padding: 1rem; margin: 0 0 1rem 0; border-left: 5px solid #1f6735; display: block; width: 80%; }
 .coursebody .explanation-widget-box ol { padding-bottom: 0; }
 .coursebody .explanation-widget-box ol li { font-weight: 500; font-size: 18px; line-height: calc($default_line_height + 10px); color: #222222; }
 .coursebody footer { padding-top: 3em; font-size: 13px; font-style: italic; }
