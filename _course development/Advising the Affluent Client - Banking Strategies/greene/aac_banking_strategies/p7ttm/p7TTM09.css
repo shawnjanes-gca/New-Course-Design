@@ -37,14 +37,8 @@
 	color:#E0EAF1;
 }
 
-.p7TTM09 .p7TTMcnt ol {
-	color:#E0EAF1;
-}
-
 .p7TTM09 .p7TTMcnt h3 {
-	 text-transform: uppercase; 
-	 color: #E0EAF1; 
-	 font-weight: 500; 
+	color:#E0EAF1;
 }
 
 .p7TTM09 .p7TTMclose {
@@ -184,7 +178,7 @@
 
 /*Lighshow Overlay*/
 #p7ttm_overlay.p7TTM09 {
-	background-color: #fff;
+	background-color: #000;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
 }
