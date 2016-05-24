@@ -999,13 +999,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg": {
-		"fileType": 16384,
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/Fireworks\/p7TTM02.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.29636e+06,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg",
+		"initialSize": 59736,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/Fireworks\/p7TTM02.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/Fireworks\/p7TTM02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/Fireworks\/p7TTM09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58459,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/Fireworks\/p7TTM09.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/Fireworks\/p7TTM09.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1039,6 +1050,226 @@
 		"initialSize": 52547,
 		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/Fireworks\/p7TTM13.png",
 		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/Fireworks\/p7TTM13.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Adjusted Gross Income.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67039,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Adjusted Gross Income.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Adjusted Gross Income.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Business Banking Opportunities.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24400,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Business Banking Opportunities.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Business Banking Opportunities.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Capital Gains.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19073,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Capital Gains.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Capital Gains.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Gross Income.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80027,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Gross Income.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Gross Income.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Identifying Retirement Planning Opportunities.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31284,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Identifying Retirement Planning Opportunities.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Identifying Retirement Planning Opportunities.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Learning about the Clients Income.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33081,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Learning about the Clients Income.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Learning about the Clients Income.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Other Income.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24853,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Other Income.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Other Income.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Rental_Royalties.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24253,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Rental_Royalties.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2014 - Form 1040-Page 1 - Rental_Royalties.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 - Form 1040-Page 2 - Below the line deductions.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23436,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 - Form 1040-Page 2 - Below the line deductions.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 - Form 1040-Page 2 - Below the line deductions.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Ident Family Needs.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101192,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Ident Family Needs.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Ident Family Needs.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85095,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Page 2 - US Indiv Tax Ret.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 95360,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Page 2 - US Indiv Tax Ret.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Form 1040-Page 2 - US Indiv Tax Ret.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Scheduel D 1040_Page_1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93481,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Scheduel D 1040_Page_1.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Scheduel D 1040_Page_1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Scheduel D 1040_Page_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61903,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Scheduel D 1040_Page_2.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Scheduel D 1040_Page_2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule A - Below the Line Ded.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191997,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule A - Below the Line Ded.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule A - Below the Line Ded.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule B - Page 1 - Interest and Dividends.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83943,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule B - Page 1 - Interest and Dividends.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule B - Page 1 - Interest and Dividends.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Page 2 - Part 2 Income or Loss.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 79133,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Page 2 - Part 2 Income or Loss.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Page 2 - Part 2 Income or Loss.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Page 2 - Part 3 Income or Loss.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55583,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Page 2 - Part 3 Income or Loss.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Page 2 - Part 3 Income or Loss.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Part 1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126371,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Part 1.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2015 Schedule E - Part 1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2016 W2 Highlighted.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 115288,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2016 W2 Highlighted.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/images\/2016 W2 Highlighted.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1094,170 +1325,121 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM12_grunge.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-dueeast.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 36326,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM12_grunge.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM12_grunge.png",
+		"initialSize": 377,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-dueeast.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM13-gradient.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-duewest.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 885,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM13-gradient.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM13-gradient.png",
+		"initialSize": 374,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-duewest.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-dueeast.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-east.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 257,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-dueeast.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-dueeast.png",
+		"initialSize": 399,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-east.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-east.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-duewest.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-north.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 256,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-duewest.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-duewest.png",
+		"initialSize": 411,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-north.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-north.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-east.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-northeast.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 262,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-east.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-east.png",
+		"initialSize": 304,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-northeast.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-north.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-northwest.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 245,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-north.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-north.png",
+		"initialSize": 301,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-northwest.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-northeast.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-south.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 259,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-northeast.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-northeast.png",
+		"initialSize": 389,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-south.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-south.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-northwest.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-southeast.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 260,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-northwest.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-northwest.png",
+		"initialSize": 299,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-southeast.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-south.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-southwest.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 244,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-south.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-south.png",
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-southwest.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-southeast.png": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-west.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 256,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-southeast.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-southeast.png",
+		"initialSize": 403,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-west.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTM09-west.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-southwest.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 257,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-southwest.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-southwest.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-west.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 259,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-west.png",
-		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/img\/p7TTMblack-west.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM01.css": {
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM09.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM01.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM07.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM07.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM12.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM12.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM13.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM13.css",
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/p7ttm\/p7TTM09.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1281,6 +1463,136 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-dueeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 377,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-duewest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-east.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-east.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-east.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-north.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 411,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-north.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-north.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-northeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 304,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-northwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 301,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-south.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 389,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-south.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-south.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-southeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-southwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-west.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-west.png",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/img\/p7TTM09-west.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/p7TTM09.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/p7TTM09.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/p7TTMscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/p7TTMscripts.js",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/p7ttm\/min\/p7TTMscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_course development\/Advising the Affluent Client - Education Planning\/01.html": {
 		"fileType": 8192,
@@ -34374,6 +34686,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/course_page_layout_main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/reviewTestLayout.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/reviewTestLayout.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

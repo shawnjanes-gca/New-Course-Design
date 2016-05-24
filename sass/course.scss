@@ -58,6 +58,15 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 			font-weight: $default_font_weight;
 		}
 
+		h3 {
+					font-family: $default_font_family;
+					text-transform: uppercase;
+					color: $primary_blue;
+					font-size: $default_font_size;
+					font-weight: $default_font_weight;
+					margin: 0 0 22px 0;
+		}
+
 		ul li {
 			font-family: $default_font_family;
 			font-size: $default_font_size;
@@ -186,7 +195,7 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 			color: $primary_blue;
 			font-size: $default_font_size;
 			font-weight: $default_font_weight;
-			margin: 0 0 -13px 0;
+			margin: 13px 0 0 0;
 		}
 
 		.three-key-questions {
