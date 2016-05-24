@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19115",
+"creatorBuild": "19127",
 "files": {
 	"\/_course development\/Advising the Affluent Client - Banking Strategies\/01.html": {
 		"fileType": 8192,
@@ -995,6 +995,17 @@
 		"initialSize": 1304,
 		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/course-page-layout\/images\/icon-video.png",
 		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/course-page-layout\/images\/icon-video.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.29636e+06,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Banking Strategies\/greene\/aac_banking_strategies\/2015 Form 1040-Page 1 - US Indiv Tax Ret.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -9983,6 +9994,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Retirement Distribution Planning\/greene\/addaffretdistplan\/p7ap3\/p7AP3-04.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Retirement Distribution Planning\/greene\/addaffretdistplan\/p7ap3\/p7AP3-05.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Retirement Distribution Planning\/greene\/addaffretdistplan\/p7ap3\/p7AP3-05.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Advising the Affluent Client - Retirement Distribution Planning\/greene\/addaffretdistplan\/p7ap3\/p7AP3-14.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Advising the Affluent Client - Retirement Distribution Planning\/greene\/addaffretdistplan\/p7ap3\/p7AP3-14.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -23961,6 +23990,240 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/01_VIDEO.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/01_VIDEO.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/02.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/02.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/03_RE.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/03_RE.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/04.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/04.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/05_RE.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/05_RE.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/06.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/06.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/07.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/07.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/08.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/08.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/09.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/09.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/10.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/10.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/11.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/11.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/12.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/12.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/13.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/13.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/14.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/14.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/15.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/15.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/16_VIDEO.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/16_VIDEO.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/17.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/17.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/18.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/18.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/19.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/19.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/20.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/20.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/21.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/21.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/22.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/22.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/23.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/23.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/24.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/24.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/25.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/25.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/26.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/26.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/_original\/01.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -24221,6 +24484,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/Fireworks\/p7TTM09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58459,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/Fireworks\/p7TTM09.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/Fireworks\/p7TTM09.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/greene\/pfprdp\/css\/niftyCorners.css": {
 		"fileType": 16,
@@ -24612,6 +24886,247 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/img\/p7ap3_bevel_white.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 338,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/img\/p7ap3_bevel_white.jpg",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/img\/p7ap3_bevel_white.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7AP3-03.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7AP3-03.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7AP3-04.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7AP3-04.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7ap3-columns.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7ap3-columns.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7AP3scripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/p7AP3scripts.js",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ap3\/min\/p7AP3scripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/img\/burger-black.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1258,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/img\/burger-black.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/img\/burger-black.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/img\/burger-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1260,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/img\/burger-white.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/img\/burger-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/p7OMM-01.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/p7OMM-01.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/p7OMMscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/p7OMMscripts.js",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7omm\/min\/p7OMMscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7sml\/p7SML-01.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7sml\/p7SML-01.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7sml\/p7SMLscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7sml\/p7SMLscripts.js",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7sml\/min\/p7SMLscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-dueeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 377,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-duewest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-east.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-east.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-east.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-north.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 411,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-north.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-north.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-northeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 304,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-northwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 301,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-south.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 389,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-south.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-south.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-southeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-southwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-west.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-west.png",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/img\/p7TTM09-west.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/p7TTM09.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/p7TTM09.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/p7TTMscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/p7TTMscripts.js",
+		"outputAbbreviatedPath": "\/_course development\/Principles of Financial Planning - Retirement Distribution Planning\/p7ttm\/min\/p7TTMscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_course development\/Principles of Financial Planning - Transfer Taxation\/01.html": {
 		"fileType": 8192,

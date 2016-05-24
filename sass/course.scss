@@ -1,6 +1,7 @@
 // This is a SASS document for Topclass course look and feel
 
 // Global variables
+$default_font_family: 'Source Sans Pro', sans-serif;
 $default_font_size: 18px;
 $default_line_height: 27px;
 $default_font_weight: 500;
@@ -48,6 +49,22 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 	line-height: $default_line_height;
 	color: $primary_gray;
 	font-weight: $default_font_weight;
+
+		p {
+			font-family: $default_font_family;
+			font-size: $default_font_size;
+			line-height: $default_line_height;
+			color: $primary_gray;
+			font-weight: $default_font_weight;
+		}
+
+		ul li {
+			font-family: $default_font_family;
+			font-size: $default_font_size;
+			line-height: $default_line_height;
+			color: $primary_gray;
+			font-weight: $default_font_weight;
+		}
 
 		a:link {
 			color: $link_active_color;
@@ -167,6 +184,7 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 		h3 {
 			text-transform: uppercase;
 			color: $primary_blue;
+			font-size: $default_font_size;
 			font-weight: $default_font_weight;
 			margin: 0 0 -13px 0;
 		}
@@ -288,11 +306,6 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 			text-align: left;
 		}
 
-
-
-
-
-
 		.example-box {
 			border: 1px dotted $primary_green;
 			padding: 1em;
@@ -339,6 +352,7 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 				}
 				p {
 					margin: 0 0 0 0;
+					font-size: 13px;
 				}
 		}
 }
