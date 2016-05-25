@@ -260,6 +260,8 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 		}
 
 		table {
+			font-family: $default_font_family;
+			font-size: $default_font_size;
 			border-bottom: 1px solid $primary_blue;
 			width: 100%;
 			table-layout: fixed;
@@ -288,6 +290,8 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 					//border: 1px solid green;
 					padding: 1em;
 					text-align: center;
+					font-family: $default_font_family;
+					font-size: $default_font_size;
 				}
 				th {
 					padding: 1em;
