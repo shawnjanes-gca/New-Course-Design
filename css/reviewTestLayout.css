@@ -33,7 +33,8 @@
 
 #qTable select {border-color: #2c4c78;}
 
-.questionStyle{font-weight:bold;}
+.questionStyle{font-weight:bold !important;}
+.questionStyle ol li {color: #222222 !important; font-family: "Source Sans Pro",sans-serif !important;font-size: 18px !important; font-weight: bold !important;}
 
 #opBlockTbl table {width: 375px; margin: auto; border: 1px solid #fff;}
 #opBlockTbl table tr {border: none;}
@@ -52,7 +53,7 @@
 .closeLayer-btn:hover, .closeLayer-btn:focus{ background: #7E7D7D; color:#fff;}
 
 
-.rvAnimatedLayer{background: #52bc7a; color:#FFFFFF;display:none;border-radius:5px;}
+.rvAnimatedLayer{background: #52bc7a; color:#FFFFFF;display:none;border-radius:5px;font-size:18px; font-family: "Source Sans Pro",sans-serif;}
 
 
 
