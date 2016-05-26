@@ -220,13 +220,17 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 		ol {
 			width: calc(100% - 275px);
 			padding: 1em 0 1em 3em;
+			font-family: $default_font_family;
 				li {
 					font-size: 24px;
 					color: $primary_blue;
 					font-weight: 600;
 					margin-bottom: 1em;
+					font-family: $default_font_family;
+
 				}
 				span {
+					font-family: $default_font_family;
 					font-size: $default_font_size;
 					color: $primary_gray;
 					font-weight: $default_font_weight;
@@ -347,6 +351,8 @@ $thumb_tack_icon_url: '//learning.greeneconsults.com/topclass/course-page-layout
 					padding-bottom: 0;
 				}
 				ol li {
+					line-height: $default_line_height;
+					font-family: $default_font_family;
 					font-weight: $default_font_weight;
 					font-size: $default_font_size;
 					line-height: calc($default_line_height + 10px);

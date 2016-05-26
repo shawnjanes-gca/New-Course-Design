@@ -43,9 +43,9 @@ fun_getquestion='function getQuestion(questionNumber)\n'+
 '   questionHTML = questionHTML + "<P>";\n'+
 '   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)\n'+
 '   {\n'+
-'      questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick=\'return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")\'>"\n'+
+'      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick=\'return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")\'>"\n'+
 '      questionHTML = questionHTML + questions[questionNumber][questionChoice];\n'+
-'      questionHTML = questionHTML + "</label><BR>";\n'+
+'      questionHTML = questionHTML + "<BR>";\n'+
 '   }\n'+
 '   questionHTML = questionHTML + "</P>";\n'+
 '\n'+
@@ -177,7 +177,7 @@ fun_buttoncheckq='function buttonCheckQ_onclick(questionNum, formName)\n'+
   '<!--\n'+
   '// END RADIO QUESTION '+Form.QuestionNumber.value+' CODE\n'+
   '//-->\n'+
-  '</SCRIPT><!--put Review Layer with Button layers here-->\n'
+  '</SCRIPT>\n'
   
   return retVal;
 }
