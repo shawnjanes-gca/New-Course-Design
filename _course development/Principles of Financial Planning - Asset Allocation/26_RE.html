@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Review the following scenario and chart and answer the following questions.</span></p>
+  <p>An investor comes to you with the following data regarding his portfolio and asks you to provide your assessment and commentary on the following issues.</p>
+  <!-- Create chart. -->
+  <table>
+    <thead>
+    <th scope="col">Market Exposure Measurement</th>
+      <th scope="col">Portfolio</th>
+      <th scope="col"><strong>S&amp;P 500 Index</strong></th>
+        <tr>
+          <td>Beta</td>
+          <td>1.4</td>
+          <td>1.0</td>
+        </tr>
+    <tr>
+      <td>Alpha</td>
+      <td>7.2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+    <td>R&#178;</td>
+    <td>77%</td>
+    <td>100%</td>
+    </tr>
+  </table>
+  <!-- Begin Review questions form. -->
+  <p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><strong>The prospect wants to know your assessment of the risk profile of the portfolio. Based on the table above, your assessment is that the portfolio&rsquo;s risk profile is:  </strong>
+          <p class="questionStyle">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+var numOfLayers = otherLayers.length;
+var hideLayers;
+for (a=1; a < numOfLayers; a++){
+	hideLayers = document.getElementById(otherLayers[a]);
+	hideLayers.style.display = "none";
+}
+var myLayer;
+myLayer = document.getElementById(i);
+myLayer.style.display = "none";
+myLayer.style.left = lft;
+myLayer.style.top = top;
+myLayer.style.width = wdth;
+myLayer.style.height = hght;
+myLayer.style.padding = pad;
+$(myLayer).slideDown("slow");
+$(myLayer).click(function(){
+	$(myLayer).hide();
+});
+}
+            </script>
+            <script language="JavaScript">
+<!--
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrectAnimated(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoiceAnimated.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answersAnimated[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestionAnimated(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+   var questionLength = questionsAnimated[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+      questionHTML = questionHTML + "</label><BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQAnimated_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+   {
+      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], 'left in px', 'top in px', 'width in px', 'height in px - leave blank to be dynamic', 'padding in px');
+   }
+   else
+   {
+      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], 'left in px', 'top in px', 'width in px', 'height in px - leave blank to be dynamic', 'padding in px');
+   }
+}
+
+var questionNumberAnimated;
+var questionsAnimated=new Array();
+var answersAnimated=new Array();
+var layersAnimated=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[1]="QuestionForm1";
+questionNumberAnimated=1;
+questionsAnimated[1]=new Array();
+layersAnimated[1]=new Array();
+//This is the test question
+questionsAnimated[1][0]="";
+
+//These are the answer choices
+questionsAnimated[1][1]="Lower than the market";
+questionsAnimated[1][2]="Same as the market";
+questionsAnimated[1][3]="Higher than the market";
+questionsAnimated[1][4]="Cannot make a rational assessment";
+//These are the associated layersAnimated
+layersAnimated[1][1]="Layer1";
+layersAnimated[1][2]="Layer2";
+layersAnimated[1][3]="Layer3";
+layersAnimated[1][4]="Layer4";
+
+//This is the test answer
+answersAnimated[1]="C";
+//-->
+            </script></p>
+          <form name="QuestionForm1">
+            <script>
+<!--
+// Display Text for Question 1
+document.write(getQuestionAnimated(1));
+//-->
+          </script>
+          </form>
+          <script>
+<!--
+// END RADIO QUESTION 1 CODE
+//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect. Remember under the CAPM framework, beta is used as a measure of relative volatility. Because the beta of the portfolio is 1.4, the portfolio shows volatility greater than the S&P 500.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect. Remember under the CAPM framework, beta is used as a measure of relative volatility. Because the beta of the portfolio is 1.4, the portfolio shows volatility greater than the S&P 500.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Correct. Because the beta of the portfolio is 1.4, the portfolio shows volatility greater than the S&P 500.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. Remember under the CAPM framework, beta is used as a measure of relative volatility. Because the beta of the portfolio is 1.4, the portfolio shows volatility greater than the S&P 500.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle"><strong>The prospect also would like your opinion on the effectiveness of this portfolio to generate &ldquo;value added.&rdquo; Based on nothing more than the information in the table above, what can you tell the prospect?</strong></p>
+        <p>
+          <script language="JavaScript">
+<!--
+// BEGIN RADIO QUESTION 2 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[2]="QuestionForm2";
+questionNumberAnimated=2;
+questionsAnimated[2]=new Array();
+layersAnimated[2]=new Array();
+//This is the test question
+questionsAnimated[2][0]="";
+
+//These are the answer choices
+questionsAnimated[2][1]="The portfolio is too risky and is not generating value.";
+questionsAnimated[2][2]="The portfolio has shown performance results above what would be expected based on the risk profile relative to the S&P.";
+questionsAnimated[2][3]="The portfolio is poorly structured/managed as indicated by the r&#178; of 77%.";
+questionsAnimated[2][4]="It is impossible to tell without looking at the portfolio holdings.";
+//These are the associated layersAnimated
+layersAnimated[2][1]="Layer5";
+layersAnimated[2][2]="Layer6";
+layersAnimated[2][3]="Layer7";
+layersAnimated[2][4]="Layer8";
+
+//This is the test answer
+answersAnimated[2]="B";
+//-->
+          </script>
+        </p>
+        <form name="QuestionForm2">
+          <script>
+<!--
+// Display Text for Question 2
+document.write(getQuestionAnimated(2));
+//-->
+          </script>
+        </form>
+        <script>
+<!--
+// END RADIO QUESTION 2 CODE
+//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer5" class="rvAnimatedLayer">Incorrect. Remember that alpha is an important statistic providing information on the portfolio's returns relative to the expected returns based on general exposure to systematic (index related) risks. Try again.</div>
+        <div id="Layer6" class="rvAnimatedLayer">Correct. A positive alpha value indicates that the portfolio has delivered returns above what would be expected based on the portfolio's exposure to systematic risk (index related exposure).</div>
+        <div id="Layer7" class="rvAnimatedLayer">Incorrect. Remember that alpha is an important statistic providing information on the portfolio's returns relative to the expected returns based on general exposure to systematic (index related) risks. Try again.</div>
+        <div id="Layer8" class="rvAnimatedLayer">Incorrect. Remember that alpha is an important statistic providing information on the portfolio's returns relative to the expected returns based on general exposure to systematic (index related) risks. Try again.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle"><strong>What does an r&#178; of 77% indicate to you?</strong></p>
+        <p>
+          <script language="JavaScript">
+<!--
+// BEGIN RADIO QUESTION 3 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[3]="QuestionForm3";
+questionNumberAnimated=3;
+questionsAnimated[3]=new Array();
+layersAnimated[3]=new Array();
+//This is the test question
+questionsAnimated[3][0]="";
+
+//These are the answer choices
+questionsAnimated[3][1]="Given the limited amount of data you have, the r&#178; here does not have any real relevance";
+questionsAnimated[3][2]="R&#178; of 77% shows that the portfolio is not effectively diversified.";
+questionsAnimated[3][3]="The r&#178;provides a low level of confidence in the alpha and beta figures.";
+questionsAnimated[3][4]="You can have reasonable confidence that the quantified alpha and beta listed are accurate reflections of the portfolio characteristics.";
+//These are the associated layersAnimated
+layersAnimated[3][1]="Layer9";
+layersAnimated[3][2]="Layer10";
+layersAnimated[3][3]="Layer11";
+layersAnimated[3][4]="Layer12";
+
+//This is the test answer
+answersAnimated[3]="D";
+//-->
+          </script>
+        </p>
+        <form name="QuestionForm3">
+          <script>
+<!--
+// Display Text for Question 3
+document.write(getQuestionAnimated(3));
+//-->
+          </script>
+        </form>
+        <script>
+<!--
+// END RADIO QUESTION 3 CODE
+//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer9" class="rvAnimatedLayer">Incorrect. Remember that r&#178; is a statistical measure that provides insight into the confidence level you can have regarding the accuracy of the regression results. Try again.</div>
+        <div id="Layer10" class="rvAnimatedLayer">Incorrect. Remember that r&#178; is a statistical measure that provides insight into the confidence level you can have regarding the accuracy of the regression results. Try again.</div>
+        <div id="Layer11" class="rvAnimatedLayer">Incorrect. Remember that r&#178; is a statistical measure that provides insight into the confidence level you can have regarding the accuracy of the regression results. Try again.</div>
+        <div id="Layer12" class="rvAnimatedLayer">Correct. The r&#178; of 77% provides a reasonable, albeit not definitive, level of confidence that the listed portfolio characteristics are accurate.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle"><strong>The risk associated with this portfolio that is completely independent of its participation in the overall stock market is called:</strong></p>
+        <p>
+          <script language="JavaScript">
+<!--
+// BEGIN RADIO QUESTION 4 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[4]="QuestionForm4";
+questionNumberAnimated=4;
+questionsAnimated[4]=new Array();
+layersAnimated[4]=new Array();
+//This is the test question
+questionsAnimated[4][0]="";
+
+//These are the answer choices
+questionsAnimated[4][1]="Systematic Risk";
+questionsAnimated[4][2]="Unsystematic Risk";
+questionsAnimated[4][3]="Specific Risk";
+questionsAnimated[4][4]="Both A. and C.";
+questionsAnimated[4][5]="Both B. and C.";
+//These are the associated layersAnimated
+layersAnimated[4][1]="Layer13";
+layersAnimated[4][2]="Layer14";
+layersAnimated[4][3]="Layer15";
+layersAnimated[4][4]="Layer16";
+layersAnimated[4][5]="Layer17";
+
+//This is the test answer
+answersAnimated[4]="E";
+//-->
+          </script>
+        </p>
+        <form name="QuestionForm4">
+          <script>
+<!--
+// Display Text for Question 4
+document.write(getQuestionAnimated(4));
+//-->
+          </script>
+        </form>
+        <script>
+<!--
+// END RADIO QUESTION 4 CODE
+//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer13" class="rvAnimatedLayer">Incorrect. Systematic Risk is the risk that is in common with that of the market. Try again.</div>
+        <div id="Layer14" class="rvAnimatedLayer">Incorrect. While the risk that is unique to an asset or portfolio is called Unsystematic Risk, it also goes by another name. Try again.</div>
+        <div id="Layer15" class="rvAnimatedLayer">Incorrect. While the risk that is unique to an asset or portfolio is called Specific Risk, it also goes by another name. Try again.</div>
+        <div id="Layer16" class="rvAnimatedLayer">Incorrect. Systematic Risk is the risk that is in common with that of the market. Try again.</div>
+        <div id="Layer17" class="rvAnimatedLayer">Correct. The risk that is unique to an asset or portfolio is called Unsystematic Risk or Specific Risk.</div></td>
+      </tr>
+    </table>
+  </div>
+  </p>
+</div>
+<!-- coursebody -->
+</body>
+</html>
