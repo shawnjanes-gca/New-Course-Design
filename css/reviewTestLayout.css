@@ -45,6 +45,16 @@
 #opBlockTbl tr th {color: white; text-align: center; background: #a1a1a1;}
 #opBlockTbl tr td {border-right: 1px solid #fff; text-align: center; padding: 0;}
 
+#reTableQ  table {width: 700px; margin: auto; border: 1px solid #fff;}
+#reTableQ table tr {border: none;}
+#reTableQ .firstThRt {background: #fff;}
+#reTableQ .firstColRt {background: #2c4c78;}
+#reTableQ table thead th {border: 1px solid #fff; color: #fff; background: #2c4c78; text-align: center;}
+#reTableQ tr {background: #2c4c78; text-align: center !important;}
+#reTableQ tr th {color: white; text-align: center; background: #a1a1a1;}
+#reTableQ tr td {border: 1px solid #fff; text-align: center; padding: 0;}
+
+
 .rvLayerOuterDiv {position: relative; width: 0; height: 0;}
 .rvLayerInnerDiv{position:absolute; width:250px; height:25px; z-index:1; visibility: hidden; color:#FFFFFF !important;}
 .rvLayerButton p{color:#FFFFFF !important;}
