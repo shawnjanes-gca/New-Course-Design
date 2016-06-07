@@ -16,7 +16,7 @@
 #qTable tr:last-child{ border-bottom: solid 1px #FFFFFF;}
 
 #qTable label{display: block; padding-left: 35px; text-indent: -15px;}
-#qTable input[type='checkbox']{ 
+#qTable input[type='checkbox']{
 	width: 13px;
     height: 13px;
     padding: 0px;
@@ -45,14 +45,16 @@
 #opBlockTbl tr th {color: white; text-align: center; background: #a1a1a1;}
 #opBlockTbl tr td {border-right: 1px solid #fff; text-align: center; padding: 0;}
 
-#reTableQ  table {width: 700px; margin: auto; border: 1px solid #fff;}
-#reTableQ table tr {border: none;}
+
+#retableQ {margin-top: 27px;}
+#retableQ a {border: none;}
+#reTableQ  table {margin: auto; width: 800px;}
 #reTableQ .firstThRt {background: #fff;}
-#reTableQ .firstColRt {background: #2c4c78;}
-#reTableQ table thead th {border: 1px solid #fff; color: #fff; background: #2c4c78; text-align: center;}
-#reTableQ tr {background: #2c4c78; text-align: center !important;}
-#reTableQ tr th {color: white; text-align: center; background: #a1a1a1;}
-#reTableQ tr td {border: 1px solid #fff; text-align: center; padding: 0;}
+#reTableQ table tr th, #reTableQ table tr td {padding: 10px; width: 100px; font-size: 90%;}
+#reTableQ table thead th {border: 1px solid #fff; background: #2c4c78;}
+#reTableQ tr, #reTableQ table thead th {background: #2c4c78; color: #fff; text-align: center !important;}
+#reTableQ tr th {color: #fff; text-align: center; background: #a1a1a1;}
+#reTableQ tr td {border: 1px solid #fff; text-align: center;}
 
 
 .rvLayerOuterDiv {position: relative; width: 0; height: 0;}
@@ -72,7 +74,7 @@
 
 
 
- 
+
 
 
 
