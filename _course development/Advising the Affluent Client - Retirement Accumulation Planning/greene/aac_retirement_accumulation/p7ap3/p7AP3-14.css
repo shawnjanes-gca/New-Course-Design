@@ -1,0 +1,162 @@
+/* 
+  -----------------------------------
+  Accordion Panel Magic
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme: 14 - Berry Splash
+  -----------------------------------
+*/
+
+.p7AP3-14 {
+	background-color: #666666;
+	padding: 8px;
+	margin: 0 auto;
+	width: auto;
+	border-radius: 6px;
+	box-shadow: 0px 0px 15px #666;
+}
+.p7AP3:after {
+	content: "\0020";
+	font-size: 0px;
+	display: inline;
+	overflow: hidden;
+	line-height: 1;
+}
+.p7AP3trig.p7ap3-theme-14 {
+	margin: 0;
+	padding: 0;
+	background-repeat: repeat-x;
+}
+.p7AP3trig.p7ap3-theme-14 h3, .p7AP3trig.p7ap3-theme-14 h4 {
+	margin: 0;
+	padding: 0;
+	letter-spacing: normal;
+	font-size: 1em;
+}
+.p7AP3trig.p7ap3-theme-14 a {
+	display: block;
+	text-decoration: none;
+	padding: 12px 20px;
+	color: #000;
+	background-color: #98565E;
+	border-bottom: 1px solid;
+	font-weight: normal;
+	background-image: url(img/p7ap3_east_black.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-color: #000000;
+	box-shadow: inset 0px 15px 30px rgba(255,255,255,.1);
+	transition: all ease-in-out 0.5s 0.1s;
+}
+.p7AP3trig.p7ap3-theme-14 .p7AP3_ext, .p7AP3trig.p7ap3-theme-14 .p7AP3_ext.p7AP3trig_down {
+	background-image: url(img/p7ap3_page_gray.gif);
+	color: #999999;
+	background-color: #222;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+.p7AP3trig.p7ap3-theme-14 a:hover {
+	color: #000;
+	background-color: #54759A;
+	outline: none;
+	border-color: #222;
+	background-image: url(img/p7ap3_south_black.gif);
+}
+.p7AP3trig.p7ap3-theme-14 .p7AP3trig_down, .p7AP3trig.p7ap3-theme-14 .p7AP3trig_down:hover {
+	background-color: #666;
+	color: #F0F0F0;
+	background-image: url(img/p7ap3_south_gray.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.p7AP3trig.p7ap3-theme-14 .p7AP3_ext:hover {
+	background-color: #454545;
+	background-image: url(img/p7ap3_page_gray.gif);
+	color: #CCC;
+}
+.p7ap3-theme-14 a.ap3first {
+	border-radius: 5px 5px 0px 0px;
+}
+.p7ap3-theme-14 a.ap3last {
+	border-radius: 0px 0px 5px 5px;
+}
+.p7ap3-theme-14 a.ap3first.ap3last {
+	border-radius: 5px 5px 5px 5px;
+}
+.p7ap3-theme-14 a.ap3last.p7AP3trig_down {
+	border-radius: 0px 0px 0px 0px;
+}
+.p7AP3cwrapper.p7ap3-theme-14 {
+	position: relative;
+}
+.p7AP3panelcontent.p7ap3-theme-14 {
+	line-height: 1.5em;
+	background-color: #FFFFFF;
+	color: #000;
+}
+.p7AP3panelcontent.p7ap3-theme-14 h1,
+.p7AP3panelcontent.p7ap3-theme-14 h2,
+.p7AP3panelcontent.p7ap3-theme-14 h3,
+.p7AP3panelcontent.p7ap3-theme-14 h4 {
+	margin: 0px;
+}
+.p7AP3panelcontent.p7ap3-theme-14.panel_last {
+	border-radius: 0px 0px 5px 5px;
+}
+.p7AP3content.p7ap3-theme-14 p {
+	margin: 6px 0;
+}
+.p7AP3trig.p7ap3-theme-14 a.current_mark {
+	font-weight: bold;
+}
+.p7AP3trig.p7ap3-theme-14 .p7AP3_ext.current_mark {
+	color: #FFF !important;
+	background-image: url(img/p7ap3_page_white.gif) !important;
+	text-decoration: none !important;
+}
+.p7AP3panelcontent.p7ap3-theme-14 a.current_mark {
+	font-weight: bold;
+}
+
+.responsive .ap3-toolbar {display: none;}
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+.p7AP3-14.responsive .ap3-toolbar {
+	display: block;
+	padding: 0px 10px;
+	text-align: right;
+	cursor: pointer;
+	border-radius: 5px 5px 0px 0px;
+}
+.p7AP3-14.responsive .ap3-toolbar a {
+	font-size: 2em;
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+	display: block;
+}
+.p7AP3-14.responsive .ap3-toolbar a:hover {
+	color: #FFF;
+}
+.responsive .toggle-text a:before {
+	position: relative;
+	top: -.25em;
+}
+.p7AP3-14.responsive .toggle-text.closed a:before {
+	content: "Show Menu \0020";
+	font-size: .5em;
+}
+.p7AP3-14.responsive .toggle-text.opened a:before {
+	content: "Hide Menu \0020";
+	font-size: .5em;
+}
+.p7AP3root-wrapper.closed {
+	height: 0px;
+	overflow:hidden;	
+}
+.p7AP3root-wrapper.opened {
+	height: auto;
+	overflow: hidden;	
+}
+
+}
