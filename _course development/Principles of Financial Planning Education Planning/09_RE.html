@@ -2,17 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Review Exercise</title>
+<title>Untitled Document</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
-<script type="text/javascript">
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-</script>
 </head>
 
 <body>
@@ -23,187 +14,12 @@ function MM_showHideLayers() { //v9.0
     </header>
   </div>
   <!-- PageCourseTitle -->
-  <h1><span class="pagetitle">Review Exercise</span>
+  <h1><span class="pagetitle">Insert Page Title Here</span>
     <!-- pagetitle -->
   </h1>
+  <p>Paragraph 1</p>
   
-  <span class="pageInstruction">Answer the following questions to review the preceding material.</span>
-  <div id="qTable">
-    <table>
-      <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
-        <td><script language="JavaScript">
-<!--
-// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-function answerCorrect(questionNumber, answer, formName)
-{
-   	// declare a variable to hold return value
-	var correct = false;
-	var questionLength = formName.radQuestionChoice.length;
-	var questionChoice;
-
-   	// if answer provided is same as correct answer then correct variable is true
-   	if (answer == answers[questionNumber])
-      	{correct = true;
-       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
-			{
-			formName.radQuestionChoice[questionChoice].disabled = true;
-
-	  		}
-
-   	// return whether the answer was correct (true or false)
-   	return correct;
-	}
-}
-
-function getQuestion(questionNumber)
-{
-
-   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-   var questionLength = questions[questionNumber].length;
-   var questionChoice;
-
-   questionHTML = questionHTML + "<P>";
-   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-   {
-      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-      questionHTML = questionHTML + questions[questionNumber][questionChoice];
-      questionHTML = questionHTML + "<BR>";
-   }
-   questionHTML = questionHTML + "</P>";
-
-   return questionHTML;
-}
-function buttonCheckQ_onclick(questionNum, formName)
-{
-   var answer = 0;
-   while (formName.radQuestionChoice[answer].checked != true)
-   {
-      answer++;
-   }
-
-   var answer2 = String.fromCharCode(65 + answer);
-   answer++;
-   if (answerCorrect(questionNum,answer2, formName) == true)
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-   else
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-}
-
-var questionNumber;
-var questions=new Array();
-var answers=new Array();
-var layers=new Array();
-// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-
-// BEGIN RADIO QUESTION 1 CODE
-var formNumber=new Array();
-formNumber[1]="QuestionForm1";
-questionNumber=1;
-questions[1]=new Array();
-layers[1]=new Array();
-//This is the test question
-questions[1][0]="One advantage of a Coverdell ESA over a UTMA/UGMA is:";
-
-//These are the answer choices
-questions[1][1]="Coverdell ESAs offer higher annual contribution limits";
-questions[1][2]="Unlike UTMA/UGMAs, assets in Coverdell ESAs can be used for elementary and secondary institution education expenses";
-questions[1][3]="Coverdell ESAs offer parents greater control over the assets in the account because they can remain in the account until the beneficiary reaches age 30";
-questions[1][4]="Participation in Coverdell ESAs are not subject to phase outs based on parents’ AGI";
-//These are the associated layers
-layers[1][1]="Layerwbutton1";
-layers[1][2]="Layerwbutton2";
-layers[1][3]="Layerwbutton3";
-layers[1][4]="Layerwbutton4";
-
-//This is the test answer
-answers[1]="C";
-//-->
-        </script>
-          <form name="QuestionForm1">
-            <script>
-<!--
-// Display Text for Question 1
-document.write(getQuestion(1));
-//-->
-          </script>
-            <div class="rvLayerOuterDiv">
-              <div id="Layerwbutton1" class="rvLayerInnerDiv">
-                <table class="rvLayerButton">
-                  <tr>
-                    <td><p>Incorrect. Try Again.</p>
-                      <p align="center">
-                        <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
-                      </p></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="rvLayerOuterDiv">
-              <div id="Layerwbutton2" class="rvLayerInnerDiv">
-                <table class="rvLayerButton">
-                  <tr>
-                    <td><p>Incorrect. Try Again.</p>
-                      <p align="center">
-                        <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
-                      </p></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="rvLayerOuterDiv">
-              <div id="Layerwbutton3" class="rvLayerInnerDiv">
-                <table class="rvLayerButton">
-                  <tr>
-                    <td><p>Correct.</p>
-                      <p align="center">
-                        <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton3','','hide')">
-                      </p></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div class="rvLayerOuterDiv">
-              <div id="Layerwbutton4" class="rvLayerInnerDiv">
-                <table class="rvLayerButton">
-                  <tr>
-                    <td><p>Incorrect. Try Again.</p>
-                      <p align="center">
-                        <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton4','','hide')">
-                      </p></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </form>
-        <script>
-<!--
-// END RADIO QUESTION 1 CODE
-//-->
-          </script></td>
-      </tr>
-      <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
-  </div>
+  <p>And so forth...</p>
 </div>
 <!-- coursebody -->
 </body>
