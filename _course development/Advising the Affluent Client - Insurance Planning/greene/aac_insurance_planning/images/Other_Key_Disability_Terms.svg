@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="146" viewBox="0 0 800 146">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c621a;
+      }
+
+      .cls-1, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #0076a3;
+      }
+
+      .cls-3 {
+        fill: #c2c2c2;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 58.333px;
+        text-anchor: middle;
+        font-family: Arial;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        stroke: #000;
+        stroke-width: 1.667px;
+      }
+	 
+    </style>
+  </defs>
+  <path class="cls-1" d="M666,19.634H520.8V76.5H667.2l25.6-28.433Z"/>
+  <rect id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-2" x="107.188" y="19.625" width="159.218" height="56.875"/>
+  <rect class="cls-3" x="266.406" y="19.625" width="254.407" height="56.875"/>
+  <text id="Elimination_Period" data-name="Elimination Period" class="cls-4" transform="translate(399.944 56.405) scale(0.4 0.4)"><tspan x="0">Elimination Period</tspan></text>
+  <text id="Disability_Occurs" data-name="Disability Occurs" class="cls-5" transform="translate(271.544 124.884) scale(0.4 0.4)"><tspan x="0">Disability Occurs</tspan></text>
+  <text id="Benefit_Payments_Begin" data-name="Benefit Payments Begin" class="cls-5" transform="translate(520.744 124.484) scale(0.4 0.4)"><tspan x="0">Benefit Payments Begin</tspan></text>
+  <path class="cls-6" d="M264.4,9.623h4v92.106h-4V9.623Z"/>
+  <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-6" d="M518.8,9.623h4v92.106h-4V9.623Z"/>
+</svg>
