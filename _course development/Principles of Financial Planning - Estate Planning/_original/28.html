@@ -1,0 +1,517 @@
+<head>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="jQueryAssets/default.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+<body>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<p>Before proceeding, check your familiarity with some of the most frequently used planning techniques, some of which have been utilized for decades.<strong style="color: #ff0000;"> For each question, select the appropriate answer. </strong></p>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>1.</strong></p>
+</td>
+<td>
+<p><strong>For Credit Shelter Trusts to be an effective strategy in estate planning for couples, it is generally important that:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="Assets should be held in joint name with right of survivorship.";
+questions[1][2]="Each spouse needs to own assets in their own name (typically equalized up to the amount that can be protected by each spouse’s Applicable Credit Amount)";
+questions[1][3]="All assets be left to the surviving spouse when the first spouse dies.";
+//These are the associated layers
+layers[1][1]="Layer1";
+layers[1][2]="Layer2";
+layers[1][3]="Layer3";
+
+//This is the test answer
+answers[1]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>2.</strong></p>
+</td>
+<td>
+<p><strong>A Credit Shelter Trust can provide benefits for:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="The spouse only";
+questions[2][2]="The children only";
+questions[2][3]="The entire family (spouse and children)";
+//These are the associated layers
+layers[2][1]="Layer4";
+layers[2][2]="Layer4";
+layers[2][3]="Layer5";
+
+//This is the test answer
+answers[2]="C";
+// ]]></script>
+</p>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>3.</strong></p>
+</td>
+<td>
+<p><strong>A General Power of Appointment Trust will be included in the surviving spouse&rsquo;s estate, thereby qualifying for the unlimited marital deduction, because:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="The trust document declares that assets are to be included.";
+questions[3][2]="The surviving spouse can appoint (i.e., distribute) the assets to whomever desired, even to himself/herself";
+questions[3][3]="Because the trust assets are titled in the name of the surviving spouse";
+questions[3][4]="Because the surving spouse receives benefits from the trust.";
+//These are the associated layers
+layers[3][1]="Layer6";
+layers[3][2]="Layer7";
+layers[3][3]="Layer8";
+layers[3][4]="Layer9";
+
+//This is the test answer
+answers[3]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>4.</strong></p>
+</td>
+<td><strong>The primary distinguishing characteristic of the QTIP Marital Trust vs. a non-QTIP Marital Trust is:
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="It gives the first spouse to die the ability to name ultimate beneficiaries, while utilizing the marital deduction. ";
+questions[4][2]="It provides additional estate tax savings. ";
+questions[4][3]="It provides income for the surviving spouse. ";
+questions[4][4]="It provides income for the children. ";
+questions[4][5]="It provides discretionary principal distributions for the entire family. ";
+//These are the associated layers
+layers[4][1]="Layer10";
+layers[4][2]="Layer11";
+layers[4][3]="Layer12";
+layers[4][4]="Layer13";
+layers[4][5]="Layer14";
+
+//This is the test answer
+answers[4]="A";
+// ]]></script>
+</strong><form name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<p align="right"><strong>5.</strong></p>
+</td>
+<td>
+<p><strong>QTIP stands for:</strong>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 5 CODE
+var formNumber=new Array();
+formNumber[5]="QuestionForm5";
+questionNumber=5;
+questions[5]=new Array();
+layers[5]=new Array();
+//This is the test question
+questions[5][0]="";
+
+//These are the answer choices
+questions[5][1]="Qualified Transitional Interest Property";
+questions[5][2]="Qualified Terminal Interest Property";
+questions[5][3]="Qualified Trust Income Property";
+questions[5][4]="Qualified Taxable Income Property";
+//These are the associated layers
+layers[5][1]="Layer15";
+layers[5][2]="Layer16";
+layers[5][3]="Layer15";
+layers[5][4]="Layer15";
+
+//This is the test answer
+answers[5]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm5">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 5
+document.write(getQuestion(5));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 5 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 125px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 125px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> The trust cannot be funded if the decedant does not own assets in their own name.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 125px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> A Credit Shelter Trust will be established upon the first death with assets that do not pass to the surviving spouse. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 325px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> The Credit Shelter Trust is unrestricted regarding the beneficiaries who can be named in it.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> This is essentially unrestrained control over the assets by the beneficiary. Such control causes the assets to be included in the beneficary&rsquo;s estate.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Trust assets are never titled in the beneficiary&rsquo;s name. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 425px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Receipt of benefits from a trust is insufficient reason for the trust assets to be included in the beneficiary&rsquo;s estate. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> The distinguishing feature is that the trust can defer taxes by use of the marital deduction even though the deceased spouse retains "power from the grave" to direct the ultimate distribution of the assets.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> It provides no more tax savings than a General Power of Appointment Marital Trust; both allow for deferral of estate taxes. Try again</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> While it does provide income for the surviving spouse, so does a General Power of Appointment Marital Trust. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> A QTIP Marital trust cannot provide income for the children. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Only the surviving spouse can receive principal distributions from a QTIP Marital Trust. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 255px; top: 525px; visibility: hidden;">
+<table style="width: 100%;" border="3" cellpadding="3" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
