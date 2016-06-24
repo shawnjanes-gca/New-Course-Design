@@ -29,11 +29,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/04_image.html": {
+	"\/04.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/04_image.html",
+		"inputAbbreviatedPath": "\/04.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -128,20 +128,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/15_image.html": {
+	"\/15.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/15_image.html",
+		"inputAbbreviatedPath": "\/15.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/16_image.html": {
+	"\/16.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/16_image.html",
+		"inputAbbreviatedPath": "\/16.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -236,11 +236,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/27_image.html": {
+	"\/27.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/27_image.html",
+		"inputAbbreviatedPath": "\/27.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1275,6 +1275,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/Fireworks\/p7TTM09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58459,
+		"inputAbbreviatedPath": "\/Fireworks\/p7TTM09.png",
+		"outputAbbreviatedPath": "\/Fireworks\/p7TTM09.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/Fireworks\/tp3-arrows.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1572,6 +1583,136 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-dueeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 377,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-duewest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-east.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-east.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-east.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-north.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 411,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-north.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-north.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-northeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 304,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-northwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 301,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-south.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 389,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-south.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-south.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-southeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-southwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-west.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-west.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-west.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/p7TTM09.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/p7ttm\/p7TTM09.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/p7ttm\/p7TTMscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/p7ttm\/p7TTMscripts.js",
+		"outputAbbreviatedPath": "\/p7ttm\/min\/p7TTMscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		}
 	},
 "hooks": [
