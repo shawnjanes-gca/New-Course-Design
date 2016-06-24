@@ -13,7 +13,7 @@ for (questionChoice = 1;questionChoice <= Form.QuestionNumber.value;questionChoi
 {
 	tableBuild = tableBuild + '	<tr>\n'+
  	'		<td width="55" align="right" valign="top"><p align="right"><strong>'+questionChoice+'.</strong></p></td>\n'+
-  	'		<td><p class="questionStyle">put question here</p>&nbsp;</td>\n'+
+  	'		<td>&nbsp;</td>\n'+
   	'	</tr>\n'
 }   
 

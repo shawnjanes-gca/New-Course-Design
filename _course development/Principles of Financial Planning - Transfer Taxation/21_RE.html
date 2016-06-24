@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>Let's review some of the concepts we have covered so far.<span class="pageInstruction">Answer the following questions as true or false:</span></p>
+  
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">In 2016, a married couple who are both U.S. citizens can make a joint gift of $28,000 each year that qualifies for the annual gift tax exclusion only if each of them contributes half from their separate funds:</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="True";
+			questionsAnimated[1][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer18";
+			layersAnimated[1][2]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer18" class="rvAnimatedLayer">Incorrect. Both spouses can consent to split gifts regardless of the source of funds.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Correct. It is not necessary for spouses to use separate funds when splitting a gift.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">There is no limit on the number of $14,000 annual exclusion gifts that can be made by an individual in 2016, as long as each $14,000 gift in each year is to a different person: </p>
+           
+           <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="True";
+			questionsAnimated[2][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer20";
+			layersAnimated[2][2]="Layer21";
+			
+			//This is the test answer
+			answersAnimated[2]="A";
+			//-->
+           </script>
+           <form name="QuestionForm2">
+             <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+             </script>
+           </form>
+           <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+           </script>
+           <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer20" class="rvAnimatedLayer">Correct.  There is no limit to the number of donees who may receive an annual exclusion gift.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect. There is no limit to the number of donees who may receive an annual exclusion gift.</div>
+         
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Life insurance owned by the deceased is included in the gross taxable estate only to the extent of its cash surrender value just prior to death:</p>
+      
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="True";
+			questionsAnimated[3][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer22";
+			layersAnimated[3][2]="Layer23";
+			
+			//This is the test answer
+			answersAnimated[3]="B";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+			<!--
+			// Display Text for Question 3
+			document.write(getQuestionAnimated(3));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer22" class="rvAnimatedLayer">Incorrect. Life insurance owned by the deceased is generally included in the gross taxable estate at its full face value, which is the amount paid out upon death.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Correct. Life insurance owned by the deceased is generally included in the gross taxable estate at its full face value, which is the amount paid out upon death.</div> 
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">If a married couple wishes to directly pay their son's $28,000 annual college tuition in 2016, any additional gifts to their son would be taxable:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="True";
+			questionsAnimated[4][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer24";
+			layersAnimated[4][2]="Layer25";
+			
+			//This is the test answer
+			answersAnimated[4]="B";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+			<!--
+			// Display Text for Question 4
+			document.write(getQuestionAnimated(4));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer24" class="rvAnimatedLayer">Incorrect. The exclusion for tuition is in addition to the annual gift tax exclusion. They can still make an annual exclusion gift to their son.</div>
+          <div id="Layer25" class="rvAnimatedLayer">Correct. The exclusion for tuition is in addition to the annual gift tax exclusion. They can still make an annual exclusion gift to their son.</div>  
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">The alternate valuation date is 9 months after death: </p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="True";
+			questionsAnimated[5][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer26";
+			layersAnimated[5][2]="Layer27";
+			
+			//This is the test answer
+			answersAnimated[5]="B";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer26" class="rvAnimatedLayer">Incorrect. The estate tax return is due 9 months after death, but the alternate valuation date is 6 months after death.</div>
+          <div id="Layer27" class="rvAnimatedLayer">Correct. The estate tax return is due 9 months after death, but the alternate valuation date is 6 months after death.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">With portability, a surviving spouse’s Applicable Exclusion Amount equals their Basic Exclusion Amount plus the: </p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="DSUE";
+			questionsAnimated[6][2]="DSSU";
+			questionsAnimated[6][3]="DESU";
+			questionsAnimated[6][4]="DUSE";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer28";
+			layersAnimated[6][2]="Layer29";
+			layersAnimated[6][3]="Layer30";
+			layersAnimated[6][4]="Layer31";
+			
+			//This is the test answer
+			answersAnimated[6]="A";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+			<!--
+			// Display Text for Question 6
+			document.write(getQuestionAnimated(6));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer28" class="rvAnimatedLayer">Correct.  They get to add the Deceased Spousal Unused Exclusion Amount.</div>
+          <div id="Layer29" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer30" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer31" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<!-- coursebody -->
+</body>
+</html>

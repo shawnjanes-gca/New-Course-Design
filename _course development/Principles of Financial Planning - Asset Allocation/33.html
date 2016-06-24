@@ -1,109 +1,32 @@
+<!doctype html>
+<html>
 <head>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link href="greene/asset_allocation/p7ap/p7ap_04.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="greene/asset_allocation/p7ap/p7APscripts.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/roundedPage.css" />
-<link rel="stylesheet" type="text/css" href="greene/asset_allocation/css/niftyCorners.css" />
-<script type="text/javascript" src="greene/asset_allocation/js/nifty.js"></script>
-<script type="text/javascript" src="greene/asset_allocation/js/final.js"></script>
-<style type="text/css">
-div#example01{width: 300px; padding: 20px; margin:0 auto; background:#CCCC99; }
-</style>
-<script type="text/javascript" src="greene/asset_allocation/js/niftycube.js"></script>
-<script type="text/javascript">
-window.onload=function(){
-	Nifty("div#example01","big");
-	}
-</script>
-<link href="greene/asset_allocation/p7epm/epm5/p7EPM05.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="greene/asset_allocation/p7epm/p7EPMscripts.js"></script>
+<meta charset="UTF-8">
+<title>Monte Carlo Sensitivity Analysis</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css" />
 </head>
+
 <body>
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td>
-<div align="right">
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
-// ]]></script>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Monte Carlo Sensitivity Analysis</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>While a plan may appear perfectly solid when looking at the averages, many things can go wrong in the real world that might cause the plan to fail. For example, investment returns might be lower than expected, or the timing of an investment may be wrong, or death may occur sooner (or later) than planned. To have confidence in a plan, it is important to test it against various possibilities to establish an acceptable level of confidence that unexpected events</p>
+  <p>Monte Carlo Sensitivity Analysis makes this possible. Grounded in gaming theory, where expected outcomes are modeled multiple times to establish probabilities of a single occurrence, <strong>Monte Carlo Sensitivity Analysis is a powerful tool available in many portfolio optimization software packages. Monte Carlo Analysis allows you to perform risk/probability simulations over multiple scenarios to determine a "success rate" for a given plan.</strong> Monte Carlo Sensitivity Analysis also makes use of some of the same primary inputs as Mean Variance Optimization: expected returns, standard deviation of returns and correlations. However, it uses them in a more sophisticated manner.
+</p>
+  <p><span class="pageInstruction">Here is an overview of how the analysis works:</span></p>
+  <div class="explanation-widget-box">First, the software randomly generates numbers for uncertain variables such as interest rates, investment volatility, and life expectancy. By running hundreds, sometimes thousands of scenarios using randomized data points for annual return that fit within the historical range of expectations, Monte Carlo Sensitivity Analysis allows you to test the estimated success of the current plan data under different scenarios.
+  <br><br>This allows you to answer such questions as: “What is the potential likelihood that I will outlive my portfolio?” or “Can I count on having enough money to fund my education needs?”
+  <br><br>This testing will provide you with a more realistic perspective on the viability of a plan achieving the desired goals in a dynamic environment where market returns cannot be predicted, either year to year or over intermediate periods of time.
+  </div>
+  
 </div>
-</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<h2>Communicating Benefits of Monte Carlo Sensitivity Analysis</h2>
-</blockquote>
-</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<table style="width: 50px;" cellpadding="6" align="right">
-<tbody>
-<tr>
-<td><img src="greene/asset_allocation/35_communication.jpg" alt="" width="200" height="133" /></td>
-</tr>
-</tbody>
-</table>
-<p>While Monte Carlo Sensitivity Analysis is a powerful planning tool with many benefits, its complexity can make it overwhelming to communicate to a client. Instead of attempting to detail the framework and details of Monte Carlo, it might be easier to communicate solely the benefits of this approach versus traditional MVO models.</p>
-<p><strong><span style="color: #ff0000;">Click each benefit to learn more.</span></strong></p>
-<p>&nbsp;</p>
-<table style="width: 650px;" border="0" cellspacing="0" cellpadding="6">
-<tbody>
-<tr>
-<td>
-<div id="p7ABW1" class="p7AB">
-<div class="p7ABtrig">
-<h3><a id="p7ABt1_1" onfocus="if(this.blur)this.blur()" href="javascript:;"><strong>Realism</strong></a></h3>
-</div>
-<div id="p7ABw1_1">
-<div id="p7ABc1_1" class="p7ABcontent">
-<p>Most plans simply look at the averages and presume that the plan will achieve results similar to the averages found in past history. But in the real world, performance over the short-term is often very different than the average long-term performance.</p>
-<p>By modeling a plan under more realistic market-like circumstances where returns and other factors can vary significantly from year to year, Monte Carlo Sensitivity Analysis produces a more realistic picture of what can be expected.</p>
-</div>
-</div>
-<div class="p7ABtrig">
-<h3><a id="p7ABt1_2" onfocus="if(this.blur)this.blur()" href="javascript:;"><strong>Flexibility</strong></a></h3>
-</div>
-<div id="p7ABw1_2">
-<div id="p7ABc1_2" class="p7ABcontent">
-<p>Monte Carlo Sensitivity Analysis makes it possible to identify and quickly model alternative solutions to a plan and to test the probability of success for each alternative.</p>
-</div>
-</div>
-<div class="p7ABtrig">
-<h3><a id="p7ABt1_3" onfocus="if(this.blur)this.blur()" href="javascript:;"><strong>Predictability</strong></a></h3>
-</div>
-<div id="p7ABw1_3">
-<div id="p7ABc1_3" class="p7ABcontent">
-<p>While no statistical modeling can be 100% accurate, Monte Carlo simulations do provide an added layer of accuracy to a plan's potential viability.</p>
-</div>
-</div>
-<div class="p7ABtrig">
-<h3><a id="p7ABt1_4" onfocus="if(this.blur)this.blur()" href="javascript:;"><strong>Comprehensiveness</strong></a></h3>
-</div>
-<div id="p7ABw1_4">
-<div id="p7ABc1_4" class="p7ABcontent">
-<p>You can more accurately account for the variability of cash flows that are intrinsic to real life situations and also account for various tax implications throughout each plan year.</p>
-</div>
-</div>
-<script type="text/javascript">// <![CDATA[
-P7_opAB(1,1,1,0,0,0);
-// ]]></script>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-</td>
-</tr>
-</tbody>
-</table>
+<!-- coursebody -->
 </body>
+</html>

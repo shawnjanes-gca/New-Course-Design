@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.submit-btn{background:#2c4c78; font-size:12px; color:#fff; border-radius:5px; font-weight:bold; transition: 0.5s; -webkit-transition: 0.5s; -ms-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s;}
+.submit-btn:hover, .submit-btn:focus{ background:#af6f29; color:#fff;}
+
+.submit-btn-ckbox{background:#2c4c78; font-size:12px; color:#fff; border-radius:5px; font-weight:bold; transition: 0.5s; -webkit-transition: 0.5s; -ms-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; margin-left:35px;}
+.submit-btn-ckbox:hover, .submit-btn-ckbox:focus{ background:#af6f29; color:#fff;}
+
+.fillInSpace{margin-bottom:10px;}
+
+#qTable table{width:100%;}
+#qTable tr {background:#FFFFFF; border-bottom: solid 1px #A1A1A1;}
+#qTable td {text-align:left;line-height:18px;}
+#qTable tr:last-child{ border-bottom: solid 1px #FFFFFF;}
+
+#qTable label{display: block; padding-left: 35px; text-indent: -15px;}
+#qTable input[type='checkbox']{
+	width: 13px;
+    height: 13px;
+    padding: 0px;
+    margin:0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;}
+
+
+#qTable input[type=radio]:hover {
+	box-shadow:0px 0px 10px #A1A1A1;
+}
+
+#qTable select {border-color: #2c4c78;}
+
+.questionStyle{font-weight:bold !important;}
+.questionStyle ol li {color: #222222 !important; font-family: "Source Sans Pro",sans-serif !important;font-size: 18px !important; font-weight: bold !important;}
+
+#opBlockTbl table {width: 375px; margin: auto; border: 1px solid #fff;}
+#opBlockTbl table tr {border: none;}
+#opBlockTbl .firstThRt {background: #fff;}
+#opBlockTbl .firstColRt {background: #2c4c78;}
+#opBlockTbl table thead th {border-bottom: 1px solid #fff; border-right: 1px solid #fff; color: #fff; background: #2c4c78; text-align: center;}
+#opBlockTbl tr {background: #2c4c78;}
+#opBlockTbl tr th {color: white; text-align: center; background: #a1a1a1;}
+#opBlockTbl tr td {border-right: 1px solid #fff; text-align: center; padding: 0;}
+
+
+#retableQ {margin-top: 27px;}
+#retableQ a {border: none;}
+#reTableQ  table {margin: auto; width: 800px;}
+#reTableQ .firstThRt {background: #fff;}
+#reTableQ table tr th, #reTableQ table tr td {padding: 10px; width: 100px; font-size: 90%;}
+#reTableQ table thead th {border: 1px solid #fff; background: #2c4c78;}
+#reTableQ tr, #reTableQ table thead th {background: #2c4c78; color: #fff; text-align: center !important;}
+#reTableQ tr th {color: #fff; text-align: center; background: #a1a1a1;}
+#reTableQ tr td {border: 1px solid #fff; text-align: center;}
+
+
+.rvLayerOuterDiv {position: relative; width: 0; height: 0;}
+.rvLayerInnerDiv{position:absolute; width:250px; height:25px; z-index:1; visibility: hidden; color:#FFFFFF !important;}
+.rvLayerButton p{color:#FFFFFF !important;}
+.rvLayerButton td{width:100%; background:#52bc7a; color:#FFFFFF !important; text-align:center !important; border-radius:5px;}
+.closeLayer-btn{background:#A1A1A1; font-size:12px; color:#fff; border-radius:5px; font-weight:bold;}
+.closeLayer-btn:hover, .closeLayer-btn:focus{ background: #7E7D7D; color:#fff;}
+
+
+.rvAnimatedLayer{background: #52bc7a; color:#FFFFFF;display:none;border-radius:5px;font-size:18px; font-family: "Source Sans Pro",sans-serif;line-height:27px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

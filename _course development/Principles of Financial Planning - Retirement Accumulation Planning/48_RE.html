@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <span class="pageInstruction">Select the correct answer for the following questions.</span>
+  <p>
+      <div id="qTable">
+        <table>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+            <td><p class="questionStyle">For-profit corporations may implement 403(b) Arrangements.</p>
+
+              <script language="JavaScript">
+				<!--
+				// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				function answerCorrectAnimated(questionNumber, answer, formName)
+				{
+					// declare a variable to hold return value
+					var correct = false;
+					var questionLength = formName.radQuestionChoiceAnimated.length;
+					var questionChoice;
+				
+					// if answer provided is same as correct answer then correct variable is true
+					if (answer == answersAnimated[questionNumber])
+						{correct = true;
+							for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+							{
+							formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+				
+							}
+				
+					// return whether the answer was correct (true or false)
+					return correct;
+					}
+				}
+				
+				function getQuestionAnimated(questionNumber)
+				{
+				
+				   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+				   var questionLength = questionsAnimated[questionNumber].length;
+				   var questionChoice;
+				
+				   questionHTML = questionHTML + "<P>";
+				   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+				   {
+					  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+					  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+					  questionHTML = questionHTML + "</label><BR>";
+				   }
+				   questionHTML = questionHTML + "</P>";
+				
+				   return questionHTML;
+				}
+				function buttonCheckQAnimated_onclick(questionNum, formName)
+				{
+				   var answer = 0;
+				   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+				   {
+					  answer++;
+				   }
+				
+				   var answer2 = String.fromCharCode(65 + answer);
+				   answer++;
+				   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+				   {
+					  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10');
+				   }
+				   else
+				   {
+					  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10');
+				   }
+				}
+				
+				var questionNumberAnimated;
+				var questionsAnimated=new Array();
+				var answersAnimated=new Array();
+				var layersAnimated=new Array();
+				// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				
+				// BEGIN RADIO QUESTION 1 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[1]="QuestionForm1";
+				questionNumberAnimated=1;
+				questionsAnimated[1]=new Array();
+				layersAnimated[1]=new Array();
+				//This is the test question
+				questionsAnimated[1][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[1][1]="True";
+				questionsAnimated[1][2]="False";
+				//These are the associated layersAnimated
+				layersAnimated[1][1]="Layer1";
+				layersAnimated[1][2]="Layer2";
+				
+				//This is the test answer
+				answersAnimated[1]="B";
+				//-->
+              </script>
+              <form name="QuestionForm1">
+                <script>
+					<!--
+					// Display Text for Question 1
+					document.write(getQuestionAnimated(1));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 1 CODE
+				//-->
+              </script>
+              <!--put Review Exercise Layer with Feedback here-->
+              <div id="Layer1" class="rvAnimatedLayer">Incorrect. Similar to 401(k) Plans in features, 403(b) Arrangements are only permitted for tax-exempt religious, charitable, or educational organizations.</div>
+              <div id="Layer2" class="rvAnimatedLayer">Correct. Similar to 401(k) Plans in features, 403(b) Arrangements are only permitted for tax-exempt religious, charitable, or educational organizations.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+            <td><p class="questionStyle">Sarah, age 35, has come to you with a question. She works for the water authority, which is a government agency.  Her municipality has set up a Public 457(b) Plan for all its employees and Sarah is eager to participate.  Her only problem is that she also contributes to a 401(k) Plan and plans on contributing the maximum amount to it this year ($18,000 in 2016). She'd like to make contributions to the Public 457(b) this year as well, but doesn't want to incur penalties on her 401(k).  What can she do?</p>
+              <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 2 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[2]="QuestionForm2";
+				questionNumberAnimated=2;
+				questionsAnimated[2]=new Array();
+				layersAnimated[2]=new Array();
+				//This is the test question
+				questionsAnimated[2][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[2][1]="To avoid going over the maximum contribution limit, Sarah needs to either reduce her contributions to her 401(k) or not participate in the 457(b) this year.";
+				questionsAnimated[2][2]="Sarah can participate in the 457(b) Plan as long as she pays taxes on her contributions.";
+				questionsAnimated[2][3]="Sarah can contribute the maximum to both without penalty.";
+				questionsAnimated[2][4]="Sarah is not allowed to participate in a 457(b) if she already makes contributions to a 401(k).";
+				//These are the associated layersAnimated
+				layersAnimated[2][1]="Layer3";
+				layersAnimated[2][2]="Layer4";
+				layersAnimated[2][3]="Layer5";
+				layersAnimated[2][4]="Layer6";
+				
+				//This is the test answer
+				answersAnimated[2]="C";
+				//-->
+              </script>
+              <form name="QuestionForm2">
+                <script>
+					<!--
+					// Display Text for Question 2
+					document.write(getQuestionAnimated(2));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 2 CODE
+				//-->
+              </script>
+              <!--put Review Exercise Layer with Feedback here-->
+              <div id="Layer3" class="rvAnimatedLayer">Incorrect. Try again.</div>
+              <div id="Layer4" class="rvAnimatedLayer">Incorrect. Try again.</div>
+              <div id="Layer5" class="rvAnimatedLayer">Correct.  Sarah can contribute the maximum to both plans ($18,000 each in 2016, as indexed) because contributions to the Public 457(b) Plan will NOT affect her contribution limit to her 401(k) Plan.</div>
+              <div id="Layer6" class="rvAnimatedLayer">Incorrect. Try again.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+            <td><p class="questionStyle">Your client Mary was granted ISOs by her employer exactly 9 years ago. On the grant date, the fair market value of the stock was $100 per share and the grant price was $100 per share. She plans to retire in exactly one year. The ISOs vest in exactly one year. Her employer's stock has a current fair market value of $250 per share. Which of the following should not be a factor in Mary's decision to exercise the ISOs?</p>
+              <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 3 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[3]="QuestionForm3";
+				questionNumberAnimated=3;
+				questionsAnimated[3]=new Array();
+				layersAnimated[3]=new Array();
+				//This is the test question
+				questionsAnimated[3][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[3][1]="Consult her CPA to determine any alternative minimum tax liability before exercising the ISOs";
+				questionsAnimated[3][2]="Remember that she must exercise the ISOs at least 90 days before she retires to obtain ISO income tax treatment";
+				questionsAnimated[3][3]="Assuming she exercises the ISOs, decide whether to sell the shares immediately after exercise or continue to hold the shares to defer long term capital gains taxes";
+				questionsAnimated[3][4]="Plan the exercise of the ISOs with her employer's Chief Financial Officer to maximize the company's income tax deduction from the exercise";
+				//These are the associated layersAnimated
+				layersAnimated[3][1]="Layer7";
+				layersAnimated[3][2]="Layer8";
+				layersAnimated[3][3]="Layer9";
+				layersAnimated[3][4]="Layer10";
+				
+				//This is the test answer
+				answersAnimated[3]="D";
+				//-->
+              </script>
+              <form name="QuestionForm3">
+                <script>
+					<!--
+					// Display Text for Question 3
+					document.write(getQuestionAnimated(3));
+					//-->
+                </script>
+              </form>
+              <script>
+				<!--
+				// END RADIO QUESTION 3 CODE
+				//-->
+              </script>
+              <!--put Review Exercise Layer with Feedback here-->
+              <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer9" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+              <div id="Layer10" class="rvAnimatedLayer">Correct.  The employer receives no income tax deduction associated with ISOs.</div>
+			</td>
+          </tr>
+        </table>
+      </div>
+  </p>
+</div>
+<!-- coursebody -->
+</body>
+</html>

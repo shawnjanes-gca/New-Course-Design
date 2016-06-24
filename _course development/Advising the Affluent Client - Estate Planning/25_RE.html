@@ -2,8 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+           <script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -23,17 +46,22 @@
       CURRENT UNIFIED GIFT & ESTATE RATE SCHEDULE*
     </caption>
     <thead>
+    <tr>
     <th scope="col">Column A</th>
       <th scope="col">Column B</th>
       <th scope="col">Column C</th>
       <th scope="col">Column D</th>
-     </thead>
+     </tr>
+    </thead>
+     
     <thead>
+    <tr>
     <th scope="col">Taxable<br>amount<br>over</th>
       <th scope="col">Taxable<br>amount<br>not over</th>
       <th scope="col">Tax on<br>amount in<br>Column A</th>
       <th scope="col">Rate of tax on<br>excess over amount<br>in Column A</th>
-     </thead>
+      </tr>
+    </thead>
     <tr>
       <td>$0</td>
       <td>$10,000</td>
@@ -97,8 +125,8 @@
     <tr>
       <td>750,000</td>
       <td>1,000,000</td>
-      <td>155,800</td>
-      <td>37%</td>
+      <td>248,300</td>
+      <td>39%</td>
     </tr>
     <tr>
       <td>1,000,000</td>
@@ -107,6 +135,7 @@
       <td>40%</td>
     </tr>
   </table>
+  
   <footer>
     <div class="footertext"></div>
     <!-- footertext -->
@@ -117,86 +146,201 @@
 <div id="qTable">
     <table>
       <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
-        <td>
-          <script language="JavaScript">
+        <td width="55" align="right" valign="top"><p align="right" ><strong>1.</strong></p></td>
+        <td style="padding:0;"><script language="JavaScript">
 			<!--
 			//BEGIN ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
-			function fill_buttonCheckQ_onclick(questionNum, formName)
+			function fill_buttonCheckQAnimated_onclick(questionNum, formName)
 			{
 				var answer=0;
 				var correct="false";
-				var answerlength=fill_answers[questionNum].length;
+				var answerlength=fill_answersAnimated[questionNum].length;
 				for (answerchoice=0; answerchoice<answerlength; answerchoice++)
 					{
-						if (fill_answers[questionNum][answerchoice]==formName.value)
+						if (fill_answersAnimated[questionNum][answerchoice]==formName.value)
 						{
 							correct="true";
 						}
 					}
 				if (correct=="true")
 				{
-					showAnimatedLayer(fill_layers[questionNum][1],'','show');
+					showAnimatedLayer(fill_layersAnimated[questionNum][1], fill_layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
 					formName.disabled=true;
 				}
 				else
 				{
-					showAnimatedLayer(fill_layers[questionNum][2],'','show');
+					showAnimatedLayer(fill_layersAnimated[questionNum][2], fill_layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
 				}
 			}
 			// END ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
 			
-			var fill_questions=new Array();
-			var fill_answers=new Array();
-			var fill_layers=new Array();
-			var fill_formNumber=new Array();
+			var fill_questionsAnimated=new Array();
+			var fill_answersAnimated=new Array();
+			var fill_layersAnimated=new Array();
+			var fill_formNumberAnimated=new Array();
 			// BEGIN FILL IN THE BLANK QUESTION 1 CODE
-			fill_formNumber[1]="fillForm1";
-			fill_questions[1]=new Array();
-			fill_layers[1]=new Array();
-			fill_answers[1]=new Array();
+			fill_formNumberAnimated[1]="fillForm1";
+			fill_questionsAnimated[1]=new Array();
+			fill_layersAnimated[1]=new Array();
+			fill_answersAnimated[1]=new Array();
 			//here is the question
-			fill_questions[1][0]="";
+			fill_questionsAnimated[1][0]="";
 			// these are the correct answers
-			fill_answers[1][0]="38800";
-			fill_answers[1][1]="38,800";
+			fill_answersAnimated[1][0]="38800";
+			fill_answersAnimated[1][1]="$38800";
+			fill_answersAnimated[1][2]="38,800";
+			fill_answersAnimated[1][3]="$38,800";
 			// these are the associated layers
 			// 1 is correct
 			// 2 is incorrect
-			fill_layers[1][1]="Layer1";
-			fill_layers[1][2]="Layer2";
-			document.write("<B>"+fill_questions[1][0]+"</B>");
+			fill_layersAnimated[1][1]="Layer1";
+			fill_layersAnimated[1][2]="Layer2";
+			document.write("<P><B>"+fill_questionsAnimated[1][0]+"</B></P>");
 			//-->
-          </script>
-          <form name="fillForm1" onSubmit="return false">
-          <span class="questionStyle">The grantor, trustee, and beneficiary must be three distinct persons.
-            <input type="text" name="fillAnswer1" class="fillInSpace"></span>
-            <br/><input type="button" name="buttonCheckQ" onClick="return fill_buttonCheckQ_onclick(1, window.document.fillForm1.fillAnswer1)" value="SUBMIT" class="submit-btn">
-          </form>
-          <script>
-			<!--
-			//END FILL IN THE BLANK QUESTION 1 CODE
-			//-->
-          </script>
-        <div id="Layer1" class="rvAnimatedLayer">Correct!  The answer is $38,800.</div>
+           </script>
+           <form name="fillForm1" onSubmit="return false">
+             <p class="questionStyle">Tentative Tax on a transfer of $150,000 = 
+               <input type="text" name="fillAnswer1" id="fillAnswer1">
+             </p>
+             
+             <input type="button" name="buttonCheckQ" onClick="return fill_buttonCheckQAnimated_onclick(1, window.document.fillForm1.fillAnswer1)" value="SUBMIT" class="submit-btn">
+           </form>
+           <script>
+<!--
+//END FILL IN THE BLANK QUESTION 1 CODE
+//-->
+           </script>
+<div id="Layer1" class="rvAnimatedLayer">Correct!  The answer is $38,800.</div>
         <div id="Layer2" class="rvAnimatedLayer">Incorrect.  To find the correct tax, follow these steps:<br/> 
 		Step 1. Locate the row where $150,000 falls within the range given in the first two columns. This occurs in the range of $150,000 to $250,000. <br/>
 Step 2. The third and fourth columns indicate the tax would be $38,800 plus 32% of any amount over that listed in Column A ($150,000). Since our estate is exactly $150,000, there is nothing further to calculate, so the tentative tax is $38,800.</div>        </td>
       </tr>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
-        <td><p class="questionStyle">put question here</p>
-          &nbsp;</td>
+        <td style="padding:0;">
+            <script language="JavaScript">
+				<!--
+				// BEGIN FILL IN THE BLANK QUESTION 2 CODE
+				fill_formNumberAnimated[2]="fillForm2";
+				fill_questionsAnimated[2]=new Array();
+				fill_layersAnimated[2]=new Array();
+				fill_answersAnimated[2]=new Array();
+				//here is the question
+				fill_questionsAnimated[2][0]="";
+				// these are the correct answers
+				fill_answersAnimated[2][0]="104800";
+				fill_answersAnimated[2][1]="104,800";
+				fill_answersAnimated[2][2]="$104800";
+				fill_answersAnimated[2][3]="$104,800";
+				// these are the associated layers
+				// 1 is correct
+				// 2 is incorrect
+				fill_layersAnimated[2][1]="Layer3";
+				fill_layersAnimated[2][2]="Layer4";
+				document.write("<P><B>"+fill_questionsAnimated[2][0]+"</B></P>");
+				//-->
+            </script>
+       
+          <form name="fillForm2" onSubmit="return false">
+          <p class="questionStyle">Tentative Tax on a transfer of $350,000 =
+            <input type="text" name="fillAnswer2" id="fillAnswer2"> </p>
+            
+            <input type="button" name="buttonCheckQ2" onClick="return fill_buttonCheckQAnimated_onclick(2, window.document.fillForm2.fillAnswer2)" value="SUBMIT" class="submit-btn">
+          </form>
+          <script>
+<!--
+//END FILL IN THE BLANK QUESTION 2 CODE
+//-->
+          </script>
+        <div id="Layer3" class="rvAnimatedLayer">Correct! The answer is $104,800.</div>
+        <div id="Layer4" class="rvAnimatedLayer">Incorrect. To find the correct tax, follow these steps.<br/>
+		Step 1. Locate the row where $350,000 falls within the range listed in Columns A and B. The appropriate range is $250,000 to $500,000. <br/>
+		Step 2. Columns C and D indicate that the tax is $70,800 plus 34% of any amount over $250,000. That leads to the following tax calculation:<br/> 
+		Tentative Tax = 70,800 + .34(350,000 – 250,000) = 70,800 + 34,000 = $104,800</div> 
+       </td>
       </tr>
+     </table>
+     <span class="pageInstruction">Next, identify the marginal rates for the following amounts:</span>
+	<table>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
-        <td><p class="questionStyle">put question here</p>
-          &nbsp;</td>
+        <td style="padding:0;">
+          <script language="JavaScript">
+			<!--
+			// BEGIN FILL IN THE BLANK QUESTION 3 CODE
+			fill_formNumberAnimated[3]="fillForm3";
+			fill_questionsAnimated[3]=new Array();
+			fill_layersAnimated[3]=new Array();
+			fill_answersAnimated[3]=new Array();
+			//here is the question
+			fill_questionsAnimated[3][0]="";
+			// these are the correct answers
+			fill_answersAnimated[3][0]="34";
+			fill_answersAnimated[3][1]="34%";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			fill_layersAnimated[3][1]="Layer5";
+			fill_layersAnimated[3][2]="Layer6";
+			document.write("<P><B>"+fill_questionsAnimated[3][0]+"</B></P>");
+			//-->
+          </script>
+          <form name="fillForm3" onSubmit="return false">
+            <p class="questionStyle">Marginal rate on a transfer of $450,000 = <input type="text" name="fillAnswer3" id="fillAnswer3" ></p>
+            
+            <input type="button" name="buttonCheckQ3" onClick="return fill_buttonCheckQAnimated_onclick(3, window.document.fillForm3.fillAnswer3)" value="SUBMIT" class="submit-btn">
+          </form>
+          <script>
+<!--
+//END FILL IN THE BLANK QUESTION 3 CODE
+//-->
+          </script>
+		  <div id="Layer5" class="rvAnimatedLayer">Correct! The answer is 34%.</div>
+		  <div id="Layer6" class="rvAnimatedLayer">Incorrect. To find the correct answer, follow these steps:<br/> 
+			Step 1. Locate the row where $450,000 falls within the range given by Columns A and B. The appropriate range is $250,000 to $500,000. <br/>
+			Step 2. Column D gives the marginal rate being charged on every dollar over $250,000 as 34%. Thus, the marginal rate for $450,000 is 34%.
+			</div>
+       </td>
       </tr>
       <tr>
-        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
-        <td><p class="questionStyle">put question here</p>
-          &nbsp;</td>
+        <td width="55" align="right" valign="top"><p align="right" ><strong>4.</strong></p></td>
+        <td style="padding:0;">
+            <script language="JavaScript">
+				<!--
+				// BEGIN FILL IN THE BLANK QUESTION 4 CODE
+				fill_formNumberAnimated[4]="fillForm4";
+				fill_questionsAnimated[4]=new Array();
+				fill_layersAnimated[4]=new Array();
+				fill_answersAnimated[4]=new Array();
+				//here is the question
+				fill_questionsAnimated[4][0]="";
+				// these are the correct answers
+				fill_answersAnimated[4][0]="40";
+				fill_answersAnimated[4][1]="40%";
+				// these are the associated layers
+				// 1 is correct
+				// 2 is incorrect
+				fill_layersAnimated[4][1]="Layer7";
+				fill_layersAnimated[4][2]="Layer8";
+				document.write("<P><B>"+fill_questionsAnimated[4][0]+"</B></P>");
+				//-->
+            </script>
+            <form name="fillForm4" onSubmit="return false">
+              <p class="questionStyle">Marginal rate on a transfer of $4,500,000 = <input type="text" name="fillAnswer4" id="fillAnswer4"></p>
+              
+              <input type="button" name="buttonCheckQ4" onClick="return fill_buttonCheckQAnimated_onclick(4, window.document.fillForm4.fillAnswer4)" value="SUBMIT" class="submit-btn">
+            </form>
+          <script>
+<!--
+//END FILL IN THE BLANK QUESTION 4 CODE
+//-->
+            </script>
+          <div id="Layer7" class="rvAnimatedLayer">Correct! The answer is 40%.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. To find the correct answer, follow these steps: <br/>
+			Step 1. Locate the row where $4,500,000 falls within the range given by Columns A and B. The appropriate range is in the last row, which includes everything from $1,000,000 and above. <br/>
+			Step 2. Column D gives the marginal rate being charged on every dollar over $1,000,000 as 40%. Thus, the marginal rate is 40%.
+		  </div>
+		</td>
       </tr>
     </table>
   </div>

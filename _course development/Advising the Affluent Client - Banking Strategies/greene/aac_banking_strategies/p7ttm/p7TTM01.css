@@ -74,7 +74,7 @@
 	left: 16px;
 	top: auto;
 	bottom: -14px;
-	background-image: url(../../../p7ttm/img/p7TTM01-southwest.gif);
+	background-image: url(img/p7TTM01-southwest.gif);
 }
 /*Arrow At Bottom Middle*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_2 {
@@ -84,7 +84,7 @@
 	margin-left: -8px;
 	top: auto;
 	bottom: -9px;
-	background-image: url(../../../p7ttm/img/p7TTM01-south.gif);
+	background-image: url(img/p7TTM01-south.gif);
 }
 /*Arrow At Bottom Right*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_3 {
@@ -94,7 +94,7 @@
 	right: 16px;
 	top: auto;
 	bottom: -14px;
-	background-image: url(../../../p7ttm/img/p7TTM01-southeast.gif);
+	background-image: url(img/p7TTM01-southeast.gif);
 }
 /*Arrow At Top Left*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_4 {
@@ -102,7 +102,7 @@
 	width: 14px;
 	left: 16px;
 	top: -14px;
-	background-image: url(../../../p7ttm/img/p7TTM01-northwest.gif);
+	background-image: url(img/p7TTM01-northwest.gif);
 }
 /*Arrow At Top Middle*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_5 {
@@ -111,7 +111,7 @@
 	left: 50%;
 	margin-left: -8px;
 	top: -9px;
-	background-image: url(../../../p7ttm/img/p7TTM01-north.gif);
+	background-image: url(img/p7TTM01-north.gif);
 }
 /*Arrow At Top Right*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_6 {
@@ -120,7 +120,7 @@
 	left: auto;
 	right: 16px;
 	top: -14px;
-	background-image: url(../../../p7ttm/img/p7TTM01-northeast.gif);
+	background-image: url(img/p7TTM01-northeast.gif);
 }
 /*Arrow At Left Top*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_7 {
@@ -128,7 +128,7 @@
 	width: 14px;
 	left: -14px;
 	top: 8px;
-	background-image: url(../../../p7ttm/img/p7TTM01-duewest.gif);
+	background-image: url(img/p7TTM01-duewest.gif);
 }
 /*Arrow At Left Middle*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_8 {
@@ -137,7 +137,7 @@
 	left: -9px;
 	top: 50%;
 	margin-top: -8px;
-	background-image: url(../../../p7ttm/img/p7TTM01-west.gif);
+	background-image: url(img/p7TTM01-west.gif);
 }
 /*Arrow At Right Top*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_9 {
@@ -146,7 +146,7 @@
 	left: auto;
 	right: -14px;
 	top: 8px;
-	background-image: url(../../../p7ttm/img/p7TTM01-dueeast.gif);
+	background-image: url(img/p7TTM01-dueeast.gif);
 }
 /*Arrow At Right Middle*/
 .p7TTM01 .p7TTMcall.p7TTM_Arrow_10 {
@@ -156,7 +156,7 @@
 	right: -9px;
 	top: 50%;
 	margin-top: -8px;
-	background-image: url(../../../p7ttm/img/p7TTM01-east.gif);
+	background-image: url(img/p7TTM01-east.gif);
 }
 /*Special Class assigned to All Triggers, regardless of the Tooltip Style Theme, while its tooltip is showing.*/
 .p7TTM_open {}
