@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="114" viewBox="0 0 700 114">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c621a;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        opacity: 0.36;
+      }
+
+      .cls-2 {
+        fill: #9e0b0f;
+      }
+
+      .cls-3 {
+        fill: #f26522;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 58.333px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: Arial;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M250.25,7.321H123.2v97.615H251.3l22.4-48.808Z"/>
+  <path class="cls-2" d="M271.25,7.321h131.6l21,49.156-22.4,48.807H272.3l22.05-48.458Z"/>
+  <path class="cls-3" d="M425.95,8.716h151.2v95.523H424.2l25.55-47.413Z"/>
+  <text id="Wealth_Accumulation" data-name="Wealth Accumulation" class="cls-4" transform="translate(199.101 48.745) scale(0.35 0.349)"><tspan x="0">Wealth</tspan><tspan x="0" dy="70">Accumulation</tspan></text>
+  <text id="Wealth_Maintenance" data-name="Wealth Maintenance" class="cls-4" transform="translate(354.151 48.745) scale(0.35 0.349)"><tspan x="0">Wealth</tspan><tspan x="0" dy="70">Maintenance</tspan></text>
+  <text id="Wealth_Transfer" data-name="Wealth Transfer" class="cls-5" transform="translate(501.501 48.745) scale(0.35 0.349)"><tspan x="0">Wealth</tspan><tspan x="0" dy="70">Transfer</tspan></text>
+</svg>

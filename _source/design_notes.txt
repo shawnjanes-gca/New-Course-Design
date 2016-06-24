@@ -1,4 +1,0 @@
-Design notes:
-
-Accordian panel: Greystone
-Tab Panel: Cabernet
