@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="799" height="134" viewBox="0 0 799 134">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0c621a;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #9e0b0f;
+      }
+
+      .cls-3 {
+        fill: #f26522;
+      }
+
+      .cls-4 {
+        font-size: 125px;
+        fill: #fff;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M285.643,10.768H140.624V122.435H286.841L312.409,66.6Z"/>
+  <path class="cls-2" d="M309.612,10.768H459.825L483.794,67l-25.568,55.833H310.811L335.979,67.4Z"/>
+  <path class="cls-3" d="M486.192,12.363H658.776V121.637H484.194L513.357,67.4Z"/>
+  <text id="_1" data-name="1" class="cls-4" transform="translate(211.679 82.482) scale(0.4 0.399)">1</text>
+  <text id="_2" data-name="2" class="cls-4" transform="translate(382.415 82.195) scale(0.4 0.399)">2</text>
+  <text id="_3" data-name="3" class="cls-4" transform="translate(558.517 82.498) scale(0.4 0.399)">3</text>
+</svg>

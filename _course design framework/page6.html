@@ -1,0 +1,42 @@
+<head>
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/course.css">
+	<link rel="stylesheet" href="//learning.greeneconsults.com/course-page-layout/css/course_page_layout_main.css">
+
+	<script>
+		var pageTitleTrainingFolder = "Training - Advising the Affluent Client: Education Planning"
+		var pageTitleTrainingFolderSplit = pageTitleTrainingFolder.split("- ");
+
+		if (pageTitleTrainingFolderSplit[1].indexOf(':') === -1) {
+
+			var pageTitleSplit = ["",pageTitleTrainingFolderSplit[1]];
+			var pageTitleComplete = '<span class="headertitle">' + pageTitleSplit[1] + '</span><!-- headertitle -->';
+			document.getElementById("PageCourseTitle").innerHTML = "With :";
+
+		} else {
+
+			var pageTitle = pageTitleTrainingFolderSplit[1];
+			var pageTitleSplit = pageTitle.split(":");
+			var pageTitleComplete = '<span class="headertitle"><span class="secondarytitle">' + pageTitleSplit[0] + ': </span><!-- secondarytitle -->' + pageTitleSplit[1] + '</span><!-- headertitle -->';
+			document.getElementById("PageCourseTitle").innerHTML = "Without :";
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="pagenavigation"><a href="index.html"><img src="images/nav-arrow-left.png"></a><a href="page3.html"><img src="images/nav-arrow-right.png" /></a></div><!-- pagenavigation -->
+
+	<div class="coursebody">
+
+		<header><span class="headertitle"><span class="secondarytitle">Advising the Affluent Client:</span><!-- secondarytitle --> Education Planning</span><!-- headertitle --></header>
+
+		<h1><span class="pagetitle">JavaScript Split Test Page 6</span><!-- pagetitle --></h1>
+
+		<p>
+			Dynamic title output of pageTitleComplete: <header id="PageCourseTitle"></header>
+		</p>
+
+<script>document.getElementById("PageCourseTitle").innerHTML = pageTitleComplete;</script>
+	</div><!-- coursebody -->
+</body>
