@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+		var numOfLayers = otherLayers.length;
+		var hideLayers;
+		for (a=1; a < numOfLayers; a++){
+			hideLayers = document.getElementById(otherLayers[a]);
+			hideLayers.style.display = "none";
+		}
+		var myLayer;
+		myLayer = document.getElementById(i);
+		myLayer.style.display = "none";
+		myLayer.style.left = lft;
+		myLayer.style.top = top;
+		myLayer.style.width = wdth;
+		myLayer.style.height = hght;
+		myLayer.style.padding = pad;
+		$(myLayer).slideDown("slow");
+		$(myLayer).click(function(){
+			$(myLayer).hide();
+		});
+	}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>Before proceeding, check your familiarity with some of the most frequently used planning techniques, some of which have been utilized for decades.  <span class="pageInstruction">For each question, select the appropriate answer.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">For Credit Shelter Trusts to be an effective strategy in estate planning for couples, it is generally important that:</p>
+  
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Assets should be held in joint name with right of survivorship.";
+			questionsAnimated[1][2]="Each spouse needs to own assets in their own name (typically equalized up to the amount that can be protected by each spouse’s Applicable Credit Amount)";
+			questionsAnimated[1][3]="All assets be left to the surviving spouse when the first spouse dies.";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer9";
+			layersAnimated[1][2]="Layer10";
+			layersAnimated[1][3]="Layer11";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect. Try again.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Correct! The trust cannot be funded if the decedant does not own assets in their own name.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. A Credit Shelter Trust will be established upon the first death with assets that do not pass to the surviving spouse. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">A Credit Shelter Trust can provide benefits for:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="The spouse only";
+			questionsAnimated[2][2]="The children only";
+			questionsAnimated[2][3]="The entire family (spouse and children)";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer12";
+			layersAnimated[2][2]="Layer13";
+			layersAnimated[2][3]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[2]="C";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+			<!--
+			// Display Text for Question 2
+			document.write(getQuestionAnimated(2));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Correct! The Credit Shelter Trust is unrestricted regarding the beneficiaries who can be named in it.</div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">A General Power of Appointment Trust will be included in the surviving spouse's estate, thereby qualifying for the unlimited marital deduction, because:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="The trust document declares that assets are to be included.";
+			questionsAnimated[3][2]="The surviving spouse can appoint (i.e., distribute) the assets to whomever desired, even to himself/herself";
+			questionsAnimated[3][3]="Because the trust assets are titled in the name of the surviving spouse";
+			questionsAnimated[3][4]="Because the surving spouse receives benefits from the trust.";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer15";
+			layersAnimated[3][2]="Layer16";
+			layersAnimated[3][3]="Layer17";
+			layersAnimated[3][4]="Layer18";
+			
+			//This is the test answer
+			answersAnimated[3]="B";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+			<!--
+			// Display Text for Question 3
+			document.write(getQuestionAnimated(3));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+
+        <div id="Layer15" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+        <div id="Layer16" class="rvAnimatedLayer">Correct! This is essentially unrestrained control over the assets by the beneficiary. Such control causes the assets to be included in the beneficary's estate.</div>
+        <div id="Layer17" class="rvAnimatedLayer">Incorrect. Trust assets are never titled in the beneficiary's name. Try again.</div>
+        <div id="Layer18" class="rvAnimatedLayer">Incorrect. Receipt of benefits from a trust is insufficient reason for the trust assets to be included in the beneficiary's estate. Try again.</div>
+       </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">The primary distinguishing characteristic of the QTIP Marital Trust vs. a non-QTIP Marital Trust is:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="It gives the first spouse to die the ability to name ultimate beneficiaries, while utilizing the marital deduction.";
+			questionsAnimated[4][2]="It provides additional estate tax savings.";
+			questionsAnimated[4][3]="It provides income for the surviving spouse.";
+			questionsAnimated[4][4]="It provides income for the children.";
+			questionsAnimated[4][5]="It provides discretionary principal distributions for the entire family.";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer19";
+			layersAnimated[4][2]="Layer20";
+			layersAnimated[4][3]="Layer21";
+			layersAnimated[4][4]="Layer22";
+			layersAnimated[4][5]="Layer23";
+			
+			//This is the test answer
+			answersAnimated[4]="A";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+			<!--
+			// Display Text for Question 4
+			document.write(getQuestionAnimated(4));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+&nbsp;
+<div id="Layer19" class="rvAnimatedLayer">Correct! The distinguishing feature is that the trust can defer taxes by use of the marital deduction even though the deceased spouse retains "power from the grave" to direct the ultimate distribution of the assets.</div>
+<div id="Layer20" class="rvAnimatedLayer">Incorrect. It provides no more tax savings than a General Power of Appointment Marital Trust; both allow for deferral of estate taxes. Try again.</div>
+<div id="Layer21" class="rvAnimatedLayer">Incorrect. While it does provide income for the surviving spouse, so does a General Power of Appointment Marital Trust. Try again.</div>
+<div id="Layer22" class="rvAnimatedLayer">Incorrect. A QTIP Marital trust cannot provide income for the children. Try again.</div>
+<div id="Layer23" class="rvAnimatedLayer">Incorrect. Only the surviving spouse can receive principal distributions from a QTIP Marital Trust. Try again.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">QTIP stands for:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumber=new Array();
+			formNumber[5]="QuestionForm5";
+			questionNumber=5;
+			questions[5]=new Array();
+			layers[5]=new Array();
+			//This is the test question
+			questions[5][0]="";
+			
+			//These are the answer choices
+			questions[5][1]="Qualified Transitional Interest Property";
+			questions[5][2]="Qualified Terminal Interest Property";
+			questions[5][3]="Qualified Trust Income Property";
+			questions[5][4]="Qualified Taxable Income Property";
+			//These are the associated layers
+			layers[5][1]="Layerwbutton4";
+			layers[5][2]="Layerwbutton5";
+			layers[5][3]="Layerwbutton6";
+			layers[5][4]="Layerwbutton7";
+			
+			//This is the test answer
+			answers[5]="B";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestion(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton4" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton4','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton5" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton5','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton6" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton6','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton7" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton7','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        &nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  
+</div>
+<!-- coursebody -->
+</body>
+</html>

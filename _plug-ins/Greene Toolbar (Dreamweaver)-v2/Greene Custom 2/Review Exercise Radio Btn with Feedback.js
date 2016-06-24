@@ -10,19 +10,19 @@ function objectTag() {
 
 var Form = document.theForm;
 var fun_answercorrect;
-fun_answercorrect='function answerCorrectAnimated(questionNumber, answer, formName)\n'+
+fun_answercorrect='function answerCorrect(questionNumber, answer, formName)\n'+
 '{\n'+
 '   	// declare a variable to hold return value\n'+
 '	var correct = false;\n'+
-'	var questionLength = formName.radQuestionChoiceAnimated.length;\n'+
+'	var questionLength = formName.radQuestionChoice.length;\n'+
 '	var questionChoice;\n'+
 '\n'+
 '   	// if answer provided is same as correct answer then correct variable is true\n'+
-'   	if (answer == answersAnimated[questionNumber])\n'+
+'   	if (answer == answers[questionNumber])\n'+
 '      	{correct = true;\n'+
 '       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)\n'+
 '			{\n'+
-'			formName.radQuestionChoiceAnimated[questionChoice].disabled = true;\n'+
+'			formName.radQuestionChoice[questionChoice].disabled = true;\n'+
 '\n'+
 '	  		}\n'+
 '\n'+
@@ -33,19 +33,19 @@ fun_answercorrect='function answerCorrectAnimated(questionNumber, answer, formNa
 '\n'
 
 var fun_getquestion;
-fun_getquestion='function getQuestionAnimated(questionNumber)\n'+
+fun_getquestion='function getQuestion(questionNumber)\n'+
 '{\n'+
 '\n'+
-'   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";\n'+
-'   var questionLength = questionsAnimated[questionNumber].length;\n'+
+'   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";\n'+
+'   var questionLength = questions[questionNumber].length;\n'+
 '   var questionChoice;\n'+
 '\n'+
 '   questionHTML = questionHTML + "<P>";\n'+
 '   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)\n'+
 '   {\n'+
-'      questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick=\'return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")\'>"\n'+
-'      questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];\n'+
-'      questionHTML = questionHTML + "</label><BR>";\n'+
+'      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick=\'return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")\'>"\n'+
+'      questionHTML = questionHTML + questions[questionNumber][questionChoice];\n'+
+'      questionHTML = questionHTML + "<BR>";\n'+
 '   }\n'+
 '   questionHTML = questionHTML + "</P>";\n'+
 '\n'+
@@ -53,23 +53,23 @@ fun_getquestion='function getQuestionAnimated(questionNumber)\n'+
 '}\n'
 
 var fun_buttoncheckq;
-fun_buttoncheckq='function buttonCheckQAnimated_onclick(questionNum, formName)\n'+
+fun_buttoncheckq='function buttonCheckQ_onclick(questionNum, formName)\n'+
 '{\n'+
 '   var answer = 0;\n'+
-'   while (formName.radQuestionChoiceAnimated[answer].checked != true)\n'+
+'   while (formName.radQuestionChoice[answer].checked != true)\n'+
 '   {\n'+
 '      answer++;\n'+
 '   }\n'+
 '\n'+
 '   var answer2 = String.fromCharCode(65 + answer);\n'+
 '   answer++;\n'+
-'   if (answerCorrectAnimated(questionNum,answer2, formName) == true)\n'+
+'   if (answerCorrect(questionNum,answer2, formName) == true)\n'+
 '   {\n'+
-'      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
+'      showAnimatedLayer(layers[questionNum][answer], layers[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px\', \'padding in px\');\n'+
 '   }\n'+
 '   else\n'+
 '   {\n'+
-'      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px - leave blank to be dynamic\', \'padding in px\');\n'+
+'      showAnimatedLayer(layers[questionNum][answer], layers[questionNum], \'left in px\', \'top in px\', \'width in px\', \'height in px\', \'padding in px\');\n'+
 '   }\n'+
 '}\n'+
 '\n'
@@ -80,50 +80,50 @@ fun_buttoncheckq='function buttonCheckQAnimated_onclick(questionNum, formName)\n
   Layers="";
   if (Form.AnswerA.value != "")
   {
-  	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][1]="'+Form.AnswerA.value+'";\n'
-  	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][1]="'+Form.LayerA.value+'";\n'
+  	Choices=Choices+'questions['+Form.QuestionNumber.value+'][1]="'+Form.AnswerA.value+'";\n'
+  	Layers=Layers+'layers['+Form.QuestionNumber.value+'][1]="'+Form.LayerA.value+'";\n'
   }
   if (Form.AnswerB.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][2]="'+Form.AnswerB.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][2]="'+Form.LayerB.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][2]="'+Form.AnswerB.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][2]="'+Form.LayerB.value+'";\n'
   }
   if (Form.AnswerC.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][3]="'+Form.AnswerC.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][3]="'+Form.LayerC.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][3]="'+Form.AnswerC.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][3]="'+Form.LayerC.value+'";\n'
   }
   if (Form.AnswerD.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][4]="'+Form.AnswerD.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][4]="'+Form.LayerD.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][4]="'+Form.AnswerD.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][4]="'+Form.LayerD.value+'";\n'
   }
   if (Form.AnswerE.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][5]="'+Form.AnswerE.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][5]="'+Form.LayerE.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][5]="'+Form.AnswerE.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][5]="'+Form.LayerE.value+'";\n'
   }
   if (Form.AnswerF.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][6]="'+Form.AnswerF.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][6]="'+Form.LayerF.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][6]="'+Form.AnswerF.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][6]="'+Form.LayerF.value+'";\n'
   }
   if (Form.AnswerG.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][7]="'+Form.AnswerG.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][7]="'+Form.LayerG.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][7]="'+Form.AnswerG.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][7]="'+Form.LayerG.value+'";\n'
   }
   if (Form.AnswerH.value != "")
   {
-    	Choices=Choices+'questionsAnimated['+Form.QuestionNumber.value+'][8]="'+Form.AnswerH.value+'";\n'
-    	Layers=Layers+'layersAnimated['+Form.QuestionNumber.value+'][8]="'+Form.LayerH.value+'";\n'
+    	Choices=Choices+'questions['+Form.QuestionNumber.value+'][8]="'+Form.AnswerH.value+'";\n'
+    	Layers=Layers+'layers['+Form.QuestionNumber.value+'][8]="'+Form.LayerH.value+'";\n'
   }
   
   var onetimearrays;
-  onetimearrays='var questionNumberAnimated;\n'+
-  'var questionsAnimated=new Array();\n'+
-  'var answersAnimated=new Array();\n'+
-  'var layersAnimated=new Array();\n'
+  onetimearrays='var questionNumber;\n'+
+  'var questions=new Array();\n'+
+  'var answers=new Array();\n'+
+  'var layers=new Array();\n'
   var onetimeheaderopen;
   var onetimeheaderclose;
   onetimeheaderopen='// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS\n';
@@ -179,28 +179,28 @@ fun_buttoncheckq='function buttonCheckQAnimated_onclick(questionNum, formName)\n
   onetimearrays+
   onetimeheaderclose+
   '// BEGIN RADIO QUESTION '+Form.QuestionNumber.value+' CODE\n'+
-  'var formNumberAnimated=new Array();\n'+
-  'formNumberAnimated['+Form.QuestionNumber.value+']="QuestionForm'+Form.QuestionNumber.value+'";\n'+
-  'questionNumberAnimated='+Form.QuestionNumber.value+';\n'+
-  'questionsAnimated['+Form.QuestionNumber.value+']=new Array();\n'+
-  'layersAnimated['+Form.QuestionNumber.value+']=new Array();\n'+
+  'var formNumber=new Array();\n'+
+  'formNumber['+Form.QuestionNumber.value+']="QuestionForm'+Form.QuestionNumber.value+'";\n'+
+  'questionNumber='+Form.QuestionNumber.value+';\n'+
+  'questions['+Form.QuestionNumber.value+']=new Array();\n'+
+  'layers['+Form.QuestionNumber.value+']=new Array();\n'+
   '//This is the test question\n'+
-  'questionsAnimated['+Form.QuestionNumber.value+'][0]="'+Form.QuestionText.value+'";\n'+
+  'questions['+Form.QuestionNumber.value+'][0]="'+Form.QuestionText.value+'";\n'+
   '\n'+
   '//These are the answer choices\n'+
   Choices+
-  '//These are the associated layersAnimated\n'+
+  '//These are the associated layers\n'+
   Layers+
   '\n'+
   '//This is the test answer\n'+
-  'answersAnimated['+Form.QuestionNumber.value+']="'+Form.Qanswer.value+'";\n'+
+  'answers['+Form.QuestionNumber.value+']="'+Form.Qanswer.value+'";\n'+
   '//-->\n'+
   '</SCRIPT>\n'+
   '<FORM NAME="QuestionForm'+Form.QuestionNumber.value+'">\n'+
   '<SCRIPT>\n'+
   '<!--\n'+
   '// Display Text for Question '+Form.QuestionNumber.value+'\n'+
-  'document.write(getQuestionAnimated('+Form.QuestionNumber.value+'));\n'+
+  'document.write(getQuestion('+Form.QuestionNumber.value+'));\n'+
   '//-->\n'+
   '</SCRIPT>\n'+
    '</FORM>\n'+

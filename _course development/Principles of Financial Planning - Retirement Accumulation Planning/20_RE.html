@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Review your understanding of the preceding pages by answering the following questions.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Which of the following statements is true?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Participation in a Traditional IRA is prohibited if modified AGI is above certain limits.";
+			questionsAnimated[1][2]="The tax deductibility of contributions to a Traditional IRA is phased out if modified AGI exceeds certain limits.";
+			questionsAnimated[1][3]="An employee is prohibited from participating in a Roth IRA if the employee also participates in an employer-sponsored plan.";
+			questionsAnimated[1][4]="Neither level of modified AGI nor participation in an employer-sponsored plan can prohibit an individual with earned income from making a contribution to a Traditional IRA.";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			layersAnimated[1][4]="Layer4";
+			
+			//This is the test answer
+			answersAnimated[1]="D";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+		  </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+
+            <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Participation is not prohibited by a person's level of modified AGI, although the deductibility of the contribution might be phased out at certain modified AGI levels IF the person is also a participant in an employer-sponsored plan.  Try again.</div>
+            <div id="Layer2" class="rvAnimatedLayer">Incorrect.  The tax deductibility of contributions is contingent on two factors: modified AGI and whether an individual and/or the spouse is also a participant in an employer-sponsored plan. Try again.</div>
+            <div id="Layer3" class="rvAnimatedLayer">Incorrect.  Participation in an employer-sponsored plan does not prohibit individuals from participation in a Roth IRA.  Try again.</div>
+            <div id="Layer4" class="rvAnimatedLayer">Correct.  Anyone with taxable compensation can make a contribution to an IRA, although these factors may have bearing on the deductibility of the contribution.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Generally speaking, an individual must be under age 70½ to make a contribution to a Roth IRA.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="True";
+			questionsAnimated[2][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer5";
+			layersAnimated[2][2]="Layer6";
+			
+			//This is the test answer
+			answersAnimated[2]="B";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+			<!--
+			// Display Text for Question 2
+			document.write(getQuestionAnimated(2));
+			//-->
+		 </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect. This is only true for the Traditional IRA.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Correct. This is only true for the Traditional IRA.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">For 2016, the maximum contribution an individual aged 58 can make into a Traditional or Roth IRA is:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="$2,500";
+			questionsAnimated[3][2]="$5,500";
+			questionsAnimated[3][3]="$6,500";
+			questionsAnimated[3][4]="$7,500";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer7";
+			layersAnimated[3][2]="Layer8";
+			layersAnimated[3][3]="Layer9";
+			layersAnimated[3][4]="Layer10";
+			
+			//This is the test answer
+			answersAnimated[3]="C";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Correct.  For individuals aged 50 or over, the maximum contribution is $5,500 plus the catch-up contribution of $1,000.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+       </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">Julie is trying to determine if she is eligible to make an IRA contribution, but she is not sure which sources of her income are considered "taxable compensation." She gives you a list of her income sources for the current year and you point out which one is NOT "taxable compensation" for purposes of qualifying for an IRA. It is:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="Salary from employment of $30,000.";
+			questionsAnimated[4][2]="Alimony of $12,000 from her ex-husband";
+			questionsAnimated[4][3]="$3,500 of interest from municipal bonds.";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer11";
+			layersAnimated[4][2]="Layer12";
+			layersAnimated[4][3]="Layer13";
+			
+			//This is the test answer
+			answersAnimated[4]="C";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. Salary is taxable compensation. Try again.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect. Alimony is considered taxable compensation. Try again.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Correct. Earnings and profits from property are not taxable compensation.</div>
+	   </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">Jack and Jackie are married and file jointly. Both are 35. They will jointly receive $98,000 this year (2016) in dividends and interest from investments. Jackie has started an interior design business and will have a net profit of $2,500. Jack does a little consulting and will have a net profit of $6,500. Jack wants to put the maximum contribution into a Roth IRA for Jackie and whatever else he can contribute into a Roth for himself. What would the two contributions be for 2016?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="$4,500 to Jackie’s IRA, $4,500 to Jack’s IRA";
+			questionsAnimated[5][2]="$2,500 to Jackie’s IRA, $5,500 to Jack’s IRA";
+			questionsAnimated[5][3]="$5,500 to Jackie’s IRA, $3,500 to Jack’s IRA";
+			questionsAnimated[5][4]="$2,500 to Jackie’s IRA, $6,500 to Jack’s IRA";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer14";
+			layersAnimated[5][2]="Layer15";
+			layersAnimated[5][3]="Layer16";
+			layersAnimated[5][4]="Layer17";
+			
+			//This is the test answer
+			answersAnimated[5]="C";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Correct. Jackie qualifies for a $2,500 contribution based on her income, but Jack can make a spousal contribution of $3,000 to Jackie's IRA. Jack has $6,500 of taxable compensation, but he "used up" $3,000 of it to fund Jackie's IRA. Thus, Jack can contribute a maximum of $3,500 to his IRA.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  
+</div>
+<!-- coursebody -->
+</body>
+</html>
