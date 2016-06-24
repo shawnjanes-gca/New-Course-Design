@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Review Exercise – Answer Key</title>
+<title>Review Exercise</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
 <script type="text/javascript">
 function MM_showHideLayers() { //v9.0
@@ -23,116 +23,116 @@ function MM_showHideLayers() { //v9.0
     </header>
   </div>
   <!-- PageCourseTitle -->
-  <h1><span class="pagetitle">Review Exercise – Answer Key</span>
+  <h1><span class="pagetitle">Review Exercise</span>
     <!-- pagetitle -->
   </h1>
-  <p>Review the previous pages by answering the following questions.</p>
+  <p><span class="pageInstruction">Review the previous pages by answering the following questions.</span></p>
   <div id="qTable">
     <table>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
-        <td><strong>Asset allocation attempts to diversify away risk without compromising returns.</strong>
-          <p class="questionStyle">
+        <td><p class="questionStyle">Asset allocation attempts to diversify away risk without compromising returns.</p>
+          
           <script language="JavaScript">
-<!--
-// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-function answerCorrect(questionNumber, answer, formName)
-{
-   	// declare a variable to hold return value
-	var correct = false;
-	var questionLength = formName.radQuestionChoice.length;
-	var questionChoice;
-
-   	// if answer provided is same as correct answer then correct variable is true
-   	if (answer == answers[questionNumber])
-      	{correct = true;
-       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
 			{
-			formName.radQuestionChoice[questionChoice].disabled = true;
-
-	  		}
-
-   	// return whether the answer was correct (true or false)
-   	return correct;
-	}
-}
-
-function getQuestion(questionNumber)
-{
-
-   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-   var questionLength = questions[questionNumber].length;
-   var questionChoice;
-
-   questionHTML = questionHTML + "<P>";
-   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-   {
-      questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-      questionHTML = questionHTML + questions[questionNumber][questionChoice];
-      questionHTML = questionHTML + "</label><BR>";
-   }
-   questionHTML = questionHTML + "</P>";
-
-   return questionHTML;
-}
-function buttonCheckQ_onclick(questionNum, formName)
-{
-   var answer = 0;
-   while (formName.radQuestionChoice[answer].checked != true)
-   {
-      answer++;
-   }
-
-   var answer2 = String.fromCharCode(65 + answer);
-   answer++;
-   if (answerCorrect(questionNum,answer2, formName) == true)
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-   else
-   {
-      MM_showHideLayers(layers[questionNum][answer],'','show');
-   }
-}
-
-var questionNumber;
-var questions=new Array();
-var answers=new Array();
-var layers=new Array();
-// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-
-// BEGIN RADIO QUESTION 1 CODE
-var formNumber=new Array();
-formNumber[1]="QuestionForm1";
-questionNumber=1;
-questions[1]=new Array();
-layers[1]=new Array();
-//This is the test question
-questions[1][0]="";
-
-//These are the answer choices
-questions[1][1]="True";
-questions[1][2]="False";
-//These are the associated layers
-layers[1][1]="Layerwbutton1";
-layers[1][2]="Layerwbutton2";
-
-//This is the test answer
-answers[1]="A";
-//-->
-            </script></p>
-          <form name="QuestionForm1">
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumber=new Array();
+			formNumber[1]="QuestionForm1";
+			questionNumber=1;
+			questions[1]=new Array();
+			layers[1]=new Array();
+			//This is the test question
+			questions[1][0]="";
+			
+			//These are the answer choices
+			questions[1][1]="True";
+			questions[1][2]="False";
+			//These are the associated layers
+			layers[1][1]="Layerwbutton1";
+			layers[1][2]="Layerwbutton2";
+			
+			//This is the test answer
+			answers[1]="A";
+			//-->
+            </script>
+   		  <form name="QuestionForm1">
             <script>
-<!--
-// Display Text for Question 1
-document.write(getQuestion(1));
-//-->
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestion(1));
+			//-->
           </script>
           </form>
           <script>
-<!--
-// END RADIO QUESTION 1 CODE
-//-->
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
           </script>
           <!--put Review Layer with Button layers here-->
           <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
@@ -164,50 +164,47 @@ document.write(getQuestion(1));
       </tr>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
-        <td><strong>__________ slightly outperformed __________ over the last 25 years</strong>
-          <p class="questionStyle">
+        <td><p class="questionStyle">__________ slightly outperformed __________ over the last 25 years</p>
+          
             <script language="JavaScript">
-<!--
-// BEGIN RADIO QUESTION 2 CODE
-var formNumber=new Array();
-formNumber[2]="QuestionForm2";
-questionNumber=2;
-questions[2]=new Array();
-layers[2]=new Array();
-//This is the test question
-questions[2][0]="";
-
-//These are the answer choices
-questions[2][1]="Bonds, stocks";
-questions[2][2]="Stocks, bonds";
-questions[2][3]="T-Bills, bonds";
-questions[2][4]="T-Bills, stocks";
-//These are the associated layers
-layers[2][1]="Layerwbutton3";
-layers[2][2]="Layerwbutton4";
-layers[2][3]="Layerwbutton5";
-layers[2][4]="Layerwbutton6";
-
-//This is the test answer
-answers[2]="B";
-//-->
+				<!--
+				// BEGIN RADIO QUESTION 2 CODE
+				var formNumber=new Array();
+				formNumber[2]="QuestionForm2";
+				questionNumber=2;
+				questions[2]=new Array();
+				layers[2]=new Array();
+				//This is the test question
+				questions[2][0]="";
+				
+				//These are the answer choices
+				questions[2][1]="Bonds, stocks";
+				questions[2][2]="Stocks, bonds";
+				questions[2][3]="T-Bills, bonds";
+				questions[2][4]="T-Bills, stocks";
+				//These are the associated layers
+				layers[2][1]="Layerwbutton3";
+				layers[2][2]="Layerwbutton4";
+				layers[2][3]="Layerwbutton5";
+				layers[2][4]="Layerwbutton6";
+				
+				//This is the test answer
+				answers[2]="B";
+				//-->
             </script>
-          </p>
+          
           <form name="QuestionForm2">
             <script>
-<!--
-// Display Text for Question 2
-document.write(getQuestion(2));
-//-->
+				// Display Text for Question 2
+				document.write(getQuestion(2));
+				
           </script>
           </form>
-          <script>
-<!--
-// END RADIO QUESTION 2 CODE
-//-->
-          </script>
+          
+			<!--END RADIO QUESTION 2 CODE-->
+          
           <!--put Review Layer with Button layers here-->
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton3" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -220,7 +217,7 @@ document.write(getQuestion(2));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton4" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -233,7 +230,7 @@ document.write(getQuestion(2));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton5" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -246,7 +243,7 @@ document.write(getQuestion(2));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton6" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -262,50 +259,46 @@ document.write(getQuestion(2));
       </tr>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
-        <td><strong>Which risk involves the volatility in principal value of an investment over a period of</strong><strong> time?</strong>
-          <p class="questionStyle">
+        <td><p class="questionStyle">Which risk involves the volatility in principal value of an investment over a period of time?</p>
+          
             <script language="JavaScript">
-<!--
-// BEGIN RADIO QUESTION 3 CODE
-var formNumber=new Array();
-formNumber[3]="QuestionForm3";
-questionNumber=3;
-questions[3]=new Array();
-layers[3]=new Array();
-//This is the test question
-questions[3][0]="";
-
-//These are the answer choices
-questions[3][1]="Inflation Risk";
-questions[3][2]="Market Risk";
-questions[3][3]="Principal Risk";
-questions[3][4]="Outcome Risk";
-//These are the associated layers
-layers[3][1]="Layerwbutton7";
-layers[3][2]="Layerwbutton8";
-layers[3][3]="Layerwbutton9";
-layers[3][4]="Layerwbutton10";
-
-//This is the test answer
-answers[3]="B";
-//-->
+				<!--
+				// BEGIN RADIO QUESTION 3 CODE
+				var formNumber=new Array();
+				formNumber[3]="QuestionForm3";
+				questionNumber=3;
+				questions[3]=new Array();
+				layers[3]=new Array();
+				//This is the test question
+				questions[3][0]="";
+				
+				//These are the answer choices
+				questions[3][1]="Inflation Risk";
+				questions[3][2]="Market Risk";
+				questions[3][3]="Principal Risk";
+				questions[3][4]="Outcome Risk";
+				//These are the associated layers
+				layers[3][1]="Layerwbutton7";
+				layers[3][2]="Layerwbutton8";
+				layers[3][3]="Layerwbutton9";
+				layers[3][4]="Layerwbutton10";
+				
+				//This is the test answer
+				answers[3]="B";
+				//-->
             </script>
-          </p>
+          
           <form name="QuestionForm3">
             <script>
-<!--
-// Display Text for Question 3
-document.write(getQuestion(3));
-//-->
+				// Display Text for Question 3
+				document.write(getQuestion(3));
           </script>
           </form>
-          <script>
-<!--
-// END RADIO QUESTION 3 CODE
-//-->
-          </script>
+          
+			<!--END RADIO QUESTION 3 CODE-->
+          
           <!--put Review Layer with Button layers here-->
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton7" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -318,7 +311,7 @@ document.write(getQuestion(3));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton8" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -331,7 +324,7 @@ document.write(getQuestion(3));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton9" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -344,7 +337,7 @@ document.write(getQuestion(3));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton10" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -360,44 +353,40 @@ document.write(getQuestion(3));
       </tr>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
-        <td><strong>Real Return is equal to nominal return.  </strong>
-          <p class="questionStyle">
+        <td><p class="questionStyle">Real Return is equal to nominal return.</p>
+         
             <script language="JavaScript">
-<!--
-// BEGIN RADIO QUESTION 4 CODE
-var formNumber=new Array();
-formNumber[4]="QuestionForm4";
-questionNumber=4;
-questions[4]=new Array();
-layers[4]=new Array();
-//This is the test question
-questions[4][0]="";
-
-//These are the answer choices
-questions[4][1]="True";
-questions[4][2]="False";
-//These are the associated layers
-layers[4][1]="Layerwbutton11";
-layers[4][2]="Layerwbutton12";
-
-//This is the test answer
-answers[4]="B";
-//-->
+				<!--
+				// BEGIN RADIO QUESTION 4 CODE
+				var formNumber=new Array();
+				formNumber[4]="QuestionForm4";
+				questionNumber=4;
+				questions[4]=new Array();
+				layers[4]=new Array();
+				//This is the test question
+				questions[4][0]="";
+				
+				//These are the answer choices
+				questions[4][1]="True";
+				questions[4][2]="False";
+				//These are the associated layers
+				layers[4][1]="Layerwbutton11";
+				layers[4][2]="Layerwbutton12";
+				
+				//This is the test answer
+				answers[4]="B";
+				//-->
             </script>
-          </p>
+          
           <form name="QuestionForm4">
             <script>
-<!--
-// Display Text for Question 4
-document.write(getQuestion(4));
-//-->
-          </script>
+			// Display Text for Question 4
+			document.write(getQuestion(4));
+         </script>
           </form>
-          <script>
-<!--
-// END RADIO QUESTION 4 CODE
-//-->
-          </script>
+        
+        <!--END RADIO QUESTION 4 CODE-->
+        
           <!--put Review Layer with Button layers here-->
           <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
             <!--change left and top px depending of where you what the layer box to appear-->
@@ -428,52 +417,47 @@ document.write(getQuestion(4));
       </tr>
       <tr>
         <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
-        <td><strong>In quantifying market risk, what percentage of returns will fall within one standard deviation of the mean?  </strong>
-          <p class="questionStyle">
+        <td><p class="questionStyle">In quantifying market risk, what percentage of returns will fall within one standard deviation of the mean?  </p>
+          
             <script language="JavaScript">
-<!--
-// BEGIN RADIO QUESTION 5 CODE
-var formNumber=new Array();
-formNumber[5]="QuestionForm5";
-questionNumber=5;
-questions[5]=new Array();
-layers[5]=new Array();
-//This is the test question
-questions[5][0]="";
-
-//These are the answer choices
-questions[5][1]="15%";
-questions[5][2]="33%";
-questions[5][3]="50%";
-questions[5][4]="68%";
-questions[5][5]="95%";
-//These are the associated layers
-layers[5][1]="Layerwbutton13";
-layers[5][2]="Layerwbutton14";
-layers[5][3]="Layerwbutton15";
-layers[5][4]="Layerwbutton16";
-layers[5][5]="Layerwbutton17";
-
-//This is the test answer
-answers[5]="D";
-//-->
+				<!--
+				// BEGIN RADIO QUESTION 5 CODE
+				var formNumber=new Array();
+				formNumber[5]="QuestionForm5";
+				questionNumber=5;
+				questions[5]=new Array();
+				layers[5]=new Array();
+				//This is the test question
+				questions[5][0]="";
+				
+				//These are the answer choices
+				questions[5][1]="15%";
+				questions[5][2]="33%";
+				questions[5][3]="50%";
+				questions[5][4]="68%";
+				questions[5][5]="95%";
+				//These are the associated layers
+				layers[5][1]="Layerwbutton13";
+				layers[5][2]="Layerwbutton14";
+				layers[5][3]="Layerwbutton15";
+				layers[5][4]="Layerwbutton16";
+				layers[5][5]="Layerwbutton17";
+				
+				//This is the test answer
+				answers[5]="D";
+				//-->
             </script>
-          </p>
+          
           <form name="QuestionForm5">
             <script>
-<!--
-// Display Text for Question 5
-document.write(getQuestion(5));
-//-->
+				// Display Text for Question 5
+				document.write(getQuestion(5));
           </script>
           </form>
-          <script>
-<!--
-// END RADIO QUESTION 5 CODE
-//-->
-          </script>
+          <!--END RADIO QUESTION 5 CODE-->
+         
           <!--put Review Layer with Button layers here-->
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton13" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -486,7 +470,7 @@ document.write(getQuestion(5));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton14" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -499,7 +483,7 @@ document.write(getQuestion(5));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton15" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -512,7 +496,7 @@ document.write(getQuestion(5));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton16" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -525,7 +509,7 @@ document.write(getQuestion(5));
               </table>
             </div>
           </div>
-          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
             <!--change left and top px depending of where you what the layer box to appear-->
             <div id="Layerwbutton17" class="rvLayerInnerDiv">
               <table class="rvLayerButton">
@@ -537,11 +521,11 @@ document.write(getQuestion(5));
                 </tr>
               </table>
             </div>
-          </div></td>
+          </div>
+        </td>
       </tr>
     </table>
   </div>
-  <p>&nbsp;</p>
 </div>
 <!-- coursebody -->
 </body>
