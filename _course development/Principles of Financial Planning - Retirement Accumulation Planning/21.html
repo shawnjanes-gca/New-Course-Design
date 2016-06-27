@@ -14,6 +14,30 @@ P7_opTTM('id:p7Tooltip_4','att:title','p7TTM09',8,500,2,1,1,0,-7,0,300,0,1,1,0,0
 </script>
 <link href="greene/pfp_retirementaccumulation_planning/p7sml/p7SML-01.css" rel="stylesheet" type="text/css" media="all">
 <script type="text/javascript" src="greene/pfp_retirementaccumulation_planning/p7sml/p7SMLscripts.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -40,46 +64,259 @@ P7_opTTM('id:p7Tooltip_4','att:title','p7TTM09',8,500,2,1,1,0,-7,0,300,0,1,1,0,0
   <a id="p7SML_1" href="#" class="sml-more">Modified Adjusted Gross Income</a>
 <p>Many of your clients will participate in an employer-sponsored retirement plan. You need to understand when they can and cannot deduct contributions to a Traditional IRA. Why? If they cannot deduct their Traditional IRA contribution, a Roth IRA may be a better financial choice! For those reasons, the following detailed review is presented.</p>
   <p>The phase-out begins and ends with the following amounts of modified AGI, depending upon the filing status and whether or not both spouses actively participate in an employer-sponsored plan (remember, if a single taxpayer or both spouses (Married Filing Jointly) are NOT participants in an employer-sponsored plan, they can deduct their Traditional IRA contributions regardless of how high their income might be): <span class="pageInstruction">Click on the 2016 Single or HOH Filer number in chart to learn more.</span></p>
-  <table id="tableAlignLeft">
+  <table id="tableAlignLeft" style="font-size:80%">
     <caption>
-    <strong><center>Traditional IRA Modified AGI Phase-Out of Deductibility</center></strong>
+    Traditional IRA Modified AGI Phase-Out of Deductibility
     </caption>
     <thead>
       <tr>
         <th scope="col" class="table-heading-c1">&nbsp;</th>
-        <th scope="row"><strong><center>All Parties in Employer-Sponsored Plan</center></strong></th>
-        <th scope="row"><strong><center>Only One Spouse in Employer-Sponsored Plan</center></strong></th>
+        <th scope="col" colspan="3" style="text-align:center;">All Parties in Employer-Sponsored Plan</th>
+        <th scope="col" colspan="3" style="text-align:center;">Only One Spouse in Employer-Sponsored Plan</th>
       </tr>
     </thead>
+    <thead>
+    <tr style="text-align:center;">
+      <th scope="col">Year</th>
+      <th scope="col">Single or HOH Filer</th>
+      <th scope="col">Married: Filing Jointly</th>
+      <th scope="col">Married: Filing Separately</th>
+      <th scope="col">Participating Spouse Filing Jointly</th>
+      <th scope="col">Non-Participating Spouse Filing Jointly</th>
+      <th scope="col">Either Spouse Filing Separately</th>
+    </tr>
+    </thead>
     <tr>
-      <th scope="row"><strong><center>Year</center></strong></th>
-      <td><strong><center>Single or HOH Filer</center></strong></td>
-      <td><strong><center>Married: Filing Jointly</center></strong></td>
-      <td><strong><center>Married: Filing Separately</center></strong></td>
-      <td><strong><center>Participating Spouse Filing Jointly</center></strong></td>
-      <td><strong><center>Non-Participating Spouse Filing Jointly</center></strong></td>
-      <td><strong><center>Either Spouse Filing Separately</center></strong></td>
+      <td>2016</td>
+      <td>$61,000-<br/>$71,000</td>
+      <td>$98,000-<br/>$118,000</td>
+      <td>$0-<br/>$10,000</td>
+      <td>$98,000-<br/>$118,000</td>
+      <td>$184,000-<br/>$194,000</td>
+      <td>$0-<br/>$10,000</td>
     </tr>
     <tr>
-      <th scope="row">2016</th>
-      <td>$61,000-$71,000</td>
-      <td>$98,000-$118,000</td>
-      <td>$0-$10,000</td>
-      <td>$98,000-$118,000</td>
-      <td>$184,000-$194,000</td>
-      <td>$0-$10,000</td>
-    </tr>
-    <tr>
-    <th scope="row">2015</th>
-    <td><a href="#" title="&lt;p&gt;As an example, a single, 34-year-old client is an active participant in an employer-sponsored plan. If, in 2016, this person makes a $2,000 contribution to their IRA, then:&lt;/p&gt;  &lt;ul type=&quot;disc&quot;&gt;    &lt;li&gt;With modified AGI of $45,000, the $2,000 contribution would be fully deductible.&lt;/li&gt;    &lt;li&gt;With modified AGI of $67,000, the $2,000 contribution would generate an $800 deduction calculated as follows. &lt;/li&gt;    &lt;div class=&quot;explanation-widget-box&quot;&gt;      &lt;p&gt;To the extent a client&rsquo;s modified AGI encroaches into the phase-out range, a corresponding percentage of the deduction is lost.&lt;br&gt;        The phase-out range of $10,000 occurs from $61,000 to $71,000 (2016).&lt;br&gt;        The client has a modified AGI of $67,000, which encroaches into the phase-out range by $6,000.  &lt;/p&gt;      &lt;ul type=&quot;disc&quot;&gt;        &lt;li&gt;$6,000/$10,000 = 60% encroachment into the phase-out range&lt;/li&gt;        &lt;li&gt;Therefore, 60% of the deductibility is lost.&lt;/li&gt;        &lt;li&gt;Consequently, only 40% of the $2,000 contribution is deductible.&lt;/li&gt;      &lt;/ul&gt;&lt;/div&gt;&lt;li&gt;With modified AGI of $85,000, the $2,000 contribution would not be deductible at all.&lt;/li&gt;  &lt;/ul&gt;" class="p7TTM_trg" id="p7Tooltip_2">$61,000-$71,000</a></td>
-    <td>$98,000-$118,000</td>
-    <td>$0-$10,000</td>
-    <td>$98,000-$118,000</td>
-    <td>$183,000-$193,000</td>
-    <td>$0-$10,000</td>
+    <td>2015</td>
+    <td><a href="#" title="&lt;p&gt;As an example, a single, 34-year-old client is an active participant in an employer-sponsored plan. If, in 2016, this person makes a $2,000 contribution to their IRA, then:&lt;/p&gt;  &lt;ul type=&quot;disc&quot;&gt;    &lt;li&gt;With modified AGI of $45,000, the $2,000 contribution would be fully deductible.&lt;/li&gt;    &lt;li&gt;With modified AGI of $67,000, the $2,000 contribution would generate an $800 deduction calculated as follows. &lt;/li&gt;    &lt;div class=&quot;explanation-widget-box&quot;&gt;      &lt;p&gt;To the extent a client&rsquo;s modified AGI encroaches into the phase-out range, a corresponding percentage of the deduction is lost.&lt;br&gt;        The phase-out range of $10,000 occurs from $61,000 to $71,000 (2016).&lt;br&gt;        The client has a modified AGI of $67,000, which encroaches into the phase-out range by $6,000.  &lt;/p&gt;      &lt;ul type=&quot;disc&quot;&gt;        &lt;li&gt;$6,000/$10,000 = 60% encroachment into the phase-out range&lt;/li&gt;        &lt;li&gt;Therefore, 60% of the deductibility is lost.&lt;/li&gt;        &lt;li&gt;Consequently, only 40% of the $2,000 contribution is deductible.&lt;/li&gt;      &lt;/ul&gt;&lt;/div&gt;&lt;li&gt;With modified AGI of $85,000, the $2,000 contribution would not be deductible at all.&lt;/li&gt;  &lt;/ul&gt;" class="p7TTM_trg" id="p7Tooltip_2">$61,000-<br/>$71,000</a></td>
+    <td>$98,000-<br/>$118,000</td>
+    <td>$0-<br/>$10,000</td>
+    <td>$98,000-<br/>$118,000</td>
+    <td>$183,000-<br/>$193,000</td>
+    <td>$0-<br/>$10,000</td>
     </tr>
   </table>
-  <!-- CREATE REVIEW -->
+  <h3>Try It!</h3>
+  <p><span class="pageInstruction">Using the tables above, answer the following questions, being sure to read the responses if you answer incorrectly.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">A married couple, filing jointly, has modified AGI of $88,000 for 2016. Both are active participants in an employer-sponsored plan. The wife makes a $5,500 contribution to her Traditional IRA.  How much of her contribution is deductible?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="$5,500";
+			questionsAnimated[1][2]="$3,500";
+			questionsAnimated[1][3]="$0";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer14";
+			layersAnimated[1][2]="Layer15";
+			layersAnimated[1][3]="Layer16";
+			
+			//This is the test answer
+			answersAnimated[1]="A";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer14" class="rvAnimatedLayer">Correct. The phase-out for this situation takes place when modified AGI is between $98,000 and $118,000 (2016). Since their modified AGI is $88,000, her contributions are fully deductible.</div>
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">In the preceding example, suppose their 2016 modified AGI is $100,000. In this case, she may deduct how much of her contribution?</p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 2 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[2]="QuestionForm2";
+				questionNumberAnimated=2;
+				questionsAnimated[2]=new Array();
+				layersAnimated[2]=new Array();
+				//This is the test question
+				questionsAnimated[2][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[2][1]="$5,500";
+				questionsAnimated[2][2]="$4,950";
+				questionsAnimated[2][3]="$550";
+				//These are the associated layersAnimated
+				layersAnimated[2][1]="Layer17";
+				layersAnimated[2][2]="Layer18";
+				layersAnimated[2][3]="Layer19";
+				
+				//This is the test answer
+				answersAnimated[2]="B";
+				//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Correct. The phase-out range is $20,000. Their AGI encroaches into the phase-out range by $2,000 in 2016, which is 10% of the range. She loses deductibility for 10% of the contribution and may deduct 90% of the contribution.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Your client Kayla, age 39, is a professional real estate developer with average earnings of $800,000 annually. She is self-employed and is not an active participant in an employer-sponsored retirement plan. How much can she contribute to a Traditional IRA for 2016 and how much can she deduct?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="$0 contribution and $0 deduction";
+			questionsAnimated[3][2]="$5,500 contribution and $0 deduction";
+			questionsAnimated[3][3]="$5,500 contribution and $5,500 deduction";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer20";
+			layersAnimated[3][2]="Layer21";
+			layersAnimated[3][3]="Layer22";
+			
+			//This is the test answer
+			answersAnimated[3]="C";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+			<!--
+			// Display Text for Question 3
+			document.write(getQuestionAnimated(3));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Correct. High earnings do not limit the contribution to a Traditional IRA.  Because she is not an active participant in an employer-sponsored retirement plan, she may deduct the entire contribution.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
 </div>
 <!-- coursebody -->
 </body>
