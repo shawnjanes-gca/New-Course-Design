@@ -10,6 +10,30 @@
 <script type="text/javascript" src="greene/pfp_retirementaccumulation_planning/p7tp3/p7TP3scripts.js"></script>
 <link href="greene/pfp_retirementaccumulation_planning/p7sml/p7SML-01.css" rel="stylesheet" type="text/css" media="all">
 <script type="text/javascript" src="greene/pfp_retirementaccumulation_planning/p7sml/p7SMLscripts.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -71,7 +95,7 @@
     <script type="text/javascript">P7_SMLop('p7SML_1',1,600,'Taxable Compensation','...Show Less',0,0)</script>
   </div>
   <a id="p7SML_1" href="#" class="sml-more">Taxable Compensation</a>
-<p><h3>Traditional &amp; Roth IRAs – Annual Contribution Limits
+<h3>Traditional &amp; Roth IRAs – Annual Contribution Limits
   </h3>
 <p>What is the maximum amount that can be contributed each year to Traditional and Roth IRAs? Various rules may impact an individual&rsquo;s ability to deduct contributions (for Traditional IRAs) or to make any contributions at all (for Roth IRAs).</p>
   
@@ -141,6 +165,269 @@
     </div>
     <script type="text/javascript">P7_opTP3('p7TP3_1',250,0,2,300,0,1,0,1,0,1,0,0,0,2,0,8000,5000,1,0,0,0);</script>
   </div>
+  <h3>Try It!</h3>
+  <p><span class="pageInstruction">Using the tables above, answer the following questions, being sure to read the responses if you answer incorrectly.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">In 2016, a single individual, aged 57, has taxable compensation of $1,500 plus dividends and interest of $30,000.  The maximum this individual can contribute for 2016 to an IRA is:</p>
+       
+          <script language="JavaScript">
+<!--
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrectAnimated(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoiceAnimated.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answersAnimated[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestionAnimated(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+   var questionLength = questionsAnimated[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+      questionHTML = questionHTML + "</label><BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQAnimated_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+   {
+      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+   }
+   else
+   {
+      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+   }
+}
+
+var questionNumberAnimated;
+var questionsAnimated=new Array();
+var answersAnimated=new Array();
+var layersAnimated=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[1]="QuestionForm1";
+questionNumberAnimated=1;
+questionsAnimated[1]=new Array();
+layersAnimated[1]=new Array();
+//This is the test question
+questionsAnimated[1][0]="";
+
+//These are the answer choices
+questionsAnimated[1][1]="$0";
+questionsAnimated[1][2]="$1,500";
+questionsAnimated[1][3]="$5,500";
+questionsAnimated[1][4]="$6,500";
+//These are the associated layersAnimated
+layersAnimated[1][1]="Layer1";
+layersAnimated[1][2]="Layer2";
+layersAnimated[1][3]="Layer3";
+layersAnimated[1][4]="Layer4";
+
+//This is the test answer
+answersAnimated[1]="B";
+//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+<!--
+// Display Text for Question 1
+document.write(getQuestionAnimated(1));
+//-->
+            </script>
+          </form>
+          <script>
+<!--
+// END RADIO QUESTION 1 CODE
+//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+            <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Try again!</div>
+            <div id="Layer2" class="rvAnimatedLayer">Correct.  The 2016 contribution must be the lesser of $6,500 (the $5,500 limit plus the $1,000 catch-up for persons over 50) or taxable compensation.  Since the individual only has $1,500 of taxable compensation, then $1,500 is the maximum the individual can contribute.</div>
+            <div id="Layer3" class="rvAnimatedLayer">Incorrect.  Try again!</div>
+            <div id="Layer4" class="rvAnimatedLayer">Incorrect.  Try again!</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">A married couple, filing a joint income tax return, has Modified Adjusted Gross Income (MAGI) of $85,000 for 2016. His taxable compensation is $84,000. Her taxable compensation is $1,000, which she placed in a Traditional IRA. She also has a Roth IRA. If the wife is 45 years of age, what is the maximum the husband can contribute to the wife's Roth IRA in 2016?</p>
+          <script language="JavaScript">
+<!--
+// BEGIN RADIO QUESTION 2 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[2]="QuestionForm2";
+questionNumberAnimated=2;
+questionsAnimated[2]=new Array();
+layersAnimated[2]=new Array();
+//This is the test question
+questionsAnimated[2][0]="";
+
+//These are the answer choices
+questionsAnimated[2][1]="$0";
+questionsAnimated[2][2]="$4,500";
+questionsAnimated[2][3]="$5,500";
+//These are the associated layersAnimated
+layersAnimated[2][1]="Layer5";
+layersAnimated[2][2]="Layer6";
+layersAnimated[2][3]="Layer7";
+
+//This is the test answer
+answersAnimated[2]="B";
+//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+<!--
+// Display Text for Question 2
+document.write(getQuestionAnimated(2));
+//-->
+            </script>
+          </form>
+          <script>
+<!--
+// END RADIO QUESTION 2 CODE
+//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Correct.  When a married couple files a joint return, the taxable compensation of one spouse can be used to supplement the taxable compensation of the other spouse for the purpose of satisfying the contribution limits. But the contributions for both IRAs must be aggregated. The limit for 2016 is $5,500 and she has already contributed $1,000 to her Traditional IRA, thus the maximum contribution that can be made to her Roth IRA is $4,500.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">A married couple, both aged 55, file separate income tax returns. He has no taxable compensation for 2016 and no modified AGI; she has $28,000 in taxable compensation and $29,000 of modified AGI. What is the maximum that can be contributed to his Traditional IRA?</p>
+          <script language="JavaScript">
+<!--
+// BEGIN RADIO QUESTION 3 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[3]="QuestionForm3";
+questionNumberAnimated=3;
+questionsAnimated[3]=new Array();
+layersAnimated[3]=new Array();
+//This is the test question
+questionsAnimated[3][0]="";
+
+//These are the answer choices
+questionsAnimated[3][1]="$0";
+questionsAnimated[3][2]="$5,500";
+questionsAnimated[3][3]="$6,500";
+//These are the associated layersAnimated
+layersAnimated[3][1]="Layer8";
+layersAnimated[3][2]="Layer9";
+layersAnimated[3][3]="Layer10";
+
+//This is the test answer
+answersAnimated[3]="A";
+//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+<!--
+// Display Text for Question 3
+document.write(getQuestionAnimated(3));
+//-->
+            </script>
+          </form>
+          <script>
+<!--
+// END RADIO QUESTION 3 CODE
+//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer8" class="rvAnimatedLayer">Correct.  They must file a joint return for her taxable compensation to be used in determining the contribution limit to his account. Had they done so, she could have contributed up to $6,500 to his IRA, since he is 55 years of age. But since they filed separately and he has no taxable compensation, no contribution can be made for 2016 into his IRA. Note: She can contribute up to $6,500 into her IRA(s).</div>
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">Professor Moriarity is your client. He is eligible for either a Roth IRA contribution or a deductible Traditional IRA contribution. Which of the following circumstances is LEAST likely to favor a contribution to a Roth IRA?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="His income tax rates in retirement will be higher than current year rates.";
+			questionsAnimated[4][2]="His income tax rates in retirement will be lower than current year rates.";
+			questionsAnimated[4][3]="His income tax rates in retirement will be the same as current year rates";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer11";
+			layersAnimated[4][2]="Layer12";
+			layersAnimated[4][3]="Layer13";
+			
+			//This is the test answer
+			answersAnimated[4]="B";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Correct. Paying relatively high income tax rates now to produce tax-free income at relatively low income tax rates in the future will reduce his after-tax retirement income. </div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;
+  
+  </p>
 </div>
 <!-- coursebody -->
 </body>
