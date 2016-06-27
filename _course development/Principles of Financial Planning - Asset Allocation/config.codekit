@@ -20,20 +20,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/03_image.html": {
+	"\/03.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/03_image.html",
+		"inputAbbreviatedPath": "\/03.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/04_image.html": {
+	"\/04.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/04_image.html",
+		"inputAbbreviatedPath": "\/04.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -47,47 +47,47 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/06_image.html": {
+	"\/06.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/06_image.html",
+		"inputAbbreviatedPath": "\/06.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/07_image.html": {
+	"\/07.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/07_image.html",
+		"inputAbbreviatedPath": "\/07.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/08_image.html": {
+	"\/08.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/08_image.html",
+		"inputAbbreviatedPath": "\/08.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/09_image.html": {
+	"\/09_video.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/09_image.html",
+		"inputAbbreviatedPath": "\/09_video.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/10_image.html": {
+	"\/10.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/10_image.html",
+		"inputAbbreviatedPath": "\/10.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -101,11 +101,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/12_image.html": {
+	"\/12.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/12_image.html",
+		"inputAbbreviatedPath": "\/12.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -128,29 +128,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/15_image.html": {
+	"\/15.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/15_image.html",
+		"inputAbbreviatedPath": "\/15.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/16_image.html": {
+	"\/16.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/16_image.html",
+		"inputAbbreviatedPath": "\/16.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/17_image.html": {
+	"\/17.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/17_image.html",
+		"inputAbbreviatedPath": "\/17.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -164,11 +164,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/19_image.html": {
+	"\/19.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/19_image.html",
+		"inputAbbreviatedPath": "\/19.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -191,11 +191,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/22_image.html": {
+	"\/22.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/22_image.html",
+		"inputAbbreviatedPath": "\/22.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -209,11 +209,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/24_image.html": {
+	"\/24.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/24_image.html",
+		"inputAbbreviatedPath": "\/24.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -254,29 +254,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/29_image.html": {
+	"\/29.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/29_image.html",
+		"inputAbbreviatedPath": "\/29.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/30_image.html": {
+	"\/30.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/30_image.html",
+		"inputAbbreviatedPath": "\/30.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/31_image.html": {
+	"\/31_video.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/31_image.html",
+		"inputAbbreviatedPath": "\/31_video.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -317,20 +317,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/36_image.html": {
+	"\/36.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/36_image.html",
+		"inputAbbreviatedPath": "\/36.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/37_image.html": {
+	"\/37.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/37_image.html",
+		"inputAbbreviatedPath": "\/37.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1692,6 +1692,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/Fireworks\/p7TTM01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60666,
+		"inputAbbreviatedPath": "\/Fireworks\/p7TTM01.png",
+		"outputAbbreviatedPath": "\/Fireworks\/p7TTM01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Fireworks\/p7TTM09.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58459,
+		"inputAbbreviatedPath": "\/Fireworks\/p7TTM09.png",
+		"outputAbbreviatedPath": "\/Fireworks\/p7TTM09.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/greene\/pfp_asset_allocation\/Fireworks\/tp3-arrows.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1710,6 +1732,193 @@
 		"initialSize": 64796,
 		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/Fireworks\/tp3_01.png",
 		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/Fireworks\/tp3_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Beta_Measure_Stocks_Relative_Risk.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3771,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Beta_Measure_Stocks_Relative_Risk.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Beta_Measure_Stocks_Relative_Risk.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Communicating_Impact_Inflation_Risk.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8654,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Communicating_Impact_Inflation_Risk.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Communicating_Impact_Inflation_Risk.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Communicating_Impact_Time.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19753,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Communicating_Impact_Time.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Communicating_Impact_Time.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Correlations_impact_Portfolio_Risk.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15782,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Correlations_impact_Portfolio_Risk.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Correlations_impact_Portfolio_Risk.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Expected_Return_Asset_Classes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18170,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Expected_Return_Asset_Classes.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Expected_Return_Asset_Classes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Importance_Long-term_Perspective.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22635,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Importance_Long-term_Perspective.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Importance_Long-term_Perspective.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Inflation_Risk_Real_Rates_Return.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16172,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Inflation_Risk_Real_Rates_Return.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Inflation_Risk_Real_Rates_Return.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Inputs_Required_Mean_Variance_Optimization.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7498,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Inputs_Required_Mean_Variance_Optimization.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Inputs_Required_Mean_Variance_Optimization.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Market_Risk.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22119,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Market_Risk.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Market_Risk.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Returns_of_the_Market.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21739,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Returns_of_the_Market.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Returns_of_the_Market.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Strategic_Asset_Allocation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13230,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Strategic_Asset_Allocation.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Strategic_Asset_Allocation.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Strategic_Asset_Allocation_Client_Prospect_Example.ai.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80030,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Strategic_Asset_Allocation_Client_Prospect_Example.ai.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Strategic_Asset_Allocation_Client_Prospect_Example.ai.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Tactical_Asset_Allocation.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16540,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Tactical_Asset_Allocation.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Tactical_Asset_Allocation.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/The_Impact_of_Time.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13864,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/The_Impact_of_Time.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/The_Impact_of_Time.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/The_Next_Level.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20826,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/The_Next_Level.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/The_Next_Level.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Understanding_Alpha.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15717,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Understanding_Alpha.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Understanding_Alpha.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_asset_allocation\/images\/Understanding_Security_Market_Line.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18177,
+		"inputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Understanding_Security_Market_Line.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_asset_allocation\/images\/Understanding_Security_Market_Line.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1923,6 +2132,156 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-dueeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 377,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-dueeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-duewest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-duewest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-east.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-east.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-east.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-north.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 411,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-north.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-north.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-northeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 304,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-northwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 301,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-northwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-south.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 389,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-south.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-south.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-southeast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southeast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-southwest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 277,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-southwest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/img\/p7TTM09-west.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403,
+		"inputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-west.png",
+		"outputAbbreviatedPath": "\/p7ttm\/img\/p7TTM09-west.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/p7ttm\/min\/p7TTMscripts-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/p7ttm\/min\/p7TTMscripts-min.js",
+		"outputAbbreviatedPath": "\/p7ttm\/min\/min\/p7TTMscripts-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/p7ttm\/p7TTM01.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/p7ttm\/p7TTM01.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/p7ttm\/p7TTM09.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/p7ttm\/p7TTM09.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/p7ttm\/p7TTMscripts.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/p7ttm\/p7TTMscripts.js",
+		"outputAbbreviatedPath": "\/p7ttm\/min\/p7TTMscripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		}
 	},
 "hooks": [
