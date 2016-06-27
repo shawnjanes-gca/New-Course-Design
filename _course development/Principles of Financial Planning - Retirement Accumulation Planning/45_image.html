@@ -18,6 +18,29 @@ P7_opTTM('id:p7Tooltip_4','att:title','p7TTM09',8,500,2,1,1,0,-7,0,300,0,1,1,0,0
 </script>
 <link href="greene/pfp_retirementaccumulation_planning/p7sml/p7SML-01.css" rel="stylesheet" type="text/css" media="all">
 <script type="text/javascript" src="greene/pfp_retirementaccumulation_planning/p7sml/p7SMLscripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -177,8 +200,132 @@ A basic Charitable Remainder Trust works in the following ways:</p>
   
   <p>The Personal Defined Benefit Plan discussed earlier in this course should also be considered if your client is self-employed.</p>
   <!-- Insert Image to the left of the box. -->
-  <div class="example-box">Consult with your internal compliance team before discussing Spigot Trusts with prospects or clients. Spigot Trusts are complex strategies and should be designed and drafted by an experienced Trust attorney.</div>
+  <div class="example-box"><h3>Caution</h3><p>Consult with your internal compliance team before discussing Spigot Trusts with prospects or clients. Spigot Trusts are complex strategies and should be designed and drafted by an experienced Trust attorney.</p></div>
   <!-- example-box -->
+  
+  <h3>Try It!</h3>
+  <p><span class="pageInstructions">To check your understanding, answer the following:</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">The ideal Spigot Trust prospect is characterized by how many of the following?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Need for supplemental income stream in retirement";
+			questionsAnimated[1][2]="A genuine charitable intent";
+			questionsAnimated[1][3]="A need to reduce income tax and future estate taxes";
+			questionsAnimated[1][4]="All of the above";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			layersAnimated[1][4]="Layer4";
+			
+			//This is the test answer
+			answersAnimated[1]="D";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect. The statement is correct but not the only correct statement.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect. The statement is correct but not the only correct statement.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Incorrect. The statement is correct but not the only correct statement.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+  
 </div>
 <!-- coursebody -->
 </body>
