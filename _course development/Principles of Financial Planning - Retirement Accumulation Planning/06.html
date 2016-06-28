@@ -18,7 +18,17 @@
     <!-- pagetitle -->
   </h1>
   <!-- Insert video. -->
-  <p>If you look up the word &quot;goal&quot; in Dictionary.com, you will see it defined as:</p>
+  <script src="custom/js/emailTrack.js"></script>
+  <!-- GET SPECFIC VARIABLES FROM THE URL AND STORE THEM AS A NEW VARIABLE -->
+  <script>
+        var userEmail = getUrlVars()["userEmail"];
+    </script>
+  <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <div class="wistia_embed wistia_async_lzo8a0g8dr" style="width:720px; height:443px; margin:auto auto;">&nbsp;</div>
+  <script>
+    wistiaEmbed = Wistia.embed("lzo8a0g8dr",{trackEmail: userEmail});
+   </script>
+<p>If you look up the word &quot;goal&quot; in Dictionary.com, you will see it defined as:</p>
   <p><em>The state of affairs that a plan is intended to achieve and that (when achieved) terminates the behavior intended to achieve it.</em></p>
   <p>Thus, a goal must contain sufficient &quot;specificity&quot; to allow a person to: 1) identify an appropriate plan of action; and 2) recognize when it is achieved.</p>
   <p>However, when you begin conversations with clients or prospects about their individual retirement situations, they will typically describe their retirement goals with words such as, &ldquo;I&rsquo;d like to maintain my lifestyle; be comfortable, so to speak.&rdquo;  In other words, their response is likely to be nonspecific and inadequate for the purpose of creating a plan of action.</p>

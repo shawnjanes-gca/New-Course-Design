@@ -18,6 +18,16 @@
     <!-- pagetitle -->
   </h1>
   <!-- Insert Video -->
+  <script src="custom/js/emailTrack.js"></script>
+  <!-- GET SPECFIC VARIABLES FROM THE URL AND STORE THEM AS A NEW VARIABLE -->
+  <script>
+        var userEmail = getUrlVars()["userEmail"];
+    </script>
+  <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <div class="wistia_embed wistia_async_2la9ude0qs" style="width:720px; height:443px; margin:auto auto;">&nbsp;</div>
+  <script>
+    wistiaEmbed = Wistia.embed("2la9ude0qs",{trackEmail: userEmail});
+   </script>
 </div>
 <!-- coursebody -->
 </body>
