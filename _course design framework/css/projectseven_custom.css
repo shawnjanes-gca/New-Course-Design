@@ -5,30 +5,37 @@
 .p7AP3-03 h3{font-family:'Source Sans Pro', sans-serif !important;}
 .p7TP3-01 h2{font-family:'Source Sans Pro', sans-serif !important; color:#000000 !important; font-size:18px !important;}
 
+.p7TTM09 .p7TTMcnt {
+	margin: 6px 0 12px 0;
+	color:#E0EAF1;
+	font-family: Calibri,Arial,Helvetica,sans-serif;
+	font-size: 13pt !important;
+}
+
 .p7TTM09 .p7TTMcnt p {
 	margin: 6px 0 12px 0;
 	color:#E0EAF1;
-	font-family: Calibri,Arial,Helvetica,sans-serif; 
-	font-size: 14px;
+	font-family: Calibri,Arial,Helvetica,sans-serif;
+	font-size: 13pt;
 }
 
 .p7TTM09 .p7TTMcnt ul li {
 	color:#E0EAF1;
-	font-family: Calibri,Arial,Helvetica,sans-serif; 
-	font-size: 14px;
+	font-family: Calibri,Arial,Helvetica,sans-serif;
+	font-size: 13pt;
 }
 
 .p7TTM09 .p7TTMcnt ol li{
 	color:#E0EAF1;
-	font-family: Calibri,Arial,Helvetica,sans-serif; 
-	font-size: 14px;
+	font-family: Calibri,Arial,Helvetica,sans-serif;
+	font-size: 13pt;
 }
 
 .p7TTM09 .p7TTMcnt h3 {
-	 text-transform: uppercase; 
-	 color: #E0EAF1; 
-	 font-weight: 500; 
-	 font-family: Calibri,Arial,Helvetica,sans-serif; 
+	 text-transform: uppercase;
+	 color: #E0EAF1;
+	 font-weight: 500;
+	 font-family: Calibri,Arial,Helvetica,sans-serif;
 }
 
 /*Lighshow Overlay*/
@@ -39,9 +46,9 @@
 }
 
 .p7TTM09 .p7TTMcnt td {
-	color: #E0EAF1; 
-	font-family: Calibri,Arial,Helvetica,sans-serif; 
-	font-size: 14px;
+	color: #E0EAF1;
+	font-family: Calibri,Arial,Helvetica,sans-serif;
+	font-size: 13pt;
 }
 
 .p7AP3-03 ol li{
@@ -50,5 +57,5 @@
 
 .p7MBX-01.light .mbx-slide .p7mbx-content-slide {
     background-color: #FFFFFF !important;
-    color: #ddd;   
+    color: #ddd;
 }
