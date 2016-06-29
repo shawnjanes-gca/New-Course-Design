@@ -254,29 +254,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/29_image.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/29_image.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/30.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/30.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/31.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/31.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -326,38 +308,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/37_image.html": {
+	"\/39.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/37_image.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/38_image.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/38_image.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/39_Image.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/39_Image.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/40_image.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/40_image.html",
+		"inputAbbreviatedPath": "\/39.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -398,11 +353,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/45_image.html": {
+	"\/45.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/45_image.html",
+		"inputAbbreviatedPath": "\/45.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1461,13 +1416,68 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/greene\/pfp_retirement_accumulation\/images\/Crystal_Ball.jpg": {
+	"\/greene\/pfp_retirement_accumulation\/images\/Crystal_Ball_org.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6.5944e+06,
-		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Crystal_Ball.jpg",
-		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Crystal_Ball.jpg",
+		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Crystal_Ball_org.jpg",
+		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Crystal_Ball_org.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_retirement_accumulation\/images\/Defined_Benefit_Plans.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10478,
+		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Defined_Benefit_Plans.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Defined_Benefit_Plans.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_retirement_accumulation\/images\/Defined_Contribution_Plans.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14807,
+		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Defined_Contribution_Plans.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Defined_Contribution_Plans.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_retirement_accumulation\/images\/IRAs_Established_Employers.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7615,
+		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/IRAs_Established_Employers.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/IRAs_Established_Employers.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_retirement_accumulation\/images\/IRS_combined_income_table.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52470,
+		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/IRS_combined_income_table.jpg",
+		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/IRS_combined_income_table.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/greene\/pfp_retirement_accumulation\/images\/Types_of_Qualified_Plans.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5129,
+		"inputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Types_of_Qualified_Plans.png",
+		"outputAbbreviatedPath": "\/greene\/pfp_retirement_accumulation\/images\/Types_of_Qualified_Plans.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
