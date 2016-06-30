@@ -4,13 +4,27 @@
 <meta charset="utf-8">
 <title>Review Exercise</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
-<script type="text/javascript">
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
 }
 </script>
 </head>
@@ -26,721 +40,293 @@ function MM_showHideLayers() { //v9.0
   <h1><span class="pagetitle">Review Exercise</span>
     <!-- pagetitle -->
   </h1>
-  <p>The following chart shows the family tree of Sam and Sarah Parker. Their son, Jack, plans to make a number of transfers.<span class="pageInstruction">  Based on this chart, indicate if the following are skip or non-skip persons for those transfers.</span></p>
+  <p>The following chart shows the family tree of Sam and Sarah Parker. Their son, Jack, plans to make a number of transfers.</p>
   <p style="text-align:center"><img src="greene/pfp_transfer_taxation/images/Review_Exercise.svg" width="520" height="355" alt=""/></p>
-  
-  <p>
-  <div id="opBlockTbl">
+  <div id="qTable">
     <table>
-      <thead>
-      	<tr>
-        <th scope="col" class="firstThRt">&nbsp;</th>
-        <th scope="col"><strong>Skip</strong></th>
-        <!--Column Titles go here-->
-        <th scope="col"><strong>Non-Skip</strong></th>
-        <!--Column Titles go here-->
-        </tr>
-      </thead>
-            <tr>
-              <th scope="row"><div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                <!--change left and top px depending of where you what the layer box to appear-->
-                <div id="Layer1" class="rvLayerInnerDiv">
-                  <table class="rvLayerButton">
-                    <tr>
-                      <td><p>Incorrect.</p>
-                        <p align="center">
-                          <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer1','','hide')">
-                        </p></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-                <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                  <!--change left and top px depending of where you what the layer box to appear-->
-                  <div id="Layer2" class="rvLayerInnerDiv">
-                    <table class="rvLayerButton">
-                      <tr>
-                        <td><p>Correct.</p>
-                          <p align="center">
-                            <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer2','','hide')">
-                          </p></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                   Hilary</th>
-             
-              <script type="text/javascript" language="JavaScript">
-                        // BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-							function answerCorrect(questionNumber, answer, formName)
-							{
-								// declare a variable to hold return value
-								var correct = false;
-								var questionLength = formName.radQuestionChoice.length;
-								var questionChoice;
-							
-								// if answer provided is same as correct answer then correct variable is true
-								if (answer == answers[questionNumber])
-									{correct = true;
-										for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
-										{
-										formName.radQuestionChoice[questionChoice].disabled = true;
-							
-										}
-							
-								// return whether the answer was correct (true or false)
-								return correct;
-								}
-							}
-							
-							function getQuestion(questionNumber)
-							{
-							
-							   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-							   var questionLength = questions[questionNumber].length;
-							   var questionChoice;
-							
-							   questionHTML = questionHTML + "<P>";
-							   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-							   {
-								  questionHTML = questionHTML + "<td><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-								  questionHTML = questionHTML + questions[questionNumber][questionChoice];
-								  questionHTML = questionHTML + "</td>";
-							   }
-							   questionHTML = questionHTML + "</P>";
-							
-							   return questionHTML;
-							}
-							function buttonCheckQ_onclick(questionNum, formName)
-							{
-							   var answer = 0;
-							   while (formName.radQuestionChoice[answer].checked != true)
-							   {
-								  answer++;
-							   }
-							
-							   var answer2 = String.fromCharCode(65 + answer);
-							   answer++;
-							   if (answerCorrect(questionNum,answer2, formName) == true)
-							   {
-								  MM_showHideLayers(layers[questionNum][answer],'','show');
-							   }
-							   else
-							   {
-								  MM_showHideLayers(layers[questionNum][answer],'','show');
-							   }
-							}
-							
-							var questionNumber;
-							
-							var questions=new Array();
-							var answers=new Array();
-							var layers=new Array();
-							// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-							
-							// BEGIN RADIO QUESTION 1 CODE
-							var formNumber=new Array();
-							formNumber[1]="QuestionForm1";
-							questionNumber=1;
-							questions[1]=new Array();
-							layers[1]=new Array();
-							//This is the test question
-							questions[1][0]="";
-							
-							//These are the answer choices
-							questions[1][1]="";
-							questions[1][2]="";
-							//These are the associated layers (make sure layer name matches the one you create)
-							layers[1][1]="Layer1"; 
-							layers[1][2]="Layer2";
-							
-							//This is the test answer (This will be either A or B)
-							answers[1]="B";
-                        
-                        </script>
-              
-                      <div align="center">
-                        <form id="QuestionForm1" name="QuestionForm1">
-                          <!-- Display Text for Question 1-->
-                         <script type="text/javascript">
-						 	document.write(getQuestion(1));
-                         </script>
-                        </form>
-                      </div>
-              		<!--END RADIO QUESTION 1 CODE-->
-         </tr>
       <tr>
-        <th scope="row">
-          <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-            <!--change left and top px depending of where you what the layer box to appear-->
-            <div id="Layer3" class="rvLayerInnerDiv">
-              <table class="rvLayerButton">
-                <tr>
-                  <td><p>Incorrect.</p>
-                    <p align="center">
-                      <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer3','','hide')">
-                    </p></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-            <!--change left and top px depending of where you what the layer box to appear-->
-            <div id="Layer4" class="rvLayerInnerDiv">
-              <table class="rvLayerButton">
-                <tr>
-                  <td><p>Correct.</p>
-                    <p align="center">
-                      <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer4','','hide')">
-                    </p></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        
-         Sue</th>
-        
-        <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 2 CODE
-                    var formNumber=new Array();
-                    formNumber[2]="QuestionForm2";
-                    questionNumber=2;
-                    questions[2]=new Array();
-                    layers[2]=new Array();
-                    //This is the test question
-                    questions[2][0]="";
-                    
-                    //These are the answer choices
-                    questions[2][1]="";
-                    questions[2][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[2][1]="Layer3";
-                    layers[2][2]="Layer4";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[2]="B";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm2" name="QuestionForm2">
-           <script type="text/javascript">
-                    // Display Text for Question 2
-                    document.write(getQuestion(2));
-                    </script>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">From the list below, select the skip person(s) to Jack:</p>
+          
+          <script language="JavaScript">
+			<!--
+			//BEGIN ONE TIME INSERT OBJECTS FOR CHECK BOX TEST QUESTIONS
+			function check_buttonCheckQ(questionNum, formName)
+			{
+				var answer=0;
+				var correctnum=0;
+				var correct="false";
+				var answerlength=check_selection[questionNum].length;
+				for (answerchoice=0; answerchoice<answerlength; answerchoice++)
+					{
+						if (check_selection[questionNum][answerchoice]=="true")
+						{
+							correctnum++;
+						}
+					}
+				var correctnum2=0;
+				for (answerchoice=0; answerchoice<answerlength; answerchoice++)
+					{
+						if (formName.elements[answerchoice].checked==true && check_selection[questionNum][answerchoice]=="true")
+						{
+							correctnum2++;
+						}
+						if (formName.elements[answerchoice].checked==true && check_selection[questionNum][answerchoice]=="false")
+						{
+							correctnum2--;
+						}
+					}
+				if (correctnum==correctnum2)
+				{
+					correct="true"
+				}
+				if (correct=="true")
+				{
+				   showAnimatedLayer(check_layers[questionNum][1], check_layers[questionNum], '100px', '350px', '500px', '', '10px');
+					
+					var form = formName;
+					var elements = form.elements;
+					for (var i = 0, len = elements.length; i < len; ++i) {
+						elements[i].disabled = true;
+					}
+				}
+				else
+				{
+					showAnimatedLayer(check_layers[questionNum][2], check_layers[questionNum], '100px', '350px', '500px', '', '10px');
+				}
+			}
+			function checkgetQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + check_questions[questionNumber][0] + "</B></P>";
+			   var questionLength = check_answers[questionNumber].length;
+			   var questionChoice;
+			
+			   for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=checkbox NAME=checkQuestionChoice" +questionChoice+ ">" + "&nbsp;&nbsp;";
+				  questionHTML = questionHTML + check_answers[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			
+			   return questionHTML;
+			}
+			var check_questions=new Array();
+			var check_answers=new Array();
+			var check_layers=new Array();
+			var check_formNumber=new Array();
+			var check_selection= new Array();
+			// END ONE TIME INSERT OBJECTS FOR CHECK BOX TEST QUESTIONS
+			
+			// BEGIN CHECK BOX QUESTION 1 CODE
+			check_formNumber[1]="fillForm1";
+			check_questions[1]=new Array();
+			check_layers[1]=new Array();
+			check_answers[1]=new Array();
+			check_selection[1]=new Array();
+			//here is the question
+			check_questions[1][0]="";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			check_layers[1][1]="Layer1";
+			check_layers[1][2]="Layer2";
+			//These are the test answers
+			check_answers[1][0]="James";
+			check_answers[1][1]="Anne";
+			check_answers[1][2]="Sue";
+			check_answers[1][3]="Hillary";
+			check_answers[1][4]="Harold";
+			//These are the correct responses (all need to be selected in order to be correct!)
+			check_selection[1][0]="false";
+			check_selection[1][1]="false";
+			check_selection[1][2]="false";
+			check_selection[1][3]="false";
+			check_selection[1][4]="true";
+			
+			//-->
+          </script>
+          <form name="checkForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(checkgetQuestion(1));
+				//-->
+            </script>
+            <br>
+            <input type="button" class="submit-btn-ckbox" value="SUBMIT" name="buttonCheckQ" onClick="return check_buttonCheckQ(1, window.document.checkForm1)">
           </form>
-        </div>
-        <script type="text/javascript">
-             // END RADIO QUESTION 2 CODE
-         </script>
-      </tr>
-      <tr>
-        <th scope="row">
-        <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-          <!--change left and top px depending of where you what the layer box to appear-->
-          <div id="Layer5" class="rvLayerInnerDiv">
-            <table class="rvLayerButton">
-              <tr>
-                <td><p>Correct.</p>
-                  <p align="center">
-                    <input type="submit" name="Submit5" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer5','','hide')">
-                  </p></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-          <!--change left and top px depending of where you what the layer box to appear-->
-          <div id="Layer6" class="rvLayerInnerDiv">
-            <table class="rvLayerButton">
-              <tr>
-                <td><p>Incorrect.</p>
-                  <p align="center">
-                    <input type="submit" name="Submit6" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer6','','hide')">
-                  </p></td>
-              </tr>
-            </table>
-          </div>
-        </div>
+          <script>
+			<!--
+			//END CHECK BOX QUESTION 1 CODE
+			//-->
+          </script>
+          <div id="Layer1" class="rvAnimatedLayer">Correct. James is in the same generation as Jack, Hillary is only one generation below Jack, and Anne and Sue are no longer skip persons due to the predeceased parent rule.</div>
+	      <div id="Layer2" class="rvAnimatedLayer">Incorrect. Try again. [Hint: there is only one skip person listed.]</div>
 
-          Harold</th>
-        
-        <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 3 CODE
-                    var formNumber=new Array();
-                    formNumber[3]="QuestionForm3";
-                    questionNumber=3;
-                    questions[3]=new Array();
-                    layers[3]=new Array();
-                    //This is the test question
-                    questions[3][0]="";
-                    
-                    //These are the answer choices
-                    questions[3][1]="";
-                    questions[3][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[3][1]="Layer5";
-                    layers[3][2]="Layer6";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[3]="A";
-                    </script>
-        <div align="center">
-          <form id="QuestionForm3" name="QuestionForm3">
-           <script type="text/javascript">
-                    // Display Text for Question 3
-                    document.write(getQuestion(3));
-                    </script>
-          </form>
-        </div>
-        <script type="text/javascript">
-           // END RADIO QUESTION 3 CODE
-         </script> 
+	    </td>
       </tr>
       <tr>
-        <th scope="row">
-        <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-          <!--change left and top px depending of where you what the layer box to appear-->
-          <div id="Layer7" class="rvLayerInnerDiv">
-            <table class="rvLayerButton">
-              <tr>
-                <td><p>Incorrect.</p>
-                  <p align="center">
-                    <input type="submit" name="Submit7" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer7','','hide')">
-                  </p></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-          <!--change left and top px depending of where you what the layer box to appear-->
-          <div id="Layer8" class="rvLayerInnerDiv">
-            <table class="rvLayerButton">
-              <tr>
-                <td><p>Correct.</p>
-                  <p align="center">
-                    <input type="submit" name="Submit8" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer8','','hide')">
-                  </p></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-          James</th>
-       
-        <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 4 CODE
-                    var formNumber=new Array();
-                    formNumber[4]="QuestionForm4";
-                    questionNumber=4;
-                    questions[4]=new Array();
-                    layers[4]=new Array();
-                    //This is the test question
-                    questions[4][0]="";
-                    
-                    //These are the answer choices
-                    questions[4][1]="";
-                    questions[4][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[4][1]="Layer7";
-                    layers[4][2]="Layer8";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[4]="B";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm4" name="QuestionForm4">
-            <script type="text/javascript">
-                    // Display Text for Question 4
-                    document.write(getQuestion(4));
-                    </script>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">From the list below, select the skip person(s) to Jack:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN CHECK BOX QUESTION 2 CODE
+			check_formNumber[2]="fillForm2";
+			check_questions[2]=new Array();
+			check_layers[2]=new Array();
+			check_answers[2]=new Array();
+			check_selection[2]=new Array();
+			//here is the question
+			check_questions[2][0]="";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			check_layers[2][1]="Layer3";
+			check_layers[2][2]="Layer4";
+			//These are the test answers
+			check_answers[2][0]="Joyce";
+			check_answers[2][1]="Teresa";
+			check_answers[2][2]="Ellen";
+			check_answers[2][3]="Hillary";
+			check_answers[2][4]="Harold";
+			//These are the correct responses (all need to be selected in order to be correct!)
+			check_selection[2][0]="false";
+			check_selection[2][1]="true";
+			check_selection[2][2]="true";
+			check_selection[2][3]="false";
+			check_selection[2][4]="true";
+			
+			//-->
+          </script>
+          <form name="checkForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(checkgetQuestion(2));
+				//-->
+            </script>
+            <br>
+            <input type="button" class="submit-btn-ckbox" value="SUBMIT" name="buttonCheckQ2" onClick="return check_buttonCheckQ(2, window.document.checkForm2)">
           </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 4 CODE
-        </script>
+          <script>
+			<!--
+			//END CHECK BOX QUESTION 2 CODE
+			//-->
+          </script>
+          <div id="Layer3" class="rvAnimatedLayer">Correct. The predeceased parent rule does not apply to collateral heirs so long as Jack has lineal descendants, therefore Teresa and Ellen are skip persons to Jack, as is Harold.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. Try again. [Hint: remember that the predeceased parent rule does not apply unless there are no lineal descendants; therefore there are three skip persons listed.</div>
+		 
+		</td>
       </tr>
       <tr>
-        <th scope="row"><!--Add Review Exercise Layer w/Button here.  Add  to the div tag with class rvLayerOuterDiv.-->
-          <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-            <!--change left and top px depending of where you what the layer box to appear-->
-            <div id="Layer9" class="rvLayerInnerDiv">
-              <table class="rvLayerButton">
-                <tr>
-                  <td><p>Incorrect.</p>
-                    <p align="center">
-                      <input type="submit" name="Submit9" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer9','','hide')">
-                    </p></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-            <!--change left and top px depending of where you what the layer box to appear-->
-            <div id="Layer10" class="rvLayerInnerDiv">
-              <table class="rvLayerButton">
-                <tr>
-                  <td><p>Correct.</p>
-                    <p align="center">
-                      <input type="submit" name="Submit10" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer10','','hide')">
-                    </p></td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          Joyce</th>
-       
-        <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 5 CODE
-                    var formNumber=new Array();
-                    formNumber[5]="QuestionForm5";
-                    questionNumber=5;
-                    questions[5]=new Array();
-                    layers[5]=new Array();
-                    //This is the test question
-                    questions[5][0]="";
-                    
-                    //These are the answer choices
-                    questions[5][1]="";
-                    questions[5][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[5][1]="Layer9";
-                    layers[5][2]="Layer10";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[5]="B";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm5" name="QuestionForm5">
-            <script type="text/javascript">
-                    // Display Text for Question 5
-                    document.write(getQuestion(5));
-                    </script>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">From the list below, select the skip person(s) to Jack:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN CHECK BOX QUESTION 3 CODE
+			check_formNumber[3]="fillForm3";
+			check_questions[3]=new Array();
+			check_layers[3]=new Array();
+			check_answers[3]=new Array();
+			check_selection[3]=new Array();
+			//here is the question
+			check_questions[3][0]="";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			check_layers[3][1]="Layer5";
+			check_layers[3][2]="Layer6";
+			//These are the test answers
+			check_answers[3][0]="Anne";
+			check_answers[3][1]="Sue";
+			check_answers[3][2]="Harold";
+			check_answers[3][3]="Teresa";
+			check_answers[3][4]="Ellen";
+			//These are the correct responses (all need to be selected in order to be correct!)
+			check_selection[3][0]="false";
+			check_selection[3][1]="false";
+			check_selection[3][2]="true";
+			check_selection[3][3]="true";
+			check_selection[3][4]="true";
+			
+			//-->
+          </script>
+          <form name="checkForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(checkgetQuestion(3));
+				//-->
+            </script>
+            <br>
+            <input type="button" class="submit-btn-ckbox" value="SUBMIT" name="buttonCheckQ3" onClick="return check_buttonCheckQ(3, window.document.checkForm3)">
           </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 5 CODE
-        </script>
+          <script>
+				<!--
+				//END CHECK BOX QUESTION 3 CODE
+				//-->
+          </script>
+          <div id="Layer5" class="rvAnimatedLayer">Correct. Anne and Sue are not skip persons to Jack due to the predeceased parent rule; the rest are skip persons to Jack.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect. Try Again. [Hint: remember that the deceased parent rule only applies to collateral heirs if there are no lineal descendants. In this case, there ARE lineal descendants.]</div>
+
+       </td>
       </tr>
       <tr>
-        <th scope="row">
-        <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-          <!--change left and top px depending of where you what the layer box to appear-->
-          <div id="Layer11" class="rvLayerInnerDiv">
-            <table class="rvLayerButton">
-              <tr>
-                <td><p style="font-size:14px; text-transform:none;text-align:left;margin-left:5px;"><strong>Correct.</strong> The fact that her grandmother is deceased does not change her status relative to Jack as long as he has lineal descendants of his own who are alive.</p>
-                  <p align="center">
-                    <input type="submit" name="Submit11" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer11','','hide')">
-                  </p></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-          <!--change left and top px depending of where you what the layer box to appear-->
-          <div id="Layer12" class="rvLayerInnerDiv">
-            <table class="rvLayerButton">
-              <tr>
-                <td><p style="font-size:14px; text-transform:none;text-align:left;margin-left:5px;"><strong>Incorrect.</strong> Ellen would only move up to a non-skip person relative to Jack if he had no surviving lineal descendants.</p>
-                  <p align="center">
-                    <input type="submit" name="Submit12" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer12','','hide')">
-                  </p></td>
-              </tr>
-            </table>
-          </div>
-        </div>
-          Ellen</th>
-       
-        <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 6 CODE
-                    var formNumber=new Array();
-                    formNumber[6]="QuestionForm6";
-                    questionNumber=6;
-                    questions[6]=new Array();
-                    layers[6]=new Array();
-                    //This is the test question
-                    questions[6][0]="";
-                    
-                    //These are the answer choices
-                    questions[6][1]="";
-                    questions[6][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[6][1]="Layer11";
-                    layers[6][2]="Layer12";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[6]="A";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm6" name="QuestionForm6">
-            <script type="text/javascript">
-                    // Display Text for Question 6
-                    document.write(getQuestion(6));
-                    </script>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">In addition, Jack plans to make distributions to the following non-related persons. If Jack is 50 years old, select all the persons who are skip persons to Jack.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN CHECK BOX QUESTION 4 CODE
+			check_formNumber[4]="fillForm4";
+			check_questions[4]=new Array();
+			check_layers[4]=new Array();
+			check_answers[4]=new Array();
+			check_selection[4]=new Array();
+			//here is the question
+			check_questions[4][0]="";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			check_layers[4][1]="Layer7";
+			check_layers[4][2]="Layer8";
+			//These are the test answers
+			check_answers[4][0]="Steve (age 55)";
+			check_answers[4][1]="Irene (age 30)";
+			check_answers[4][2]="William (age 15)";
+			check_answers[4][3]="Wendy (age 10)";
+			//These are the correct responses (all need to be selected in order to be correct!)
+			check_selection[4][0]="false";
+			check_selection[4][1]="false";
+			check_selection[4][2]="false";
+			check_selection[4][3]="true";
+			
+			//-->
+          </script>
+          <form name="checkForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(checkgetQuestion(4));
+				//-->
+            </script>
+            <br>
+            <input type="button" class="submit-btn-ckbox" value="SUBMIT" name="buttonCheckQ4" onClick="return check_buttonCheckQ(4, window.document.checkForm4)">
           </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 6 CODE
-        </script>
+          <script>
+			<!--
+			//END CHECK BOX QUESTION 4 CODE
+			//-->
+          </script>
+          <div id="Layer7" class="rvAnimatedLayer">Correct. Nonrelated persons are skip-persons ONLY if their age is at least 27 ½ years below the age of the transferor.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. [Remember that non-related skip persons are those persons at least 37 ½ years younger than the donor.]</div>
+        </td>
       </tr>
     </table>
-    <p>In addition, Jack plans to make some transfers to people to whom he is not related. Jack is 50 years old. <span class="pageInstruction">  Indicate if the following persons are skip or non-skip persons relative to Jack.</span></p>
-    <table>
-    
-      <thead>
-      <tr>
-        <th scope="col" class="firstThRt">&nbsp;</th>
-        <th scope="col"><strong>Skip</strong></th>
-        <!--Column Titles go here-->
-        <th scope="col"><strong>Non-Skip</strong></th>
-        <!--Column Titles go here-->
-      </tr>
-      </thead>
-            <tr>
-              <th scope="row"><div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                <!--change left and top px depending of where you what the layer box to appear-->
-                <div id="Layer13" class="rvLayerInnerDiv">
-                  <table class="rvLayerButton">
-                    <tr>
-                      <td><p>Incorrect.</p>
-                        <p align="center">
-                          <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer13','','hide')">
-                        </p></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-                <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                  <!--change left and top px depending of where you what the layer box to appear-->
-                  <div id="Layer14" class="rvLayerInnerDiv">
-                    <table class="rvLayerButton">
-                      <tr>
-                        <td><p>Correct.</p>
-                          <p align="center">
-                            <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer14','','hide')">
-                          </p></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                   Steve (age 55)</th>
-                   <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 7 CODE
-                    var formNumber=new Array();
-                    formNumber[7]="QuestionForm7";
-                    questionNumber=7;
-                    questions[7]=new Array();
-                    layers[7]=new Array();
-                    //This is the test question
-                    questions[7][0]="";
-                    
-                    //These are the answer choices
-                    questions[7][1]="";
-                    questions[7][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[7][1]="Layer13";
-                    layers[7][2]="Layer14";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[7]="B";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm7" name="QuestionForm7">
-            <script type="text/javascript">
-                    // Display Text for Question 7
-                    document.write(getQuestion(7));
-                    </script>
-          </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 7 CODE
-        </script>
-      </tr>
-       <tr>
-              <th scope="row"><div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                <!--change left and top px depending of where you what the layer box to appear-->
-                <div id="Layer15" class="rvLayerInnerDiv">
-                  <table class="rvLayerButton">
-                    <tr>
-                      <td><p>Incorrect.</p>
-                        <p align="center">
-                          <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer15','','hide')">
-                        </p></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-                <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                  <!--change left and top px depending of where you what the layer box to appear-->
-                  <div id="Layer16" class="rvLayerInnerDiv">
-                    <table class="rvLayerButton">
-                      <tr>
-                        <td><p>Correct.</p>
-                          <p align="center">
-                            <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer16','','hide')">
-                          </p></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                   Irene (age 30)</th>
-                   <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 8 CODE
-                    var formNumber=new Array();
-                    formNumber[8]="QuestionForm8";
-                    questionNumber=8;
-                    questions[8]=new Array();
-                    layers[8]=new Array();
-                    //This is the test question
-                    questions[8][0]="";
-                    
-                    //These are the answer choices
-                    questions[8][1]="";
-                    questions[8][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[8][1]="Layer15";
-                    layers[8][2]="Layer16";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[8]="B";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm8" name="QuestionForm8">
-            <script type="text/javascript">
-                    // Display Text for Question 8
-                    document.write(getQuestion(8));
-                    </script>
-          </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 8 CODE
-        </script>
-      </tr>
-      <tr>
-              <th scope="row"><div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                <!--change left and top px depending of where you what the layer box to appear-->
-                <div id="Layer17" class="rvLayerInnerDiv">
-                  <table class="rvLayerButton">
-                    <tr>
-                      <td><p>Incorrect.</p>
-                        <p align="center">
-                          <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer17','','hide')">
-                        </p></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-                <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                  <!--change left and top px depending of where you what the layer box to appear-->
-                  <div id="Layer18" class="rvLayerInnerDiv">
-                    <table class="rvLayerButton">
-                      <tr>
-                        <td><p>Correct.</p>
-                          <p align="center">
-                            <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer18','','hide')">
-                          </p></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                   William (age 15)</th>
-                   <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 9 CODE
-                    var formNumber=new Array();
-                    formNumber[9]="QuestionForm9";
-                    questionNumber=9;
-                    questions[9]=new Array();
-                    layers[9]=new Array();
-                    //This is the test question
-                    questions[9][0]="";
-                    
-                    //These are the answer choices
-                    questions[9][1]="";
-                    questions[9][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[9][1]="Layer17";
-                    layers[9][2]="Layer18";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[9]="B";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm9" name="QuestionForm9">
-            <script type="text/javascript">
-                    // Display Text for Question 9
-                    document.write(getQuestion(9));
-                    </script>
-          </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 9 CODE
-        </script>
-      </tr>
-      
-     <tr>
-              <th scope="row"><div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                <!--change left and top px depending of where you what the layer box to appear-->
-                <div id="Layer19" class="rvLayerInnerDiv">
-                  <table class="rvLayerButton">
-                    <tr>
-                      <td><p style="font-size:14px; text-transform:none;text-align:left;margin-left:5px;"><strong>Correct.</strong>  She is the only one who is more than 37½ years younger than Jack.</p>
-                        <p align="center">
-                          <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer19','','hide')">
-                        </p></td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-                <div class="rvLayerOuterDiv" style="left:355px;top:-15px;">
-                  <!--change left and top px depending of where you what the layer box to appear-->
-                  <div id="Layer20" class="rvLayerInnerDiv">
-                    <table class="rvLayerButton">
-                      <tr>
-                        <td><p style="font-size:14px; text-transform:none;text-align:left;margin-left:5px; "><strong>Incorrect.</strong>  She is over 37½ years younger than Jack, which puts her two generations below him.</p>
-                          <p align="center">
-                            <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layer20','','hide')">
-                          </p></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                   Wendy (age 10)</th>
-                   <script type="text/javascript" language="JavaScript">
-                    // BEGIN RADIO QUESTION 10 CODE
-                    var formNumber=new Array();
-                    formNumber[10]="QuestionForm10";
-                    questionNumber=10;
-                    questions[10]=new Array();
-                    layers[10]=new Array();
-                    //This is the test question
-                    questions[10][0]="";
-                    
-                    //These are the answer choices
-                    questions[10][1]="";
-                    questions[10][2]="";
-                    //These are the associated layers (make sure layer name matches the one you create)
-                    layers[10][1]="Layer19";
-                    layers[10][2]="Layer20";
-                    
-                    //This is the test answer (This will be either A or B)
-                    answers[10]="A";
-                    </script> 
-        <div align="center">
-          <form id="QuestionForm10" name="QuestionForm10">
-            <script type="text/javascript">
-                    // Display Text for Question 10
-                    document.write(getQuestion(10));
-                    </script>
-          </form>
-        </div>
-        <script type="text/javascript">
-            // END RADIO QUESTION 10 CODE
-        </script>
-      </tr>
-    </table>
-  
-  
-
-</div><!--opBlockTbl-->
-</p>
+  </div>
 </div>
 <!-- coursebody -->
 </body>
