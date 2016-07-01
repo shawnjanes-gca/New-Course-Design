@@ -10,7 +10,6 @@
 <script type="text/javascript" src="greene/pfp_retirement_accumulation/p7tp3/p7TP3scripts.js"></script>
 <link href="greene/pfp_retirement_accumulation/p7sml/p7SML-01.css" rel="stylesheet" type="text/css" media="all">
 <script type="text/javascript" src="greene/pfp_retirement_accumulation/p7sml/p7SMLscripts.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script language="JavaScript">
 function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
@@ -34,6 +33,11 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 	});
 }
 </script>
+<script type="text/javascript" src="greene/pfp_retirement_accumulation/p7ttm/p7TTMscripts.js"></script>
+<link href="greene/pfp_retirement_accumulation/p7ttm/p7TTM09.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript">
+P7_opTTM('id:p7Tooltip_1','att:title','p7TTM09',8,500,2,1,1,0,-7,0,300,0,1,1,0,0,0,0);
+</script>
 </head>
 
 <body>
@@ -47,15 +51,13 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
   <h1><span class="pagetitle">Traditional & Roth IRAs – Who Can Set One Up?</span>
     <!-- pagetitle -->
   </h1>
-  <p>Anyone with <strong>taxable compensation</strong> can set up a Roth IRA. Age is not a factor for Roth IRA eligibility. Taxable compensation is also required to set up a Traditional IRA, but there is an age limit as well.</p>
+  <p>Anyone with <a href="#" title="&lt;p&gt;Taxable compensation can generally be viewed as earned income. Earned income is income earned from personal services provided. Do not confuse taxable compensation with unearned income, such as stock dividends and interest. Dividends and interest are NOT forms of compensation - they are forms of investment income. IRA contributions MUST be based solely on the portion of taxable income that is received as compensation earned from personal services. But, as the following table illustrates, taxable compensation for IRA purposes includes income that is not always thought of as “earned.”&lt;/p&gt;" class="p7TTM_trg" id="p7Tooltip_1">taxable compensation</a> can set up a Roth IRA. Age is not a factor for Roth IRA eligibility. Taxable compensation is also required to set up a Traditional IRA, but there is an age limit as well.</p>
   <ul type="disc">
     <li>All individuals with taxable compensation can contribute to a Traditional IRA prior to the calendar year they reach age 70½. </li>
     <li>No contributions to a Traditional IRA can be made in or after the year in which an individual reaches age 70½.</li>
   </ul>
-  <div id="p7SMLcontent_1" class="sml-content">
-    <div id="p7SMLwrapper_1">
-      <p>Taxable compensation can generally be viewed as earned income. Earned income is income earned from personal services provided. Do not confuse taxable compensation with unearned income, such as stock dividends and interest. Dividends and interest are NOT forms of compensation - they are forms of investment income. IRA contributions MUST be based solely on the portion of taxable income that is received as compensation earned from personal services. But, as the following table illustrates, taxable compensation for IRA purposes includes income that is not always thought of as &ldquo;earned.&rdquo;</p>    
-      <table id="tableAlignLeft">
+  
+  <table id="tableAlignLeft">
         <caption>
         <strong>Taxable Compensation</strong>
         </caption>
@@ -84,17 +86,14 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
           <p>Rental income</p>
           <p>Portfolio income such as capital gains, interest income, and dividend income</p></td>   
         </tr>
-      </table>
+  </table>
       <footer>
         <div class="footertext"></div>
         <!-- footertext -->
         <p><em>Source:  Adapted from IRS Publication 590.</em><br clear="all">
         </p>
       </footer>
-    </div>
-    <script type="text/javascript">P7_SMLop('p7SML_1',1,600,'Taxable Compensation','...Show Less',0,0)</script>
-  </div>
-  <a id="p7SML_1" href="#" class="sml-more">Taxable Compensation</a>
+ 
 <h3>Traditional &amp; Roth IRAs – Annual Contribution Limits
   </h3>
 <p>What is the maximum amount that can be contributed each year to Traditional and Roth IRAs? Various rules may impact an individual&rsquo;s ability to deduct contributions (for Traditional IRAs) or to make any contributions at all (for Roth IRAs).</p>
@@ -174,109 +173,109 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
         <td><p class="questionStyle">In 2016, a single individual, aged 57, has taxable compensation of $1,500 plus dividends and interest of $30,000.  The maximum this individual can contribute for 2016 to an IRA is:</p>
        
           <script language="JavaScript">
-<!--
-// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-function answerCorrectAnimated(questionNumber, answer, formName)
-{
-   	// declare a variable to hold return value
-	var correct = false;
-	var questionLength = formName.radQuestionChoiceAnimated.length;
-	var questionChoice;
-
-   	// if answer provided is same as correct answer then correct variable is true
-   	if (answer == answersAnimated[questionNumber])
-      	{correct = true;
-       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
 			{
-			formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
-
-	  		}
-
-   	// return whether the answer was correct (true or false)
-   	return correct;
-	}
-}
-
-function getQuestionAnimated(questionNumber)
-{
-
-   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
-   var questionLength = questionsAnimated[questionNumber].length;
-   var questionChoice;
-
-   questionHTML = questionHTML + "<P>";
-   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-   {
-      questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-      questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
-      questionHTML = questionHTML + "</label><BR>";
-   }
-   questionHTML = questionHTML + "</P>";
-
-   return questionHTML;
-}
-function buttonCheckQAnimated_onclick(questionNum, formName)
-{
-   var answer = 0;
-   while (formName.radQuestionChoiceAnimated[answer].checked != true)
-   {
-      answer++;
-   }
-
-   var answer2 = String.fromCharCode(65 + answer);
-   answer++;
-   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
-   {
-      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
-   }
-   else
-   {
-      showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
-   }
-}
-
-var questionNumberAnimated;
-var questionsAnimated=new Array();
-var answersAnimated=new Array();
-var layersAnimated=new Array();
-// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-
-// BEGIN RADIO QUESTION 1 CODE
-var formNumberAnimated=new Array();
-formNumberAnimated[1]="QuestionForm1";
-questionNumberAnimated=1;
-questionsAnimated[1]=new Array();
-layersAnimated[1]=new Array();
-//This is the test question
-questionsAnimated[1][0]="";
-
-//These are the answer choices
-questionsAnimated[1][1]="$0";
-questionsAnimated[1][2]="$1,500";
-questionsAnimated[1][3]="$5,500";
-questionsAnimated[1][4]="$6,500";
-//These are the associated layersAnimated
-layersAnimated[1][1]="Layer1";
-layersAnimated[1][2]="Layer2";
-layersAnimated[1][3]="Layer3";
-layersAnimated[1][4]="Layer4";
-
-//This is the test answer
-answersAnimated[1]="B";
-//-->
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="$0";
+			questionsAnimated[1][2]="$1,500";
+			questionsAnimated[1][3]="$5,500";
+			questionsAnimated[1][4]="$6,500";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			layersAnimated[1][4]="Layer4";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
           </script>
           <form name="QuestionForm1">
             <script>
-<!--
-// Display Text for Question 1
-document.write(getQuestionAnimated(1));
-//-->
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
             </script>
           </form>
           <script>
-<!--
-// END RADIO QUESTION 1 CODE
-//-->
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
           </script>
           <!--put Review Exercise Layer with Feedback here-->
             <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Try again!</div>
