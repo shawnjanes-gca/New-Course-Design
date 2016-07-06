@@ -159,6 +159,11 @@
 		image="GreeneCustom2\Review Exercise Fillin with Feedback.gif"
 		enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
 		file="GreeneCustom2\Review Exercise Fillin with Feedback.htm"/>
+	<button
+	   	id="Caution Alert Compliance Warning box"
+	   	image="GreeneCustom2\Caution Alert Compliance Warning box.png"
+	   	enabled="!_VIEW_LAYOUT,_VIEW_DESIGN"
+	   	file="GreeneCustom2\Caution Alert Compliance Warning box.htm" />
 	
 	
    </category>
