@@ -59,3 +59,27 @@
     background-color: #FFFFFF !important;
     color: #ddd;
 }
+
+.p7TP3-01-pause-play a {
+	display: block;
+	text-decoration: none;
+	color: #666666;
+	text-transform: none  !important;
+}
+
+.p7TP3_content_01 a {
+	text-transform: none !important;
+	color: #C05F30;
+}
+
+footer {
+    padding-top: 1em;
+    font-size: 12px;
+    font-style: italic; }
+footer .footertext {
+      border-top: 1px dotted #E0EAF1;
+      padding-bottom: 1em;
+      width: 400px; }
+footer p {
+      margin: 0 0 0 0;
+      font-size: 12px !important; }
