@@ -10,7 +10,7 @@ layerno=1;
 function objectTag() {
  var Form = document.LayerForm;
   var retVal='\n'+
-  '<div id="Layer'+layerno+'" class="rvAnimatedLayer">Put your feedback here.</div>\n';
+  '<div id="Layer'+layerno+'" class="rvAnimatedLayer">Correct.  Put your feedback here.</div>\n';
   layerno=layerno+1;
  
   return retVal;
