@@ -2,9 +2,216 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
 </head>
-
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">REview Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Select the correct answer to this question.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Which of the following risks is MOST likely to be covered by liability insurance?</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumber=new Array();
+			formNumber[1]="QuestionForm1";
+			questionNumber=1;
+			questions[1]=new Array();
+			layers[1]=new Array();
+			//This is the test question
+			questions[1][0]="";
+			
+			//These are the answer choices
+			questions[1][1]="Libel and slander in a standard General Business Liability policy ";
+			questions[1][2]="Fraud in a standard Directors and Officers Liability Policy";
+			questions[1][3]="Damages caused by operation of a jet ski under a standard Homeowners Policy or standard Personal Umbrella Policy";
+			questions[1][4]="Gross negligence under a standard Professional Liability (malpractice) Policy";
+			questions[1][5]="Claims by a member of protected class under a standard General Business Liability Policy";
+			//These are the associated layers
+			layers[1][1]="Layerwbutton1";
+			layers[1][2]="Layerwbutton2";
+			layers[1][3]="Layerwbutton3";
+			layers[1][4]="Layerwbutton4";
+			layers[1][5]="Layerwbutton5";
+			
+			//This is the test answer
+			answers[1]="A";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestion(1));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+		  <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+			  <!--change left and top px depending of where you what the layer box to appear-->
+			  <div id="Layerwbutton1" class="rvLayerInnerDiv">
+			    <table class="rvLayerButton">
+			      <tr>
+			        <td><p>Correct!</p>
+			          <p align="center">
+			            <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
+		              </p></td>
+		          </tr>
+		        </table>
+		    </div>
+		  </div>
+		  <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+		    <!--change left and top px depending of where you what the layer box to appear-->
+		    <div id="Layerwbutton2" class="rvLayerInnerDiv">
+		      <table class="rvLayerButton">
+		        <tr>
+		          <td><p>Incorrect.  Try again.</p>
+		            <p align="center">
+		              <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
+	                </p></td>
+	            </tr>
+	          </table>
+	        </div>
+	      </div>
+		  <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+		    <!--change left and top px depending of where you what the layer box to appear-->
+		    <div id="Layerwbutton3" class="rvLayerInnerDiv">
+		      <table class="rvLayerButton">
+		        <tr>
+		          <td><p>Incorrect.  Try again.</p>
+		            <p align="center">
+		              <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton3','','hide')">
+	                </p></td>
+	            </tr>
+	          </table>
+	        </div>
+	      </div>
+		  <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+		    <!--change left and top px depending of where you what the layer box to appear-->
+		    <div id="Layerwbutton4" class="rvLayerInnerDiv">
+		      <table class="rvLayerButton">
+		        <tr>
+		          <td><p>Incorrect.  Try again.</p>
+		            <p align="center">
+		              <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton4','','hide')">
+	                </p></td>
+	            </tr>
+	          </table>
+	        </div>
+	      </div>
+		  <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+		    <!--change left and top px depending of where you what the layer box to appear-->
+		    <div id="Layerwbutton5" class="rvLayerInnerDiv">
+		      <table class="rvLayerButton">
+		        <tr>
+		          <td><p>Incorrect.  Try again.</p>
+		            <p align="center">
+		              <input type="submit" name="Submit5" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton5','','hide')">
+	                </p></td>
+	            </tr>
+	          </table>
+	        </div>
+	      </div>
+		</td>
+      </tr>
+    </table>
+  </div>
+  <p><strong><em>Congratulations, you have now completed your study of asset protection  tools and strategies.  Our focus now  turns to the key steps in building an effective AP plan.</em></strong></p>
+ 
+</div>
+<!-- coursebody -->
 </body>
 </html>
