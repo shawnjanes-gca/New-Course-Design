@@ -2,9 +2,275 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Select the correct answer to each question.</span></p>
+  <p>Paragraph 2</p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Which of the following is (are) disadvantages of the Joint Tenancy with Rights of Survivorship form?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="The joint tenant loses testamentary control over the property.";
+			questionsAnimated[1][2]="The joint tenant may lose lifetime control of the property.";
+			questionsAnimated[1][3]="The entire JTWROS property may be exposed to claims of any of the joint tenants.";
+			questionsAnimated[1][4]="All of the above";
+			questionsAnimated[1][5]="A and B only";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer30";
+			layersAnimated[1][2]="Layer31";
+			layersAnimated[1][3]="Layer32";
+			layersAnimated[1][4]="Layer33";
+			layersAnimated[1][5]="Layer34";
+			
+			//This is the test answer
+			answersAnimated[1]="D";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer30" class="rvAnimatedLayer">Incorrect. This is a true statement; however, this is not the only disadvantage.  Try again.</div>
+          <div id="Layer31" class="rvAnimatedLayer">Incorrect. This is a true statement; however, this is not the only disadvantage.  Depending upon state law and the type of asset, each joint tenant may have complete control over the asset. Try again.</div>
+          <div id="Layer32" class="rvAnimatedLayer">Incorrect.  This is a true statement; however, this is not the only disadvantage.  The greater the number of joint tenants, the greater the risk of attack by their creditors. Try again.</div>
+          <div id="Layer33" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer34" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Your client seeks asset protection and has heard that a Tenancy by the Entirety is the best way to protect marital assets.  Which of the following cautions, if any, would you express to your client?</p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 2 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[2]="QuestionForm2";
+				questionNumberAnimated=2;
+				questionsAnimated[2]=new Array();
+				layersAnimated[2]=new Array();
+				//This is the test question
+				questionsAnimated[2][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[2][1]="Tenancy by the Entirety is not allowed in all states";
+				questionsAnimated[2][2]="Tenancy by the Entirety may not be an effective protection from divorce claims.";
+				questionsAnimated[2][3]="The type of property allowed in a Tenancy by the Entirety is severely restricted.";
+				questionsAnimated[2][4]="A personal residence owned in a Tenancy by the Entirety may not be fully protected from joint creditors.";
+				questionsAnimated[2][5]="All of the above";
+				//These are the associated layersAnimated
+				layersAnimated[2][1]="Layer35";
+				layersAnimated[2][2]="Layer36";
+				layersAnimated[2][3]="Layer37";
+				layersAnimated[2][4]="Layer38";
+				layersAnimated[2][5]="Layer39";
+				
+				//This is the test answer
+				answersAnimated[2]="E";
+				//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+			<!--
+			// Display Text for Question 2
+			document.write(getQuestionAnimated(2));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer35" class="rvAnimatedLayer">Incorrect. This is a true statement; however, this is not the only true statement.  Try again.</div>
+          <div id="Layer36" class="rvAnimatedLayer">Incorrect. This is a true statement; however, this is not the only true statement.  Try again.</div>
+          <div id="Layer37" class="rvAnimatedLayer">Incorrect. This is a true statement; however, this is not the only true statement.  Try again.</div>
+          <div id="Layer38" class="rvAnimatedLayer">Incorrect. This is a true statement; however, this is not the only true statement.  Remember that not all states allowing the TBE form provide complete protection for a personal residence against joint creditors. Try again.</div>
+          <div id="Layer39" class="rvAnimatedLayer">Correct.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Which of the following, if any, could be viewed as an advantage of a Tenancy in Common over a Joint Tenancy with Rights of Survivorship? </p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="Protection from creditors of individual joint tenants";
+			questionsAnimated[3][2]="Ability to control the property at death through provisions in the decedent's Last Will and Testament";
+			questionsAnimated[3][3]="Desire for unequal ownership interests";
+			questionsAnimated[3][4]="B and C only.";
+			questionsAnimated[3][5]="None of the above";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer40";
+			layersAnimated[3][2]="Layer41";
+			layersAnimated[3][3]="Layer42";
+			layersAnimated[3][4]="Layer43";
+			layersAnimated[3][5]="Layer44";
+			
+			//This is the test answer
+			answersAnimated[3]="D";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer40" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer41" class="rvAnimatedLayer">Incorrect.  This is a true statement, but not the only true statement.</div>
+          <div id="Layer42" class="rvAnimatedLayer">Incorrect.  This is a true statement, but not the only true statement.</div>
+          <div id="Layer43" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer44" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+</div>
+<!-- coursebody -->
 </body>
 </html>

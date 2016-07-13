@@ -2,9 +2,272 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Select the correct answer to each question.</span></p>
+  
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">An automobile is an example of:</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Real property only";
+			questionsAnimated[1][2]="Tangible property only";
+			questionsAnimated[1][3]="Personal property only";
+			questionsAnimated[1][4]="Both A and B";
+			questionsAnimated[1][5]="Both B and C";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer17";
+			layersAnimated[1][2]="Layer18";
+			layersAnimated[1][3]="Layer19";
+			layersAnimated[1][4]="Layer20";
+			layersAnimated[1][5]="Layer21";
+			
+			//This is the test answer
+			answersAnimated[1]="E";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.  Real property is land and whatever is erected upon it, growing on it, or affixed to it.  Try again.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect.  While an automobile IS tangible property, this is not the ONLY acceptable choice.  Try again.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect.  While an automobile IS personal property, this is not the ONLY acceptable choice.  Try again.</div>
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect.  Real property is land and whatever is erected upon it, growing on it, or affixed to it.  Try again.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Correct.  An automobile is both personal property and tangible property.</div>
+       
+          
+         </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">A stock certificate is an example of:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="Personal property only";
+			questionsAnimated[2][2]="Tangible property only";
+			questionsAnimated[2][3]="Intangible property only";
+			questionsAnimated[2][4]="Both A and B";
+			questionsAnimated[2][5]="Both A and C";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer22";
+			layersAnimated[2][2]="Layer23";
+			layersAnimated[2][3]="Layer24";
+			layersAnimated[2][4]="Layer25";
+			layersAnimated[2][5]="Layer26";
+			
+			//This is the test answer
+			answersAnimated[2]="E";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer22" class="rvAnimatedLayer">Incorrect.  While a stock certificate IS personal property, this is not the ONLY acceptable choice.  Try again.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect.  Although the certificate itself has physical form, its value is not intrinsic.  Therefore, it is not classified as tangible property.  Try again.</div>
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect.  While the certificate IS intangible property, this is not the ONLY acceptable choice.  Try again.</div>
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect.  Although the certificate itself has physical form, its value is not intrinsic. The real value lies in the intangible ownership interest represented by the stock certificate. Therefore, it is not classified as tangible property.  Try again.</div>
+          <div id="Layer26" class="rvAnimatedLayer">Correct.  A stock certificate is personal property and also intangible property.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Which of the following is a not a possible property type?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="Intangible real property";
+			questionsAnimated[3][2]="Tangible personal property";
+			questionsAnimated[3][3]="Intangible personal property";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer27";
+			layersAnimated[3][2]="Layer28";
+			layersAnimated[3][3]="Layer29";
+			
+			//This is the test answer
+			answersAnimated[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+			<!--
+			// Display Text for Question 3
+			document.write(getQuestionAnimated(3));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer27" class="rvAnimatedLayer">Correct.  Land and property attached thereto are by definition tangible.</div>
+          <div id="Layer28" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer29" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <p><strong><em>You have now completed the study of types of property. Next up you will  learn how forms of property ownership contribute to an effective AP plan. </em></strong></p>
+</div>
+<!-- coursebody -->
 </body>
 </html>

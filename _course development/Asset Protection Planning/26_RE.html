@@ -2,9 +2,222 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Select the correct answer to each question.</span></p>
+  
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Why would you recommend an LLC ownership form over an FLP ownership form?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Personal assets of an LLC manager are not exposed to creditors of the LLC,  while a natural person general partner's personal assets are exposed to partnership creditors.";
+			questionsAnimated[1][2]="Personal assets of an LLC member are not exposed to creditors of the LLC, while personal assets of a limited partner are exposed to partnership creditors.";
+			questionsAnimated[1][3]="Flow-through taxation";
+			questionsAnimated[1][4]="Legal reliability";
+			questionsAnimated[1][5]="All of the above";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer60";
+			layersAnimated[1][2]="Layer61";
+			layersAnimated[1][3]="Layer62";
+			layersAnimated[1][4]="Layer63";
+			layersAnimated[1][5]="Layer64";
+			
+			//This is the test answer
+			answersAnimated[1]="A";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer60" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer61" class="rvAnimatedLayer">Incorrect. The personal assets of a limited partner are not exposed to partnership creditors. Try again.</div>
+          <div id="Layer62" class="rvAnimatedLayer">Incorrect. This is not a distinguishing factor as the LLC may generally elect flow-through taxation. Try again.</div>
+          <div id="Layer63" class="rvAnimatedLayer">Incorrect. FLPs have a century of statutory and case law to rely upon. LLCs began with enactment by one state in 1977 and have not been tested by the courts as has the FLP. Try again.</div>
+          <div id="Layer64" class="rvAnimatedLayer">Incorrect.  Try again.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Some states allow an LLC owner's judgment creditors to use foreclosure as an alternative to a charging order. What strategy is a potential countermeasure?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="Use an FLP ownership form instead";
+			questionsAnimated[2][2]="Use a corporate ownership form instead";
+			questionsAnimated[2][3]="Form the LLC in a state that limits the remedy of a judgment creditor to a charging order and does not allow foreclosure.";
+			questionsAnimated[2][4]="Rely upon the concept of phantom income to discourage foreclosure";
+			questionsAnimated[2][5]="All of the above";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer65";
+			layersAnimated[2][2]="Layer66";
+			layersAnimated[2][3]="Layer67";
+			layersAnimated[2][4]="Layer68";
+			layersAnimated[2][5]="Layer69";
+			
+			//This is the test answer
+			answersAnimated[2]="C";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer65" class="rvAnimatedLayer">Incorrect. Generally, if foreclosure is allowed against an FLP interest, it is also allowed against an LLC interest. Try again.</div>
+        <div id="Layer66" class="rvAnimatedLayer">Incorrect. Corporate assets are generally subject to seizure by judgment creditors - this provides approximately as great a risk as foreclosure upon FLP and LLC assets. Try again.</div>
+        <div id="Layer67" class="rvAnimatedLayer">Correct. Most states recognize LLCs formed in other states.</div>
+        <div id="Layer68" class="rvAnimatedLayer">Incorrect. The concept of phantom income applies primarily to holding an uncollected charging order and generally applies equally to both LLCs and FLPs. Try again.</div>
+        <div id="Layer69" class="rvAnimatedLayer">Incorrect.</div>
+      </td>
+      </tr>
+    </table>
+  </div>
+ 
+</div>
+<!-- coursebody -->
 </body>
 </html>
