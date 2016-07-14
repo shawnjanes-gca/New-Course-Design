@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <title>Review Exercise</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -17,9 +40,364 @@
   <h1><span class="pagetitle">Review Exercise</span>
     <!-- pagetitle -->
   </h1>
-  <p>Paragraph 1</p>
-  <p>Paragraph 2</p>
-  <p>And so forth...</p>
+  <p><span class="pageInstruction">Select the correct answer to each question.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">George is single and earns $6,000 per month. In the event he lost his job or was unable to work, he figures he would need $4,000 per month to pay his bills. He has no other source of income other than his salary. He has $8,000 in his checking account and $4,000 in a Money Market fund. His assets are relatively nominal. How large should George's emergency fund be?</p>
+  
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="$12,000";
+			questionsAnimated[1][2]="$18,000";
+			questionsAnimated[1][3]="$24,000";
+			questionsAnimated[1][4]="$48,000";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer56";
+			layersAnimated[1][2]="Layer57";
+			layersAnimated[1][3]="Layer58";
+			layersAnimated[1][4]="Layer59";
+			
+			//This is the test answer
+			answersAnimated[1]="C";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer56" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer57" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer58" class="rvAnimatedLayer">Correct!  The calculation is six months times $4,000 per month totals $24,000.</div>
+          <div id="Layer59" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">From the question above, what is George's current Emergency Fund Ratio?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]=".50";
+			questionsAnimated[2][2]="3.00";
+			questionsAnimated[2][3]="6.00";
+			questionsAnimated[2][4]="4.00";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer60";
+			layersAnimated[2][2]="Layer61";
+			layersAnimated[2][3]="Layer62";
+			layersAnimated[2][4]="Layer63";
+			
+			//This is the test answer
+			answersAnimated[2]="B";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer60" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer61" class="rvAnimatedLayer">Correct!  The calculation is $12,000 divided by $4,000.</div>
+          <div id="Layer62" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer63" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Mary and Manny are married. They both earn about $60,000 per year. Their "required" monthly living expenses are $7,500 per month. Neither spouse has an additional source of income other than their earnings. Mary averages a $2,400 balance in her checking account. Manny's checking account usually runs close to zero, but he has a $3,000 balance in a savings account. How large should Mary and Manny's Emergency Fund be?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="$22,500";
+			questionsAnimated[3][2]="$45,000";
+			questionsAnimated[3][3]="$15,000";
+			questionsAnimated[3][4]="$30,000";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer64";
+			layersAnimated[3][2]="Layer65";
+			layersAnimated[3][3]="Layer66";
+			layersAnimated[3][4]="Layer67";
+			
+			//This is the test answer
+			answersAnimated[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer64" class="rvAnimatedLayer">Correct! The calculation is three months times $7,500 totals $22,500.</div>
+          <div id="Layer65" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer66" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer67" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">From the question above, what is Mary and George's current Emergency Fund Ratio?</p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 4 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[4]="QuestionForm4";
+				questionNumberAnimated=4;
+				questionsAnimated[4]=new Array();
+				layersAnimated[4]=new Array();
+				//This is the test question
+				questionsAnimated[4][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[4][1]=".24";
+				questionsAnimated[4][2]=".09";
+				questionsAnimated[4][3]=".72";
+				questionsAnimated[4][4]="1.39";
+				//These are the associated layersAnimated
+				layersAnimated[4][1]="Layer68";
+				layersAnimated[4][2]="Layer69";
+				layersAnimated[4][3]="Layer70";
+				layersAnimated[4][4]="Layer71";
+				
+				//This is the test answer
+				answersAnimated[4]="C";
+				//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer68" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer69" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer70" class="rvAnimatedLayer">Correct!  The calculation is $5,400 divided by $7,500.</div>
+          <div id="Layer71" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">Boris has current assets totaling $125,000. His current liabilities total $250,000. What is his Current Ratio?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]=".50";
+			questionsAnimated[5][2]="2.00";
+			questionsAnimated[5][3]="1.00";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer72";
+			layersAnimated[5][2]="Layer73";
+			layersAnimated[5][3]="Layer74";
+			
+			//This is the test answer
+			answersAnimated[5]="A";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer72" class="rvAnimatedLayer">Correct!  The calculation is $125,000 divided by $250,000..</div>
+          <div id="Layer73" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer74" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">Samantha is wanting to purchase a house and is applying for a mortgage. Her monthly housing expenses on the new house would be $2,400 (principal and interest, escrow deposits for taxes, hazard insurance, mortgage insurance premium, homeowners' dues, etc.). In addition, she has monthly charge card and car loan payments totaling $1,200. Her lender requires her to meet debt ratios of 31/43, where 31% is the debt ratio for her housing expense and 43% is her total debt ratio including her housing expense. If Samantha has monthly gross income of $8,000, can she qualify for the loan based upon the ratio limits?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="Yes";
+			questionsAnimated[6][2]="No";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer75";
+			layersAnimated[6][2]="Layer76";
+			
+			//This is the test answer
+			answersAnimated[6]="B";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer75" class="rvAnimatedLayer">Incorrect. Samantha meets the first limit regarding her housing expense with a 30% ratio ($2,400 ÷ $8,000), but her total debt-to-income ratio is 45% ($3,600 ÷ $8,000), which exceeds the lender's 43% limit.</div>
+          <div id="Layer76" class="rvAnimatedLayer">Correct!  Samantha meets the first limit regarding her housing expense with a 30% ratio ($2,400 ÷ $8,000), but her total debt-to-income ratio is 45% ($3,600 ÷ $8,000), which exceeds the lender's 43% limit.</div>
+&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+ 
 </div>
 <!-- coursebody -->
 </body>
