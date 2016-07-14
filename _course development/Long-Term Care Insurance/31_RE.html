@@ -1,0 +1,809 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Select the correct answer for each question.</span></p>
+  
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">A qualified LTCi policy specifies that eligibility for long-term care benefits is based on the number of Activities of Daily Living (ADLs) a person cannot perform or on cognitive limitations (IADLs)</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumber=new Array();
+			formNumber[1]="QuestionForm1";
+			questionNumber=1;
+			questions[1]=new Array();
+			layers[1]=new Array();
+			//This is the test question
+			questions[1][0]="";
+			
+			//These are the answer choices
+			questions[1][1]="True";
+			questions[1][2]="False";
+			//These are the associated layers
+			layers[1][1]="Layerwbutton1";
+			layers[1][2]="Layerwbutton2";
+			
+			//This is the test answer
+			answers[1]="A";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestion(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton1" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton2" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">The vast majority of people requiring assistance with ADL or IADL tasks in the United States are over age 65.</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="True";
+			questionsAnimated[2][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer1";
+			layersAnimated[2][2]="Layer2";
+			
+			//This is the test answer
+			answersAnimated[2]="A";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect. According to research sponsored by the U.S. National Institutes of Health in the late 1990s, "In 1994, over 3.3 million persons aged 18-64 living in the community received assistance with ADL or IADL tasks, compared with 3.8 million community dwelling persons aged 65 and over." </div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Licensed facilities that provide skilled, intermediate, and custodial care services are:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="Nursing homes";
+			questionsAnimated[3][2]="Assisted Living Facilities";
+			questionsAnimated[3][3]="Adult Day Care";
+			questionsAnimated[3][4]="All of the above";
+			questionsAnimated[3][5]="None of the above";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer3";
+			layersAnimated[3][2]="Layer4";
+			layersAnimated[3][3]="Layer5";
+			layersAnimated[3][4]="Layer6";
+			layersAnimated[3][5]="Layer7";
+			
+			//This is the test answer
+			answersAnimated[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer3" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. Assisted living facilities provide supportive services and assistance with Activities of Daily Living (ADLs) for residents who are not able to live by themselves because of physical or cognitive limitations, but do not require constant care or significant medical care. Try again.</div>
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect. Adult day care centers provide social, some medical, assisted living, therapeutic, and rehabilitative services for individuals with physical or mental limitations. Try again.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">All of the following are potential services that an LTCi policy would cover EXCEPT:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="Home health care";
+			questionsAnimated[4][2]="Adult Day Care";
+			questionsAnimated[4][3]="Daily Money Managers";
+			questionsAnimated[4][4]="Assisted Living Facility";
+			questionsAnimated[4][5]="None of the above. All are potential services an LTCi policy would cover.";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer8";
+			layersAnimated[4][2]="Layer9";
+			layersAnimated[4][3]="Layer10";
+			layersAnimated[4][4]="Layer11";
+			layersAnimated[4][5]="Layer21";
+			
+			//This is the test answer
+			answersAnimated[4]="E";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 4 CODE
+				//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. This would typically be covered by an LTCi policy. Try again.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect. This would typically be covered by an LTCi policy. Try again.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect. This would typically be covered by an LTCi policy. Try again.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. This would typically be covered by an LTCi policy. Try again.</div>
+        <div id="Layer21" class="rvAnimatedLayer">Correct!</div>        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">According to a study by the National Institutes of Health, which of the following long-term care services provided in 2004 had the greatest estimated value?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="Family care at home";
+			questionsAnimated[5][2]="Professional Home Care";
+			questionsAnimated[5][3]="Nursing Home Care";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer12";
+			layersAnimated[5][2]="Layer13";
+			layersAnimated[5][3]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[5]="A";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer12" class="rvAnimatedLayer">Correct! Estimated cost: $149 Billion to $483 Billion.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect. Estimated cost: $49 Billion. Try again.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect. Estimated cost: $115 Billion. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">All of the following are potential public resources to pay for at least some long-term care expenses EXCEPT:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="Medicaid";
+			questionsAnimated[6][2]="Medicare";
+			questionsAnimated[6][3]="Veterans Administation Health Care";
+			questionsAnimated[6][4]="Medigap insurance";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer15";
+			layersAnimated[6][2]="Layer16";
+			layersAnimated[6][3]="Layer17";
+			layersAnimated[6][4]="Layer18";
+			
+			//This is the test answer
+			answersAnimated[6]="D";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect. Medicaid is a substantial provider of limited LTC services for the indigent. Try again.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect. Medicare provides limited LTC services. Try again.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect. The VA Health Care system provides varying LTC services to veterans. Try again.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Correct. Medigap insurance is private insurance coverage to supplement Medicare coverage.</div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">Medicare provides adequate assisted living care services.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[7]="QuestionForm7";
+			questionNumberAnimated=7;
+			questionsAnimated[7]=new Array();
+			layersAnimated[7]=new Array();
+			//This is the test question
+			questionsAnimated[7][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[7][1]="True";
+			questionsAnimated[7][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[7][1]="Layer19";
+			layersAnimated[7][2]="Layer20";
+			
+			//This is the test answer
+			answersAnimated[7]="B";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestionAnimated(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect. Medicare provides virtually no assisted living care.</div>
+          <div id="Layer20" class="rvAnimatedLayer">Correct! Medicare provides virtually no assisted living care.</div>
+	  </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">LTCi policies can be issued as a "Reimbursement" type of policy or a cash payment of "Cash Indemnity" type of policy. Which type is the most common?</p>
+            <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 8 CODE
+				var formNumber=new Array();
+				formNumber[8]="QuestionForm8";
+				questionNumber=8;
+				questions[8]=new Array();
+				layers[8]=new Array();
+				//This is the test question
+				questions[8][0]="";
+				
+				//These are the answer choices
+				questions[8][1]="Reimbursement";
+				questions[8][2]="Cash Indemnity";
+				//These are the associated layers
+				layers[8][1]="Layerwbutton3";
+				layers[8][2]="Layerwbutton4";
+				
+				//This is the test answer
+				answers[8]="A";
+				//-->
+            </script>
+        
+          <form name="QuestionForm8">
+            <script>
+			<!--
+			// Display Text for Question 8
+			document.write(getQuestion(8));
+			//-->
+          </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton3" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton3','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton4" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton4','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>9.</strong></p></td>
+        <td><p class="questionStyle">Long-term care insurance providers provide a Third Party Notification of Pending Lapse provision for which of the following reasons?</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 9 CODE
+			var formNumber=new Array();
+			formNumber[9]="QuestionForm9";
+			questionNumber=9;
+			questions[9]=new Array();
+			layers[9]=new Array();
+			//This is the test question
+			questions[9][0]="";
+			
+			//These are the answer choices
+			questions[9][1]="They charge extra for sending out notifications.";
+			questions[9][2]="To mitigate the potential lapse of a policy by an elderly and possibly frail policyholder.";
+			questions[9][3]="Both of the above";
+			//These are the associated layers
+			layers[9][1]="Layerwbutton5";
+			layers[9][2]="Layerwbutton6";
+			layers[9][3]="Layerwbutton7";
+			
+			//This is the test answer
+			answers[9]="B";
+			//-->
+          </script>
+          <form name="QuestionForm9">
+            <script>
+				<!--
+				// Display Text for Question 9
+				document.write(getQuestion(9));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 9 CODE
+				//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton5" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit5" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton5','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton6" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit6" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton6','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton7" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit7" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton7','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>10.</strong></p></td>
+        <td><p class="questionStyle">Qualified LTCi policies provide the opportunity for individuals to deduct the premiums for long-term care insurance, based on the health care itemized deductions on their personal tax returns being in excess of the what percentage of AGI?</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 10 CODE
+			var formNumber=new Array();
+			formNumber[10]="QuestionForm10";
+			questionNumber=10;
+			questions[10]=new Array();
+			layers[10]=new Array();
+			//This is the test question
+			questions[10][0]="";
+			
+			//These are the answer choices
+			questions[10][1]="2.0%";
+			questions[10][2]="2.5%";
+			questions[10][3]="5.3%";
+			questions[10][4]="7.5%";
+			questions[10][5]="10.0%";
+			//These are the associated layers
+			layers[10][1]="Layerwbutton8";
+			layers[10][2]="Layerwbutton9";
+			layers[10][3]="Layerwbutton10";
+			layers[10][4]="Layerwbutton11";
+			layers[10][5]="Layerwbutton12";
+			
+			//This is the test answer
+			answers[10]="D";
+			//-->
+          </script>
+          <form name="QuestionForm10">
+            <script>
+				<!--
+				// Display Text for Question 10
+				document.write(getQuestion(10));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 10 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton8" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit8" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton8','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton9" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit9" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton9','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton10" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit10" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton10','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton11" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit11" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton11','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton12" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit12" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton12','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+		</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<!-- coursebody -->
+</body>
+</html>
