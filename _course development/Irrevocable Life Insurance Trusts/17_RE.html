@@ -2,9 +2,724 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
 </head>
 
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Answer the following questions.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">In deciding whether or not the use of a Crummey power is merely a sham to avoid taxes, the courts tend to focus on:<div class="questionStyle">
+          <ol type="A"><li>Whetheror not the trustee is obligated to deliver assets to the beneficiaries  if demand is made.</li>
+            <li>Whetheror not the beneficiary has an immediate and unfettered present  interest in the gifted property</li>
+            <li>The intent of the donor</li>
+           </ol>
+           </div>
+           </p>
+           <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumber=new Array();
+			formNumber[1]="QuestionForm1";
+			questionNumber=1;
+			questions[1]=new Array();
+			layers[1]=new Array();
+			//This is the test question
+			questions[1][0]="";
+			
+			//These are the answer choices
+			questions[1][1]="A only";
+			questions[1][2]="B only";
+			questions[1][3]="C only";
+			questions[1][4]="A and B only";
+			questions[1][5]="A, B, and C";
+			//These are the associated layers
+			layers[1][1]="Layerwbutton11";
+			layers[1][2]="Layerwbutton12";
+			layers[1][3]="Layerwbutton13";
+			layers[1][4]="Layerwbutton14";
+			layers[1][5]="Layerwbutton15";
+			
+			//This is the test answer
+			answers[1]="D";
+			//-->
+           </script>
+           <form name="QuestionForm1">
+             <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestion(1));
+				//-->
+             </script>
+           </form>
+           <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+           </script>
+           <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+             <!--change left and top px depending of where you what the layer box to appear-->
+             <div id="Layerwbutton11" class="rvLayerInnerDiv">
+               <table class="rvLayerButton">
+                 <tr>
+                   <td><p>Incorrect.  Try again.</p>
+                     <p align="center">
+                       <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton11','','hide')">
+                     </p></td>
+                 </tr>
+               </table>
+             </div>
+        </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton12" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton12','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton13" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton13','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton14" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton14','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-215px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton15" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit5" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton15','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Attorneys typically advise titling a trust as an "Irrevocable Life Insurance Trust" when it is for the purpose of keeping life insurance outside of the grantor's estate.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumber=new Array();
+			formNumber[2]="QuestionForm2";
+			questionNumber=2;
+			questions[2]=new Array();
+			layers[2]=new Array();
+			//This is the test question
+			questions[2][0]="";
+			
+			//These are the answer choices
+			questions[2][1]="True";
+			questions[2][2]="False";
+			//These are the associated layers
+			layers[2][1]="Layerwbutton16";
+			layers[2][2]="Layerwbutton17";
+			
+			//This is the test answer
+			answers[2]="B";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestion(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+        <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <!--change left and top px depending of where you what the layer box to appear-->
+          <div id="Layerwbutton16" class="rvLayerInnerDiv">
+            <table class="rvLayerButton">
+              <tr>
+                <td><p>Incorrect.</p>
+                  <p align="center">
+                    <input type="submit" name="Submit6" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton16','','hide')">
+                  </p></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+          <!--change left and top px depending of where you what the layer box to appear-->
+          <div id="Layerwbutton17" class="rvLayerInnerDiv">
+            <table class="rvLayerButton">
+              <tr>
+                <td><p>Correct!</p>
+                  <p align="center">
+                    <input type="submit" name="Submit7" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton17','','hide')">
+                  </p></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+       </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">The Grantor and Trustee of an ILIT should not be one and the same.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumber=new Array();
+			formNumber[3]="QuestionForm3";
+			questionNumber=3;
+			questions[3]=new Array();
+			layers[3]=new Array();
+			//This is the test question
+			questions[3][0]="";
+			
+			//These are the answer choices
+			questions[3][1]="True";
+			questions[3][2]="False";
+			//These are the associated layers
+			layers[3][1]="Layerwbutton18";
+			layers[3][2]="Layerwbutton19";
+			
+			//This is the test answer
+			answers[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestion(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton18" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit8" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton18','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton19" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit9" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton19','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+	   </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">If the purpose of an ILIT is to provide liquidity for the payment of estate taxes, the document should explicitly direct that the insurance proceeds be used for that purpose.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumber=new Array();
+			formNumber[4]="QuestionForm4";
+			questionNumber=4;
+			questions[4]=new Array();
+			layers[4]=new Array();
+			//This is the test question
+			questions[4][0]="";
+			
+			//These are the answer choices
+			questions[4][1]="True";
+			questions[4][2]="False";
+			//These are the associated layers
+			layers[4][1]="Layerwbutton20";
+			layers[4][2]="Layerwbutton21";
+			
+			//This is the test answer
+			answers[4]="B";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestion(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton20" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit10" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton20','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton21" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit11" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton21','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">The lapse of a Crummey power could potentially result in a taxable transfer on the part of the beneficiary who allows the power to lapse.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumber=new Array();
+			formNumber[5]="QuestionForm5";
+			questionNumber=5;
+			questions[5]=new Array();
+			layers[5]=new Array();
+			//This is the test question
+			questions[5][0]="";
+			
+			//These are the answer choices
+			questions[5][1]="True";
+			questions[5][2]="False";
+			//These are the associated layers
+			layers[5][1]="Layerwbutton22";
+			layers[5][2]="Layerwbutton23";
+			
+			//This is the test answer
+			answers[5]="A";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestion(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton22" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit12" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton22','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton23" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit13" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton23','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">It doesn't matter who pays the premiums for a policy held in an ILIT. Either the grantor or the trustee may pay them, so long as the trustee sends the Crummey letters.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumber=new Array();
+			formNumber[6]="QuestionForm6";
+			questionNumber=6;
+			questions[6]=new Array();
+			layers[6]=new Array();
+			//This is the test question
+			questions[6][0]="";
+			
+			//These are the answer choices
+			questions[6][1]="True";
+			questions[6][2]="False";
+			//These are the associated layers
+			layers[6][1]="Layerwbutton24";
+			layers[6][2]="Layerwbutton25";
+			
+			//This is the test answer
+			answers[6]="B";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestion(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton24" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit14" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton24','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton25" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit15" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton25','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">The courts have generally held that beneficiaries may waive their right to future notices regarding Crummey powers.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumber=new Array();
+			formNumber[7]="QuestionForm7";
+			questionNumber=7;
+			questions[7]=new Array();
+			layers[7]=new Array();
+			//This is the test question
+			questions[7][0]="";
+			
+			//These are the answer choices
+			questions[7][1]="True";
+			questions[7][2]="False";
+			//These are the associated layers
+			layers[7][1]="Layerwbutton26";
+			layers[7][2]="Layerwbutton27";
+			
+			//This is the test answer
+			answers[7]="B";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestion(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton26" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit16" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton26','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+        </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton27" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit17" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton27','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+       </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">Which of the following is an incident of ownership:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 8 CODE
+			var formNumber=new Array();
+			formNumber[8]="QuestionForm8";
+			questionNumber=8;
+			questions[8]=new Array();
+			layers[8]=new Array();
+			//This is the test question
+			questions[8][0]="";
+			
+			//These are the answer choices
+			questions[8][1]="Ability to change beneficiares";
+			questions[8][2]="Ability to cash in the policy";
+			questions[8][3]="Ability to borrow against the policy";
+			questions[8][4]="All the above";
+			//These are the associated layers
+			layers[8][1]="Layerwbutton28";
+			layers[8][2]="Layerwbutton29";
+			layers[8][3]="Layerwbutton30";
+			layers[8][4]="Layerwbutton31";
+			
+			//This is the test answer
+			answers[8]="D";
+			//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+				<!--
+				// Display Text for Question 8
+				document.write(getQuestion(8));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton28" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit18" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton28','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton29" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit19" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton29','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton30" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit20" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton30','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton31" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit21" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton31','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
 </body>
 </html>
