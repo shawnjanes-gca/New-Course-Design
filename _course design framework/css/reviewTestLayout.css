@@ -33,6 +33,7 @@
 
 #qTable select {border-color: #2c4c78;}
 
+.reviewExerciseTD{width:15 !important; valign:top !important; padding-right:0 !important; padding-left:0 !important;}
 .questionStyle{font-weight:bold !important;}
 .questionStyle ol li {color: #222222 !important; font-family: "Source Sans Pro",sans-serif !important;font-size: 18px !important; font-weight: bold !important;}
 
@@ -66,7 +67,6 @@
 
 
 .rvAnimatedLayer{background: #52bc7a; color:#FFFFFF;display:none;border-radius:5px;font-size:18px; font-family: "Source Sans Pro",sans-serif;line-height:27px;}
-
 
 
 
