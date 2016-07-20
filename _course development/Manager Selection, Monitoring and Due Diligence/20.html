@@ -1,252 +1,28 @@
-<head>
+<!doctype html>
 <html>
 <head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<style type="text/css">
-<!--
-.style1 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.style2 {font-weight: bold}
-.style3 {font-weight: bold}
--->
-</style>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-//-->
-</script>
+<meta charset="UTF-8">
+<title>Covariance as a Measure of a Portfolio’s Relative Risk</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
 </head>
+
 <body>
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td>
-<div align="right">
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
-// ]]></script>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Covariance as a Measure of a Portfolio’s Relative Risk</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>Measuring the variation of a portfolio&rsquo;s rate of return is of limited use unless it is done in comparison to a benchmark. Standard Deviation measures absolute return volatility but not volatility that one would naturally expect relative to the market fluctuations that have occurred.  Wide swings in a manager&rsquo;s performance that are perfectly in sync with a volatile market might indicate that the manager is no riskier than the market as a whole, while wide price swings on an investment manager&rsquo;s performance during a stable market might indicate that the manager is significantly riskier than the market as a whole. This movement of a manager&rsquo;s return relative to the movement of the market can be statistically measured and is called <strong><em>covariance</em></strong>. Stated differently, <strong><em>covariance measures the extent of mutual variation between any two variables</em></strong>.   In this case, the two variables are the manager&rsquo;s portfolio and the general market index.</p>
+  <p>The Capital Asset Pricing Model uses a concept known as <strong><em>beta (ß)</em></strong> to measure the covariance between a stock and the market. In other words, <strong><em>beta (ß)</em></strong> is a measure of how a stock or portfolio moves relative to movements in the market. If the beta of each stock in a portfolio is known, then the beta of a portfolio can be easily determined by calculating a weighted average of the betas of all the stocks in the portfolio. In this manner, beta can be used to speak of the risk of a stock or a portfolio relative to the market.</p>
+  <p>A high beta means that the portfolio is riskier than the market as a whole; a low beta means it is less risky than the market. If a security moves perfectly in sync with market movements (in the same direction and to the same degree), then it has a beta coefficient of 1.0.</p>
+  <p><span class="pageInstruction">For an understanding of other beta coefficients, click each coefficient below.</span></p>
+  <p>--Insert Image--</p>
 </div>
-</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<h2>The CAPM and the Security Market Line</h2>
-</blockquote>
-</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<p>At the heart of most manager analysis methodologies is the Capital Asset Pricing Model and Modern Portfolio Theory. While this course is not intended to review these topics in depth, it is important to review the models in order to ensure understanding of some key terms and definitions.</p>
-<p>The key message of the CAPM is that there is a direct relationship between risk and return. The implication for purposes of asset allocation is to emphasize the importance of first determining the risk tolerance of the investor, then identifying a portfolio that efficiently achieves a fair return for that given level of risk. Investors should not expect to "beat the market" unless they intend to have a portfolio that is riskier than the market as a whole.</p>
-<p>The message and implications for the CAPM becomes more easily understood through a graph.</p>
-<p><span class="style1">Click each term on the graph for an explanation, paying particular attention to the Security Market Line.</span></p>
-<p align="center"><strong>Security Market Line Graph</strong></p>
-</blockquote>
-<p align="center"><img src="greene/managerselection/images/secmarklinegraph.gif" alt="" width="655" height="380" usemap="#Map" border="0" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Return</strong></p>
-<p>The vertical axis measures the expected rate of return of a stock or portfolio.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p class="style3">Beta <em> &szlig;</em></p>
-<p>The horizontal axis measures the risk associated with the stock or portfolio as beta (<em>&szlig;</em>). This risk is determined relative to the risk of the market as a whole.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>r<sub>f</sub></strong></p>
-<p>The risk-free rate ( <strong> r<sub>f</sub></strong> ) is the rate of return that would be expected on risk-free securities, such as T-bills. In this illustration, it is 4%.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<h4>r<sub>m</sub></h4>
-<p>The market return ( r<sub>m</sub> ) is the return expected on the general market. In this illustration, it is 8%.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>0</strong></p>
-<p>When there is no risk associated with the security or portfolio, the beta (<em>&szlig;</em>) is zero. The CAPM teaches us that to get greater return, you must assume risk.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>1</strong></p>
-<p>The beta of the general market is 1. To gain a higher expected return than the general market, an investor must assume more risk than the general market.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>0.25</strong></p>
-<p>When a stock or portfolio has some risk, but less risk than that of the general market, its beta (<em>&szlig;</em>) is somewhere between 0 and 1. For this asset, the beta is 0.25. Using the CAPM formula, its expected return is therefore:</p>
-<p class="style2" align="center"><em> E(r<sub>i</sub> ) = r<sub>f</sub> + &szlig;<sub>i</sub> x [E(r<sub>m</sub> ) - r<sub>f</sub> ]</em></p>
-<div align="center"><strong><em> E(r<sub>i</sub> ) = 4% + 0.25 x (8% - 4%) = 5% </em> </strong></div>
-<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>r<sub>i</sub></strong></p>
-<p>The rate of return for an investment asset is designated as r<sub>i</sub>. In this example, r<sub>i</sub> = 5%.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Market Portfolio </strong></p>
-<p>The Market Portfolio, for which the S&amp;P 500 can serve as a proxy, has a beta of 1. In this case, the rate of return for the market portfolio is 8%.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Market Risk Premium</strong></p>
-<p>The risk premium required by investors for holding an S&amp;P 500 Index fund rather than risk-free securities is the incremental return over and above the risk-free rate of return. This is depicted here by the spread between the risk-free return of 4% and the market return of 8%.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Asset</strong></p>
-<p>This example looks at a single investment asset. It could just as easily look at a portfolio of stocks by calculating a weighted average of their betas.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="Layer12" style="position: absolute; width: 600px; height: 35px; z-index: 1; left: 55px; top: 350px; visibility: hidden;">
-<table border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
-<tbody>
-<tr>
-<td>
-<p><strong>Security Market Line</strong></p>
-<p>Connecting the risk-free asset and the market portfolio with a straight line depicts the "Security Market Line." This straight line reflects the fact that the expected risk premium on all possible stocks or portfolios varies in direct proportion to their beta. Under the premise of the CAPM theory, all efficient portfolios (combinations of various securities) lie on this security market line. Thus, for any given level of risk, an investor can use the Security Market Line to identify the return he should expect from a portfolio by checking the corresponding value on the y-axis.</p>
-<p>For example, look at the asset labeled "A." It offers a rate of return lower than would be expected for an asset of comparable risk on the security market line. Investors will bid its price down until its rate of return moves it up to the security market line. Likewise, asset "B" offers a higher return than an asset of comparable risk on the security market line. Investors will bid its price up until its return declines to the security market line. Based on the belief that the market is very efficient in processing information and making such adjustments, the CAPM contends that these adjustments take place very quickly.</p>
-<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit" value="close" /></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><map name="Map"> 
-<area onclick="MM_showHideLayers('Layer1','','show','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="85,2,153,26" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','show','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="334,50,462,95" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','show')" onfocus="if(this.blur)this.blur()" shape="rect" coords="495,17,650,65" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','show','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="492,154,586,205" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','show','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="119,154,199,186" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','show','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="50,348,97,376" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','show','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="190,351,247,375" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','show','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="447,355,481,374" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','show','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="520,351,590,376" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','show','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="5,83,68,119" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','show','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="6,170,69,205" href="javascript:void(0)" />
- 
-<area onclick="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','show','Layer4','','hide','Layer5','','hide','Layer6','','hide','Layer7','','hide','Layer8','','hide','Layer9','','hide','Layer10','','hide','Layer11','','hide','Layer12','','hide')" onfocus="if(this.blur)this.blur()" shape="rect" coords="6,225,68,251" href="javascript:void(0)" />
- </map></p>
+<!-- coursebody -->
 </body>
+</html>
