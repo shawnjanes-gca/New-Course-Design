@@ -2,9 +2,734 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Review Exercise</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
 </head>
 
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Review your knowledge of disability income insurance by answering the following questions.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">	Income replacement resources that are often available to affluent clients in the event of a long-term disability include all of the following EXCEPT:</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum],'100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Social Security";
+			questionsAnimated[1][2]="LTD group or professional association group coverages";
+			questionsAnimated[1][3]="State disability insurance";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			
+			//This is the test answer
+			answersAnimated[1]="C";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 1 CODE
+				//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect. Social Security disability benefits are typically available to most American workers.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect. These group coverages are often available to employees, professionals, and possibly business owners.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Correct. Only five states (CA, NY, NJ, TI and HI) provide disability benefits when workmen's compensation does not apply.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">If an individual income insurance policy is "guaranteed renewable," this means that:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="The policy cannot be cancelled";
+			questionsAnimated[2][2]="The premiums cannot be changed.";
+			questionsAnimated[2][3]="The policy cannot be cancelled and the premiums cannot be changed.";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer4";
+			layersAnimated[2][2]="Layer5";
+			layersAnimated[2][3]="Layer6";
+			
+			//This is the test answer
+			answersAnimated[2]="A";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer4" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect. If the policy is "noncancellable," the premiums cannot be changed.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect. To meet these criteria, the policy must be "guaranteed renewable and noncancellable."</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">All of the following are usual limitations of group LTD EXCEPT:</p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 3 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[3]="QuestionForm3";
+				questionNumberAnimated=3;
+				questionsAnimated[3]=new Array();
+				layersAnimated[3]=new Array();
+				//This is the test question
+				questionsAnimated[3][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[3][1]="The group coverage usually provides monthly benefits up to about 60% of salary, bonuses, deferred compensation, stock options, qualified plan contributions, etc. ";
+				questionsAnimated[3][2]="Group LTD is typically payable for non-occupational benefits only or benefits are reduced by workmen's compensation payments.";
+				questionsAnimated[3][3]="Premiums are not guaranteed and the carrier can cancel the coverage.";
+				questionsAnimated[3][4]="The definitions and provisions of group LTD are invariably more restrictive when compared to a quality individual disability income contract. ";
+				//These are the associated layersAnimated
+				layersAnimated[3][1]="Layer7";
+				layersAnimated[3][2]="Layer8";
+				layersAnimated[3][3]="Layer9";
+				layersAnimated[3][4]="Layer10";
+				
+				//This is the test answer
+				answersAnimated[3]="A";
+				//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+			</script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer7" class="rvAnimatedLayer">Correct. Group coverage usually provides monthly benefits up to about 60% of salary only.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. This is a typical limitation of group LTD.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect. This is a typical limitation of group LTD.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect. This is a typical limitation of group LTD.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">	A professional is concerned about disability protection if unable to work his or her chosen profession for which he or she was specifically trained.  Which definition of disability would best serve the professional?  </p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 4 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[4]="QuestionForm4";
+				questionNumberAnimated=4;
+				questionsAnimated[4]=new Array();
+				layersAnimated[4]=new Array();
+				//This is the test question
+				questionsAnimated[4][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[4][1]="Any Occ";
+				questionsAnimated[4][2]="Own Occ";
+				//These are the associated layersAnimated
+				layersAnimated[4][1]="Layer11";
+				layersAnimated[4][2]="Layer12";
+				
+				//This is the test answer
+				answersAnimated[4]="B";
+				//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. With this definition, the person could be unable to perform the job for which they were trained but be unable to receive benefits because the person could still do other jobs. The fact that the person could still perform other jobs would likely result in a substantial loss of income if the insured could no longer perform the job of his or her chosen career (i.e., a neurosurgeon becoming a general practitioner or professor).</div>
+          <div id="Layer12" class="rvAnimatedLayer">Correct. The fact that the person could still perform other jobs would likely result in a substantial loss of income if the insured could no longer perform the job of his or her chosen career (i.e., a neurosurgeon becoming a general practitioner or professor).</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">The general rule is that when an individual pays premiums on an after-tax basis, then the disability benefits are:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumber=new Array();
+			formNumber[5]="QuestionForm5";
+			questionNumber=5;
+			questions[5]=new Array();
+			layers[5]=new Array();
+			//This is the test question
+			questions[5][0]="";
+			
+			//These are the answer choices
+			questions[5][1]="Taxable";
+			questions[5][2]="Taxable once cumulative benefits exceed premiums paid";
+			questions[5][3]="Tax-exempt";
+			//These are the associated layers
+			layers[5][1]="Layerwbutton1";
+			layers[5][2]="Layerwbutton2";
+			layers[5][3]="Layerwbutton3";
+			
+			//This is the test answer
+			answers[5]="C";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestion(5));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 5 CODE
+				//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton1" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton2" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton3" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit3" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton3','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">The "elimination period" is:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumber=new Array();
+			formNumber[6]="QuestionForm6";
+			questionNumber=6;
+			questions[6]=new Array();
+			layers[6]=new Array();
+			//This is the test question
+			questions[6][0]="";
+			
+			//These are the answer choices
+			questions[6][1]="The time between the occurrence of disability and the day disability benefits begin to accrue.";
+			questions[6][2]="The time between application for disability insurance and the beginning of coverage.";
+			questions[6][3]="The time period after which disability benefit payments cease.";
+			//These are the associated layers
+			layers[6][1]="Layerwbutton4";
+			layers[6][2]="Layerwbutton5";
+			layers[6][3]="Layerwbutton6";
+			
+			//This is the test answer
+			answers[6]="A";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestion(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton4" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit4" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton4','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton5" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit5" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton5','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-165px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton6" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit6" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton6','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">The maximum duration of benefit payments with a long-term disability policy is typically: </p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumber=new Array();
+			formNumber[7]="QuestionForm7";
+			questionNumber=7;
+			questions[7]=new Array();
+			layers[7]=new Array();
+			//This is the test question
+			questions[7][0]="";
+			
+			//These are the answer choices
+			questions[7][1]="20 Years";
+			questions[7][2]="40 Years";
+			questions[7][3]="Until age 59½";
+			questions[7][4]="Until age 65 or Lifetime";
+			//These are the associated layers
+			layers[7][1]="Layerwbutton7";
+			layers[7][2]="Layerwbutton8";
+			layers[7][3]="Layerwbutton9";
+			layers[7][4]="Layerwbutton10";
+			
+			//This is the test answer
+			answers[7]="D";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestion(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton7" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit7" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton7','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton8" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit8" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton8','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton9" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.  Try again.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit9" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton9','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-195px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton10" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit10" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton10','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">Social Security Disability Income (SSDI) benefits of affluent clients are typically taxable.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 8 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[8]="QuestionForm8";
+			questionNumberAnimated=8;
+			questionsAnimated[8]=new Array();
+			layersAnimated[8]=new Array();
+			//This is the test question
+			questionsAnimated[8][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[8][1]="True";
+			questionsAnimated[8][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[8][1]="Layer13";
+			layersAnimated[8][2]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[8]="A";
+			//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+				<!--
+				// Display Text for Question 8
+				document.write(getQuestionAnimated(8));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer13" class="rvAnimatedLayer">Correct. Up to 85% of SSDI benefits are taxable if the recipient's income exceeds certain thresholds, which will typically occur with affluent clients.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect. Up to 85% of SSDI benefits are taxable if the recipient's income exceeds certain thresholds, which will typically occur with affluent clients.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>9.</strong></p></td>
+        <td><p class="questionStyle">All of the following are characteristics of Business Overhead Expense insurance EXCEPT?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION  CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[9]="QuestionForm9";
+			questionNumberAnimated=9;
+			questionsAnimated[9]=new Array();
+			layersAnimated[9]=new Array();
+			//This is the test question
+			questionsAnimated[9][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[9][1]="The premiums are deductible.";
+			questionsAnimated[9][2]="The benefits are taxable.";
+			questionsAnimated[9][3]="The Maximum Benefit Period is usually no more than 24 months.";
+			questionsAnimated[9][4]="In the event of the insured's disability, the policy pays the full Monthly Indemnity amount regardless of the amount of insurable expenses incurred.";
+			questionsAnimated[9][5]="The maximum benefit period can be extended to the degree monthly benefits have not been fully utilized.";
+			//These are the associated layersAnimated
+			layersAnimated[9][1]="Layer15";
+			layersAnimated[9][2]="Layer16";
+			layersAnimated[9][3]="Layer17";
+			layersAnimated[9][4]="Layer18";
+			layersAnimated[9][5]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[9]="D";
+			//-->
+          </script>
+          <form name="QuestionForm9">
+            <script>
+				<!--
+				// Display Text for Question 
+				document.write(getQuestionAnimated(9));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION  CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+            <div id="Layer15" class="rvAnimatedLayer">Incorrect. This is a characteristic of BOE</div>
+            <div id="Layer16" class="rvAnimatedLayer">Incorrect. This is a characteristic of BOE</div>
+            <div id="Layer17" class="rvAnimatedLayer">Incorrect. This is a characteristic of BOE</div>
+            <div id="Layer18" class="rvAnimatedLayer">Correct. The policy would reimburse the policy owner monthly for the lesser of submitted qualified overhead expenses or the maximum monthly benefit.</div>
+            <div id="Layer19" class="rvAnimatedLayer">Incorrect. This is a characteristic of BOE.</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<!-- coursebody -->
 </body>
 </html>
