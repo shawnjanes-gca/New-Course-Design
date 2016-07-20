@@ -1,71 +1,34 @@
+<!doctype html>
+<html>
 <head>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="greene/managerselection/css/roundedPage.css" />
-<link rel="stylesheet" type="text/css" href="greene/managerselection/css/niftyCorners.css" />
-<script type="text/javascript" src="greene/managerselection/js/nifty.js"></script>
-<script type="text/javascript" src="greene/managerselection/js/final.js"></script>
-<style type="text/css">
-div#example01{width: 680px; padding: 20px; margin:0 auto; background:#CCCC99; }
-</style>
-<script type="text/javascript" src="greene/managerselection/js/niftycube.js"></script>
-<script type="text/javascript">
-window.onload=function(){
-	Nifty("div#example01","big");
-	}
-function MM_showHideLayers() { //v9.0
-  var i,p,v,obj,args=MM_showHideLayers.arguments;
-  for (i=0; i<(args.length-2); i+=3) 
-  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
-    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
-    obj.visibility=v; }
-}
-</script>
+<meta charset="UTF-8">
+<title>The Sharpe Ratio</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
 </head>
+
 <body>
-<table style="width: 100%;">
-<tbody>
-<tr>
-<td>
-<div align="right">
-<script type="text/javascript" language="JavaScript">// <![CDATA[
-loadFlashHeader(userCompany, parentFolder);
-// ]]></script>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">The Sharpe Ratio</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>The <strong><em>Sharpe Ratio</em></strong> is a measure of return to volatility and is useful in judging an investment manager&rsquo;s performance versus an index. This ratio was developed by Nobel Laureate William Sharpe.   The Sharpe ratio, also referred to as a measurement of risk-adjusted return, measures excess return per unit of risk taken.  The calculation is made as follows:</p>
+  <p><strong>(Return – Risk-Free Rate of Return) / Standard Deviation</strong></p>
+  <p>Take a look at the following example:</p>
+  <div class="example-box">
+    <h3>Sharpe Ratio</h3>
+    <p>Let&rsquo;s say a manager generated a return in a portfolio of 30% over a period of time.  The risk-free rate, as measured by 91-day T-bills during the same period, was 3% and the standard deviation of the portfolio was 14% during the same period. </p>
+    <p><strong>The risk-adjusted return (Sharpe Ratio) would be:</strong></p>
+    <p>(30% - 3%) / 14%  = 1.93%</p>
+  </div>
+  <!-- example-box -->
+  <p>The Sharpe ratio should be used to compare the relative performance of managers within the same peer group or asset class.  If two managers have the same return, but different levels of volatility (standard deviation), the manager with the higher Sharpe Ratio would be preferable.  Overall, <strong><em>the higher the Sharpe Ratio, the better</em></strong> because a high Sharpe ratio implies the portfolio is achieving good returns for each unit of risk.</p>
 </div>
-</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<h2>Using the Treynor Ratio</h2>
-</blockquote>
-</td>
-</tr>
-<tr>
-<td>
-<blockquote>
-<p>While understanding the overall returns of a manager or fund can provide some insights, returns alone are not the only perspective that must be examined. Risk is an important consideration. The <strong><em>Treynor Ratio</em></strong>, also commonly referred to as the <strong><em>reward-to-volatility ratio</em></strong>, is a calculation measuring investment performance adjusted for market risk. It is similar to the Sharpe Ratio, except that it uses Beta as the volatility measurement instead of standard deviation. The ratio divides the difference of the average return of a fund and the risk-free rate by beta (market risk) of the fund. Therefore, it tells us the return over the risk-free rate per unit of market risk. <strong><em>The higher the Treynor Ratio, the better</em></strong> the performance of the manager has been on a risk-adjusted basis.</p>
-<p>Here is an example of how the Treynor Ratio is calculated and used:</p>
-<table style="width: 700px;" border="0" cellpadding="0" align="center">
-<tbody>
-<tr>
-<td align="left">
-<div id="example01">
-<p align="center"><strong>Treynor Ratio</strong></p>
-<p>Suppose you have a manager who has produced an average return of 12% over a three-year period during a time when the risk-free rate was 5%. The difference between the actual performance and the risk-free rate is 7%. Also assume for this example that the beta of the portfolio is 1.25.</p>
-<p><strong>The Treynor Ratio Calculation:</strong></p>
-<p align="center">(Actual Performance - risk-free rate) / portfolio beta</p>
-<p align="center">(12% - 5%) / 1.25) = 5.6%</p>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-</blockquote>
-</td>
-</tr>
-</tbody>
-</table>
+<!-- coursebody -->
 </body>
+</html>
