@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Semi-Standard Deviation</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Semi-Standard Deviation</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>There is a significant problem using typical <em>standard deviation</em> as a measure of volatility.  This measurement assumes that any volatility around the mean return – or a target return – is bad.  The problem lies in the fact that standard deviation does not discriminate between upside and downside volatility.</p>
+  <p>To gain a more accurate insight into the volatility patterns of a manager, a more appropriate risk measure for long-only portfolios is the <strong><em>semi-standard deviation</em></strong> or <strong><em>downside deviation</em></strong> measure.  Semi-standard deviation focuses on the portfolio volatility during under-performing periods of time. In other words, it does not measure the volatility during out-performing periods, but instead analyzes the volatility of portfolio returns when the performance as less than the benchmark or target return expected. A higher semi-standard deviation indicates more volatility in under-performing periods. Therefore, a lower semi-standard deviation is more desirable.  Put another way, the greater the downside volatility of the returns, the higher the downside risk.</p>
+  <p>Test Your Knowledge</p>
+  <p>A manager has delivered excellent returns during a recent bull market.  In analyzing the longer-term track record to gain insights into their risk profile in down markets, you find that the manager generated returns of -3% and -6% on their portfolio when the markets were -2% and -1% respectively.</p>
+  <p>Based on this information, which of the following would you expect to be true?</p>
+  <p><span class="pageInstruction">Click the correct answer.</span></p>
+
+  <script language="JavaScript">
+		<!--
+		// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+		function answerCorrectAnimated(questionNumber, answer, formName)
+		{
+			// declare a variable to hold return value
+			var correct = false;
+			var questionLength = formName.radQuestionChoiceAnimated.length;
+			var questionChoice;
+		
+			// if answer provided is same as correct answer then correct variable is true
+			if (answer == answersAnimated[questionNumber])
+				{correct = true;
+					for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+					{
+					formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+		
+					}
+		
+			// return whether the answer was correct (true or false)
+			return correct;
+			}
+		}
+		
+		function getQuestionAnimated(questionNumber)
+		{
+		
+		   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+		   var questionLength = questionsAnimated[questionNumber].length;
+		   var questionChoice;
+		
+		   questionHTML = questionHTML + "<P>";
+		   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+		   {
+			  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+			  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+			  questionHTML = questionHTML + "</label><BR>";
+		   }
+		   questionHTML = questionHTML + "</P>";
+		
+		   return questionHTML;
+		}
+		function buttonCheckQAnimated_onclick(questionNum, formName)
+		{
+		   var answer = 0;
+		   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+		   {
+			  answer++;
+		   }
+		
+		   var answer2 = String.fromCharCode(65 + answer);
+		   answer++;
+		   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+		   {
+			  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+		   }
+		   else
+		   {
+			  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+		   }
+		}
+		
+		var questionNumberAnimated;
+		var questionsAnimated=new Array();
+		var answersAnimated=new Array();
+		var layersAnimated=new Array();
+		// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+		
+		// BEGIN RADIO QUESTION 1 CODE
+		var formNumberAnimated=new Array();
+		formNumberAnimated[1]="QuestionForm1";
+		questionNumberAnimated=1;
+		questionsAnimated[1]=new Array();
+		layersAnimated[1]=new Array();
+		//This is the test question
+		questionsAnimated[1][0]="";
+		
+		//These are the answer choices
+		questionsAnimated[1][1]="A) The semi-standard deviation would be low";
+		questionsAnimated[1][2]="B) The semi-standard deviation would be high";
+		//These are the associated layersAnimated
+		layersAnimated[1][1]="Layer22";
+		layersAnimated[1][2]="Layer23";
+		
+		//This is the test answer
+		answersAnimated[1]="B";
+		//-->
+		  </script>
+		  <form name="QuestionForm1">
+			<script>
+		<!--
+		// Display Text for Question 1
+		document.write(getQuestionAnimated(1));
+		//-->
+    </script>
+  </form>
+  <script>
+		<!--
+		// END RADIO QUESTION 1 CODE
+		//-->
+  </script>
+  <!--put Review Exercise Layer with Feedback here-->
+  <div id="Layer22" class="rvAnimatedLayer">Incorrect.  Keep in mind that low semi-standard deviations are related to volatility in down markets and are reflective of the level of volatility when returns are below the target or benchmark.  Review this concept above to make sure you have a firm understanding before proceeding.</div>
+  <div id="Layer23" class="rvAnimatedLayer">Correct.  Because the downside performance experience of the manager was more volatile below the target benchmark, the semi-standard deviation would be higher. </div>
+</div>
+<!-- coursebody -->
+</body>
+</html>
