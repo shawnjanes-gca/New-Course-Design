@@ -1,0 +1,786 @@
+<head>
+<html>
+<head>
+
+<title>Federal Income Taxation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td>
+<div align="right">
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+loadFlashHeader(userCompany, parentFolder);
+// ]]></script>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<blockquote>
+<h2>Review Exercise</h2>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>1.</strong></div>
+</td>
+<td>
+<p><strong>The final calculation in the basic tax formula is deducting any tax credits from an individual's adjusted gross income.</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+function answerCorrect(questionNumber, answer, formName)
+{
+   	// declare a variable to hold return value
+	var correct = false;
+	var questionLength = formName.radQuestionChoice.length;
+	var questionChoice;
+
+   	// if answer provided is same as correct answer then correct variable is true
+   	if (answer == answers[questionNumber])
+      	{correct = true;
+       		for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			{
+			formName.radQuestionChoice[questionChoice].disabled = true;
+
+	  		}
+
+   	// return whether the answer was correct (true or false)
+   	return correct;
+	}
+}
+
+function getQuestion(questionNumber)
+{
+
+   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+   var questionLength = questions[questionNumber].length;
+   var questionChoice;
+
+   questionHTML = questionHTML + "<P>";
+   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+   {
+      questionHTML = questionHTML + "<INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+      questionHTML = questionHTML + questions[questionNumber][questionChoice];
+      questionHTML = questionHTML + "<BR>";
+   }
+   questionHTML = questionHTML + "</P>";
+
+   return questionHTML;
+}
+function buttonCheckQ_onclick(questionNum, formName)
+{
+   var answer = 0;
+   while (formName.radQuestionChoice[answer].checked != true)
+   {
+      answer++;
+   }
+
+   var answer2 = String.fromCharCode(65 + answer);
+   answer++;
+   if (answerCorrect(questionNum,answer2, formName) == true)
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+   else
+   {
+      MM_showHideLayers(layers[questionNum][answer],'','show');
+   }
+}
+
+var questionNumber;
+var questions=new Array();
+var answers=new Array();
+var layers=new Array();
+// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumber=new Array();
+formNumber[1]="QuestionForm1";
+questionNumber=1;
+questions[1]=new Array();
+layers[1]=new Array();
+//This is the test question
+questions[1][0]="";
+
+//These are the answer choices
+questions[1][1]="True";
+questions[1][2]="False";
+//These are the associated layers
+layers[1][1]="Layer1";
+layers[1][2]="Layer2";
+
+//This is the test answer
+answers[1]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm1">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 1
+document.write(getQuestion(1));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 1 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>2.</strong></div>
+</td>
+<td>
+<p><strong>All deductions listed on the back of Form 1040 are deductions that are taken out before a taxpayer's AGI is figured.</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 2 CODE
+var formNumber=new Array();
+formNumber[2]="QuestionForm2";
+questionNumber=2;
+questions[2]=new Array();
+layers[2]=new Array();
+//This is the test question
+questions[2][0]="";
+
+//These are the answer choices
+questions[2][1]="True";
+questions[2][2]="False";
+//These are the associated layers
+layers[2][1]="Layer3";
+layers[2][2]="Layer4";
+
+//This is the test answer
+answers[2]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm2">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 2
+document.write(getQuestion(2));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 2 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>3.</strong></div>
+</td>
+<td>
+<p><strong>Adjustments made on the first page of Form 1040 are referred to as being:</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 3 CODE
+var formNumber=new Array();
+formNumber[3]="QuestionForm3";
+questionNumber=3;
+questions[3]=new Array();
+layers[3]=new Array();
+//This is the test question
+questions[3][0]="";
+
+//These are the answer choices
+questions[3][1]="Above-the-line";
+questions[3][2]="Below-the-line";
+//These are the associated layers
+layers[3][1]="Layer5";
+layers[3][2]="Layer6";
+
+//This is the test answer
+answers[3]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm3">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 3
+document.write(getQuestion(3));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 3 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>4.</strong></div>
+</td>
+<td>
+<p><strong>Which results in more savings in tax: a tax credit of $100 or a tax deduction of $100?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 4 CODE
+var formNumber=new Array();
+formNumber[4]="QuestionForm4";
+questionNumber=4;
+questions[4]=new Array();
+layers[4]=new Array();
+//This is the test question
+questions[4][0]="";
+
+//These are the answer choices
+questions[4][1]="A tax credit of $100";
+questions[4][2]="A tax deduction of $100  ";
+questions[4][3]="Neither.  They both result in the same tax saving";
+//These are the associated layers
+layers[4][1]="Layer7";
+layers[4][2]="Layer8";
+layers[4][3]="Layer9";
+
+//This is the test answer
+answers[4]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm4">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 4
+document.write(getQuestion(4));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 4 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>5.</strong></div>
+</td>
+<td>
+<p><strong>If you were in the 33% income tax bracket, which would be more beneficial: a $300 tax credit or a $1,000 tax deduction?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 5 CODE
+var formNumber=new Array();
+formNumber[5]="QuestionForm5";
+questionNumber=5;
+questions[5]=new Array();
+layers[5]=new Array();
+//This is the test question
+questions[5][0]="";
+
+//These are the answer choices
+questions[5][1]="A $300 tax credit";
+questions[5][2]="A $1,000 tax deduction";
+//These are the associated layers
+layers[5][1]="Layer10";
+layers[5][2]="Layer11";
+
+//This is the test answer
+answers[5]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm5">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 5
+document.write(getQuestion(5));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 5 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>6.</strong></div>
+</td>
+<td>
+<p><strong>Nick bought 10 shares of stock in XYZ Inc. 5 years ago at $25 per share. The stock is now worth $35 per share. If Nick sells his shares, which of the following statements would be correct?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 6 CODE
+var formNumber=new Array();
+formNumber[6]="QuestionForm6";
+questionNumber=6;
+questions[6]=new Array();
+layers[6]=new Array();
+//This is the test question
+questions[6][0]="";
+
+//These are the answer choices
+questions[6][1]="Nick would have $100 of earned income, but would not pay taxes on it because of the recovery of capital doctrine.";
+questions[6][2]="Nick would receive $350 for the sale of the stock, of which he would not pay taxes on $250.";
+questions[6][3]="Nick would receive $350 of unearned income, of which he would not pay taxes on $250.";
+questions[6][4]="Nick would receive $100 of unearned income, for which he would not pay taxes because of the recovery of capital doctrine.";
+questions[6][5]="Nick would receive $100 of earned income and would not pay taxes on his original $250 because of the recovery of capital doctrine.";
+//These are the associated layers
+layers[6][1]="Layer12";
+layers[6][2]="Layer13";
+layers[6][3]="Layer14";
+layers[6][4]="Layer15";
+layers[6][5]="Layer16";
+
+//This is the test answer
+answers[6]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm6">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 6
+document.write(getQuestion(6));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 6 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>7.</strong></div>
+</td>
+<td>
+<p><strong>Barry purchases a $15 option to purchase stock, but sells it prior to the exercise date for $25. What would Barry report for this transaction?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 7 CODE
+var formNumber=new Array();
+formNumber[7]="QuestionForm7";
+questionNumber=7;
+questions[7]=new Array();
+layers[7]=new Array();
+//This is the test question
+questions[7][0]="";
+
+//These are the answer choices
+questions[7][1]="$10 capital gain";
+questions[7][2]="$10 ordinary income";
+questions[7][3]="$25 capital gain";
+questions[7][4]="$25 ordinary income";
+//These are the associated layers
+layers[7][1]="Layer17";
+layers[7][2]="Layer18";
+layers[7][3]="Layer19";
+layers[7][4]="Layer20";
+
+//This is the test answer
+answers[7]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm7">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 7
+document.write(getQuestion(7));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 7 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>8.</strong></div>
+</td>
+<td>
+<p><strong> Sharon purchased shares of stock on September 1 and sold them on September 1 of the next year. What type of gain or loss did she realize?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 8 CODE
+var formNumber=new Array();
+formNumber[8]="QuestionForm8";
+questionNumber=8;
+questions[8]=new Array();
+layers[8]=new Array();
+//This is the test question
+questions[8][0]="";
+
+//These are the answer choices
+questions[8][1]="Short-term gain or loss";
+questions[8][2]="Long-term gain or loss";
+//These are the associated layers
+layers[8][1]="Layer21";
+layers[8][2]="Layer22";
+
+//This is the test answer
+answers[8]="A";
+// ]]></script>
+</p>
+<form name="QuestionForm8">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 8
+document.write(getQuestion(8));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 8 CODE
+// ]]></script>
+</td>
+</tr>
+<tr>
+<td align="right" valign="top" width="55">
+<div align="right"><strong>9.</strong></div>
+</td>
+<td>
+<p><strong>On September 1, a client sold 100 shares of XYZ stock that he had held for 2 years. He originally purchased the shares at $50 per share, but sold them at $30 per share. Two weeks after the sale, he purchased the shares back at $15 per share. What is his tax basis in this purchase?</strong></p>
+<p>
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+// BEGIN RADIO QUESTION 9 CODE
+var formNumber=new Array();
+formNumber[9]="QuestionForm9";
+questionNumber=9;
+questions[9]=new Array();
+layers[9]=new Array();
+//This is the test question
+questions[9][0]="";
+
+//These are the answer choices
+questions[9][1]="$15 per share";
+questions[9][2]="$35 per share";
+questions[9][3]="$45 per share";
+//These are the associated layers
+layers[9][1]="Layer23";
+layers[9][2]="Layer24";
+layers[9][3]="Layer25";
+
+//This is the test answer
+answers[9]="B";
+// ]]></script>
+</p>
+<form name="QuestionForm9">
+<script type="text/javascript">// <![CDATA[
+// Display Text for Question 9
+document.write(getQuestion(9));
+// ]]></script>
+</form>
+<script type="text/javascript">// <![CDATA[
+// END RADIO QUESTION 9 CODE
+// ]]></script>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="Layer1" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 349px; top: 258px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> The final calculation for figuring an individual's tax liability is deducting any tax credits from the individual's tentative tax and adding certain other taxes.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer1','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer2" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 348px; top: 258px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer2','','hide')" type="submit" name="Submit2" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer3" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 312px; top: 332px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Adjusted Gross Income is the final number on the front page of the 1040.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer3','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer4" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 306px; top: 337px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer4','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer5" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 394px; top: 413px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer5','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer6" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 394px; top: 413px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer6','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer7" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 300px; top: 507px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> A tax credit results in a dollar-for-dollar reduction in tax liability.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer7','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer8" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 300px; top: 507px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> A tax credit results in a dollar-for-dollar reduction in tax liability.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer8','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer9" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 300px; top: 507px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> A tax credit results in a dollar-for-dollar reduction in tax liability.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer9','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer10" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 399px; top: 601px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> The deduction equivalent of a $300 tax credit is $909.09 ($300 &divide; .33). Therefore, you would be better off taking the $1,000 deduction.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer10','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer11" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 399px; top: 601px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> The deduction equivalent of a $300 tax credit is $909.09 ($300 &divide; .33). Therefore, you would be better off taking the $1,000 deduction.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer11','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer12" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 370px; top: 749px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>Nick performed no labor for the $100. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer12','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer13" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 370px; top: 749px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> Nick's basis was $250, on which he would not pay taxes. However he would pay taxes on the $100 of unearned income.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer13','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer14" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 370px; top: 749px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> While it is true that Nick would not pay taxes on $250, all $350 would not be considered unearned income. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer14','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer15" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 370px; top: 749px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Unearned income is subject to taxation. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer15','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer16" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 370px; top: 749px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> The $100 is not earned income. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer16','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer17" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 400px; top: 854px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct.</strong></p>
+<p align="center"><input onclick="MM_showHideLayers('Layer17','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer18" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 400px; top: 854px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>The option is for a capital asset; therefore, Barry would report a capital gain. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer18','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer19" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 400px; top: 854px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer19','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer20" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 400px; top: 854px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>The option is for a capital asset; therefore, Barry would report a capital gain. Try again.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer20','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer21" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 361px; top: 984px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct! </strong>She had to wait one more day for it to be a long-term gain or loss.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer21','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer22" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 361px; top: 984px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect. </strong>She had to wait one more day for it to be a long-term gain or loss.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer22','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer23" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 434px; top: 1081px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Since this is a wash sale, the client must adjust the basis on the repurchase by adding back the loss he realized on the prior sale.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer23','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer24" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 434px; top: 1081px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Correct!</strong> Since this is a wash sale, the client must adjust the basis on the repurchase by adding back the loss he realized on the prior sale.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer24','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Layer25" style="position: absolute; width: 375px; height: 35px; z-index: 1; left: 434px; top: 1081px; visibility: hidden;">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="6" bgcolor="#e6e6e6">
+<tbody>
+<tr>
+<td>
+<p><strong>Incorrect.</strong> Since this is a wash sale, the client must adjust the basis on the repurchase by adding back the loss he realized on the prior sale.</p>
+<p align="center"><input onclick="MM_showHideLayers('Layer25','','hide')" type="submit" name="Submit" value="close" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
