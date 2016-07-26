@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fundamentals of Federal Income Taxation</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Larry is 55 years of age and wishes to make a contribution to his Traditional Deductible IRA from his earned income. Assuming he is not a participant in an employer-sponsored retirement plan and he makes the maximum contribution possible for 2016, what is his adjustment for AGI?</p>
+         
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="$3,000";
+			questionsAnimated[1][2]="$3,500";
+			questionsAnimated[1][3]="$4,000";
+			questionsAnimated[1][4]="$5,500";
+			questionsAnimated[1][5]="$6,500";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Laeyr1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			layersAnimated[1][4]="Layer4";
+			layersAnimated[1][5]="Layer5";
+			
+			//This is the test answer
+			answersAnimated[1]="E";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. The additional catch-up contribution is $1,000. Try again.</div>
+          <div id="Layer5" class="rvAnimatedLayer">Correct! His contribution limit is $5,500 plus an additional $1,000 for being 50 or older, both of which are fully deductible as an adjustment for AGI.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Your client, who files as a single taxpayer, earns $250,000 and participates in an employer-sponsored retirement plan. She wishes to make a contribution into a Traditional IRA. You would be correct in advising your client that:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="•	She cannot make a contribution because she participates in an employer-sponsored plan.";
+			questionsAnimated[2][2]="•	She cannot make a contribution because she participates in an employer-sponsored plan and her earned income is too high.  ";
+			questionsAnimated[2][3]="•	She can make a contribution, but not for the maximum amount because of her level of earned income.";
+			questionsAnimated[2][4]="•	She can make a contribution up to the annual limit, but it will not be deductible as an adjustment for AGI.";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer6";
+			layersAnimated[2][2]="Layer7";
+			layersAnimated[2][3]="Layer8";
+			layersAnimated[2][4]="Layer9";
+			
+			//This is the test answer
+			answersAnimated[2]="D";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect. Only the deductibility of her contribution is impacted by her earned income and participation in an employer-sponsored plan.  Try again.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect. Only the deductibility of her contribution is impacted by her earned income and participation in an employer-sponsored plan.  Try again.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. Only the deductibility of her contribution is impacted by her earned income and participation in an employer-sponsored plan.  Try again.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Correct! Only the deductibility of her contribution is impacted by her earned income and participation in an employer-sponsored plan.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">For a self-employed person, which of the following are deductible for AGI?
+          <div class="questionStyle">
+        	<ol type="A">
+            	<li><span>100% of contributions to a self-employed SEP, SIMPLE, or Qualified Plan</span></li>
+				<li><span>100% of health insurance premiums</span></li>
+				<li><span>100% of net self-employment income tax</span></li>
+            </ol>
+          </div></p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="A only";
+			questionsAnimated[3][2]="B only";
+			questionsAnimated[3][3]="C only";
+			questionsAnimated[3][4]="A and B";
+			questionsAnimated[3][5]="A and C";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer10";
+			layersAnimated[3][2]="Layer11";
+			layersAnimated[3][3]="Layer12";
+			layersAnimated[3][4]="Layer13";
+			layersAnimated[3][5]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[3]="D";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect. This is not the only correct choice. Try again.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. This is not the only correct choice. Try again.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect. Only half of net self-employment income tax is deductible. Try again.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect. Only half of net self-employment income tax is deductible. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">For 2016, which of the following statements regarding the self-employment tax is correct?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="The total tax is 16.3%.";
+			questionsAnimated[4][2]="The maximum amount of income subject to the Medicare portion of the self-employment tax in 2016 is $118,500.";
+			questionsAnimated[4][3]="The Social Security or OASDI tax is 12.4%.";
+			questionsAnimated[4][4]="The Medicare tax is 3.9%.";
+			questionsAnimated[4][5]="All of the above are correct.";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer15";
+			layersAnimated[4][2]="Layer16";
+			layersAnimated[4][3]="Layer17";
+			layersAnimated[4][4]="Layer18";
+			layersAnimated[4][5]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[4]="C";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect. The self-employment tax is 15.3%.Try again.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect. There is no maximum amount of income subject to the Medicare portion of the self-employment tax. However, $118,500 (2016) is the maximum amount of income subject to the Social Security tax. Try again.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Correct! The Social Security or OASDI portion of the self-employment tax is 12.4% of income in 2016.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect. The Medicare tax is generally 2.9% for self-employed taxpayers earning less than $200,000 (filing as Single, other limits apply to other filing statuses). An additional "employee-only" Medicare tax of .9% applies to taxpayers earning more $200,000. Remember that the self-employed taxpayer pays both "employee" and "employer" portions of self-employment taxes. Try again.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">For a client filing as "Single" with AGI of $125,000 in 2016 (including net investment income of $8,000) what are the total deductions from AGI that can be claimed from the following income and expenses<br>
+			Gift to church = $20,000<br>
+			Property taxes = $8,000<br>
+			Car loan and credit card interest = $3,000<br>
+			Margin account interest = $2,000<br>
+			Medical expenses = $4,000
+			</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="$37,000";
+			questionsAnimated[5][2]="$34,000";
+			questionsAnimated[5][3]="$30,000";
+			questionsAnimated[5][4]="$28,000";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer20";
+			layersAnimated[5][2]="Layer21";
+			layersAnimated[5][3]="Layer22";
+			layersAnimated[5][4]="Layer23";
+			
+			//This is the test answer
+			answersAnimated[5]="C";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 5 CODE
+				//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect. Some expenses are not deductible. Try again</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect. Indeed, the car loan and credit card interest are not deductible; but these are not the only expenses that are not deductible. Try again.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Correct! Everything except for the medical expenses (which do not exceed 10% of AGI) and the car loan and credit card interest is deductible. The client's deduction is not reduced by the itemized deduction phase-out rules because adjusted gross income is less than the phase-out limits.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect. There is at least one other deductible expense available. Try again.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">The 2016 standard deduction for a person who can be claimed on another person's return as a dependent is limited to $1,050.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="True";
+			questionsAnimated[6][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer24";
+			layersAnimated[6][2]="Layer25";
+			
+			//This is the test answer
+			answersAnimated[6]="B";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect. It is limited to the GREATER of $1,050 or the dependent's earned income +$350 (not to exceed the regular standard deduction for non-dependents).</div>
+          <div id="Layer25" class="rvAnimatedLayer">Correct. It is limited to the GREATER of $1,050 or the dependent's earned income +$350 (not to exceed the regular standard deduction for non-dependents).</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+ 
+</div>
+<!-- coursebody -->
+</body>
+</html>

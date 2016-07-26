@@ -1,0 +1,626 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fundamentals of Federal Income Taxation</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">The final calculation in the basic tax formula is deducting any tax credits from an individual's adjusted gross income.</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="True";
+			questionsAnimated[1][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer6";
+			layersAnimated[1][2]="Layer7";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect. The final calculation for figuring an individual's tax liability is deducting any tax credits from the individual's tentative tax and adding certain other taxes.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Correct!</div>
+       </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">All deductions listed on the back of Form 1040 are deductions that are taken out before a taxpayer's AGI is figured.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="True";
+			questionsAnimated[2][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer8";
+			layersAnimated[2][2]="Layer9";
+			
+			//This is the test answer
+			answersAnimated[2]="B";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. Adjusted Gross Income is the final number on the front page of the 1040.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Correct!</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Adjustments made on the first page of Form 1040 are referred to as being:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumber=new Array();
+			formNumber[3]="QuestionForm3";
+			questionNumber=3;
+			questions[3]=new Array();
+			layers[3]=new Array();
+			//This is the test question
+			questions[3][0]="";
+			
+			//These are the answer choices
+			questions[3][1]="Above-the-line";
+			questions[3][2]="Below-the-line";
+			//These are the associated layers
+			layers[3][1]="Layerwbutton1";
+			layers[3][2]="Layerwbutton2";
+			
+			//This is the test answer
+			answers[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestion(3));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 3 CODE
+				//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton1" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton2" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">Which results in more savings in tax: a tax credit of $100 or a tax deduction of $100?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="A tax credit of $100";
+			questionsAnimated[4][2]="A tax deduction of $100";
+			questionsAnimated[4][3]="Neither. They both result in the same tax saving";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer10";
+			layersAnimated[4][2]="Layer11";
+			layersAnimated[4][3]="Layer12";
+			
+			//This is the test answer
+			answersAnimated[4]="A";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer10" class="rvAnimatedLayer">Correct! A tax credit results in a dollar-for-dollar reduction in tax liability.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. A tax credit results in a dollar-for-dollar reduction in tax liability.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect. A tax credit results in a dollar-for-dollar reduction in tax liability.</div>
+       </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">If you were in the 33% income tax bracket, which would be more beneficial: a $300 tax credit or a $1,000 tax deduction?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="A $300 tax credit";
+			questionsAnimated[5][2]="A $1,000 tax deduction";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer13";
+			layersAnimated[5][2]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[5]="B";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect. The deduction equivalent of a $300 tax credit is $909.09 ($300 /.33). Therefore, you would be better off taking the $1,000 deduction.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Correct! The deduction equivalent of a $300 tax credit is $909.09 ($300 /.33).  Therefore, you would be better off taking the $1,000 deduction.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">Nick bought 10 shares of stock in XYZ Inc. 5 years ago at $25 per share.  The stock is now worth $35 per share. If Nick sells his shares, which of the following statements would be correct?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="Nick would have $100 of earned income, but would not pay taxes on it because of the recovery of capital doctrine.";
+			questionsAnimated[6][2]="Nick would receive $350 for the sale of the stock, of which he would not pay taxes on $250.";
+			questionsAnimated[6][3]="Nick would receive $350 of unearned income, of which he would not pay taxes on $250";
+			questionsAnimated[6][4]="Nick would receive $100 of unearned income, for which he would not pay taxes because of the recovery of capital doctrine.";
+			questionsAnimated[6][5]="Nick would receive $100 of earned income and would not pay taxes on his original $250 because of the recovery of capital doctrine.";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer15";
+			layersAnimated[6][2]="Layer16";
+			layersAnimated[6][3]="Layer17";
+			layersAnimated[6][4]="Layer18";
+			layersAnimated[6][5]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[6]="B";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect. Nick performed no labor for the $100. Try again.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Correct! Nick's basis was $250, on which he would not pay taxes.  However he would pay taxes on the $100 of unearned income.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect. While it is true that Nick would not pay taxes on $250, all $350 would not be considered unearned income. Try again.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect. Unearned income is subject to taxation. Try again.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect. The $100 is not earned income. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">Barry purchases a $15 option to purchase stock, but sells it prior to the exercise date for $25. What would Barry report for this transaction?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[7]="QuestionForm7";
+			questionNumberAnimated=7;
+			questionsAnimated[7]=new Array();
+			layersAnimated[7]=new Array();
+			//This is the test question
+			questionsAnimated[7][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[7][1]="$10 capital gain";
+			questionsAnimated[7][2]="$10 ordinary income";
+			questionsAnimated[7][3]="$25 capital gain";
+			questionsAnimated[7][4]="$25 ordinary income";
+			//These are the associated layersAnimated
+			layersAnimated[7][1]="Layer20";
+			layersAnimated[7][2]="Layer21";
+			layersAnimated[7][3]="Layer22";
+			layersAnimated[7][4]="Layer23";
+			
+			//This is the test answer
+			answersAnimated[7]="A";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestionAnimated(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect. The option is for a capital asset; therefore, Barry would report a capital gain. Try again.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Incorrect. Try again.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect. The option is for a capital asset; therefore, Barry would report a capital gain. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">Sharon purchased shares of stock on September 1 and sold them on September 1 of the next year. What type of gain or loss did she realize?</p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 8 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[8]="QuestionForm8";
+				questionNumberAnimated=8;
+				questionsAnimated[8]=new Array();
+				layersAnimated[8]=new Array();
+				//This is the test question
+				questionsAnimated[8][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[8][1]="Short-term gain or loss";
+				questionsAnimated[8][2]="Long-term gain or loss";
+				//These are the associated layersAnimated
+				layersAnimated[8][1]="Layer24";
+				layersAnimated[8][2]="Layer25";
+				
+				//This is the test answer
+				answersAnimated[8]="A";
+				//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+				<!--
+				// Display Text for Question 8
+				document.write(getQuestionAnimated(8));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer24" class="rvAnimatedLayer">Correct! She had to wait one more day for it to be a long-term gain or loss.</div>
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect. She had to wait one more day for it to be a long-term gain or loss.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>9.</strong></p></td>
+        <td><p class="questionStyle">On September 1, a client sold 100 shares of XYZ stock that he had held for 2 years. He originally purchased the shares at $50 per share, but sold them at $30 per share. Two weeks after the sale, he purchased the shares back at $15 per share. What is his tax basis in this purchase?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 9 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[9]="QuestionForm9";
+			questionNumberAnimated=9;
+			questionsAnimated[9]=new Array();
+			layersAnimated[9]=new Array();
+			//This is the test question
+			questionsAnimated[9][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[9][1]="$15 per share";
+			questionsAnimated[9][2]="$35 per share";
+			questionsAnimated[9][3]="$35 per share";
+			//These are the associated layersAnimated
+			layersAnimated[9][1]="Layer26";
+			layersAnimated[9][2]="Layer27";
+			layersAnimated[9][3]="Layer28";
+			
+			//This is the test answer
+			answersAnimated[9]="B";
+			//-->
+          </script>
+          <form name="QuestionForm9">
+            <script>
+				<!--
+				// Display Text for Question 9
+				document.write(getQuestionAnimated(9));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 9 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer26" class="rvAnimatedLayer">Incorrect. Since this is a wash sale, the client must adjust the basis on the repurchase by adding back the loss he realized on the prior sale.</div>
+          <div id="Layer27" class="rvAnimatedLayer">Correct! Since this is a wash sale, the client must adjust the basis on the repurchase by adding back the loss he realized on the prior sale.</div>
+          <div id="Layer28" class="rvAnimatedLayer">Incorrect. Since this is a wash sale, the client must adjust the basis on the repurchase by adding back the loss he realized on the prior sale.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>And so forth...</p>
+</div>
+<!-- coursebody -->
+</body>
+</html>
