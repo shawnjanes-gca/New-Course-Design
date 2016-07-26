@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fundamentals of Federal Income Taxation</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script type="text/javascript" src="p7ttm/p7TTMscripts.js"></script>
+<link href="p7ttm/p7TTM09.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript">
+P7_opTTM('id:p7Tooltip_1','att:title','p7TTM09',8,500,2,1,1,0,-7,0,300,0,1,1,0,0,0,0);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Annuities</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>The final issue we will explore regarding the recognition of unearned income is the taxation of annuities. Income from <a href="#" title="&lt;p&gt;Annuities are contracts (typically insurance contracts) that may provide income as a series of regular payments for a specific period of time or for life. A portion of each annuity payment is considered a return of capital.&lt;/p&gt;" class="p7TTM_trg" id="p7Tooltip_1">annuities</a> is reported on line 16a of Form 1040. </p>
+  <p style="text-align:center;"><img src="greene/fundamentals_of_federal_income_taxation/images/Annuities.png" width="592" height="175" alt=""/></p>
+  <p>When  an individual receives annuity payments, part of the annuity income payments  will be included or excluded from taxable income. The portion of income  payments that is excluded from taxation is determined by calculating the <strong><em>exclusion  ratio</em></strong>.</p>
+  <div class="example-box">
+  <table>
+  	<tr>
+    	<td rowspan="2">Exclusion Ratio</td>
+        <td rowspan="2">=</td>
+        <td style="border-bottom:1px solid black; vertical-align:bottom;">Investment in Contract</td>
+    </tr>
+    <tr>
+    	
+        <td style="vertical-align:top;">Expected Return</td>
+    </tr>
+  </table>
+  </div><!--example box-->
+  <p>If the number of payments is known, then the expected return in the equation is simply the total of all the income payments. If it is a life annuity, then you total all the income payments within the annuitant's life expectancy.</p>
+<p>Once the exclusion ratio is determined, you simply multiply an income payment by the exclusion ratio to derive the amount of the income payment that is excluded from taxable income. This portion is simply a return of the investment in the annuity.</p>
+<div class="example-box">
+	<p style="text-align:center;"><strong>Excluded Amount = Exclusion Ratio x Income Payment</strong></p>
+</div>
+<p>Once the excluded amount is determined, then the taxable amount is simply the balance.  Generally, payments received after the investment in the contract is recovered are fully included in income. This is best illustrated by the example below.</p>
+
+<div class="example-box">
+<h3>Example</h3>
+<p><span class="pageInstruction">Select the correct answer.</span></p>
+
+
+<div id="qTable">
+  <table>
+    <tr>
+      <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+      <td><p class="questionStyle">Susan pays $100,000 for a 10-year annuity that will pay her $1,500 per month over the next 10 years.  What is the taxable amount of her first income payment? </p>
+
+        <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="$555.56";
+			questionsAnimated[1][2]="$666.60";
+			questionsAnimated[1][3]="$833.40";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer3";
+			layersAnimated[1][2]="Layer4";
+			layersAnimated[1][3]="Layer5";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+					</script>
+			<form name="QuestionForm1">
+					  <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+					  </script>
+			</form>
+			<script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer3" class="rvAnimatedLayer">Incorrect. The exclusion ratio is $100,000/180,000 = .5556<br>
+		Thus, 55.56% of $1,500, which is $833.40, would be excluded from taxation.  The balance, which is $666.60, would be included in taxable income.
+</div>
+        <div id="Layer4" class="rvAnimatedLayer">Correct! The exclusion ratio is $100,000/180,000 = .5556<br>
+		Thus, 55.56% of $1,500, which is $833.40, would be excluded from taxation.  The balance, which is $666.60, would be included in taxable income.
+</div>
+        <div id="Layer5" class="rvAnimatedLayer">Incorrect. The exclusion ratio is $100,000/180,000 = .5556<br>
+		Thus, 55.56% of $1,500, which is $833.40, would be excluded from taxation.  The balance, which is $666.60, would be included in taxable income.</div>
+	  </td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+<!-- coursebody -->
+</body>
+</html>
