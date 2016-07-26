@@ -2,9 +2,259 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Planning for IRA Required Minimum Distributions</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>Susan Reeves has a birthday on February 27, 2016, at which time she will be 70 years old. When must she begin taking RMDs and what is the account balance to be used for calculating the first RMD? <span class="pageInstruction">Select the correct answer for each question.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">When is her Required Beginning Date?</p>
+ 
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="April 1, 2016";
+			questionsAnimated[1][2]="April 1, 2017";
+			questionsAnimated[1][3]="December 31, 2016";
+			questionsAnimated[1][4]="April 1, 2018";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer26";
+			layersAnimated[1][2]="Layer27";
+			layersAnimated[1][3]="Layer28";
+			layersAnimated[1][4]="Layer29";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer26" class="rvAnimatedLayer">Incorrect. Remember that the RBD is April 1 following the calendar year in which she attains age 70½.</div>
+          <div id="Layer27" class="rvAnimatedLayer">Correct! The RBD is April 1 following the calendar year in which she attains age 70½.</div>
+          <div id="Layer28" class="rvAnimatedLayer">Incorrect. Remember that the RBD is April 1 following the calendar year in which she attains age 70½.</div>
+          <div id="Layer29" class="rvAnimatedLayer">Incorrect. Remember that the RBD is April 1 following the calendar year in which she attains age 70½. </div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">What is the appropriate account balance date to be used in calculating the first RMD? Assume that the initial RMD is withdrawn in 2016 for 2016.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="12/31/2015";
+			questionsAnimated[2][2]="12/31/2016";
+			questionsAnimated[2][3]="12/31/2014";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer30";
+			layersAnimated[2][2]="Layer31";
+			layersAnimated[2][3]="Layer32";
+			
+			//This is the test answer
+			answersAnimated[2]="A";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer30" class="rvAnimatedLayer">Correct! The rule for the initial RMD is to use 12/31 of the year preceding the year in which the owner turns 70½.</div>
+          <div id="Layer31" class="rvAnimatedLayer">Incorrect. Remember the rule for the initial RMD is to use 12/31 of the year preceding the year in which the owner turns 70½.</div>
+          <div id="Layer32" class="rvAnimatedLayer">Incorrect. Remember the rule for the initial RMD is to use 12/31 of the year preceding the year in which the owner turns 70½.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">If the entire initial RMD is withdrawn in 2016 for 2016, what is the appropriate account balance date to be used in calculating the first RMD?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="12/31/2015";
+			questionsAnimated[3][2]="12/31/2016";
+			questionsAnimated[3][3]="12/31/2017";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer33";
+			layersAnimated[3][2]="Layer34";
+			layersAnimated[3][3]="Layer35";
+			
+			//This is the test answer
+			answersAnimated[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer33" class="rvAnimatedLayer">Correct! The rule for the initial RMD is to use 12/31 of the year preceding the year in which the owner turns 70½, regardless of when the withdrawal is made.</div>
+          <div id="Layer34" class="rvAnimatedLayer">Incorrect. Remember the rule for the initial RMD is to use 12/31 of the year preceding the year in which the owner turns 70½, regardless of when the withdrawal is made.</div>
+          <div id="Layer35" class="rvAnimatedLayer">Incorrect. Remember the rule for the initial RMD is to use 12/31 of the year preceding the year in which the owner turns 70½, regardless of when the withdrawal is made.</div>
+	</td>
+      </tr>
+    </table>
+  </div>
+ 
+</div>
+<!-- coursebody -->
 </body>
 </html>
