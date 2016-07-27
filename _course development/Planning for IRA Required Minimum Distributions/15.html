@@ -170,155 +170,156 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 <p><strong>Step 1</strong> - She attains age 70½ in 2016</p>
 <p><strong>Step 2</strong> - Since she turned 70 in 2016, she will not have another birthday before the end of the year, so her attained age will be 70 at the first year for which she is taking a distribution (in 2016).</p>
 <p><strong>Step 3</strong> - From the Uniform Table,  select the life expectancy factor to be used for someone age 70.</p>
-<div class="example-box">
-  <div align="center"><h3>The &quot;Uniform Table&quot;</h3></div>
-  <div align="center"><p>(Note: This table is for illustration purposes only. For actual use, consult the most recent schedule from the IRS)</p></div>
-  <table border="1" cellpadding="0" width="100%">
-    <tr>
-      <td colspan="6"><p align="center"><strong>Table for   Determining Applicable Divisor </strong></p></td>
+  <h3 style="text-align:center">The &quot;Uniform Table&quot;</h3>
+  <p style="text-align:center">(Note: This table is for illustration purposes only. For actual use, consult the most recent schedule from the IRS)</p>
+  <table style="width:80%; margin: auto auto;">
+    <caption style="text-align:center">
+      Table for Determining Applicable Divisor 
+    </caption>
+    <thead>
+       <tr>
+        <th scope="col">Age</th>
+        <th scope="col">Applicable 
+Divisor</th>
+        <th scope="col">Age</th>
+        <th scope="col">Applicable 
+Divisor</th>
+        <th scope="col">Age</th>
+        <th scope="col">Applicable 
+Divisor</th>
+      </tr>
+    </thead>
+     <tr>
+      <td>70</td>
+      <td>27.4</td>
+      <td>86</td>
+      <td>14.1</td>
+      <td>102</td>
+      <td>5.5</td>
     </tr>
     <tr>
-      <td><p align="center"><strong>Age</strong></p></td>
-      <td><p align="center"><strong>Applicable <br>
-        Divisor</strong></p></td>
-      <td><p align="center"><strong>Age</strong></p></td>
-      <td><p align="center"><strong>Applicable<br>
-        Divisor</strong></p></td>
-      <td><p align="center"><strong>Age</strong></p></td>
-      <td><p align="center"><strong>Applicable<br>
-        Divisor</strong></p></td>
+      <td>71</td>
+      <td>26.5</td>
+      <td>87</td>
+      <td>13.4</td>
+      <td>103</td>
+      <td>5.2</td>
     </tr>
     <tr>
-      <td><p align="center">70</p></td>
-      <td><p align="center">27.4</p></td>
-      <td><p align="center">86</p></td>
-      <td><p align="center">14.1</p></td>
-      <td><p align="center">102</p></td>
-      <td><p align="center">5.5</p></td>
+      <td>72</td>
+      <td>25.6</td>
+      <td>88</td>
+      <td>12.7</td>
+      <td>104</td>
+      <td>4.9</td>
     </tr>
     <tr>
-      <td><p align="center">71</p></td>
-      <td><p align="center">26.5</p></td>
-      <td><p align="center">87</p></td>
-      <td><p align="center">13.4</p></td>
-      <td><p align="center">103</p></td>
-      <td><p align="center">5.2</p></td>
+      <td>73</td>
+      <td>24.7</td>
+      <td>89</td>
+      <td>12.0</td>
+      <td>105</td>
+      <td>4.5</td>
     </tr>
     <tr>
-      <td><p align="center">72</p></td>
-      <td><p align="center">25.6</p></td>
-      <td><p align="center">88</p></td>
-      <td><p align="center">12.7</p></td>
-      <td><p align="center">104</p></td>
-      <td><p align="center">4.9</p></td>
+      <td>74</td>
+      <td>23.8</td>
+      <td>90</td>
+      <td>11.4</td>
+      <td>106</td>
+      <td>4.2</td>
     </tr>
     <tr>
-      <td><p align="center">73</p></td>
-      <td><p align="center">24.7</p></td>
-      <td><p align="center">89</p></td>
-      <td><p align="center">12.0</p></td>
-      <td><p align="center">105</p></td>
-      <td><p align="center">4.5</p></td>
+      <td>75</td>
+      <td>22.9</td>
+      <td>91</td>
+      <td>10.8</td>
+      <td>107</td>
+      <td>3.9</td>
     </tr>
     <tr>
-      <td><p align="center">74</p></td>
-      <td><p align="center">23.8</p></td>
-      <td><p align="center">90</p></td>
-      <td><p align="center">11.4</p></td>
-      <td><p align="center">106</p></td>
-      <td><p align="center">4.2</p></td>
+      <td>76</td>
+      <td>22.0</td>
+      <td>92</td>
+      <td>10.2</td>
+      <td>108</td>
+      <td>3.7</td>
     </tr>
     <tr>
-      <td><p align="center">75</p></td>
-      <td><p align="center">22.9</p></td>
-      <td><p align="center">91</p></td>
-      <td><p align="center">10.8</p></td>
-      <td><p align="center">107</p></td>
-      <td><p align="center">3.9</p></td>
+      <td>77</td>
+      <td>21.2</td>
+      <td>93</td>
+      <td>9.6</td>
+      <td>109</td>
+      <td>3.4</td>
     </tr>
     <tr>
-      <td><p align="center">76</p></td>
-      <td><p align="center">22.0</p></td>
-      <td><p align="center">92</p></td>
-      <td><p align="center">10.2</p></td>
-      <td><p align="center">108</p></td>
-      <td><p align="center">3.7</p></td>
+      <td>78</td>
+      <td>20.3</td>
+      <td>94</td>
+      <td>9.1</td>
+      <td>110</td>
+      <td>3.1</td>
     </tr>
     <tr>
-      <td><p align="center">77</p></td>
-      <td><p align="center">21.2</p></td>
-      <td><p align="center">93</p></td>
-      <td><p align="center">9.6</p></td>
-      <td><p align="center">109</p></td>
-      <td><p align="center">3.4</p></td>
+      <td>79</td>
+      <td>19.5</td>
+      <td>95</td>
+      <td>8.6</td>
+      <td>111</td>
+      <td>2.9</td>
     </tr>
     <tr>
-      <td><p align="center">78</p></td>
-      <td><p align="center">20.3</p></td>
-      <td><p align="center">94</p></td>
-      <td><p align="center">9.1</p></td>
-      <td><p align="center">110</p></td>
-      <td><p align="center">3.1</p></td>
+      <td>80</td>
+      <td>18.7</td>
+      <td>96</td>
+      <td>8.1</td>
+      <td>112</td>
+      <td>2.6</td>
     </tr>
     <tr>
-      <td><p align="center">79</p></td>
-      <td><p align="center">19.5</p></td>
-      <td><p align="center">95</p></td>
-      <td><p align="center">8.6</p></td>
-      <td><p align="center">111</p></td>
-      <td><p align="center">2.9</p></td>
+      <td>81</td>
+      <td>17.9</td>
+      <td>97</td>
+      <td>7.6</td>
+      <td>113</td>
+      <td>2.4</td>
     </tr>
     <tr>
-      <td><p align="center">80</p></td>
-      <td><p align="center">18.7</p></td>
-      <td><p align="center">96</p></td>
-      <td><p align="center">8.1</p></td>
-      <td><p align="center">112</p></td>
-      <td><p align="center">2.6</p></td>
+      <td>82</td>
+      <td>17.1</td>
+      <td>98</td>
+      <td>7.1</td>
+      <td>114</td>
+      <td>2.1</td>
     </tr>
     <tr>
-      <td><p align="center">81</p></td>
-      <td><p align="center">17.9</p></td>
-      <td><p align="center">97</p></td>
-      <td><p align="center">7.6</p></td>
-      <td><p align="center">113</p></td>
-      <td><p align="center">2.4</p></td>
+      <td>83</td>
+      <td>16.3</td>
+      <td>99</td>
+      <td>6.7</td>
+      <td>115+</td>
+      <td>1.9</td>
     </tr>
     <tr>
-      <td><p align="center">82</p></td>
-      <td><p align="center">17.1</p></td>
-      <td><p align="center">98</p></td>
-      <td><p align="center">7.1</p></td>
-      <td><p align="center">114</p></td>
-      <td><p align="center">2.1</p></td>
+      <td>84</td>
+      <td>15.5</td>
+      <td>100</td>
+      <td>6.3</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><p align="center">83</p></td>
-      <td><p align="center">16.3</p></td>
-      <td><p align="center">99</p></td>
-      <td><p align="center">6.7</p></td>
-      <td><p align="center">115+</p></td>
-      <td><p align="center">1.9</p></td>
-    </tr>
-    <tr>
-      <td><p align="center">84</p></td>
-      <td><p align="center">15.5</p></td>
-      <td><p align="center">100</p></td>
-      <td><p align="center">6.3</p></td>
-      <td><p>&nbsp;</p></td>
-      <td><p>&nbsp;</p></td>
-    </tr>
-    <tr>
-      <td><p align="center">85</p></td>
-      <td><p align="center">14.8</p></td>
-      <td><p align="center">101</p></td>
-      <td><p align="center">5.9</p></td>
-      <td><p>&nbsp;</p></td>
-      <td><p>&nbsp;</p></td>
+      <td>85</td>
+      <td>14.8</td>
+      <td>101</td>
+      <td>5.9</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
   </table>
-</div>
-<!-- example-box -->
+
+  <!-- example-box -->
 
   <script language="JavaScript">
 <!--
