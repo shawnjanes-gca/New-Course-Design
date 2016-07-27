@@ -4,6 +4,30 @@
 <meta charset="UTF-8">
 <title>Planning for IRA Required Minimum Distributions</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+
 </head>
 
 <body>
@@ -20,8 +44,8 @@
   <p>There are three steps to determining the life expectancy factor for the initial RMD.</p>
   <div class="example-box">
     <ol start="1" type="1" style="width:95%">
-      <li><span>Establish the calendar      year in which the IRA owner attains 70½,</span></li>
-      <li><span>Regardless of the owner&rsquo;s      age, determine the IRA owner&rsquo;s attained age as of the end of that calendar      year for which the distribution will be made.</span></li>
+      <li><span>Establish the calendar year in which the IRA owner attains 70½,</span></li>
+      <li><span>Regardless of the owner&rsquo;s age, determine the IRA owner&rsquo;s attained age as of the end of that calendar year for which the distribution will be made.</span></li>
       <li><span>Refer to the appropriate life expectancy table.</span></li>
     </ol>
 </div>
@@ -29,16 +53,123 @@
   <p>Factors for use in subsequent years are identified by determining the owner&rsquo;s attained age as of the end of the calendar year in which the distribution is made.  Since the RMD is recalculated every year and the life expectancy factor (the divisor) will always be greater than 1, the IRA will never be exhausted during the owner's lifetime if distributions are never greater than the RMD, barring negative performance of the owner's investments.</p>
   <p>Look at the following example:</p>
   <p><strong>Example: </strong>Michelle Howard celebrates her 70th birthday on February 14, 2016. When is her Required Beginning Date?</p>
-  <ul type="disc">
-    <li>February 14, 2016</li>
-    <li>April 1, 2016</li>
-    <li>December 31,      2017</li>
-    <li>April 1, 2017</li>
-  </ul>
-Having established the RBD, what is her life expectancy factor using the Uniform Table for the initial RMD?
+
+    <script language="JavaScript">
+		<!--
+		// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+		function answerCorrectAnimated(questionNumber, answer, formName)
+		{
+			// declare a variable to hold return value
+			var correct = false;
+			var questionLength = formName.radQuestionChoiceAnimated.length;
+			var questionChoice;
+		
+			// if answer provided is same as correct answer then correct variable is true
+			if (answer == answersAnimated[questionNumber])
+				{correct = true;
+					for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+					{
+					formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+		
+					}
+		
+			// return whether the answer was correct (true or false)
+			return correct;
+			}
+		}
+		
+		function getQuestionAnimated(questionNumber)
+		{
+		
+		   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+		   var questionLength = questionsAnimated[questionNumber].length;
+		   var questionChoice;
+		
+		   questionHTML = questionHTML + "<P>";
+		   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+		   {
+			  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+			  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+			  questionHTML = questionHTML + "</label><BR>";
+		   }
+		   questionHTML = questionHTML + "</P>";
+		
+		   return questionHTML;
+		}
+		function buttonCheckQAnimated_onclick(questionNum, formName)
+		{
+		   var answer = 0;
+		   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+		   {
+			  answer++;
+		   }
+		
+		   var answer2 = String.fromCharCode(65 + answer);
+		   answer++;
+		   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+		   {
+			  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+		   }
+		   else
+		   {
+			  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+		   }
+		}
+		
+		var questionNumberAnimated;
+		var questionsAnimated=new Array();
+		var answersAnimated=new Array();
+		var layersAnimated=new Array();
+		// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+		
+		// BEGIN RADIO QUESTION 1 CODE
+		var formNumberAnimated=new Array();
+		formNumberAnimated[1]="QuestionForm1";
+		questionNumberAnimated=1;
+		questionsAnimated[1]=new Array();
+		layersAnimated[1]=new Array();
+		//This is the test question
+		questionsAnimated[1][0]="";
+		
+		//These are the answer choices
+		questionsAnimated[1][1]="February 14, 2016";
+		questionsAnimated[1][2]="April 1, 2016";
+		questionsAnimated[1][3]="December 31, 2017";
+		questionsAnimated[1][4]="April 1, 2017";
+		//These are the associated layersAnimated
+		layersAnimated[1][1]="Layer11";
+		layersAnimated[1][2]="Layer12";
+		layersAnimated[1][3]="Layer13";
+		layersAnimated[1][4]="Layer14";
+		
+		//This is the test answer
+		answersAnimated[1]="D";
+		//-->
+    </script>
+
+  <form name="QuestionForm1">
+    <script>
+		<!--
+		// Display Text for Question 1
+		document.write(getQuestionAnimated(1));
+		//-->
+    </script>
+  </form>
+  <script>
+		<!--
+		// END RADIO QUESTION 1 CODE
+		//-->
+  </script>
+  <!--put Review Exercise Layer with Feedback here-->
+  <div id="Layer11" class="rvAnimatedLayer">Incorrect. Remember that the RBD is April 1 following the calendar year that she attains age 70½.</div>
+  <div id="Layer12" class="rvAnimatedLayer">Incorrect. Remember that the RBD is April 1 following the calendar year that she attains age 70½.</div>
+  <div id="Layer13" class="rvAnimatedLayer">Incorrect. Remember that the RBD is April 1 following the calendar year that she attains age 70½.</div>
+  <div id="Layer14" class="rvAnimatedLayer">Correct!</div>
+  
+<p>Having established the RBD, what is her life expectancy factor using the Uniform Table for the initial RMD?</p>
 <p><strong>Step 1</strong> - She attains age 70½ in 2016</p>
 <p><strong>Step 2</strong> - Since she turned 70 in 2016, she will not have another birthday before the end of the year, so her attained age will be 70 at the first year for which she is taking a distribution (in 2016).</p>
-<p><strong>Step 3</strong> - From the Uniform Table, an example of which can be viewed by clicking here, select the life expectancy factor to be used for someone age 70.</p>
+<p><strong>Step 3</strong> - From the Uniform Table,  select the life expectancy factor to be used for someone age 70.</p>
 <div class="example-box">
   <div align="center"><h3>The &quot;Uniform Table&quot;</h3></div>
   <div align="center"><p>(Note: This table is for illustration purposes only. For actual use, consult the most recent schedule from the IRS)</p></div>
@@ -188,31 +319,76 @@ Having established the RBD, what is her life expectancy factor using the Uniform
   </table>
 </div>
 <!-- example-box -->
-<ul type="disc">
-  <li>27.4</li>
-  <li>26.5</li>
-  <li>25.6</li>
-  <li>24.7</li>
-  <li>23.8</li>
-</ul>
-<strong>Example</strong>: George turns age 70 on November 15, 2016. His wife and beneficiary is Betty, age 68. What are his RMDs for 2016, 2017, 2018 and 2019? His account balances are as follows:
-<p>12/31/2016:  $143,000<br>
-  12/31/2017:  $156,000<br>
-  12/31/2018:  $133,000<br>
-  12/31/2019:  $135,000</p>
+
+  <script language="JavaScript">
+<!--
+// BEGIN RADIO QUESTION 2 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[2]="QuestionForm2";
+questionNumberAnimated=2;
+questionsAnimated[2]=new Array();
+layersAnimated[2]=new Array();
+//This is the test question
+questionsAnimated[2][0]="";
+
+//These are the answer choices
+questionsAnimated[2][1]="27.4";
+questionsAnimated[2][2]="26.5";
+questionsAnimated[2][3]="25.6";
+questionsAnimated[2][4]="24.7";
+questionsAnimated[2][5]="23.8";
+//These are the associated layersAnimated
+layersAnimated[2][1]="Layer15";
+layersAnimated[2][2]="Layer16";
+layersAnimated[2][3]="Layer17";
+layersAnimated[2][4]="Layer18";
+layersAnimated[2][5]="Layer19";
+
+//This is the test answer
+answersAnimated[2]="A";
+//-->
+  </script>
+
+<form name="QuestionForm2">
+  <script>
+<!--
+// Display Text for Question 2
+document.write(getQuestionAnimated(2));
+//-->
+  </script>
+</form>
+<script>
+<!--
+// END RADIO QUESTION 2 CODE
+//-->
+</script>
+<!--put Review Exercise Layer with Feedback here-->
+
+<div id="Layer15" class="rvAnimatedLayer">Correct!</div>
+<div id="Layer16" class="rvAnimatedLayer">Incorrect. Look up the divisor for someone age 70 and try again.</div>
+<div id="Layer17" class="rvAnimatedLayer">Incorrect. Look up the divisor for someone age 70 and try again.</div>
+<div id="Layer18" class="rvAnimatedLayer">Incorrect. Look up the divisor for someone age 70 and try again.</div>
+<div id="Layer19" class="rvAnimatedLayer">Incorrect. Look up the divisor for someone age 70 and try again.</div>
+
+<div class="example-box">
+<h3>Example:</h3>
+<p> George turns age 70 on November 15, 2016. His wife and beneficiary is Betty, age 68. What are his RMDs for 2016, 2017, 2018 and 2019? His account balances are as follows:</p>
+<ul style="list-style:none;">
+	<li>12/31/2016:  $143,000</li>
+  	<li>12/31/2017:  $156,000</li>
+  	<li>12/31/2018:  $133,000</li>
+  	<li>12/31/2019:  $135,000</li>
+ </ul>
+ <p>Follow these seven steps to calculate George's RMDs:</p>
 <p>Step 1:  The RBD is April 1 following the calendar year in which he attains age 70½. He is 70½ in 2018; thus, his RBD is in 2018.</p>
-<p><br>
-  Step 2:  George can take his first distribution in 2017 or 2018. Let&rsquo;s assume it is in his best interest to spread the first and second distributions over two years, thus he takes the first distribution in 2017.</p>
-<p><br>
-  Step 3:  In this case, we use the Uniform table to find the correct divisor. He turns 70½ in 2017. At the end of 2017, he will be 71, thus the correct divisor for the 2017 distribution is 26.5.</p>
-<p><br>
-  Step 4:  George turned 70½ in 2017, so we use the account balance at 12/31/2016 of $143,000 to calculate his first RMD.</p>
-<p><br>
-  Step 5:  Calculation for 2017 is thus $143,000 divided by 26.5 = $5,396.23</p>
-<p><br>
-  Step 6:  Calculation for 2018 based on the age 72 factor of 25.6 and account balance at 12/31/2017 of $156,000.  $156,000 divided by 25.6 = $6,093.75</p>
-<p><br>
-  Step 7:  Calculation for 2019 based on the age 73 factor of 24.7 and account balance at 12/31/2018 of $133,000. $133,000 divided by 24.7 = $5,384.62</p>
+<p>Step 2:  George can take his first distribution in 2017 or 2018. Let&rsquo;s assume it is in his best interest to spread the first and second distributions over two years, thus he takes the first distribution in 2017.</p>
+<p>Step 3:  In this case, we use the Uniform table to find the correct divisor. He turns 70½ in 2017. At the end of 2017, he will be 71, thus the correct divisor for the 2017 distribution is 26.5.</p>
+<p>Step 4:  George turned 70½ in 2017, so we use the account balance at 12/31/2016 of $143,000 to calculate his first RMD.</p>
+<p>Step 5:  Calculation for 2017 is thus $143,000 divided by 26.5 = $5,396.23</p>
+<p>Step 6:  Calculation for 2018 based on the age 72 factor of 25.6 and account balance at 12/31/2017 of $156,000.  $156,000 divided by 25.6 = $6,093.75</p>
+<p>Step 7:  Calculation for 2019 based on the age 73 factor of 24.7 and account balance at 12/31/2018 of $133,000. $133,000 divided by 24.7 = $5,384.62</p>
+  </div><!--example box-->
+
 </div>
 <!-- coursebody -->
 </body>
