@@ -85,7 +85,7 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 		   var questionLength = questionsAnimated[questionNumber].length;
 		   var questionChoice;
 		
-		   questionHTML = questionHTML + "<P>";
+		   questionHTML = questionHTML + "<P style='margin-left:35px'>";
 		   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
 		   {
 			  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
@@ -169,7 +169,7 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 <p>Having established the RBD, what is her life expectancy factor using the Uniform Table for the initial RMD?</p>
 <p><strong>Step 1</strong> - She attains age 70½ in 2016</p>
 <p><strong>Step 2</strong> - Since she turned 70 in 2016, she will not have another birthday before the end of the year, so her attained age will be 70 at the first year for which she is taking a distribution (in 2016).</p>
-<p><strong>Step 3</strong> - From the Uniform Table,  select the life expectancy factor to be used for someone age 70.</p>
+
   <h3 style="text-align:center">The &quot;Uniform Table&quot;</h3>
   <p style="text-align:center">(Note: This table is for illustration purposes only. For actual use, consult the most recent schedule from the IRS)</p>
   <table style="width:80%; margin: auto auto;">
@@ -318,7 +318,7 @@ Divisor</th>
       <td>&nbsp;</td>
     </tr>
   </table>
-
+<p><strong>Step 3</strong> - From the Uniform Table above,  select the life expectancy factor to be used for someone age 70.</p>
   <!-- example-box -->
 
   <script language="JavaScript">
