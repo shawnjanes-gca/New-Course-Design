@@ -4,6 +4,36 @@
 <meta charset="utf-8">
 <title>Fundamentals of Federal Income Taxation</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
 </head>
 
 <body>
@@ -17,7 +47,626 @@
   <h1><span class="pagetitle">Review Exercise</span>
     <!-- pagetitle -->
   </h1>
-  <p>Paragraph 1</p>
+  <p><span class="pageInstruction">For questions 1- 5, refer to our previous discussion of "Calculation of Capital Gains Taxes" in this course for a brief refresher. </span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Bruce purchased 100 shares of American Industries five years ago at $8.00 per share and sold them in the current year for $24.00 per share. The commission on each transaction was $25. This is his only capital transaction for the current year, he has no loss carry-forward that he could use from the prior year, and he is not subject to the 3.8% Net Investment Income Tax. Bruce is in the 28% ordinary income tax bracket. What is the tax impact of his transaction in the current year?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="A short-term gain of $1,600, taxed at his marginal tax rate.";
+			questionsAnimated[1][2]="A long-term gain of $1,550, taxed at his marginal tax rate.";
+			questionsAnimated[1][3]="A long-term gain of $1,550, taxed at 15%.";
+			questionsAnimated[1][4]="A long-term gain of $1,550, taxed at 0%.";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer20";
+			layersAnimated[1][2]="Layer21";
+			layersAnimated[1][3]="Layer22";
+			layersAnimated[1][4]="Layer23";
+			
+			//This is the test answer
+			answersAnimated[1]="C";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect. Since it was held for over a year, this is a long-term gain. Also, the commissions must be accounted for in computing the gain. Try again.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect. Since it is a long-term gain, it is not taxed at his marginal rate. Try again.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Correct.  As a long-term gain, it is taxed at the long-term capital gain rate of 15%. His basis in the shares is $825 calculated as 100 shares @ $8/share plus the commission of $25. His net sales price is $2,375 calculated as 100 shares @ $24/share less $25 commission.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect. His AGI is too high for him to qualify for the lower capital gains tax rate. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Continuing with Bruce's situation, suppose that he had the following additional gains and losses in the current year:
+        <div class="questionStyle" style="margin-left:15px">
+        $300 long-term loss (net of commissions) on ABC Inc.<br>
+		$800 short-term gain (net of commissions) on XYZ Inc.<br>
+		$1,000 short-term loss (net of commissions) on A2Z Inc.</div>
+		<p style="margin-left:15px;">What is the net gain/loss on which his capital gains tax will be computed?</p>
+        </p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="A $200 loss against ordinary income and a net long-term gain of $1,250 (taxed at 15%)";
+			questionsAnimated[2][2]="A $1,300 loss against ordinary income; a short-term gain of $800 (taxed at ordinary rates), and a long-term gain of $1,550 (taxed at 15%)";
+			questionsAnimated[2][3]="A net long-term gain of $1,050, taxed at 15%";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer24";
+			layersAnimated[2][2]="Layer25";
+			layersAnimated[2][3]="Layer26";
+			
+			//This is the test answer
+			answersAnimated[2]="C";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect. The $200 net short-term loss must be netted against the net long-term gain. Try again.</div>
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect. The short-term gains and losses must be netted against each other; then the long-term gains and losses must be netted against each other. Try again.</div>
+          <div id="Layer26" class="rvAnimatedLayer">Correct. His net short-term position is a $200 loss ($800 - $1,000). His net long-term position is a $1,250 gain ($1,550 - $300).  Netting the two together, he is left with a net long-term gain of $1,050.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Building upon the preceding question, now suppose Bruce had a net long-term capital loss last year of $10,000 and used $3,000 of that loss against ordinary income last year. What would be his tax bill for his current year transactions?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="$157.50 (15% of his net long-term gain of $1,050) on his net long-term gain";
+			questionsAnimated[3][2]="$157.50 on his net long-term gain and a $3,000 deduction against ordinary income";
+			questionsAnimated[3][3]="A $3,000 deduction against ordinary income";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer27";
+			layersAnimated[3][2]="Layer28";
+			layersAnimated[3][3]="Layer29";
+			
+			//This is the test answer
+			answersAnimated[3]="C";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+
+        <div id="Layer27" class="rvAnimatedLayer">Incorrect. Last year, Bruce would have deducted $3,000 against ordinary income and carried forward the remaining long-term loss of $7,000. Thus, in the current year, he would end up with a net short-term loss of $200 and a net long-term loss of $5,750. Starting with the short-term loss, then the long-term loss, he would take a $3,000 deduction against ordinary income, and then carry forward the remaining $2,950 of long-term loss.</div>
+        <div id="Layer28" class="rvAnimatedLayer">Incorrect. Last year, Bruce would have deducted $3,000 against ordinary income and carried forward the remaining long-term loss of $7,000. Thus, in the current year, he would end up with a net short-term loss of $200 and a net long-term loss of $5,750. Starting with the short-term loss, then the long-term loss, he would take a $3,000 deduction against ordinary income, and then carry forward the remaining $2,950 of long-term loss.</div>
+        <div id="Layer29" class="rvAnimatedLayer">Correct! Last year, Bruce would have deducted $3,000 against ordinary income and carried forward the remaining long-term loss of $7,000. Thus, in the current year, he would end up with a net short-term loss of $200 and a net long-term loss of $5,750. Starting with the short-term loss, then the long-term loss, he would take a $3,000 deduction against ordinary income, and then carry forward the remaining $2,950 of long-term loss.</div>
+      </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">Alice has the following transactions in the current year, net of commissions.
+          <div class="questionStyle" style="margin-left:15px">
+        Short-term loss of $500<br>
+        Short-term gain of $1,000<br>
+        Long-term loss of $800<br>
+        Long-term gain of $1,600</div>
+		</p>
+        <p class="questionStyle" style="margin-left:15px">Assuming she has no loss carry forward and that she is at a marginal tax rate of 28%, what is the tax impact of her gains and losses?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="A short-term gain of $500 (taxed as ordinary income) and a long-term gain of $800 (taxed at 15%)";
+			questionsAnimated[4][2]="A net gain of $1,300 (taxed as ordinary income)";
+			questionsAnimated[4][3]="A net gain of $1,300 (taxed at 15%)";
+			questionsAnimated[4][4]="A short-term gain of $500 (taxed as ordinary income) and carry forward the long-term gain of $800.";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer30";
+			layersAnimated[4][2]="Layer31";
+			layersAnimated[4][3]="Layer32";
+			layersAnimated[4][4]="Layer33";
+			
+			//This is the test answer
+			answersAnimated[4]="A";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+			<!--
+			// Display Text for Question 4
+			document.write(getQuestionAnimated(4));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+
+        <div id="Layer30" class="rvAnimatedLayer">Correct. If you have both a net short-term capital gain and a net long-term capital gain, the short-term gain is taxed as ordinary income and the long-term gain is taxed at the long-term capital gain rate.</div>
+        <div id="Layer31" class="rvAnimatedLayer">Incorrect. If you have both a net short-term capital gain and a net long-term capital gain, the short-term gain is taxed as ordinary income and the long-term gain is taxed at the long-term capital gain rate.</div>
+        <div id="Layer32" class="rvAnimatedLayer">Incorrect. If you have both a net short-term capital gain and a net long-term capital gain, the short-term gain is taxed as ordinary income and the long-term gain is taxed at the long-term capital gain rate.</div>
+        <div id="Layer33" class="rvAnimatedLayer">Incorrect. If you have both a net short-term capital gain and a net long-term capital gain, the short-term gain is taxed as ordinary income and the long-term gain is taxed at the long-term capital gain rate.</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">5.	Seven years ago, Susan purchased 100 shares of XYZ stock for $1,000. She sold the shares for $600 on May 1 of the current year. Over the next two weeks, the price fell significantly and Susan decided the stock could only go up from there, so she bought back 100 shares of XYZ stock for $300 on May 15 of the current year. Four weeks later, the stock price increased to $400 per share, so she sold the 100 shares for $400. What is her gain or loss on the final sale?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="$100 short-term gain";
+			questionsAnimated[5][2]="$300 short-term loss";
+			questionsAnimated[5][3]="$300 long-term loss";
+			questionsAnimated[5][4]="$400 short-term loss";
+			questionsAnimated[5][5]="$400 long-term loss";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer34";
+			layersAnimated[5][2]="Layer35";
+			layersAnimated[5][3]="Layer36";
+			layersAnimated[5][4]="Layer37";
+			layersAnimated[5][5]="Layer38";
+			
+			//This is the test answer
+			answersAnimated[5]="C";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer34" class="rvAnimatedLayer">Incorrect. Because this is a wash sale, Susan's loss of $400 per share on the first sale must be added to the basis of the repurchase, making the adjusted basis $700 per share. When she subsequently sells for $400, she realizes a $300 loss.  Furthermore, since she must also use the holding period that began with her first purchase, this loss is long-term.</div>
+          <div id="Layer35" class="rvAnimatedLayer">Incorrect. Because this is a wash sale, Susan's loss of $400 per share on the first sale must be added to the basis of the repurchase, making the adjusted basis $700 per share. When she subsequently sells for $400, she realizes a $300 loss.  Furthermore, since she must also use the holding period that began with her first purchase, this loss is long-term.</div>
+          <div id="Layer36" class="rvAnimatedLayer">Correct! Because this is a wash sale, Susan's loss of $400 per share on the first sale must be added to the basis of the repurchase, making the adjusted basis $700 per share. When she subsequently sells for $400, she realizes a $300 loss.  Furthermore, since she must also use the holding period that began with her first purchase, this loss is long-term.</div>
+          <div id="Layer37" class="rvAnimatedLayer">Incorrect. Because this is a wash sale, Susan's loss of $400 per share on the first sale must be added to the basis of the repurchase, making the adjusted basis $700 per share. When she subsequently sells for $400, she realizes a $300 loss. Furthermore, since she must also use the holding period that began with her first purchase, this loss is long-term.</div>
+          <div id="Layer38" class="rvAnimatedLayer">Because this is a wash sale, Susan's loss of $400 per share on the first sale must be added to the basis of the repurchase, making the adjusted basis $700 per share. When she subsequently sells for $400, she realizes a $300 loss.  Furthermore, since she must also use the holding period that began with her first purchase, this loss is long-term.</div>
+</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">6.	In 2016, a taxpayer's child is 16 years of age and earns $1,200 per year delivering a community newspaper in the neighborhood. In addition, the child has $2,100 of interest income. How much is subject to the Kiddie Tax?</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="$0";
+			questionsAnimated[6][2]="$1,200";
+			questionsAnimated[6][3]="$2,000";
+			questionsAnimated[6][4]="$3,200";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer39";
+			layersAnimated[6][2]="Layer40";
+			layersAnimated[6][3]="Layer41";
+			layersAnimated[6][4]="Layer42";
+			
+			//This is the test answer
+			answersAnimated[6]="A";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 6 CODE
+				//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer39" class="rvAnimatedLayer">Correct! Only unearned income that exceeds $2,100 is subject to the Kiddie Tax in 2016.</div>
+          <div id="Layer40" class="rvAnimatedLayer">Incorrect. Only unearned income that exceeds $2,100 is subject to the Kiddie Tax in 2016. Try again.</div>
+          <div id="Layer41" class="rvAnimatedLayer">Incorrect. Only unearned income that exceeds $2,100 is subject to the kiddie Tax in 2016. Try again.</div>
+          <div id="Layer42" class="rvAnimatedLayer">Incorrect. Only unearned income that exceeds $2,100 is subject to the Kiddie Tax in 2016. Try again.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">	Which of the following are adjusted for in deriving AMT income?
+          <div class="questionStyle">
+        	<ol type="1">
+            	<li>Personal exemptions</li>
+                <li>Tax-exempt interest on certain private activity bonds</li>
+                <li>Exercise of Incentive Stock Options</li>
+            </ol>
+             </div></p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[7]="QuestionForm7";
+			questionNumberAnimated=7;
+			questionsAnimated[7]=new Array();
+			layersAnimated[7]=new Array();
+			//This is the test question
+			questionsAnimated[7][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[7][1]="1 only";
+			questionsAnimated[7][2]="2 only";
+			questionsAnimated[7][3]="3 only";
+			questionsAnimated[7][4]="2 and 3 only";
+			questionsAnimated[7][5]="1, 2, and 3";
+			//These are the associated layersAnimated
+			layersAnimated[7][1]="Layer43";
+			layersAnimated[7][2]="Layer44";
+			layersAnimated[7][3]="Layer45";
+			layersAnimated[7][4]="Layer46";
+			layersAnimated[7][5]="Layer47";
+			
+			//This is the test answer
+			answersAnimated[7]="E";
+			//-->
+             </script>
+             <form name="QuestionForm7">
+               <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestionAnimated(7));
+				//-->
+               </script>
+             </form>
+             <script>
+				<!--
+				// END RADIO QUESTION 7 CODE
+				//-->
+             </script>
+             <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer43" class="rvAnimatedLayer">Incorrect. This is not the only adjustment item listed.</div>
+          <div id="Layer44" class="rvAnimatedLayer">Incorrect. This is not the only adjustment item listed.</div>
+          <div id="Layer45" class="rvAnimatedLayer">Incorrect. This is not the only adjustment item listed.</div>
+          <div id="Layer46" class="rvAnimatedLayer">Incorrect. All three are adjustment items.</div>
+          <div id="Layer47" class="rvAnimatedLayer">Correct! All three are adjustment items.</div>
+	</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">Tax credits are dollar-for-dollar reductions of a taxpayer's tax liability.</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrect(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoice.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answers[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoice[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
+			   var questionLength = questions[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questions[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQ_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoice[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrect(questionNum,answer2, formName) == true)
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			   else
+			   {
+				  MM_showHideLayers(layers[questionNum][answer],'','show');
+			   }
+			}
+			
+			var questionNumber;
+			var questions=new Array();
+			var answers=new Array();
+			var layers=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 8 CODE
+			var formNumber=new Array();
+			formNumber[8]="QuestionForm8";
+			questionNumber=8;
+			questions[8]=new Array();
+			layers[8]=new Array();
+			//This is the test question
+			questions[8][0]="";
+			
+			//These are the answer choices
+			questions[8][1]="True";
+			questions[8][2]="False";
+			//These are the associated layers
+			layers[8][1]="Layerwbutton6";
+			layers[8][2]="Layerwbutton7";
+			
+			//This is the test answer
+			answers[8]="A";
+			//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+				<!--
+				// Display Text for Question 8
+				document.write(getQuestion(8));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Layer with Button layers here-->
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton6" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Correct!</p>
+                    <p align="center">
+                      <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton6','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
+            <!--change left and top px depending of where you what the layer box to appear-->
+            <div id="Layerwbutton7" class="rvLayerInnerDiv">
+              <table class="rvLayerButton">
+                <tr>
+                  <td><p>Incorrect.</p>
+                    <p align="center">
+                      <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton7','','hide')">
+                    </p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>9.</strong></p></td>
+        <td><p class="questionStyle">Which of the following credits is available to persons at every level of income?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 9 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[9]="QuestionForm9";
+			questionNumberAnimated=9;
+			questionsAnimated[9]=new Array();
+			layersAnimated[9]=new Array();
+			//This is the test question
+			questionsAnimated[9][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[9][1]="Earned Income Tax Credit";
+			questionsAnimated[9][2]="Credit for the Elderly or Disabled ";
+			questionsAnimated[9][3]="Adoption Expense Credit";
+			questionsAnimated[9][4]="Child and Dependent Care Credit";
+			//These are the associated layersAnimated
+			layersAnimated[9][1]="Layer48";
+			layersAnimated[9][2]="Layer49";
+			layersAnimated[9][3]="Layer50";
+			layersAnimated[9][4]="Layer51";
+			
+			//This is the test answer
+			answersAnimated[9]="D";
+			//-->
+          </script>
+          <form name="QuestionForm9">
+            <script>
+				<!--
+				// Display Text for Question 9
+				document.write(getQuestionAnimated(9));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 9 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer48" class="rvAnimatedLayer">Incorrect. The EITC is available only for low-income taxpayers. </div>
+          <div id="Layer49" class="rvAnimatedLayer">Incorrect. Qualifying individuals for the Elderly or Disabled Credit must have adjusted gross income below relatively low levels.</div>
+          <div id="Layer50" class="rvAnimatedLayer">Incorrect. While high, the Adoption expense credit is limited to taxpayers below certain levels of AGI. </div>
+          <div id="Layer51" class="rvAnimatedLayer">Correct! The Child and Dependent Care Credit is available to taxpayers of all income levels.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
   <p>Paragraph 2</p>
   <p>And so forth...</p>
 </div>
