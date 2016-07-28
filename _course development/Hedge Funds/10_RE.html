@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <title>Hedge Funds</title>
 <link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
 </head>
 
 <body>
@@ -17,9 +40,184 @@
   <h1><span class="pagetitle">Review Exercise</span>
     <!-- pagetitle -->
   </h1>
-  <p>Paragraph 1</p>
-  <p>Paragraph 2</p>
-  <p>And so forth...</p>
+  <p>Before proceeding, it is important to make sure that there is a clear understanding of the basic structures of a hedge fund and the reasons that an investor may want to investigate the use of them in their portfolio. <span class="pageInstruction">Select the best response for each question.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Which of the following choices would be primary reasons for making an investment in a hedge fund? (Click all that apply) </p>
+          <script language="JavaScript">
+			<!--
+			//BEGIN ONE TIME INSERT OBJECTS FOR CHECK BOX TEST QUESTIONS
+			function check_buttonCheckQ(questionNum, formName)
+			{
+				var answer=0;
+				var correctnum=0;
+				var correct="false";
+				var answerlength=check_selection[questionNum].length;
+				for (answerchoice=0; answerchoice<answerlength; answerchoice++)
+					{
+						if (check_selection[questionNum][answerchoice]=="true")
+						{
+							correctnum++;
+						}
+					}
+				var correctnum2=0;
+				for (answerchoice=0; answerchoice<answerlength; answerchoice++)
+					{
+						if (formName.elements[answerchoice].checked==true && check_selection[questionNum][answerchoice]=="true")
+						{
+							correctnum2++;
+						}
+						if (formName.elements[answerchoice].checked==true && check_selection[questionNum][answerchoice]=="false")
+						{
+							correctnum2--;
+						}
+					}
+				if (correctnum==correctnum2)
+				{
+					correct="true"
+				}
+				if (correct=="true")
+				{
+				   showAnimatedLayer(check_layers[questionNum][1], check_layers[questionNum], '100px', '350px', '500px', '', '10px');
+					
+					var form = formName;
+					var elements = form.elements;
+					for (var i = 0, len = elements.length; i < len; ++i) {
+						elements[i].disabled = true;
+					}
+				}
+				else
+				{
+					showAnimatedLayer(check_layers[questionNum][2], check_layers[questionNum], '100px', '350px', '500px', '', '10px');
+				}
+			}
+			function checkgetQuestion(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + check_questions[questionNumber][0] + "</B></P>";
+			   var questionLength = check_answers[questionNumber].length;
+			   var questionChoice;
+			
+			   for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=checkbox NAME=checkQuestionChoice" +questionChoice+ ">" + "&nbsp;&nbsp;";
+				  questionHTML = questionHTML + check_answers[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			
+			   return questionHTML;
+			}
+			var check_questions=new Array();
+			var check_answers=new Array();
+			var check_layers=new Array();
+			var check_formNumber=new Array();
+			var check_selection= new Array();
+			// END ONE TIME INSERT OBJECTS FOR CHECK BOX TEST QUESTIONS
+			
+			// BEGIN CHECK BOX QUESTION 1 CODE
+			check_formNumber[1]="fillForm1";
+			check_questions[1]=new Array();
+			check_layers[1]=new Array();
+			check_answers[1]=new Array();
+			check_selection[1]=new Array();
+			//here is the question
+			check_questions[1][0]="";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			check_layers[1][1]="Layer1";
+			check_layers[1][2]="Layer2";
+			//These are the test answers
+			check_answers[1][0]="Liquidity of the assets";
+			check_answers[1][1]="The ability to reduce overall portfolio volatility in a diversified asset allocation plan ";
+			check_answers[1][2]="The potential for increased returns in the overall portfolio";
+			check_answers[1][3]="The potential for positive returns in a bear market";
+			check_answers[1][4]="Ability for the individual investor to participate in investment strategies typically open only to institutional clientele";
+			//These are the correct responses (all need to be selected in order to be correct!)
+			check_selection[1][0]="false";
+			check_selection[1][1]="true";
+			check_selection[1][2]="true";
+			check_selection[1][3]="true";
+			check_selection[1][4]="false";
+			
+			//-->
+          </script>
+          <form name="checkForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(checkgetQuestion(1));
+				//-->
+            </script>
+            <br>
+            <input type="button" class="submit-btn-ckbox" value="SUBMIT" name="buttonCheckQ" onClick="return check_buttonCheckQ(1, window.document.checkForm1)">
+          </form>
+          <script>
+			<!--
+			//END CHECK BOX QUESTION 1 CODE
+			//-->
+          </script>
+          <div id="Layer1" class="rvAnimatedLayer">Correct. Investors considering a hedge fund have the potential for increased returns from unique investment strategies employed, potential for increased diversification, and the potential for positive returns even in a bear market because of the ability to use futures and options.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect. Please review the general features and primary benefits of a hedge fund and try again.</div>
+         </td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Which of the following are true of a hedge fund in distinguishing it from a typical mutual fund? (Click all that apply)</p>
+           <script language="JavaScript">
+			<!--
+			// BEGIN CHECK BOX QUESTION 2 CODE
+			check_formNumber[2]="fillForm2";
+			check_questions[2]=new Array();
+			check_layers[2]=new Array();
+			check_answers[2]=new Array();
+			check_selection[2]=new Array();
+			//here is the question
+			check_questions[2][0]="";
+			// these are the associated layers
+			// 1 is correct
+			// 2 is incorrect
+			check_layers[2][1]="Layer3";
+			check_layers[2][2]="Layer4";
+			//These are the test answers
+			check_answers[2][0]="The ability for the manager to use futures";
+			check_answers[2][1]="Tighter restrictions from the SEC regarding the monitoring of these potentially risky investment vehicles";
+			check_answers[2][2]="The ability for the manager to sell securities short";
+			check_answers[2][3]="The ability for the manager to trade more aggressively";
+			check_answers[2][4]="A fee structure restricted to a set percentage of the assets under management";
+			//These are the correct responses (all need to be selected in order to be correct!)
+			check_selection[2][0]="true";
+			check_selection[2][1]="false";
+			check_selection[2][2]="true";
+			check_selection[2][3]="true";
+			check_selection[2][4]="false";
+			
+			//-->
+          </script>
+          <form name="checkForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(checkgetQuestion(2));
+				//-->
+            </script>
+            <br>
+            <input type="button" class="submit-btn-ckbox" value="SUBMIT" name="buttonCheckQ2" onClick="return check_buttonCheckQ(2, window.document.checkForm2)">
+          </form>
+          <script>
+			<!--
+			//END CHECK BOX QUESTION 2 CODE
+			//-->
+          </script>
+          <div id="Layer3" class="rvAnimatedLayer">Correct. Hedge funds differ from mutual funds in that the manager can leverage the portfolio through futures contracts, and sell securities short. Also, because the SEC does not regulate them, they can trade very aggressively and also have the ability to take incentive based fees.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. Please review the general features and benefits of a hedge fund and try again.</div>
+          </td>
+      </tr>
+    </table>
+  </div>
+  
 </div>
 <!-- coursebody -->
 </body>
