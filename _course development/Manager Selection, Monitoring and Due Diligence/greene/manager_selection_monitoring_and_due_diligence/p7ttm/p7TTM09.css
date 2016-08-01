@@ -74,11 +74,8 @@
 	left: 10px;
 	top: auto;
 	bottom: -16px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-southwest.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-southwest.png);
->>>>>>> master
+
+	background-image: url(img/p7TTM09-southwest.png);
 }
 /*Arrow At Bottom Middle*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_2 {
@@ -88,11 +85,7 @@
 	margin-left: -11px;
 	top: auto;
 	bottom: -16px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-south.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-south.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-south.png);
 }
 /*Arrow At Bottom Right*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_3 {
@@ -102,11 +95,7 @@
 	right: 8px;
 	top: auto;
 	bottom: -16px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-southeast.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-southeast.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-southeast.png);
 }
 /*Arrow At Top Left*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_4 {
@@ -114,11 +103,7 @@
 	width: 24px;
 	left: 10px;
 	top: -16px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-northwest.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-northwest.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-northwest.png);
 }
 /*Arrow At Top Middle*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_5 {
@@ -127,11 +112,7 @@
 	left: 50%;
 	margin-left: -11px;
 	top: -16px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-north.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-north.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-north.png);
 }
 /*Arrow At Top Right*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_6 {
@@ -140,11 +121,7 @@
 	left: auto;
 	right: 10px;
 	top: -16px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-northeast.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-northeast.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-northeast.png);
 }
 /*Arrow At Left Top*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_7 {
@@ -152,11 +129,7 @@
 	width: 14px;
 	left: -16px;
 	top: 8px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-duewest.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-duewest.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-duewest.png);
 }
 /*Arrow At Left Middle*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_8 {
@@ -165,11 +138,7 @@
 	left: -16px;
 	top: 50%;
 	margin-top: -11px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-west.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-west.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-west.png);
 }
 /*Arrow At Right Top*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_9 {
@@ -178,11 +147,7 @@
 	left: auto;
 	right: -14px;
 	top: 8px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-dueeast.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-dueeast.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-dueeast.png);
 }
 /*Arrow At Right Middle*/
 .p7TTM09 .p7TTMcall.p7TTM_Arrow_10 {
@@ -192,11 +157,7 @@
 	right: -16px;
 	top: 50%;
 	margin-top: -11px;
-<<<<<<< HEAD
-	background-image: url(../../../p7ttm/img/p7TTM09-east.png);
-=======
-	background-image: url(file:///C|/Users/danielledenton/Documents/Github/new-course-design/p7ttm/img/p7TTM09-east.png);
->>>>>>> master
+	background-image: url(img/p7TTM09-east.png);
 }
 /*Special Class assigned to All Triggers, regardless of the Tooltip Style Theme, while its tooltip is showing.*/
 .p7TTM_open {}
