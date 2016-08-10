@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Charitable Gifting Techniques</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Answer the following questions.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Increasing the interest rate used to compute the annual income payout of a CRAT would decrease the charitable deduction when funding the trust.</p>
+          
+           <script language="JavaScript">
+				<!--
+				// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				function answerCorrectAnimated(questionNumber, answer, formName)
+				{
+					// declare a variable to hold return value
+					var correct = false;
+					var questionLength = formName.radQuestionChoiceAnimated.length;
+					var questionChoice;
+				
+					// if answer provided is same as correct answer then correct variable is true
+					if (answer == answersAnimated[questionNumber])
+						{correct = true;
+							for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+							{
+							formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+				
+							}
+				
+					// return whether the answer was correct (true or false)
+					return correct;
+					}
+				}
+				
+				function getQuestionAnimated(questionNumber)
+				{
+				
+				   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+				   var questionLength = questionsAnimated[questionNumber].length;
+				   var questionChoice;
+				
+				   questionHTML = questionHTML + "<P>";
+				   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+				   {
+					  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+					  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+					  questionHTML = questionHTML + "</label><BR>";
+				   }
+				   questionHTML = questionHTML + "</P>";
+				
+				   return questionHTML;
+				}
+				function buttonCheckQAnimated_onclick(questionNum, formName)
+				{
+				   var answer = 0;
+				   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+				   {
+					  answer++;
+				   }
+				
+				   var answer2 = String.fromCharCode(65 + answer);
+				   answer++;
+				   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+				   {
+					  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '100px', '', '10px');
+				   }
+				   else
+				   {
+					  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '100px', '', '10px');
+				   }
+				}
+				
+				var questionNumberAnimated;
+				var questionsAnimated=new Array();
+				var answersAnimated=new Array();
+				var layersAnimated=new Array();
+				// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+				
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="True";
+			questionsAnimated[1][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			
+			//This is the test answer
+			answersAnimated[1]="A";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">The actuarial value of the remainder interest of a CRT must be at least ___% of the initial value of the trust.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="5%";
+			questionsAnimated[2][2]="10%";
+			questionsAnimated[2][3]="20%";
+			questionsAnimated[2][4]="30%";
+			questionsAnimated[2][5]="60%";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer3";
+			layersAnimated[2][2]="Layer4";
+			layersAnimated[2][3]="Layer5";
+			layersAnimated[2][4]="Layer6";
+			layersAnimated[2][5]="Layer7";
+			
+			//This is the test answer
+			answersAnimated[2]="B";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+            <div id="Layer3" class="rvAnimatedLayer">Incorrect.</div>
+            <div id="Layer4" class="rvAnimatedLayer">Correct.</div>
+            <div id="Layer5" class="rvAnimatedLayer">Incorrect.</div>
+            <div id="Layer6" class="rvAnimatedLayer">Incorrect.</div>
+            <div id="Layer7" class="rvAnimatedLayer">Incorrect.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">A CRT can terminate upon the death of one or more people, or it can be setup to exist for a specific number of years up to:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="5 years";
+			questionsAnimated[3][2]="10 years";
+			questionsAnimated[3][3]="15 years";
+			questionsAnimated[3][4]="20 years";
+			questionsAnimated[3][5]="30 years";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer38";
+			layersAnimated[3][2]="Layer8";
+			layersAnimated[3][3]="Layer9";
+			layersAnimated[3][4]="Layer10";
+			layersAnimated[3][5]="Layer11";
+			
+			//This is the test answer
+			answersAnimated[3]="D";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer38" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect.</div>
+	</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">The annual payout of a charitable remainder trust to the income beneficiaries cannot be less than 5% or more than _____.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="10%";
+			questionsAnimated[4][2]="15%";
+			questionsAnimated[4][3]="20%";
+			questionsAnimated[4][4]="25%";
+			questionsAnimated[4][5]="50%";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer12";
+			layersAnimated[4][2]="Layer13";
+			layersAnimated[4][3]="Layer14";
+			layersAnimated[4][4]="Layer15";
+			layersAnimated[4][5]="Layer16";
+			
+			//This is the test answer
+			answersAnimated[4]="E";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">After paying out ordinary income, the next tier of payout in a CRT income distribution comes from accumulated:</p>
+          
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="Tax-exempt Income";
+			questionsAnimated[5][2]="Principal";
+			questionsAnimated[5][3]="Capital Gain Income";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer17";
+			layersAnimated[5][2]="Layer18";
+			layersAnimated[5][3]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[5]="C";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Correct.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">Of the CRAT and CRUT, the CRAT is the one with an income distribution that varies.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="True";
+			questionsAnimated[6][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer20";
+			layersAnimated[6][2]="Layer21";
+			
+			//This is the test answer
+			answersAnimated[6]="B";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">Some level of protection against market value fluctuations is provided by a CRAT</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[7]="QuestionForm7";
+			questionNumberAnimated=7;
+			questionsAnimated[7]=new Array();
+			layersAnimated[7]=new Array();
+			//This is the test question
+			questionsAnimated[7][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[7][1]="True";
+			questionsAnimated[7][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[7][1]="Layer22";
+			layersAnimated[7][2]="Layer23";
+			
+			//This is the test answer
+			answersAnimated[7]="A";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestionAnimated(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer22" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">Pooled Income Funds are generally established by:</p>
+        
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 8 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[8]="QuestionForm8";
+			questionNumberAnimated=8;
+			questionsAnimated[8]=new Array();
+			layersAnimated[8]=new Array();
+			//This is the test question
+			questionsAnimated[8][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[8][1]="Young grantors";
+			questionsAnimated[8][2]="Older grantors";
+			questionsAnimated[8][3]="Beneficiaries";
+			questionsAnimated[8][4]="Charities";
+			questionsAnimated[8][5]="Testamentary Trusts";
+			//These are the associated layersAnimated
+			layersAnimated[8][1]="Layer24";
+			layersAnimated[8][2]="Layer25";
+			layersAnimated[8][3]="Layer26";
+			layersAnimated[8][4]="Layer27";
+			layersAnimated[8][5]="Layer28";
+			
+			//This is the test answer
+			answersAnimated[8]="D";
+			//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+				<!--
+				// Display Text for Question 8
+				document.write(getQuestionAnimated(8));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer26" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer27" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer28" class="rvAnimatedLayer">Incorrect.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>9.</strong></p></td>
+        <td><p class="questionStyle">The duration of a Charitable Lead Trust is either the lifetime of the donor or another individual named by the donor, or for a specific number of years up to:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 9 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[9]="QuestionForm9";
+			questionNumberAnimated=9;
+			questionsAnimated[9]=new Array();
+			layersAnimated[9]=new Array();
+			//This is the test question
+			questionsAnimated[9][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[9][1]="10 years";
+			questionsAnimated[9][2]="15 years";
+			questionsAnimated[9][3]="20 years";
+			questionsAnimated[9][4]="Any number of years";
+			//These are the associated layersAnimated
+			layersAnimated[9][1]="Layer29";
+			layersAnimated[9][2]="Layer30";
+			layersAnimated[9][3]="Layer31";
+			layersAnimated[9][4]="Layer32";
+			
+			//This is the test answer
+			answersAnimated[9]="D";
+			//-->
+          </script>
+          <form name="QuestionForm9">
+            <script>
+				<!--
+				// Display Text for Question 9
+				document.write(getQuestionAnimated(9));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 9 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer29" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer30" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer31" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer32" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>10.</strong></p></td>
+        <td><p class="questionStyle">The minimum payout requirement of a Charitable Lead Trust is:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 10 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[10]="QuestionForm10";
+			questionNumberAnimated=10;
+			questionsAnimated[10]=new Array();
+			layersAnimated[10]=new Array();
+			//This is the test question
+			questionsAnimated[10][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[10][1]="3%";
+			questionsAnimated[10][2]="5%";
+			questionsAnimated[10][3]="10%";
+			questionsAnimated[10][4]="15%";
+			questionsAnimated[10][5]="Nonexistent (there is no minimum)";
+			//These are the associated layersAnimated
+			layersAnimated[10][1]="Layer33";
+			layersAnimated[10][2]="Layer34";
+			layersAnimated[10][3]="Layer35";
+			layersAnimated[10][4]="Layer36";
+			layersAnimated[10][5]="Layer37";
+			
+			//This is the test answer
+			answersAnimated[10]="E";
+			//-->
+          </script>
+          <form name="QuestionForm10">
+            <script>
+				<!--
+				// Display Text for Question 10
+				document.write(getQuestionAnimated(10));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 10 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer33" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer34" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer35" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer36" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer37" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
+</body>
+</html>
