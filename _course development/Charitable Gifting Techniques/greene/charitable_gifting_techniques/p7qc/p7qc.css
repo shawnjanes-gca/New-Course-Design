@@ -1,0 +1,125 @@
+/* 
+  -----------------------------------
+  Quick Columns
+  by Project Seven Development
+  www.projectseven.com
+  -----------------------------------
+*/
+
+/*The container for each column structure. Before and After pseudoclasses used to clear the floats.*/
+.p7QC {
+	zoom: 1;
+}
+.p7QC:before,
+.p7QC:after {
+	content: ".";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.p7QC:after {
+	clear: both;
+}
+/*All Columns are floated left.*/
+.p7QC-Col {
+    float: left;
+}
+
+/*The Base Widths for each column in the available structures.*/
+.p7QC .percent15 {width: 15%;}
+.p7QC .percent166 {width: 16.666%;}
+.p7QC .percent20 {width: 20%;}
+.p7QC .percent25 {width: 25%;}
+.p7QC .percent333 {width: 33.333%;}
+.p7QC .percent40 {width: 40%;}
+.p7QC .percent50 {width: 50%;}
+.p7QC .percent60 {width: 60%;}
+.p7QC .percent75 {width: 75%;}
+
+/*Default padding for the content inside all columns*/
+.p7QC-content {padding: 20px;}
+
+/*Width recalculations for columns when they are boxed. 
+Since boxed columns have a space between them assigned via right margin, 
+we need to reduce the width of each column accordingly*/
+.p7QC .percent166.boxed {width: 15%;}
+.p7QC .percent20.boxed {width: 18.4%;}
+.p7QC .percent25.boxed {width: 23.5%;}
+.p7QC .percent333.boxed {width: 32%;}
+.p7QC .percent40.boxed {width: 38%;}
+.p7QC .percent50.boxed {width: 49%;}
+.p7QC .percent75.boxed {width: 74%;}
+
+/*Using margin to separate the columns when the boxed option is chosen*/
+.p7QC-Col.boxed.spacer {margin-left: 2%;}
+
+/*Assigning logical borders to render dividers between columns*/
+.p7QC-content.border-left {border-left: 1px solid #000;}
+
+/*Boxed columns get borders all the way around*/
+.p7QC .p7QC-content.boxed {border: 1px solid #000;}
+
+/*Utility Rules*/
+/*Make images scalable*/
+img.scalable {
+	height: auto !important;
+	width: auto !important;
+	max-width: 100%;
+}
+/*Sample Rule to set background color, radius, and shadow*/
+.prettify-sample-orange {
+	background-color: #FF5328;
+	border-radius: 5px;
+	color: #FFF;
+	box-shadow: 0px 0px 30px #000;
+}
+.prettify-sample-blue {
+	background-color: #567DA9;
+	border-radius: 5px;
+	color: #FFF;
+	box-shadow: 0px 0px 30px #000;
+}
+.prettify-sample-white {
+	background-color: #FFF;
+	border-radius: 5px;
+	color: #000;
+}
+.prettify-sample-keylined {
+	border: 1px solid #000;
+}
+.prettify-sample-wrapper {
+	background-color: #333;
+	padding: 20px;
+	border-radius: 5px;
+	color: #FFF;
+	box-shadow: 0px 0px 30px #000;
+}
+/*MEDIA QUERIES*/
+/*
+For media queries to work correctly in 
+mobile devices, you must add this viewport meta tag to your page:
+<meta name="viewport" content="width=device-width">
+(place the query in the head region)
+*/
+
+/*SMARTPHONE AND NARROW WINDOWS (LESS THAN 700PX WIDE)*/
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+    .p7QC-Col {
+        float: none;
+        width: auto !important;
+    }
+    .p7QC-content {
+        padding: .5em 1.5em;
+        border: none !important;
+        height: auto !important;
+        max-height: 888678px;
+    }
+}
+
+/*Smartphones ONLY*/
+@media only screen and (max-device-width: 480px) {}
+
+/*Portrait Tablet ONLY. Use this query to add rules for tablets in Prtrait orientation.
+Landscape tablets should get a normal and unaltered display.*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+
