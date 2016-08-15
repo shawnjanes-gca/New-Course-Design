@@ -9,8 +9,18 @@
 function showText(showTxt){
  document.getElementById(showTxt).style.display="";     
 }
-</script>
 
+function reset_btn(numOfCols){
+	for (i = 1; i <= numOfCols; i++){
+		
+		document.getElementById("text"+i).style.display="none";
+	}
+}
+</script>
+<style>
+	.reset-btn{background:#2c4c78; font-size:12px; color:#fff; border-radius:5px; font-weight:bold; transition: 0.5s; -webkit-transition: 0.5s; -ms-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s;}
+.reset-btn:hover, .submit-btn:focus{ background:#af6f29; color:#fff;}
+</style>
 </head>
 
 <body>
@@ -79,7 +89,7 @@ function showText(showTxt){
         <td><div id="text7" style="display:none;">To Public Charities:  50%<br>To Other Charities:  30%</div></td>
     </tr>
   </table>
-  <p>&nbsp;</p>
+  <p style="text-align:right;"><input id="button2" class="reset-btn" onclick="reset_btn(7);" type="button" name="button" value="Reset" /></p>
  
  <h3>Special Election</h3>
 <p>As shown above, it is possible when gifting long-term capital gain assets to use the basis instead of the fair market value. In return for using the lower amount, the limit on the deduction for public charities is raised from 30% to 50%. This election would most likely be made when there was little or no appreciation and the gift was for more than 30% of the gross adjusted income, thereby enabling the donor to deduct a larger portion of the contribution, although at a lesser valuation.</p>

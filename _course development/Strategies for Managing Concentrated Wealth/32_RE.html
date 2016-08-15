@@ -1,0 +1,737 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Strategies for Managing Concentrated Wealth</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Check your knowledge of the material covered since the last Review Exercise by answering the following questions.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">What happens when an exchange fund is terminated?</p>
+   
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '200px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '200px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="The assets are liquidated and each partner receives cash.";
+			questionsAnimated[1][2]="Each partner receives back the asset he/she originally contributed";
+			questionsAnimated[1][3]="The portfolio is broken into portions based on the value of each partner’s original contribution, and each partner receives a portion made up of all the contributed assets.";
+			questionsAnimated[1][4]="Nothing.  Exchange funds do not close, they are perpetual.";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			layersAnimated[1][4]="Layer4";
+			
+			//This is the test answer
+			answersAnimated[1]="C";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Among the advantages of an exchange fund are all the following EXCEPT:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="Diversification";
+			questionsAnimated[2][2]="Retention of voting rights";
+			questionsAnimated[2][3]="Not construed as a constructive sale";
+			questionsAnimated[2][4]="Restricted stocks may be acceptable";
+			questionsAnimated[2][5]="Not a constructive sale";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer5";
+			layersAnimated[2][2]="Layer6";
+			layersAnimated[2][3]="Layer7";
+			layersAnimated[2][4]="Layer8";
+			layersAnimated[2][5]="Layer55";
+			
+			//This is the test answer
+			answersAnimated[2]="B";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+           <div id="Layer55" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Advantages of a zero-premium collar include:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="Protection against any price decline below the strike price of the put option";
+			questionsAnimated[3][2]="Retention of appreciation up to the call strike price";
+			questionsAnimated[3][3]="Retention of ownership, voting rights and dividends";
+			questionsAnimated[3][4]=" All the above";
+			questionsAnimated[3][5]=" a. and b. only";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer9";
+			layersAnimated[3][2]="Layer10";
+			layersAnimated[3][3]="Layer11";
+			layersAnimated[3][4]="Layer12";
+			layersAnimated[3][5]="Layer13";
+			
+			//This is the test answer
+			answersAnimated[3]="D";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">An investor constructs a collar around a stock holding by purchasing a put with a strike price that is 5% below the current market price and selling a call with a strike price that is 6% above the current market price. Consensus holds that the range on this collar is probably sufficient to avoid triggering the constructive sale rules.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="True";
+			questionsAnimated[4][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer14";
+			layersAnimated[4][2]="Layer15";
+			
+			//This is the test answer
+			answersAnimated[4]="B";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer15" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">A charitable remainder trust can be established to last for how long?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="The life of the grantor";
+			questionsAnimated[5][2]="The life of the grantor and the grantor’s spouse";
+			questionsAnimated[5][3]="20 years";
+			questionsAnimated[5][4]="All the above";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer16";
+			layersAnimated[5][2]="Layer17";
+			layersAnimated[5][3]="Layer18";
+			layersAnimated[5][4]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[5]="D";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">The annuity or unitrust payment of a charitable remainder trust must be at least _____.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="1%";
+			questionsAnimated[6][2]="2%";
+			questionsAnimated[6][3]="5%";
+			questionsAnimated[6][4]="6%";
+			questionsAnimated[6][5]="8%";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer20";
+			layersAnimated[6][2]="Layer21";
+			layersAnimated[6][3]="Layer22";
+			layersAnimated[6][4]="Layer23";
+			layersAnimated[6][5]="Layer24";
+			
+			//This is the test answer
+			answersAnimated[6]="C";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+			<!--
+			// Display Text for Question 6
+			document.write(getQuestionAnimated(6));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+	</td>
+      </tr>
+     </table>
+     <p><span class="pageInstruction">Now check your knowledge of the advantages and disadvantages of all the approaches discussed in this module and your ability to match strategies to clients needs and goals by selecting the best (most complete) answer for the following questions.</span></p>
+     <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">Which of the concentration strategies discussed in this training module is best described by the following list of advantages:</p>
+		  <div class="questionStyle"><ul style="list-style:none;"><li><strong>Provides liquidity of up to 90% of the current market value</strong></li>
+			<li><strong>Provides protection against downside risk</strong></li>
+			<li><strong>Provides some degree of participation in appreciation</strong></li>
+            </ul>
+</div>
+				<script language="JavaScript">
+                <!--
+                // BEGIN RADIO QUESTION 7 CODE
+                var formNumberAnimated=new Array();
+                formNumberAnimated[7]="QuestionForm7";
+                questionNumberAnimated=7;
+                questionsAnimated[7]=new Array();
+                layersAnimated[7]=new Array();
+                //This is the test question
+                questionsAnimated[7][0]="";
+                
+                //These are the answer choices
+                questionsAnimated[7][1]="Borrowing against the stock";
+                questionsAnimated[7][2]="Exchange Fund";
+                questionsAnimated[7][3]="Variable Prepaid Forward";
+                questionsAnimated[7][4]="Zero-Premium Collar";
+                questionsAnimated[7][5]="Charitable Remainder Unitrust";
+                //These are the associated layersAnimated
+                layersAnimated[7][1]="Layer25";
+                layersAnimated[7][2]="Layer26";
+                layersAnimated[7][3]="Layer27";
+                layersAnimated[7][4]="Layer28";
+                layersAnimated[7][5]="Layer29";
+                
+                //This is the test answer
+                answersAnimated[7]="C";
+                //-->
+                </script>
+                <form name="QuestionForm7">
+                  <script>
+                <!--
+                // Display Text for Question 7
+                document.write(getQuestionAnimated(7));
+                //-->
+                  </script>
+                </form>
+                <script>
+                <!--
+                // END RADIO QUESTION 7 CODE
+                //-->
+                </script>
+            <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer26" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer27" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer28" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer29" class="rvAnimatedLayer">Incorrect.  Try again.</div></td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">If an investor has a concentration of $1 million, which of the following would probably NOT be a viable consideration?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 8 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[8]="QuestionForm8";
+			questionNumberAnimated=8;
+			questionsAnimated[8]=new Array();
+			layersAnimated[8]=new Array();
+			//This is the test question
+			questionsAnimated[8][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[8][1]="Borrowing against the stock";
+			questionsAnimated[8][2]="Short-against-the-box";
+			questionsAnimated[8][3]="Performance Exchange";
+			questionsAnimated[8][4]="Zero-Premium Collar";
+			questionsAnimated[8][5]="Charitable Remainder Trust";
+			//These are the associated layersAnimated
+			layersAnimated[8][1]="Layer30";
+			layersAnimated[8][2]="Layer31";
+			layersAnimated[8][3]="Layer32";
+			layersAnimated[8][4]="Layer33";
+			layersAnimated[8][5]="Layer34";
+			
+			//This is the test answer
+			answersAnimated[8]="C";
+			//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+			<!--
+			// Display Text for Question 8
+			document.write(getQuestionAnimated(8));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer30" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer31" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer32" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer33" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer34" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>9.</strong></p></td>
+        <td><p class="questionStyle">If the investor desires to retain the voting rights on the concentrated stock, which of the following strategies would be inappropriate? </p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 9 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[9]="QuestionForm9";
+				questionNumberAnimated=9;
+				questionsAnimated[9]=new Array();
+				layersAnimated[9]=new Array();
+				//This is the test question
+				questionsAnimated[9][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[9][1]="Buying Puts";
+				questionsAnimated[9][2]="Exchange Fund";
+				questionsAnimated[9][3]="Variable Prepaid Forward";
+				questionsAnimated[9][4]="Borrowing Against the Stock";
+				questionsAnimated[9][5]="Both b. and c. would be inappropriate";
+				//These are the associated layersAnimated
+				layersAnimated[9][1]="Layer35";
+				layersAnimated[9][2]="Layer36";
+				layersAnimated[9][3]="Layer37";
+				layersAnimated[9][4]="Layer38";
+				layersAnimated[9][5]="Layer39";
+				
+				//This is the test answer
+				answersAnimated[9]="B";
+				//-->
+          </script>
+          <form name="QuestionForm9">
+            <script>
+				<!--
+				// Display Text for Question 9
+				document.write(getQuestionAnimated(9));
+				//-->
+            </script>
+          </form>
+          <script>
+				<!--
+				// END RADIO QUESTION 9 CODE
+				//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer35" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer36" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer37" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer38" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer39" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>10.</strong></p></td>
+        <td><p class="questionStyle">Which of the following strategies results in the transfer of an asset but no immediate capital gains tax for the transferor at the time of the transfer?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 10 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[10]="QuestionForm10";
+			questionNumberAnimated=10;
+			questionsAnimated[10]=new Array();
+			layersAnimated[10]=new Array();
+			//This is the test question
+			questionsAnimated[10][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[10][1]="Charitable Remainder Trust";
+			questionsAnimated[10][2]="Zero-Premium Collar";
+			questionsAnimated[10][3]="Variable Prepaid Forward";
+			questionsAnimated[10][4]="All the above";
+			questionsAnimated[10][5]="Both a. and c.";
+			//These are the associated layersAnimated
+			layersAnimated[10][1]="Layer40";
+			layersAnimated[10][2]="Layer41";
+			layersAnimated[10][3]="Layer42";
+			layersAnimated[10][4]="Layer43";
+			layersAnimated[10][5]="Layer44";
+			
+			//This is the test answer
+			answersAnimated[10]="A";
+			//-->
+          </script>
+          <form name="QuestionForm10">
+            <script>
+				<!--
+				// Display Text for Question 10
+				document.write(getQuestionAnimated(10));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 10 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer40" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer41" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer42" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer43" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer44" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>11.</strong></p></td>
+        <td><p class="questionStyle">Which of the following strategies provides no protection against a downward move in the stock price?
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 11 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[11]="QuestionForm11";
+			questionNumberAnimated=11;
+			questionsAnimated[11]=new Array();
+			layersAnimated[11]=new Array();
+			//This is the test question
+			questionsAnimated[11][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[11][1]="Buying a Put";
+			questionsAnimated[11][2]="Short-Against-the-box";
+			questionsAnimated[11][3]="Zero-Premium Collar";
+			questionsAnimated[11][4]="Borrowing against the stock";
+			questionsAnimated[11][5]="Exchnage Fund";
+			//These are the associated layersAnimated
+			layersAnimated[11][1]="Layer45";
+			layersAnimated[11][2]="Layer46";
+			layersAnimated[11][3]="Layer47";
+			layersAnimated[11][4]="Layer48";
+			layersAnimated[11][5]="Layer49";
+			
+			//This is the test answer
+			answersAnimated[11]="D";
+			//-->
+          </script>
+        </p>
+          <form name="QuestionForm11">
+            <script>
+			<!--
+			// Display Text for Question 11
+			document.write(getQuestionAnimated(11));
+			//-->
+          </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 11 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer45" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer46" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer47" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer48" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer49" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>12.</strong></p></td>
+        <td><p class="questionStyle">Which of the following strategies requires that the investor be exposed to market risk for a period of time each year? </p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 12 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[12]="QuestionForm12";
+			questionNumberAnimated=12;
+			questionsAnimated[12]=new Array();
+			layersAnimated[12]=new Array();
+			//This is the test question
+			questionsAnimated[12][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[12][1]="Short-Against-the Box";
+			questionsAnimated[12][2]="Zero-Premium Collar";
+			questionsAnimated[12][3]="Performance Exchange";
+			questionsAnimated[12][4]="All the above";
+			questionsAnimated[12][5]="Both a. and c.";
+			//These are the associated layersAnimated
+			layersAnimated[12][1]="Layer50";
+			layersAnimated[12][2]="Layer51";
+			layersAnimated[12][3]="Layer52";
+			layersAnimated[12][4]="Layer53";
+			layersAnimated[12][5]="Layer54";
+			
+			//This is the test answer
+			answersAnimated[12]="A";
+			//-->
+          </script>
+          <form name="QuestionForm12">
+            <script>
+				<!--
+				// Display Text for Question 12
+				document.write(getQuestionAnimated(12));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 12 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer50" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer51" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer52" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer53" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer54" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
+
+</body>
+</html>
