@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Private Foundations</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Select the correct answer to each question.</span></p>
+  <p>The following case study serves to provide clarification to some of the preceding concepts.</p>
+  
+  <div class="explanation-widget-box">Mrs. Reece Johnson has devoted many hours of her time to help raise funds for various religious and missionary organizations. With the recent sale of her technology company, she has expressed intent to "give back to the community". Her AGI for this year is $4.2 million and she expects that to stay about the same for the next 5-7 years based on royalty payments she is receiving from the sale.  She currently holds about $4 million in unrestricted stock in Seibel (SEBL) with a basis of $1.2 million and has $1.5 million in cash, the bulk of which she wishes to give to charity, but wishes to proceed in the most tax-effective manner possible.  <span class="pageInstruction">Answer the following questions</span></div>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Does a Private Foundation make sense?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Yes";
+			questionsAnimated[1][2]="No";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			
+			//This is the test answer
+			answersAnimated[1]="A";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Correct. A Private Foundation would seem to be a good fit for this situation based on the size of the intended gift and the overall amount of wealth held by this individual.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect. While a Private Foundation is not effective in every situation, the size of the intended gift and the overall amount of wealth held by this individual would seem to make it appropriate here. </div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Are there any limitations to her deductions?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="No limitations";
+			questionsAnimated[2][2]="Current deduction limited to 15% of her wealth";
+			questionsAnimated[2][3]="Current deduction limited to cash contributions only";
+			questionsAnimated[2][4]="Current deduction limited to 30% of her AGI";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer3";
+			layersAnimated[2][2]="Layer4";
+			layersAnimated[2][3]="Layer5";
+			layersAnimated[2][4]="Layer6";
+			
+			//This is the test answer
+			answersAnimated[2]="D";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer3" class="rvAnimatedLayer">Incorrect. Remember that deductions to Private Foundations are limited to a percentage of AGI. Try again.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. Deductions are limited based on AGI, but the percentage is not 15%. Try again. </div>
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect. Deductions of cash and assets are acceptable for Private Foundations. Try again. </div>
+          <div id="Layer6" class="rvAnimatedLayer">Correct. Her deduction for any gift is limited to 30% of her AGI or in this case $1,260,000.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Given only the information that she wants to maximize the income tax deduction related to her gift, what would be the most advantageous strategy for initially funding the Private Foundation?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="Give $1,260,000 in cash";
+			questionsAnimated[3][2]="Give $1,260,000 in long-term appreciated stock";
+			questionsAnimated[3][3]="Give as much stock as she is willing to gift in this year";
+			questionsAnimated[3][4]="Seek something other than a Private Foundation for the gift";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer7";
+			layersAnimated[3][2]="Layer8";
+			layersAnimated[3][3]="Layer9";
+			layersAnimated[3][4]="Layer10";
+			
+			//This is the test answer
+			answersAnimated[3]="C";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect. Remember that there are tax advantages related to the use of long-term appreciated stock assets in the gifting to a foundation. Try again.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Partially Correct. While this is more advantageous than the cash gift, there is a better option if she wants to maximize the longevity and value of the gift. Try again. </div>
+          <div id="Layer9" class="rvAnimatedLayer">Correct. Give as much stock as she is willing to gift in this year. This may be the most appropriate strategy if her intent is to maximize the value of her gift. First, she avoids capital gains taxes on the gift when using appreciated securities. Second, she is able to carry any unused deduction forward for up to 5 years. Third, she is able to benefit from the income tax free growth of the contribution inside the Private Foundation, thereby extending the total value of the gift over time. Fourth, the assets that are gifted to the foundation are taken out of her estate and are therefore not subject to estate taxes. As such, she has fulfilled her intent, established a potentially perpetual gifting strategy and has received extensive tax benefits, both now and into the future.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect. This situation is almost ideal for the use of a private foundation. Try again.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
+</body>
+</html>
