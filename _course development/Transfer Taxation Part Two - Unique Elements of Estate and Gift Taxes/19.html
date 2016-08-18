@@ -43,8 +43,32 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
     <!-- pagetitle -->
   </h1>
   <p>Before continuing to the study of Generation Skipping Taxes, complete the following exercise on gift and estate taxes. <span class="pageInstruction">Match the following terms by entering the letter of the corresponding choice from the box below:</span></p>
-   <div id="qTable">
-        <table>
+  <table id="tableAlignLeft" style="width:50%;">
+    
+   
+    <tr>
+      <td>A. Tax exclusive</td>
+      <td>F. 706</td>
+    </tr>
+    <tr>
+      <td>B. 9 months after death</td>
+      <td>G. $28,000</td>
+    </tr>
+    <tr>
+    	<td>C. $14,000</td>
+        <td>H. 708</td>
+    </tr>
+    <tr>
+    	<td>D. 6 months after death</td>
+        <td>I. Unlimited</td>
+    </tr>
+    <tr>
+    	<td>E. Tax inclusive</td>
+        <td>&nbsp;</td>
+    </tr>
+  </table>
+<div id="qTable">
+       <table>
           <tr>
             <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
             <td><p class="questionStyle">Gift taxes are:</p>
@@ -66,12 +90,12 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 						}
 					if (correct=="true")
 					{
-						showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '300px', '', '10px');
+						showAnimatedLayer(fill_layersAnimated[questionNum][1], fill_layersAnimated[questionNum], '100px', '350px', '300px', '', '10px');
 						formName.disabled=true;
 					}
 					else
 					{
-						showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '300px', '', '10px');
+						showAnimatedLayer(fill_layersAnimated[questionNum][2], fill_layersAnimated[questionNum], '100px', '350px', '300px', '', '10px');
 					}
 				}
 				// END ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
@@ -146,8 +170,8 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 					//END FILL IN THE BLANK QUESTION 2 CODE
 					//-->
                 </script>
-              <div id="Layer3" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
-              <div id="Layer4" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+              <div id="Layer3" class="rvAnimatedLayer">Correct.</div>
+              <div id="Layer4" class="rvAnimatedLayer">Incorrect.  Try again.</div>
 			</td>
           </tr>
           <tr>
@@ -184,8 +208,8 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 					//END FILL IN THE BLANK QUESTION 3 CODE
 					//-->
                 </script>
-              <div id="Layer5" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
-              <div id="Layer6" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+              <div id="Layer5" class="rvAnimatedLayer">Correct.</div>
+              <div id="Layer6" class="rvAnimatedLayer">Incorrect.  Try again.</div>
 			</td>
           </tr>
           <tr>
@@ -222,8 +246,8 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 					//END FILL IN THE BLANK QUESTION 4 CODE
 					//-->
                 </script>
-              <div id="Layer7" class="rvAnimatedLayer">Correct. Put your feedback here.</div>
-              <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+              <div id="Layer7" class="rvAnimatedLayer">Correct.</div>
+              <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.</div>
 			</td>
           </tr>
           <tr>
@@ -260,8 +284,8 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 					//END FILL IN THE BLANK QUESTION 5 CODE
 					//-->
                 </script>
-              <div id="Layer9" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
-              <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again. Put your feedback here.</div>
+              <div id="Layer9" class="rvAnimatedLayer">Correct.</div>
+              <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again.</div>
 			</td>
           </tr>
           <tr>
@@ -298,8 +322,8 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 					//END FILL IN THE BLANK QUESTION 6 CODE
 					//-->
                 </script>
-	          <div id="Layer11" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
-              <div id="Layer12" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+	          <div id="Layer11" class="rvAnimatedLayer">Correct.</div>
+              <div id="Layer12" class="rvAnimatedLayer">Incorrect.  Try again.</div>
 			</td>
           </tr>
         </table>
