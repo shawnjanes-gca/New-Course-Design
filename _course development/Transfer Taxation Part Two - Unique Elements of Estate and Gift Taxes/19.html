@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transfer Taxation Part 2:  Unique Elements of Estate and Gift Taxes</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+     
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Cumulative Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p>Before continuing to the study of Generation Skipping Taxes, complete the following exercise on gift and estate taxes. <span class="pageInstruction">Match the following terms by entering the letter of the corresponding choice from the box below:</span></p>
+   <div id="qTable">
+        <table>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+            <td><p class="questionStyle">Gift taxes are:</p>
+
+              <script language="JavaScript">
+				<!--
+				//BEGIN ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
+				function fill_buttonCheckQAnimated_onclick(questionNum, formName)
+				{
+					var answer=0;
+					var correct="false";
+					var answerlength=fill_answersAnimated[questionNum].length;
+					for (answerchoice=0; answerchoice<answerlength; answerchoice++)
+						{
+							if (fill_answersAnimated[questionNum][answerchoice]==formName.value)
+							{
+								correct="true";
+							}
+						}
+					if (correct=="true")
+					{
+						showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '300px', '', '10px');
+						formName.disabled=true;
+					}
+					else
+					{
+						showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '300px', '', '10px');
+					}
+				}
+				// END ONE TIME INSERT OBJECTS FOR FILL IN THE BLANK TEST QUESTIONS
+				
+				var fill_questionsAnimated=new Array();
+				var fill_answersAnimated=new Array();
+				var fill_layersAnimated=new Array();
+				var fill_formNumberAnimated=new Array();
+				// BEGIN FILL IN THE BLANK QUESTION 1 CODE
+				fill_formNumberAnimated[1]="fillForm1";
+				fill_questionsAnimated[1]=new Array();
+				fill_layersAnimated[1]=new Array();
+				fill_answersAnimated[1]=new Array();
+				//here is the question
+				fill_questionsAnimated[1][0]="";
+				// these are the correct answers
+				fill_answersAnimated[1][0]="A";
+				fill_answersAnimated[1][1]="a";
+				// these are the associated layers
+				// 1 is correct
+				// 2 is incorrect
+				fill_layersAnimated[1][1]="Layer1";
+				fill_layersAnimated[1][2]="Layer2";
+				document.write("<P><B>"+fill_questionsAnimated[1][0]+"</B></P>");
+				//-->
+                </script>
+                <form name="fillForm1" onSubmit="return false">
+                  <input type="text" name="fillAnswer1" id="fillAnswer1" class="fillInSpace">
+                  <br/>
+                  <input type="button" name="buttonCheckQ" onClick="return fill_buttonCheckQAnimated_onclick(1, window.document.fillForm1.fillAnswer1)" value="SUBMIT" class="submit-btn">
+                </form>
+              <script>
+					<!--
+					//END FILL IN THE BLANK QUESTION 1 CODE
+					//-->
+                </script>
+              <div id="Layer1" class="rvAnimatedLayer">Correct.</div>
+              <div id="Layer2" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+            <td><p class="questionStyle">Estate taxes are:</p>
+              
+              <script language="JavaScript">
+					<!--
+					// BEGIN FILL IN THE BLANK QUESTION 2 CODE
+					fill_formNumberAnimated[2]="fillForm2";
+					fill_questionsAnimated[2]=new Array();
+					fill_layersAnimated[2]=new Array();
+					fill_answersAnimated[2]=new Array();
+					//here is the question
+					fill_questionsAnimated[2][0]="";
+					// these are the correct answers
+					fill_answersAnimated[2][0]="E";
+					fill_answersAnimated[2][1]="e";
+					// these are the associated layers
+					// 1 is correct
+					// 2 is incorrect
+					fill_layersAnimated[2][1]="Layer3";
+					fill_layersAnimated[2][2]="Layer4";
+					document.write("<P><B>"+fill_questionsAnimated[2][0]+"</B></P>");
+					//-->
+                </script>
+                <form name="fillForm2" onSubmit="return false">
+                  <input type="text" name="fillAnswer2" id="fillAnswer2" class="fillInSpace">
+                  <br/>
+                  <input type="button" name="buttonCheckQ2" onClick="return fill_buttonCheckQAnimated_onclick(2, window.document.fillForm2.fillAnswer2)" value="SUBMIT" class="submit-btn">
+                </form>
+              <script>
+					<!--
+					//END FILL IN THE BLANK QUESTION 2 CODE
+					//-->
+                </script>
+              <div id="Layer3" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
+              <div id="Layer4" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+            <td><p class="questionStyle">Alternate Valuation Date:</p>
+              
+              <script language="JavaScript">
+				<!--
+				// BEGIN FILL IN THE BLANK QUESTION 3 CODE
+				fill_formNumberAnimated[3]="fillForm3";
+				fill_questionsAnimated[3]=new Array();
+				fill_layersAnimated[3]=new Array();
+				fill_answersAnimated[3]=new Array();
+				//here is the question
+				fill_questionsAnimated[3][0]="";
+				// these are the correct answers
+				fill_answersAnimated[3][0]="D";
+				fill_answersAnimated[3][1]="d";
+				// these are the associated layers
+				// 1 is correct
+				// 2 is incorrect
+				fill_layersAnimated[3][1]="Layer5";
+				fill_layersAnimated[3][2]="Layer6";
+				document.write("<P><B>"+fill_questionsAnimated[3][0]+"</B></P>");
+				//-->
+                </script>
+                <form name="fillForm3" onSubmit="return false">
+                  <input type="text" name="fillAnswer3" id="fillAnswer3" class="fillInSpace">
+                  <br/>
+                  <input type="button" name="buttonCheckQ3" onClick="return fill_buttonCheckQAnimated_onclick(3, window.document.fillForm3.fillAnswer3)" value="SUBMIT" class="submit-btn">
+                </form>
+              <script>
+					<!--
+					//END FILL IN THE BLANK QUESTION 3 CODE
+					//-->
+                </script>
+              <div id="Layer5" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
+              <div id="Layer6" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+            <td><p class="questionStyle">Estate tax return form:</p>
+              
+                <script language="JavaScript">
+					<!--
+					// BEGIN FILL IN THE BLANK QUESTION 4 CODE
+					fill_formNumberAnimated[4]="fillForm4";
+					fill_questionsAnimated[4]=new Array();
+					fill_layersAnimated[4]=new Array();
+					fill_answersAnimated[4]=new Array();
+					//here is the question
+					fill_questionsAnimated[4][0]="";
+					// these are the correct answers
+					fill_answersAnimated[4][0]="F";
+					fill_answersAnimated[4][1]="f";
+					// these are the associated layers
+					// 1 is correct
+					// 2 is incorrect
+					fill_layersAnimated[4][1]="Layer7";
+					fill_layersAnimated[4][2]="Layer8";
+					document.write("<P><B>"+fill_questionsAnimated[4][0]+"</B></P>");
+					//-->
+                </script>
+                <form name="fillForm4" onSubmit="return false">
+                  <input type="text" name="fillAnswer4" id="fillAnswer4" class="fillInSpace">
+                  <br/>
+                  <input type="button" name="buttonCheckQ4" onClick="return fill_buttonCheckQAnimated_onclick(4, window.document.fillForm4.fillAnswer4)" value="SUBMIT" class="submit-btn">
+                </form>
+              <script>
+					<!--
+					//END FILL IN THE BLANK QUESTION 4 CODE
+					//-->
+                </script>
+              <div id="Layer7" class="rvAnimatedLayer">Correct. Put your feedback here.</div>
+              <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+            <td><p class="questionStyle">Individual annual gift tax exclusion amount in 2016:</p>
+             
+              <script language="JavaScript">
+					<!--
+					// BEGIN FILL IN THE BLANK QUESTION 5 CODE
+					fill_formNumberAnimated[5]="fillForm5";
+					fill_questionsAnimated[5]=new Array();
+					fill_layersAnimated[5]=new Array();
+					fill_answersAnimated[5]=new Array();
+					//here is the question
+					fill_questionsAnimated[5][0]="";
+					// these are the correct answers
+					fill_answersAnimated[5][0]="C";
+					fill_answersAnimated[5][1]="c";
+					// these are the associated layers
+					// 1 is correct
+					// 2 is incorrect
+					fill_layersAnimated[5][1]="Layer9";
+					fill_layersAnimated[5][2]="Layer10";
+					document.write("<P><B>"+fill_questionsAnimated[5][0]+"</B></P>");
+					//-->
+                </script>
+                <form name="fillForm5" onSubmit="return false">
+                  <input type="text" name="fillAnswer5" id="fillAnswer5" class="fillInSpace">
+                  <br/>
+                  <input type="button" name="buttonCheckQ5" onClick="return fill_buttonCheckQAnimated_onclick(5, window.document.fillForm5.fillAnswer5)" value="SUBMIT" class="submit-btn">
+                </form>
+              <script>
+					<!--
+					//END FILL IN THE BLANK QUESTION 5 CODE
+					//-->
+                </script>
+              <div id="Layer9" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
+              <div id="Layer10" class="rvAnimatedLayer">Incorrect.  Try again. Put your feedback here.</div>
+			</td>
+          </tr>
+          <tr>
+            <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+            <td><p class="questionStyle">Medical care exclusion amount: </p>
+             
+                <script language="JavaScript">
+					<!--
+					// BEGIN FILL IN THE BLANK QUESTION 6 CODE
+					fill_formNumberAnimated[6]="fillForm6";
+					fill_questionsAnimated[6]=new Array();
+					fill_layersAnimated[6]=new Array();
+					fill_answersAnimated[6]=new Array();
+					//here is the question
+					fill_questionsAnimated[6][0]="";
+					// these are the correct answers
+					fill_answersAnimated[6][0]="I";
+					fill_answersAnimated[6][1]="i";
+					// these are the associated layers
+					// 1 is correct
+					// 2 is incorrect
+					fill_layersAnimated[6][1]="Layer11";
+					fill_layersAnimated[6][2]="Layer12";
+					document.write("<P><B>"+fill_questionsAnimated[6][0]+"</B></P>");
+					//-->
+                </script>
+                <form name="fillForm6" onSubmit="return false">
+                  <input type="text" name="fillAnswer6" id="fillAnswer6" class="fillInSpace">
+                  <br/>
+                  <input type="button" name="buttonCheckQ6" onClick="return fill_buttonCheckQAnimated_onclick(6, window.document.fillForm6.fillAnswer6)" value="SUBMIT" class="submit-btn">
+                </form>
+              <script>
+					<!--
+					//END FILL IN THE BLANK QUESTION 6 CODE
+					//-->
+                </script>
+	          <div id="Layer11" class="rvAnimatedLayer">Correct.Put your feedback here.</div>
+              <div id="Layer12" class="rvAnimatedLayer">Incorrect.  Try again.Put your feedback here.</div>
+			</td>
+          </tr>
+        </table>
+      </div>
+</div>
+<!-- coursebody -->
+
+</body>
+</html>
