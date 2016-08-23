@@ -1,0 +1,515 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Application of Estate Planning</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <p><span class="pageInstruction">Answer the following questions by choosing the correct answer.</span></p>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">The deductible value of property contributed to a CRT must be at least ____% for the trust to qualify:</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum],'100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="5%";
+			questionsAnimated[1][2]="10%";
+			questionsAnimated[1][3]="20%";
+			questionsAnimated[1][4]="30%";
+			questionsAnimated[1][5]="60%";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer20";
+			layersAnimated[1][2]="Layer21";
+			layersAnimated[1][3]="Layer22";
+			layersAnimated[1][4]="Layer23";
+			layersAnimated[1][5]="Layer24";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect..</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">A CRT can terminate upon the death of one or more people, or it can be set up to exist for a specific number of years up to:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="5 years";
+			questionsAnimated[2][2]="10 years";
+			questionsAnimated[2][3]="15 years";
+			questionsAnimated[2][4]="20 years";
+			questionsAnimated[2][5]="30 years";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer25";
+			layersAnimated[2][2]="Layer26";
+			layersAnimated[2][3]="Layer27";
+			layersAnimated[2][4]="Layer28";
+			layersAnimated[2][5]="Layer29";
+			
+			//This is the test answer
+			answersAnimated[2]="D";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer26" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer27" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer28" class="rvAnimatedLayer">Correct.</div>
+          <div id="Layer29" class="rvAnimatedLayer">Incorrect.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">The annual payout of a charitable remainder trust to the income beneficiaries cannot be less than 5% or more than _____. </p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="10%";
+			questionsAnimated[3][2]="15%";
+			questionsAnimated[3][3]="20%";
+			questionsAnimated[3][4]="25%";
+			questionsAnimated[3][5]="50%";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer1";
+			layersAnimated[3][2]="Layer2";
+			layersAnimated[3][3]="Layer3";
+			layersAnimated[3][4]="Layer4";
+			layersAnimated[3][5]="Layer5";
+			
+			//This is the test answer
+			answersAnimated[3]="E";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer5" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">The duration of a Charitable Lead Trust is either the lifetime of the donor or another individual named by the donor, or for a specific number of years up to:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="10 years";
+			questionsAnimated[4][2]="15 years";
+			questionsAnimated[4][3]="20 years";
+			questionsAnimated[4][4]="Any number of years";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer6";
+			layersAnimated[4][2]="Layer7";
+			layersAnimated[4][3]="Layer8";
+			layersAnimated[4][4]="Layer9";
+			
+			//This is the test answer
+			answersAnimated[4]="D";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer9" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">The minimum payout requirement of a Charitable Lead Trust is:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="3%";
+			questionsAnimated[5][2]="5%";
+			questionsAnimated[5][3]="10%";
+			questionsAnimated[5][4]="15%";
+			questionsAnimated[5][5]="Nonexistent (there is no minimum)";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer10";
+			layersAnimated[5][2]="Layer11";
+			layersAnimated[5][3]="Layer12";
+			layersAnimated[5][4]="Layer13";
+			layersAnimated[5][5]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[5]="E";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">The simplest way to keep life insurance out of your estate is to:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="Not own it";
+			questionsAnimated[6][2]="Not be named as a beneficiary";
+			questionsAnimated[6][3]="Not be able to name a beneficiary";
+			questionsAnimated[6][4]="Not be able to borrow against the policy";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer15";
+			layersAnimated[6][2]="Layer16";
+			layersAnimated[6][3]="Layer17";
+			layersAnimated[6][4]="Layer18";
+			
+			//This is the test answer
+			answersAnimated[6]="A";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer15" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect.</div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">The three-year rule states that insurance must be transferred within three years of purchase if it is to be excluded from the owner's estate.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[7]="QuestionForm7";
+			questionNumberAnimated=7;
+			questionsAnimated[7]=new Array();
+			layersAnimated[7]=new Array();
+			//This is the test question
+			questionsAnimated[7][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[7][1]="True";
+			questionsAnimated[7][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[7][1]="Layer19";
+			layersAnimated[7][2]="Layer30";
+			
+			//This is the test answer
+			answersAnimated[7]="B";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestionAnimated(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect. The three-year rule has nothing to do with when a policy was purchased. Rather, it is relative to when the policy was transferred to another owner.</div>
+          <div id="Layer30" class="rvAnimatedLayer">Correct. The three-year rule has nothing to do with when a policy was purchased. Rather, it is relative to when the policy was transferred to another owner.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>8.</strong></p></td>
+        <td><p class="questionStyle">For contributions to an ILIT to qualify for the annual gift tax exclusion, the trust must be a:</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 8 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[8]="QuestionForm8";
+			questionNumberAnimated=8;
+			questionsAnimated[8]=new Array();
+			layersAnimated[8]=new Array();
+			//This is the test question
+			questionsAnimated[8][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[8][1]="Pour Over Trust";
+			questionsAnimated[8][2]="Power of Attorney Trust";
+			questionsAnimated[8][3]="Crummey Trust";
+			//These are the associated layersAnimated
+			layersAnimated[8][1]="Layer31";
+			layersAnimated[8][2]="Layer32";
+			layersAnimated[8][3]="Layer33";
+			
+			//This is the test answer
+			answersAnimated[8]="C";
+			//-->
+          </script>
+          <form name="QuestionForm8">
+            <script>
+				<!--
+				// Display Text for Question 8
+				document.write(getQuestionAnimated(8));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 8 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer31" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer32" class="rvAnimatedLayer">Incorrect.</div>
+          <div id="Layer33" class="rvAnimatedLayer">Correct!</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+ 
+</div>
+<!-- coursebody -->
+</body>
+</html>
