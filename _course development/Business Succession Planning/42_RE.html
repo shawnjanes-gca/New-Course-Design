@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Business Succession Planning</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Which of the following is NOT an approach to selling a business to a third party?</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Stock Sale";
+			questionsAnimated[1][2]="Assets sale";
+			questionsAnimated[1][3]="GRAT";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			
+			//This is the test answer
+			answersAnimated[1]="C";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Which of the following statements is/are TRUE regarding considerations when selling a business to a third party?</p>
+          <script language="JavaScript">
+				<!--
+				// BEGIN RADIO QUESTION 2 CODE
+				var formNumberAnimated=new Array();
+				formNumberAnimated[2]="QuestionForm2";
+				questionNumberAnimated=2;
+				questionsAnimated[2]=new Array();
+				layersAnimated[2]=new Array();
+				//This is the test question
+				questionsAnimated[2][0]="";
+				
+				//These are the answer choices
+				questionsAnimated[2][1]="When investigating the potential buyer, the owner should evaluate the purchaser’s motives.";
+				questionsAnimated[2][2]="Before selling the business, the owner should obtain an accurate and objective valuation of the business.";
+				questionsAnimated[2][3]="It is important to decide on a purchase structure that is satisfying to both parties.";
+				questionsAnimated[2][4]="All of the above are true";
+				//These are the associated layersAnimated
+				layersAnimated[2][1]="Layer4";
+				layersAnimated[2][2]="Layer5";
+				layersAnimated[2][3]="Layer6";
+				layersAnimated[2][4]="Layer7";
+				
+				//This is the test answer
+				answersAnimated[2]="D";
+				//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer4" class="rvAnimatedLayer">Incorrect. This is not the only true statement.</div>
+          <div id="Layer5" class="rvAnimatedLayer">Incorrect. This is not the only true statement.</div>
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect. This is not the only true statement.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Correct!</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">When transferring the business to employees, a leveraged buyout will result in pledging company assets to secure the acquisition debt.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="True";
+			questionsAnimated[3][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer8";
+			layersAnimated[3][2]="Layer9";
+			
+			//This is the test answer
+			answersAnimated[3]="A";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+				<!--
+				// Display Text for Question 3
+				document.write(getQuestionAnimated(3));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer8" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">An ESOP is a purchase of the business by a management group, usually aided by primary and secondary lenders.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="True";
+			questionsAnimated[4][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer10";
+			layersAnimated[4][2]="Layer11";
+			
+			//This is the test answer
+			answersAnimated[4]="B";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+				<!--
+				// Display Text for Question 4
+				document.write(getQuestionAnimated(4));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect.  This describes a leveraged buyout, not an ESOP.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Correct!  This describes a leveraged buyout, not an ESOP.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">Which of the following statements is/are FALSE regarding Employee Stock Ownership Plans?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="It is actually a type of qualified retirement plan.";
+			questionsAnimated[5][2]="The ESOP invests in employer stock.";
+			questionsAnimated[5][3]="The ESOP may not borrow funds to purchase employer stock.";
+			questionsAnimated[5][4]="ESOPs can be used to create a market for the sale of shares of a closely held corporation.";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer12";
+			layersAnimated[5][2]="Layer13";
+			layersAnimated[5][3]="Layer14";
+			layersAnimated[5][4]="Layer15";
+			
+			//This is the test answer
+			answersAnimated[5]="C";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect.  This is a true statement. Try again.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.  This is a true statement. Try again.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Correct!  An ESOP can borrow funds to purchase employer stock.</div>
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect.  This is a true statement. Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>6.</strong></p></td>
+        <td><p class="questionStyle">Which of the following is NOT an advantage of an ESOP?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="Allows employees to retain ownership of the company";
+			questionsAnimated[6][2]="ESOPs allow the business to continue operating without disruption while the business is transferred";
+			questionsAnimated[6][3]="The purchase is closed faster than usual";
+			questionsAnimated[6][4]="All of the above are advantages";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer16";
+			layersAnimated[6][2]="Layer17";
+			layersAnimated[6][3]="Layer18";
+			layersAnimated[6][4]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[6]="D";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+				<!--
+				// Display Text for Question 6
+				document.write(getQuestionAnimated(6));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect.  This is an advantage of an ESOP. Try again.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect.  This is an advantage of an ESOP. Try again.</div>
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect.  This is an advantage of an ESOP. Try again.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Correct!</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>7.</strong></p></td>
+        <td><p class="questionStyle">Which of the following considerations should be given when taking a business public?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 7 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[7]="QuestionForm7";
+			questionNumberAnimated=7;
+			questionsAnimated[7]=new Array();
+			layersAnimated[7]=new Array();
+			//This is the test question
+			questionsAnimated[7][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[7][1]="Management depth";
+			questionsAnimated[7][2]="A board of directors will be needed";
+			questionsAnimated[7][3]="Compliance with regulations";
+			questionsAnimated[7][4]="Percentage of ownership retained";
+			questionsAnimated[7][5]="All of the above";
+			//These are the associated layersAnimated
+			layersAnimated[7][1]="Layer20";
+			layersAnimated[7][2]="Layer21";
+			layersAnimated[7][3]="Layer22";
+			layersAnimated[7][4]="Layer23";
+			layersAnimated[7][5]="Layer24";
+			
+			//This is the test answer
+			answersAnimated[7]="E";
+			//-->
+          </script>
+          <form name="QuestionForm7">
+            <script>
+				<!--
+				// Display Text for Question 7
+				document.write(getQuestionAnimated(7));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 7 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect.  This is not the only consideration.</div>
+          <div id="Layer21" class="rvAnimatedLayer">Incorrect.  This is not the only consideration.</div>
+          <div id="Layer22" class="rvAnimatedLayer">Incorrect.  This is not the only consideration.</div>
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect.  This is not the only consideration.</div>
+          <div id="Layer24" class="rvAnimatedLayer">Correct!</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
+</body>
+</html>
