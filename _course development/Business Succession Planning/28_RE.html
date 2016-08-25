@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Business Succession Planning</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">All of the following are benefits of Family Limited Partnerships EXCEPT:</p>
+
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Older generation family members can gift interests in the FLP while still maintaining control";
+			questionsAnimated[1][2]="They simplify gifting property interests to family members";
+			questionsAnimated[1][3]="Protection against creditors";
+			questionsAnimated[1][4]="Administration expenses minimal";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer1";
+			layersAnimated[1][2]="Layer2";
+			layersAnimated[1][3]="Layer3";
+			layersAnimated[1][4]="Layer4";
+			
+			//This is the test answer
+			answersAnimated[1]="D";
+			//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+				<!--
+				// Display Text for Question 1
+				document.write(getQuestionAnimated(1));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer1" class="rvAnimatedLayer">Incorrect.  This is not the only benefit listed.</div>
+          <div id="Layer2" class="rvAnimatedLayer">Incorrect.  This is not the only benefit listed.</div>
+          <div id="Layer3" class="rvAnimatedLayer">Incorrect.  This is not the only benefit listed.</div>
+          <div id="Layer4" class="rvAnimatedLayer">Correct.  Administration expenses, such as legal and filing fees, are a disadvantage of FLPs.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Which of the following utilizes an annuity?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="GRAT";
+			questionsAnimated[2][2]="Self-cancelling installment note";
+			questionsAnimated[2][3]="IDGT";
+			questionsAnimated[2][4]="None of the above";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer5";
+			layersAnimated[2][2]="Layer6";
+			layersAnimated[2][3]="Layer7";
+			layersAnimated[2][4]="Layer8";
+			
+			//This is the test answer
+			answersAnimated[2]="A";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+				<!--
+				// Display Text for Question 2
+				document.write(getQuestionAnimated(2));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer5" class="rvAnimatedLayer">Correct!</div>
+          <div id="Layer6" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Which of the following statements is FALSE regarding Grantor Retained Annuity Trusts (GRATs)?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 3 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[3]="QuestionForm3";
+			questionNumberAnimated=3;
+			questionsAnimated[3]=new Array();
+			layersAnimated[3]=new Array();
+			//This is the test question
+			questionsAnimated[3][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[3][1]="A grantor can transfer property into an irrevocable trust which will provide the grantor with a cash annuity payment for a specified number of years.";
+			questionsAnimated[3][2]="Beneficiaries will generally receive any balance remaining after the grantor’s annuity obligation has been paid out by the trust.";
+			questionsAnimated[3][3]="In funding the trust, the grantor makes a gift of present interest, which is eligible for the annual gift tax exclusion.";
+			questionsAnimated[3][4]="All of the above are true statements.";
+			//These are the associated layersAnimated
+			layersAnimated[3][1]="Layer9";
+			layersAnimated[3][2]="Layer10";
+			layersAnimated[3][3]="Layer11";
+			layersAnimated[3][4]="Layer12";
+			
+			//This is the test answer
+			answersAnimated[3]="C";
+			//-->
+          </script>
+          <form name="QuestionForm3">
+            <script>
+			<!--
+			// Display Text for Question 3
+			document.write(getQuestionAnimated(3));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect.  This is a true statement.  Try again.</div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect.  This is a true statement.  Try again.</div>
+          <div id="Layer11" class="rvAnimatedLayer">Correct!  In funding the trust, the grantor makes a gift of a future interest that will ultimately pass to the remainder beneficiaries.  Gifts of a future interest are NOT eligible for the annual gift tax exclusion.</div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect.  One of the above statements is false.  Try again.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">Which of the following statements about a self-cancelling installment note (SCIN) is FALSE?</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="A SCIN is an installment note with a provision allowing the unpaid portion of the note to be cancelled upon the exercise of the seller.";
+			questionsAnimated[4][2]="A SCIN will usually be structured so that the installment note is for a term longer than the life expectancy of the person selling the transferred assets.";
+			questionsAnimated[4][3]="The terms of the promissory note must include an interest rate discount or purchase price discount.";
+			questionsAnimated[4][4]="None of the above statements are false";
+			questionsAnimated[4][5]="All of the above statements are false";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer13";
+			layersAnimated[4][2]="Layer14";
+			layersAnimated[4][3]="Layer15";
+			layersAnimated[4][4]="Layer16";
+			layersAnimated[4][5]="Layer17";
+			
+			//This is the test answer
+			answersAnimated[4]="E";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+			<!--
+			// Display Text for Question 4
+			document.write(getQuestionAnimated(4));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect.  This is not the only false statement.  Try again.</div>
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect.  This is not the only false statement.  Try again.</div>
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect.  This is not the only false statement.  Try again.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect.  Try again.</div>
+          <div id="Layer17" class="rvAnimatedLayer">Correct.  These are all false statements.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>5.</strong></p></td>
+        <td><p class="questionStyle">An IDGT is revocable.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="True";
+			questionsAnimated[5][2]="False";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer18";
+			layersAnimated[5][2]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[5]="B";
+			//-->
+          </script>
+          <form name="QuestionForm5">
+            <script>
+				<!--
+				// Display Text for Question 5
+				document.write(getQuestionAnimated(5));
+				//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer18" class="rvAnimatedLayer">Incorrect.  An Intentionally Defective Grantor Trust is irrevocable.</div>
+          <div id="Layer19" class="rvAnimatedLayer">Correct.  An Intentionally Defective Grantor Trust is irrevocable.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
+</body>
+</html>
