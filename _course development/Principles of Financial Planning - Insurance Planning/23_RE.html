@@ -393,98 +393,32 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
              <td><p class="questionStyle">As long as the policy owner pays sufficient premiums to maintain enough cash value to pay the policy's mortality charges and expenses, the owner of a universal policy has the flexibility to pay premiums whenever he or she desires.</p>
                
                <script language="JavaScript">
-					<!--
-					// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
-					function answerCorrect(questionNumber, answer, formName)
-					{
-						// declare a variable to hold return value
-						var correct = false;
-						var questionLength = formName.radQuestionChoice.length;
-						var questionChoice;
-					
-						// if answer provided is same as correct answer then correct variable is true
-						if (answer == answers[questionNumber])
-							{correct = true;
-								for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
-								{
-								formName.radQuestionChoice[questionChoice].disabled = true;
-					
-								}
-					
-						// return whether the answer was correct (true or false)
-						return correct;
-						}
-					}
-					
-					function getQuestion(questionNumber)
-					{
-					
-					   var questionHTML = "<P><B>" + questions[questionNumber][0] + "</B></P>";
-					   var questionLength = questions[questionNumber].length;
-					   var questionChoice;
-					
-					   questionHTML = questionHTML + "<P>";
-					   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
-					   {
-						  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoice onclick='return buttonCheckQ_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
-						  questionHTML = questionHTML + questions[questionNumber][questionChoice];
-						  questionHTML = questionHTML + "</label><BR>";
-					   }
-					   questionHTML = questionHTML + "</P>";
-					
-					   return questionHTML;
-					}
-					function buttonCheckQ_onclick(questionNum, formName)
-					{
-					   var answer = 0;
-					   while (formName.radQuestionChoice[answer].checked != true)
-					   {
-						  answer++;
-					   }
-					
-					   var answer2 = String.fromCharCode(65 + answer);
-					   answer++;
-					   if (answerCorrect(questionNum,answer2, formName) == true)
-					   {
-						  MM_showHideLayers(layers[questionNum][answer],'','show');
-					   }
-					   else
-					   {
-						  MM_showHideLayers(layers[questionNum][answer],'','show');
-					   }
-					}
-					
-					var questionNumber;
-					var questions=new Array();
-					var answers=new Array();
-					var layers=new Array();
-					// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
 					
 					// BEGIN RADIO QUESTION 4 CODE
-					var formNumber=new Array();
-					formNumber[4]="QuestionForm4";
-					questionNumber=4;
-					questions[4]=new Array();
-					layers[4]=new Array();
+					var formNumberAnimated=new Array();
+					formNumberAnimated[4]="QuestionForm4";
+					questionNumberAnimated=4;
+					questionsAnimated[4]=new Array();
+					layersAnimated[4]=new Array();
 					//This is the test question
-					questions[4][0]="";
+					questionsAnimated[4][0]="";
 					
 					//These are the answer choices
-					questions[4][1]="True";
-					questions[4][2]="False";
+					questionsAnimated[4][1]="True";
+					questionsAnimated[4][2]="False";
 					//These are the associated layers
-					layers[4][1]="Layerwbutton1";
-					layers[4][2]="Layerwbutton2";
+					layersAnimated[4][1]="Layer7";
+					layersAnimated[4][2]="Layer8";
 					
 					//This is the test answer
-					answers[4]="A";
+					answersAnimated[4]="A";
 					//-->
                </script>
                <form name="QuestionForm4">
                  <script>
 					<!--
 					// Display Text for Question 4
-					document.write(getQuestion(4));
+					document.write(getQuestionAnimated(4));
 					//-->
                  </script>
                </form>
@@ -494,32 +428,8 @@ function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
 					//-->
                </script>
                <!--put Review Layer with Button layers here-->
-               <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
-                 <!--change left and top px depending of where you what the layer box to appear-->
-                 <div id="Layerwbutton1" class="rvLayerInnerDiv">
-                   <table class="rvLayerButton">
-                     <tr>
-                       <td><p>Correct!</p>
-                         <p align="center">
-                           <input type="submit" name="Submit" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton1','','hide')">
-                         </p></td>
-                     </tr>
-                   </table>
-                 </div>
-               </div>
-               <div class="rvLayerOuterDiv" style="left:75px;top:-135px;">
-                 <!--change left and top px depending of where you what the layer box to appear-->
-                 <div id="Layerwbutton2" class="rvLayerInnerDiv">
-                   <table class="rvLayerButton">
-                     <tr>
-                       <td><p>Incorrect.</p>
-                         <p align="center">
-                           <input type="submit" name="Submit2" value="CLOSE" class="closeLayer-btn" onClick="MM_showHideLayers('Layerwbutton2','','hide')">
-                         </p></td>
-                     </tr>
-                   </table>
-                 </div>
-               </div>
+               <div id="Layer7" class="rvAnimatedLayer">Correct!</div>
+               <div id="Layer8" class="rvAnimatedLayer">Incorrect.</div>
 		     </td>
            </tr>
         </table>
