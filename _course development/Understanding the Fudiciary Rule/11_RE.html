@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Understanding the Fudiciary Rule</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Certain written disclosures, website disclosures, and relatively stringent recordkeeping are required by the Full BICE but not by the LFFE. Why?</p>
+         
+          <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="The LFFE must be renewed before each client recommendation.";
+			questionsAnimated[1][2]="Both the BICE and the LFFE are now required of all Fiduciary Advisors. Hence, the DOL does not require duplication of the BICE requirements.";
+			questionsAnimated[1][3]="An LFFE sharply reduces the potential for conflicted advice by eliminating variable and third party compensation.";
+			questionsAnimated[1][4]="None of the above.";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer19";
+			layersAnimated[1][2]="Layer20";
+			layersAnimated[1][3]="Layer21";
+			layersAnimated[1][4]="Layer22";
+			
+			//This is the test answer
+			answersAnimated[1]="C";
+			//-->
+					  </script>
+					  <form name="QuestionForm1">
+						<script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+						</script>
+					  </form>
+		  <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer19" class="rvAnimatedLayer">Incorrect. Only the original recommendation to rollover from an ERISA plan or IRA is conflicted advice. Transactions after the rollover do not represent conflicted advice and additional LFFE’s are not required. </div>
+          <div id="Layer20" class="rvAnimatedLayer">Incorrect. Both exemptions are not required. </div>
+          <div id="Layer21" class="rvAnimatedLayer">Correct. The elimination of variable and third party compensation removes the compensation bias from investment recommendations and therefore reduces the risk of conflicted advice. </div>
+          <div id="Layer22" class="rvAnimatedLayer">Incorrect. There is a correct choice listed. </div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">You are considering how best to structure your fees in the wake of The Rule. Which of the following, if any, is possible under the LFFE? </p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="You will offer proprietary products.";
+			questionsAnimated[2][2]="You will earn compensation from a third party affiliate in addition to your level fee.";
+			questionsAnimated[2][3]="You will collect deferred sales charges in addition to your level fee.";
+			questionsAnimated[2][4]="You plan to switch low volume trading accounts to level fee accounts solely to increase your compensation.";
+			questionsAnimated[2][5]="None of the above.";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer23";
+			layersAnimated[2][2]="Layer24";
+			layersAnimated[2][3]="Layer25";
+			layersAnimated[2][4]="Layer26";
+			layersAnimated[2][5]="Layer27";
+			
+			//This is the test answer
+			answersAnimated[2]="E";
+			//-->
+          </script>
+          <form name="QuestionForm2">
+            <script>
+			<!--
+			// Display Text for Question 2
+			document.write(getQuestionAnimated(2));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer23" class="rvAnimatedLayer">Incorrect. While the BICE allows sale of proprietary products, the LFFE does not.</div>
+          <div id="Layer24" class="rvAnimatedLayer">Incorrect. No compensation is permitted in addition to the fixed fee even if the compensation is indirect from a third party. </div>
+          <div id="Layer25" class="rvAnimatedLayer">Incorrect. No compensation is permitted in addition to the fixed fee.</div>
+          <div id="Layer26" class="rvAnimatedLayer">Incorrect. The switch must be in the best interest of your client. </div>
+          <div id="Layer27" class="rvAnimatedLayer">Correct.</div>
+&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+<!-- coursebody -->
+</body>
+</html>

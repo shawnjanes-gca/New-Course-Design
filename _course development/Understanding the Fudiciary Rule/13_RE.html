@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Understanding the Fudiciary Rule</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">You are a Fiduciary Advisor to your client Ruth. Under the Grandfathered Exemption, you are permitted to receive variable compensation arising from which of the following IRA recommendations to Ruth? The phrase “pre-existing” in the answer choices below means “existing before April 10, 2017.”</p>
+        <p class="questionStyle">Recommend, after April 10, 2017, an investment to Ruth that will be funded from the pre-existing IRA balance.</p>
+      
+        <script language="JavaScript">
+			<!--
+			// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			function answerCorrectAnimated(questionNumber, answer, formName)
+			{
+				// declare a variable to hold return value
+				var correct = false;
+				var questionLength = formName.radQuestionChoiceAnimated.length;
+				var questionChoice;
+			
+				// if answer provided is same as correct answer then correct variable is true
+				if (answer == answersAnimated[questionNumber])
+					{correct = true;
+						for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+						{
+						formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+			
+						}
+			
+				// return whether the answer was correct (true or false)
+				return correct;
+				}
+			}
+			
+			function getQuestionAnimated(questionNumber)
+			{
+			
+			   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+			   var questionLength = questionsAnimated[questionNumber].length;
+			   var questionChoice;
+			
+			   questionHTML = questionHTML + "<P>";
+			   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+			   {
+				  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+				  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+				  questionHTML = questionHTML + "</label><BR>";
+			   }
+			   questionHTML = questionHTML + "</P>";
+			
+			   return questionHTML;
+			}
+			function buttonCheckQAnimated_onclick(questionNum, formName)
+			{
+			   var answer = 0;
+			   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+			   {
+				  answer++;
+			   }
+			
+			   var answer2 = String.fromCharCode(65 + answer);
+			   answer++;
+			   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			   else
+			   {
+				  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+			   }
+			}
+			
+			var questionNumberAnimated;
+			var questionsAnimated=new Array();
+			var answersAnimated=new Array();
+			var layersAnimated=new Array();
+			// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+			
+			// BEGIN RADIO QUESTION 1 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[1]="QuestionForm1";
+			questionNumberAnimated=1;
+			questionsAnimated[1]=new Array();
+			layersAnimated[1]=new Array();
+			//This is the test question
+			questionsAnimated[1][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[1][1]="Permitted";
+			questionsAnimated[1][2]="Not Permitted";
+			//These are the associated layersAnimated
+			layersAnimated[1][1]="Layer28";
+			layersAnimated[1][2]="Layer29";
+			
+			//This is the test answer
+			answersAnimated[1]="B";
+			//-->
+        </script>
+        <form name="QuestionForm1">
+          <script>
+			<!--
+			// Display Text for Question 1
+			document.write(getQuestionAnimated(1));
+			//-->
+          </script>
+        </form>
+        <script>
+			<!--
+			// END RADIO QUESTION 1 CODE
+			//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer28" class="rvAnimatedLayer">Incorrect. Variable compensation arising from recommendations made after the applicability date is not permitted by the GE (even if the investment is purchased with pre-existing funds). </div>
+        <div id="Layer29" class="rvAnimatedLayer">Correct. Variable compensation arising from recommendations made after the applicability date is not permitted by the GE (even if the investment is purchased by pre-existing funds).  </div>
+        
+		<p class="questionStyle">Recommend, after April 10, 2017, an investment to Ruth that will be funded by a contribution to her IRA made after April 10, 2017</p>
+        <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 2 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[2]="QuestionForm2";
+			questionNumberAnimated=2;
+			questionsAnimated[2]=new Array();
+			layersAnimated[2]=new Array();
+			//This is the test question
+			questionsAnimated[2][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[2][1]="Permitted";
+			questionsAnimated[2][2]="Not Permitted";
+			//These are the associated layersAnimated
+			layersAnimated[2][1]="Layer30";
+			layersAnimated[2][2]="Layer31";
+			
+			//This is the test answer
+			answersAnimated[2]="B";
+			//-->
+					</script>
+					<form name="QuestionForm2">
+					  <script>
+			<!--
+			// Display Text for Question 2
+			document.write(getQuestionAnimated(2));
+			//-->
+          </script>
+        </form>
+        <script>
+			<!--
+			// END RADIO QUESTION 2 CODE
+			//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer30" class="rvAnimatedLayer">Incorrect. Variable compensation arising from recommendations made after the applicability date is not permitted by the GE.</div>
+        <div id="Layer31" class="rvAnimatedLayer">Correct. Variable compensation arising from recommendations made after the applicability date is not permitted by the GE.</div>
+
+<p class="questionStyle">Recommend, after April 10, 2017, an increase of $250 per month to Ruth’s pre-existing systematic investment plan program</p>
+	<script language="JavaScript">
+    <!--
+    // BEGIN RADIO QUESTION 3 CODE
+    var formNumberAnimated=new Array();
+    formNumberAnimated[3]="QuestionForm3";
+    questionNumberAnimated=3;
+    questionsAnimated[3]=new Array();
+    layersAnimated[3]=new Array();
+    //This is the test question
+    questionsAnimated[3][0]="";
+    
+    //These are the answer choices
+    questionsAnimated[3][1]="Permitted";
+    questionsAnimated[3][2]="Not Permitted";
+    //These are the associated layersAnimated
+    layersAnimated[3][1]="Layer32";
+    layersAnimated[3][2]="Layer33";
+    
+    //This is the test answer
+    answersAnimated[3]="B";
+    //-->
+    </script>
+    <form name="QuestionForm3">
+      <script>
+    <!--
+    // Display Text for Question 3
+    document.write(getQuestionAnimated(3));
+    //-->
+      </script>
+    </form>
+    <script>
+		<!--
+		// END RADIO QUESTION 3 CODE
+		//-->
+    </script>
+    <!--put Review Exercise Layer with Feedback here-->
+    <div id="Layer32" class="rvAnimatedLayer">Incorrect. The $250 per month increase is not covered by the GE.   </div>
+    <div id="Layer33" class="rvAnimatedLayer">Correct.  The $250 per month increase is not covered by the GE.</div>
+    
+<p class="questionStyle">Recommend changes to Ruth’s pre-existing IRA portfolio as part of a periodic rebalancing strategy established before April 10, 2017 (your compensation continue at pre-existing commission rates)</p>
+        <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="Permitted";
+			questionsAnimated[4][2]="Not Permitted";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer34";
+			layersAnimated[4][2]="Layer35";
+			
+			//This is the test answer
+			answersAnimated[4]="A";
+			//-->
+        </script>
+        <form name="QuestionForm4">
+          <script>
+			<!--
+			// Display Text for Question 4
+			document.write(getQuestionAnimated(4));
+			//-->
+          </script>
+        </form>
+        <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer34" class="rvAnimatedLayer">Correct. This is permitted because your compensation rate will not increase. </div>
+        <div id="Layer35" class="rvAnimatedLayer">Incorrect. This is permitted because your compensation rate will not increase.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">You are a Fiduciary Advisor relying upon the GE. Are you allowed to receive variable compensation from the following?</p>
+       	  <p class="questionStyle">Upfront commissions resulting from a recommendation made after the applicability date</p>
+            <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="Yes";
+			questionsAnimated[5][2]="No";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer36";
+			layersAnimated[5][2]="Layer37";
+			
+			//This is the test answer
+			answersAnimated[5]="B";
+			//-->
+						</script>
+						<form name="QuestionForm5">
+						  <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+						  </script>
+						</form>
+		  <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+            </script>
+            <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer36" class="rvAnimatedLayer">Incorrect. Up front commissions earned from a recommendation made after the applicability date are not eligible; The GE does not apply. A BICE is required.</div>
+          <div id="Layer37" class="rvAnimatedLayer">Correct. Up front commissions earned from a recommendation made after the applicability date are not eligible; The GE does not apply. A BICE is required. </div>
+<p class="questionStyle">Trailing commissions resulting from a recommendation made after the applicability date</p>
+			<script language="JavaScript">
+            <!--
+            // BEGIN RADIO QUESTION 6 CODE
+            var formNumberAnimated=new Array();
+            formNumberAnimated[6]="QuestionForm6";
+            questionNumberAnimated=6;
+            questionsAnimated[6]=new Array();
+            layersAnimated[6]=new Array();
+            //This is the test question
+            questionsAnimated[6][0]="";
+            
+            //These are the answer choices
+            questionsAnimated[6][1]="Yes";
+            questionsAnimated[6][2]="No";
+            //These are the associated layersAnimated
+            layersAnimated[6][1]="Layer38";
+            layersAnimated[6][2]="Layer39";
+            
+            //This is the test answer
+            answersAnimated[6]="B";
+            //-->
+            </script>
+            <form name="QuestionForm6">
+              <script>
+            <!--
+            // Display Text for Question 6
+            document.write(getQuestionAnimated(6));
+            //-->
+              </script>
+            </form>
+          <script>
+            <!--
+            // END RADIO QUESTION 6 CODE
+            //-->
+            </script>
+<!--put Review Exercise Layer with Feedback here-->
+		<div id="Layer38" class="rvAnimatedLayer">Incorrect. Trailing commissions earned from a recommendation made after the applicability date are not eligible; The GE does not apply. A BICE is required.</div>
+        <div id="Layer39" class="rvAnimatedLayer">Correct. Trailing commissions earned from a recommendation made after the applicability date are not eligible; The GE does not apply. A BICE is required.</div>
+
+		<p class="questionStyle">12(b)-1 fees resulting from a $2,000 per month systematic investment plan in place before the applicability date and continuing beyond the applicability date</p>
+		<script language="JavaScript">
+        <!--
+        // BEGIN RADIO QUESTION 7 CODE
+        var formNumberAnimated=new Array();
+        formNumberAnimated[7]="QuestionForm7";
+        questionNumberAnimated=7;
+        questionsAnimated[7]=new Array();
+        layersAnimated[7]=new Array();
+        //This is the test question
+        questionsAnimated[7][0]="";
+        
+        //These are the answer choices
+        questionsAnimated[7][1]="Yes";
+        questionsAnimated[7][2]="No";
+        //These are the associated layersAnimated
+        layersAnimated[7][1]="Layer40";
+        layersAnimated[7][2]="Layer41";
+        
+        //This is the test answer
+        answersAnimated[7]="A";
+        //-->
+        </script>
+        <form name="QuestionForm7">
+          <script>
+        <!--
+        // Display Text for Question 7
+        document.write(getQuestionAnimated(7));
+        //-->
+          </script>
+        </form>
+        <script>
+        <!--
+        // END RADIO QUESTION 7 CODE
+        //-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer40" class="rvAnimatedLayer">Correct. Variable compensation earned under systematic investment plans in place before the applicability date is eligible for the GE.</div>
+        <div id="Layer41" class="rvAnimatedLayer">Incorrect. Variable compensation earned under systematic investment plans in place before the applicability date is eligible for the GE. </div>
+
+		<p class="questionStyle">Additional 12(b)-1 fees resulting from a $1,000 increase, after the applicability date, in a systematic investment plan in place before the applicability date</p>
+				<script language="JavaScript">
+        <!--
+        // BEGIN RADIO QUESTION 8 CODE
+        var formNumberAnimated=new Array();
+        formNumberAnimated[8]="QuestionForm8";
+        questionNumberAnimated=8;
+        questionsAnimated[8]=new Array();
+        layersAnimated[8]=new Array();
+        //This is the test question
+        questionsAnimated[8][0]="";
+        
+        //These are the answer choices
+        questionsAnimated[8][1]="Yes";
+        questionsAnimated[8][2]="No";
+        //These are the associated layersAnimated
+        layersAnimated[8][1]="Layer42";
+        layersAnimated[8][2]="Layer43";
+        
+        //This is the test answer
+        answersAnimated[8]="B";
+        //-->
+                </script>
+                <form name="QuestionForm8">
+                  <script>
+        <!--
+        // Display Text for Question 8
+        document.write(getQuestionAnimated(8));
+        //-->
+                  </script>
+                </form>
+          <script>
+        <!--
+        // END RADIO QUESTION 8 CODE
+        //-->
+                </script>
+         <!--put Review Exercise Layer with Feedback here-->
+         <div id="Layer42" class="rvAnimatedLayer">Incorrect. The $1,000 is an increase to a systematic investment plan in place before the applicability date and is not eligible for the GE.</div>
+         <div id="Layer43" class="rvAnimatedLayer">Correct. The $1,000 is an increase to a systematic investment plan in place before the applicability date and is not eligible for the GE.  </div>
+		</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- coursebody -->
+</body>
+</html>

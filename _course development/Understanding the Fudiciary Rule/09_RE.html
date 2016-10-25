@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Understanding the Fudiciary Rule</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+var numOfLayers = otherLayers.length;
+var hideLayers;
+for (a=1; a < numOfLayers; a++){
+	hideLayers = document.getElementById(otherLayers[a]);
+	hideLayers.style.display = "none";
+}
+var myLayer;
+myLayer = document.getElementById(i);
+myLayer.style.display = "none";
+myLayer.style.left = lft;
+myLayer.style.top = top;
+myLayer.style.width = wdth;
+myLayer.style.height = hght;
+myLayer.style.padding = pad;
+$(myLayer).slideDown("slow");
+$(myLayer).click(function(){
+	$(myLayer).hide();
+});
+}
+          </script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">Ms. Ophelia Octogenarian is a vivacious 81-year-old. She called you on April 11, 2017 to request investment advice for $100,000 of her IRA balance. She has shared nothing of her financial profile, existing portfolio size/allocation, or risk tolerance. You will be compensated for any products she purchases based upon your recommendation. You are about to recommend an indexed annuity to Ophelia. Which of the following, if any, would make your recommendation prudent? </p>
+          
+          <script language="JavaScript">
+	<!--
+	// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+	function answerCorrectAnimated(questionNumber, answer, formName)
+	{
+		// declare a variable to hold return value
+		var correct = false;
+		var questionLength = formName.radQuestionChoiceAnimated.length;
+		var questionChoice;
+	
+		// if answer provided is same as correct answer then correct variable is true
+		if (answer == answersAnimated[questionNumber])
+			{correct = true;
+				for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+				{
+				formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+	
+				}
+	
+		// return whether the answer was correct (true or false)
+		return correct;
+		}
+	}
+	
+	function getQuestionAnimated(questionNumber)
+	{
+	
+	   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+	   var questionLength = questionsAnimated[questionNumber].length;
+	   var questionChoice;
+	
+	   questionHTML = questionHTML + "<P>";
+	   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+	   {
+		  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+		  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+		  questionHTML = questionHTML + "</label><BR>";
+	   }
+	   questionHTML = questionHTML + "</P>";
+	
+	   return questionHTML;
+	}
+	function buttonCheckQAnimated_onclick(questionNum, formName)
+	{
+	   var answer = 0;
+	   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+	   {
+		  answer++;
+	   }
+	
+	   var answer2 = String.fromCharCode(65 + answer);
+	   answer++;
+	   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+	   {
+		  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+	   }
+	   else
+	   {
+		  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+	   }
+	}
+	
+	var questionNumberAnimated;
+	var questionsAnimated=new Array();
+	var answersAnimated=new Array();
+	var layersAnimated=new Array();
+	// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+// BEGIN RADIO QUESTION 1 CODE
+var formNumberAnimated=new Array();
+formNumberAnimated[1]="QuestionForm1";
+questionNumberAnimated=1;
+questionsAnimated[1]=new Array();
+layersAnimated[1]=new Array();
+//This is the test question
+questionsAnimated[1][0]="";
+
+//These are the answer choices
+questionsAnimated[1][1]="The indexed annuity will provide an income stream";
+questionsAnimated[1][2]="Her age demands a conservative investment approach";
+questionsAnimated[1][3]="You have assumed she has liquidity outside of the IRA";
+questionsAnimated[1][4]="You have assumed she will outlive her normal life expectancy";
+questionsAnimated[1][5]="None of the above";
+//These are the associated layersAnimated
+layersAnimated[1][1]="Layer9";
+layersAnimated[1][2]="Layer10";
+layersAnimated[1][3]="Layer11";
+layersAnimated[1][4]="Layer12";
+layersAnimated[1][5]="Layer13";
+
+//This is the test answer
+answersAnimated[1]="E";
+//-->
+          </script>
+          <form name="QuestionForm1">
+            <script>
+<!--
+// Display Text for Question 1
+document.write(getQuestionAnimated(1));
+//-->
+            </script>
+          </form>
+          <script>
+<!--
+// END RADIO QUESTION 1 CODE
+//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+		  <div id="Layer9" class="rvAnimatedLayer">Incorrect.  You do not know if she has a need for more income. </div>
+          <div id="Layer10" class="rvAnimatedLayer">Incorrect. This is a generalization. She may be less conservative than her peers. </div>
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. Her current liquidity has not been established. </div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect. Her health or other relevant factors have not been discussed. </div>
+          <div id="Layer13" class="rvAnimatedLayer">Correct.  You must know far more about Ophelia’s financial dynamic to make a prudent recommendation.  We know nothing of the amount and type of her other assets, the income currently being generated by all investments, Social Security income,  need for liquidity, or risk tolerance.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">You are a Fiduciary Advisor. Which of the following, if any, recommendations may be made under a BICE?  All of the recommendations below are made after the applicability date.</p>
+          <script language="JavaScript">
+					<!--
+					// BEGIN RADIO QUESTION 2 CODE
+					var formNumberAnimated=new Array();
+					formNumberAnimated[2]="QuestionForm2";
+					questionNumberAnimated=2;
+					questionsAnimated[2]=new Array();
+					layersAnimated[2]=new Array();
+					//This is the test question
+					questionsAnimated[2][0]="";
+					
+					//These are the answer choices
+					questionsAnimated[2][1]="A recommendation made by you pursuant to your discretionary authority to buy, sell, or hold securities";
+					questionsAnimated[2][2]="A recommendation to buy or sell investment property directly between you personally and a client’s IRA";
+					questionsAnimated[2][3]="Recommendations pursuant to a contract in which the client must travel 2,000 miles to participate in arbitration";
+					questionsAnimated[2][4]="Recommendations pursuant to a contract in which the client has given up his or her rights to file or participate in a class action lawsuit against you, your Financial Institution, or an affiliate";
+					questionsAnimated[2][5]="None of the above";
+					//These are the associated layersAnimated
+					layersAnimated[2][1]="Layer14";
+					layersAnimated[2][2]="Layer15";
+					layersAnimated[2][3]="Layer16";
+					layersAnimated[2][4]="Layer17";
+					layersAnimated[2][5]="Layer18";
+					
+					//This is the test answer
+					answersAnimated[2]="E";
+					//-->
+					  </script>
+					  <form name="QuestionForm2">
+						<script>
+						<!--
+						// Display Text for Question 2
+						document.write(getQuestionAnimated(2));
+						//-->
+						</script>
+					  </form>
+		  <script>
+						<!--
+						// END RADIO QUESTION 2 CODE
+						//-->
+					  </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer14" class="rvAnimatedLayer">Incorrect. A BIC may not be used where the Fiduciary Advisor has discretionary control over ERISA plan or IRA assets. </div>
+          <div id="Layer15" class="rvAnimatedLayer">Incorrect. A BIC cannot be used for transactions between the fiduciary advisor personally and ERISA plan or IRA. This kind of transaction is strictly prohibited.</div>
+          <div id="Layer16" class="rvAnimatedLayer">Incorrect. A BIC may not include language that places burdensome restrictions on the right to arbitration. </div>
+          <div id="Layer17" class="rvAnimatedLayer">Incorrect. A BIC may not include language that places limitations on the rights of the IRA Retail Retirement Investor to participate in a class action lawsuit. </div>
+          <div id="Layer18" class="rvAnimatedLayer">Correct.</div>
+		</td>
+      </tr>
+    </table>
+  </div>
+ 
+</div>
+<!-- coursebody -->
+</body>
+</html>
