@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Understanding the Fudiciary Rule</title>
+<link rel="stylesheet" href="https://learning.greeneconsults.com/topclass/course-page-layout/css/course_page_layout_main.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script language="JavaScript">
+function showAnimatedLayer(i, otherLayers, lft, top, wdth, hght, pad){
+	var numOfLayers = otherLayers.length;
+	var hideLayers;
+	for (a=1; a < numOfLayers; a++){
+		hideLayers = document.getElementById(otherLayers[a]);
+		hideLayers.style.display = "none";
+	}
+	var myLayer;
+	myLayer = document.getElementById(i);
+	myLayer.style.display = "none";
+	myLayer.style.left = lft;
+	myLayer.style.top = top;
+	myLayer.style.width = wdth;
+	myLayer.style.height = hght;
+	myLayer.style.padding = pad;
+	$(myLayer).slideDown("slow");
+	$(myLayer).click(function(){
+		$(myLayer).hide();
+	});
+}
+</script>
+</head>
+
+<body>
+<div class="coursebody">
+  <div id="PageCourseTitle">
+    <header> <span class="headertitle">Course Title Shows Up Here</span>
+      <!-- headertitle -->
+    </header>
+  </div>
+  <!-- PageCourseTitle -->
+  <h1><span class="pagetitle">Review Exercise</span>
+    <!-- pagetitle -->
+  </h1>
+  <div id="qTable">
+    <table>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>1.</strong></p></td>
+        <td><p class="questionStyle">You are a commission-based Registered Representative. You recommended and sold an investment to your client Marie for her taxable account after April 10, 2017. Please indicate true or false for each of the following statements:</p>
+        <p class="questionStyle">You owe Marie a fiduciary standard of care under The Rule.</p>
+
+        <script language="JavaScript">
+		<!--
+		// BEGIN ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+		function answerCorrectAnimated(questionNumber, answer, formName)
+		{
+			// declare a variable to hold return value
+			var correct = false;
+			var questionLength = formName.radQuestionChoiceAnimated.length;
+			var questionChoice;
+		
+			// if answer provided is same as correct answer then correct variable is true
+			if (answer == answersAnimated[questionNumber])
+				{correct = true;
+					for (questionChoice = 0;questionChoice < questionLength;questionChoice++)
+					{
+					formName.radQuestionChoiceAnimated[questionChoice].disabled = true;
+		
+					}
+		
+			// return whether the answer was correct (true or false)
+			return correct;
+			}
+		}
+
+		function getQuestionAnimated(questionNumber)
+		{
+		
+		   var questionHTML = "<P><B>" + questionsAnimated[questionNumber][0] + "</B></P>";
+		   var questionLength = questionsAnimated[questionNumber].length;
+		   var questionChoice;
+		
+		   questionHTML = questionHTML + "<P>";
+		   for (questionChoice = 1;questionChoice < questionLength;questionChoice++)
+		   {
+			  questionHTML = questionHTML + "<label><INPUT TYPE=radio NAME=radQuestionChoiceAnimated onclick='return buttonCheckQAnimated_onclick("+questionNumber+", window.document.QuestionForm"+questionNumber+")'>"
+			  questionHTML = questionHTML + questionsAnimated[questionNumber][questionChoice];
+			  questionHTML = questionHTML + "</label><BR>";
+		   }
+		   questionHTML = questionHTML + "</P>";
+		
+		   return questionHTML;
+		}
+		function buttonCheckQAnimated_onclick(questionNum, formName)
+		{
+		   var answer = 0;
+		   while (formName.radQuestionChoiceAnimated[answer].checked != true)
+		   {
+			  answer++;
+		   }
+		
+		   var answer2 = String.fromCharCode(65 + answer);
+		   answer++;
+		   if (answerCorrectAnimated(questionNum,answer2, formName) == true)
+		   {
+			  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+		   }
+		   else
+		   {
+			  showAnimatedLayer(layersAnimated[questionNum][answer], layersAnimated[questionNum], '100px', '350px', '500px', '', '10px');
+		   }
+		}
+		
+		var questionNumberAnimated;
+		var questionsAnimated=new Array();
+		var answersAnimated=new Array();
+		var layersAnimated=new Array();
+		// END ONE TIME INSERT OBJECTS FOR RADIO BUTTON TEST QUESTIONS
+
+		// BEGIN RADIO QUESTION 1 CODE
+		var formNumberAnimated=new Array();
+		formNumberAnimated[1]="QuestionForm1";
+		questionNumberAnimated=1;
+		questionsAnimated[1]=new Array();
+		layersAnimated[1]=new Array();
+		//This is the test question
+		questionsAnimated[1][0]="";
+		
+		//These are the answer choices
+		questionsAnimated[1][1]="True";
+		questionsAnimated[1][2]="False";
+		//These are the associated layersAnimated
+		layersAnimated[1][1]="Layer1";
+		layersAnimated[1][2]="Layer2";
+		
+		//This is the test answer
+		answersAnimated[1]="B";
+		//-->
+				</script>
+				<form name="QuestionForm1">
+				  <script>
+		<!--
+		// Display Text for Question 1
+		document.write(getQuestionAnimated(1));
+		//-->
+          </script>
+        </form>
+        <script>
+		<!--
+		// END RADIO QUESTION 1 CODE
+		//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer1" class="rvAnimatedLayer">Incorrect. Marie is not a Retail Retirement Investor because taxable accounts are not covered by The Rule; Consequently, you are not a Fiduciary Advisor. However, you are a Registered Representative; You owe Marie a Suitability Standard of care under FINRA.</div>
+        <div id="Layer2" class="rvAnimatedLayer">Correct. Marie is not a Retail Retirement Investor because taxable accounts are not covered by The Rule; Consequently, you are not a Fiduciary Advisor. However, you are a Registered Representative; You owe Marie a Suitability Standard of care under FINRA.</div>
+
+		<p class="questionStyle">You are allowed to have conflicts of interest with Marie in connection with her taxable account. </p>
+        <script language="JavaScript">
+		<!--
+		// BEGIN RADIO QUESTION 2 CODE
+		var formNumberAnimated=new Array();
+		formNumberAnimated[2]="QuestionForm2";
+		questionNumberAnimated=2;
+		questionsAnimated[2]=new Array();
+		layersAnimated[2]=new Array();
+		//This is the test question
+		questionsAnimated[2][0]="";
+		
+		//These are the answer choices
+		questionsAnimated[2][1]="True";
+		questionsAnimated[2][2]="False";
+		//These are the associated layersAnimated
+		layersAnimated[2][1]="Layer3";
+		layersAnimated[2][2]="Layer4";
+		
+		//This is the test answer
+		answersAnimated[2]="A";
+		//-->
+        </script>
+        <form name="QuestionForm2">
+          <script>
+			<!--
+			// Display Text for Question 2
+			document.write(getQuestionAnimated(2));
+			//-->
+          </script>
+        </form>
+        <script>
+		<!--
+		// END RADIO QUESTION 2 CODE
+		//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer3" class="rvAnimatedLayer">Correct. The Suitability Standard does not prohibit conflicts of interest. </div>
+        <div id="Layer4" class="rvAnimatedLayer">Incorrect. The Suitability Standard does not prohibit conflicts of interest.</div>
+        
+		<p class="questionStyle">You may receive variable compensation from sales of financial products or services into Marie’s taxable account.</p>
+        <script language="JavaScript">
+		<!--
+		// BEGIN RADIO QUESTION 3 CODE
+		var formNumberAnimated=new Array();
+		formNumberAnimated[3]="QuestionForm3";
+		questionNumberAnimated=3;
+		questionsAnimated[3]=new Array();
+		layersAnimated[3]=new Array();
+		//This is the test question
+		questionsAnimated[3][0]="";
+		
+		//These are the answer choices
+		questionsAnimated[3][1]="True";
+		questionsAnimated[3][2]="False";
+		//These are the associated layersAnimated
+		layersAnimated[3][1]="Layer5";
+		layersAnimated[3][2]="Layer6";
+		
+		//This is the test answer
+		answersAnimated[3]="A";
+		//-->
+        </script>
+        <form name="QuestionForm3">
+          <script>
+			<!--
+			// Display Text for Question 3
+			document.write(getQuestionAnimated(3));
+			//-->
+          </script>
+        </form>
+        <script>
+			<!--
+			// END RADIO QUESTION 3 CODE
+			//-->
+        </script>
+        <!--put Review Exercise Layer with Feedback here-->
+        <div id="Layer5" class="rvAnimatedLayer">Correct. You are not a Fiduciary Advisor and are therefore not subject to The Rule. Instead, you are subject to FINRA rules that generally permit variable compensation within FINRA’s fairness and reasonability doctrines. </div>
+        <div id="Layer6" class="rvAnimatedLayer">Incorrect. You are not a Fiduciary Advisor and are therefore not subject to The Rule. Instead, you are subject to FINRA rules that generally permit variable compensation within FINRA’s fairness and reasonability doctrines.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>2.</strong></p></td>
+        <td><p class="questionStyle">Mr. Seguro D. Vida, life insurance professional, recommended a 401(k) rollover to his client Patti after April 10, 2017. At Seguro’s recommendation, the funds were rolled over into an Individual Retirement Annuity to purchase a variable annuity for Patti’s benefit. Seguro will earn a 7% commission from the sale of the variable annuity. He does not earn compensation from the assets in Patti’s 401(k) Plan. Which of the following statements is false? </p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 4 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[4]="QuestionForm4";
+			questionNumberAnimated=4;
+			questionsAnimated[4]=new Array();
+			layersAnimated[4]=new Array();
+			//This is the test question
+			questionsAnimated[4][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[4][1]="The 401(k) rollover recommendation is investment advice.";
+			questionsAnimated[4][2]="The commission represents variable compensation.";
+			questionsAnimated[4][3]="Patti is a Retail Retirement Investor.";
+			questionsAnimated[4][4]="All annuity recommendations are exempt from The Rule. ";
+			//These are the associated layersAnimated
+			layersAnimated[4][1]="Layer7";
+			layersAnimated[4][2]="Layer8";
+			layersAnimated[4][3]="Layer9";
+			layersAnimated[4][4]="Layer10";
+			
+			//This is the test answer
+			answersAnimated[4]="D";
+			//-->
+          </script>
+          <form name="QuestionForm4">
+            <script>
+			<!--
+			// Display Text for Question 4
+			document.write(getQuestionAnimated(4));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 4 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer7" class="rvAnimatedLayer">Incorrect. The statement is true. Rollover recommendations are considered investment advice. </div>
+          <div id="Layer8" class="rvAnimatedLayer">Incorrect. The statement is true. Compensation that varies based either on the amount or type of product sold is variable compensation.  </div>
+          <div id="Layer9" class="rvAnimatedLayer">Incorrect. The statement is true. Owners of IRA’s are Retail Retirement Investors. </div>
+          <div id="Layer10" class="rvAnimatedLayer">Correct. The statement is false. Variable annuities and indexed annuities are not exempt from The Rule; Only fixed annuities are exempt.</div>
+		</td>
+      </tr>
+      <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>3.</strong></p></td>
+        <td><p class="questionStyle">Which of the following is least likely to represent conflicted advice under The Rule? Assume (1) all recommendations are made after the applicability date of The Rule and (2) all of the individuals making recommendations are Fiduciary Advisors.</p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 5 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[5]="QuestionForm5";
+			questionNumberAnimated=5;
+			questionsAnimated[5]=new Array();
+			layersAnimated[5]=new Array();
+			//This is the test question
+			questionsAnimated[5][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[5][1]="A broker’s recommendation to invest in a mutual fund (with a 4% upfront commission) for a Traditional IRA";
+			questionsAnimated[5][2]="A broker’s recommendation to invest in a mutual fund (paying a 30 basis point revenue share to the dealer) for a self-directed 401(k) plan account";
+			questionsAnimated[5][3]="An insurance agent’s recommendation to invest in an indexed annuity (with a 7% upfront commission) for a Roth IRA ";
+			questionsAnimated[5][4]="An Investment Advisor Representative’s<sup style='font-size: 8pt;'>1</sup> recommendation, under a valid fixed fee arrangement, to invest in ETF’s for a Health Savings Account. ";
+			//These are the associated layersAnimated
+			layersAnimated[5][1]="Layer11";
+			layersAnimated[5][2]="Layer12";
+			layersAnimated[5][3]="Layer13";
+			layersAnimated[5][4]="Layer14";
+			
+			//This is the test answer
+			answersAnimated[5]="D";
+			//-->
+          </script>
+          
+          <form name="QuestionForm5">
+            <script>
+			<!--
+			// Display Text for Question 5
+			document.write(getQuestionAnimated(5));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 5 CODE
+			//-->
+          </script>
+          <!--put Review Exercise Layer with Feedback here-->
+          <div id="Layer11" class="rvAnimatedLayer">Incorrect. The higher the purchase amount the higher the commission; The recommendation is conflicted advice.  </div>
+          <div id="Layer12" class="rvAnimatedLayer">Incorrect. The higher the purchase amount the higher the Revenue Share. In addition, the revenue share is third party compensation. Therefore the recommendation is conflicted advice.</div>
+          <div id="Layer13" class="rvAnimatedLayer">Incorrect. Indexed and variable annuity recommendations are subject to The Rule (fixed annuities are not subject to The Rule). The higher the purchase amount the higher the commission; The recommendation is conflicted advice.  </div>
+          <div id="Layer14" class="rvAnimatedLayer">Correct! The Investment Advisor Representative’s recommendations are unlikely to be influenced by compensation and are not considered conflicted advice. Noteworthy, owners of Health Savings Accounts are Retail Retirement Investors. </div>
+&nbsp;</td>
+      </tr>
+       <tr>
+        <td width="55" align="right" valign="top"><p align="right"><strong>4.</strong></p></td>
+        <td><p class="questionStyle">Which of the following individuals, if any, are subject to The Rule? </p>
+          <script language="JavaScript">
+			<!--
+			// BEGIN RADIO QUESTION 6 CODE
+			var formNumberAnimated=new Array();
+			formNumberAnimated[6]="QuestionForm6";
+			questionNumberAnimated=6;
+			questionsAnimated[6]=new Array();
+			layersAnimated[6]=new Array();
+			//This is the test question
+			questionsAnimated[6][0]="";
+			
+			//These are the answer choices
+			questionsAnimated[6][1]="An advisor earning variable commissions from a taxable investment account";
+			questionsAnimated[6][2]="A CPA earning hourly consulting fees for preparing informational IRS returns for an ERISA plan";
+			questionsAnimated[6][3]="A covered advisor making covered recommendations";
+			questionsAnimated[6][4]="An attorney earning a fixed annual consulting fee for providing compliance advice to an ERISA plan";
+			questionsAnimated[6][5]="None of the above.";
+			//These are the associated layersAnimated
+			layersAnimated[6][1]="Layer15";
+			layersAnimated[6][2]="Layer16";
+			layersAnimated[6][3]="Layer17";
+			layersAnimated[6][4]="Layer18";
+			layersAnimated[6][5]="Layer19";
+			
+			//This is the test answer
+			answersAnimated[6]="C";
+			//-->
+          </script>
+          <form name="QuestionForm6">
+            <script>
+			<!--
+			// Display Text for Question 6
+			document.write(getQuestionAnimated(6));
+			//-->
+            </script>
+          </form>
+          <script>
+			<!--
+			// END RADIO QUESTION 6 CODE
+			//-->
+          </script>
+         <!--put Review Exercise Layer with Feedback here-->        
+         <div id="Layer15" class="rvAnimatedLayer">Incorrect. Owners of taxable accounts are not Retail Retirement Investors.  </div>
+         <div id="Layer16" class="rvAnimatedLayer">Incorrect. Tax return preparation is not considered investment advice. </div>
+         <div id="Layer17" class="rvAnimatedLayer">Correct.  This describes a Fiduciary Advisor. </div>
+         <div id="Layer18" class="rvAnimatedLayer">Incorrect. Legal advice is not generally considered investment advice.</div>
+         <div id="Layer19" class="rvAnimatedLayer">Incorrect. There is a correct answer choice listed. </div> 
+         </td>
+       </tr>
+    </table>
+  </div>
+  <footer>
+    <div class="footertext"></div>
+    <!-- footertext -->
+    <p><sup style="font-size: 8pt;">1</sup>An RIA may be a firm or individual.  Individuals employed by the RIA to provide investment advice are referred to as Investment Advisor Representatives. </p>
+  </footer>
+</div>
+<!-- coursebody -->
+</body>
+</html>
